@@ -202,7 +202,7 @@ def render_left_side():
         st.markdown(f'''
     <ul class="define introduction" style="margin-top: 0; margin-bottom: 0;">
         <li class="define-li home-page">FoodDetector uses the <strong>YOLOv26</strong> pretrained models for fine-tuning with <code>VietFood67</code>, 
-        an enhanced custom-made Vietnamese food dataset created for detecting local dishes and achieved a <code>mAP50</code> of <code>0.92</code>.</li>
+        an enhanced custom-made Vietnamese food dataset created for detecting local dishes and achieved a <code>mAP50</code> of <code>0.95</code>.</li>
         <li class="define-li home-page">It can be used to detect <a href="/dataset" target="_self">67</a> Vietnamese dishes from a picture, video, webcam, and an IP camera through RTSP.</li>
     </ul>
                     ''', unsafe_allow_html=True)
