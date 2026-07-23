@@ -79,8 +79,3 @@ VietNamese-Food-Nutrition-Cal/
 ├── requirements.txt         # Thư viện phụ thuộc
 └── README.md
 ```
-
----
-
-## 📜 Giấy Phép (License)
-Dự án được phát hành theo giấy phép **MIT License**.
