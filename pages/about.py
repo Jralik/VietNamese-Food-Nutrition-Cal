@@ -15,7 +15,7 @@ st.markdown('''_A one-stop website for anyone that want to remotely track the ea
 - `About`: The overview of FoodDetector sections and functions.
 - `Dataset`: Details of the VietFood57 dataset.''')
 st.markdown('''
-The source code of this project will be available on [Github](https://github.com/nvhnam/FoodDetector).
+The source code of this project will be available on [Github](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal).
 
 ---
 #### Functions
