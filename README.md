@@ -4,7 +4,6 @@
 [![YOLOv26](https://img.shields.io/badge/Model-YOLOv26-green.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
 [![mAP50](https://img.shields.io/badge/mAP50-0.95-brightgreen.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
 [![Streamlit](https://img.shields.io/badge/Framework-Streamlit-FF4B4B.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **VietNamese-Food-Nutrition-Cal** là hệ thống phát hiện món ăn Việt Nam thời gian thực và tự động tính toán giá trị dinh dưỡng (Calo, Protein, Chất béo, Đường, Muối), tích hợp trợ lý AI đa mô hình (Gemini, Cerebras, OpenRouter) tư vấn chế độ ăn uống khoa học dựa trên chỉ số BMI & TDEE của người dùng.
 
