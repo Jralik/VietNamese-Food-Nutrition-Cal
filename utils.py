@@ -443,7 +443,9 @@ def extract_bounding_box_image(image, boxes):
         endX, endY = min(w, endX), min(h, endY)
 
         bbox_image = image[startY:endY, startX:endX]
-        extracted_images.append(bbox_image)
+        if bbox_image.size > 0:
+            extracted_images.append(bbox_image)
+    return extracted_images
 
 def calculate_bmi(weight_kg: float, height_cm: float) -> float:
     height_m = height_cm / 100
