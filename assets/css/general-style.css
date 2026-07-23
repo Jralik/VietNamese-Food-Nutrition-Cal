@@ -1,0 +1,754 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+:root {
+    --grey: #D9D9D9;
+    --grey-light:#e8e8e8;
+    --grey-lightest: #f4f4f4;
+    --grey-code-expander: #959494;
+    --grey-hover: #686868;
+    --white: #FFFFFF;
+    --button-color-yellow: #FEC51C; 
+    --button-color-yellow-hover: #fcd96b;
+    --button-color-yellow-expander: #fff4d1;
+    --brown: #2C1100;
+    --green-nu: #85bb2f;
+    --yellow-nu: #fecb02;
+    --red-nu: #fb4d44;
+}
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Montserrat', sans-serif !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+button, .MuiButtonBase-root, button.MuiButtonBase-root.MuiButton-root.MuiButton-contained, .css-gb57o4 {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+code {
+    font-size: calc(11px + 0.2vw);
+    background-color: var(--grey-lightest);
+}
+p, ol, ul, dl, li, td, th {
+    margin: 0;
+    padding: 0px;
+    font-size: calc(12px + 0.2vw);
+}
+span {
+    font-size: calc(13px + 0.2vw);
+    margin-bottom: 0;
+}
+small {
+    font-size: calc(10px + 0.2vw) !important;
+}
+
+h4 {
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: calc(1.275rem + .3vw);
+}
+
+h5 {
+    padding: 0.5rem 0;
+    font-size: calc(1rem + .3vw);
+}
+/* NAV BAR */
+#MainMenu, header, footer {
+    visibility: hidden;
+}
+    
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #0E1117;
+    z-index: 999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin-right: calc(15px + 0.3vw);
+    font-size: calc(10px + 0.4vw);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+a.nav-item {
+    color: white;
+}
+.nav-item:hover {
+    background-color: var(--grey-hover);
+    text-decoration: none;
+}
+.nav-item.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.more-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* END NAV BAR */
+
+
+/* SCROLL TOP BUTTON */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: var(--grey);
+    color: black !important;
+    font-size: 18px;
+    /* border: none; */
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: calc(11px + 0.5vw);
+    z-index: 99;
+    text-decoration: none !important;
+    font-weight: 900;
+    color: white;
+}
+
+
+a.top-button:hover {
+    background-color: var(--grey-hover) !important;
+    color: white !important;
+}
+
+/* END SCROLL TOP BUTTON */
+
+/* GENERAL */
+.define {
+    margin-left: calc(1.3rem + 1vw);
+    margin-top: 1rem ;
+    margin-bottom: 1.3rem ;
+}
+.define-li {
+    margin: 1.3rem 0;
+    font-size: calc(12px + 0.2vw) !important;
+    
+}
+
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+    border-bottom: 1.1px solid rgba(0, 0, 0, 0.6);
+}
+/* END GENERAL */
+
+/* EXPANDER */
+[data-testid="stExpanderDetails"] ul li {
+    font-size: calc(12px + 0.1vw);
+    margin: 1rem 0 1rem 1.5rem;
+    color: black
+}
+.stExpander p {
+    font-size: calc(13px + 0.1vw);
+    font-weight: 700;
+    color: var(--brown);
+    padding-left: 0.5rem;
+}
+.st-emotion-cache-1h9usn1 {
+    background-color: var(--button-color-yellow-expander) !important;
+    border: 2px solid var(--button-color-yellow);
+    font-size: calc(16px +1vw);
+}
+
+[data-testid="stExpanderDetails"] {
+    background-color: var(--grey-lightest);
+    border-radius: 8px;
+}
+
+[data-testid="stExpanderDetails"] ul li code {
+    background-color: var(--grey-code-expander);
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+/* END EXPANDER */
+
+/* HOME */
+
+/* END HOME */
+li.define-li.home-page {
+    margin: 0.6rem 0;
+}
+/* DATASET */
+p.define.dataset-page {
+    margin-left: 0;
+    font-size: calc(12px + 0.2vw) !important;
+
+}
+
+li.define-li.dataset-page {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+h4.dataset-page {
+    background: var(--grey);
+    padding: 0.7rem 0 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: calc(18px + 0.2vw)
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: calc(100px + 7vw);
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.header-title {
+    font-size: calc(30px + 0.3vw);
+    font-weight: 800;
+}
+
+.header-title2 {
+    font-size: calc(30px + 0.3vw);
+    font-weight: 800;
+    margin-right: auto;
+    padding-left: 1rem
+}
+.header-subtitle {
+    font-size: calc(11px + 0.3vw);
+}
+
+/* Responsive adjustments */
+@media (max-width: 650px) {
+    .header-title {
+        font-size: calc(17px + 1vw);
+    }
+    .header-subtitle {
+        font-size: calc(10px + 0.5vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: calc(5px + 3vw);
+    }
+}
+
+@media (max-width: 380px) {
+    .header-title {
+        font-size: 3.5vw;
+    }
+
+    .header-subtitle2 {
+        font-size: 7.5vw;
+        padding: 1vw;
+    }
+    .header-subtitle {
+        font-size: calc(2px + 3vw);
+    }
+}
+/* TOTAL */
+.total-nutrition-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--grey-light);
+    padding: calc(5px + 0.6vw);
+    border-radius: 10px;
+}
+
+.total-nutri-box {
+    display: block;
+    background-color: white;
+    padding: calc(2px + 0.5vw);
+    border-radius: 5px;
+    text-align: center;
+    width: calc(16.6% - 8px);
+    align-content: center;
+}
+
+@media (max-width: 420px) {
+    .total-nutri-box {
+        width: calc(16.6% - 4px);
+    }
+}
+
+.total-nutri-value-name{
+    font-size: calc(9px + 0.2vw);
+}
+
+@media (max-width: 420px) {
+    .total-nutri-value-name {
+        font-size: (7px + 0.2vw);
+    }
+}
+
+.total-nutri-num{
+    font-size: calc(13px + 0.5vw);
+    font-weight: 700;
+}
+
+@media (max-width: 420px) {
+    .total-nutri-num{
+        font-size: calc(10px + 0.3vw);
+        font-weight: 700;
+    }
+}
+
+#calo-box {
+    border: 1px solid black;
+}
+
+.total-count-result-text {
+    font-size: calc(10px + 0.4vw);
+    font-weight: 600;
+    margin-bottom: 2px;
+    display: list-item;
+    list-style-type: disc;
+}
+
+.total-count-result-div {
+    background-color: var(--grey-light);
+    padding: 1rem 0 1rem 1.8rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* EACH NUTRITION VALUE */
+.each-nutri-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(1.7rem + 0.3vw);
+    gap: 7px;
+}
+
+.each-nutri-box {
+    padding: 2px;
+    padding-bottom: 7px;
+    border-radius: 23px;
+    text-align: center;
+    width: 12%;
+    max-height: 90px;
+    min-width: 100px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.each-nutri-name {
+    font-size: calc(7px + 0.2vw);
+    font-weight: 400;
+}
+
+.each-nutri-number {
+    font-size: calc(14px + 0.2vw);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.each-nutri-percentage{
+    font-size: calc(9px + 0.2vw);
+    font-weight: 500;
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+
+@media (min-width: 2000px) {
+    .each-nutri-box {
+        max-height: 100px;
+    }
+    .each-nutri-percentage{
+        padding: 5px 22px;
+    }
+    #calo-each-nutri-percentage {
+        padding: 5px 20px;
+    }
+    .each-nutri-number {
+        font-size: calc(14px + 0.1vw);
+        margin-bottom: 3px;
+    }
+}
+
+
+.item-header {
+    font-size: calc(12px + 0.2vw);
+    margin-bottom: 5px;
+    margin-top: calc(1rem + 0.3vw);
+}
+
+.nutrition-header {
+    background-color: var(--grey);
+    padding: 2px 8px;
+    border-radius: 7px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: black;
+    font-size: calc(12px + 0.2vw);
+}
+
+#calo-each-nutri-box {
+    background-color: white !important;
+}
+#calo-each-nutri-percentage {
+    border: 1px solid black;
+}
+#protein-each-nutri-box {
+    background-color: #E3F2FD !important;
+}
+#protein-each-nutri-percentage {
+    border: 1px solid #1E88E5;
+}
+#protein-box {
+    border: 1px solid #1E88E5;
+    background-color: #F1F8FF !important;
+}
+
+.result-nutri-container {
+    background-color: var(--grey-light) !important;
+    padding: 0rem 1rem !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    margin-bottom: 0.6rem !important;
+}
+
+/* NO FOOD */
+#no-food-detected {
+    background-color: white !important;
+    border: 1px solid var(--red-nu) !important;
+    color: var(--red-nu) !important;
+}
+
+#no-food-descr {
+    padding: 16px !important;
+    background-color: var(--grey-lightest);
+}
+
+.human-class-name {
+    margin-top: 1rem;
+}
+
+.human-confident {
+
+}
+/* [data-testid="stMarkdownContainer"] */
+.stToast {
+    height: calc(100px + 1vw);
+    gap: 0 !important;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[data-testid="toastContainer"] span {
+    width: 50px;
+}
+/* 
+div.st-emotion-cache-1x51vsn.elibz2u0 {
+    gap: 0 !important;
+} */
+
+
+.img-each-nutri {
+    width: 100%;
+    border-radius: 23px;
+    height: 90px;
+}
+
+.detection-results {
+    padding: 0.5rem 0 0.1rem 0;
+}
+
+.small-text-below-results {
+    font-size: calc(10px + 0.3vw);
+    margin-bottom: 0.5rem;
+}
+
+.dash-line-below-count-results {
+    width: 50%;
+    border: none;
+    border-top: 1px dashed black;
+    margin: 12px 0;
+}
+
+/* AI Chatbot Styles */
+.chatbox-container {
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: var(--grey-lightest);
+    border: 1px solid var(--grey-light);
+    margin-top: 1rem;
+}
+
+[data-testid="stChatMessage"] {
+    background-color: #f7f9fa;
+    border-radius: 16px;
+    border: 1px solid #eef1f2;
+    padding: 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+[data-testid="stChatMessage"] p {
+    font-size: calc(12px + 0.15vw) !important;
+    line-height: 1.5;
+    color: #2C1100;
+}
+
+[data-testid="stChatMessage"][data-user="true"] {
+    background-color: #fff4d1;
+    border-color: #fcd96b;
+}
+
+/* -------------------------------------------------------------
+   Column Layout & Dedicated Chatbot Scrollbar Customizations
+   ------------------------------------------------------------- */
+
+/* Main container top padding adjustment */
+[data-testid="stAppViewContainer"] > .main {
+    padding-top: 70px !important;
+}
+
+/* Left Panel (Model Selection & Detection) - Spacious */
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(1) {
+    padding-right: 1.2rem;
+    min-width: 0;
+}
+
+/* Right Panel (AI Chatbot) - Sticky with border and elevation */
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) {
+    position: sticky !important;
+    top: 75px !important;
+    padding: 0.5rem !important;
+}
+
+/* Dedicated Scroll Container inside Chatbot Panel */
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) [data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+    padding: 1rem !important;
+}
+
+/* Custom Sleek Scrollbar for Chatbot Container */
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) [data-testid="stVerticalBlockBorderWrapper"] > div::-webkit-scrollbar,
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2)::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) [data-testid="stVerticalBlockBorderWrapper"] > div::-webkit-scrollbar-track,
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2)::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) [data-testid="stVerticalBlockBorderWrapper"] > div::-webkit-scrollbar-thumb,
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2)::-webkit-scrollbar-thumb {
+    background: #94a3b8 !important;
+    border-radius: 8px !important;
+    border: 2px solid #f1f5f9 !important;
+}
+
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) [data-testid="stVerticalBlockBorderWrapper"] > div::-webkit-scrollbar-thumb:hover,
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2)::-webkit-scrollbar-thumb:hover {
+    background: #64748b !important;
+}
+
+/* Mobile viewport adjustments */
+@media (max-width: 992px) {
+    [data-testid="stHorizontalBlock"] > [data-testid="column"]:nth-child(2) {
+        position: relative !important;
+        top: 0 !important;
+    }
+}
+
+/* -------------------------------------------------------------
+   Selectbox Dropdown Menu & Sidebar Vertical Height Expansion
+   ------------------------------------------------------------- */
+
+/* Expand vertical height of all dropdown menus (Selectbox lists) */
+[data-baseweb="popover"] [data-baseweb="menu"],
+[data-baseweb="popover"] ul,
+div[role="listbox"],
+ul[role="listbox"] {
+    max-height: 550px !important;
+    border-radius: 12px !important;
+    padding: 6px !important;
+}
+
+/* Option items styling inside dropdown */
+[data-baseweb="popover"] li,
+div[role="option"],
+li[role="option"] {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
+}
+
+/* Custom scrollbar for dropdown menus */
+[data-baseweb="popover"] [data-baseweb="menu"]::-webkit-scrollbar,
+div[role="listbox"]::-webkit-scrollbar,
+ul[role="listbox"]::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+[data-baseweb="popover"] [data-baseweb="menu"]::-webkit-scrollbar-track,
+div[role="listbox"]::-webkit-scrollbar-track,
+ul[role="listbox"]::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 8px !important;
+}
+
+[data-baseweb="popover"] [data-baseweb="menu"]::-webkit-scrollbar-thumb,
+div[role="listbox"]::-webkit-scrollbar-thumb,
+ul[role="listbox"]::-webkit-scrollbar-thumb {
+    background: #94a3b8 !important;
+    border-radius: 8px !important;
+}
+
+/* Sidebar vertical scrolling space expansion */
+[data-testid="stSidebarContent"] {
+    padding-bottom: 8rem !important;
+}
+
+/* Extra margin around sidebar selectbox widgets */
+[data-testid="stSidebar"] [data-testid="stSelectbox"] {
+    margin-bottom: 1.2rem !important;
+}
