@@ -170,3 +170,15 @@ wandb/
 
 # calibration image
 calibration_*.npy
+Camera calibration/Image/
+Camera calibration/calib_visualizations/
+Camera calibration/*.jpg
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Pipeline test outputs & scratch files
+test_output/
+*.docx
+docx_extracted.txt
+

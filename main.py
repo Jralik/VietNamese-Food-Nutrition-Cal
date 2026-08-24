@@ -6,7 +6,8 @@ from pathlib import Path
 from streamlit_navigation_bar import st_navbar
 from utils import (
     _display_detected_frame, detect_camera, detect_image, detect_video, detect_webcam, 
-    load_onnx_model, load_model, calculate_bmi, calculate_tdee_mifflin_st_jeor, build_structured_facts
+    load_onnx_model, load_model, calculate_bmi, calculate_tdee_mifflin_st_jeor,
+    build_structured_facts, retrieve_context
 )
 
 st.set_page_config(
@@ -120,6 +121,35 @@ def get_openrouter_models(api_key):
     except Exception:
         pass
     return ["google/gemini-2.5-flash:free", "meta-llama/llama-3-8b-instruct:free", "openrouter/auto"]
+
+def get_cloudflare_models(account_id="", api_token=""):
+    free_defaults = [
+        "@cf/meta/llama-3.1-8b-instruct",
+        "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+        "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "@cf/meta/llama-3-8b-instruct",
+        "@cf/qwen/qwen1.5-7b-chat-awq",
+        "@cf/mistral/mistral-7b-instruct-v0.2"
+    ]
+    if account_id and api_token:
+        try:
+            import requests
+            headers = {"Authorization": f"Bearer {api_token}"}
+            response = requests.get(f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/models/search?task=Text%20Generation", headers=headers, timeout=5)
+            if response.status_code == 200:
+                data = response.json()
+                fetched = [model["name"] for model in data.get("result", []) if "name" in model]
+                # Filter out paid-only models
+                filtered = [m for m in fetched if not any(p in m.lower() for p in ["glm-5", "claude", "gpt-4"])]
+                if filtered:
+                    if "@cf/meta/llama-3.1-8b-instruct" in filtered:
+                        filtered.remove("@cf/meta/llama-3.1-8b-instruct")
+                        filtered.insert(0, "@cf/meta/llama-3.1-8b-instruct")
+                    return filtered
+        except Exception:
+            pass
+    return free_defaults
+
 
 # Convert your image to base64
 img_path = './assets/img/bg-about-cuisine.png'
@@ -620,7 +650,7 @@ def render_right_side():
     
     llm_provider = st.sidebar.selectbox(
         "Chọn Trợ lý AI",
-        ["Gemini", "Cerebras", "OpenRouter"],
+        ["Gemini", "Cerebras", "OpenRouter", "Cloudflare"],
         index=0,
         help="Chọn AI bạn muốn sử dụng để đánh giá dinh dưỡng và tư vấn."
     )
@@ -629,6 +659,8 @@ def render_right_side():
     api_key_input = st.sidebar.text_input("Nhập Gemini API Key", type="password", help="Nhận key miễn phí từ Google AI Studio")
     cerebras_api_key_input = st.sidebar.text_input("Nhập Cerebras API Key (Tùy chọn)", type="password", help="Nhận key miễn phí từ Cerebras Cloud Console để sử dụng Llama/Gemma với tốc độ siêu nhanh!")
     openrouter_api_key_input = st.sidebar.text_input("Nhập OpenRouter API Key (Tùy chọn)", type="password", help="Nhận key từ OpenRouter để truy cập hàng trăm mô hình AI (có bản miễn phí)!")
+    cloudflare_account_id_input = st.sidebar.text_input("Nhập Cloudflare Account ID (Tùy chọn)", type="password", help="Lấy từ Cloudflare Dashboard -> Workers & Pages")
+    cloudflare_api_token_input = st.sidebar.text_input("Nhập Cloudflare API Token (Tùy chọn)", type="password", help="Tạo Token có quyền Workers AI từ Cloudflare Dashboard -> My Profile -> API Tokens")
     
     # Store key in session state
     if api_key_input:
@@ -637,11 +669,17 @@ def render_right_side():
         st.session_state.cerebras_api_key = cerebras_api_key_input
     if openrouter_api_key_input:
         st.session_state.openrouter_api_key = openrouter_api_key_input
+    if cloudflare_account_id_input:
+        st.session_state.cloudflare_account_id = cloudflare_account_id_input
+    if cloudflare_api_token_input:
+        st.session_state.cloudflare_api_token = cloudflare_api_token_input
         
     # Check if API key is configured
     api_key = st.session_state.get("gemini_api_key", "")
     cerebras_api_key = st.session_state.get("cerebras_api_key", "")
     openrouter_api_key = st.session_state.get("openrouter_api_key", "")
+    cloudflare_account_id = st.session_state.get("cloudflare_account_id", "")
+    cloudflare_api_token = st.session_state.get("cloudflare_api_token", "")
     
     if llm_provider == "Cerebras" and cerebras_api_key:
         available_models = get_cerebras_models(cerebras_api_key)
@@ -662,6 +700,16 @@ def render_right_side():
             help="Danh sách các mô hình khả dụng từ OpenRouter."
         )
         st.session_state.openrouter_model = openrouter_model
+
+    if llm_provider == "Cloudflare" and cloudflare_account_id and cloudflare_api_token:
+        available_models = get_cloudflare_models(cloudflare_account_id, cloudflare_api_token)
+        cloudflare_model = st.sidebar.selectbox(
+            "Chọn Mô hình Cloudflare",
+            available_models,
+            index=0,
+            help="Danh sách các mô hình Workers AI từ Cloudflare của bạn."
+        )
+        st.session_state.cloudflare_model = cloudflare_model
     
     if llm_provider == "Gemini":
         if not api_key:
@@ -696,7 +744,7 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể giúp bạn:
 Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh dưỡng cho bạn với tốc độ cực nhanh!
 *Hãy nhập Cerebras API Key ở thanh bên để bắt đầu trò chuyện nhé!*""")
             return
-    else: # OpenRouter
+    elif llm_provider == "OpenRouter":
         if not openrouter_api_key:
             st.info("💡 **Gợi ý**: Hãy nhập **OpenRouter API Key** ở thanh bên (Sidebar) để kích hoạt Trợ lý dinh dưỡng AI sử dụng OpenRouter.")
             
@@ -706,6 +754,20 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                 
 Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh dưỡng cho bạn bằng hàng trăm mô hình AI khác nhau!
 *Hãy nhập OpenRouter API Key ở thanh bên để bắt đầu trò chuyện nhé!*""")
+            return
+    elif llm_provider == "Cloudflare":
+        if cloudflare_account_id and cloudflare_account_id.strip().startswith("cfut_"):
+            st.error("⚠️ **Lỗi nhập sai**: Chuỗi `cfut_...` bạn nhập là **Cloudflare API Token**, không phải **Account ID**!\n\nVui lòng nhập đúng chuỗi 32 ký tự **Account ID** (tìm tại Cloudflare Dashboard -> **Workers & Pages** ở cột bên phải).")
+            return
+        if not cloudflare_account_id or not cloudflare_api_token:
+            st.info("💡 **Gợi ý**: Hãy nhập **Cloudflare Account ID** và **Cloudflare API Token** ở thanh bên (Sidebar) để kích hoạt Cloudflare Workers AI.")
+            
+            # Display mock system message when no key is set
+            with st.chat_message("assistant"):
+                st.markdown("""Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng Cloudflare Workers AI). 🥗
+                
+Sau khi bạn cấu hình Account ID và API Token ở Sidebar, tôi có thể tư vấn dinh dưỡng cho bạn bằng các mô hình AI chạy trên mạng lưới toàn cầu của Cloudflare (miễn phí 10,000 neurons/ngày)!
+*Hãy nhập thông tin ở thanh bên để bắt đầu trò chuyện nhé!*""")
             return
 
     # Initialize chat history
@@ -718,11 +780,13 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
     # Display chat messages from history inside scroll container
     with chat_container:
         for message in st.session_state.chat_messages:
-            with st.chat_message(message["role"]):
-                if message.get("reasoning_details"):
-                    with st.expander("💭 Suy nghĩ của AI (Reasoning)"):
-                        st.write(message["reasoning_details"])
-                st.markdown(message["content"])
+            content_str = str(message.get("content", "")) if message.get("content") is not None else ""
+            if content_str and content_str.strip() and content_str.strip().lower() != "none":
+                with st.chat_message(message["role"]):
+                    if message.get("reasoning_details"):
+                        with st.expander("💭 Suy nghĩ của AI (Reasoning)"):
+                            st.write(message["reasoning_details"])
+                    st.markdown(content_str)
 
         # Predefined suggestions when chat history is empty
         selected_suggestion = None
@@ -776,10 +840,17 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             facts = build_structured_facts(last_nutri, user_profile, user_rda, last_dishes)
                             import json
                             meal_context = (
-                                f"\n[BỐI CẢNH BỮA ĂN VỪA PHÁT HIỆN DƯỚI DẠNG JSON FACTS]:\n"
+                                f"\n[BỐI CẢNH BỮA ĂN VỪ PHÁT HIỆN DƯỚI DẠNG JSON FACTS]:\n"
                                 f"{json.dumps(facts, indent=2, ensure_ascii=False)}\n"
                                 f"Hãy sử dụng các sự thật (facts) có cấu trúc này để trả lời nếu người dùng hỏi về món ăn hiện tại, bữa ăn của họ, hoặc xin lời khuyên dinh dưỡng."
                             )
+
+                        # ✨ RAG: retrieve relevant nutrition knowledge for this query
+                        rag_context = retrieve_context(
+                            query=prompt,
+                            detected_foods=last_dishes,
+                            top_k=3
+                        )
 
                         system_context = (
                             "Bạn là một chuyên gia tư vấn dinh dưỡng AI chuyên nghiệp chuyên về ẩm thực Việt Nam.\n"
@@ -788,7 +859,8 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             "và đề xuất các mẹo ăn uống lành mạnh (ví dụ: bớt nước lèo khi ăn phở, ăn thêm rau xà lách...).\n"
                             "Hãy trả lời bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu.\n"
                             "Không nói dông dài, đi thẳng vào vấn đề chính. Chỉ đưa ra câu trả lời trực tiếp bằng tiếng Việt, không lặp lại bất kỳ mô tả vai trò, nhiệm vụ hay cấu hình hệ thống nào.\n"
-                            f"{meal_context}"
+                            f"{rag_context}"          # ✨ RAG knowledge injected here
+                            f"{meal_context}"         # Structured JSON facts (existing)
                         )
 
                         if llm_provider.startswith("Cerebras"):
@@ -861,6 +933,75 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             else:
                                 message_placeholder.markdown(f"❌ Lỗi từ OpenRouter API (Mã lỗi {res.status_code}): {res.text}")
                             return
+
+                        if llm_provider == "Cloudflare":
+                            cf_account_id = st.session_state.get("cloudflare_account_id", "").strip()
+                            cf_api_token = st.session_state.get("cloudflare_api_token", "").strip()
+                            model_id = st.session_state.get("cloudflare_model", "@cf/meta/llama-3.1-8b-instruct").strip()
+
+                            headers = {
+                                "Authorization": f"Bearer {cf_api_token}",
+                                "Content-Type": "application/json"
+                            }
+
+                            payload_messages = []
+                            if system_context and str(system_context).strip():
+                                payload_messages.append({"role": "system", "content": str(system_context).strip()})
+
+                            for msg in st.session_state.chat_messages:
+                                role = str(msg.get("role", "user"))
+                                content = msg.get("content")
+                                if content is None:
+                                    continue
+                                if isinstance(content, list):
+                                    text_parts = [p.get("text", "") if isinstance(p, dict) else str(p) for p in content]
+                                    content = " ".join(text_parts)
+                                else:
+                                    content = str(content)
+                                
+                                if content.strip():
+                                    payload_messages.append({"role": role, "content": content.strip()})
+
+                            import requests
+                            url = f"https://api.cloudflare.com/client/v4/accounts/{cf_account_id}/ai/v1/chat/completions"
+                            res = requests.post(url, headers=headers, json={"model": model_id, "messages": payload_messages})
+                            
+                            # If v1 OpenAI endpoint is not enabled or returns 404/400, fallback to direct run endpoint
+                            if res.status_code in [404, 400]:
+                                url_fallback = f"https://api.cloudflare.com/client/v4/accounts/{cf_account_id}/ai/run/{model_id}"
+                                res_fallback = requests.post(url_fallback, headers=headers, json={"messages": payload_messages})
+                                if res_fallback.status_code == 200:
+                                    res = res_fallback
+
+                            if res.status_code == 200:
+                                data = res.json()
+                                response_text = ""
+                                if isinstance(data, dict):
+                                    if "choices" in data and isinstance(data["choices"], list) and len(data["choices"]) > 0:
+                                        msg_obj = data["choices"][0].get("message", {})
+                                        if isinstance(msg_obj, dict) and msg_obj.get("content"):
+                                            response_text = str(msg_obj["content"])
+                                    if not response_text and "result" in data and isinstance(data["result"], dict):
+                                        if data["result"].get("response"):
+                                            response_text = str(data["result"]["response"])
+                                        elif "choices" in data["result"] and isinstance(data["result"]["choices"], list) and len(data["result"]["choices"]) > 0:
+                                            msg_obj = data["result"]["choices"][0].get("message", {})
+                                            if isinstance(msg_obj, dict) and msg_obj.get("content"):
+                                                response_text = str(msg_obj["content"])
+
+                                if not response_text or not response_text.strip() or response_text.strip().lower() == "none":
+                                    response_text = "❌ Không nhận được câu trả lời từ mô hình Cloudflare AI này (Phản hồi rỗng). Vui lòng đổi sang mô hình `@cf/meta/llama-3.1-8b-instruct` ở Sidebar."
+
+                                message_placeholder.markdown(response_text)
+                                st.session_state.chat_messages.append({"role": "assistant", "content": response_text})
+                            else:
+                                err_msg = f"❌ Lỗi từ Cloudflare Workers AI (Mã lỗi {res.status_code}): {res.text}"
+                                if res.status_code == 403 and "Free plan" in res.text:
+                                    err_msg = f"❌ **Lỗi 403**: Mô hình `{model_id}` yêu cầu tài khoản Cloudflare Workers trả phí (Paid plan).\n\n👉 Vui lòng chuyển sang mô hình miễn phí như `@cf/meta/llama-3.1-8b-instruct` hoặc `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` ở Sidebar."
+                                message_placeholder.markdown(err_msg)
+                            return
+
+
                         
                         # Check if we already found a working model in this session
                         working_model = st.session_state.get("working_model_name", "")

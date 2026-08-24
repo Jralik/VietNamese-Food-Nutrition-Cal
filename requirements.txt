@@ -22,3 +22,8 @@ seaborn
 pyyaml
 tqdm
 streamlit_navigation_bar
+qdrant-client
+# ── Volume Estimation Pipeline ──
+sam2>=1.0                       # Meta SAM 2.1 for food segmentation
+transformers>=4.40.0            # Depth Anything V2 via HuggingFace
+safetensors                     # for model loading

@@ -24,6 +24,17 @@ import plotly.graph_objects as go
 
 from class_names import class_names
 
+# RAG: lazy import — only loaded when chatbot is active
+# Import FoodKnowledgeBase via get_knowledge_base() to avoid heavy startup cost
+def _get_rag_kb():
+    """Safely import and return the RAG knowledge base. Returns None if unavailable."""
+    try:
+        from rag.knowledge_base import get_knowledge_base
+        return get_knowledge_base()
+    except Exception as e:
+        print(f"[RAG] Knowledge base unavailable: {e}")
+        return None
+
 def styling_css():
     with open('./assets/css/general-style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -486,6 +497,41 @@ def build_structured_facts(meal_nutrition: dict, user_profile: dict, rda: dict, 
         facts["detected_foods"] = detected_foods
 
     return facts
+
+def retrieve_context(query: str, detected_foods: dict = None, top_k: int = 3) -> str:
+    """
+    Retrieve relevant nutrition knowledge chunks from the RAG vector store.
+
+    Embeds the user query (optionally enriched with detected food names),
+    searches Qdrant Cloud for the top-k most similar documents, and returns
+    a formatted string ready to be injected into the LLM system context.
+
+    Returns an empty string if RAG is unavailable or no relevant chunks found.
+    """
+    kb = _get_rag_kb()
+    if kb is None:
+        return ""
+
+    # Enrich query with detected food names for better retrieval precision
+    if detected_foods:
+        food_names = ", ".join(list(detected_foods.keys())[:4])
+        enriched_query = f"{query} {food_names}"
+    else:
+        enriched_query = query
+
+    chunks = kb.retrieve(enriched_query, top_k=top_k)
+    if not chunks:
+        return ""
+
+    formatted = "\n\n".join(
+        f"[Tài liệu tham khảo {i + 1}]:\n{chunk}" for i, chunk in enumerate(chunks)
+    )
+    return (
+        "\n\n[KIẾN THỨC DINH DƯỠNG THAM KHẢO TỪ CƠ SỞ DỮ LIỆU]:\n"
+        f"{formatted}\n"
+        "[Hãy ưu tiên sử dụng các thông tin trên để trả lời, chỉ sử dụng kiến thức nội tại nếu tài liệu không đủ.]\n"
+    )
+
 
 def generate_nutrition_advice(count_dict_names, total_nutrition):
     provider = st.session_state.get("llm_provider", "Gemini")
