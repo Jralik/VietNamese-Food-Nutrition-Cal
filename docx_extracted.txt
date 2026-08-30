@@ -1,0 +1,805 @@
+TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH
+KHOA CÔNG NGHỆ THÔNG TIN
+ĐỀ CƯƠNG CHI TIẾT KHÓA LUẬN TỐT NGHIỆP
+XÂY DỰNG HỆ THỐNG NHẬN DIỆN VÀ ƯỚC LƯỢNG DINH DƯỠNG
+CHO CÁC MÓN ĂN VIỆT NAM TÍCH HỢP TƯ VẤN CÁ NHÂN HÓA
+(A Vietnamese Food Recognition and Nutritional Estimation System with Personalized Advisory)
+Ngành: Khoa học Máy tính          Mã ngành: 7480108
+GIẢNG VIÊN HƯỚNG DẪN: Lê Thị Vĩnh Thanh
+SVTH 1 – MSSV: Huỳnh Khanh Lợi – 22725211
+SVTH 2 – MSSV: Hồ Minh Hưng – 22666391
+LỚP: DHKTMT18A          KHÓA: 18
+THÀNH PHỐ HỒ CHÍ MINH, NĂM 2026
+GHI CHÚ VỀ QUY ƯỚC KÝ HIỆU SỬ DỤNG TRONG TÀI LIỆU
+Để tránh nhầm lẫn giữa thông tin đã xác nhận, thông tin từ tài liệu tham khảo bên ngoài, và đề xuất chưa được thực nghiệm, tài liệu này sử dụng nhất quán các ký hiệu sau:
+Ký hiệu
+Ý nghĩa
+[LÕI]
+Thành phần bắt buộc, thuộc phạm vi tối thiểu để đề tài thành công — ưu tiên đầu tư thời gian cao nhất.
+[MỞ RỘNG]
+Thành phần làm tăng chiều sâu/tính mới nếu tiến độ cho phép, có thể cắt bỏ mà không ảnh hưởng đóng góp cốt lõi.
+[LITERATURE]
+Thông tin lấy trực tiếp từ một tài liệu tham khảo cụ thể (có trích dẫn số hiệu).
+[PROPOSED]
+Đề xuất phương pháp/thiết kế của người biên soạn đề cương, dựa trên phân tích literature — chưa qua thực nghiệm.
+[NEEDS EXPERIMENT]
+Cần thực nghiệm để đưa ra kết luận cuối cùng — không được coi là fact trước khi có dữ liệu.
+[ĐỀ XUẤT]
+Thay đổi/bổ sung vào kiến trúc pipeline ban đầu do người biên soạn đề xuất sau khi khảo sát literature.
+[ADDITIONAL CANDIDATE]
+Ứng viên kỹ thuật được bổ sung thêm ngoài các công nghệ người dùng đã liệt kê, kèm giải thích lý do.
+[CHƯA XÁC MINH NGUỒN]
+Không tìm được đủ căn cứ xác minh (tác giả/DOI/venue) — không dùng làm cơ sở lập luận chính.
+Lưu ý: Toàn bộ Phần D (đề cương chi tiết cuối cùng) áp dụng nhất quán ký hiệu [LÕI] / [MỞ RỘNG] cho từng mục nội dung, phản ánh đúng khuyến nghị phân bổ nguồn lực đã thống nhất với giảng viên hướng dẫn.
+PHẦN A — PHÂN TÍCH ĐỀ TÀI
+A.1. Problem Statement (Phát biểu bài toán)
+Việc theo dõi dinh dưỡng hằng ngày hiện phụ thuộc chủ yếu vào tự báo cáo thủ công, với sai lệch ước lượng khẩu phần được ghi nhận trong khoảng 21–45% so với đo đạc thực tế [19]. Trong khi bài toán nhận diện món ăn Việt Nam, xét thuần về phân loại/định vị, về cơ bản đã có lời giải hiệu quả (VietFood67 + YOLOv10b, mAP50 = 0,92 [1]), bài toán chuyển đổi từ "biết tên món ăn" sang "biết khối lượng và giá trị dinh dưỡng thực tế" — mà không cần cảm biến độ sâu chuyên dụng như Nutrition5k [11] — vẫn là một bài toán thiếu xác định (ill-posed) về mặt hình học, chưa được giải quyết triệt để cho ẩm thực Việt Nam.
+A.2. Research Gap
+Trong phạm vi tài liệu được khảo sát (Phần C), có thể xác định các khoảng trống sau:
+[LITERATURE] Các nghiên cứu ước lượng thể tích/khối lượng thực phẩm từ ảnh (Nutrition5k [11], DPF-Nutrition [12], MFP3D [14], VolETA [13], MetaFood 2025 Challenge [17]) đều thực hiện trên bộ dữ liệu món ăn phương Tây hoặc quốc tế hỗn hợp (MetaFood3D, Nutrition5k) — không có công bố nào áp dụng trực tiếp cho ẩm thực Việt Nam.
+[LITERATURE] VietFood67 [1] — bộ dữ liệu món ăn Việt Nam có bounding box lớn nhất hiện nay — dừng lại ở tác vụ object detection (mAP50 = 0,92), chưa mở rộng sang ước lượng thể tích, khối lượng hay dinh dưỡng.
+[LITERATURE] Việc dùng fiducial marker (ArUco) làm scale reference đã được chứng minh hiệu quả trong bối cảnh ảnh chụp bữa ăn từ những năm 2014 [19], nhưng trong phạm vi tài liệu tiếp cận được, chưa tìm thấy công trình nào kết hợp đồng thời ArUco marker, một mô hình phân đoạn thực phẩm cấp pixel (FoodSAM [5] / SAM 2 [8] / MobileSAM [7]), và một mô hình ước lượng độ sâu đơn ảnh hiện đại (Depth Anything V2 [9]) cho bài toán ước lượng khối lượng món ăn, đặc biệt trên ẩm thực Việt Nam.
+[LITERATURE] Chưa có công bố nào (trong phạm vi tài liệu tiếp cận được) benchmark kiến trúc YOLO26 [3, 4] — phiên bản mới nhất của họ YOLO — trên bất kỳ bộ dữ liệu thực phẩm nào, không riêng ẩm thực Việt Nam.
+[LITERATURE] Các hệ thống tư vấn dinh dưỡng dùng LLM hiện nay thường để LLM tự do suy luận trên dữ liệu dinh dưỡng, tiềm ẩn rủi ro hallucination trong bối cảnh sức khỏe; hướng phân lập rõ trách nhiệm giữa một rule-based engine (tính toán) và LLM (chỉ diễn đạt) chưa được định lượng so sánh cụ thể cho tư vấn dinh dưỡng tiếng Việt.
+⚠ Theo góp ý của giảng viên hướng dẫn, trọng tâm khoa học chính của đề tài nên đặt vào khoảng trống thứ ba (kết hợp scale calibration + segmentation + depth estimation để ước lượng khối lượng) — đây là khoảng trống cụ thể nhất, chưa ai giải quyết, và có tính khả thi kỹ thuật rõ ràng trong khuôn khổ 5 tháng. Các khoảng trống còn lại (YOLO26 benchmark, so sánh segmentation, Hybrid LLM) có giá trị bổ sung nhưng không phải điều kiện quyết định thành công của khóa luận.
+A.3. Objectives (Mục tiêu — đã phân loại Lõi/Mở rộng)
+Theo thống nhất với giảng viên hướng dẫn, mục tiêu được chia rõ hai nhóm để kiểm soát khối lượng công việc trong 5 tháng với 2 sinh viên:
+Nhóm mục tiêu LÕI (bắt buộc — quyết định thành công của đề tài)
+Xây dựng pipeline ước lượng thể tích/khối lượng kết hợp ArUco marker + Depth Anything V2 Metric + một mô hình phân đoạn thực phẩm, giải quyết bài toán scale ambiguity từ ảnh 2D đơn.     LÕI  
+Xây dựng Density Database (khối lượng riêng g/cm³) thực nghiệm cho các lớp món ăn phổ biến trong VietFood67 bằng phương pháp water displacement.     LÕI  
+Xây dựng tập Ground-Truth khối lượng (~100 phần ăn cân thực tế) làm chuẩn đối chiếu độc lập.     LÕI  
+Triển khai một kiến trúc object detection đủ tốt (YOLOv10b hoặc YOLO26m — lựa chọn qua kiểm thử nhanh, không bắt buộc ablation đầy đủ) để cung cấp bounding box đầu vào cho pipeline.     LÕI  
+Khảo sát, thực nghiệm và lựa chọn một phương pháp phân đoạn thực phẩm (trong số các ứng viên FoodSAM, MobileSAM — xem mục A.3 Mở rộng cho SAM 2) phù hợp cho pipeline, thông qua kiểm thử nhanh ban đầu.     LÕI  
+Tra cứu và tính toán dinh dưỡng (Calories, Protein, Carb, Fat) qua Bảng thành phần thực phẩm Việt Nam [22] kết hợp Rule-based Engine tính BMI/TDEE/RDA [21].     LÕI  
+Phân tích định lượng nguồn gốc sai số của pipeline ước lượng khối lượng (detection → mask → depth → density) — đây là nội dung đánh giá quan trọng nhất của đề tài.     LÕI  
+Nhóm mục tiêu MỞ RỘNG (thực hiện nếu đúng tiến độ)
+Ablation study Detection: so sánh có hệ thống YOLOv10b (tái lập baseline mAP50 = 0,92 [1]) và YOLO26m [3, 4] trên cùng dataset — [NEEDS EXPERIMENT] để xác nhận STAL có cải thiện phát hiện món ăn nhỏ hay không.     MỞ RỘNG  
+Ablation study Segmentation mở rộng: bổ sung SAM 2 [8] làm [ADDITIONAL CANDIDATE] thứ ba bên cạnh FoodSAM/MobileSAM (lý do tại mục B và D.3), so sánh đầy đủ 3 phương pháp bằng mIoU, tốc độ, và ảnh hưởng đến sai số volume downstream.     MỞ RỘNG  
+Tự thu thập và gán nhãn dataset bổ sung (5–10 lớp món ăn Việt Nam chưa có trong VietFood67).     MỞ RỘNG  
+Hybrid LLM Advisory: tích hợp Qwen2.5-7B-Instruct [20] qua Ollama để diễn đạt tự nhiên hóa lời khuyên (thay thế bằng Rule-based thuần nếu tiến độ không cho phép).     MỞ RỘNG  
+A.4. Research Questions
+RQ1 [LÕI]: Kết hợp ArUco marker và Depth Anything V2 Metric [9] có khôi phục được tỷ lệ độ sâu đủ chính xác để ước lượng khối lượng món ăn Việt Nam ở mức sai số nằm trong khoảng đã ghi nhận trong literature (10–68% MAPE, xem Bảng C.1) hay không?
+RQ2 [LÕI]: Nguồn sai số nào (detection, segmentation mask, depth noise, hay biến thiên density) đóng góp lớn nhất vào sai số ước lượng khối lượng cuối cùng?
+RQ3 [MỞ RỘNG]: Kiến trúc YOLO26m [3, 4] có cải thiện đáng kể mAP so với baseline YOLOv10b [1, 2] trên món ăn Việt Nam, đặc biệt với các món ăn phụ kích thước nhỏ, hay không?
+RQ4 [MỞ RỘNG]: Trong số các ứng viên phân đoạn thực phẩm (FoodSAM [5], SAM 2 [8], MobileSAM [7]), phương pháp nào cân bằng tốt nhất giữa độ chính xác (mIoU) và tốc độ, và độ chính xác phân đoạn ảnh hưởng như thế nào đến sai số ước lượng thể tích ở tầng downstream?
+RQ5 [MỞ RỘNG]: Kiến trúc Hybrid (Rule-based Engine + LLM) có giảm tỷ lệ hallucination so với để LLM tự suy luận trực tiếp trên dữ liệu dinh dưỡng hay không, và người dùng có đánh giá cao lời khuyên dạng Hybrid hơn Rule-based thuần không (đo bằng SUS)?
+A.5. Scope (Phạm vi)
+Nhận diện giới hạn trong các lớp món ăn của VietFood67 [1] (68 lớp); phần mở rộng dataset tự thu thập (nếu thực hiện) không vượt quá 5–10 lớp bổ sung.
+Ước lượng khối lượng dựa trên giả định mặt phẳng ngang (flat surface assumption) — món ăn và ArUco marker đồng mặt phẳng; không xử lý triệt để trường hợp bát/tô sâu lòng (ghi nhận là hạn chế đã biết, không phải phát hiện sau thực nghiệm).
+Không sử dụng cảm biến độ sâu vật lý (LiDAR/RGB-D); toàn bộ ước lượng độ sâu dựa trên mô hình đơn ảnh (monocular).
+LLM Advisory (nếu triển khai) chạy suy luận cục bộ qua Ollama, không dùng API trả phí bên thứ ba.
+Không phát triển phần cứng mới; toàn bộ nội dung khu trú trong phạm vi khoa học máy tính / thị giác máy tính.
+A.6. Expected Contributions (phân biệt Expected vs Demonstrated)
+Loại đóng góp
+Nội dung
+Expected Contribution
+(dự kiến, chưa chứng minh)
+Pipeline ước lượng khối lượng món ăn Việt Nam kết hợp ArUco + Depth Anything V2 + phân đoạn thực phẩm là một trong những nỗ lực đầu tiên áp dụng hướng tiếp cận này cho ẩm thực Việt Nam (trong phạm vi tài liệu tiếp cận được).
+Demonstrated Contribution
+(sẽ chứng minh bằng thực nghiệm, Chương 4)
+Density Database thực nghiệm cho các lớp món ăn phổ biến; tập Ground-Truth khối lượng ~100 phần ăn; số liệu MAE/MAPE cụ thể của pipeline trên tập kiểm thử độc lập; phân tích định lượng đóng góp sai số theo từng module.
+Lưu ý: Không tuyên bố 'đề tài giải quyết hoàn toàn bài toán ước lượng dinh dưỡng'. Cách diễn đạt phù hợp: 'Đề tài hướng tới xây dựng một pipeline tích hợp nhận diện món ăn, phân đoạn, ước lượng khẩu phần và tính toán dinh dưỡng cho ẩm thực Việt Nam, cùng phân tích định lượng độ tin cậy của pipeline này.'
+PHẦN B — PHÂN TÍCH FILE MẪU ("Đề Cương Chi Tiết Khóa Luận Dinh Dưỡng Theo Mẫu 5 Chương.docx")
+File mẫu được cung cấp là một bản đề cương/dự thảo rất chi tiết, có văn phong học thuật tốt, có công thức toán học và bảng biểu rõ ràng. Phần này phân tích khách quan để rút ra những gì nên kế thừa và những gì cần điều chỉnh trước khi dùng làm nền cho đề cương chính thức.
+B.1. Cấu trúc nên kế thừa
+Khung 5 chương (Giới thiệu → Cơ sở lý thuyết → Phương pháp đề xuất → Thực nghiệm → Hệ thống & Kết luận) — đây là cấu trúc chuẩn, phù hợp với khóa luận Khoa học Máy tính.
+Cách đánh số mục/tiểu mục theo dạng thập phân (1.1, 1.1.1...) và cách tổ chức Chương 1 (bối cảnh → vấn đề → mục tiêu → câu hỏi nghiên cứu → đối tượng → phạm vi → phương pháp → sản phẩm → ý nghĩa → cấu trúc) là mẫu hình chuẩn, nên giữ nguyên khung này.
+Cách trình bày Bảng tổng hợp nghiên cứu liên quan (nghiên cứu | dataset | phương pháp | chỉ số | hạn chế) tại mục 2.9 của file mẫu là một mẫu trình bày literature review rất hiệu quả, nên tái sử dụng.
+Cách phân rã pipeline thành các giai đoạn kỹ thuật rõ ràng (mục 3.3, 3.6) và bảng ánh xạ Yêu cầu chức năng → Module đảm nhận là cách trình bày kiến trúc hệ thống mạch lạc, dễ theo dõi.
+Cấu trúc Chương 4 với các tiểu mục theo từng module (Detection → Segmentation → Volume/Mass → Nutrition → End-to-end) và cấu trúc Chương 5 (kiến trúc triển khai → API → UI → testing → kết luận → hạn chế → hướng phát triển) là khung tổ chức hợp lý, nên giữ.
+B.2. Điểm mạnh của file mẫu
+Cơ sở lý thuyết được viết có chiều sâu kỹ thuật thực sự (công thức depth scale recovery, column integration theo homography, phân biệt relative/metric depth) — không chỉ liệt kê tên công nghệ.
+Danh mục tài liệu tham khảo phong phú (29 nguồn), phần lớn có thể xác minh được qua arXiv/DOI/venue cụ thể.
+Có nhận diện đúng và sớm các hạn chế kỹ thuật quan trọng: flat surface assumption, ràng buộc phải có ArUco marker, biến thiên khối lượng riêng giữa các quán ăn — đây là các hạn chế xác đáng, nên giữ nguyên tinh thần này.
+B.3. Điểm cần thay đổi — quan trọng
+⚠ Ba vấn đề dưới đây là lý do chính khiến không thể sử dụng trực tiếp file mẫu, mà phải viết lại có kiểm soát.
+(1) Khóa cứng SAM 2 là phương pháp phân đoạn cuối cùng trước khi thực nghiệm
+File mẫu gọi thẳng SAM 2 là "Đề xuất cốt lõi" xuyên suốt từ Chương 1 đến Chương 5, và tại mục 4.7.2 khẳng định "SAM 2 chứng minh ưu thế tuyệt đối" kèm bảng số liệu mIoU/tốc độ cụ thể cho cả ba phương pháp. Đây là vi phạm trực tiếp yêu cầu của đề tài: người thực hiện CHƯA thực nghiệm để xác định phương pháp segmentation cuối cùng. Đề cương chính thức phải giữ FoodSAM, SAM 2, MobileSAM ở vị thế ứng viên ngang hàng, và chỉ dùng cách diễn đạt trung lập kiểu "khảo sát, thực nghiệm và lựa chọn phương pháp phù hợp", đúng như đã trình bày tại Phần D.3.
+(2) Chương 4 và Chương 5 trình bày như thể thực nghiệm đã hoàn tất, với số liệu bịa
+Các con số như "YOLO26m đạt mAP@0.5 vượt trội X% so với YOLOv10b", "SAM 2 đạt mIoU = 91,5%, MobileSAM 81,4%, FoodSAM 86,2%", "tỷ lệ Hallucination = 0%", hay bảng "Mức độ đạt mục tiêu" với toàn bộ dòng đánh dấu "Đạt" — đều là số liệu chưa từng được đo, được trình bày như kết quả đã có. Đây là một đề cương (chưa thực nghiệm), nên Chương 4 phải ở dạng khung thực nghiệm (thiết kế, chỉ số, cấu trúc bảng để trống) chứ không phải báo cáo kết quả, và Chương 5 không được khẳng định "đã xây dựng thành công" hay liệt kê mục tiêu đã đạt.
+(3) Phạm vi quá rộng so với 5 tháng / 2 sinh viên
+File mẫu đặt cả object detection ablation, segmentation ablation 3 phương pháp, dataset tự thu thập, VÀ Hybrid LLM Advisory đều ở vị thế bắt buộc ngang nhau, không phân biệt lõi/mở rộng — đúng như giảng viên hướng dẫn đã cảnh báo, đây là khối lượng công việc tương đương 3–4 khóa luận riêng biệt nếu làm nghiêm túc từng phần. Đề cương chính thức bắt buộc phải phân lớp lõi/mở rộng như trình bày tại Phần A.3 và D.
+(4) Lỗi kỹ thuật nhỏ cần soát lại
+Số thứ tự trích dẫn không nhất quán giữa phần thân bài và danh mục tham khảo (ví dụ DPF-Nutrition được gọi là [17] ở một chỗ nhưng là mục #14 trong danh mục) — đề cương chính thức dùng một bảng trích dẫn thống nhất duy nhất (Phần I), áp dụng xuyên suốt toàn bộ tài liệu.
+Một số ngưỡng kỳ vọng được viết như cam kết cứng (ví dụ Latency < 15 giây, MAPE khối lượng < một ngưỡng cụ thể) nên được viết lại thành "khoảng kỳ vọng có căn cứ từ literature", tránh tạo áp lực phải đạt đúng một con số trước khi có dữ liệu thực tế — đúng theo góp ý của giảng viên hướng dẫn.
+B.4. Nội dung không nên sao chép
+Bảng 4.6 và 4.7 (kết quả thực nghiệm định lượng với số liệu cụ thể) — toàn bộ số liệu trong các bảng này của file mẫu là số liệu minh họa/giả định, không nên đưa vào đề cương dưới bất kỳ hình thức nào, kể cả làm ví dụ.
+Bảng 5.6 (Mức độ đạt mục tiêu) với cột "Trạng thái: Đạt" cho mọi dòng — không phù hợp với một tài liệu ở giai đoạn đề cương.
+Các phát biểu khẳng định tuyệt đối như "giải quyết triệt để tính mơ hồ tỷ lệ", "đảm bảo cung cấp lời khuyên dinh dưỡng chính xác tuyệt đối" tại mục 5.5 — đây là các tuyên bố đóng góp quá mạnh so với mức độ có thể chứng minh bằng thực nghiệm của một khóa luận đại học.
+PHẦN C — LITERATURE REVIEW BỔ SUNG
+Bảng dưới đây tổng hợp các tài liệu học thuật đã được xác minh (tên, tác giả, năm, venue/DOI đối chiếu qua tìm kiếm) liên quan trực tiếp đến các thành phần kỹ thuật của đề tài. Toàn bộ số hiệu trích dẫn [n] khớp thống nhất với danh mục Tài liệu tham khảo tại Phần I.
+C.1. Nhận diện & phân loại món ăn
+Trích dẫn
+Bài toán / Đóng góp chính
+Ý nghĩa với đề tài
+[1] Nguyen V.H. et al., SOICT 2024
+VietFood67
+Dataset 33.003 ảnh, 68 lớp món ăn Việt Nam, có bounding box; baseline YOLOv10b mAP50 = 0,92.
+Dataset chính cho module detection; baseline để đối chiếu nếu thực hiện ablation [MỞ RỘNG].
+[24] Bossard et al., ECCV 2014
+Food-101
+101.000 ảnh, 101 lớp món ăn quốc tế, bài toán classification thuần (không bbox).
+Tài liệu nền, không dùng trực tiếp — không có bbox nên không phù hợp cho detection.
+[25] Lê K.H. et al., RIVF 2021
+VinaFood21
+EfficientNet-B0, 13.950 ảnh, 21 lớp, ~74,8% accuracy.
+Cho thấy hướng classification-only đã bão hòa với món ăn Việt Nam; củng cố lý do chuyển trọng tâm sang ước lượng khối lượng.
+[26] Trần T.A. et al., IEEE COMNETSAT 2021
+30VNFoods
+30 lớp món ăn Việt Nam, Top-5 accuracy ~96%.
+Tài liệu nền cho tổng quan nghiên cứu trong nước.
+[27] Nguyen et al., RIVF 2022
+SWVie-Food
+Món ăn đặc trưng Tây Nam Bộ.
+Tài liệu nền, minh chứng độ đa dạng vùng miền của ẩm thực Việt Nam.
+C.2. Kiến trúc Object Detection
+Trích dẫn
+Bài toán / Đóng góp chính
+Ý nghĩa với đề tài
+[2] Wang et al., NeurIPS 2024
+YOLOv10
+Dual label assignment, suy luận end-to-end không cần NMS.
+Kiến trúc baseline (đã dùng để lập baseline VietFood67 [1]).
+[3] Sapkota et al., 2025
+YOLO26 (arXiv:2509.25164)
+Loại bỏ DFL, bổ sung ProgLoss và STAL (Small-Target-Aware Label Assignment), optimizer MuSGD.
+[NEEDS EXPERIMENT — MỞ RỘNG] Ứng viên benchmark mới; STAL có tiềm năng cải thiện phát hiện món ăn phụ kích thước nhỏ.
+[4] Sapkota et al., 2025
+YOLO Evolution Overview (arXiv:2510.09653)
+Tổng quan so sánh YOLO26 với YOLO11/v8/v5.
+Tài liệu bổ trợ cho cơ sở lý thuyết Chương 2.
+C.3. Phân đoạn thực phẩm (Segmentation) — các ứng viên, chưa xác định người thắng
+Trích dẫn
+Bài toán / Đóng góp chính
+Ý nghĩa với đề tài
+[5] Lan et al., IEEE TMM 2023
+FoodSAM (arXiv:2308.05938)
+Kết hợp SAM gốc với SegFormer chuyên biệt cho food domain, đạt instance/panoptic/promptable segmentation trên ảnh thực phẩm.
+[ỨNG VIÊN] — mô hình chuyên biệt cho food, cần đo tốc độ suy luận thực tế (kiến trúc hai chặng có thể chậm hơn).
+[6] Alahmari et al., CVPRW 2024
+(arXiv:2312.03540)
+Fine-tune SAM bằng LoRA trên ảnh thực phẩm, đóng băng phần lớn trọng số gốc.
+[LITERATURE bổ trợ] — gợi ý hướng fine-tune nếu ứng viên chính chưa đạt mIoU kỳ vọng; không phải phạm vi lõi của đề tài.
+[7] Zhang et al., 2023
+MobileSAM (arXiv:2306.14289)
+Thay ViT-H bằng TinyViT qua distillation, nhanh hơn ~40 lần SAM gốc.
+[ỨNG VIÊN] — lựa chọn ưu tiên tốc độ, phù hợp latency <10s.
+[8] Ravi et al., 2024 (Meta AI)
+SAM 2 (arXiv:2408.00714)
+Backbone Hiera phân cấp, streaming memory cho video, prompt linh hoạt (điểm/box/mask).
+[ADDITIONAL CANDIDATE — MỞ RỘNG] Bổ sung làm ứng viên thứ ba vì backbone Hiera được báo cáo nhanh hơn ViT-H đáng kể; đáng thử nếu ablation segmentation được thực hiện đầy đủ.
+Lưu ý: Theo đúng yêu cầu của đề tài: không có phát biểu nào trong tài liệu này khẳng định một trong ba ứng viên trên là lựa chọn cuối cùng. Việc lựa chọn diễn ra sau bước kiểm thử nhanh (module lõi) hoặc ablation đầy đủ (module mở rộng) — xem Phần D.3 và Phần F.
+C.4. Ước lượng độ sâu, thể tích, khối lượng và dinh dưỡng từ ảnh
+Trích dẫn
+Dataset / Phương pháp
+Kết quả chính
+Ý nghĩa với đề tài
+[9] Yang et al., 2024
+Depth Anything V2 (arXiv:2406.09414)
+Kiến trúc DPT; có phiên bản Relative và Metric depth.
+SOTA monocular depth estimation.
+Mô hình depth chính của pipeline lõi; ưu tiên bản Metric để tránh sai số hiệu chỉnh thủ công.
+[10] Garrido-Jurado et al.,
+Pattern Recognition 2014
+Thiết kế và phát hiện ArUco fiducial marker.
+Sai số định vị <0,5mm ở 30–70cm.
+Cơ sở lý thuyết cho module camera calibration/scale reference — thành phần lõi.
+[11] Thames et al., CVPR 2021
+Nutrition5k
+5.006 đĩa ăn, cân thực + RGB-D.
+PMAE Calo ≈ 29,1% (chỉ RGB, không depth); thấp hơn khi có RGB-D.
+Chuẩn tham chiếu quan trọng nhất để đặt kỳ vọng sai số (Bảng C.1).
+[12] Han et al., Foods 2023
+DPF-Nutrition (arXiv:2310.11702)
+RGB + depth prediction fusion.
+MAPE năng lượng ≈ 17,8%.
+Minh chứng: bổ sung depth (dù là dự đoán, không đo trực tiếp) cải thiện đáng kể độ chính xác so với RGB thuần.
+[13] Ahmad et al., 2024
+VolETA (arXiv:2407.01717)
+MetaFood3D; visual embedding + 3D shape prior.
+Volume MAPE ≈ 10,97%.
+[LITERATURE] Cho thấy dải sai số volume có thể đạt mức thấp khi có shape prior tốt — tài liệu nền, không phải phương pháp được áp dụng trực tiếp.
+[14] Ma et al., ICPR 2024
+MFP3D (arXiv:2411.10492)
+Depth estimation → point cloud → regression.
+Volume MAPE ≈ 41,4%; Energy MAPE ≈ 68,05%.
+Cận trên thực tế của sai số khi mở rộng sang điều kiện ảnh đa dạng — căn cứ để không đặt kỳ vọng quá lạc quan.
+[15] Ma Jinge et al., 2025
+Size Matters (arXiv:2601.20051)
+Tái tạo mô hình 3D thực-tỷ-lệ từ ảnh đơn dùng object-size prior.
+Cải thiện volume estimation qua scale-aware reconstruction.
+[LITERATURE] Hướng thay thế marker-based scaling — ghi nhận là hướng phát triển tương lai [ĐỀ XUẤT], không thuộc phạm vi khóa luận này.
+[16] Vinod et al., CVPRW MetaFood 2024
+(arXiv:2404.12257)
+Food Portion Estimation via 3D Object Scaling.
+Kỹ thuật scale từ vật thể tham chiếu.
+[LITERATURE bổ trợ] Củng cố cơ sở lý thuyết cho việc dùng vật tham chiếu (ArUco) thay vì cảm biến độ sâu.
+[17] Haroon et al., 2025
+MetaFood 2025 Challenge (arXiv:2602.13041)
+Implicit-scale 3D reconstruction, benchmark đa phương pháp.
+Volume MAPE top method ≈ 21,0%.
+Chuẩn tham chiếu thời điểm gần nhất (2025) cho bài toán volume estimation không cảm biến chuyên dụng.
+[18] Vinod et al., 2026
+Survey (arXiv:2602.05078)
+Khảo sát toàn diện food portion estimation.
+Xác định scale ambiguity là thách thức trung tâm; fiducial marker vẫn là giải pháp kiểm soát tốt nhất hiện có.
+Cơ sở lý luận chính cho việc lựa chọn hướng tiếp cận ArUco của đề tài.
+[19] Jia et al., 2014
+(PMC4152011)
+Fiducial marker + eButton, đo khẩu phần từ ảnh 2D.
+Sai số tự báo cáo 21–45%; minh chứng hiệu quả của fiducial marker.
+Căn cứ lịch sử cho việc dùng marker làm scale reference; số liệu sai số tự báo cáo dùng trong Đặt vấn đề.
+[29] Lo et al., IEEE JBHI 2019
+Review tổng quan food classification & volume estimation cho dietary assessment.
+Tổng hợp phương pháp và hạn chế tính đến 2019.
+Tài liệu nền cho Chương 2, bổ trợ phần lịch sử phát triển của bài toán.
+C.5. Mô hình ngôn ngữ lớn & dinh dưỡng học
+Trích dẫn
+Nội dung
+Ý nghĩa với đề tài
+[20] Qwen Team, 2024
+(arXiv:2412.15115)
+Qwen2.5 Technical Report — mô hình instruction-tuned đa ngôn ngữ, hỗ trợ tiếng Việt.
+[MỞ RỘNG] Ứng viên LLM cho tầng diễn đạt của Hybrid Advisory, chạy local qua Ollama.
+[28] Vaswani et al., NeurIPS 2017
+Kiến trúc Transformer, self-attention.
+Nền tảng lý thuyết cho Chương 2 (cơ sở của mọi LLM hiện đại).
+[21] Bộ Y tế / Viện Dinh dưỡng Quốc gia, 2016
+Nhu cầu Dinh dưỡng Khuyến nghị cho người Việt Nam (RDA).
+Cơ sở tính RDA cho Rule-based Engine — nguồn chính thức trong nước, ưu tiên hơn RDA quốc tế.
+[22] Viện Dinh dưỡng Quốc gia, 2017
+Bảng thành phần thực phẩm Việt Nam.
+Nguồn tra cứu dinh dưỡng chính cho module Nutrition Estimation — module lõi.
+[23] WHO, 2024
+Obesity and Overweight Fact Sheet.
+Số liệu bối cảnh cho Đặt vấn đề (Chương 1).
+C.6. Bảng C.1 — Tổng hợp sai số dinh dưỡng/khối lượng đã công bố (căn cứ đặt kỳ vọng)
+Phương pháp
+Nguồn depth
+Sai số công bố
+Nutrition5k, chỉ RGB [11]
+Không depth
+PMAE Calo ≈ 29,1%
+Nutrition5k, RGB-D [11]
+Depth sensor thực đo
+PMAE Calo thấp hơn đáng kể
+DPF-Nutrition [12]
+Depth prediction (dự đoán)
+MAPE Năng lượng ≈ 17,8%
+VolETA [13]
+3D shape prior
+Volume MAPE ≈ 10,97%
+MFP3D [14]
+Point cloud từ depth
+Volume MAPE ≈ 41,4%; Energy MAPE ≈ 68,05%
+MetaFood 2025, top method [17]
+Implicit-scale 3D
+Volume MAPE ≈ 21,0%
+Tự báo cáo thủ công (con người) [19]
+Không áp dụng
+Sai lệch 21–45%
+Đề tài (kỳ vọng, [PROPOSED])
+ArUco + Depth Anything V2 Metric, đơn ảnh
+Kỳ vọng MAPE Calo ~25–40%, dựa trên nội suy từ dải trên
+Lưu ý: Khoảng kỳ vọng 25–40% không phải ngưỡng mục tiêu bắt buộc, mà là khoảng có căn cứ literature, theo đúng khuyến nghị của giảng viên hướng dẫn. Món ăn Việt Nam (canh, phở, món trộn nhiều thành phần) có khả năng khó hơn các món phương Tây dạng khối đơn giản phổ biến trong Nutrition5k/MetaFood3D.
+PHẦN D — ĐỀ CƯƠNG CHI TIẾT CUỐI CÙNG
+Đây là đề cương (outline) — mỗi mục nêu ngắn gọn nội dung sẽ được triển khai khi viết khóa luận hoàn chỉnh, không phải nội dung đầy đủ. Ký hiệu [LÕI]/[MỞ RỘNG] áp dụng ở cấp mục lớn khi có phân biệt rõ ràng.
+CHƯƠNG 1 — GIỚI THIỆU
+1.1. Bối cảnh và lý do chọn đề tài
+Trình bày thực trạng thừa cân/béo phì và hạn chế của phương pháp theo dõi dinh dưỡng thủ công [23, 19]; giới thiệu VietFood67 [1] như nền tảng sẵn có; nêu khoảng trống về ước lượng khối lượng (mục A.2) làm lý do chọn đề tài.
+1.2. Vấn đề cần giải quyết
+Khôi phục tỷ lệ metric từ ảnh 2D đơn (depth scale recovery) — scale ambiguity theo [18].
+Phân đoạn chính xác ranh giới món ăn Việt Nam có hình dạng phức tạp, bề mặt không đồng đều.
+Chuyển đổi thể tích sang khối lượng khi chưa có density database cho món ăn Việt Nam.
+Kiểm soát rủi ro hallucination nếu tích hợp LLM vào tư vấn dinh dưỡng [MỞ RỘNG].
+1.3. Mục tiêu nghiên cứu
+1.3.1. Mục tiêu tổng quát và 1.3.2. Mục tiêu cụ thể — tham chiếu trực tiếp nội dung đã trình bày đầy đủ tại Phần A.3.
+1.4. Câu hỏi nghiên cứu
+Tham chiếu Phần A.4 (RQ1–RQ5, đã phân loại LÕI/MỞ RỘNG).
+1.5. Đối tượng nghiên cứu
+Ảnh 2D bữa ăn Việt Nam thuộc các lớp VietFood67 [1], có ArUco marker [10] đặt cạnh đĩa/tô.
+Các kiến trúc detection (YOLOv10b [2], YOLO26m [3, 4]), các ứng viên segmentation (FoodSAM [5], MobileSAM [7], SAM 2 [8] — chưa xác định người thắng), mô hình depth (Depth Anything V2 [9]).
+Mô hình toán học: pinhole camera model, solvePnP, homography, column integration.
+[MỞ RỘNG] LLM Qwen2.5-7B-Instruct [20], Bảng RDA Việt Nam [21], Bảng TPTP Việt Nam [22].
+1.6. Phạm vi nghiên cứu
+1.6.1. Phạm vi dữ liệu
+VietFood67 [1] làm dữ liệu chính; [MỞ RỘNG] 5–10 lớp tự thu thập. Ground-Truth khối lượng: quy mô cụ thể (số phần ăn, số lớp, số mẫu/lớp) cần chốt tại Chương 3 dựa trên thời gian thực tế khả dụng — xem lưu ý B.3(4) về việc tránh cam kết con số cứng quá sớm.
+1.6.2. Phạm vi không gian
+Môi trường huấn luyện (Kaggle/cloud) và môi trường triển khai/suy luận cục bộ — nêu cụ thể cấu hình phần cứng sử dụng thực tế.
+1.6.3. Phạm vi thời gian
+Khung 5 tháng theo Tiến độ thực hiện (trang cuối); nguồn tài liệu tham khảo tập trung giai đoạn 2013–2026.
+1.6.4. Phạm vi nội dung
+Giả định mặt phẳng ngang (flat surface assumption) — ghi rõ là hạn chế đã biết từ thiết kế.
+Fallback bắt buộc khi không phát hiện ArUco marker: yêu cầu chụp lại, không ước lượng trên dữ liệu thiếu.
+Không xử lý phần thực phẩm ẩn dưới bề mặt/đáy bát sâu (ghi nhận là hạn chế).
+[MỞ RỘNG] LLM chạy suy luận cục bộ, không dùng API trả phí.
+1.7. Phương pháp nghiên cứu (tổng quan)
+Bốn nhóm phương pháp: nghiên cứu lý thuyết (tổng hợp literature Chương 2), thực nghiệm kỹ thuật (huấn luyện/tích hợp mô hình), đo đạc thực tế (cân đo Ground-Truth, water displacement cho density), phát triển phần mềm (kiến trúc 3 tầng cho hệ thống demo — thuộc phạm vi MỞ RỘNG).
+1.8. Sản phẩm dự kiến
+[LÕI] Density Database thực nghiệm; tập Ground-Truth khối lượng; pipeline ước lượng khối lượng hoàn chỉnh (mã nguồn); báo cáo phân tích sai số định lượng.
+[MỞ RỘNG] Báo cáo ablation study (detection, segmentation); Web Demo (FastAPI/Streamlit); module Hybrid LLM Advisory.
+Quyển báo cáo khóa luận hoàn chỉnh theo chuẩn ngành.
+1.9. Ý nghĩa khoa học và thực tiễn
+1.9.1. Khoa học: đóng góp có căn cứ theo Phần A.6 (Expected/Demonstrated). 1.9.2. Thực tiễn: hỗ trợ theo dõi dinh dưỡng không cần cân bếp thủ công; Density Database và Ground-Truth dataset là tài nguyên tái sử dụng được.
+1.10. Cấu trúc khóa luận
+Giới thiệu ngắn gọn nội dung 5 chương, tương tự cách trình bày tại mục B.1 (kế thừa cấu trúc từ file mẫu).
+CHƯƠNG 2 — CƠ SỞ LÝ THUYẾT VÀ TỔNG QUAN NGHIÊN CỨU
+So với file mẫu (23 mục 2.1–2.22), số mục được tối ưu lại còn 10 mục, gộp các mục có liên hệ chặt (ví dụ CNN + Object Detection + YOLO thành một mục), và không tách riêng mục lý thuyết cho SAM 2 — vì đây là một trong ba ứng viên ngang hàng, sẽ trình bày cả ba trong cùng một mục so sánh.
+2.1. Học máy, Học sâu và Object Detection
+CNN, backpropagation, tối ưu hóa; bài toán object detection (định vị + phân loại); kiến trúc họ YOLO qua các thế hệ, tập trung YOLOv10 [2] (NMS-free, dual label assignment) và YOLO26 [3, 4] (ProgLoss, STAL, MuSGD).
+2.2. Mô hình nền tảng cho phân đoạn ảnh (Segmentation Foundation Models)
+Nguyên lý chung của Segment Anything (prompt-based segmentation); trình bày song song, cân bằng ba ứng viên: FoodSAM [5] (SAM + SegFormer chuyên biệt food), MobileSAM [7] (TinyViT, tối ưu tốc độ), SAM 2 [8] (Hiera backbone, streaming memory). Không xếp hạng trước — chỉ mô tả đặc điểm kiến trúc để làm cơ sở cho tiêu chí lựa chọn tại Chương 3.
+2.3. Ước lượng độ sâu đơn ảnh (Monocular Depth Estimation)
+Bài toán ill-posed; Depth Anything V2 [9] — kiến trúc DPT, phân biệt Relative depth (không đơn vị) và Metric depth (đơn vị mét); quan hệ phi tuyến Z = a/(d+b) giữa hai loại output khi chỉ có bản Relative.
+2.4. Hình học Camera và ArUco Marker
+Pinhole camera model, ma trận nội tại K, camera calibration (checkerboard); ArUco marker [10] — detectMarkers, solvePnP, homography; vai trò kép: scale anchor cho depth recovery và cơ sở tính diện tích thực per-pixel.
+2.5. Tái tạo thể tích 3D và Mô hình khối lượng riêng thực phẩm
+Phương pháp column integration (tích phân cột) kết hợp food mask + metric depth map + homography; công thức chuyển đổi Volume → Mass qua density (ρ); phương pháp đo density bằng water displacement; căn cứ literature [11–19] cho việc đặt kỳ vọng sai số (dẫn Bảng C.1).
+2.6. Dinh dưỡng học và Cá nhân hóa
+[MỞ RỘNG nếu Hybrid Advisory được triển khai] BMI, TDEE (Mifflin–St Jeor), RDA Việt Nam [21]; Bảng thành phần thực phẩm Việt Nam [22]; nguyên lý Rule-based Engine.
+2.7. Mô hình Ngôn ngữ Lớn và kiến trúc Tư vấn Hybrid
+[MỞ RỘNG] Kiến trúc Transformer [28]; Qwen2.5 [20]; rủi ro hallucination trong domain sức khỏe; nguyên tắc phân lập trách nhiệm (Rule Engine tính toán, LLM chỉ diễn đạt).
+2.8. Các chỉ số đánh giá
+Bảng tổng hợp chỉ số theo tác vụ: Detection (mAP@0.5, mAP@0.5:0.95, Precision/Recall/F1); Segmentation (IoU, mIoU, Dice — lựa chọn chỉ số nào phụ thuộc dữ liệu ground-truth mask thực có, xem Phần F); Depth (MAE, RMSE, AbsRel — dùng nếu có ground-truth depth độc lập, [NEEDS EXPERIMENT] xác định tính khả thi); Volume/Mass (MAE, MAPE); [MỞ RỘNG] Hệ thống (Latency, SUS, Hallucination Rate).
+2.9. Tổng quan nghiên cứu liên quan và khoảng trống nghiên cứu
+Tái sử dụng bảng tổng hợp tại Phần C (đặc biệt Bảng C.1) và khoảng trống nghiên cứu tại Phần A.2, trình bày dưới dạng bảng so sánh nghiên cứu | dataset | phương pháp | chỉ số | hạn chế, theo đúng mẫu trình bày tốt của file tham khảo (mục B.1).
+2.10. Công nghệ và công cụ sử dụng
+[LÕI] Python, PyTorch, OpenCV (cv2.aruco, solvePnP, calibrateCamera), Ultralytics, Depth-Anything-V2 engine, thư viện segmentation tương ứng ứng viên được chọn.
+[MỞ RỘNG] Ollama + GGUF (Qwen2.5), FastAPI, Streamlit, PostgreSQL.
+CHƯƠNG 3 — PHƯƠNG PHÁP ĐỀ XUẤT VÀ THIẾT KẾ
+3.1. Problem Formulation
+Phát biểu toán học của bài toán: cho ảnh I và ArUco marker M có kích thước thực đã biết, ước lượng khối lượng m_i cho từng món ăn i trong I, từ đó suy ra giá trị dinh dưỡng N_i. Nêu rõ các biến số, giả định (flat surface), và input/output của từng giai đoạn.
+3.2. Tổng quan phương pháp
+Tóm tắt cách tiếp cận: kết hợp hình học chiếu (ArUco + camera calibration) với học sâu (detection + segmentation + depth) để giải bài toán thiếu xác định (ill-posed) đã nêu tại 1.2.
+3.3. Kiến trúc pipeline tổng thể [ĐỀ XUẤT]
+Sơ đồ hai luồng song song (CPU: ArUco calibration; GPU: Detection → Segmentation → Depth) hội tụ tại bước Scale Alignment & Column Integration → Volume → Mass → Nutrition → [MỞ RỘNG: Rule Engine → LLM]. Đây là kiến trúc [ĐỀ XUẤT] dựa trên phân tích literature (Phần C); có thể điều chỉnh thứ tự/thành phần nếu thực nghiệm ban đầu (Giai đoạn 1, xem Tiến độ) cho thấy cần thiết — ví dụ bổ sung bước tiền xử lý khử nhiễu ảnh trước detection nếu chất lượng ảnh đầu vào không ổn định.
+3.4. Food Recognition (Detection) [LÕI]
+Chọn một kiến trúc detection (YOLOv10b [2] hoặc YOLO26m [3, 4]) thông qua so sánh nhanh trên một tập nhỏ validation (không phải ablation đầy đủ ở giai đoạn lõi). Input: ảnh RGB. Output: bounding box + nhãn lớp + confidence, dùng làm prompt không gian cho module Segmentation.
+3.5. Segmentation Module và 3.6. Segmentation Candidate Selection [LÕI + MỞ RỘNG]
+⚠ Đây là điểm thiết kế quan trọng nhất về mặt phương pháp luận của đề tài: KHÔNG mặc định một phương pháp phân đoạn là lựa chọn cuối cùng.
+Sơ đồ lựa chọn:
+FoodSAM  [5]
+SAM 2  [8]  (ADDITIONAL CANDIDATE)      →   Segmentation Module   →   Evaluation   →   Selected Model
+MobileSAM  [7]
+[LÕI] Vòng lọc nhanh (screening): kiểm thử FoodSAM và MobileSAM trên một tập nhỏ (~20–30 ảnh) để chọn 1 phương pháp làm thành phần ổn định cho pipeline lõi, ưu tiên tiêu chí tốc độ suy luận và tính dễ tích hợp trong thời gian hạn chế.
+[MỞ RỘNG] Nếu tiến độ cho phép: ablation study đầy đủ 3 ứng viên (FoodSAM, MobileSAM, SAM 2) trên tập lớn hơn (~50 ảnh có ground-truth mask thủ công), đánh giá theo các tiêu chí tại mục 3.9 và Phần F.
+Downstream Effect [RECOMMENDED EXPERIMENT]: không chỉ đánh giá segmentation độc lập bằng mIoU, mà đo lường mức ảnh hưởng của từng phương pháp phân đoạn đến sai số ước lượng thể tích ở tầng sau (Segmentation Model → Food Mask → Volume Estimation Error) — đây là tiêu chí quan trọng nhất vì mục tiêu cuối cùng của pipeline là khối lượng chính xác, không phải mask đẹp.
+3.7. Depth Estimation [LÕI]
+Depth Anything V2 [9], ưu tiên phiên bản Metric. Nếu kết quả trên ảnh cận cảnh thực phẩm không ổn định, phương án dự phòng [NEEDS EXPERIMENT]: dùng phiên bản Relative và tự fit hệ số a, b của quan hệ Z = a/(d+b) từ các điểm góc ArUco đã biết độ sâu thực.
+3.8. ArUco Scale Calibration [LÕI]
+Quy trình: camera calibration một lần (checkerboard) → lưu ma trận K và hệ số méo ảnh → mỗi ảnh chụp: detectMarkers → solvePnP → homography. Thiết kế cơ chế fallback: nếu không phát hiện marker, hệ thống từ chối xử lý và yêu cầu chụp lại — không suy luận trên dữ liệu tỷ lệ không xác định.
+3.9. Portion / Volume Estimation và 3.10. Mass Estimation [LÕI]
+Column integration theo homography (không dùng hằng số pixel-area toàn cục); nhân với density tra cứu từ Density Database tự đo (mục 3.4 Chương 1 / Phần D-Chương 4) để ra khối lượng, kèm khoảng tin cậy dựa trên độ lệch chuẩn density đã ghi nhận.
+3.11. Nutritional Estimation [LÕI]
+Tra cứu Bảng thành phần thực phẩm Việt Nam [22] theo khối lượng ước lượng; công thức tỷ lệ tuyến tính theo khối lượng trên 100g.
+3.12. Personalized Nutrition Engine và 3.13. LLM Advisory [MỞ RỘNG]
+Rule-based Engine tính BMI/TDEE/RDA [21], xuất structured facts JSON. LLM (Qwen2.5-7B [20], qua Ollama) chỉ diễn đạt lại facts — ràng buộc prompt nghiêm ngặt, không tự suy luận số liệu mới. Nếu thời gian không cho phép, thay thế bằng template rule-based thuần (vẫn tạo ra lời khuyên có ý nghĩa, chỉ kém tự nhiên hơn về văn phong).
+3.14. Database, 3.15. API / Data Flow, 3.16. System Architecture [MỞ RỘNG]
+Thiết kế lược đồ dữ liệu (hồ sơ người dùng, lịch sử bữa ăn, Density Database); luồng API (FastAPI) giữa các module; kiến trúc triển khai tổng thể — nội dung chi tiết thuộc phạm vi mở rộng, trình bày đầy đủ tại Chương 5 nếu được triển khai.
+3.9(bis). Tiêu chí và ngưỡng kỳ vọng đánh giá
+Trình bày dưới dạng khoảng kỳ vọng có căn cứ literature (không phải ngưỡng cam kết cứng), tham chiếu trực tiếp Bảng C.1. Ví dụ cách diễn đạt phù hợp: "Kỳ vọng MAPE khối lượng nằm trong khoảng quan sát được ở các nghiên cứu tương tự (khoảng 10–68% tùy phương pháp và độ phức tạp món ăn); mục tiêu của đề tài là đạt mức trong nửa dưới của khoảng này, đồng thời phân tích rõ nguồn gốc sai số."
+CHƯƠNG 4 — THỰC NGHIỆM VÀ ĐÁNH GIÁ
+⚠ Toàn bộ chương này là KHUNG thực nghiệm (thiết kế, chỉ số, cấu trúc bảng để trống) — không phải báo cáo kết quả. Số liệu cụ thể chỉ được điền sau khi hoàn tất huấn luyện/đo đạc thực tế, theo đúng nguyên tắc không bịa kết quả đã nêu tại Phần B.3(2).
+4.1. Experimental Setup
+Mô tả cấu hình phần cứng huấn luyện (cloud GPU) và phần cứng triển khai/suy luận cục bộ; phiên bản phần mềm cố định (ghi rõ version của Ultralytics, thư viện segmentation, Depth-Anything-V2 — đặc biệt quan trọng với YOLO26 vì đây là kiến trúc rất mới, API có thể còn thay đổi).
+4.2. Dataset và 4.3. Data Preparation
+Mô tả VietFood67 [1] và (nếu có) dữ liệu tự thu thập; tỷ lệ chia train/validation/test theo phương pháp phân tầng; augmentation (flip, rotation, color jitter, mosaic); [LÕI] mô tả chi tiết quy trình xây dựng Density Database (water displacement) và tập Ground-Truth khối lượng (số phần ăn, số lớp, số mẫu/lớp — số liệu cụ thể chốt sau khi thực hiện thực tế ở Giai đoạn 2, xem Tiến độ).
+4.4. Training Configuration [chỉ áp dụng nếu tự huấn luyện detection]
+Nếu dùng trọng số pretrained sẵn có mà không fine-tune, ghi rõ điều này thay vì trình bày một bảng hyperparameter không dùng đến. Nếu có fine-tune: image size, epochs, batch size, optimizer, augmentation — thiết lập đồng nhất nếu có so sánh [MỞ RỘNG] giữa YOLOv10b và YOLO26m.
+4.5. Evaluation Metrics
+Bảng ánh xạ Tác vụ → Chỉ số → Có ground-truth để đo hay không (quan trọng: chỉ đề xuất chỉ số thực sự đo được với dữ liệu đang có, không mặc định đủ bộ chỉ số lý tưởng).
+Tác vụ
+Chỉ số đề xuất
+Điều kiện dữ liệu cần có
+Detection [LÕI/MỞ RỘNG]
+Precision, Recall, F1, mAP@0.5, mAP@0.5:0.95
+Test set VietFood67 đã có nhãn — khả thi ngay.
+Segmentation [LÕI/MỞ RỘNG]
+mIoU (bắt buộc); Dice [NEEDS EXPERIMENT — tùy chọn]
+Cần tự gán nhãn mask thủ công cho một subset ảnh (chưa có sẵn) — [NEEDS EXPERIMENT] xác nhận tính khả thi về thời gian.
+Depth [MỞ RỘNG, không chắc chắn khả thi]
+MAE, RMSE, AbsRel
+Cần ground-truth depth độc lập (không có sẵn) — [NEEDS EXPERIMENT] đánh giá có nên bỏ qua đánh giá depth độc lập, chỉ đánh giá gián tiếp qua sai số volume/mass cuối cùng.
+Volume / Mass [LÕI]
+MAE (g), MAPE (%)
+Ground-Truth cân thực tế tự xây dựng — khả thi, đây là chỉ số trung tâm của đề tài.
+Nutrition [LÕI]
+MAE, MAPE (theo từng nhóm chất)
+Suy ra từ Ground-Truth khối lượng + Bảng TPTP VN [22] — khả thi.
+Hệ thống [MỞ RỘNG]
+Latency (giây/ảnh), SUS (khảo sát), Hallucination Rate (%)
+Cần đo thực tế trên phần cứng cụ thể; SUS cần khảo sát người dùng thật.
+Lưu ý: Không mặc định phải có đủ toàn bộ chỉ số trên. Cụ thể, đánh giá Depth độc lập (MAE/RMSE/AbsRel) có thể không khả thi nếu không thu thập được ground-truth depth — trong trường hợp đó, chất lượng depth chỉ được đánh giá gián tiếp thông qua sai số volume/mass cuối cùng, và cần ghi rõ đây là giới hạn của phương pháp đánh giá.
+4.6. YOLO Evaluation [MỞ RỘNG nếu có ablation]
+Cấu trúc bảng kết quả (điền sau thực nghiệm):
+Kiến trúc
+mAP@0.5
+mAP@0.5:0.95
+Params
+Inference (ms)
+YOLOv10b [1, 2] (nếu tái lập)
+[TBD]
+[TBD]
+20,4M
+[TBD]
+YOLO26m [3, 4] (nếu thực nghiệm)
+[TBD]
+[TBD]
+[TBD]
+[TBD]
+4.7. Segmentation Comparison
+Cấu trúc bảng kết quả (điền sau thực nghiệm) — áp dụng cho vòng screening [LÕI, 1–2 ứng viên] hoặc ablation đầy đủ [MỞ RỘNG, 3 ứng viên]:
+Phương pháp
+mIoU
+Inference (ms)
+GPU Memory
+Ảnh hưởng sai số Volume downstream
+MobileSAM [7]
+[TBD]
+[TBD]
+[TBD]
+[TBD — RECOMMENDED EXPERIMENT]
+FoodSAM [5]
+[TBD]
+[TBD]
+[TBD]
+[TBD — RECOMMENDED EXPERIMENT]
+SAM 2 [8] (nếu thực nghiệm — MỞ RỘNG)
+[TBD]
+[TBD]
+[TBD]
+[TBD — RECOMMENDED EXPERIMENT]
+Lưu ý: Cột cuối (ảnh hưởng downstream đến sai số volume) là tiêu chí quan trọng nhất theo thiết kế tại mục 3.6 — không chỉ dừng ở so sánh mIoU độc lập.
+4.8. Depth Evaluation [MỞ RỘNG / có điều kiện]
+Chỉ thực hiện nếu thu thập được ground-truth depth độc lập (mục 4.5); nếu không, mục này ghi nhận rõ và chuyển sang đánh giá gián tiếp tại 4.9.
+4.9. Volume / Portion Evaluation [LÕI — trọng tâm đánh giá của đề tài]
+Cấu trúc bảng kết quả chính (điền sau thực nghiệm):
+Cấu hình pipeline
+MAE khối lượng (g)
+MAPE khối lượng (%)
+Số mẫu đánh giá
+Pipeline đầy đủ (Detection + Segmentation đã chọn + Depth V2 + ArUco)
+[TBD]
+[TBD]
+[TBD]
+Kèm theo bảng phân tách đóng góp sai số theo nguồn (error decomposition) — nội dung đánh giá quan trọng nhất của đề tài, theo đúng góp ý của giảng viên hướng dẫn:
+Sai số do detection nhận diện sai lớp/vị trí.
+Sai số do mask phân đoạn không chính xác (biên dạng, over/under-segmentation).
+Sai số do nhiễu bản đồ độ sâu (đặc biệt trên bề mặt lỏng/phản chiếu).
+Sai số do biến thiên density giữa các mẫu cùng lớp.
+4.10. Nutritional Estimation Evaluation [LÕI]
+MAE/MAPE cho từng nhóm chất (Calories, Protein, Carb, Fat), suy ra trực tiếp từ sai số khối lượng tại mục 4.9 kết hợp Bảng TPTP VN [22]. Đối chiếu với khoảng kỳ vọng tại Bảng C.1.
+4.11. End-to-End Evaluation [MỞ RỘNG]
+Đo latency từng bước và tổng trên phần cứng suy luận cụ thể; so sánh với mục tiêu phi chức năng đã đặt tại Chương 3 (trình bày như khoảng kỳ vọng, không phải ngưỡng cứng).
+4.12. Ablation Study [MỞ RỘNG — tổng hợp]
+Tổng hợp cả hai nhóm ablation nếu thực hiện: Detection (YOLOv10b vs YOLO26m) và Segmentation (2–3 ứng viên); nêu rõ nhóm nào được ưu tiên thực hiện trước nếu thời gian hạn chế (khuyến nghị: Segmentation ablation có giá trị cao hơn vì ảnh hưởng trực tiếp đến Module lõi, nên ưu tiên trước Detection ablation).
+4.13. Error Analysis
+Phân tích định tính các trường hợp sai lệch lớn: occlusion (thức ăn bị che khuất/chìm dưới bề mặt), nhiễu bề mặt lỏng, biến động density giữa các quán ăn, lỗi phát hiện/định vị ArUco marker (nghiêng, nhăn). Minh họa bằng ảnh case study cụ thể (Hình dự kiến, xem Phần G).
+4.14. Discussion
+So sánh kết quả đạt được (sau khi có số liệu thật) với các mốc tham chiếu tại Bảng C.1; thảo luận đóng góp thực tế đạt được so với Expected Contribution tại Phần A.6; tự đánh giá trung thực về mức độ trả lời được các Research Question tại Phần A.4.
+CHƯƠNG 5 — XÂY DỰNG HỆ THỐNG, KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+5.1. Kiến trúc hệ thống triển khai [MỞ RỘNG]
+Nếu thời gian cho phép: mô tả kiến trúc client-server (Frontend Streamlit ↔ Backend FastAPI ↔ AI Inference Engine). Nếu không triển khai đầy đủ thành web app, thay bằng: mô tả pipeline dưới dạng script/notebook có thể chạy end-to-end, kèm ảnh minh họa input/output — vẫn là một sản phẩm hợp lệ để trình bày và bảo vệ.
+5.2. Thiết kế Backend / API [MỞ RỘNG]
+Nếu triển khai: liệt kê endpoint chính (nhận ảnh + hồ sơ người dùng → trả kết quả detection/segmentation; ước lượng dinh dưỡng; [nếu có] sinh tư vấn).
+5.3. Thiết kế giao diện người dùng [MỞ RỘNG]
+Nếu triển khai: mô tả các khu vực giao diện (input ảnh + hồ sơ, hiển thị trực quan hóa detection/mask/depth, bảng dinh dưỡng, [nếu có] khung tư vấn).
+5.4. Kiểm thử hệ thống [MỞ RỘNG]
+Functional testing (trường hợp có/không có marker); Performance testing (latency thực đo); AI testing (ổn định khi chuyển từ môi trường huấn luyện sang suy luận thực tế).
+5.5. Kết luận
+⚠ Phần này CHỈ được viết sau khi có kết quả thực nghiệm thật. Đề cương chỉ định hướng cách viết, không soạn sẵn nội dung kết luận.
+Hướng dẫn viết: tóm tắt trung thực những gì đã làm được (dựa trên kết quả Chương 4 thực tế), không dùng các cụm từ khẳng định tuyệt đối kiểu "giải quyết triệt để", "chính xác tuyệt đối" — thay bằng cách diễn đạt có giới hạn rõ ràng, ví dụ: "Khóa luận đã xây dựng và đánh giá thực nghiệm một pipeline ước lượng khối lượng/dinh dưỡng cho món ăn Việt Nam, đạt sai số MAPE khối lượng [số liệu thật] trên tập Ground-Truth tự xây dựng — nằm trong/ngoài khoảng kỳ vọng của literature (Bảng C.1)."
+5.6. Mức độ đạt mục tiêu
+Bảng đối chiếu Mục tiêu (Phần A.3) ↔ Kết quả thực tế — CHỈ điền cột "Kết quả" và "Trạng thái" sau khi hoàn tất Chương 4. Cấu trúc bảng:
+Mục tiêu (từ Phần A.3)
+Kết quả thực tế
+Trạng thái
+[LÕI] Pipeline ước lượng khối lượng ArUco + Depth V2 + Segmentation
+[Điền sau thực nghiệm]
+[Đạt / Đạt một phần / Chưa đạt]
+[LÕI] Density Database
+[Điền sau thực nghiệm]
+[Đạt / Đạt một phần / Chưa đạt]
+[LÕI] Ground-Truth khối lượng
+[Điền sau thực nghiệm]
+[Đạt / Đạt một phần / Chưa đạt]
+[MỞ RỘNG] Ablation Detection
+[Điền sau thực nghiệm]
+[Đạt / Không thực hiện]
+[MỞ RỘNG] Ablation Segmentation
+[Điền sau thực nghiệm]
+[Đạt / Không thực hiện]
+[MỞ RỘNG] Hybrid LLM Advisory
+[Điền sau thực nghiệm]
+[Đạt / Không thực hiện]
+Lưu ý: Không mặc định toàn bộ dòng là "Đạt" — bảng này chỉ có ý nghĩa khi phản ánh đúng thực tế, kể cả khi một số mục Mở rộng không kịp thực hiện.
+5.7. Hạn chế
+Giả định mặt phẳng ngang (flat surface assumption) — sai lệch hệ thống với món ăn trong bát/tô sâu.
+Ràng buộc bắt buộc có ArUco marker khi chụp — ảnh hưởng trải nghiệm người dùng.
+Density Database dựa trên số mẫu đo hạn chế mỗi lớp — độ đại diện chưa cao với các món có biến thiên lớn (canh, món trộn); cần nêu rõ số mẫu/lớp thực tế đã đo và tự đánh giá mức độ đủ/chưa đủ.
+Tập Ground-Truth quy mô vừa phải — đủ cho đánh giá MAE/MAPE tổng hợp nhưng có thể mỏng nếu muốn phân tích chi tiết theo từng lớp món ăn riêng lẻ.
+Phần thực phẩm bị che khuất/chìm dưới bề mặt chưa được ước lượng chính xác.
+[MỞ RỘNG] Nếu triển khai LLM: rủi ro hallucination dù đã có cơ chế kiểm soát; latency tổng hệ thống có thể vượt mục tiêu ban đầu trên phần cứng hạn chế — khuyến nghị làm smoke test end-to-end sớm (Giai đoạn 1) để phát hiện nghẽn cổ chai trước khi đầu tư sâu.
+5.8. Hướng phát triển
+[ĐỀ XUẤT] Marker-less scale recovery dựa trên object-size prior, tham khảo hướng tiếp cận tại [15].
+[ĐỀ XUẤT] Mở rộng Density Database và Ground-Truth dataset về quy mô và độ đa dạng vùng miền.
+[ĐỀ XUẤT] Nếu dùng SAM 2 [8]: khai thác streaming memory để phân đoạn từ video đa góc quay quanh đĩa ăn, cải thiện xử lý occlusion.
+[ĐỀ XUẤT] Tối ưu hóa LLM (quantization) để hướng tới triển khai on-device.
+TIẾN ĐỘ THỰC HIỆN
+Khóa luận thực hiện trong 05 tháng (khoảng 20 tuần), 2 sinh viên. Phân bổ thời gian phản ánh đúng tỷ trọng Lõi/Mở rộng đã thống nhất — phần lớn thời gian giữa kỳ tập trung cho Module 3 (ArUco + Depth + Volume/Mass).
+Giai đoạn 1 — Chuẩn bị, nghiên cứu lý thuyết và Smoke Test (Tuần 1–4)
+Hoàn thiện đề cương; nghiên cứu tài liệu (Phần C); camera calibration.
+[RECOMMENDED EXPERIMENT] Smoke test end-to-end sớm: chạy thử toàn bộ pipeline (kể cả với model chưa tối ưu) trên một vài ảnh mẫu để xác nhận tính khả thi kỹ thuật và đo latency sơ bộ — tránh phát hiện nghẽn cổ chai muộn ở Giai đoạn 3, theo đúng khuyến nghị của giảng viên hướng dẫn.
+Giai đoạn 2 — Xây dựng dữ liệu và cài đặt Module lõi (Tuần 5–10)
+[LÕI] Đo Density Database (water displacement); cân đo Ground-Truth khối lượng.
+[LÕI] Cài đặt và tích hợp: Detection (1 kiến trúc) → Segmentation (screening 1–2 ứng viên) → Depth Anything V2 Metric → ArUco pipeline → Volume/Mass → Nutrition lookup.
+Giai đoạn 3 — Thực nghiệm và đánh giá Module lõi (Tuần 11–14)
+[LÕI] Chạy pipeline trên tập Ground-Truth; tính MAE/MAPE khối lượng và dinh dưỡng; phân tích error decomposition.
+[MỞ RỘNG — nếu đúng tiến độ] Ablation Segmentation đầy đủ (bổ sung SAM 2); Ablation Detection (YOLOv10b vs YOLO26m); tích hợp Hybrid LLM Advisory.
+Giai đoạn 4 — Hoàn thiện và báo cáo (Tuần 15–20)
+Viết Chương 4 (điền số liệu thật) và Chương 5; [MỞ RỘNG] đóng gói demo nếu có; chuẩn bị slide và bảo vệ.
+Điểm kiểm tra tiến độ với giảng viên hướng dẫn (checkpoint)
+Theo đề nghị của giảng viên hướng dẫn, nhóm trao đổi lại về việc chốt danh sách Lõi/Mở rộng trước khi bắt đầu Giai đoạn 2, và báo cáo kết quả smoke test (Giai đoạn 1) làm căn cứ điều chỉnh phạm vi Mở rộng nếu cần.
+PHẦN E — BẢNG MỤC TIÊU ↔ NỘI DUNG
+Objective
+Chapter
+Section
+Method
+Evaluation
+[LÕI] Pipeline ước lượng khối lượng (ArUco+Depth+Seg)
+3, 4
+3.7–3.10 / 4.9
+Column integration theo homography; Depth Anything V2 Metric [9]
+MAE, MAPE khối lượng vs Ground-Truth
+[LÕI] Density Database
+3, 4
+3.4 (Ch.1) / 4.2
+Water displacement, đo thực nghiệm
+Mean ± Std cho mỗi lớp; đối chiếu số mẫu/lớp
+[LÕI] Ground-Truth khối lượng
+4
+4.2
+Cân điện tử, chụp kèm ArUco
+Dùng làm baseline đối chiếu MAE/MAPE
+[LÕI] Detection đủ tốt cho pipeline
+3, 4
+3.4 / 4.6
+YOLOv10b [2] hoặc YOLO26m [3,4] — chọn 1 qua kiểm thử nhanh
+mAP@0.5 trên VietFood67 test set
+[LÕI] Lựa chọn Segmentation phù hợp
+3, 4
+3.5–3.6 / 4.7
+Screening FoodSAM [5] vs MobileSAM [7]
+mIoU + downstream volume error
+[LÕI] Nutrition Estimation
+3, 4
+3.11 / 4.10
+Tra cứu Bảng TPTP VN [22]
+MAE/MAPE theo nhóm chất
+[LÕI] Error decomposition analysis
+4
+4.9, 4.13
+Phân tách sai số theo từng module
+Định tính + định lượng theo nguồn lỗi
+[MỞ RỘNG] Ablation Detection
+3, 4
+3.8 / 4.6
+So sánh YOLOv10b vs YOLO26m [1–4]
+mAP, Params, Inference time
+[MỞ RỘNG] Ablation Segmentation đầy đủ
+3, 4
+3.6, 3.8 / 4.7
+Bổ sung SAM 2 [8] làm ứng viên thứ 3
+mIoU, tốc độ, downstream error
+[MỞ RỘNG] Dataset tự thu thập
+3
+3.4 (data)
+Thu thập + gán nhãn 5–10 lớp mới
+Không đánh giá riêng — tích hợp vào 4.6
+[MỞ RỘNG] Hybrid LLM Advisory
+3, 4
+3.12–3.13 / 4.11
+Rule Engine [21] + Qwen2.5-7B [20] qua Ollama
+Hallucination Rate, SUS
+[MỞ RỘNG] End-to-end system & UI
+5
+5.1–5.4
+FastAPI + Streamlit
+Functional/Performance testing
+PHẦN F — BẢNG THỰC NGHIỆM
+Experiment
+Purpose
+Method
+Dataset
+Metric
+Expected Result
+A. Food Recognition [LÕI]
+Xác nhận detection đủ tốt cho pipeline
+Suy luận YOLOv10b [2] hoặc YOLO26m [3,4] trên test set
+VietFood67 [1]
+mAP@0.5, Precision/Recall
+mAP@0.5 tiệm cận 0,92 (baseline công bố)
+B. Segmentation Screening [LÕI]
+Chọn 1 phương pháp phân đoạn cho pipeline lõi
+So sánh nhanh FoodSAM [5] vs MobileSAM [7] trên ~20–30 ảnh
+Subset VietFood67 + ảnh tự chụp
+mIoU định tính, tốc độ
+Chọn được 1 phương pháp trong thời gian ngắn
+B'. Segmentation Ablation đầy đủ [MỞ RỘNG]
+So sánh định lượng đầy đủ 3 ứng viên + ảnh hưởng downstream
+FoodSAM, MobileSAM, SAM 2 [5,7,8] trên ~50 ảnh ground-truth mask
+Subset có mask thủ công
+mIoU, latency, GPU mem, sai số volume downstream
+Xác định trade-off tốc độ/chính xác/ảnh hưởng downstream rõ ràng
+C. Depth Estimation [MỞ RỘNG, có điều kiện]
+Đánh giá chất lượng depth map
+Depth Anything V2 Metric [9]
+Cần ground-truth depth (nếu thu thập được)
+MAE, RMSE, AbsRel
+[NEEDS EXPERIMENT] Có thể chỉ đánh giá gián tiếp qua sai số volume
+D. Scale Calibration [LÕI]
+Kiểm tra độ chính xác hiệu chỉnh tỷ lệ
+ArUco detectMarkers + solvePnP [10]
+Ảnh chụp thực tế có marker
+Reprojection error; sai số vị trí marker
+Reprojection error < 0,5 pixel
+E. Volume / Portion Estimation [LÕI — trọng tâm]
+Đo sai số ước lượng thể tích/khối lượng cuối cùng
+Pipeline đầy đủ (Detection+Segmentation+Depth+ArUco)
+Tập Ground-Truth tự cân
+MAE (g), MAPE (%)
+MAPE trong khoảng kỳ vọng literature (Bảng C.1)
+F. Nutritional Estimation [LÕI]
+Đo sai số ước lượng dinh dưỡng cuối cùng
+Tra cứu Bảng TPTP VN [22] từ khối lượng ước lượng
+Tập Ground-Truth
+MAE/MAPE theo nhóm chất
+Nằm trong dải tương tự Nutrition5k [11]
+G. End-to-End System [MỞ RỘNG]
+Đo hiệu năng hệ thống hoàn chỉnh
+Đo latency từng bước và tổng
+Ảnh thực tế
+Latency (giây), throughput
+Khoảng kỳ vọng — không đặt ngưỡng cứng trước đo đạc
+H. Personalized Advisory [MỞ RỘNG]
+Đánh giá chất lượng & an toàn tư vấn
+Hybrid (Rule+LLM) vs Rule-based thuần
+100 kịch bản dinh dưỡng mẫu
+Hallucination Rate, SUS
+Hallucination Rate thấp nhờ ràng buộc prompt
+Lưu ý: Thực nghiệm B' (Segmentation Ablation đầy đủ) là [RECOMMENDED EXPERIMENT] có giá trị học thuật cao nhất trong nhóm Mở rộng — nên ưu tiên nếu chỉ có thể chọn một hạng mục mở rộng để thực hiện, vì tác động trực tiếp đến độ tin cậy của Module lõi (khác với Ablation Detection, vốn ít ảnh hưởng đến kết quả cuối vì bài toán detection đã tương đối bão hòa — xem Phần A.2).
+PHẦN G — DANH SÁCH HÌNH DỰ KIẾN
+Tên hình
+Chương
+Mục đích
+Hình 1.1 — Minh họa sai lệch ước lượng khẩu phần thủ công
+1
+Minh chứng trực quan cho vấn đề nêu tại 1.1–1.2.
+Hình 2.1 — So sánh kiến trúc YOLOv10 và YOLO26
+2
+Minh họa điểm khác biệt kỹ thuật (DFL, STAL, ProgLoss).
+Hình 2.2 — So sánh kiến trúc FoodSAM / MobileSAM / SAM 2
+2
+Trực quan hóa 3 ứng viên segmentation ở vị thế ngang hàng.
+Hình 2.3 — Minh họa Relative depth vs Metric depth
+2
+Làm rõ khái niệm dễ nhầm lẫn nhất của đề tài.
+Hình 2.4 — Sơ đồ pinhole camera model và ArUco pose estimation
+2
+Minh họa cơ sở hình học của scale calibration.
+Hình 3.1 — Sơ đồ kiến trúc pipeline tổng thể [ĐỀ XUẤT]
+3
+Hình trung tâm của khóa luận — toàn bộ luồng xử lý.
+Hình 3.2 — Sơ đồ lựa chọn phương pháp Segmentation (3 ứng viên → Evaluation → Selected)
+3
+Minh họa trực quan nguyên tắc không khóa cứng trước thực nghiệm.
+Hình 3.3 — Minh họa column integration theo homography
+3
+Trực quan hóa công thức tính thể tích.
+Hình 4.1 — Kết quả detection minh họa trên ảnh thực tế
+4
+Case study định tính.
+Hình 4.2 — So sánh trực quan mask của các ứng viên segmentation trên cùng ảnh
+4
+Minh họa khác biệt định tính giữa các ứng viên.
+Hình 4.3 — Bản đồ độ sâu (depth map) minh họa
+4
+Trực quan hóa output Depth Anything V2.
+Hình 4.4 — Biểu đồ phân tán sai số khối lượng ước lượng vs thực tế
+4
+Trực quan hóa MAE/MAPE, hỗ trợ phân tích lỗi.
+Hình 4.5 — Case study lỗi điển hình (occlusion, nhiễu bề mặt lỏng)
+4
+Minh họa mục 4.13 Error Analysis.
+Hình 5.1 — Kiến trúc triển khai hệ thống (nếu có Web Demo)
+5
+[MỞ RỘNG] Minh họa kiến trúc Frontend–Backend.
+Hình 5.2 — Giao diện người dùng (UI) minh họa
+5
+[MỞ RỘNG] Trực quan hóa sản phẩm demo.
+PHẦN H — DANH SÁCH BẢNG DỰ KIẾN
+Tên bảng
+Chương
+Mục đích
+Bảng 2.1 — Tổng hợp nghiên cứu liên quan (dataset/phương pháp/chỉ số/hạn chế)
+2
+Literature review — tái sử dụng Phần C.
+Bảng 2.2 — Tổng hợp sai số dinh dưỡng/khối lượng đã công bố (= Bảng C.1)
+2
+Căn cứ đặt kỳ vọng sai số.
+Bảng 3.1 — Bảng ánh xạ Yêu cầu chức năng → Module đảm nhận
+3
+Làm rõ kiến trúc hệ thống.
+Bảng 3.2 — Tiêu chí lựa chọn phương pháp Segmentation
+3
+Chuẩn hóa tiêu chí trước khi thực nghiệm (tránh thiên vị).
+Bảng 4.1 — Cấu hình dataset (số ảnh, số lớp, tỷ lệ train/val/test)
+4
+Mô tả dữ liệu thực nghiệm.
+Bảng 4.2 — Kết quả Detection (khung để trống)
+4
+Xem Phần D §4.6.
+Bảng 4.3 — Kết quả Segmentation Comparison (khung để trống)
+4
+Xem Phần D §4.7.
+Bảng 4.4 — Kết quả Volume/Mass Estimation + Error Decomposition (khung để trống)
+4
+Bảng trung tâm của khóa luận — xem Phần D §4.9.
+Bảng 4.5 — Kết quả Nutritional Estimation (khung để trống)
+4
+Xem Phần D §4.10.
+Bảng 5.1 — Mức độ đạt mục tiêu (khung để trống, điền sau thực nghiệm)
+5
+Xem Phần D §5.6.
+PHẦN I — DANH SÁCH TÀI LIỆU THAM KHẢO DỰ KIẾN
+Danh mục dưới đây thống nhất số hiệu trích dẫn dùng xuyên suốt toàn bộ tài liệu (Phần A–J), khắc phục lỗi lệch số thứ tự đã phát hiện trong file mẫu (mục B.3.4).
+Nguyen V.H. et al. (2024). Now I Know What I Am Eating: Real-Time Tracking and Nutritional Insights Using VietFood67 to Enhance User Experience. SOICT 2024. GitHub: nvhnam/FoodDetector.
+Wang C.Y., Yeh I.H., & Liao H.Y.M. (2024). YOLOv10: Real-Time End-to-End Object Detection. NeurIPS 2024.
+Sapkota R. et al. (2025). YOLO26: Key Architectural Enhancements and Performance Benchmarking for Real-Time Object Detection. arXiv:2509.25164.
+Sapkota R. et al. (2025). Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8 and YOLOv5. arXiv:2510.09653.
+Lan X. et al. (2023). FoodSAM: Any Food Segmentation. IEEE Transactions on Multimedia, 2023. arXiv:2308.05938.
+Alahmari S. et al. (2024). Segment Anything in Food Images. CVPR Workshop 2024. arXiv:2312.03540.
+Zhang X. et al. (2023). MobileSAM: Faster Segment Anything. arXiv:2306.14289. GitHub: ChaoningZhang/MobileSAM.
+Ravi N. et al. (2024). SAM 2: Segment Anything in Images and Videos. arXiv:2408.00714. Meta AI Research.
+Yang L. et al. (2024). Depth Anything V2. arXiv:2406.09414. GitHub: DepthAnything/Depth-Anything-V2.
+Garrido-Jurado S. et al. (2014). Automatic Generation and Detection of Highly Reliable Fiducial Markers under Occlusion. Pattern Recognition, 47(7), 2280–2292.
+Thames Q., Karpur A., et al. (2021). Nutrition5k: Towards Automatic Nutritional Understanding of Generic Food. CVPR 2021. arXiv:2103.03375.
+Han Y. et al. (2023). DPF-Nutrition: Food Nutrition Estimation via Depth Prediction and Fusion. Foods, 12(23), 4293. arXiv:2310.11702.
+Ahmad S. et al. (2024). VolETA: One- and Few-Shot Food Volume Estimation. arXiv:2407.01717.
+Ma J. et al. (2024). MFP3D: Monocular Food Portion Estimation Leveraging 3D Point Clouds. ICPR 2024. arXiv:2411.10492.
+Ma Jinge et al. (2025). Size Matters: Reconstructing Real-Scale 3D Models of Food for Accurate Volume Estimation. arXiv:2601.20051.
+Vinod G. et al. (2024). Food Portion Estimation via 3D Object Scaling. CVPR Workshop 2024 (MetaFood Workshop). arXiv:2404.12257.
+Haroon M. et al. (2025). Implicit-Scale 3D Reconstruction for Multi-Food Volume Estimation from Monocular Images. arXiv:2602.13041. (MetaFood Challenge 2025).
+Vinod G. et al. (2026). Food Portion Estimation: From Pixels to Calories. Survey. arXiv:2602.05078.
+Jia W. et al. (2014). Accuracy of Food Portion Size Estimation from Digital Pictures Acquired by a Chest-Worn Camera (eButton). Public Health Nutrition. PMC4152011.
+Qwen Team (2024). Qwen2.5 Technical Report. arXiv:2412.15115. Alibaba Group.
+Bộ Y tế / Viện Dinh dưỡng Quốc gia (2016). Nhu cầu Dinh dưỡng Khuyến nghị cho người Việt Nam.
+Viện Dinh dưỡng Quốc gia (2017). Bảng thành phần thực phẩm Việt Nam. NXB Y học, Hà Nội.
+World Health Organization (2024). Obesity and Overweight. WHO Fact Sheet.
+Bossard L., Guillaumin M., & Van Gool L. (2014). Food-101 – Mining Discriminative Components with Random Forests. ECCV 2014.
+Lê K.H. et al. (2021). VinaFood21: A Novel Dataset for Evaluating Vietnamese Food Recognition. RIVF 2021.
+Trần T.A. et al. (2021). 30VNFoods: A Dataset for Vietnamese Foods Recognition. IEEE COMNETSAT 2021.
+Nguyen et al. (2022). SWVie-Food: A Dataset for Recognizing Foods in Southwest Vietnam. RIVF 2022.
+Vaswani A. et al. (2017). Attention Is All You Need. NeurIPS 2017.
+Lo F.P.W. et al. (2019). Image-Based Food Classification and Volume Estimation for Dietary Assessment: A Review. IEEE Journal of Biomedical and Health Informatics, 23(5).
+PHẦN J — REVIEW NHƯ GIẢNG VIÊN HƯỚNG DẪN
+Đánh giá độc lập đề cương sau khi đã điều chỉnh theo góp ý trước đó (phân lõi/mở rộng, bỏ khóa cứng SAM 2, xóa số liệu bịa Chương 4/5, sửa lỗi trích dẫn).
+J.1. Research quality
+Khá tốt so với mặt bằng khóa luận đại học: có bảng tổng hợp literature với số liệu cụ thể (Bảng C.1), có xác định khoảng trống nghiên cứu rõ ràng và tương đối thận trọng (dùng "trong phạm vi tài liệu khảo sát" thay vì khẳng định tuyệt đối). Điểm cần lưu ý: một số tài liệu (VolETA [13], Size Matters [15], MetaFood 2025 [17]) là công bố rất mới — nên tiếp tục theo dõi cập nhật đến sát thời điểm nộp báo cáo, vì đây là các hướng nghiên cứu đang phát triển nhanh.
+J.2. Technical depth
+Phần cơ sở lý thuyết cho Module lõi (depth scale recovery, column integration, phân biệt relative/metric depth) thể hiện hiểu biết kỹ thuật thực sự, không dừng ở liệt kê tên công nghệ — đây là điểm mạnh rõ rệt. Phần Module mở rộng (Hybrid LLM) có độ sâu vừa phải, phù hợp với vai trò phụ của nó.
+J.3. Feasibility (tính khả thi trong 5 tháng, 2 sinh viên)
+Với cách phân lõi/mở rộng đã áp dụng nhất quán trong toàn bộ đề cương, phạm vi Lõi (7 mục tiêu tại A.3) là khả thi trong 5 tháng nếu Giai đoạn 2 (xây dựng dữ liệu) không bị trễ — đây là giai đoạn rủi ro tiến độ cao nhất vì phụ thuộc công việc thủ công (cân đo, đo density). Khuyến nghị bổ sung: nhóm nên chốt cứng số lượng phần ăn Ground-Truth và số lớp Density Database ngay khi bắt đầu Giai đoạn 2, tránh mở rộng phạm vi giữa chừng.
+J.4. Experimental completeness
+Khung thực nghiệm (Phần F, Chương 4) bao phủ đủ các khía cạnh cần thiết cho Module lõi, và có thiết kế thực nghiệm bổ sung có giá trị (Downstream Effect — đo ảnh hưởng segmentation đến sai số volume, thay vì chỉ đánh giá mIoU độc lập). Điểm cần theo dõi: mục 4.5 đã chủ động đánh dấu [NEEDS EXPERIMENT] cho việc đánh giá Depth độc lập vì chưa chắc có ground-truth depth — đây là cách tiếp cận thận trọng và trung thực, nên giữ nguyên tinh thần này khi triển khai thực tế.
+J.5. Academic contribution
+Đóng góp được trình bày ở mức phù hợp — không phóng đại ("Expected" tách bạch khỏi "Demonstrated" tại A.6), có định vị rõ trong bối cảnh literature (Bảng C.1). Mức đóng góp khoa học tương xứng với một khóa luận đại học có chất lượng tốt: không tuyên bố giải quyết triệt để bài toán, mà định lượng một pipeline cụ thể trong một khoảng sai số có thể đối chiếu khách quan với các công trình khác.
+J.6. Scope
+Phạm vi đã được kiểm soát tốt so với bản đề cương ban đầu (file mẫu) — đúng như tinh thần "ít nhưng chứng minh được hơn nhiều nhưng không đánh giá được". Áp dụng nhất quán ký hiệu [LÕI]/[MỞ RỘNG] trong toàn bộ tài liệu là điểm cộng quan trọng, giúp cả người viết và hội đồng dễ đánh giá đúng trọng tâm.
+J.7. Potential problems (rủi ro còn tồn đọng, cần lưu ý khi triển khai)
+Việc chọn 1 phương pháp segmentation qua "kiểm thử nhanh" (mục 3.6, [LÕI]) mang tính chủ quan nếu không có tiêu chí định lượng tối thiểu — nên chuẩn hóa trước một bộ tiêu chí ngắn gọn (ví dụ: tốc độ suy luận trên phần cứng mục tiêu + quan sát định tính trên 10 ảnh khó nhất) để quyết định không hoàn toàn cảm tính.
+Chỉ số đánh giá Depth độc lập (mục 4.5, 4.8) còn treo ở trạng thái [NEEDS EXPERIMENT] — nhóm cần quyết định sớm (trong Giai đoạn 1) có đầu tư thu thập ground-truth depth hay chấp nhận chỉ đánh giá gián tiếp, để tránh để ngỏ đến sát Giai đoạn 3.
+Density Database và Ground-Truth dataset đều phụ thuộc thao tác thủ công tốn thời gian (cân đo, đo nước chiếm chỗ) — đây là rủi ro tiến độ lớn nhất của toàn bộ đề tài, cần bắt đầu sớm nhất có thể, không để dồn vào cuối Giai đoạn 2.
+Nếu Ablation Segmentation mở rộng (bổ sung SAM 2) được thực hiện, cần đảm bảo cả ba ứng viên nhận cùng điều kiện input (cùng bounding box từ detection, cùng ảnh test) để so sánh công bằng — cần kiểm tra kỹ khi cài đặt, tránh sai lệch do khác biệt tiền xử lý giữa các thư viện.
+J.8. Kết luận review
+Đề cương ở mức sẵn sàng để trình giảng viên hướng dẫn xác nhận trước khi triển khai Giai đoạn 2. Không còn tồn tại việc khóa cứng phương pháp segmentation trước thực nghiệm, không còn số liệu Chương 4/5 bịa đặt, và có phân lõi/mở rộng nhất quán theo đúng góp ý đã nhận được. Rủi ro chính còn lại nằm ở tiến độ thao tác thủ công (Giai đoạn 2), không phải ở thiết kế phương pháp.

@@ -1,0 +1,107 @@
+== GIÁ TRỊ THAM CHIẾU DINH DƯỠNG HÀNG NGÀY (RDA/DRI) ==
+Nguồn: National Academy of Medicine (NAM/IOM), WHO, USDA — Cập nhật 2023
+
+RDA (RECOMMENDED DIETARY ALLOWANCES) VÀ DRI (DIETARY REFERENCE INTAKES)
+DRI là hệ thống giá trị tham chiếu dinh dưỡng toàn diện gồm 4 loại:
+- EAR (Estimated Average Requirement): đủ cho 50% dân số
+- RDA (Recommended Dietary Allowance): đủ cho 97.5% dân số (thường = EAR × 1.2)
+- AI (Adequate Intake): ước tính khi thiếu dữ liệu RDA
+- UL (Tolerable Upper Intake Level): mức tối đa an toàn
+
+CALORIES — NHU CẦU NĂNG LƯỢNG THAM CHIẾU
+Phụ nữ 19–30 tuổi, ít vận động: 1800–2000 kcal/ngày
+Phụ nữ 19–30 tuổi, vận động vừa: 2000–2200 kcal/ngày
+Nam giới 19–30 tuổi, ít vận động: 2200–2400 kcal/ngày
+Nam giới 19–30 tuổi, vận động vừa: 2600–2800 kcal/ngày
+Phụ nữ mang thai (tam cá nguyệt 2–3): +340–450 kcal/ngày
+Phụ nữ cho con bú: +500 kcal/ngày
+Người cao tuổi (>60): giảm 100–200 kcal/thập kỷ do giảm cơ bắp
+
+PROTEIN — RDA THEO ĐỘ TUỔI VÀ TÌNH TRẠNG
+Người trưởng thành (18–65 tuổi): 0.8 g/kg/ngày (RDA tối thiểu)
+Người cao tuổi (>65 tuổi): 1.0–1.2 g/kg/ngày (cần nhiều hơn để phòng sarcopenia)
+Phụ nữ mang thai: +25g/ngày (tổng ~71g/ngày)
+Phụ nữ cho con bú: +25g/ngày
+Vận động viên sức bền: 1.2–1.4 g/kg/ngày
+Vận động viên sức mạnh/tăng cơ: 1.6–2.2 g/kg/ngày
+
+Nguồn protein đầy đủ (complete protein — đủ 9 amino acid thiết yếu):
+Thịt, cá, trứng, sữa, đậu nành, quinoa
+Protein không đầy đủ (cần kết hợp): đậu các loại + gạo/ngũ cốc
+
+CHẤT BÉO (FAT) — DRI
+Tổng chất béo: 20–35% tổng năng lượng (không có RDA cụ thể)
+Chất béo bão hòa (Saturated Fat): < 10% tổng calo (USDA); < 7% (AHA cho người có bệnh tim)
+Trans fat: 0g (không có mức an toàn — tránh hoàn toàn)
+Omega-3 ALA: 1.1g/ngày (nữ), 1.6g/ngày (nam) — AI
+Omega-3 EPA+DHA: 250–500mg/ngày từ cá béo (khuyến nghị chung)
+Omega-6 LA: 11–12g/ngày (nữ), 14–17g/ngày (nam) — AI
+Tỷ lệ Omega-6:Omega-3 lý tưởng: 4:1 đến 1:1 (thay vì 15:1 phổ biến hiện nay)
+
+CARBOHYDRATE — DRI
+RDA tối thiểu: 130g/ngày (nhu cầu tối thiểu của não)
+Phạm vi lành mạnh: 45–65% tổng năng lượng (225–325g/ngày với 2000 kcal)
+Chất xơ AI:
+- Nam 19–50 tuổi: 38g/ngày
+- Nam >50 tuổi: 30g/ngày
+- Nữ 19–50 tuổi: 25g/ngày
+- Nữ >50 tuổi: 21g/ngày
+Đường thêm vào (Added Sugars): < 10% tổng calo (WHO, USDA)
+
+SODIUM (MUỐI) — AI VÀ UL
+AI: 1500mg Natri/ngày (≈ 3.75g muối)
+UL: 2300mg Natri/ngày (≈ 5.75g muối) — không vượt quá
+WHO mục tiêu: < 2000mg Natri/ngày (≈ < 5g muối)
+Quy đổi: 1g muối = 400mg Natri; 1 thìa cà phê muối ≈ 2300mg Natri
+
+KALI (POTASSIUM) — AI
+AI: 2600mg/ngày (nữ), 3400mg/ngày (nam)
+UL: không xác định từ thực phẩm (an toàn với thực phẩm tự nhiên)
+Nguồn tốt: chuối (422mg/quả), khoai tây (926mg/củ lớn), cà chua, rau bina, đậu đen, bơ, cá hồi
+
+CANXI (CALCIUM) — RDA
+19–50 tuổi: 1000mg/ngày
+Nam 51–70 tuổi: 1000mg/ngày; Nữ 51–70 tuổi: 1200mg/ngày
+>70 tuổi: 1200mg/ngày
+Phụ nữ mang thai/cho con bú 19–50 tuổi: 1000mg/ngày
+UL: 2500mg/ngày (19–50 tuổi); 2000mg/ngày (>50 tuổi)
+Nguồn: sữa (300mg/cup), phô mai, đậu phụ cứng (~200mg/100g), cá hộp ăn cả xương, rau lá xanh đậm
+
+SẮT (IRON) — RDA
+Nam trưởng thành: 8mg/ngày
+Nữ 19–50 tuổi: 18mg/ngày (cao hơn do mất kinh nguyệt)
+Nữ >50 tuổi: 8mg/ngày
+Phụ nữ mang thai: 27mg/ngày
+UL: 45mg/ngày
+Hấp thu sắt hem (từ thịt) tốt hơn sắt non-hem (từ thực vật). Vitamin C tăng hấp thu sắt non-hem. Canxi, tannin (chè), phytate (ngũ cốc) giảm hấp thu sắt.
+
+VITAMIN D — RDA
+19–70 tuổi: 600 IU (15 mcg)/ngày
+>70 tuổi: 800 IU (20 mcg)/ngày
+UL: 4000 IU/ngày
+Người Việt Nam có nguy cơ thiếu vitamin D dù sống ở vùng nhiệt đới do che phủ da, ở trong nhà nhiều. Nguồn: ánh nắng sáng sớm 10–15 phút (không qua kính), cá béo, trứng, sữa tăng cường vitamin D.
+
+FOLATE (B9) — RDA
+Nam và nữ trưởng thành: 400 mcg DFE/ngày
+Phụ nữ mang thai: 600 mcg DFE/ngày
+Phụ nữ có kế hoạch mang thai: bổ sung 400–800 mcg/ngày trước khi mang thai ít nhất 1 tháng
+Nguồn: rau lá xanh đậm (rau bina, rau ngót, cải xoăn), đậu, ngũ cốc tăng cường, măng tây
+
+VITAMIN B12 — RDA
+2.4 mcg/ngày cho người trưởng thành
+Người ăn chay thuần (vegan) CẦN bổ sung B12 vì B12 chỉ có trong thực phẩm động vật
+Người cao tuổi có thể hấp thu kém hơn
+
+MAGIE (MAGNESIUM) — RDA
+Nam 19–30 tuổi: 400mg/ngày; Nam >30 tuổi: 420mg/ngày
+Nữ 19–30 tuổi: 310mg/ngày; Nữ >30 tuổi: 320mg/ngày
+Nguồn: hạt bí đỏ, hạt hướng dương, các loại đậu, rau lá xanh, ngũ cốc nguyên hạt, chuối, sữa, cá
+
+KẼM (ZINC) — RDA
+Nam: 11mg/ngày; Nữ: 8mg/ngày; Phụ nữ mang thai: 11mg/ngày
+Nguồn: hàu (nguồn giàu nhất), thịt đỏ nạc, thịt gia cầm, hạt bí đỏ, đậu, phô mai
+
+VITAMIN C — RDA
+Nam: 90mg/ngày; Nữ: 75mg/ngày
+Người hút thuốc: cần thêm 35mg/ngày
+Nguồn: ổi (228mg/100g — cực kỳ giàu), ớt chuông, cải bắp, cà chua, cam chanh, ổi, kiwi

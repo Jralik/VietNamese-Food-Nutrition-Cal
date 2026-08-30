@@ -17,7 +17,7 @@ Hệ thống được huấn luyện trên mô hình **YOLOv26** tiên tiến v�
 
 Bạn có thể truy cập và trải nghiệm trực tiếp hệ thống tại địa chỉ:  
 👉 **[https://vietnamese-nutrition-calc.streamlit.app/](https://vietnamese-nutrition-calc.streamlit.app/)**
-
+python test_volume_pipeline.py --image C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\bun-bo-hue1.jpg --save-viz
 ---
 
 ## ✨ Tính Năng Nổi Bật (Key Features)

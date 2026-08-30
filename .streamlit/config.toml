@@ -1,7 +1,16 @@
 [theme]
-base="light"
-primaryColor="#FEC51C"
-textColor="#31333F"
+base = "dark"
+primaryColor = "#FEC51C"
+backgroundColor = "#14110C"
+secondaryBackgroundColor = "#1E1913"
+textColor = "#F5EFE6"
+font = "sans serif"
 
 [client]
 showSidebarNavigation = false
+
+[server]
+# Run headless: Streamlit must not spawn the browser itself (the browser-open
+# call inside the server's asyncio loop can kill the whole process on Windows).
+# Open http://localhost:8501 manually, or use run_app.bat.
+headless = true

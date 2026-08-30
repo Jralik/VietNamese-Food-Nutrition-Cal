@@ -1,105 +1,204 @@
 import streamlit as st
+import warnings
+# google.generativeai is deprecated in favor of google.genai; the advisory flow
+# still uses the old SDK, so silence its startup FutureWarning until migrated.
+warnings.filterwarnings(
+    "ignore",
+    message=r"\s*All support for the `google\.generativeai` package has ended",
+    category=FutureWarning,
+)
 import google.generativeai as genai
 import time
-import base64 
+import json
 from pathlib import Path
-from streamlit_navigation_bar import st_navbar
+
 from utils import (
-    _display_detected_frame, detect_camera, detect_image, detect_video, detect_webcam, 
-    load_onnx_model, load_model, calculate_bmi, calculate_tdee_mifflin_st_jeor, build_structured_facts
+    _display_detected_frame, detect_camera, detect_image, detect_video, detect_webcam,
+    load_model, calculate_bmi, calculate_tdee_mifflin_st_jeor,
+    build_structured_facts, retrieve_context
 )
+import ui_components as ui
 
 st.set_page_config(
-    page_title="FoodDetector",
-    page_icon=":microscope:",
-    layout="wide"
+    page_title="FoodDetector AI — Nhận diện & Tư vấn Dinh dưỡng",
+    page_icon="🍜",
+    layout="wide",
 )
+
+GOAL_VI = {"lose": "Giảm cân", "maintain": "Giữ cân", "gain": "Tăng cân"}
+SEX_VI = {"male": "Nam", "female": "Nữ"}
+ACTIVITY_VI = {
+    1.2: "Ít vận động (sedentary)",
+    1.375: "Vận động nhẹ (lightly active)",
+    1.55: "Vận động vừa (moderately active)",
+    1.725: "Vận động nhiều (very active)",
+    1.9: "Vận động nặng (extra active)",
+}
+
+DEFAULT_PROFILE = {
+    "age": 25,
+    "sex": "female",
+    "weight": 65.0,
+    "height": 170.0,
+    "activity_factor": 1.2,
+    "goal": "maintain",
+}
+
+
+def compute_rda(profile: dict, tdee: float) -> dict:
+    """RDA mục tiêu hằng ngày từ TDEE và mục tiêu sức khỏe."""
+    goal = profile["goal"]
+    if goal == "lose":
+        calories_target = tdee - 500
+    elif goal == "gain":
+        calories_target = tdee + 500
+    else:
+        calories_target = tdee
+    return {
+        "Calories": max(1200.0, calories_target),
+        "Protein": profile["weight"] * 1.6,
+        "Fat": (calories_target * 0.25) / 9.0,
+        "Saturates": (calories_target * 0.08) / 9.0,
+        "Sugar": 50.0,
+        "Salt": 6.0,
+    }
+
 
 # Initialize default user profile and RDA
 if "user_profile" not in st.session_state:
-    st.session_state.user_profile = {
-        "age": 25,
-        "sex": "female",
-        "weight": 65.0,
-        "height": 170.0,
-        "activity_factor": 1.2,
-        "goal": "maintain"
-    }
+    st.session_state.user_profile = dict(DEFAULT_PROFILE)
 
 if "user_rda" not in st.session_state:
     w = st.session_state.user_profile["weight"]
     h = st.session_state.user_profile["height"]
-    a = st.session_state.user_profile["age"]
-    s = st.session_state.user_profile["sex"]
-    af = st.session_state.user_profile["activity_factor"]
-    g = st.session_state.user_profile["goal"]
-    
-    tdee = calculate_tdee_mifflin_st_jeor(w, h, a, s, af)
-    
-    if g == "lose":
-        calories_target = tdee - 500
-    elif g == "gain":
-        calories_target = tdee + 500
-    else:
-        calories_target = tdee
-        
-    st.session_state.user_rda = {
-        "Calories": max(1200.0, calories_target),
-        "Protein": w * 1.6,
-        "Fat": (calories_target * 0.25) / 9.0,
-        "Saturates": (calories_target * 0.08) / 9.0,
-        "Sugar": 50.0,
-        "Salt": 6.0
-    }
+    tdee = calculate_tdee_mifflin_st_jeor(
+        w, h, st.session_state.user_profile["age"],
+        st.session_state.user_profile["sex"], st.session_state.user_profile["activity_factor"])
+    st.session_state.user_rda = compute_rda(st.session_state.user_profile, tdee)
 
-# import streamlit as st
-# from PIL import Image
 
-# image = Image.open('./pages/bg-about-cuisine.jpg')
+# ═════════════════════════════════════════════════════════════════════
+# SIDEBAR — thương hiệu + tóm tắt thể trạng + cấu hình AI
+# ═════════════════════════════════════════════════════════════════════
+def render_sidebar():
+    with st.sidebar:
+        st.markdown(f"""
+        <div class="sidebar-brand">
+            <span class="brand-badge">🍜</span>
+            <div class="sidebar-brand-name">FoodDetector AI
+                <small>Nhận diện món Việt · Dinh dưỡng cá nhân hóa</small>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
-# st.image(image)
-# st.markdown(f"""
-# <style>
-#     .stImage  {{
-#         position: relative;
-#         width: 100%;
-#         height: calc(100px + 7vw);
-#         overflow: hidden;
-#     }}
-# """, unsafe_allow_html=True)
+        profile = st.session_state.user_profile
+        bmi = calculate_bmi(profile["weight"], profile["height"])
+        tdee = calculate_tdee_mifflin_st_jeor(
+            profile["weight"], profile["height"], profile["age"],
+            profile["sex"], profile["activity_factor"])
+        rda = st.session_state.user_rda
 
-# st.markdown(f"""
-# <h1 class="header-title">📑 About FoodDetector</h1>
-#             """, unsafe_allow_html=True)         
+        st.markdown(f"""
+        <div class="sidebar-stat-row">
+            <div class="sidebar-stat"><span class="v">{bmi:.1f}</span><span class="l">BMI</span></div>
+            <div class="sidebar-stat"><span class="v">{tdee:.0f}</span><span class="l">TDEE (kcal)</span></div>
+            <div class="sidebar-stat"><span class="v">{rda['Calories']:.0f}</span><span class="l">Mục tiêu</span></div>
+        </div>
+        <div style="font-size:11px; color: var(--text-faint); margin-bottom: 0.4rem;">
+            {SEX_VI.get(profile['sex'], profile['sex'])} · {profile['age']} tuổi ·
+            {profile['weight']:.0f} kg · {profile['height']:.0f} cm · {GOAL_VI.get(profile['goal'], '')}
+        </div>
+        """, unsafe_allow_html=True)
 
-st.markdown('''
-    <div id="top-section"></div>
-    ''', unsafe_allow_html=True)
-def img_to_base64(img_path):
-    with open(img_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')
+        st.divider()
+        render_sidebar_ai_config()
+
+        st.divider()
+        st.markdown(
+            f'<div style="font-size:11px; color: var(--text-faint); line-height:1.7;">'
+            f'🍜 FoodDetector AI — đồ án tốt nghiệp<br>'
+            f'<a href="{ui.GITHUB_URL}" target="_blank">Mã nguồn trên GitHub</a></div>',
+            unsafe_allow_html=True)
+
+
+def render_sidebar_ai_config():
+    st.markdown(ui.section_header("🔑 Cấu hình Trợ lý AI",
+                                  "API key chỉ lưu trong phiên làm việc của bạn."), unsafe_allow_html=True)
+
+    llm_provider = st.selectbox(
+        "Chọn nhà cung cấp AI",
+        ["Gemini", "Cerebras", "OpenRouter", "Cloudflare"],
+        index=0,
+        help="Đánh giá bữa ăn và chat tư vấn sẽ dùng nhà cung cấp này.",
+    )
+    st.session_state.llm_provider = llm_provider
+
+    if llm_provider == "Gemini":
+        api_key_input = st.text_input("Gemini API Key", type="password",
+                                      help="Nhận key miễn phí từ Google AI Studio")
+        if api_key_input:
+            st.session_state.gemini_api_key = api_key_input
+        if st.session_state.get("gemini_api_key"):
+            st.success("✅ Đã sẵn sàng", icon=None)
+    elif llm_provider == "Cerebras":
+        cerebras_api_key_input = st.text_input("Cerebras API Key", type="password",
+                                               help="Key miễn phí từ Cerebras Cloud Console — tốc độ siêu nhanh!")
+        if cerebras_api_key_input:
+            st.session_state.cerebras_api_key = cerebras_api_key_input
+        cerebras_api_key = st.session_state.get("cerebras_api_key", "")
+        if cerebras_api_key:
+            available_models = get_cerebras_models(cerebras_api_key)
+            st.session_state.cerebras_model = st.selectbox(
+                "Mô hình Cerebras", available_models, index=0)
+            st.success("✅ Đã sẵn sàng", icon=None)
+    elif llm_provider == "OpenRouter":
+        openrouter_api_key_input = st.text_input("OpenRouter API Key", type="password",
+                                                 help="Truy cập hàng trăm mô hình AI (có bản miễn phí)!")
+        if openrouter_api_key_input:
+            st.session_state.openrouter_api_key = openrouter_api_key_input
+        openrouter_api_key = st.session_state.get("openrouter_api_key", "")
+        if openrouter_api_key:
+            available_models = get_openrouter_models(openrouter_api_key)
+            st.session_state.openrouter_model = st.selectbox(
+                "Mô hình OpenRouter", available_models, index=0)
+            st.success("✅ Đã sẵn sàng", icon=None)
+    else:  # Cloudflare
+        cloudflare_account_id_input = st.text_input(
+            "Cloudflare Account ID", type="password",
+            help="Lấy từ Cloudflare Dashboard → Workers & Pages")
+        cloudflare_api_token_input = st.text_input(
+            "Cloudflare API Token", type="password",
+            help="Tạo Token có quyền Workers AI từ My Profile → API Tokens")
+        if cloudflare_account_id_input:
+            st.session_state.cloudflare_account_id = cloudflare_account_id_input
+        if cloudflare_api_token_input:
+            st.session_state.cloudflare_api_token = cloudflare_api_token_input
+        if st.session_state.get("cloudflare_account_id") and st.session_state.get("cloudflare_api_token"):
+            available_models = get_cloudflare_models(
+                st.session_state.cloudflare_account_id, st.session_state.cloudflare_api_token)
+            st.session_state.cloudflare_model = st.selectbox(
+                "Mô hình Cloudflare Workers AI", available_models, index=0)
+            st.success("✅ Đã sẵn sàng", icon=None)
+
 
 def get_cerebras_models(api_key):
     try:
         import requests
         headers = {"Authorization": f"Bearer {api_key}"}
         response = requests.get("https://api.cerebras.ai/v1/models", headers=headers, timeout=5)
-        
+
         if response.status_code == 200:
             data = response.json()
             models = [model["id"] for model in data.get("data", [])]
             if models:
                 return models
-        elif response.status_code == 402:
-            print("Lỗi: Tài khoản hết hạn mức miễn phí hoặc yêu cầu thanh toán.")
-        else:
-            print(f"Lỗi API: {response.status_code} - {response.text}")
-            
-    except Exception as e:
-        print(f"Lỗi kết nối: {e}")
-        
+
+    except Exception:
+        pass
+
     # Trả về danh sách mặc định nếu API lỗi hoặc không có quyền truy cập
     return ["gpt-oss-120b", "gemma-4-31b", "zai-glm-4.7"]
+
 
 def get_openrouter_models(api_key):
     try:
@@ -121,565 +220,314 @@ def get_openrouter_models(api_key):
         pass
     return ["google/gemini-2.5-flash:free", "meta-llama/llama-3-8b-instruct:free", "openrouter/auto"]
 
-# Convert your image to base64
-img_path = './assets/img/bg-about-cuisine.png'
-img_base64 = img_to_base64(img_path)
 
-# Convert your image to base64
-img_path_nutrition = './assets/img/nutrition-table.png'
-img_base64_nutrition = img_to_base64(img_path_nutrition)
-
-st.markdown(f"""
-<div class="header-container">
-    <img src="data:image/jpg;base64,{img_base64}" class="header-image">
-    <div class="header-overlay">
-        <div class="header-title">Welcome to FoodDetector 🕵️</div>
-        <div class="header-subtitle">An easy way to detect Vietnamese dishes!</div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
-
-# Import img
-# def img_bg_cover(img_path):
-#     with open(img_path, 'rb') as img_file:
-#         return base64.b64encode(img_file.read()).decode('utf-8')
-
-# current_path = Path(__file__).parent
-# img_path = current_path / 'pages' / 'img' / 'bg-about-cuisine.jpg'
-# img_cover = img_bg_cover(img_path)
-
-# # Cover
-# st.markdown(f"""
-# <style>
-#     .header-container {{
-#         position: relative;
-#         width: 100%;
-#         height: calc(100px + 7vw);
-#         overflow: hidden;
-#     }}
-#     .header-image {{
-#         position: absolute;
-#         top: 0;
-#         left: 0;
-#         width: 100%;
-#         height: 100%;
-#         background-image: url(data:image/jpg;base64,{img_cover});
-#         background-size: cover;
-#         background-position: center top;
-#     }}
-    
-#     .header-title {{
-#     position: absolute;
-#     bottom: 0;
-#     /* left: 50%;
-#     transform: translateX(-50%); */
-#     width: 100%;
-#     color: white;
-#     background-color: rgba(0, 0, 0, 0.6);
-#     padding: 5px 10px;
-#     letter-spacing: 1px;
-#     font-weight: 800;
-#     }}
-# </style>
-
-# <div class="header-container">
-#     <div class="header-image"></div>
-#     <h1 class="header-title">📑 About FoodDetector</h1>
-# </div>
-# """, unsafe_allow_html=True)
-# End Cover
-
-def render_left_side():         
-    with st.container():
-        # st.title("Welcome to _:green[FoodDetector]_ :male-detective:")
-        st.divider()
-
-    #     st.markdown('''
-    # FoodDetector uses the _YOLOv10m_ pretrained models for fine-tuning with `VietFood57`, a new custom-made Vietnamese food dataset created for detecting local dishes and achieved a `mAP50` of `0.92`.  
-    # It can be used to detect <a href="/Dataset" target="_blank" style="color: #4CAF50; font-weight: bold; font-style: italic; text-decoration: none;">`57`</a> Vietnamese dishes from a picture, video, webcam, and an IP camera through RTSP.
-    # ''', unsafe_allow_html=True)
-
-        st.markdown(f'''
-    <ul class="define introduction" style="margin-top: 0; margin-bottom: 0;">
-        <li class="define-li home-page">FoodDetector uses the <strong>YOLOv26</strong> pretrained models for fine-tuning with <code>VietFood67</code>, 
-        an enhanced custom-made Vietnamese food dataset created for detecting local dishes and achieved a <code>mAP50</code> of <code>0.95</code>.</li>
-        <li class="define-li home-page">It can be used to detect <a href="/dataset" target="_self">67</a> Vietnamese dishes from a picture, video, webcam, and an IP camera through RTSP.</li>
-    </ul>
-                    ''', unsafe_allow_html=True)
+def get_cloudflare_models(account_id="", api_token=""):
+    free_defaults = [
+        "@cf/meta/llama-3.1-8b-instruct",
+        "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+        "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "@cf/meta/llama-3-8b-instruct",
+        "@cf/qwen/qwen1.5-7b-chat-awq",
+        "@cf/mistral/mistral-7b-instruct-v0.2"
+    ]
+    if account_id and api_token:
+        try:
+            import requests
+            headers = {"Authorization": f"Bearer {api_token}"}
+            response = requests.get(
+                f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/models/search?task=Text%20Generation",
+                headers=headers, timeout=5)
+            if response.status_code == 200:
+                data = response.json()
+                fetched = [model["name"] for model in data.get("result", []) if "name" in model]
+                # Filter out paid-only models
+                filtered = [m for m in fetched if not any(p in m.lower() for p in ["glm-5", "claude", "gpt-4"])]
+                if filtered:
+                    if "@cf/meta/llama-3.1-8b-instruct" in filtered:
+                        filtered.remove("@cf/meta/llama-3.1-8b-instruct")
+                        filtered.insert(0, "@cf/meta/llama-3.1-8b-instruct")
+                    return filtered
+        except Exception:
+            pass
+    return free_defaults
 
 
-        st.divider()
+# ═════════════════════════════════════════════════════════════════════
+# TAB 1 — THỂ TRẠNG & MỤC TIÊU
+# ═════════════════════════════════════════════════════════════════════
+def render_health_tab():
+    st.markdown(ui.section_header(
+        "🧬 Thể trạng & Mục tiêu dinh dưỡng",
+        "Nhập thông tin của bạn — app tính BMI, TDEE và nhu cầu dinh dưỡng hằng ngày để "
+        "so sánh với mọi bữa ăn bạn quét."), unsafe_allow_html=True)
 
-        st.markdown(f'''
-                    <h4>Adjust the confident score 🚩</h4>
-                    ''', unsafe_allow_html=True)
-        confidence = float(st.slider(
-            label="",label_visibility="collapsed", min_value=10, max_value=100, value=50 
-        ))/ 100
-        
-        st.markdown(f'''
-    <style>
-        #quick-note {{
-        margin-left: 0;
-        margin-bottom: 0.5rem;
-    }}
-    
-    p#quick-note.define {{
-        margin-top: 0;
-    }}
+    profile = st.session_state.user_profile
 
-    .title-text-score {{
-        font-weight: 700;
-        border-radius: 5px;
-        background-color: var(--grey);
-        padding: 0.5rem;
-        display: inline;
-    }}
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        age = st.number_input("Tuổi", min_value=1, max_value=120, value=int(profile["age"]), key="profile_age")
+        height = st.number_input("Chiều cao (cm)", min_value=50.0, max_value=250.0,
+                                 value=float(profile["height"]), key="profile_height")
+    with c2:
+        sex = st.selectbox("Giới tính", ["male", "female"],
+                           index=0 if profile["sex"] == "male" else 1,
+                           format_func=lambda x: SEX_VI[x], key="profile_sex")
+        weight = st.number_input("Cân nặng (kg)", min_value=1.0, max_value=300.0,
+                                 value=float(profile["weight"]), key="profile_weight")
+    with c3:
+        af_keys = list(ACTIVITY_VI.keys())
+        af_index = af_keys.index(profile["activity_factor"]) if profile["activity_factor"] in af_keys else 0
+        activity_factor = st.selectbox("Mức độ vận động", af_keys, index=af_index,
+                                       format_func=lambda x: ACTIVITY_VI[x],
+                                       key="profile_activity_factor")
+        goal = st.selectbox("Mục tiêu sức khỏe", list(GOAL_VI.keys()),
+                            index=list(GOAL_VI.keys()).index(profile["goal"]) if profile["goal"] in GOAL_VI else 1,
+                            format_func=lambda x: GOAL_VI[x], key="profile_goal")
 
-    p.define.subtitle-text-score {{
-        margin-bottom: 1rem;
-    }}
-    
-    </style>
-    <p class="define" id="quick-note"><strong>Quick note 📝</strong>: consideration for selecting the best suited confident score:</p>
-    <div class="adjust-section">
-        <p class="define title-text-score">High confident score (>= 50%):</p>
-        <p class="define subtitle-text-score">Set a higher threshold will make the model to predict with a higher accuracy detection but it will have a low recall as fewer object will 
-        be detected because of the high precision constraint.</p>
-        <p class="define title-text-score">Low confident score (< 50%):</p>        
-        <p class="define subtitle-text-score">Set a lower threshold will enable the model to detect more object - 
-    high recall because of the low precision constraint.</p>
-    </div>     
-                ''', unsafe_allow_html=True)
+    profile = {"age": age, "sex": sex, "weight": weight, "height": height,
+               "activity_factor": activity_factor, "goal": goal}
+    st.session_state.user_profile = profile
 
-        st.divider()
-        st.markdown(f'''
-                    <h4>Nutrition value score📊</h4>
-                    ''', unsafe_allow_html=True)
-
-        st.markdown(f'''
-    <ul class="define nutrition" style="margin-top: 0; margin-bottom: 0;">
-        <li class="define-li home-page">Our nutrition values are based on the <strong>Traffic Light system</strong>🚦.</li>
-        <li class="define-li home-page">All nutrition information provided is approximate.</li>
-    </ul>
-                    ''', unsafe_allow_html=True)
-        
-
-        
-        expander = st.expander("See more")  
-        expander.markdown(f'''
-<div class="nutrition-container">
-    <img src="data:image/jpg;base64,{img_base64_nutrition}" class="nutrition-img">
-    <ul class="nutrition-explain">
-        <li class="nutrition-explain-details"><strong class="color-section" id="green">Green (Low)</strong>: Very healthy. Enjoy without worry.</li>
-        <li class="nutrition-explain-details"><strong class="color-section" id="yellow">Yellow (Medium)</strong>: Consume in moderation or combine with healthier options.</li>
-        <li class="nutrition-explain-details"><strong class="color-section" id="red">Red (High)</strong>: Limit consumption and look for healthier alternatives.</li>
-    </ul>
-    <p class="nutrition-explain-details">For more information, please refer to the <a href="https://www.nutricalc.co.uk/case-study/case-study-uk-traffic-light-front-of-pack-colour-thresholds/">NutriCalc</a>,
-    <a href="https://heas.health.vic.gov.au/resources/government-guidelines/traffic-light-system/">Healthy Eating Advisory Service</a></p>
-
-<style>
-    li.nutrition-explain-details {{
-        margin-bottom: 0.5rem !important;
-        margin-top: 0.5rem !important;
-    }}
-    
-    p.nutrition-explain-details {{
-        font-weight: 400 !important;
-        margin: 1rem 0 !important;
-    }}
-    
-    img.nutrition-img {{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }} 
-    
-    .color-section {{
-        padding: 3px 6px;
-        border-radius: 5px;
-    }}
-    
-    #green {{
-        background-color: var(--green-nu);
-    }}
-    
-    #yellow {{
-        background-color: var(--yellow-nu);
-    }}
-    
-    #red {{
-        background-color: var(--red-nu);
-    }}
-</style>
-''', unsafe_allow_html=True)
-        
-        st.markdown(f'''<br><br>''', unsafe_allow_html=True)        
-        model1 = load_model()
-        model = load_onnx_model()
-
-        st.markdown("""
-    <style>
-    /* Style the tab labels */
-    button[data-baseweb="tab"] {
-        padding: calc(8px + 0.2vw) calc(8px + 0.5vw);
-        gap: 0;
-
-    }
-    button[data-baseweb="tab"] p {
-        font-size: calc(9px + 0.3vw) !important;
-        font-weight: 500 !important;        
-    }
-    
-    div[data-baseweb="tab-list"] {
-        gap: 0;
-    }
-    /* Style the active tab */
-    button[data-baseweb="tab"][aria-selected="true"] {
-        background-color: var(--button-color-yellow); /* Active tab color */
-        border-radius: 8px 7px 0 0;
-        color: black;
-    }
-
-    /* Style the inactive tabs */
-    button[data-baseweb="tab"][aria-selected="false"] {
-        color: var(--grey-code-expander);
-    }
-    
-    div[data-baseweb="tab-border"] {
-    }
-    </style>
-""", unsafe_allow_html=True)
-        
-        tab1, tab2, tab3, tab4 = st.tabs(["Image", "Video", "Webcam", "IP Camera"])
-
-        with tab1:
-            st.subheader("Image Upload :frame_with_picture:")
-
-            # Accordion
-            expander = st.expander("Instructions: Image upload and URL")  
-            expander.markdown('''
-    - Uploading image files from the user's local machine or using an image URL is supported.
-    - After the prediction process, two buttons will appear to download the results as an image file with bounding boxes or a CSV file.
-    - The results are generated when the user clicks the button and are named in the format: `"%date-%month-%year".jpg/csv`.
-            ''', unsafe_allow_html=True)
-            st.markdown(f'''
-    <style>
-    [data-testid="stExpanderDetails"] ul li {{
-        font-size: calc(12px + 0.1vw);
-        margin: 1rem 0 1rem 1.5rem;
-        color: black
-    }}
-    .stExpander p {{
-        font-size: calc(13px + 0.1vw);
-        font-weight: 700;
-        color: var(--brown);
-        padding-left: 0.5rem;
-    }}
-    .st-emotion-cache-1h9usn1 {{
-        background-color: var(--button-color-yellor);
-        font-size: calc(16px +1vw);
-    }}
-
-    [data-testid="stExpanderDetails"] {{
-        background-color: var(--grey-light);
-        border-radius: 8px;
-    }}
-    </style>
-                        ''', unsafe_allow_html=True)
-
-            uploaded_file = st.file_uploader("Choose a picture", accept_multiple_files=False, type=['png', 'jpg', 'jpeg'])
-
-            if uploaded_file:
-                detect_image(confidence, model=model1, uploaded_file=uploaded_file)
-
-                # detections = detect_image_onnx(model, uploaded_file, confidence)
-
-            # st.markdown('<br><br>', unsafe_allow_html=True)
-            # st.subheader("Enter a picture URL 	:link:")
-            # with st.form("picture_form"):
-            #     col1, col2 = st.columns([0.8, 0.2], gap="medium")
-            #     with col1:
-            #         picture_url = st.text_input("Label", label_visibility="collapsed", placeholder="https://ultralytics.com/images/bus.jpg")
-            #     with col2:
-            #         submitted = st.form_submit_button("Predict", use_container_width=True)
-            # if submitted and picture_url:
-            #     detect_image(confidence, model=model1, uploaded_file=picture_url, url=True)            
-
-        with tab2:
-                        
-            st.subheader("Video Upload :movie_camera:")
-            expander = st.expander("Instructions: Video upload and URL")  
-            expander.markdown('''
-- Video: upload video files `(.mp4, .mpeg4, etc.)` from the user's local machine.
-- Youtube video or shorts URL links are supported for real-time prediction.
-- The results will be in a CSV file recording all dishes detected across all frames (no image results).
-            ''', unsafe_allow_html=True)
-            
-            uploaded_clip = st.file_uploader("Choose a clip", accept_multiple_files=False, type=['mp4'])
-            if uploaded_clip:
-                detect_video(conf=confidence, uploaded_file=uploaded_clip, model=model1)
-
-            else:
-                st.markdown('<br><br>', unsafe_allow_html=True) 
-                st.subheader("Enter YouTube URL :tv:")
-                # tube = st.empty()
-                with st.form("youtube_form"):
-                    col1, col2 = st.columns([0.8, 0.2], gap="medium")
-                    with col1:
-                        youtube_url = st.text_input("Label", label_visibility="collapsed", placeholder="https://youtu.be/LNwODJXcvt4")
-                    with col2:
-                        submitted = st.form_submit_button("Predict", use_container_width=True)
-                if submitted and youtube_url:            
-                    _display_detected_frame(conf=confidence, model=model1, 
-                                           
-                                            youtube_url=youtube_url)
-
-        with tab3:
-            
-            st.header("Webcam :camera:")
-            expander = st.expander("Instructions: Webcam connection")  
-            expander.markdown('''
-- Webcam: [Streamlit-webrtc](https://github.com/whitphx/streamlit-webrtc) is used to handle local webcam connection due to deployment on [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud).
-- Users can choose their webcam input for live detection.
-- No result files will be generated as the process may run continuously.
-
-            ''', unsafe_allow_html=True)
-            detect_webcam(confidence, model=model1)
-
-        with tab4:
-            
-            st.header("IP Camera :video_camera:")
-            expander = st.expander("Instructions: IP Camera connection")  
-            expander.markdown('''
-- IP Camera: A RTSP address of the user’s camera must be provided.
-- The camera must be configured beforehand to allow connection from an external network.
-            ''', unsafe_allow_html=True)    
-            
-            st.text("Enter your Camera (RTSP) address: ")
-            with st.form("ip_camera_form"):
-                col1, col2 = st.columns([2, 8])
-                with col1:
-                    st.write("rtsp://admin:") 
-                with col2:
-                    address = st.text_input(
-                        "Label", 
-                        label_visibility="collapsed", 
-                        placeholder="hd543211@192.168.14.106:554/Streaming/channels/101"
-                    )
-                    
-                col1, col2 = st.columns([2, 1.35])
-                with col1:
-                    submitted = st.form_submit_button("Connect")
-                with col2:
-                    cancel = st.form_submit_button("Disconnect")
-            
-                if submitted:
-                    if address:
-                        detect_camera(confidence, model1, address=address)
-                    else:
-                        st.error("Please enter a valid RTSP camera URL")
-                
-                if cancel:
-                    if address:
-                        detect_camera(confidence, model1, address="")
-                        st.toast("Disconnected", icon="✅")
-
-    st.markdown('''
-    <div>
-        <a href="#top-section" class="top-button" onclick="smoothScroll(event, 'top-section')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16">
-            <path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/>
-        </svg>
-        </a>                
-    </div>
-    
-    <script>
-    function smoothScroll(event, targetId) {
-        event.preventDefault();
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    </script>
-                ''', unsafe_allow_html=True)
-
-def render_right_side():
-    st.markdown("### 💬 AI Nutritionist (Tư vấn dinh dưỡng)")
-    st.markdown("Hỏi chuyên gia dinh dưỡng AI về thực đơn, lượng calo, chất béo hoặc chế độ dinh dưỡng của các món ăn Việt Nam!")
-    
-    # User Profile Configuration
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### 👤 Hồ sơ Sức khỏe")
-    
-    # Retrieve current values from session state to persist them
-    profile = st.session_state.get("user_profile", {
-        "age": 25,
-        "sex": "female",
-        "weight": 65.0,
-        "height": 170.0,
-        "activity_factor": 1.2,
-        "goal": "maintain"
-    })
-    
-    # Render inputs in sidebar
-    age = st.sidebar.number_input("Tuổi", min_value=1, max_value=120, value=int(profile["age"]), key="profile_age")
-    sex = st.sidebar.selectbox(
-        "Giới tính", 
-        ["male", "female"], 
-        index=0 if profile["sex"] == "male" else 1, 
-        format_func=lambda x: "Nam (Male)" if x == "male" else "Nữ (Female)",
-        key="profile_sex"
-    )
-    weight = st.sidebar.number_input("Cân nặng (kg)", min_value=1.0, max_value=300.0, value=float(profile["weight"]), key="profile_weight")
-    height = st.sidebar.number_input("Chiều cao (cm)", min_value=50.0, max_value=250.0, value=float(profile["height"]), key="profile_height")
-    
-    activity_factor_map = {
-        1.2: "Ít vận động (sedentary)",
-        1.375: "Vận động nhẹ (lightly active)",
-        1.55: "Vận động vừa (moderately active)",
-        1.725: "Vận động nhiều (very active)",
-        1.9: "Vận động nặng (extra active)"
-    }
-    
-    # Find current activity factor index
-    af_keys = list(activity_factor_map.keys())
-    af_index = af_keys.index(profile["activity_factor"]) if profile["activity_factor"] in af_keys else 0
-    
-    activity_factor = st.sidebar.selectbox(
-        "Mức độ vận động",
-        af_keys,
-        index=af_index,
-        format_func=lambda x: activity_factor_map[x],
-        key="profile_activity_factor"
-    )
-    
-    goal_map = {
-        "lose": "Giảm cân (Lose weight)",
-        "maintain": "Giữ cân (Maintain weight)",
-        "gain": "Tăng cân (Gain weight)"
-    }
-    goal_keys = list(goal_map.keys())
-    goal_index = goal_keys.index(profile["goal"]) if profile["goal"] in goal_keys else 1
-    
-    goal = st.sidebar.selectbox(
-        "Mục tiêu sức khỏe",
-        goal_keys,
-        index=goal_index,
-        format_func=lambda x: goal_map[x],
-        key="profile_goal"
-    )
-    
-    # Calculate BMI and TDEE using engine
     bmi = calculate_bmi(weight, height)
     tdee = calculate_tdee_mifflin_st_jeor(weight, height, age, sex, activity_factor)
-    
-    # Calculate RDA based on TDEE and Goal
-    if goal == "lose":
-        calories_target = tdee - 500
-    elif goal == "gain":
-        calories_target = tdee + 500
-    else:
-        calories_target = tdee
-        
-    user_rda = {
-        "Calories": max(1200.0, calories_target),
-        "Protein": weight * 1.6,
-        "Fat": (calories_target * 0.25) / 9.0,
-        "Saturates": (calories_target * 0.08) / 9.0,
-        "Sugar": 50.0,
-        "Salt": 6.0
-    }
-    
-    # Save back to session state
-    st.session_state.user_profile = {
-        "age": age,
-        "sex": sex,
-        "weight": weight,
-        "height": height,
-        "activity_factor": activity_factor,
-        "goal": goal
-    }
+    user_rda = compute_rda(profile, tdee)
     st.session_state.user_rda = user_rda
-    
-    # Display calculated indicators in sidebar
-    st.sidebar.markdown(f"""
-    **📊 Chỉ số sức khỏe:**
-    - **BMI**: `{bmi:.1f}`
-    - **TDEE**: `{tdee:.0f} kcal`
-    - **RDA Calo Mục tiêu**: `{user_rda['Calories']:.0f} kcal`
-    """)
+    bmi_label, bmi_color = ui.bmi_classify(bmi)
 
-    # Get API key from Sidebar or Session State
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### 🔑 Cấu hình Trợ lý AI")
-    
-    llm_provider = st.sidebar.selectbox(
-        "Chọn Trợ lý AI",
-        ["Gemini", "Cerebras", "OpenRouter"],
-        index=0,
-        help="Chọn AI bạn muốn sử dụng để đánh giá dinh dưỡng và tư vấn."
+    st.markdown(ui.divider_dot("Chỉ số của bạn"), unsafe_allow_html=True)
+
+    st.markdown(ui.kpi_row([
+        ui.kpi_card("BMI", f"{bmi:.1f}", unit="kg/m²", sub=f"Phân loại: {bmi_label}",
+                    icon="⚖️", accent="amber"),
+        ui.kpi_card("TDEE", f"{tdee:.0f}", unit="kcal/ngày", sub="Tổng năng lượng tiêu hao",
+                    icon="🔥", accent="red"),
+        ui.kpi_card("Calo mục tiêu", f"{user_rda['Calories']:.0f}", unit="kcal/ngày",
+                    sub=f"Mục tiêu: {GOAL_VI[goal]}", icon="🎯", accent="green"),
+    ]), unsafe_allow_html=True)
+
+    st.markdown(ui.kpi_row([
+        ui.kpi_card("Protein mục tiêu", f"{user_rda['Protein']:.0f}", unit="g/ngày",
+                    sub="1.6 g/kg cân nặng", icon="🍗", accent="blue"),
+        ui.kpi_card("Chất béo", f"{user_rda['Fat']:.0f}", unit="g/ngày",
+                    sub="25% năng lượng", icon="🥑", accent="purple"),
+        ui.kpi_card("Đường (giới hạn)", f"{user_rda['Sugar']:.0f}", unit="g/ngày",
+                    sub="khuyến nghị tối đa", icon="🍬", accent="teal"),
+        ui.kpi_card("Muối (giới hạn)", f"{user_rda['Salt']:.0f}", unit="g/ngày",
+                    sub="khuyến nghị tối đa", icon="🧂", accent="red"),
+    ]), unsafe_allow_html=True)
+
+    left, right = st.columns([1.05, 1], gap="large")
+    with left:
+        st.markdown(f'<div class="result-panel"><div class="section-title">📏 Thước đo BMI</div>'
+                    f'{ui.bmi_gauge(bmi)}</div>', unsafe_allow_html=True)
+        st.markdown(ui.macro_target_panel(user_rda, user_rda["Calories"]), unsafe_allow_html=True)
+    with right:
+        st.markdown('<div class="section-title">📈 Dự báo cân nặng 12 tuần</div>'
+                    'Nếu duy trì mức thặng hụt/thặng dư calo của mục tiêu hiện tại '
+                    '(±500 kcal/ngày ≈ ±0.45 kg/tuần):', unsafe_allow_html=True)
+        st.plotly_chart(ui.weight_projection_fig(weight, height, goal),
+                        width="stretch")
+
+
+# ═════════════════════════════════════════════════════════════════════
+# TAB 2 — QUÉT MÓN ĂN
+# ═════════════════════════════════════════════════════════════════════
+def render_scan_tab():
+    st.markdown(ui.section_header(
+        "🍜 Quét món ăn",
+        "Chọn một món ăn mẫu để thử ngay, hoặc tải ảnh/video từ thiết bị của bạn."),
+        unsafe_allow_html=True)
+
+    col_conf, col_note = st.columns([1.1, 1.6], gap="large")
+    with col_conf:
+        confidence = float(st.slider(
+            "Ngưỡng tin cậy (confidence threshold)",
+            min_value=10, max_value=100, value=50,
+            help="Cao hơn → dự đoán chính xác hơn nhưng có thể bỏ sót món. "
+                 "Thấp hơn → phát hiện được nhiều vật thể hơn.")) / 100
+    with col_note:
+        with st.expander("🚩 Nên chọn ngưỡng tin cậy bao nhiêu?"):
+            st.markdown("""
+            - **Ngưỡng cao (≥ 50%)**: mô hình chỉ báo những món chắc chắn — độ chính xác cao, ít báo nhầm, nhưng có thể bỏ sót món khó nhận diện.
+            - **Ngưỡng thấp (< 50%)**: phát hiện được nhiều vật thể hơn (độ bao phủ cao), nhưng dễ báo nhầm món không có trong ảnh.
+            - **📊 Màu dinh dưỡng**: giá trị được đánh giá theo **hệ thống đèn giao thông** — xem giải thích bên dưới.
+            """)
+
+    with st.expander("🚦 Hệ thống màu giao thông cho giá trị dinh dưỡng"):
+        ui.traffic_legend(st)
+
+    st.markdown(ui.divider_dot("Chọn nguồn đầu vào"), unsafe_allow_html=True)
+
+    model1 = load_model()
+
+    input_mode = st.radio(
+        "Nguồn ảnh / video",
+        ["🖼️ Ảnh mẫu (Demo)", "📁 Tải ảnh lên", "🎥 Video", "📷 Webcam", "📡 IP Camera"],
+        horizontal=True,
+        label_visibility="collapsed",
     )
-    st.session_state.llm_provider = llm_provider
 
-    api_key_input = st.sidebar.text_input("Nhập Gemini API Key", type="password", help="Nhận key miễn phí từ Google AI Studio")
-    cerebras_api_key_input = st.sidebar.text_input("Nhập Cerebras API Key (Tùy chọn)", type="password", help="Nhận key miễn phí từ Cerebras Cloud Console để sử dụng Llama/Gemma với tốc độ siêu nhanh!")
-    openrouter_api_key_input = st.sidebar.text_input("Nhập OpenRouter API Key (Tùy chọn)", type="password", help="Nhận key từ OpenRouter để truy cập hàng trăm mô hình AI (có bản miễn phí)!")
-    
-    # Store key in session state
-    if api_key_input:
-        st.session_state.gemini_api_key = api_key_input
-    if cerebras_api_key_input:
-        st.session_state.cerebras_api_key = cerebras_api_key_input
-    if openrouter_api_key_input:
-        st.session_state.openrouter_api_key = openrouter_api_key_input
-        
-    # Check if API key is configured
+    if input_mode == "🖼️ Ảnh mẫu (Demo)":
+        _render_demo_mode(confidence, model1)
+    elif input_mode == "📁 Tải ảnh lên":
+        _render_image_mode(confidence, model1)
+    elif input_mode == "🎥 Video":
+        _render_video_mode(confidence, model1)
+    elif input_mode == "📷 Webcam":
+        _render_webcam_mode(confidence, model1)
+    else:
+        _render_ip_camera_mode(confidence, model1)
+
+
+def _render_demo_mode(confidence, model1):
+    """Chọn ảnh mẫu có sẵn và phân tích ngay — không cần upload."""
+    demo_images = sorted(ui.DEMO_DIR.glob("*.jpg")) + sorted(ui.DEMO_DIR.glob("*.png"))
+    if not demo_images:
+        st.info("📁 Chưa có ảnh mẫu trong thư mục `assets/demo/`. "
+                "Hãy thêm ảnh món ăn (đặt tên theo món, vd `pho.jpg`) để tạo bộ demo.")
+        return
+
+    st.markdown("**Chọn một món ăn mẫu bên dưới:**", unsafe_allow_html=True)
+    cols = st.columns(min(len(demo_images), 6))
+    choice = st.session_state.get("demo_choice")
+    for idx, img_path in enumerate(demo_images):
+        with cols[idx % len(cols)]:
+            st.image(str(img_path), width="stretch")
+            label = img_path.stem.replace("_", " ").title()
+            is_selected = choice == str(img_path)
+            if st.button(label, key=f"demo_{img_path.stem}",
+                         width="stretch",
+                         type="primary" if is_selected else "secondary"):
+                st.session_state.demo_choice = str(img_path)
+                choice = str(img_path)
+
+    if choice:
+        st.success(f"✅ Đã chọn: **{Path(choice).stem.replace('_', ' ').title()}** — "
+                   "nhấn **Dự đoán** bên dưới để phân tích.")
+        # Gọi mỗi lần rerun (giống chế độ upload) để luồng Dự đoán/Đặt lại
+        # trong detect_image giữ được trạng thái.
+        detect_image(confidence, uploaded_file=Path(choice), model=model1)
+    else:
+        st.info("👆 Bấm vào một món ăn để chọn, sau đó nhấn **Dự đoán** để phân tích.")
+
+
+def _render_image_mode(confidence, model1):
+    with st.expander("📖 Hướng dẫn: tải ảnh lên"):
+        st.markdown("""
+        - Tải ảnh món ăn từ máy (**PNG/JPG/JPEG**) — ảnh chụp ngang, đủ sáng cho kết quả tốt nhất.
+        - Sau khi dự đoán: ảnh có khung nhận diện, bảng dinh dưỡng từng món, biểu đồ macro và các nút tải xuống (ảnh / CSV / JSON).
+        - Nếu ảnh có cảnh quan đủ tốt, app sẽ ước lượng **khối lượng thực tế** bằng SAM2 + bản đồ chiều sâu (mất thêm ~1 phút).
+        """)
+    uploaded_file = st.file_uploader("Chọn ảnh món ăn", accept_multiple_files=False,
+                                     type=["png", "jpg", "jpeg"])
+    if uploaded_file:
+        detect_image(confidence, model=model1, uploaded_file=uploaded_file)
+
+
+def _render_video_mode(confidence, model1):
+    with st.expander("📖 Hướng dẫn: video & YouTube"):
+        st.markdown("""
+        - Tải video (**MP4**) từ máy, hoặc dán liên kết **YouTube / YouTube Shorts** để dự đoán trực tiếp.
+        - Kết quả: tổng dinh dưỡng các món xuất hiện trong video + file CSV.
+        """)
+    uploaded_clip = st.file_uploader("Chọn video", accept_multiple_files=False, type=["mp4"])
+    if uploaded_clip:
+        detect_video(conf=confidence, uploaded_file=uploaded_clip, model=model1)
+    else:
+        st.markdown("##### 🔗 Hoặc dán liên kết YouTube")
+        with st.form("youtube_form"):
+            col1, col2 = st.columns([0.8, 0.2], gap="medium")
+            with col1:
+                youtube_url = st.text_input("URL", label_visibility="collapsed",
+                                            placeholder="https://youtu.be/LNwODJXcvt4")
+            with col2:
+                submitted = st.form_submit_button("Dự đoán", width="stretch", type="primary")
+        if submitted and youtube_url:
+            _display_detected_frame(conf=confidence, model=model1, youtube_url=youtube_url)
+
+
+def _render_webcam_mode(confidence, model1):
+    with st.expander("📖 Hướng dẫn: webcam"):
+        st.markdown("""
+        - Dùng [streamlit-webrtc](https://github.com/whitphx/streamlit-webrtc) để kết nối webcam thực tế.
+        - Chọn nguồn camera rồi bật **START** — món ăn sẽ được nhận diện trực tiếp.
+        - Không tạo file kết quả vì quá trình chạy liên tục.
+        """)
+    detect_webcam(confidence, model=model1)
+
+
+def _render_ip_camera_mode(confidence, model1):
+    with st.expander("📖 Hướng dẫn: IP Camera (RTSP)"):
+        st.markdown("""
+        - Nhập địa chỉ **RTSP** của camera (đã mở truy cập từ mạng ngoài).
+        - Định dạng: `user:mật khẩu@địa-chỉ-ip:554/...`
+        """)
+    with st.form("ip_camera_form"):
+        st.text("Nhập địa chỉ RTSP của camera:")
+        col1, col2 = st.columns([2, 8])
+        with col1:
+            st.write("rtsp://admin:")
+        with col2:
+            address = st.text_input("Địa chỉ RTSP", label_visibility="collapsed",
+                                    placeholder="hd543211@192.168.14.106:554/Streaming/channels/101")
+        col1, col2 = st.columns([2, 1.35])
+        with col1:
+            submitted = st.form_submit_button("Kết nối", type="primary")
+        with col2:
+            cancel = st.form_submit_button("Ngắt kết nối")
+
+        if submitted:
+            if address:
+                detect_camera(confidence, model1, address=address)
+            else:
+                st.error("Vui lòng nhập địa chỉ RTSP hợp lệ")
+        if cancel:
+            if address:
+                detect_camera(confidence, model1, address="")
+                st.toast("Đã ngắt kết nối", icon="✅")
+
+
+# ═════════════════════════════════════════════════════════════════════
+# TAB 3 — AI NUTRITIONIST (CHAT)
+# ═════════════════════════════════════════════════════════════════════
+def render_chat_tab():
+    st.markdown(ui.section_header(
+        "💬 Trợ lý Dinh dưỡng AI",
+        "Hỏi về calo, chất béo, thực đơn lành mạnh — trợ lý hiểu bối cảnh bữa ăn "
+        "vừa quét và thể trạng của bạn."), unsafe_allow_html=True)
+
+    provider = st.session_state.get("llm_provider", "Gemini")
+    key_status = {
+        "Gemini": bool(st.session_state.get("gemini_api_key")),
+        "Cerebras": bool(st.session_state.get("cerebras_api_key")),
+        "OpenRouter": bool(st.session_state.get("openrouter_api_key")),
+        "Cloudflare": bool(st.session_state.get("cloudflare_account_id")
+                           and st.session_state.get("cloudflare_api_token")),
+    }
+    chips = [f'Nhà cung cấp: <b>{provider}</b>']
+    chips.append("✅ Đã kết nối" if key_status.get(provider) else "🔒 Chưa nhập API key (Sidebar)")
+    chips_html = "".join(f'<span class="metric-chip">{c}</span>' for c in chips)
+    st.markdown(f'<div class="metric-chip-row">{chips_html}</div>', unsafe_allow_html=True)
+
+    llm_provider = provider
     api_key = st.session_state.get("gemini_api_key", "")
     cerebras_api_key = st.session_state.get("cerebras_api_key", "")
     openrouter_api_key = st.session_state.get("openrouter_api_key", "")
-    
-    if llm_provider == "Cerebras" and cerebras_api_key:
-        available_models = get_cerebras_models(cerebras_api_key)
-        cerebras_model = st.sidebar.selectbox(
-            "Chọn Mô hình Cerebras",
-            available_models,
-            index=0,
-            help="Danh sách các mô hình khả dụng từ tài khoản Cerebras của bạn."
-        )
-        st.session_state.cerebras_model = cerebras_model
+    cloudflare_account_id = st.session_state.get("cloudflare_account_id", "")
+    cloudflare_api_token = st.session_state.get("cloudflare_api_token", "")
 
-    if llm_provider == "OpenRouter" and openrouter_api_key:
-        available_models = get_openrouter_models(openrouter_api_key)
-        openrouter_model = st.sidebar.selectbox(
-            "Chọn Mô hình OpenRouter",
-            available_models,
-            index=0,
-            help="Danh sách các mô hình khả dụng từ OpenRouter."
-        )
-        st.session_state.openrouter_model = openrouter_model
-    
     if llm_provider == "Gemini":
         if not api_key:
-            st.info("💡 **Gợi ý**: Hãy nhập **Gemini API Key** ở thanh bên (Sidebar) để kích hoạt Trợ lý dinh dưỡng AI. Bạn có thể lấy khóa API miễn phí từ [Google AI Studio](https://aistudio.google.com/).")
-            
-            # Display mock system message when no key is set
-            with st.chat_message("assistant"):
-                st.markdown("""Xin chào! Tôi là Trợ lý Dinh dưỡng AI. 🥗
-                
-Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể giúp bạn:
-- Phân tích hàm lượng calo và dinh dưỡng trong thực đơn của bạn.
-- Đưa ra lời khuyên ăn uống lành mạnh phù hợp với các món ăn Việt Nam.
-- Thiết kế chế độ ăn kiêng, tăng cơ, giảm mỡ,...
-
-*Hãy nhập API Key ở thanh bên để bắt đầu trò chuyện nhé!*""")
+            st.info("💡 **Gợi ý**: nhập **Gemini API Key** ở thanh bên để kích hoạt trợ lý. "
+                    "Lấy key miễn phí từ [Google AI Studio](https://aistudio.google.com/).")
+            _render_chat_welcome(
+                "Xin chào! Tôi là Trợ lý Dinh dưỡng AI. 🥗\n\n"
+                "Sau khi bạn cấu hình khóa API ở thanh bên, tôi có thể giúp bạn:\n"
+                "- Phân tích hàm lượng calo và dinh dưỡng trong thực đơn của bạn.\n"
+                "- Đưa ra lời khuyên ăn uống lành mạnh phù hợp với các món ăn Việt Nam.\n"
+                "- Thiết kế chế độ ăn kiêng, tăng cơ, giảm mỡ,...\n\n"
+                "*Hãy nhập API Key ở thanh bên để bắt đầu trò chuyện nhé!*")
             return
-
-        # Initialize Gemini
         try:
             genai.configure(api_key=api_key)
         except Exception as e:
@@ -687,47 +535,57 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể giúp bạn:
             return
     elif llm_provider == "Cerebras":
         if not cerebras_api_key:
-            st.info("💡 **Gợi ý**: Hãy nhập **Cerebras API Key** ở thanh bên (Sidebar) để kích hoạt Trợ lý dinh dưỡng AI sử dụng Cerebras.")
-            
-            # Display mock system message when no key is set
-            with st.chat_message("assistant"):
-                st.markdown("""Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng Cerebras). 🥗
-                
-Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh dưỡng cho bạn với tốc độ cực nhanh!
-*Hãy nhập Cerebras API Key ở thanh bên để bắt đầu trò chuyện nhé!*""")
+            st.info("💡 **Gợi ý**: nhập **Cerebras API Key** ở thanh bên để kích hoạt trợ lý.")
+            _render_chat_welcome(
+                "Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng Cerebras). 🥗\n\n"
+                "Sau khi bạn cấu hình khóa API ở thanh bên, tôi có thể tư vấn dinh dưỡng "
+                "cho bạn với tốc độ cực nhanh!\n"
+                "*Hãy nhập Cerebras API Key ở thanh bên để bắt đầu trò chuyện nhé!*")
             return
-    else: # OpenRouter
+    elif llm_provider == "OpenRouter":
         if not openrouter_api_key:
-            st.info("💡 **Gợi ý**: Hãy nhập **OpenRouter API Key** ở thanh bên (Sidebar) để kích hoạt Trợ lý dinh dưỡng AI sử dụng OpenRouter.")
-            
-            # Display mock system message when no key is set
-            with st.chat_message("assistant"):
-                st.markdown("""Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng OpenRouter). 🥗
-                
-Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh dưỡng cho bạn bằng hàng trăm mô hình AI khác nhau!
-*Hãy nhập OpenRouter API Key ở thanh bên để bắt đầu trò chuyện nhé!*""")
+            st.info("💡 **Gợi ý**: nhập **OpenRouter API Key** ở thanh bên để kích hoạt trợ lý.")
+            _render_chat_welcome(
+                "Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng OpenRouter). 🥗\n\n"
+                "Sau khi bạn cấu hình khóa API ở thanh bên, tôi có thể tư vấn dinh dưỡng "
+                "cho bạn bằng hàng trăm mô hình AI khác nhau!\n"
+                "*Hãy nhập OpenRouter API Key ở thanh bên để bắt đầu trò chuyện nhé!*")
+            return
+    elif llm_provider == "Cloudflare":
+        if cloudflare_account_id and cloudflare_account_id.strip().startswith("cfut_"):
+            st.error("⚠️ **Nhập nhầm**: chuỗi `cfut_...` là **Cloudflare API Token**, không phải "
+                     "**Account ID**! Vui lòng nhập đúng chuỗi 32 ký tự **Account ID** "
+                     "(Cloudflare Dashboard → Workers & Pages, cột bên phải).")
+            return
+        if not cloudflare_account_id or not cloudflare_api_token:
+            st.info("💡 **Gợi ý**: nhập **Cloudflare Account ID** và **API Token** ở thanh bên "
+                    "để kích hoạt Cloudflare Workers AI.")
+            _render_chat_welcome(
+                "Xin chào! Tôi là Trợ lý Dinh dưỡng AI (sử dụng Cloudflare Workers AI). 🥗\n\n"
+                "Sau khi bạn cấu hình Account ID và API Token ở thanh bên, tôi có thể tư vấn "
+                "dinh dưỡng bằng các mô hình AI chạy trên mạng lưới toàn cầu của Cloudflare "
+                "(miễn phí 10,000 neurons/ngày)!\n"
+                "*Hãy nhập thông tin ở thanh bên để bắt đầu trò chuyện nhé!*")
             return
 
-    # Initialize chat history
     if "chat_messages" not in st.session_state:
         st.session_state.chat_messages = []
 
-    # Dedicated scrollable container for chat history
-    chat_container = st.container(height=560, border=True)
+    chat_container = st.container(height=620, border=True)
 
-    # Display chat messages from history inside scroll container
     with chat_container:
         for message in st.session_state.chat_messages:
-            with st.chat_message(message["role"]):
-                if message.get("reasoning_details"):
-                    with st.expander("💭 Suy nghĩ của AI (Reasoning)"):
-                        st.write(message["reasoning_details"])
-                st.markdown(message["content"])
+            content_str = str(message.get("content", "")) if message.get("content") is not None else ""
+            if content_str and content_str.strip() and content_str.strip().lower() != "none":
+                with st.chat_message(message["role"]):
+                    if message.get("reasoning_details"):
+                        with st.expander("💭 Suy nghĩ của AI (Reasoning)"):
+                            st.write(message["reasoning_details"])
+                    st.markdown(content_str)
 
-        # Predefined suggestions when chat history is empty
         selected_suggestion = None
         if not st.session_state.chat_messages:
-            st.markdown("**💡 Câu hỏi gợi ý tư vấn mẫu:**")
+            st.markdown("**💡 Câu hỏi gợi ý:**")
             suggestions = [
                 "Món phở bò chứa bao nhiêu calo và protein?",
                 "Gợi ý thực đơn tăng cơ với các món ăn Việt",
@@ -744,29 +602,24 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
             cols = st.columns(2)
             for idx, sug in enumerate(suggestions):
                 col = cols[idx % 2]
-                if col.button(sug, key=f"sug_{idx}", use_container_width=True):
+                if col.button(sug, key=f"sug_{idx}", width="stretch"):
                     selected_suggestion = sug
 
-    # React to user input
-    prompt = st.chat_input("Hãy hỏi tôi về dinh dưỡng...")
-    
+    prompt = st.chat_input("Hỏi tôi bất cứ điều gì về dinh dưỡng món Việt...")
+
     if selected_suggestion:
         prompt = selected_suggestion
 
     if prompt:
         with chat_container:
-            # Display user message in chat message container
             with st.chat_message("user"):
                 st.markdown(prompt)
-            # Add user message to chat history
             st.session_state.chat_messages.append({"role": "user", "content": prompt})
 
-            # Generate response using Gemini
             with st.chat_message("assistant"):
                 message_placeholder = st.empty()
                 with st.spinner("Đang suy nghĩ..."):
                     try:
-                        # Build dynamic meal context from session state using structured facts JSON
                         last_dishes = st.session_state.get("last_detected_dishes")
                         last_nutri = st.session_state.get("last_total_nutrition")
                         user_profile = st.session_state.get("user_profile")
@@ -774,12 +627,17 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                         meal_context = ""
                         if last_dishes and last_nutri and user_profile and user_rda:
                             facts = build_structured_facts(last_nutri, user_profile, user_rda, last_dishes)
-                            import json
                             meal_context = (
                                 f"\n[BỐI CẢNH BỮA ĂN VỪA PHÁT HIỆN DƯỚI DẠNG JSON FACTS]:\n"
                                 f"{json.dumps(facts, indent=2, ensure_ascii=False)}\n"
                                 f"Hãy sử dụng các sự thật (facts) có cấu trúc này để trả lời nếu người dùng hỏi về món ăn hiện tại, bữa ăn của họ, hoặc xin lời khuyên dinh dưỡng."
                             )
+
+                        rag_context = retrieve_context(
+                            query=prompt,
+                            detected_foods=last_dishes,
+                            top_k=3
+                        )
 
                         system_context = (
                             "Bạn là một chuyên gia tư vấn dinh dưỡng AI chuyên nghiệp chuyên về ẩm thực Việt Nam.\n"
@@ -788,12 +646,13 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             "và đề xuất các mẹo ăn uống lành mạnh (ví dụ: bớt nước lèo khi ăn phở, ăn thêm rau xà lách...).\n"
                             "Hãy trả lời bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu.\n"
                             "Không nói dông dài, đi thẳng vào vấn đề chính. Chỉ đưa ra câu trả lời trực tiếp bằng tiếng Việt, không lặp lại bất kỳ mô tả vai trò, nhiệm vụ hay cấu hình hệ thống nào.\n"
+                            f"{rag_context}"
                             f"{meal_context}"
                         )
 
                         if llm_provider.startswith("Cerebras"):
                             model_id = st.session_state.get("cerebras_model", "gpt-oss-120b")
-
+                            import requests
                             headers = {
                                 "Authorization": f"Bearer {cerebras_api_key}",
                                 "Content-Type": "application/json"
@@ -802,8 +661,6 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                                 "model": model_id,
                                 "messages": [{"role": "system", "content": system_context}] + st.session_state.chat_messages
                             }
-
-                            import requests
                             res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=payload)
                             if res.status_code == 200:
                                 response_text = res.json()["choices"][0]["message"]["content"]
@@ -814,45 +671,33 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             return
                         if llm_provider == "OpenRouter":
                             model_id = st.session_state.get("openrouter_model", "google/gemini-2.5-flash:free")
-
+                            import requests
                             headers = {
                                 "Authorization": f"Bearer {openrouter_api_key}",
                                 "Content-Type": "application/json"
                             }
-                            
-                            # Build message payload passing back reasoning_details unmodified
                             payload_messages = []
                             for msg in st.session_state.chat_messages:
-                                m = {
-                                    "role": msg["role"],
-                                    "content": msg["content"]
-                                }
+                                m = {"role": msg["role"], "content": msg["content"]}
                                 if "reasoning_details" in msg and msg["reasoning_details"]:
                                     m["reasoning_details"] = msg["reasoning_details"]
                                 payload_messages.append(m)
-
                             payload = {
                                 "model": model_id,
                                 "messages": [{"role": "system", "content": system_context}] + payload_messages,
                                 "reasoning": {"enabled": True},
                                 "max_tokens": 4000
                             }
-
-                            import requests
                             res = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=payload)
                             if res.status_code == 200:
                                 data = res.json()
                                 assistant_msg = data["choices"][0]["message"]
                                 response_text = assistant_msg.get("content", "")
                                 reasoning_details = assistant_msg.get("reasoning_details")
-                                
-                                # Display reasoning if available before main response
                                 if reasoning_details:
                                     with st.expander("💭 Suy nghĩ của AI (Reasoning)"):
                                         st.write(reasoning_details)
                                 message_placeholder.markdown(response_text)
-                                
-                                # Store in session state including reasoning_details
                                 st.session_state.chat_messages.append({
                                     "role": "assistant",
                                     "content": response_text,
@@ -861,10 +706,66 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             else:
                                 message_placeholder.markdown(f"❌ Lỗi từ OpenRouter API (Mã lỗi {res.status_code}): {res.text}")
                             return
-                        
-                        # Check if we already found a working model in this session
+                        if llm_provider == "Cloudflare":
+                            cf_account_id = st.session_state.get("cloudflare_account_id", "").strip()
+                            cf_api_token = st.session_state.get("cloudflare_api_token", "").strip()
+                            model_id = st.session_state.get("cloudflare_model", "@cf/meta/llama-3.1-8b-instruct").strip()
+                            import requests
+                            headers = {
+                                "Authorization": f"Bearer {cf_api_token}",
+                                "Content-Type": "application/json"
+                            }
+                            payload_messages = []
+                            if system_context and str(system_context).strip():
+                                payload_messages.append({"role": "system", "content": str(system_context).strip()})
+                            for msg in st.session_state.chat_messages:
+                                role = str(msg.get("role", "user"))
+                                content = msg.get("content")
+                                if content is None:
+                                    continue
+                                if isinstance(content, list):
+                                    text_parts = [p.get("text", "") if isinstance(p, dict) else str(p) for p in content]
+                                    content = " ".join(text_parts)
+                                else:
+                                    content = str(content)
+                                if content.strip():
+                                    payload_messages.append({"role": role, "content": content.strip()})
+                            url = f"https://api.cloudflare.com/client/v4/accounts/{cf_account_id}/ai/v1/chat/completions"
+                            res = requests.post(url, headers=headers, json={"model": model_id, "messages": payload_messages})
+                            # If v1 OpenAI endpoint is not enabled or returns 404/400, fallback to direct run endpoint
+                            if res.status_code in [404, 400]:
+                                url_fallback = f"https://api.cloudflare.com/client/v4/accounts/{cf_account_id}/ai/run/{model_id}"
+                                res_fallback = requests.post(url_fallback, headers=headers, json={"messages": payload_messages})
+                                if res_fallback.status_code == 200:
+                                    res = res_fallback
+                            if res.status_code == 200:
+                                data = res.json()
+                                response_text = ""
+                                if isinstance(data, dict):
+                                    if "choices" in data and isinstance(data["choices"], list) and len(data["choices"]) > 0:
+                                        msg_obj = data["choices"][0].get("message", {})
+                                        if isinstance(msg_obj, dict) and msg_obj.get("content"):
+                                            response_text = str(msg_obj["content"])
+                                    if not response_text and "result" in data and isinstance(data["result"], dict):
+                                        if data["result"].get("response"):
+                                            response_text = str(data["result"]["response"])
+                                        elif "choices" in data["result"] and isinstance(data["result"]["choices"], list) and len(data["result"]["choices"]) > 0:
+                                            msg_obj = data["result"]["choices"][0].get("message", {})
+                                            if isinstance(msg_obj, dict) and msg_obj.get("content"):
+                                                response_text = str(msg_obj["content"])
+                                if not response_text or not response_text.strip() or response_text.strip().lower() == "none":
+                                    response_text = "❌ Không nhận được câu trả lời từ mô hình Cloudflare AI này (Phản hồi rỗng). Vui lòng đổi sang mô hình `@cf/meta/llama-3.1-8b-instruct` ở thanh bên."
+                                message_placeholder.markdown(response_text)
+                                st.session_state.chat_messages.append({"role": "assistant", "content": response_text})
+                            else:
+                                err_msg = f"❌ Lỗi từ Cloudflare Workers AI (Mã lỗi {res.status_code}): {res.text}"
+                                if res.status_code == 403 and "Free plan" in res.text:
+                                    err_msg = f"❌ **Lỗi 403**: Mô hình `{model_id}` yêu cầu tài khoản Cloudflare Workers trả phí (Paid plan).\n\n👉 Vui lòng chuyển sang mô hình miễn phí như `@cf/meta/llama-3.1-8b-instruct` hoặc `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` ở thanh bên."
+                                message_placeholder.markdown(err_msg)
+                            return
+
+                        # Gemini (mặc định)
                         working_model = st.session_state.get("working_model_name", "")
-                        
                         if working_model:
                             model = genai.GenerativeModel(working_model, system_instruction=system_context)
                             chat = model.start_chat(history=[])
@@ -873,7 +774,6 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                             message_placeholder.markdown(response_text)
                             st.session_state.chat_messages.append({"role": "assistant", "content": response_text})
                         else:
-                            # Find available models and prioritize them
                             models_to_try = []
                             try:
                                 models = list(genai.list_models())
@@ -882,18 +782,12 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                                 models_to_try = api_names
                             except Exception:
                                 pass
-                                
-                            # Standard fallbacks if list_models failed
                             if not models_to_try:
                                 models_to_try = ["gemini-3.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
-                            
-                            # Ensure latest models are at the very beginning of the trial list
                             for latest in ["gemini-3.5-flash", "gemini-2.0-flash"]:
                                 if latest in models_to_try:
                                     models_to_try.remove(latest)
-                                models_to_try.insert(0, latest)
-                            
-                            # Loop and test models in sequence
+                                    models_to_try.insert(0, latest)
                             success = False
                             last_error = ""
                             response_text = ""
@@ -904,76 +798,160 @@ Sau khi bạn cấu hình khóa API ở Sidebar, tôi có thể tư vấn dinh d
                                     response = chat.send_message(prompt)
                                     response_text = response.text
                                     success = True
-                                    # Cache the working model
                                     st.session_state.working_model_name = model_name
                                     break
                                 except Exception as e:
                                     last_error = str(e)
-                                    # If it's a 404, 429, quota, not found, or unsupported model error, try the next one
                                     if "404" in last_error or "429" in last_error or "quota" in last_error.lower() or "not found" in last_error.lower() or "available" in last_error.lower() or "support" in last_error.lower():
                                         continue
                                     else:
                                         break
-                                        
                             if success:
                                 message_placeholder.markdown(response_text)
                                 st.session_state.chat_messages.append({"role": "assistant", "content": response_text})
                             else:
                                 message_placeholder.markdown(f"❌ Đã xảy ra lỗi khi kết nối với Gemini API: {last_error}")
                     except Exception as e:
-                        message_placeholder.markdown(f"❌ Đã xảy ra lỗi khi kết nối với Gemini API: {e}")
+                        message_placeholder.markdown(f"❌ Đã xảy ra lỗi khi kết nối với API: {e}")
 
-def render_content():
-    col_left, col_right = st.columns([0.55, 0.45], gap="large")
-    with col_left:
-        render_left_side()
-    with col_right:
-        render_right_side()
 
-# Nav bar
-def navbar(active_page):
-    return f"""
-    <div class="custom-navbar">
-        <div class="nav-items">
-            <a href="/main" target="_self" class="nav-item {'active' if active_page == 'Home' else ''}">🏠 Home</a>
-            <a href="/dataset" target="_self" class="nav-item {'active' if active_page == 'About' else ''}">📄 About</a>
-        </div>
-        <a href="https://github.com/Jralik/VietNamese-Food-Nutrition-Cal" target="_blank" class="nav-item">
-            <svg id="github-icon" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"></path>
-            </svg>
-        </a>
+def _render_chat_welcome(welcome_text):
+    with st.chat_message("assistant"):
+        st.markdown(welcome_text)
+    if not st.session_state.get("chat_messages"):
+        st.markdown("**💡 Câu hỏi gợi ý:**")
+        suggestions = [
+            "Món phở bò chứa bao nhiêu calo và protein?",
+            "Gợi ý thực đơn tăng cơ với các món ăn Việt",
+            "Bữa ăn có bún chả và chả giò có lành mạnh không?",
+            "Làm sao để giảm cân mà vẫn ăn cơm tấm?"
+        ]
+        cols = st.columns(2)
+        for idx, sug in enumerate(suggestions):
+            cols[idx % 2].button(sug, key=f"welcome_sug_{idx}", width="stretch")
+
+
+# ═════════════════════════════════════════════════════════════════════
+# TAB 4 — VỀ MÔ HÌNH & DỮ LIỆU
+# ═════════════════════════════════════════════════════════════════════
+def render_about_tab():
+    st.markdown(ui.section_header(
+        "📖 Về FoodDetector AI",
+        "Hệ thống nhận diện món ăn Việt Nam và phân tích dinh dưỡng tự động."), unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="about-callout">
+        <p><b>🍜 FoodDetector AI</b> là hệ thống hoàn chỉnh gồm 4 giai đoạn: <b>nhận diện</b> món ăn bằng
+        YOLOv26 fine-tuned trên bộ dữ liệu VietFood67 → <b>phân đoạn</b> vùng món ăn bằng SAM 2 →
+        <b>ước lượng thể tích & khối lượng</b> bằng bản đồ chiều sâu (Depth Anything V2) →
+        <b>tính dinh dưỡng và tư vấn</b> cá nhân hóa bằng AI (RAG + LLM).</p>
+        <p>Ứng dụng hỗ trợ quét từ <b>ảnh, video, webcam và IP camera</b>, đánh giá dinh dưỡng theo
+        <b>hệ thống đèn giao thông</b> và so sánh với nhu cầu hằng ngày (RDA) được tính từ BMI/TDEE của người dùng.</p>
     </div>
-    """
+    """, unsafe_allow_html=True)
 
-def styling_css():
-    with open('./assets/css/general-style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
- 
-        
-def home_page():
-    st.markdown(navbar('Home'), unsafe_allow_html=True)
-    
+    st.markdown(ui.metric_chips([
+        ("30,360", "ảnh trong dataset"),
+        ("68", "lớp món ăn"),
+        ("123,644", "ảnh sau tăng cường"),
+        ("mAP50 · 0.95", "độ chính xác"),
+    ]), unsafe_allow_html=True)
 
-def about_page():
-    st.markdown(navbar('About'), unsafe_allow_html=True)
-    
+    st.divider()
+    st.markdown("#### 🗃️ Bộ dữ liệu VietFood67")
+    st.markdown("""
+    Bộ dữ liệu gồm **30,360 ảnh** với **68 lớp**, bao gồm thêm một lớp nhận diện **con người** —
+    giúp hệ thống theo dõi hoạt động ăn uống và cho kết quả toàn diện hơn (thời lượng ăn có thể
+    suy ra từ việc phát hiện người cùng với các món ăn).
 
-# Main app logic
+    Bộ dữ liệu được chia **70% / 20% / 10%**: **21,264** ảnh train · **6,074** ảnh test · **3,022** ảnh valid.
+    """)
+
+    import class_names as cn_module
+    rows = "\n".join(
+        f"| {i} | {c['name']} |" for i, c in enumerate(cn_module.class_names[:34]))
+    rows2 = "\n".join(
+        f"| {i + 34} | {c['name']} |" for i, c in enumerate(cn_module.class_names[34:]))
+    header = "| ID | Món ăn |\n|----|--------|"
+    col1, col2 = st.columns(2, gap="large")
+    with col1:
+        st.markdown(header + "\n" + rows)
+    with col2:
+        st.markdown(header + "\n" + rows2)
+
+    st.divider()
+    st.markdown("#### 🔍 Thu thập dữ liệu")
+    st.markdown("""
+    Ảnh được thu thập từ nhiều nguồn khác nhau để đảm bảo tính đa dạng và phức tạp:
+    - **Google, Facebook, ShopeeFood**: phần lớn ảnh được tìm theo tên món với từ khóa như "review đồ ăn", "nấu ăn".
+    - **YouTube**: trích xuất khung hình từ video/shorts với sự hỗ trợ của công cụ [Roboflow](https://roboflow.com/).
+    - **Bộ sưu tập cá nhân**: một số ảnh chụp bằng điện thoại để mô phỏng điều kiện nhận diện thực tế.
+    """)
+
+    st.markdown("#### ✍️ Gán nhãn dữ liệu")
+    st.markdown("""
+    Quá trình gán nhãn khung giới hạn (bounding box) sử dụng công cụ [Roboflow](https://roboflow.com/).
+    Để tăng tốc, một mô hình YOLOv10m được huấn luyện trên một phần dữ liệu rồi dùng tính năng
+    **Auto Label** để gán nhãn tự động phần còn lại, sau đó kiểm tra thủ công.
+    """)
+
+    st.markdown("#### ⚙️ Xử lý & tăng cường dữ liệu")
+    st.markdown("""
+    Các kỹ thuật tăng cường được áp dụng để mô hình tổng quát tốt và giải quyết mất cân bằng giữa các lớp:
+    - **Cắt bounding box**: zoom tối thiểu 5%, tối đa 20%.
+    - **Lật bounding box**: lật theo chiều dọc.
+    - **Chỉnh độ sáng**: từ −15% đến +15%.
+    - **Augmentation Mosaic**.
+
+    Tổng cộng thu được **123,644 ảnh** sau quá trình tăng cường để huấn luyện mô hình.
+    """)
+
+
+# ═════════════════════════════════════════════════════════════════════
+# APP SHELL
+# ═════════════════════════════════════════════════════════════════════
 def main():
-        # Get the current page from the URL
-    styling_css()
-    query_params = st.query_params
-    path = query_params.get("page", ["home"])[0].lower()
-    
-    # Always render the navbar
-    st.markdown(navbar('Home' if path == 'home' else 'About'), unsafe_allow_html=True)
-    
-    if path == "about":
-        st.markdown('<h1 style="color: white; font-size: 40px;">About Section</h1>', unsafe_allow_html=True)
-        st.write("This is the About section. Here you can add information about your project or organization.")
-    else:
-        render_content()
+    ui.inject_css()
+    st.markdown('<div id="top-section"></div>', unsafe_allow_html=True)
+    st.markdown(ui.navbar(), unsafe_allow_html=True)
+
+    render_sidebar()
+
+    st.markdown(ui.hero(), unsafe_allow_html=True)
+
+    tab_health, tab_scan, tab_chat, tab_about = st.tabs(
+        ["🧬 Thể trạng", "🍜 Quét món ăn", "💬 AI Nutritionist", "📖 Về mô hình"])
+
+    with tab_health:
+        render_health_tab()
+    with tab_scan:
+        render_scan_tab()
+    with tab_chat:
+        render_chat_tab()
+    with tab_about:
+        render_about_tab()
+
+    # Nút cuộn lên đầu trang
+    st.markdown(f"""
+    <a href="#top-section" class="top-button" title="Lên đầu trang">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg>
+    </a>
+    <script>
+    function smoothScroll(event, targetId) {{
+        event.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {{
+            targetElement.scrollIntoView({{ behavior: 'smooth' }});
+        }}
+    }}
+    </script>
+    """, unsafe_allow_html=True)
+
+    st.markdown('<div style="text-align:center; font-size:11px; color: var(--text-faint); '
+                'padding: 1.2rem 0 2rem 0;">🍜 FoodDetector AI — Nhận diện món Việt & '
+                'tư vấn dinh dưỡng cá nhân hóa · Giá trị dinh dưỡng chỉ mang tính tham khảo</div>',
+                unsafe_allow_html=True)
+
 
 if __name__ == "__main__":
     main()

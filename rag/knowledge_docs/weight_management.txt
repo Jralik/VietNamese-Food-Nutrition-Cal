@@ -1,0 +1,74 @@
+== QUẢN LÝ CÂN NẶNG VÀ CHUYỂN HÓA ==
+Nguồn: NIH, WHO, ACSM (American College of Sports Medicine), nghiên cứu dinh dưỡng hiện đại
+
+NGUYÊN TẮC CƠ BẢN CÂN BẰNG NĂNG LƯỢNG
+Cân nặng được kiểm soát bởi phương trình đơn giản: Calo nạp vào vs. Calo tiêu thụ.
+- Dư calo (surplus): ~+3500 kcal tích lũy = +0.45kg mỡ
+- Thiếu hụt calo (deficit): ~-3500 kcal tiêu hao = -0.45kg mỡ
+- Giảm cân an toàn: 0.5–1 kg/tuần = cần thiếu hụt 500–1000 kcal/ngày
+
+TDEE (TOTAL DAILY ENERGY EXPENDITURE) — NĂNG LƯỢNG TIÊU THỤ HÀNG NGÀY
+TDEE bao gồm:
+1. BMR (Basal Metabolic Rate): năng lượng cơ thể tiêu thụ khi nghỉ ngơi hoàn toàn (~60–70% TDEE)
+2. TEF (Thermic Effect of Food): năng lượng tiêu hóa thức ăn (~10% TDEE)
+3. Activity Energy Expenditure: vận động thể chất và hoạt động hàng ngày (~20–30% TDEE)
+
+Công thức Mifflin-St Jeor (chính xác nhất hiện nay):
+Nam: BMR = 10 × cân nặng (kg) + 6.25 × chiều cao (cm) - 5 × tuổi + 5
+Nữ: BMR = 10 × cân nặng (kg) + 6.25 × chiều cao (cm) - 5 × tuổi - 161
+TDEE = BMR × Activity Factor (1.2 đến 1.9)
+
+Mức độ vận động (Activity Factor):
+- 1.2: Ít vận động (ngồi hầu hết ngày, không tập thể dục)
+- 1.375: Vận động nhẹ (tập 1–3 ngày/tuần)
+- 1.55: Vận động vừa (tập 3–5 ngày/tuần)
+- 1.725: Vận động nhiều (tập 6–7 ngày/tuần, cường độ cao)
+- 1.9: Vận động cực nhiều (tập 2 lần/ngày, lao động nặng)
+
+GIẢM CÂN (WEIGHT LOSS)
+Chiến lược giảm cân bền vững theo NIH và WHO:
+Calo: Tạo thiếu hụt 300–500 kcal/ngày. Không nên ăn dưới 1200 kcal/ngày (nữ) hoặc 1500 kcal/ngày (nam) — nguy hiểm cho sức khỏe.
+
+Protein cao trong giảm cân: Protein giúp duy trì cơ bắp khi giảm cân. Mục tiêu: 1.2–1.6 g/kg cân nặng hiện tại/ngày. Các thực phẩm protein tốt: cá, ức gà, trứng trắng, đậu phụ, sữa chua Hy Lạp.
+
+Chiến lược ăn uống cho giảm cân:
+- Ăn nhiều protein và chất xơ để tăng cảm giác no
+- Ăn rau trước bữa ăn để giảm lượng tinh bột hấp thu sau đó
+- Kiểm soát khẩu phần thay vì loại bỏ hoàn toàn nhóm thực phẩm
+- Ưu tiên thực phẩm nguyên chất, ít chế biến
+- Không bỏ bữa sáng — nghiên cứu cho thấy bỏ bữa sáng có thể tăng ăn quá mức buổi tối
+- Ăn chậm, nhai kỹ — não cần ~20 phút để nhận tín hiệu no từ dạ dày
+
+Những điều cần tránh khi giảm cân:
+- Crash diet (< 800 kcal/ngày): mất cơ, giảm trao đổi chất, yo-yo effect
+- Loại bỏ hoàn toàn carbohydrate dài hạn: không bền vững
+- Thực phẩm "diet" chế biến sẵn: thường nhiều đường hoặc hóa chất thay thế
+
+Áp dụng với ẩm thực Việt Nam khi giảm cân:
+- Ưu tiên: cháo gà ít cơm, phở ít bánh nhiều thịt và rau, gỏi cuốn tươi, canh rau ít dầu, cá hấp
+- Hạn chế: cơm chiên, bún chả nhiều thịt mỡ, bánh xèo, chả giò, đồ ngọt
+- Uống nhiều nước (2–2.5 lít/ngày) — giúp kiểm soát cơn thèm ăn và hỗ trợ chuyển hóa
+
+TĂNG CÂN / TĂNG CƠ (WEIGHT GAIN / MUSCLE BUILDING)
+Để tăng cơ bắp (lean mass) thay vì mỡ, cần kết hợp thặng dư calo nhỏ và tập lực (resistance training).
+
+Calo thặng dư: +250–500 kcal/ngày so với TDEE cho phép tăng cân từ từ. Tăng quá nhanh (>1 kg/tuần) phần lớn là mỡ.
+
+Protein cho tăng cơ (ACSM và ISSN): 1.6–2.2 g/kg cân nặng/ngày là tối ưu cho tăng cơ. Phân bổ đều: 3–5 bữa protein mỗi ngày, mỗi bữa 20–40g protein là hiệu quả nhất (protein synthesis rate giới hạn ~25–40g/lần).
+
+Timing protein (protein timing): Protein sau tập lực trong vòng 2 giờ hỗ trợ phục hồi và tổng hợp cơ. Protein trước ngủ (casein) hỗ trợ tổng hợp cơ ban đêm.
+
+Nguồn protein tốt trong ẩm thực Việt cho người tăng cơ: trứng luộc, ức gà luộc, cá hấp, đậu hũ, tôm luộc, thịt bò nạc, sữa tươi không đường. Tránh protein chiên nhiều dầu làm tăng calo không cần thiết.
+
+Carbohydrate cho tăng cơ: Carb cung cấp glycogen — nhiên liệu cho tập luyện cường độ cao. Tiêu thụ carb trước tập 1–2 giờ (cơm, bánh mì, chuối). Sau tập: kết hợp protein + carb để tái tổng hợp glycogen và phục hồi cơ.
+
+GIỮ CÂN (WEIGHT MAINTENANCE)
+Nghiên cứu cho thấy giữ cân sau giảm cân là thách thức lớn nhất. Chiến lược hiệu quả:
+- Duy trì thói quen ăn uống đã giúp giảm cân — không quay về chế độ cũ
+- Tập thể dục đều đặn: ít nhất 150–300 phút vận động vừa/tuần (WHO)
+- Theo dõi cân nặng định kỳ (1–2 lần/tuần) để phát hiện sớm tăng cân trở lại
+- Ăn sáng đều đặn và duy trì giờ ăn ổn định
+- Kiểm soát stress và ngủ đủ giấc (ngủ < 6h/đêm làm tăng hormone đói ghrelin)
+
+SỤT CÂN KHÔNG CHỦ Ý — DẤU HIỆU NGUY HIỂM
+Giảm > 5% cân nặng trong 6–12 tháng mà không cố ý có thể là dấu hiệu bệnh lý nghiêm trọng (ung thư, cường giáp, HIV, trầm cảm, tiểu đường không kiểm soát). Cần thăm khám bác sĩ ngay.
