@@ -1,6 +1,6 @@
 # 🇻🇳 Vietnamese Food Nutrition & Calorie Detector (VietNamese-Food-Nutrition-Cal)
 
-[![Live Demo](https://img.shields.io/badge/Live_App-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit)](https://vietnamese-nutrition-calc.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Live_App-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit)][(https://vietnamese-nutrition-calc.streamlit.app/](https://vietnamese-food-nutrition-cal.streamlit.app/))
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![YOLOv26](https://img.shields.io/badge/Model-YOLOv26-green.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
 [![mAP50](https://img.shields.io/badge/mAP50-0.95-brightgreen.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
@@ -16,7 +16,7 @@ Hệ thống được huấn luyện trên mô hình **YOLOv26** tiên tiến v�
 ## 🌐 Trải Nghiệm Trực Tuyến (Live Demo)
 
 Bạn có thể truy cập và trải nghiệm trực tiếp hệ thống tại địa chỉ:  
-👉 **[https://vietnamese-nutrition-calc.streamlit.app/](https://vietnamese-nutrition-calc.streamlit.app/)**
+👉 **[[https://vietnamese-nutrition-calc.streamlit.app/](https://vietnamese-nutrition-calc.streamlit.app/)](https://vietnamese-food-nutrition-cal.streamlit.app/)**
 python test_volume_pipeline.py --image C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\bun-bo-hue1.jpg --save-viz
 ---
 
