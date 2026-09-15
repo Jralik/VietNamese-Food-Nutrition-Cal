@@ -1,6 +1,6 @@
 # 🇻🇳 Vietnamese Food Nutrition & Calorie Detector (VietNamese-Food-Nutrition-Cal)
 
-[![Live Demo](https://img.shields.io/badge/Live_App-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit)][(https://vietnamese-nutrition-calc.streamlit.app/](https://vietnamese-food-nutrition-cal.streamlit.app/))
+[![Live Demo](https://img.shields.io/badge/Live_App-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit)([https://vietnamese-food-nutrition-cal.streamlit.app/](https://vietnamese-food-nutrition-cal.streamlit.app/)))
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![YOLOv26](https://img.shields.io/badge/Model-YOLOv26-green.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
 [![mAP50](https://img.shields.io/badge/mAP50-0.95-brightgreen.svg)](https://github.com/Jralik/VietNamese-Food-Nutrition-Cal)
