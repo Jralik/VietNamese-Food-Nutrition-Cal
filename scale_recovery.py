@@ -20,6 +20,10 @@ from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
 
+# ArUco marker nghiêng góc chụp chiếu thành hình bình hành: spread 8-18%
+# là marker thật (xác minh thêm bằng warp chỉnh透视), >18% gần như chắc chắn FP.
+TILTED_MARKER_SPREAD_CAP_PCT = 18.0
+
 
 @dataclass
 class ScaleResult:
@@ -176,17 +180,18 @@ class ScaleRecovery:
         return global_scale.mm_per_pixel
 
     @staticmethod
-    def _marker_looks_real(gray_det, corners_det, edge_det_px) -> Tuple[bool, str]:
-        """Reject ArUco false positives (food textures hallucinate markers,
-        especially on stretched images).
+    def _marker_looks_real(gray_det, corners_det, edge_det_px) -> Tuple[bool, str, float]:
+        """First-pass ArUco candidate check. Returns (ok, reason, spread_pct).
 
         Checks:
-          1. Squareness — a real marker projects to a near-square quad
-             (side-length spread <= 8%).
+          1. Squareness — a face-on real marker projects to a near-square quad
+             (side-length spread <= 8%). A TILTED real marker (8-18% spread,
+             photo taken at an angle) is accepted later by the caller only if
+             it also survives the rectified re-decode below.
           2. Minimum size — edge < 18px is too small for a 30mm marker in any
              plausible food-photo framing.
-          (Threshold-robustness re-detection is applied separately by the
-          caller — real markers decode across binarization thresholds.)
+        (Threshold-robustness re-detection is applied separately by the
+        caller — real markers decode across binarization thresholds.)
         """
         # 1. Squareness
         sides = np.array([
@@ -195,13 +200,45 @@ class ScaleRecovery:
             np.linalg.norm(corners_det[3] - corners_det[2]),
             np.linalg.norm(corners_det[0] - corners_det[3]),
         ])
-        if sides.mean() > 0 and sides.std() / sides.mean() > 0.08:
-            return False, f"quad not square (side spread {100*sides.std()/sides.mean():.0f}%)"
+        spread_pct = float(100.0 * sides.std() / sides.mean()) if sides.mean() > 0 else 0.0
+        if spread_pct > TILTED_MARKER_SPREAD_CAP_PCT:
+            return False, f"quad not square (side spread {spread_pct:.0f}%)", spread_pct
 
         # 2. Minimum size
         if edge_det_px < 18.0:
-            return False, f"marker too small ({edge_det_px:.0f}px edge)"
-        return True, ""
+            return False, f"marker too small ({edge_det_px:.0f}px edge)", spread_pct
+        return True, "", spread_pct
+
+    @staticmethod
+    def _rectified_redetect(dict_obj, gray, corners_det, patch_px: int = 96) -> bool:
+        """Perspective-verification for tilted markers: warp the candidate quad
+        into a top-down patch_px x patch_px view and re-decode there.
+
+        A real marker photographed at an angle decodes cleanly once
+        rectified; a food-texture hallucination (the reason the squareness
+        gate exists) almost never produces a decodable top-down patch.
+        """
+        try:
+            src = np.asarray(corners_det, dtype=np.float32).reshape(4, 2)
+            dst = np.array([
+                [0, 0], [patch_px - 1, 0],
+                [patch_px - 1, patch_px - 1], [0, patch_px - 1],
+            ], dtype=np.float32)
+            M = cv2.getPerspectiveTransform(src, dst)
+            patch = cv2.warpPerspective(gray, M, (patch_px, patch_px))
+            detector = cv2.aruco.ArucoDetector(dict_obj, cv2.aruco.DetectorParameters())
+            corners2, ids2, _ = detector.detectMarkers(patch)
+            if ids2 is None:
+                return False
+            center = np.array([patch_px / 2.0, patch_px / 2.0])
+            for c2 in corners2:
+                if np.linalg.norm(
+                    np.asarray(c2[0], dtype=np.float64).mean(axis=0) - center
+                ) <= patch_px * 0.35:
+                    return True
+            return False
+        except cv2.error:
+            return False
 
     @staticmethod
     def _quad_iou(a, b) -> float:
@@ -322,7 +359,20 @@ class ScaleRecovery:
                         np.linalg.norm(c[0][3] - c[0][2]),
                         np.linalg.norm(c[0][0] - c[0][3]),
                     ]))
-                    ok, reason = self._marker_looks_real(gray_detect, c[0], edge_det_px)
+                    ok, reason, spread_pct = self._marker_looks_real(gray_detect, c[0], edge_det_px)
+                    if not ok and edge_det_px >= 18.0:
+                        # Tiered acceptance for TILTED real markers: a marker
+                        # photographed at an angle projects to a non-square
+                        # quad (8-18% side spread). Accept it only if the quad
+                        # decodes again after perspective rectification — a
+                        # much stronger test than squareness; texture
+                        # hallucinations never survive it.
+                        if self._rectified_redetect(dict_obj, gray_detect, c[0]):
+                            ok = True
+                            reason = ""
+                            logger.info(
+                                f"Tilted marker accepted (spread {spread_pct:.1f}% "
+                                f"> 8%) after rectified re-decode")
                     if not ok:
                         logger.info(
                             f"Rejected suspicious marker ID={int(idx)} ({d_name}, "
@@ -763,7 +813,7 @@ class ScaleRecovery:
                 cv2.circle(overlay, (cx, cy), r, (0, 255, 0), 3)
 
             # Add clear label
-            dish_info = f"{result.dish_name or 'Dish'} (Ø{result.dish_expected_diameter_mm or 200:.0f}mm)"
+            dish_info = f"{result.dish_name or 'Dish'} (D={result.dish_expected_diameter_mm or 200:.0f}mm)"
             label = f"{dish_info} -> {result.mm_per_pixel:.4f} mm/px"
             
             # Text background badge for readability

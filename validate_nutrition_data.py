@@ -22,13 +22,22 @@ Usage:
 
 import sys
 from class_names import class_names
+import class_names as class_names_module
 import density_db
 
 ATWATER_KCAL_PER_G = {"Protein": 4.0, "Carbs": 4.0, "Fat": 9.0}
 NON_FOOD_CLASSES = {"Con nguoi (Human)"}
 # Source labels that indicate class-specific (high-trust) data
 TRUSTED_DENSITY_SOURCES = {"density_db"}
-TRUSTED_NUTRITION_SOURCES = {"class_names:per_100g", "class_names:serving_derived"}
+# class_names:<usda_fdc|vn_nin_2017|literature> — class-specific values with
+# a provenance label; serving_derived is scaled from the reference serving.
+TRUSTED_NUTRITION_SOURCES = {
+    "class_names:usda_fdc",
+    "class_names:vn_nin_2017",
+    "class_names:literature",
+    "class_names:per_100g",
+    "class_names:serving_derived",
+}
 
 
 def atwater_calories(per100: dict) -> float:
@@ -96,6 +105,23 @@ def audit():
             if v is not None and not (lo <= v <= hi):
                 issues.append(f"[range] {name}: {k}={v} outside ({lo}, {hi})")
 
+        # 4b. Chemistry: saturated fat can never exceed total fat
+        fat, sat = per100.get("Fat"), per100.get("Saturates")
+        if fat is not None and sat is not None and sat > fat + 1e-9:
+            issues.append(f"[chemistry] {name}: Saturates ({sat}) > Fat ({fat})")
+
+        # 4c. Provenance label: every food class must cite a reputable source
+        label = class_names_module.NUTRITION_SOURCES.get(name)
+        if label is None:
+            issues.append(f"[provenance] {name}: no NUTRITION_SOURCES entry")
+        else:
+            src, _note = label
+            if src not in class_names_module.ALLOWED_SOURCES:
+                issues.append(
+                    f"[provenance] {name}: source '{src}' not in "
+                    f"ALLOWED_SOURCES {sorted(class_names_module.ALLOWED_SOURCES)}"
+                )
+
         # 5. Provenance of the values the volume pipeline would actually use
         _, _, density_src = density_db.get_density_with_source(name)
         _, nutrition_src = density_db.get_nutrition_per_100g_with_source(name)
@@ -146,6 +172,14 @@ def main():
     print("-" * 70)
     print(f"  Provenance: {n_class_density}/{n_food} class-specific densities, "
           f"{n_class_nutrition}/{n_food} class-specific nutrition values")
+    # Nutrition source distribution (from class_names.NUTRITION_SOURCES)
+    from collections import Counter
+    src_counts = Counter(
+        class_names_module.NUTRITION_SOURCES.get(c["name"], ("MISSING",))[0]
+        for c in class_names
+    )
+    dist = ", ".join(f"{k}: {v}" for k, v in sorted(src_counts.items()))
+    print(f"  Nutrition sources ({len(src_counts)} kinds): {dist}")
     print("=" * 70)
     if strict and issues:
         sys.exit(1)

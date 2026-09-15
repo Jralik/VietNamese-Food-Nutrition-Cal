@@ -29,6 +29,12 @@ class SegmentationResult:
     bbox: Tuple[int, int, int, int]  # (x1, y1, x2, y2)
     confidence: float
     warnings: List[str] = field(default_factory=list)
+    # --- provenance (defaults keep SAM2Segmenter/YOLO behaviour unchanged) ---
+    source: str = "yolo"                 # "yolo" dish | "foodsam_ingredient"
+    is_ingredient: bool = False          # True for FoodSAM-only ingredient items
+    component_id: str = ""               # FoodSAM component trace id
+    semantic_purity: Optional[float] = None  # majority-label share (ingredients)
+    mapping_type: str = ""               # direct | approximate | generic
 
 
 def _mask_iou(mask_a: np.ndarray, mask_b: np.ndarray) -> float:
@@ -294,14 +300,38 @@ class SAM2Segmenter:
                         ])
                         point_labels = np.array([1, 1, 1, 1, 1])
                         with torch.inference_mode():
-                            m_pt, _, _ = self._predictor.predict(
+                            m_pt, pt_scores_raw, _ = self._predictor.predict(
                                 point_coords=point_coords,
                                 point_labels=point_labels,
                                 box=input_box,
                                 multimask_output=True,
                             )
                         pt_masks = [m.astype(bool) for m in m_pt]
-                        best_pt = max(pt_masks, key=lambda m: m.sum())
+                        # Select by SAM's own predicted-IoU score, not by
+                        # area: the largest point mask routinely swells to the
+                        # whole bowl (measured: mask spilled 24 px outside the
+                        # YOLO bbox and inflated a pho bowl to 0.865 fill).
+                        pt_scores = [float(s) for s in pt_scores_raw]
+                        order = np.argsort(pt_scores)[::-1]
+                        best_idx = int(order[0])
+                        # Near-tie (scores within 0.02): prefer the SMALLER
+                        # mask. The scores are frequently within noise of each
+                        # other (measured 0.892 vs 0.891), and CUDA
+                        # non-determinism can swap them between runs — the
+                        # smaller mask is the conservative, deterministic
+                        # choice (under-counting beats integrating the bowl).
+                        if (len(order) > 1
+                                and pt_scores[order[0]] - pt_scores[order[1]] < 0.02):
+                            areas = [int(m.sum()) for m in pt_masks]
+                            if areas[order[1]] < areas[order[0]]:
+                                best_idx = int(order[1])
+                        best_pt = pt_masks[best_idx]
+                        # The YOLO detection bounds the food — any mask spill
+                        # beyond it is segmentation noise, so clip.
+                        best_pt[:int(sby1), :] = False
+                        best_pt[int(sby2):, :] = False
+                        best_pt[:, :int(sbx1)] = False
+                        best_pt[:, int(sbx2):] = False
                         if (best_pt.sum() / s_bbox_area) > (mask_small.sum() / s_bbox_area):
                             mask_small = best_pt
 

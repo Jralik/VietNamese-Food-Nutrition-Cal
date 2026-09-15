@@ -387,17 +387,71 @@ def portion_badge_html(volume_cm3, mass_g, mass_std_g, confidence_level):
             f"độ tin cậy {confidence_level}</span>")
 
 
-def volume_note_html(scale_source=None, error=None):
+_BACKEND_DISPLAY = {
+    "FoodSAMSegmenter": "FoodSAM (SAM2 + SETR + tách nguyên liệu)",
+    "SAM2Segmenter": "SAM2 (theo bbox YOLO)",
+}
+
+
+def format_duration(seconds):
+    """Định dạng số giây thành chuỗi tiếng Việt: '0,4 giây' / '1 phút 42 giây'."""
+    s = float(max(0.0, seconds))
+    if s < 10:
+        return f"{s:.1f} giây"
+    minutes, sec = divmod(int(round(s)), 60)
+    if minutes == 0:
+        return f"{sec} giây"
+    if minutes == 1:
+        return f"1 phút {sec} giây"
+    return f"{minutes} phút {sec} giây"
+
+
+def time_note_html(yolo_s=None, pipeline_s=None, backend_label=None):
+    """Chip thời gian xử lý: nhận diện YOLO → pipeline ước lượng khẩu phần → tổng."""
+    chips = []
+    if yolo_s is not None:
+        chips.append(f"<b>{format_duration(yolo_s)}</b> nhận diện (YOLO)")
+    if pipeline_s is not None:
+        stage = ("pipeline ước lượng khẩu phần (FoodSAM)" if backend_label == "FoodSAM"
+                 else "pipeline ước lượng khẩu phần (SAM2)" if backend_label == "SAM2"
+                 else "pipeline ước lượng khẩu phần")
+        chips.append(f"<b>{format_duration(pipeline_s)}</b> {stage}")
+    if not chips:
+        return ""
+    total = (yolo_s or 0.0) + (pipeline_s or 0.0)
+    return ('<div class="metric-chip-row"><span class="metric-chip">⏱ '
+            + " · ".join(chips)
+            + f' · tổng <b>{format_duration(total)}</b></span></div>')
+
+
+def volume_note_html(scale_source=None, error=None, requested_backend=None,
+                     backend_used=None, fallback_used=False, seg_error=None):
+    lines = []
     if scale_source:
-        return (f"<div class='volume-status-note'>⚖️ <b>Ước lượng theo khẩu phần</b> "
-                f"(nguồn tỉ lệ: <b>{scale_source}</b>) — giá trị dinh dưỡng được tính theo "
-                f"thể tích món ăn thực tế trong ảnh của bạn.</div>")
-    note = ("<div class='volume-status-note'>ℹ️ Không khả dụng ước lượng thể tích — "
-            "hiển thị dinh dưỡng theo <b>khẩu phần tham chiếu</b> chuẩn của từng món.")
-    if error:
-        short = error.strip().splitlines()[-1][:180] if error.strip() else ""
-        note += f"<br><span style='font-size:0.75rem'>Chi tiết lỗi: {short}</span>"
-    return note + "</div>"
+        backend_html = ""
+        if backend_used:
+            backend_html = f" · Backend: <b>{_BACKEND_DISPLAY.get(backend_used, backend_used)}</b>"
+        lines.append(
+            f"<div class='volume-status-note'>⚖️ <b>Ước lượng theo khẩu phần</b> "
+            f"(nguồn tỉ lệ: <b>{scale_source}</b>{backend_html}) — giá trị dinh dưỡng "
+            f"được tính theo thể tích món ăn thực tế trong ảnh của bạn.</div>")
+        if requested_backend == "foodsam" and (fallback_used or
+                                               (backend_used and backend_used != "FoodSAMSegmenter")):
+            reason = (seg_error or "không rõ nguyên nhân").strip().splitlines()[-1][:160]
+            lines.append(
+                f"<div class='volume-status-note' style='border-left-color: #F87171;'>⚠️ "
+                f"<b>FoodSAM đã lỗi</b> ({reason}) — món ăn dùng mặt nạ dự phòng theo bbox "
+                f"của SAM2/GrabCut nên <b>KHÔNG có tách nguyên liệu</b> ngoài bbox. "
+                f"Hãy kiểm tra môi trường FoodSAM rồi chạy lại.</div>")
+    else:
+        note = ("<div class='volume-status-note'>ℹ️ Không khả dụng ước lượng thể tích — "
+                "hiển thị dinh dưỡng theo <b>khẩu phần tham chiếu</b> chuẩn của từng món.")
+        if error:
+            short = error.strip().splitlines()[-1][:180] if error.strip() else ""
+            note += f"<br><span style='font-size:0.75rem'>Chi tiết lỗi: {short}</span>"
+        note += "</div>"
+        lines.append(note)
+    return "".join(lines)
 
 
 def no_food_alert():

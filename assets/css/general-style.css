@@ -52,8 +52,18 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stSidebar"], .stAp
 }
 * { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6, p, li, span, small, label, td, th {
+h1, h2, h3, h4, h5, h6, p, li, small, label, td, th {
     font-family: var(--font) !important;
+}
+
+/* ── Bảo vệ icon Streamlit (Material Symbols) ── */
+[data-testid*="Icon"],
+[data-testid="stIconMaterial"],
+[data-testid="stExpanderToggleIcon"],
+[class*="material-symbols"],
+[class*="material-icons"],
+span[translate="no"] {
+    font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons' !important;
 }
 h1, h2, h3 { color: var(--text) !important; font-weight: 800 !important; letter-spacing: -0.01em; }
 h4 { font-weight: 700 !important; margin: 0.4rem 0 0.7rem 0; color: var(--text) !important; }
@@ -706,6 +716,14 @@ div[data-baseweb="tab-panel"] { padding-top: 1rem; }
     font-weight: 700 !important;
     border: 1px solid var(--border-strong) !important;
     transition: all 0.2s ease !important;
+}
+.stButton > button [class*="material-symbols"],
+.stButton > button [data-testid*="Icon"],
+.stDownloadButton > button [class*="material-symbols"],
+.stDownloadButton > button [data-testid*="Icon"],
+[data-testid="stFileUploaderDropzone"] button [class*="material-symbols"],
+[data-testid="stFileUploaderDropzone"] button [data-testid*="Icon"] {
+    font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons' !important;
 }
 .stButton > button[kind="primary"], .stDownloadButton > button[kind="primary"],
 .stForm button[kind="primary"] {

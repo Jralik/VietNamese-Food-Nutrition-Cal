@@ -226,7 +226,9 @@ def get_nutrition_per_100g_with_source(class_name: str) -> Tuple[Dict[str, float
     """Return (per-100g nutrition dict, source label).
 
     Fallback chain (most specific first):
-      1. class_names.py nutrition_per_100g          → "class_names:per_100g"
+      1. class_names.py nutrition_per_100g          → "class_names:<source>"
+         where <source> is the class's provenance label from
+         class_names.NUTRITION_SOURCES (usda_fdc | vn_nin_2017 | literature).
       2. class_names.py reference serving scaled    → "class_names:serving_derived"
       3. dish-type category table                   → "category_fallback"
       4. generic mixed-dish values                  → "generic_fallback"
@@ -235,7 +237,16 @@ def get_nutrition_per_100g_with_source(class_name: str) -> Tuple[Dict[str, float
     if entry is not None:
         per100 = entry.get("nutrition_per_100g")
         if per100 and per100.get("Calories", 0) > 0:
-            return dict(per100), "class_names:per_100g"
+            provenance = None
+            try:
+                from class_names import NUTRITION_SOURCES
+                hit = NUTRITION_SOURCES.get(entry.get("name", class_name))
+                if hit is not None and hit[0] != "not_applicable":
+                    provenance = hit[0]
+            except Exception as e:
+                logger.debug(f"NUTRITION_SOURCES lookup failed: {e}")
+            label = f"class_names:{provenance}" if provenance else "class_names:per_100g"
+            return dict(per100), label
         serving = entry.get("nutrition")
         if serving and serving.get("Calories", 0) > 0:
             serving_size = entry.get("serving_size_g", 150)

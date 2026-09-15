@@ -1,5 +1,7 @@
 import streamlit as st
 import warnings
+import logging
+import os
 # google.generativeai is deprecated in favor of google.genai; the advisory flow
 # still uses the old SDK, so silence its startup FutureWarning until migrated.
 warnings.filterwarnings(
@@ -7,6 +9,17 @@ warnings.filterwarnings(
     message=r"\s*All support for the `google\.generativeai` package has ended",
     category=FutureWarning,
 )
+# Make the volume/segmentation pipeline observable in the Streamlit console
+# (backend actually used, FoodSAM fallbacks, worker failures).
+for _name in ("volume_integration", "food_volume_pipeline", "foodsam_segmenter",
+              "food_segmentation", "scale_recovery", "depth_estimation"):
+    _lg = logging.getLogger(_name)
+    _lg.setLevel(logging.INFO)
+    if not _lg.handlers:
+        _h = logging.StreamHandler()
+        _h.setFormatter(logging.Formatter(
+            "%(asctime)s [%(levelname)s] %(name)s: %(message)s"))
+        _lg.addHandler(_h)
 import google.generativeai as genai
 import time
 import json
@@ -352,6 +365,34 @@ def render_scan_tab():
             - **Ngưỡng thấp (< 50%)**: phát hiện được nhiều vật thể hơn (độ bao phủ cao), nhưng dễ báo nhầm món không có trong ảnh.
             - **📊 Màu dinh dưỡng**: giá trị được đánh giá theo **hệ thống đèn giao thông** — xem giải thích bên dưới.
             """)
+
+    import volume_integration as _vi
+    import pipeline_config as _pc
+    _foodsam_ok = os.path.isdir(os.path.join(_pc.FOODSAM_REPO, "env"))
+    _config_default = getattr(_pc, "SEGMENTATION_BACKEND", "sam2")
+
+    def _backend_label(b):
+        if b == "sam2":
+            label = "SAM2 — box-prompted, nhanh"
+        else:
+            label = "FoodSAM — SAM2 + SETR FoodSeg103 + ingredient"
+        if b == _config_default:
+            label += "  ★ mặc định (pipeline_config)"
+        return label
+
+    seg_backend = st.selectbox(
+        "Backend phân đoạn (ước lượng khẩu phần)",
+        ["sam2", "foodsam"],
+        format_func=_backend_label,
+        index=1 if _config_default == "foodsam" else 0,
+        help=("SAM2: phân đoạn theo bbox YOLO (nhanh). FoodSAM: chạy trong môi "
+              "trường riêng, thêm nhãn ngữ nghĩa món và tách nguyên liệu "
+              "(trứng, rau...) ngoài bbox món — chậm hơn (~1-3 phút/ảnh). "
+              "Giá trị ban đầu lấy từ SEGMENTATION_BACKEND trong pipeline_config.py."
+              + ("" if _foodsam_ok else " ⚠️ Môi trường FoodSAM chưa sẵn sàng — "
+                 "chọn FoodSAM sẽ fallback về dinh dưỡng phần chuẩn.")),
+    )
+    st.session_state.seg_backend = seg_backend
 
     with st.expander("🚦 Hệ thống màu giao thông cho giá trị dinh dưỡng"):
         ui.traffic_legend(st)

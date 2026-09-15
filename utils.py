@@ -650,6 +650,24 @@ def _find_volume_estimation(volume_estimations, bbox):
     return best if best_iou > 0.5 else None
 
 
+def _match_suppressed_dish(suppressed_dishes, bbox):
+    """Return the suppressed-dish audit record whose bbox best overlaps a YOLO
+    box (mixed-plate contradiction heuristic removed it from accounting)."""
+    best, best_iou = None, 0.0
+    x1, y1, x2, y2 = np.ravel(bbox)[:4]
+    for sup in suppressed_dishes or []:
+        sb = sup.get("bbox") or [0, 0, 0, 0]
+        ex1, ey1, ex2, ey2 = sb[0], sb[1], sb[2], sb[3]
+        ix1, iy1 = max(x1, ex1), max(y1, ey1)
+        ix2, iy2 = min(x2, ex2), min(y2, ey2)
+        inter = max(0, ix2 - ix1) * max(0, iy2 - iy1)
+        union = ((x2 - x1) * (y2 - y1)) + ((ex2 - ex1) * (ey2 - ey1)) - inter
+        iou = inter / union if union > 0 else 0.0
+        if iou > best_iou:
+            best, best_iou = sup, iou
+    return best if best_iou > 0.5 else None
+
+
 def _show_volume_visualizations(volume_result):
     """Hiển thị các ảnh phân tích của volume pipeline: segmentation, depth, scale."""
     if volume_result is None:
@@ -676,10 +694,20 @@ def _show_volume_visualizations(volume_result):
 
 
 def detect_image_result(detected_image, model, source_image=None, image_path=None,
-                        bbox_scale=None):
+                        bbox_scale=None, yolo_time_s=None):
     boxes = detected_image[0].boxes
+    seg_backend = st.session_state.get("seg_backend", "sam2")
 
-    if boxes:
+    # FoodSAM ingredient recovery: with ZERO YOLO boxes the FoodSAM backend
+    # can still produce nutrition from SETR semantic components (HomeCook
+    # YOLO-miss case) — don't short-circuit into the empty state.
+    foodsam_recovery = (
+        not boxes
+        and source_image is not None
+        and seg_backend == "foodsam"
+    )
+
+    if boxes or foodsam_recovery:
         detected_img_arr_RGB = detected_image[0].plot()[:, :, ::1]
         detected_img_arr_BGR = detected_image[0].plot()[:, :, ::-1]
         fig_detected = create_fig(detected_img_arr_BGR, detected=True)
@@ -693,26 +721,46 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
         volume_result = None
         volume_estimations = []
         volume_status_note = ""
+        suppressed_dishes = []
+        volume_time_s = None
         if source_image is not None:
             import volume_integration
-            if volume_integration.volume_pipeline_available():
+            if volume_integration.volume_pipeline_available(seg_backend):
+                t_volume_start = time.time()
                 try:
-                    with st.spinner("Đang ước lượng khẩu phần (SAM2 + chiều sâu — "
-                                    "có thể mất tới ~1 phút)..."):
+                    backend_label = ("FoodSAM (SAM2 + SETR + nguyên liệu)"
+                                     if seg_backend == "foodsam" else "SAM2")
+                    time_hint = ("1–3 phút" if seg_backend == "foodsam" else "~1 phút")
+                    with st.spinner(f"Đang ước lượng khẩu phần ({backend_label} "
+                                    "+ chiều sâu — có thể mất tới " + time_hint + ")..."):
                         v_dets = volume_integration.extract_yolo_detections(
                             detected_image, class_names, bbox_scale=bbox_scale)
                         volume_result = volume_integration.estimate_nutrition_volume(
-                            source_image, v_dets, image_path
+                            source_image, v_dets, image_path, backend=seg_backend
                         )
                 except Exception as e:
                     print(f"[Volume] Pipeline error: {e}")
                     volume_result = None
+                # Đo cả trường hợp lỗi/timeout để hiển thị thời gian đã trôi
+                volume_time_s = time.time() - t_volume_start
+            else:
+                volume_integration.last_error = (
+                    f"Backend '{seg_backend}' chưa sẵn sàng" if seg_backend != "sam2"
+                    else "Volume pipeline dependencies unavailable")
             if volume_result is not None:
                 volume_estimations = list(volume_result.estimations)
-                volume_status_note = ui.volume_note_html(volume_result.scale_result.scale_source)
+                suppressed_dishes = list(
+                    getattr(volume_result, "suppressed_dishes", []) or [])
+                volume_status_note = ui.volume_note_html(
+                    volume_result.scale_result.scale_source,
+                    requested_backend=seg_backend,
+                    backend_used=getattr(volume_result, "seg_backend_used", ""),
+                    fallback_used=getattr(volume_result, "seg_fallback_used", False),
+                    seg_error=getattr(volume_result, "seg_error", None))
             else:
                 volume_status_note = ui.volume_note_html(
-                    None, error=getattr(volume_integration, "last_error", None))
+                    None, error=getattr(volume_integration, "last_error", None),
+                    requested_backend=seg_backend)
 
 
         # with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg', dir='/tmp') as img_file:
@@ -730,6 +778,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
             confidences = []
             counts = []
             items = []
+            matched_estimation_ids = set()
             total_nutrition = _new_total_nutrition()
 
             total_nutrition_std = {key: 0.0 for key in total_nutrition}
@@ -790,7 +839,25 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
                                          boxes[0][2] * sx, boxes[0][3] * sy)
                         else:
                             match_box = boxes[0]
+                        # Mixed-plate contradiction: this YOLO hypothesis was
+                        # removed from accounting — show the audit card, never
+                        # per-serving nutrition for it.
+                        sup = _match_suppressed_dish(suppressed_dishes, match_box)
+                        if sup is not None:
+                            card_html = ui.dish_card(
+                                class_name, conf,
+                                "món bị ẩn (mixed-plate contradiction)",
+                                thumb_html, "",
+                                "<span class='portion-data-note'>⚠️ Giả thuyết món "
+                                f"<b>{class_name}</b> mâu thuẫn với thành phần "
+                                "FoodSAM phát hiện — dinh dưỡng ước lượng từ "
+                                "các nguyên liệu bên dưới.</span>")
+                            items.append((f"⚠️ {class_name} · {conf}% — món bị ẩn",
+                                          card_html))
+                            continue
                         volume_est = _find_volume_estimation(volume_estimations, match_box)
+                        if volume_est is not None:
+                            matched_estimation_ids.add(id(volume_est))
                         if volume_est is not None and volume_est.nutrition:
                             nutrition = dict(volume_est.nutrition)
                             nutrition_std = dict(volume_est.nutrition_std)
@@ -849,10 +916,88 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
                                 "method": volume_est.estimation_method if volume_est is not None else "",
                             })
 
+            # ── FoodSAM ingredient extras (không có YOLO box) ──
+            # Group per-class at PRESENTATION level only; totals stay the sum
+            # of per-component estimations.
+            extras_grouped = {}
+            for est in volume_estimations:
+                if getattr(est, "source", "yolo") != "foodsam_ingredient":
+                    continue
+                if id(est) in matched_estimation_ids:
+                    continue
+                g = extras_grouped.setdefault(est.class_name, {
+                    "count": 0, "mass": 0.0, "mass_std": 0.0,
+                    "volume": 0.0, "nutrition": {}, "nutrition_std": {},
+                    "thumbs": [], "purity": [],
+                })
+                g["count"] += 1
+                g["mass"] += est.mass_g
+                g["mass_std"] = (g["mass_std"] ** 2 + est.mass_std_g ** 2) ** 0.5
+                g["volume"] += est.volume_cm3
+                for key, value in est.nutrition.items():
+                    g["nutrition"][key] = g["nutrition"].get(key, 0) + value
+                for key, value in (est.nutrition_std or {}).items():
+                    g["nutrition_std"][key] = (
+                        g["nutrition_std"].get(key, 0) ** 2 + value ** 2) ** 0.5
+                if getattr(est, "crop_b64", None):
+                    g["thumbs"].append(est.crop_b64)
+                if getattr(est, "semantic_purity", None) is not None:
+                    g["purity"].append(est.semantic_purity)
+                # per-component rows go to exports
+                nutrition_data.append({
+                    "name": est.class_name,
+                    "serving": f"FoodSAM ingredient ({est.component_id})",
+                    "conf": int(round((est.semantic_purity or 0) * 100)),
+                    "nutrition": {k: est.nutrition.get(k) for k in _NUTRIENT_ORDER},
+                    "mass": f"{est.mass_g:.0f} ± {est.mass_std_g:.0f} g",
+                    "volume": f"{est.volume_cm3:.0f} cm³",
+                    "method": est.estimation_method,
+                })
+
+            for class_name, g in extras_grouped.items():
+                purity_avg = (sum(g["purity"]) / len(g["purity"])) if g["purity"] else None
+                label = (f"🥗 {class_name} ×{g['count']} — "
+                         f"{g['nutrition'].get('Calories', 0):.0f} kcal")
+                portion_note = ui.portion_badge_html(
+                    g["volume"], g["mass"], g["mass_std"], "medium")
+                thumb_html = ui.thumb_img(g["thumbs"][0]) if g["thumbs"] else ""
+                card_html = ui.dish_card(
+                    f"{class_name} ×{g['count']}",
+                    int(round((purity_avg or 0) * 100)),
+                    "FoodSAM ingredient — ngoài bbox YOLO",
+                    thumb_html,
+                    "".join(
+                        _nutri_chip(n, g["nutrition"].get(n), *get_nutri_score_color(
+                            n, g["nutrition"].get(n), f"{g['mass']:.0f} g"))
+                        for n in ["Calories", "Protein", "Fat", "Saturates", "Sugar", "Salt"]
+                    ),
+                    portion_note,
+                )
+                items.append((label, card_html))
+
+                for key in total_nutrition:
+                    if key in g["nutrition"]:
+                        total_nutrition[key] += g["nutrition"][key]
+                        std_sq = g["nutrition_std"].get(key, 0) ** 2
+                        prev_sq = total_nutrition_std[key] ** 2
+                        total_nutrition_std[key] = (prev_sq + std_sq) ** 0.5
+
 
             # ── Hiển thị kết quả ──
+            if not items and foodsam_recovery:
+                st.info(
+                    "🥗 YOLO không phát hiện món — FoodSAM cũng không tìm thấy "
+                    "nguyên liệu đã map (trứng, cơm, rau...) trong ảnh này. "
+                    "Thử ảnh chụp gần và đủ sáng hơn."
+                )
+            time_html = ui.time_note_html(
+                yolo_s=yolo_time_s,
+                pipeline_s=volume_time_s,
+                backend_label=("FoodSAM" if seg_backend == "foodsam" else "SAM2")
+                if volume_time_s is not None else None,
+            )
             total_nutrition_placeholder.markdown(
-                volume_status_note + _totals_kpi_row(total_nutrition, total_nutrition_std),
+                volume_status_note + time_html + _totals_kpi_row(total_nutrition, total_nutrition_std),
                 unsafe_allow_html=True)
 
             _show_volume_visualizations(volume_result)
@@ -933,6 +1078,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
                 "generated_at": datetime.datetime.now().isoformat(timespec="seconds"),
                 "profile": st.session_state.get("user_profile"),
                 "daily_targets": st.session_state.get("user_rda"),
+                "seg_backend": st.session_state.get("seg_backend", "sam2"),
                 "scale_source": volume_result.scale_result.scale_source if volume_result else None,
                 "total_nutrition": total_nutrition,
                 "total_nutrition_std": total_nutrition_std,
@@ -1043,12 +1189,15 @@ def detect_image(conf, uploaded_file, model, url=False):
 
         if st.session_state.button_clicked and not reset_button:
             with st.spinner("Đang phân tích món ăn..."):
+                t_yolo_start = time.time()
                 detected_image = model.predict(resized_uploaded_image, conf=conf, imgsz=640, half=False)
+                yolo_time_s = time.time() - t_yolo_start
                 image_path = getattr(uploaded_file, "name", None) if not isinstance(uploaded_file, str) else None
                 detect_image_result(detected_image, model,
                                     source_image=volume_source_image,
                                     image_path=image_path,
-                                    bbox_scale=bbox_scale)
+                                    bbox_scale=bbox_scale,
+                                    yolo_time_s=yolo_time_s)
 
 def detect_camera(conf, model, address):
     vid_cap = cv2.VideoCapture('rtsp://admin:' + address)

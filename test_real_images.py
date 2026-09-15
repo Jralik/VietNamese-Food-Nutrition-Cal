@@ -13,6 +13,7 @@ Usage:
     python test_real_images.py [image_dir]
 """
 
+import glob
 import os
 import sys
 
@@ -49,6 +50,21 @@ def main():
         "com-tam3": os.path.join(img_dir, "com-tam3.jpg"),
         "com-tam4": os.path.join(img_dir, "com-tam4.jpg"),
     }
+    # Same loaf, 3 views (ground truth ~200 g) — DucTri shots; shot 3 has
+    # no ArUco marker (plate_heuristic path), so per-shot variance is wider.
+    ductri_paths = sorted(glob.glob(os.path.join(img_dir, "BanhMi", "BanhMiDucTri*.jpg")))
+    for i, p in enumerate(ductri_paths, 1):
+        targets[f"banh-mi-ductri-{i}"] = p
+
+    # Same bowl of bun bo Hue in 5 shots (ground truth ~700-800 cm3)
+    bun_bo_hue_paths = sorted(
+        glob.glob(os.path.join(img_dir, "BunBoHue", "*.jpg")))
+    for i, p in enumerate(bun_bo_hue_paths, 1):
+        targets[f"bun-bo-hue-{i}"] = p
+    # No-marker folder: every image runs the plate_heuristic path — sanity
+    # only (no per-image ground truth), guarding against absurd outputs.
+    for i, p in enumerate(sorted(glob.glob(os.path.join(img_dir, "No_ArUcO", "*.jpg"))), 1):
+        targets[f"no-aruco-{i}"] = p
     targets = {k: p for k, p in targets.items() if os.path.exists(p)}
     if not targets:
         print(f"No known test images found in {img_dir} — nothing to check.")
@@ -74,7 +90,11 @@ def main():
         raw_boxes[key] = []
         for box in res[0].boxes:
             cid = int(box.cls[0].item())
-            if 0 <= cid < len(class_names) and class_names[cid]["name"] != "Con nguoi (Human)":
+            # same filters as extract_yolo_detections — a box the pipeline
+            # never estimated must not enter the matching check
+            if (0 <= cid < len(class_names)
+                    and class_names[cid]["name"] != "Con nguoi (Human)"
+                    and float(box.conf[0].item()) >= volume_integration.MIN_DETECTION_CONFIDENCE):
                 xy = box.xyxy.cpu().numpy()[0][:4]
                 raw_boxes[key].append(xy)
         dets = volume_integration.extract_yolo_detections(
@@ -136,10 +156,97 @@ def main():
         # shots agree within a few percent; 25% catches gross inconsistency.
         check("banh-mi shot consistency <25%", abs(m1 - m2) / mean_m < 0.25,
               f"|{m1:.0f} - {m2:.0f}| / {mean_m:.0f} = {100*abs(m1-m2)/mean_m:.0f}%")
+    # ── Group consistency reporting (3-tier metrics) ──
+    # Per-shot: absolute + relative error | Group: mean, std, CV |
+    # Dataset-wide: MAE, median AE, MAPE, max AE.
+    # CV < 0.35 is an EXPERIMENTAL acceptance threshold for view consistency
+    # (not a scientific proof); wide mass tolerances are smoke/diagnostic only.
+    def group_report(prefix, gt_g, cv_threshold=0.35):
+        shots = [(k, sum(e.mass_g for e in r.estimations))
+                 for k, r in sorted(results.items())
+                 if k.startswith(prefix) and r is not None and r.estimations]
+        if not shots:
+            return None
+        vals = [v for _, v in shots]
+        mean = sum(vals) / len(vals)
+        std = (sum((v - mean) ** 2 for v in vals) / len(vals)) ** 0.5
+        cv = std / mean if mean > 0 else 0.0
+        errs = [abs(v - gt_g) for v in vals]
+        mae = sum(errs) / len(errs)
+        mape = sum(e / gt_g for e in errs) / len(errs) * 100.0
+        med_ae = sorted(errs)[len(errs) // 2]
+        max_ae = max(errs)
+        print(f"  == Group {prefix} (GT {gt_g:.0f} g) ==")
+        for (k, v), e in zip(shots, errs):
+            print(f"   {k}: {v:.0f} g (abs err {e:.0f} g, rel {100*e/gt_g:.0f}%)")
+        print(f"   mean={mean:.0f} g  std={std:.0f} g  CV={cv:.2f}  |  "
+              f"MAE={mae:.0f} g  MAPE={mape:.0f}%  median_AE={med_ae:.0f}  max_AE={max_ae:.0f}")
+        return {"mean": mean, "std": std, "cv": cv, "mae": mae, "mape": mape,
+                "vals": vals, "shots": [k for k, _ in shots]}
+
+    bm_group = [(k, r) for k, r in sorted(results.items())
+                if k in ("banh-mi1", "banh-mi2") and r is not None and r.estimations]
+    bm_g = None
+    if bm_group:
+        vals = [sum(e.mass_g for e in r.estimations) for _, r in bm_group]
+        mean = sum(vals) / len(vals)
+        std = (sum((v - mean) ** 2 for v in vals) / len(vals)) ** 0.5
+        errs = [abs(v - 225.0) for v in vals]
+        bm_g = {"cv": std / mean if mean > 0 else 0.0, "vals": vals}
+        print(f"  == Group banh-mi (GT 225 g) ==")
+        for (k, _), v, e in zip(bm_group, vals, errs):
+            print(f"   {k}: {v:.0f} g (abs err {e:.0f} g, rel {100*e/225.0:.0f}%)")
+        print(f"   mean={mean:.0f} g  std={std:.0f} g  CV={bm_g['cv']:.2f}  |  "
+              f"MAE={sum(errs)/len(errs):.0f} g  MAPE={sum(e/225.0 for e in errs)/len(errs)*100.0:.0f}%")
+    if bm_g:
+        check("banh-mi group: view-consistency CV < 0.35", bm_g["cv"] < 0.35,
+              f"CV={bm_g['cv']:.2f} (experimental acceptance threshold)")
+    dt_g = group_report("banh-mi-ductri", 200.0)
+    if dt_g:
+        check("ductri group: view-consistency CV < 0.35", dt_g["cv"] < 0.35,
+              f"CV={dt_g['cv']:.2f} (experimental acceptance threshold)")
+        # Smoke tolerance only — DIAGNOSTIC, not an accuracy criterion and
+        # not counted as a suite failure (the no-marker shot has documented
+        # wider variance).
+        for k, v in zip(dt_g["shots"], dt_g["vals"]):
+            status = "PASS" if 100 <= v <= 320 else "DIAG"
+            print(f"  [DIAG:{status}] {k}: {v:.0f} g (smoke range 100-320 g)")
+
     c3 = results.get("com-tam3")
     if c3 is not None:
         check("com-tam3: >= 300 kcal", c3.total_nutrition.get("Calories", 0) >= 300,
               f"{c3.total_nutrition.get('Calories', 0):.0f} kcal (com tam suon ~600-800)")
+
+    # Same bowl of bun bo Hue across shots (GT ~750 cm3 fill volume):
+    # every shot within +-35% of 750 and the shot mean inside the measured band.
+    bbh = [(k, r) for k, r in sorted(results.items())
+           if k.startswith("bun-bo-hue-") and r is not None and r.estimations]
+    if bbh:
+        shot_vols = [sum(e.volume_cm3 for e in r.estimations) for _, r in bbh]
+        for (k, _), v in zip(bbh, shot_vols):
+            check(f"{k}: volume ~750cm3", 0.65 * 750 <= v <= 1.35 * 750,
+                  f"{v:.0f} cm3 (measured 700-800)")
+        mean_v = sum(shot_vols) / len(shot_vols)
+        std_v = (sum((v - mean_v) ** 2 for v in shot_vols) / len(shot_vols)) ** 0.5
+        check("bun-bo-hue: shot mean in 700-800",
+              700 <= mean_v <= 800,
+              f"mean {mean_v:.0f} cm3 over {len(shot_vols)} shots (std {std_v:.0f})")
+
+    # No-marker folder (plate_heuristic path): sanity-only checks — every
+    # image must produce a valid estimation with a plausible total volume
+    # (no container-integration blowups) and a bounded kcal total.
+    na = [(k, r) for k, r in sorted(results.items())
+          if k.startswith("no-aruco-") and r is not None]
+    if na:
+        for k, r in na:
+            total_v = sum(e.volume_cm3 for e in r.estimations)
+            check(f"{k}: valid estimation, sane volume",
+                  bool(r.estimations) and total_v <= 2000,
+                  f"{total_v:.0f} cm3 total, {len(r.estimations)} item(s), "
+                  f"scale={r.scale_result.scale_source}")
+            kcals = [e.nutrition.get("Calories", 0) for e in r.estimations]
+            check(f"{k}: sane kcal", all(5 <= c <= 1600 for c in kcals),
+                  f"kcal/item={[round(c) for c in kcals]}")
 
     print("=" * 74)
     if FAILURES:

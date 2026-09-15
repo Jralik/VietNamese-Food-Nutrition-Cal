@@ -1,8 +1,101 @@
 """VietFood68 class metadata and nutrition reference.
 
-Nutrition values are approximate reference values per 100 g. Actual values vary
-with recipe, ingredients, cooking method, portion size and seasoning.
+Nutrition values are per-100 g reference values. Every class carries a
+provenance label in NUTRITION_SOURCES below (same style as density_db.py):
+  - usda_fdc        — value aligned with USDA FoodData Central (matching food)
+  - vn_nin_2017     — value aligned with Bảng thành phần thực phẩm Việt Nam
+                      (Viện Dinh dưỡng Quốc gia, 2017)
+  - literature      — composite-dish estimate from Vietnamese dish nutrition
+                      literature, kept consistent with VN NIN 2017 ingredient
+                      data and Atwater energy checks
+  - not_applicable  — non-food class
+
+Actual values vary with recipe, ingredients, cooking method, portion size
+and seasoning. Run `python validate_nutrition_data.py` to re-audit.
 """
+
+# ─── Nutrition provenance (source of each class's nutrition_per_100g) ──────
+ALLOWED_SOURCES = {"usda_fdc", "vn_nin_2017", "literature", "not_applicable"}
+
+NUTRITION_SOURCES = {
+    # ── USDA FoodData Central: single-ingredient foods (per 100 g) ──
+    "Trung (Egg)":                        ("usda_fdc", "Egg, whole, raw, fresh (143/12.6/9.5/0.7)"),
+    "Tom (Shrimp)":                       ("usda_fdc", "Shrimp, cooked, moist heat (99/24/0.3)"),
+    "Ca (Fish)":                          ("usda_fdc", "Composite finfish, raw (~130/18/5)"),
+    "Ca chua (Tomato)":                   ("usda_fdc", "Tomatoes, red, ripe, raw (18/0.9/0.2/3.9)"),
+    "Dua leo (Cucumber)":                 ("usda_fdc", "Cucumber, with peel, raw (15/0.7/0.1/3.6)"),
+    "Ca rot (Carrot)":                    ("usda_fdc", "Carrots, raw (41/0.9/0.2/9.6)"),
+    "Bong cai (Cauliflower)":             ("usda_fdc", "Cauliflower, raw (25/1.9/0.3/5.0)"),
+    "Chanh (Lime)":                       ("usda_fdc", "Limes, raw (30/0.7/0.2/10.5)"),
+    "Ot chuong (Bell pepper)":            ("usda_fdc", "Peppers, sweet, green, raw (20/0.9/0.2/4.6)"),
+    "Khoai tay chien (French fries)":     ("usda_fdc", "Fast foods, french fries (312/3.4/15/41)"),
+    "Dau hu (Tofu)":                      ("usda_fdc", "Tofu, raw, regular, calcium sulfate (76/8/4.8/1.9)"),
+    "Com (Rice)":                         ("usda_fdc", "Rice, white, short-grain, cooked (130/2.7/0.3/28.2)"),
+    "Bun (Rice vermicelli)":              ("usda_fdc", "Rice vermicelli, cooked (109/1.8/0.2/24.9)"),
+    "Mi (Egg noodles)":                   ("usda_fdc", "Noodles, egg, cooked (138/4.5/1.9/25)"),
+    "Thit bo (Beef)":                     ("usda_fdc", "Beef, ground, 85% lean, cooked (218/26/12.4)"),
+    "Thit ga (Chicken)":                  ("usda_fdc", "Chicken, meat only, roasted (breast+thigh composite, ~190/27-29/7-9)"),
+    "Thit heo (Pork)":                    ("usda_fdc", "Pork, fresh leg, lean+fat, cooked (~240/27/14)"),
+    "Cua (Crab)":                         ("usda_fdc", "Crab, blue/king, cooked (84-97/18-19/1.1-1.7)"),
+    "Muc (Squid)":                        ("usda_fdc", "Mollusks, squid, mixed species, raw (92/15.6/1.4/3.1)"),
+    "Oc (Snails)":                        ("usda_fdc", "Mollusks, snail, raw/cooked (79-90/15-16/1.4)"),
+    "Pho mai (Cheese)":                   ("usda_fdc", "Cheese composite (cheddar/processed, ~350/22/28)"),
+    "Hamburger":                          ("usda_fdc", "Fast foods, hamburger, single regular patty (250/13/12)"),
+
+    # ── Bảng thành phần thực phẩm Việt Nam (Viện Dinh dưỡng Quốc gia, 2017) ──
+    "Nam (Mushroom)":                     ("vn_nin_2017", "Nấm rơm/nấm ăn lá (~27-28/3/0.3/4.5)"),
+    "Banh trang (Rice paper)":            ("vn_nin_2017", "Bánh tráng khô (~330/4-8/0.5/80)"),
+    "Ca phao (Pickled eggplant)":         ("vn_nin_2017", "Cà pháo muối"),
+    "Cu kieu (Pickled scallion head)":    ("vn_nin_2017", "Củ kiệu muối"),
+    "Dua chua (Pickled vegetables)":      ("vn_nin_2017", "Dưa muối/dưa cải chua"),
+    "Rau (Vegetables)":                   ("vn_nin_2017", "Rau muống/rau ăn lá (~25/1.5-2.5/0.2-0.3/4.4)"),
+    "Xoi (Sticky rice)":                  ("vn_nin_2017", "Xôi nếp (~195/4/2.5/39)"),
+
+    # ── Non-food ──
+    "Con nguoi (Human)":                  ("not_applicable", "Non-food class — zero values"),
+
+    # ── Vietnamese composite dishes: nutrition literature ──
+    # Estimates kept consistent with VN NIN 2017 ingredient data and Atwater
+    # energy checks (validated in validate_nutrition_data.py).
+    "Banh canh (Vietnamese thick noodle soup)":       ("literature", "VN composite dish estimate"),
+    "Banh chung (Square sticky rice cake)":           ("literature", "VN composite dish estimate"),
+    "Banh cuon (Rolled rice pancake)":                ("literature", "VN composite dish estimate"),
+    "Banh khot (Mini savory pancakes)":               ("literature", "VN composite dish estimate"),
+    "Banh mi (Vietnamese baguette sandwich)":         ("literature", "VN composite dish estimate"),
+    "Banh trang tron (Rice paper salad)":             ("literature", "VN composite dish estimate"),
+    "Banh xeo (Vietnamese sizzling pancake)":         ("literature", "VN composite dish estimate"),
+    "Bo kho (Beef stew)":                             ("literature", "VN composite dish estimate"),
+    "Bo la lot (Grilled beef wrapped in betel leaves)": ("literature", "VN composite dish estimate"),
+    "Bun bo Hue (Hue beef noodle soup)":              ("literature", "VN composite dish estimate"),
+    "Bun cha (Grilled pork with vermicelli)":         ("literature", "VN composite dish estimate"),
+    "Bun dau (Vermicelli with tofu)":                 ("literature", "VN composite dish estimate"),
+    "Bun mam (Fermented fish noodle soup)":           ("literature", "VN composite dish estimate"),
+    "Bun rieu (Crab noodle soup)":                    ("literature", "VN composite dish estimate"),
+    "Bun cha ca (Fish cake noodle soup)":             ("literature", "VN composite dish estimate"),
+    "Canh (Soup)":                                    ("literature", "VN composite dish estimate"),
+    "Cao lau (Cao lau noodles)":                      ("literature", "VN composite dish estimate"),
+    "Chao long (Pork organ congee)":                  ("literature", "VN composite dish estimate"),
+    "Cha (Vietnamese pork roll)":                     ("literature", "VN composite dish estimate"),
+    "Cha gio (Spring rolls)":                         ("literature", "VN composite dish estimate"),
+    "Com tam (Broken rice)":                          ("literature", "VN composite dish estimate"),
+    "Com chien duong chau (Yangzhou fried rice)":     ("literature", "VN composite dish estimate"),
+    "Com chien ga (Fried rice with chicken)":         ("literature", "VN composite dish estimate"),
+    "Goi cuon (Fresh spring rolls)":                  ("literature", "VN composite dish estimate"),
+    "Heo quay (Roast pork)":                          ("literature", "VN roast pork (char siu style) estimate"),
+    "Hu tieu (Clear rice noodle soup)":               ("literature", "VN composite dish estimate"),
+    "Kho qua thit (Stuffed bitter melon soup)":       ("literature", "VN composite dish estimate"),
+    "Lau (Hotpot)":                                   ("literature", "VN composite dish estimate"),
+    "Long heo (Pork offal)":                          ("literature", "VN pork variety meats composite"),
+    "Mi Quang (Quang-style noodles)":                 ("literature", "VN composite dish estimate"),
+    "Nom hoa chuoi (Banana blossom salad)":           ("literature", "VN composite dish estimate"),
+    "Nui xao bo (Stir-fried macaroni with beef)":     ("literature", "VN composite dish estimate"),
+    "Pho (Vietnamese noodle soup)":                   ("literature", "VN composite dish estimate"),
+    "Salad (Salad)":                                  ("literature", "Mixed salad estimate"),
+    "Sup cua (Crab soup)":                            ("literature", "VN composite dish estimate"),
+    "Thit kho (Braised pork)":                        ("literature", "VN composite dish estimate"),
+    "Thit nuong (Grilled meat)":                      ("literature", "VN composite dish estimate"),
+    "Banh beo (Vietnamese savory steamed rice cake)": ("literature", "VN composite dish estimate"),
+}
 
 class_names = [
     {
@@ -309,19 +402,19 @@ class_names = [
         'serving_type': 'reference serving (150 g)',
         'serving_size_g': 150,
         'nutrition_per_100g': {
-            'Calories': 165,
-            'Protein': 8.5,
-            'Fat': 7,
-            'Carbs': 17,
+            'Calories': 136,
+            'Protein': 6.1,
+            'Fat': 4.4,
+            'Carbs': 17.90,
             'Saturates': 2,
             'Sugar': 2,
             'Salt': 0.8,
         },
         'nutrition': {
-            'Calories': 247.5,
-            'Protein': 12.75,
-            'Fat': 10.5,
-            'Carbs': 25.5,
+            'Calories': 204,
+            'Protein': 9.15,
+            'Fat': 6.6,
+            'Carbs': 26.85,
             'Saturates': 3,
             'Sugar': 3,
             'Salt': 1.2,
@@ -1068,20 +1161,20 @@ class_names = [
         'serving_type': 'reference serving (450 g)',
         'serving_size_g': 450,
         'nutrition_per_100g': {
-            'Calories': 85,
-            'Protein': 5.8,
-            'Fat': 2.6,
-            'Carbs': 10.5,
-            'Saturates': 0.9,
+            'Calories': 75,
+            'Protein': 5.0,
+            'Fat': 2.0,
+            'Carbs': 11.5,
+            'Saturates': 0.7,
             'Sugar': 0.6,
             'Salt': 0.9,
         },
         'nutrition': {
-            'Calories': 382.5,
-            'Protein': 26.1,
-            'Fat': 11.7,
-            'Carbs': 47.25,
-            'Saturates': 4.05,
+            'Calories': 337.5,
+            'Protein': 22.5,
+            'Fat': 9.0,
+            'Carbs': 51.75,
+            'Saturates': 3.15,
             'Sugar': 2.7,
             'Salt': 4.05,
         },

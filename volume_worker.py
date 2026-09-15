@@ -16,6 +16,7 @@ nutrition when this process fails.
 import base64
 import io
 import json
+import os
 import sys
 import traceback
 
@@ -44,13 +45,34 @@ def _crop_to_b64(img_rgb, bbox) -> str:
 
 def main() -> int:
     job_path, out_path = sys.argv[1], sys.argv[2]
+    # Surface the pipeline loggers (FoodSAMSegmenter bridge ok/failed, ...) on
+    # stderr: volume_integration captures stderr and logs the tail when the
+    # worker fails, so INFO lines here make FoodSAM runs debuggable.
+    import logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(name)s] %(levelname)s %(message)s")
     try:
         with open(job_path, encoding="utf-8") as f:
             job = json.load(f)
 
+        # Per-request segmentation backend. Safe as a module-global set: this
+        # worker process handles exactly ONE job then exits (spawned fresh by
+        # volume_integration per request), and the segmenter factory reads the
+        # attribute lazily at first pipeline.segmenter access.
+        backend = job.get("backend")
+        if backend:
+            import pipeline_config
+            pipeline_config.SEGMENTATION_BACKEND = backend
+
         import cv2
         import numpy as np
         from PIL import Image
+        import volume_nutrition
+        # Phase-C experiment knob (propagated via env; None/absent = baseline)
+        cap_env = os.environ.get("VOLUME_SATURATION_CAP_RATIO")
+        if cap_env:
+            volume_nutrition.SATURATION_CAP_RATIO = float(cap_env)
         from food_volume_pipeline import FoodVolumePipeline
 
         image = Image.open(job["image_path"]).convert("RGB")
@@ -89,6 +111,7 @@ def main() -> int:
         depth_b64 = _img_to_b64(cv2.cvtColor(result.depth_colored, cv2.COLOR_BGR2RGB))
         scale_b64 = _img_to_b64(cv2.cvtColor(result.scale_overlay, cv2.COLOR_BGR2RGB))
 
+        seg = getattr(pipeline, "_segmenter", None)
         payload = {
             "estimations": [
                 {
@@ -105,6 +128,12 @@ def main() -> int:
                     "confidence_note": est.confidence_note,
                     "warnings": est.warnings,
                     "nutrition_per_100g": est.nutrition_per_100g,
+                    # provenance (FoodSAM ingredient items carry these)
+                    "source": getattr(est, "source", "yolo"),
+                    "is_ingredient": getattr(est, "is_ingredient", False),
+                    "component_id": getattr(est, "component_id", ""),
+                    "mapping_type": getattr(est, "mapping_type", ""),
+                    "semantic_purity": getattr(est, "semantic_purity", None),
                     # per-item crop with segmentation mask + label drawn
                     "crop_b64": _crop_to_b64(result.mask_overlay, est.bbox),
                 }
@@ -112,6 +141,11 @@ def main() -> int:
             ],
             "total_nutrition": result.total_nutrition,
             "total_nutrition_std": result.total_nutrition_std,
+            "seg_backend_used": type(seg).__name__ if seg is not None else None,
+            "seg_fallback_used": bool(getattr(seg, "fallback_used", False)),
+            "seg_error": getattr(seg, "last_error", None),
+            "suppressed_dishes": getattr(
+                getattr(seg, "last_info", {}) or {}, "suppressed_dishes", []),
             "scale": {
                 "mm_per_pixel": result.scale_result.mm_per_pixel,
                 "scale_source": result.scale_result.scale_source,

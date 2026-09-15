@@ -60,6 +60,13 @@ class FoodEstimation:
     # Per-100g reference
     nutrition_per_100g: Optional[Dict[str, float]] = None
 
+    # Provenance (defaults keep YOLO/SAM2 behaviour unchanged)
+    source: str = "yolo"                 # "yolo" dish | "foodsam_ingredient"
+    is_ingredient: bool = False          # True for FoodSAM-only ingredient items
+    component_id: str = ""               # FoodSAM component trace id
+    semantic_purity: Optional[float] = None
+    mapping_type: str = ""
+
 
 @dataclass
 class PipelineResult:
@@ -89,15 +96,27 @@ class FoodVolumePipeline:
     """
 
     def __init__(self):
-        self._segmenter: Optional[SAM2Segmenter] = None
+        self._segmenter = None
         self._depth_estimator: Optional[DepthEstimator] = None
         self._scale_recovery: Optional[ScaleRecovery] = None
         self._volume_estimator: Optional[VolumeNutritionEstimator] = None
 
     @property
-    def segmenter(self) -> SAM2Segmenter:
+    def segmenter(self):
+        """Segmentation backend factory (pipeline_config.SEGMENTATION_BACKEND).
+
+        "sam2"    -> SAM2Segmenter (default, in-process)
+        "foodsam" -> FoodSAMSegmenter (FoodSAM stack in its isolated env via
+                     subprocess; same segment()/is_available/visualize_masks
+                     surface as SAM2Segmenter)
+        """
         if self._segmenter is None:
-            self._segmenter = SAM2Segmenter()
+            import pipeline_config as pc
+            if getattr(pc, "SEGMENTATION_BACKEND", "sam2") == "foodsam":
+                from foodsam_segmenter import FoodSAMSegmenter
+                self._segmenter = FoodSAMSegmenter()
+            else:
+                self._segmenter = SAM2Segmenter()
         return self._segmenter
 
     @property
@@ -161,11 +180,16 @@ class FoodVolumePipeline:
             calib_file=CAMERA_CALIB_FILE,
         )
 
-        # ── Step 2: SAM2 Segmentation ──
+        # ── Step 2: Segmentation ──
         # Segment on seg_image_rgb (if provided), then lift the masks back
         # onto the main image's coordinate grid so depth/scale integration
-        # stays aligned.
-        if seg_image_rgb is not None and seg_yolo_detections is not None:
+        # stays aligned. Backends with prefers_full_res (FoodSAM: its SAM2
+        # adapter caps the AMG input internally and SETR needs the full-res
+        # semantic detail) receive the SOURCE image + full-res detections and
+        # return masks already on the source grid — no rescale.
+        use_full_res = getattr(self.segmenter, "prefers_full_res", False)
+        if seg_image_rgb is not None and seg_yolo_detections is not None \
+                and not use_full_res:
             seg_h, seg_w = seg_image_rgb.shape[:2]
             logger.info(f"Step 2: SAM2 segmentation on {seg_w}x{seg_h} input...")
             seg_results = self.segmenter.segment(seg_image_rgb, seg_yolo_detections)
@@ -178,7 +202,8 @@ class FoodVolumePipeline:
                     interpolation=cv2.INTER_NEAREST,
                 ).astype(bool)
         else:
-            logger.info("Step 2: SAM2 segmentation...")
+            logger.info("Step 2: segmentation on %dx%d input...",
+                        w, h)
             seg_results = self.segmenter.segment(image_rgb, yolo_detections)
 
         import gc
@@ -313,6 +338,11 @@ class FoodVolumePipeline:
                 confidence_note=nutrition_est.confidence_note,
                 warnings=all_warnings,
                 nutrition_per_100g=nutrition_est.nutrition_per_100g,
+                source=getattr(seg, "source", "yolo"),
+                is_ingredient=getattr(seg, "is_ingredient", False),
+                component_id=getattr(seg, "component_id", ""),
+                semantic_purity=getattr(seg, "semantic_purity", None),
+                mapping_type=getattr(seg, "mapping_type", ""),
             ))
 
         # ── Aggregate totals ──

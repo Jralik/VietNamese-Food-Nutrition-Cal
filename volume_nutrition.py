@@ -16,6 +16,16 @@ from dataclasses import dataclass, field
 
 logger = logging.getLogger(__name__)
 
+# Mean-height saturation cap, ADOPTED after the Phase-C experiment: when
+# the depth model exaggerates relief, per-pixel heights saturate at
+# max_height over nearly the whole mask and the integrated volume inflates
+# (measured on ground truth: one 200 g loaf estimated 167/363/356 g across
+# three views). With cap = 0.65 x max_height the same loaf reads
+# 167/239/338 g (group CV 0.40 -> 0.23, MAPE 59% -> 30%) while the banh-mi
+# (225 g) and bun-bo-hue (750 cm3) groups are unchanged. The env override
+# VOLUME_SATURATION_CAP_RATIO remains for experiments.
+SATURATION_CAP_RATIO = 0.65
+
 
 @dataclass
 class NutritionEstimate:
@@ -160,21 +170,49 @@ def compute_volume_bowl_container(
     from pipeline_config import (
         PLATE_DIAMETER_HEURISTICS, BOWL_DEPTH_RATIO,
         BOWL_BASE_RATIO, BOWL_DEFAULT_FILL_RATIO,
+        BOWL_NOISE_FILL_RATIO, BOWL_DELTA_Z_NOISE_MM,
+        BOWL_HEADROOM_MAX_RATIO, BOWL_DIAMETER_TOLERANCE,
     )
 
     x1, y1, x2, y2 = bbox
     bw_px = max(10, x2 - x1)
     bh_px = max(10, y2 - y1)
-    
+
     # 1. Bowl Diameter and Dimensions (mm)
     expected_dia_mm = PLATE_DIAMETER_HEURISTICS.get(dish_type, 180.0)
-    
+
     # If ArUco or calibrated scale is available, compute physical diameter from bbox
     if scale_source in ("aruco_marker", "checkerboard"):
         d_major_px = max(bw_px, bh_px)
         D_rim_mm = float(d_major_px * mm_per_pixel)
-        # Sanity bound: bowl diameter typically 100 - 280 mm
-        D_rim_mm = float(np.clip(D_rim_mm, 100.0, 280.0))
+        # The mask-based rim measurement varies ~+-14% across shots of the
+        # SAME bowl while volume scales with D^3 — trust the calibrated
+        # measurement only within +-10% of the dish-type prior.
+        D_rim_mm = float(np.clip(
+            D_rim_mm,
+            (1.0 - BOWL_DIAMETER_TOLERANCE) * expected_dia_mm,
+            (1.0 + BOWL_DIAMETER_TOLERANCE) * expected_dia_mm,
+        ))
+        # Strongly oblique views (rim ellipse minor/major < 0.75): the SAM2
+        # mask systematically under-covers the far rim — on such views the far
+        # rim blends into the inner wall behind it, so the mask ends at the
+        # food/soup boundary and every mask-derived diameter (bbox, Feret,
+        # fitEllipse) is a LOWER bound (measured: three agreeing measures gave
+        # 170 mm for the same 195 mm bowl that shot at 28° tilt measured
+        # correctly). Fall back to the prior's upper tolerance.
+        try:
+            import cv2 as _cv2
+            cnts = _cv2.findContours(
+                food_mask.astype(np.uint8), _cv2.RETR_EXTERNAL,
+                _cv2.CHAIN_APPROX_NONE)[0]
+            cnt = max(cnts, key=_cv2.contourArea)
+            if len(cnt) >= 5:
+                (_ex, _ey), (ew, eh), _ea = _cv2.fitEllipse(cnt)
+                if min(ew, eh) / max(ew, eh) < 0.75:
+                    D_rim_mm = max(
+                        D_rim_mm, (1.0 + BOWL_DIAMETER_TOLERANCE) * expected_dia_mm)
+        except (_cv2.error, ValueError):
+            pass
     else:
         D_rim_mm = float(expected_dia_mm)
 
@@ -204,28 +242,66 @@ def compute_volume_bowl_container(
             z_food_true = z_food * alpha
             delta_z = z_food_true - z_rim_true  # > 0 means soup is recessed below rim
             has_valid_depth = True
+            # The cavity recess measurement is only meaningful when it clearly
+            # exceeds noise; a sign flip means the depth model cannot resolve
+            # the bowl interior (it exaggerates deep-cavity relief).
+            delta_z_resolved = delta_z > BOWL_DELTA_Z_NOISE_MM
 
-            # If food mounds above the rim (e.g. noodles/meat piled high)
-            raw_heights_above_rim = plane_d - masked_d
-            pos_mound = raw_heights_above_rim[raw_heights_above_rim > 0]
-            if len(pos_mound) > 0.05 * len(raw_heights_above_rim):
-                # Calculate per-pixel area
-                if scale_source in ("aruco_marker", "checkerboard") and K is not None and K[0, 0] > 0 and K[1, 1] > 0:
-                    px_area = (masked_d[raw_heights_above_rim > 0] ** 2) / (float(K[0, 0]) * float(K[1, 1]))
-                else:
-                    px_area = mm_per_pixel ** 2
-                above_rim_volume_cm3 = float(np.sum(pos_mound * alpha * px_area) / 1000.0)
+            # If food mounds above the rim (e.g. noodles/meat piled high) —
+            # only meaningful when the recess itself is resolved, otherwise
+            # the "mound" is depth noise and would double-count on top of the
+            # typical fill fraction used for the noise case.
+            if delta_z_resolved:
+                # Compute the above-rim mound on an ERODED mask: rim pixels at
+                # the mask boundary mix food and background depths, and their
+                # noise regularly manufactures a huge fake "mound" (measured:
+                # 699 -> 1200 cm3 on a pho bowl after a mask update).
+                import cv2 as _cv2
+                r_px = int(np.sqrt(mask_bool.sum() / np.pi))
+                erode_px = max(3, int(0.04 * r_px))
+                eroded = _cv2.erode(
+                    mask_bool.astype(np.uint8),
+                    _cv2.getStructuringElement(
+                        _cv2.MORPH_ELLIPSE, (2 * erode_px + 1, 2 * erode_px + 1)),
+                ).astype(bool)
+                interior_d = depth_map_mm[eroded]
+                interior_plane = plane_z[eroded]
+                raw_heights_above_rim = interior_plane - interior_d
+                # Food mounding more than BOWL_HEADROOM_MAX_RATIO * H above
+                # the rim is physically implausible — depth noise at the rim
+                # otherwise manufactures huge fake mounds.
+                mound_cap = BOWL_HEADROOM_MAX_RATIO * H_bowl_mm
+                clipped_heights = np.minimum(raw_heights_above_rim, mound_cap)
+                pos_mound = clipped_heights[clipped_heights > 0]
+                if len(pos_mound) > 0.05 * len(raw_heights_above_rim):
+                    # Calculate per-pixel area
+                    interior_masked = interior_d[raw_heights_above_rim > 0]
+                    if scale_source in ("aruco_marker", "checkerboard") and K is not None and K[0, 0] > 0 and K[1, 1] > 0:
+                        px_area = (interior_masked ** 2) / (float(K[0, 0]) * float(K[1, 1]))
+                    else:
+                        px_area = mm_per_pixel ** 2
+                    above_rim_volume_cm3 = float(np.sum(pos_mound * alpha * px_area) / 1000.0)
 
     # 3. Calculate bowl liquid/food fill height
     if has_valid_depth:
-        if delta_z > 0:
-            # Soup surface is recessed below the rim
-            # Headroom is physically between 4mm and 20mm (at most 0.25 * H_bowl)
-            headroom_mm = float(np.clip(delta_z, 4.0, 0.25 * H_bowl_mm))
+        if delta_z > BOWL_DELTA_Z_NOISE_MM:
+            # Soup surface is recessed below the rim. The depth model
+            # exaggerates deep-cavity relief, so cap headroom at
+            # BOWL_HEADROOM_MAX_RATIO * H_bowl (calibrated on a measured
+            # 700-800 cm3 bun-bo-hue bowl).
+            headroom_mm = float(np.clip(
+                delta_z, BOWL_DELTA_Z_NOISE_MM,
+                BOWL_HEADROOM_MAX_RATIO * H_bowl_mm))
             h_fill = H_bowl_mm - headroom_mm
+        elif delta_z > 0:
+            # Recess within measurement noise — depth cannot resolve the
+            # cavity; fall back to the typical fill fraction instead of
+            # assuming full-to-the-brim (which overestimates ~40%).
+            h_fill = H_bowl_mm * BOWL_NOISE_FILL_RATIO
         else:
-            # Soup is filled to rim (or mounded above)
-            h_fill = H_bowl_mm
+            # Soup is filled to rim (or mounded above) — but a sign flip is
+            # usually noise, not a truly brimming bowl; use the typical fill.
+            h_fill = H_bowl_mm * BOWL_NOISE_FILL_RATIO
     else:
         # Default typical fill level (~82% of bowl capacity)
         h_fill = H_bowl_mm * BOWL_DEFAULT_FILL_RATIO
@@ -379,6 +455,7 @@ def compute_volume_column_integration(
     max_height_mm: float = 40.0,
     relief_scale: Optional[float] = None,
     min_mean_height_mm: float = 0.0,
+    mean_height_cap: Optional[float] = None,
 ) -> float:
     """Compute food volume via column integration with 3D table plane fitting for flat plates.
     
@@ -424,6 +501,21 @@ def compute_volume_column_integration(
             food_heights_mm = np.clip(
                 food_heights_mm * (min_mean_height_mm / mean_h),
                 2.0, max_height_mm)
+
+    # Experimental saturation cap (see SATURATION_CAP_RATIO): fires ONLY on
+    # genuine relief exaggeration — when >50% of the heights are pinned at
+    # the max_height clip (the depth model flattened the food into a plateau
+    # at the cap). A legitimately tall constant-height food has a uniform
+    # mean WITHOUT pinning and is left untouched.
+    if mean_height_cap is not None and food_heights_mm.size > 0:
+        sat_band = max_height_mm - 1.5
+        sat_fraction = float((food_heights_mm >= sat_band).mean())
+        if sat_fraction > 0.5:
+            mean_h = float(food_heights_mm.mean())
+            if mean_h > mean_height_cap > 0:
+                food_heights_mm = np.clip(
+                    food_heights_mm * (mean_height_cap / mean_h),
+                    2.0, max_height_mm)
 
     # 3. Per-pixel area computation
     # mm_per_pixel is directly calibrated on the table plane (from ArUco marker or dish heuristic)
@@ -561,6 +653,47 @@ class VolumeNutritionEstimator:
             if max_dim > 20:
                 mm_per_pixel = expected_dia / float(max_dim)
 
+        # ── Container-in-mask guard ──
+        # A real food silhouette never fills its bounding box completely
+        # (there is always background between the food edge and the box).
+        # When the mask covers >92% of the bbox, SAM2 segmented the whole
+        # bowl/plate together with the food — integrating that mask produces
+        # absurd volumes (measured: 2099 cm3 of "vermicelli" in a 11 cm bowl).
+        # Fall back to a conservative bbox-based estimate instead.
+        container_in_mask = False
+        if bbox is not None and food_mask.any():
+            bbox_area_px = max(1, (bbox[2] - bbox[0]) * (bbox[3] - bbox[1]))
+            container_in_mask = food_mask.sum() / bbox_area_px > 0.92
+        if container_in_mask:
+            warnings.append(
+                "Segmentation phủ gần trọn bbox (mask có thể gồm cả bát/đĩa) — "
+                "dùng ước lượng bảo thủ từ bbox"
+            )
+            volume_cm3 = compute_volume_bbox_approximation(bbox, mm_per_pixel)
+            volume_method = "bbox_approximation"
+            volume_cm3 = float(np.clip(volume_cm3, 20.0, 1500.0))
+            mass_g, mass_std_density, density_mean = self._mass_from_volume(volume_cm3, class_name, warnings)
+            nutrition, nutrition_per_100g = self._nutrition_from_mass(mass_g, class_name, warnings)
+            mass_std_g, nutrition_std = self._propagate_uncertainty(
+                nutrition, mass_g, mass_std_density, scale_source, volume_method)
+            confidence_note = self._build_confidence_note(
+                "bbox_fallback", scale_source, volume_method, warnings)
+            return NutritionEstimate(
+                class_name=class_name,
+                volume_cm3=round(volume_cm3, 2),
+                volume_method=volume_method,
+                mass_g=round(mass_g, 1),
+                mass_std_g=round(mass_std_g, 1),
+                density_g_per_cm3=density_mean,
+                nutrition=nutrition,
+                nutrition_std=nutrition_std,
+                estimation_method="bbox_fallback",
+                confidence="low",
+                confidence_note=confidence_note,
+                warnings=warnings,
+                nutrition_per_100g=nutrition_per_100g,
+            )
+
         # ── Category-Aware Volume Estimation ──
         if dish_type in {"soup_bowl", "large_bowl", "rice_bowl"} and bbox is not None:
             # 1. 3D Bowl Container Model
@@ -633,6 +766,9 @@ class VolumeNutritionEstimator:
                 max_height_mm=max_height_mm,
                 relief_scale=relief_scale,
                 min_mean_height_mm=height_floors.get(dish_type, 0.0),
+                mean_height_cap=(
+                    SATURATION_CAP_RATIO * max_height_mm
+                    if SATURATION_CAP_RATIO else None),
             )
             volume_method = "column_integration"
 
@@ -653,50 +789,13 @@ class VolumeNutritionEstimator:
             warnings.append(f"Volume suspiciously large ({volume_cm3:.1f} cm³) — clamped to 2500")
             volume_cm3 = min(volume_cm3, 2500.0)
 
-        # ── Density → Mass (provenance-aware) ──
-        density_mean, density_std, density_source = self._get_density_with_source(class_name)
-        mass_g = volume_cm3 * density_mean
-        mass_std_g = volume_cm3 * density_std
-        if density_source == "category_estimate":
-            warnings.append(
-                f"No class-specific density for '{class_name}' — "
-                f"using dish-type category estimate {density_mean:.2f}±{density_std:.2f} g/cm³"
-            )
-        elif density_source == "generic_estimate":
-            warnings.append(
-                f"No density data for '{class_name}' — using generic {density_mean:.2f}±{density_std:.2f} g/cm³"
-            )
-
-        # ── Nutrition (provenance-aware) ──
-        nutrition = self._estimate_nutrition(mass_g, class_name)
-        nutrition_per_100g, nutrition_source = self._get_nutrition_per_100g_with_source(class_name)
-        if nutrition_source == "category_fallback":
-            warnings.append(
-                f"No class-specific nutrition for '{class_name}' — using dish-type category values"
-            )
-        elif nutrition_source == "generic_fallback":
-            warnings.append(f"No nutrition data for '{class_name}' — using generic per-100g values")
-
-        # ── Propagate uncertainty: density variance ⊕ volume/scale error ──
-        # Relative volume error is dominated by the scale source (assumed
-        # plate diameter, marker calibration) and by the volume method.
-        SCALE_REL_UNCERTAINTY = {
-            "aruco_marker": 0.10,      # calibrated marker (black square = 30mm)
-            "checkerboard": 0.10,      # 30mm-square calibration board
-            "plate_heuristic": 0.18,   # assumed plate/bowl diameter
-            "exif": 0.25,              # focal length from EXIF heuristic
-        }
-        volume_rel = SCALE_REL_UNCERTAINTY.get(scale_source, 0.30)
-        if volume_method == "bbox_approximation":
-            volume_rel = max(volume_rel, 0.35)
-        density_rel = (mass_std_g / mass_g) if mass_g > 0 else 0.0
-        total_rel = (density_rel**2 + volume_rel**2) ** 0.5
-
-        if mass_g > 0:
-            mass_std_g = mass_g * total_rel
-        nutrition_std = {}
-        if nutrition and mass_g > 0:
-            nutrition_std = {k: round(v * total_rel, 1) for k, v in nutrition.items()}
+        # ── Density → Mass → Nutrition (provenance-aware helpers) ──
+        mass_g, mass_std_density, density_mean = self._mass_from_volume(
+            volume_cm3, class_name, warnings)
+        nutrition, nutrition_per_100g = self._nutrition_from_mass(
+            mass_g, class_name, warnings)
+        mass_std_g, nutrition_std = self._propagate_uncertainty(
+            nutrition, mass_g, mass_std_density, scale_source, volume_method)
 
         # ── Determine overall estimation method & confidence ──
         if scale_source == "aruco_marker":
@@ -732,6 +831,60 @@ class VolumeNutritionEstimator:
             warnings=warnings,
             nutrition_per_100g=nutrition_per_100g,
         )
+
+    def _mass_from_volume(self, volume_cm3: float, class_name: str, warnings: list):
+        """Density lookup → mass, flagging fallback data sources."""
+        density_mean, density_std, density_source = self._get_density_with_source(class_name)
+        mass_g = volume_cm3 * density_mean
+        mass_std_g = volume_cm3 * density_std
+        if density_source == "category_estimate":
+            warnings.append(
+                f"No class-specific density for '{class_name}' — "
+                f"using dish-type category estimate {density_mean:.2f}±{density_std:.2f} g/cm³"
+            )
+        elif density_source == "generic_estimate":
+            warnings.append(
+                f"No density data for '{class_name}' — using generic {density_mean:.2f}±{density_std:.2f} g/cm³"
+            )
+        return mass_g, mass_std_g, density_mean
+
+    def _nutrition_from_mass(self, mass_g: float, class_name: str, warnings: list):
+        """Per-100g scaling → nutrition, flagging fallback data sources."""
+        nutrition = self._estimate_nutrition(mass_g, class_name)
+        nutrition_per_100g, nutrition_source = self._get_nutrition_per_100g_with_source(class_name)
+        if nutrition_source == "category_fallback":
+            warnings.append(
+                f"No class-specific nutrition for '{class_name}' — using dish-type category values"
+            )
+        elif nutrition_source == "generic_fallback":
+            warnings.append(f"No nutrition data for '{class_name}' — using generic per-100g values")
+        return nutrition, nutrition_per_100g
+
+    @staticmethod
+    def _propagate_uncertainty(nutrition: Dict[str, float], mass_g: float,
+                               mass_std_density: float, scale_source: str,
+                               volume_method: str):
+        """Density variance ⊕ volume/scale error → mass & nutrition std.
+
+        Relative volume error is dominated by the scale source (assumed
+        plate diameter, marker calibration) and by the volume method.
+        """
+        scale_rel_uncertainty = {
+            "aruco_marker": 0.10,      # calibrated marker (black square = 30mm)
+            "checkerboard": 0.10,      # 30mm-square calibration board
+            "plate_heuristic": 0.18,   # assumed plate/bowl diameter
+            "exif": 0.25,              # focal length from EXIF heuristic
+        }
+        volume_rel = scale_rel_uncertainty.get(scale_source, 0.30)
+        if volume_method == "bbox_approximation":
+            volume_rel = max(volume_rel, 0.35)
+        density_rel = (mass_std_density / mass_g) if mass_g > 0 else 0.0
+        total_rel = (density_rel**2 + volume_rel**2) ** 0.5
+        mass_std_g = mass_g * total_rel if mass_g > 0 else 0.0
+        nutrition_std = {}
+        if nutrition and mass_g > 0:
+            nutrition_std = {k: round(v * total_rel, 1) for k, v in nutrition.items()}
+        return mass_std_g, nutrition_std
 
     def _build_confidence_note(
         self,

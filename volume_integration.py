@@ -38,13 +38,17 @@ WORKER_TIMEOUT_S = 300
 last_error: Optional[str] = None
 
 
-def volume_pipeline_available() -> bool:
+def volume_pipeline_available(backend: Optional[str] = None) -> bool:
     """Cheap dependency check — never imports the packages themselves.
 
     Importing transformers here prints docstring-validation noise and pulls
     heavy modules on every rerun; importlib.util.find_spec is side-effect free.
+    `backend` selects which backend the check targets (None = config default).
     """
     import importlib.util
+    import pipeline_config as _pc
+    if backend is None:
+        backend = getattr(_pc, "SEGMENTATION_BACKEND", "sam2")
     for module_name in ("torch", "sam2", "transformers", "cv2"):
         if importlib.util.find_spec(module_name) is None:
             logger.info(f"Volume pipeline dependency '{module_name}' unavailable")
@@ -52,6 +56,15 @@ def volume_pipeline_available() -> bool:
     if not os.path.exists(WORKER_SCRIPT):
         logger.info(f"Volume worker script missing: {WORKER_SCRIPT}")
         return False
+    # FoodSAM backend additionally needs its isolated env (checked on disk —
+    # the main .venv keeps no FoodSAM dependency)
+    if backend == "foodsam":
+        env_python = os.path.join(_pc.FOODSAM_REPO, "env", "Scripts", "python.exe")
+        if not (os.path.isfile(env_python) and os.path.isfile(_pc.FOODSAM_INFER_SCRIPT)):
+            logger.info(
+                f"FoodSAM env not usable (python={env_python}, "
+                f"script={_pc.FOODSAM_INFER_SCRIPT})")
+            return False
     return True
 
 
@@ -118,6 +131,12 @@ class EstimationProxy:
     nutrition_per_100g: Optional[Dict[str, float]] = None
     # bbox crop with segmentation mask + label drawn (base64 JPEG)
     crop_b64: Optional[str] = None
+    # provenance (FoodSAM ingredient items carry these)
+    source: str = "yolo"
+    is_ingredient: bool = False
+    component_id: str = ""
+    mapping_type: str = ""
+    semantic_purity: Optional[float] = None
 
 
 @dataclass
@@ -131,6 +150,13 @@ class PipelineResultProxy:
     mask_overlay_b64: Optional[str] = None
     depth_colored_b64: Optional[str] = None
     scale_overlay_b64: Optional[str] = None
+    # Segmentation diagnostics (what the worker actually ran)
+    seg_backend_used: str = ""
+    seg_fallback_used: bool = False
+    seg_error: Optional[str] = None
+    # mixed-plate audit: YOLO dishes removed from accounting by the FoodSAM
+    # contradiction heuristic (class_name/confidence/bbox/reason/coverage)
+    suppressed_dishes: List[Dict] = field(default_factory=list)
 
 
 def estimate_nutrition_volume(
@@ -138,14 +164,30 @@ def estimate_nutrition_volume(
     detections: List[Dict],
     image_path: Optional[str] = None,
     timeout_s: int = WORKER_TIMEOUT_S,
+    backend: Optional[str] = None,
 ) -> Optional[PipelineResultProxy]:
     """Run the volume pipeline in an isolated worker process.
 
-    `image` is a PIL image (RGB). Returns a PipelineResultProxy, or None when
-    the worker is unavailable, times out, or crashes — callers should fall
-    back to per-serving nutrition.
+    `image` is a PIL image (RGB). `backend` overrides the segmentation backend
+    for this request (None = pipeline_config.SEGMENTATION_BACKEND). Returns a
+    PipelineResultProxy, or None when the worker is unavailable, times out, or
+    crashes — callers should fall back to per-serving nutrition.
     """
-    if not detections:
+    import pipeline_config as _pc
+    if backend is None:
+        backend = getattr(_pc, "SEGMENTATION_BACKEND", "sam2")
+
+    # FoodSAM's own subprocess budget (FOODSAM_TIMEOUT_S) lives INSIDE the
+    # worker: if the outer budget equals it, a full-length FoodSAM run gets
+    # killed by both clocks at once. Give the worker headroom instead.
+    if backend == "foodsam":
+        timeout_s = max(timeout_s,
+                        WORKER_TIMEOUT_S + int(getattr(_pc, "FOODSAM_TIMEOUT_S", 300)))
+
+    # FoodSAM with zero YOLO detections still runs: ingredient extraction is
+    # YOLO-independent (HomeCook YOLO-miss recovery). SAM2 has nothing to
+    # segment without detections.
+    if not detections and backend != "foodsam":
         return None
 
     # Prefer the project's own venv python: sys.executable follows whatever
@@ -167,7 +209,8 @@ def estimate_nutrition_volume(
 
         fd, job_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
         with os.fdopen(fd, "w") as f:
-            json.dump({"image_path": img_path, "detections": detections}, f)
+            json.dump({"image_path": img_path, "detections": detections,
+                       "backend": backend}, f)
 
         fd, output_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
         os.close(fd)
@@ -191,7 +234,13 @@ def estimate_nutrition_volume(
             last_error = payload["error"][-400:]
             logger.error(f"Volume worker error: {payload['error']}")
             return None
-        return _proxy_from_payload(payload)
+        result = _proxy_from_payload(payload)
+        n_extras = sum(1 for e in result.estimations if e.is_ingredient)
+        logger.info(
+            f"Volume run ok: backend_used={result.seg_backend_used or '?'} "
+            f"fallback={result.seg_fallback_used} estimations={len(result.estimations)} "
+            f"ingredient_extras={n_extras} scale={result.scale_result.scale_source}")
+        return result
 
     except subprocess.TimeoutExpired:
         last_error = f"worker timed out after {timeout_s}s"
@@ -227,6 +276,11 @@ def _proxy_from_payload(payload: Dict) -> PipelineResultProxy:
             warnings=e.get("warnings", []),
             nutrition_per_100g=e.get("nutrition_per_100g"),
             crop_b64=e.get("crop_b64"),
+            source=e.get("source", "yolo"),
+            is_ingredient=e.get("is_ingredient", False),
+            component_id=e.get("component_id", ""),
+            mapping_type=e.get("mapping_type", ""),
+            semantic_purity=e.get("semantic_purity"),
         )
         for e in payload["estimations"]
     ]
@@ -243,4 +297,8 @@ def _proxy_from_payload(payload: Dict) -> PipelineResultProxy:
         mask_overlay_b64=viz.get("mask_overlay"),
         depth_colored_b64=viz.get("depth_colored"),
         scale_overlay_b64=viz.get("scale_overlay"),
+        seg_backend_used=payload.get("seg_backend_used") or "",
+        seg_fallback_used=bool(payload.get("seg_fallback_used", False)),
+        seg_error=payload.get("seg_error"),
+        suppressed_dishes=payload.get("suppressed_dishes", []),
     )
