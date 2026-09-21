@@ -14,7 +14,7 @@ import os
 # "foodsam" = FoodSAMSegmenter (FoodSAM stack: SAM2.1 AMG + SETR-MLA
 #             FoodSeg103 semantic + composite matching, runs in the isolated
 #             FoodSAM env via subprocess — see foodsam_segmenter.py)
-SEGMENTATION_BACKEND = "foodsam"
+SEGMENTATION_BACKEND = "sam2"
 
 # ---------------------------------------------------------------------------
 # FoodSAM (external env — no dependencies installed into this project)
