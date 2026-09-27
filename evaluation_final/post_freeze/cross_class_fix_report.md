@@ -89,6 +89,10 @@ cần weights) — **7/7 ảnh PASS** trên `BunRieu-CanhBun/`, invariant số:
   1 duplicate vào audit trail.
 - Toàn bộ ảnh: không còn cặp food box khác lớp với IoU ≥ 0.70.
   Tổng cộng 4 duplicate bị suppress trong folder (bun-rieu (1), (3), bun-rieu1 (1), (4)).
+- Lưu ý đối chiếu số liệu: **8** duplicate ở mục 4 và mục 6 là toàn val set
+  (54 ảnh); **4** ở đây là folder E2E riêng (7 ảnh) — và 4 ca này trùng khớp
+  chính xác với 4 candidate BunRieu-CanhBun của threshold validation. Hai phép
+  đo trên hai phạm vi khác nhau, không mâu thuẫn.
 - Skip-guard môi trường: thiếu thư mục ảnh hoặc weights → SKIPPED có lý do;
   ảnh tồn tại nhưng sai assertion → FAIL.
 
@@ -116,13 +120,24 @@ metric — chỉ flag suppression khác nhau (OFF = `suppress_cross_class=False`
 | bun-rieu (3).jpg | Bun rieu (0.55) | Bun bo Hue 0.94 | có Bun rieu | model nhầm nhóm Bún (vùng vẫn giữ 1 nhãn) |
 | banh-mi250g (3).jpg | Banh mi (0.89) | Hamburger 0.96 | Banh mi | model nhầm Banh mi ↔ Hamburger trên vùng bánh mì |
 
-- Đọc đúng của con số này: metric instance-level **thưởng cho duplicate** — ở 3 ảnh
-  này, lượt OFF được tính match nhờ đếm **cả hai nhãn trên cùng một vùng** (một nhãn
-  sai là false positive) trong khi vẫn **double-count dinh dưỡng** của vùng đó. Ở
-  cấp vùng (thứ nutrition quan tâm): **0 vùng hai món bị gộp** (validation: 0
-  true_pair), 8 vùng duplicate được đếm đúng một lần, mỗi vùng giữ đúng một nhãn.
-- Kết luận: fix chấp nhận giảm recall "ảo" trên các ảnh nhập nhằng để đổi lấy
-  correctness dinh dưỡng (mỗi vùng = một khẩu phần) và precision cao hơn.
+- **Giới hạn metric (limitation cần ghi nhận trong thesis):** metric instance-level
+  hiện tại dựa trên class-set matching và **không có spatial GT**, nên không phân
+  biệt được "hai món thật" với "hai class prediction trên cùng một món". Metric này
+  không "sai" — nhưng ở 3 ảnh bị ảnh hưởng, lượt OFF được tính match nhờ đồng thời
+  giữ cả hai nhãn trên một vùng ảnh, trong khi trạng thái đó dẫn đến double-counting
+  dinh dưỡng ở bước ước lượng khẩu phần. Ở cấp vùng (thứ nutrition quan tâm):
+  **0 vùng hai món bị gộp** (validation: 0 true_pair), 8 vùng duplicate được đếm
+  đúng một lần, mỗi vùng giữ đúng một nhãn.
+- **Giới hạn annotation:** `bun-rieu (1).jpg` cho thấy frozen GT không phải ground
+  truth ngữ nghĩa hoàn hảo — ít nhất một ca ghi nhãn sai đã được xác nhận (GT ghi
+  Bun rieu, kiểm tra thực tế là Bun bo Hue). Do đó không nên dùng riêng recall
+  frozen để phán xét suppression tốt/xấu; đây là limitation của bộ annotation/val
+  set, không chỉ của metric.
+- Kết luận (diễn đạt trực tiếp, không overclaim): cross-class suppression loại 8
+  duplicate candidates và làm precision tăng 0.6250 → 0.6477, trong khi
+  instance-level recall giảm 0.8108 → 0.7703; mức giảm này cần diễn giải thận
+  trọng theo hai limitation trên. Điểm mạnh thực sự của fix là **nutrition
+  correctness** (một vùng = một khẩu phần), không phải thắng một detection metric.
 
 ## 7. Ghi chú kỹ thuật môi trường (ràng buộc import)
 
