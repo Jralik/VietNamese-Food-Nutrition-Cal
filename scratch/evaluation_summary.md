@@ -21,6 +21,9 @@ Frozen baseline (v10b + dual-preresize, slider 0.30, volume SAM2 GPU)
       │         nhưng KHÔNG giải thích toàn bộ residual
       │
       └── cconly mask filter → PROPOSED FUTURE IMPROVEMENT (chưa vào production)
+      └── Experiment D — Rim-plane ablation ✅ FROZEN (NEGATIVE result:
+            mouth-plane/wall-band variants không sửa được Súp cua oblique;
+            root cause = depth map đọc cavity thay vì mặt chất lỏng — limitation)
       └── Experiment C1 — Capture/geometry exploratory ✅ FROZEN (existing data)
             └── Sai số phụ thuộc vào CẤU HÌNH HÌNH HỌC QUAN SÁT + độ ổn định của
                 depth-anchor correction, KHÔNG chỉ góc chụp nghiêng (phân loại nhị phân):
@@ -50,11 +53,12 @@ cơ chế ước lượng khác nhau của monocular-depth pipeline.
 | Recall 0.811 @ 0.30 | baseline detection performance trên val set | quality tuyệt đối (chỉ 1 tập, 1 ngưỡng) |
 | 0-box 0/54 | không có ảnh bị bỏ hoàn toàn | chất lượng box |
 | Isolation 54/54 identical | metric change đến từ GT/evaluator, không phải model | model tốt hơn |
-| Portion 6-13% (bún/phở/cơm) | volume/mass tương đối ổn cho nhóm này | chính xác trên mọi loại món |
+| Portion 6-13% (cơm 6.1%, bún bò 11.0%, bún riêu 12.1%; phở 21.9%) | volume/mass tương đối ổn cho nhóm này | chính xác trên mọi loại món |
 | 61-85% (bánh mì/trứng) | tồn tại failure mode lớn | nguyên nhân (cần A/B) |
 | Exp A: 85.2 → 51.2% | density có ảnh hưởng đáng kể đến mass error | 0.25-0.30 là density thực (plateau ~51%) |
 | Exp B: cconly 84.8 → 61.6% | mask degradation truyền xuống area → volume → mass | mọi residual do mask (còn depth/geometry) |
 | C1 | geometry/capture condition có tín hiệu liên hệ với sai số | quan hệ nhân quả (n nhỏ, exploratory) |
+| Exp D rim-plane | negative result: integration geometry KHÔNG phải nguồn chính | root cause = depth map interior (transparent liquid) |
 
 ## Các báo cáo con (file map)
 

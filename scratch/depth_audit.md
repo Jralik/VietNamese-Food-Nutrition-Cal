@@ -103,6 +103,35 @@ không giải thích toàn bộ**; các yếu tố khác — đặc biệt hình
 depth trên ảnh nghiêng — cần được đánh giá riêng trong Experiment C. `cconly` CHƯA được
 đưa vào production (ablation, không phải patch).
 
+## 5a. Experiment D — Rim-plane ablation ✅ ĐÃ CHẠY — NEGATIVE RESULT
+
+**Thiết kế**: D0 original / D1 z_rim=mouth-plane / D2 wall-band exclusion
+(`d_pixel < z_mouth(x,y)` loại khỏi mound) / D3 height cap / D4 combined —
+offline trên captured inputs (depth anchored + mask frozen), integration logic
+copy verbatim. Mouth plane = LSQ plane qua **mask-boundary interior ring
+(proxy cho mouth plane — boundary không được giả định là physical rim)**.
+
+**Kết quả (Súp cua nhóm, cm³):**
+
+| Ảnh | GT | D0 | D1 | D2 | D3 | D4 |
+|---|---|---|---|---|---|---|
+| (3) oblique | 470.6 | 1188 | 1200 | 1188 | 1188 | 1200 |
+| (4) oblique | 470.6 | 1200 | 1200 | 1200 | 1200 | 1200 |
+| (5) | 470.6 | 824 | 1006 | 824 | 824 | 1006 |
+
+**Kết luận (mức 3 — negative result)**: KHÔNG variant nào sửa được failure case
+(3)/(4)/(5); các class khác không regression (Bun bo Hue 11.0→10.7%, Bún riêu
+11.0→8.0%, còn lại ~không đổi). **Giả thuyết mouth-plane/wall-band KHÔNG đủ giải
+thích sai số — không merge.**
+
+**Nguyên nhân thật được diagnostic chỉ ra**: boundary depth của mask RẤT ổn định
+((3): 272-314mm, median 290 — mouth plane ≈ table plane ≈ z_rim gốc) → các knob
+D1/D2/D3 gần như no-op. Phình thể tích nằm ở **depth map INTERIOR**: trên ảnh
+oblique, Depth Anything V2 đọc **khoang hộp trong suốt (cavity)** thay vì mặt chất
+lỏng → `z_food` sâu → `delta_z` lớn → frustum đầy khoang. Đây là **limitation của
+monocular depth trên chất lỏng trong suốt**, không sửa được bằng integration
+geometry — thuộc capture protocol/limitation (Experiment C).
+
 ## 5b. Hai ablation là ĐỘC LẬP — không cộng/trừ thành decomposition
 
 Experiment A (density sweep: MAPE 85.2% → 51.2%) và Experiment B (mask ablation:
