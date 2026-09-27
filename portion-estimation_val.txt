@@ -1,0 +1,67 @@
+"C:\Users\huynh\OneDrive\Pictures\test-image\Pho\Pho1 (1).jpg", Pho: 1 - 819.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Pho\Pho1 (2).jpg", Pho: 1 - 819.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Pho\Pho1 (3).jpg", Pho: 1 - 819.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Pho\Pho1 (4).jpg", Pho: 1 - 819.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Pho\Pho1 (5).jpg", Pho: 1 - 819.5;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (6).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (1).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (2).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (3).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (4).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (5).jpg", Banh cuon: 1 - 315.5;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (5).jpg", Com tam: 1 - 390.5, Soup: 1 - 150g; 
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (1).jpg", Com tam: 1 - 390.5, Soup: 1 - 150g;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (2).jpg", Com tam: 1 - 390.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (3).jpg", Com tam: 1 - 390.5, Com tam: 1 - ?, Soup: 1 - 150g;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (4).jpg", Com tam: 1 - 390.5;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunBoHue\BunBoHue1 (1).jpg", Bun bo Hue: 1 - 804.5, Rau: 1 - 90;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunBoHue\BunBoHue1 (2).jpg", Bun bo Hue: 1 - 804.5, Rau: 1 - 90;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunBoHue\BunBoHue1 (3).jpg", Bun bo Hue: 1 - 804.5, Rau: 1 - 90;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunBoHue\BunBoHue1 (4).jpg", Bun bo Hue: 1 - 804.5, Rau: 1 - 90;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunBoHue\BunBoHue1 (5).jpg", Bun bo Hue: 1 - 804.5, Rau: 1 - 90;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi1.jpg", Banh mi: 1 - 242.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi2.jpg", Banh mi: 1 - 242.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi3.jpg", Banh mi: 1 - 242.6;     
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi4.jpg", Banh mi: 1 - 242.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi5.jpg", Banh mi: 1 - 242.6;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi250g (1).jpg", Banh mi: 1 - 255.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi250g (2).jpg", Banh mi: 1 - 255.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi250g (3).jpg", Banh mi: 1 - 255.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\banh-mi250g (4).jpg", Banh mi: 1 - 255.6;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMiDucTri (1).jpg", Banh mi: 1 - 210;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMiDucTri (2).jpg", Banh mi: 1 - 210;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMiDucTri (3).jpg", Banh mi: 1 - 210;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMi_Trung (4).jpg", Banh mi: 2 - 99.3 (tong), 1 - Trung 221.2;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMi_Trung (1).jpg", Banh mi: 2 - 99.3 (tong), 1 - Trung 221.2;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMi_Trung (2).jpg", Banh mi: 2 - 99.3 (tong), 1 - Trung 221.2;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhMi\BanhMi_Trung (3).jpg", Banh mi: 2 - 99.3 (tong), 1 - Trung 221.2;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu1 (4).jpg", Bun rieu: 1 - 838.9;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu1 (1).jpg", Bun rieu: 1 - 838.9;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu1 (2).jpg", Bun rieu: 1 - 838.9;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu1 (3).jpg", Bun rieu: 1 - 838.9;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu (3).jpg", Bun rieu: 1 - 838.9, Rau: 1 - 70;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu (1).jpg", Bun rieu: 1 - 838.9, Rau: 1 - 70;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BunRieu-CanhBun\bun-rieu (2).jpg", Bun rieu: 1 - 838.9, Rau: 1 - 70;
+
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (6).jpg", Sup cua: 1 - 470.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (1).jpg", Sup cua: 1 - 470.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (2).jpg", Sup cua: 1 - 470.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (3).jpg", Sup cua: 1 - 470.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (4).jpg", Sup cua: 1 - 470.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua (5).jpg", Sup cua: 1 - 470.6;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (4).jpg", Sup cua: 1 - 500.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (1).jpg", Sup cua: 1 - 500.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (2).jpg", Sup cua: 1 - 500.6;
+"C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (3).jpg", Sup cua: 1 - 500.6;
+
+

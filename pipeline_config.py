@@ -14,7 +14,7 @@ import os
 # "foodsam" = FoodSAMSegmenter (FoodSAM stack: SAM2.1 AMG + SETR-MLA
 #             FoodSeg103 semantic + composite matching, runs in the isolated
 #             FoodSAM env via subprocess — see foodsam_segmenter.py)
-SEGMENTATION_BACKEND = "foodsam"
+SEGMENTATION_BACKEND = "sam2"
 
 # ---------------------------------------------------------------------------
 # FoodSAM (external env — no dependencies installed into this project)
@@ -23,6 +23,7 @@ FOODSAM_REPO = r"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodSAM"
 FOODSAM_INFER_SCRIPT = os.path.join(FOODSAM_REPO, "foodsam_infer.py")
 FOODSAM_POINTS_PER_SIDE = 16     # AMG grid density (paper default); 16 = 4x faster
 FOODSAM_TIMEOUT_S = 300          # subprocess budget per image (model load + inference)
+FOODSAM_USE_DAEMON = True        # True = keep FoodSAM models in RAM via persistent worker
 
 # ---------------------------------------------------------------------------
 # FoodSAM ingredient nutrition (FoodSeg103 -> VietFood68)
@@ -322,5 +323,21 @@ CONFIDENCE_LOW = "low"         # bbox fallback, no depth
 # ---------------------------------------------------------------------------
 # Device
 # ---------------------------------------------------------------------------
+import logging
+
 import torch
+
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+if DEVICE == "cpu":
+    # A silent CPU fallback once hid a GPU outage: the volume pipeline ran
+    # ~5x slower (~17s vs ~3s per request) with no visible cause. Surface
+    # the reason once at import time.
+    _log = logging.getLogger(__name__)
+    try:
+        torch.zeros(1).cuda()
+        _log.warning("torch.cuda.is_available()=False but CUDA init works — "
+                     "volume pipeline forced to CPU (expect ~15-20s/request)")
+    except Exception as e:  # noqa: BLE001
+        _log.warning("CUDA unavailable — volume pipeline on CPU "
+                     "(expect ~15-20s/request): %s: %s",
+                     type(e).__name__, str(e)[:200])

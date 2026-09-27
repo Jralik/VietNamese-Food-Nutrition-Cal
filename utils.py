@@ -1,5 +1,6 @@
 import av
 from ultralytics import YOLO
+from ultralytics.engine.results import Results
 import streamlit as st
 import cv2
 from PIL import Image, ImageOps
@@ -291,9 +292,13 @@ def _display_detected_frame(conf, model, youtube_url=""):
 
 @st.cache_resource
 def load_model():
-    modelpath = r"./model/yolov26/best.onnx"
-    
-    model = YOLO(modelpath, task="detect")
+    modelpath = r"./model/yolov10/YOLOv10b_VietFood67_SGD_new_bigger.pt"
+
+    model = YOLO(modelpath)
+    # Deployment workaround, not an architecture choice: keep the detector on
+    # CPU. An in-process CUDA context conflicts with the volume worker's GPU
+    # state (CUBLAS init failures measured); the worker owns the GPU.
+    model.overrides["device"] = "cpu"
     return model
 
 def resize_image(image):
@@ -400,28 +405,33 @@ def calculate_tdee_mifflin_st_jeor(
         raise ValueError("sex must be 'male' or 'female'")
     return bmr * activity_factor
 
-def build_structured_facts(meal_nutrition: dict, user_profile: dict, rda: dict, detected_foods: dict = None) -> dict:
-    """This JSON is the ENTIRE input the LLM will see for this meal.
-    Nothing outside this dict should reach the LLM — if the LLM needs a new
-    fact, add it here explicitly; don't let it infer things from partial data."""
-    facts = {"deficits": {}, "excesses": {}, "on_target": [], "user_goal": user_profile["goal"]}
-
-    for nutrient, consumed in meal_nutrition.items():
-        target = rda.get(nutrient)
-        if target is None:
-            continue
-        pct_of_target = consumed / target * 100
-        if pct_of_target < 80:
-            facts["deficits"][nutrient] = {"consumed": consumed, "target": target, "pct": pct_of_target}
-        elif pct_of_target > 120:
-            facts["excesses"][nutrient] = {"consumed": consumed, "target": target, "pct": pct_of_target}
-        else:
-            facts["on_target"].append(nutrient)
-
-    if detected_foods:
-        facts["detected_foods"] = detected_foods
-
-    return facts
+def build_structured_facts(meal_nutrition: dict, user_profile: dict = None, rda: dict = None, detected_foods: dict = None) -> dict:
+    """Authoritative Structured Nutrition Facts JSON generator (Phase 5).
+    Delegates to nutrition_rule_engine with deterministic calculations,
+    RNI 2016 reference values, system warnings, and item-level provenance.
+    Maintains 100% backward compatibility for existing callers."""
+    try:
+        from nutrition_rule_engine import build_structured_facts as _engine_build_facts
+        return _engine_build_facts(meal_nutrition, user_profile, rda, detected_foods)
+    except Exception:
+        # Fallback to local calculation if engine unavailable
+        goal = user_profile.get("goal", "maintain") if user_profile else "maintain"
+        facts = {"deficits": {}, "excesses": {}, "on_target": [], "user_goal": goal}
+        if rda:
+            for nutrient, consumed in meal_nutrition.items():
+                target = rda.get(nutrient)
+                if target is None:
+                    continue
+                pct_of_target = consumed / target * 100
+                if pct_of_target < 80:
+                    facts["deficits"][nutrient] = {"consumed": consumed, "target": target, "pct": pct_of_target}
+                elif pct_of_target > 120:
+                    facts["excesses"][nutrient] = {"consumed": consumed, "target": target, "pct": pct_of_target}
+                else:
+                    facts["on_target"].append(nutrient)
+        if detected_foods:
+            facts["detected_foods"] = detected_foods
+        return facts
 
 def retrieve_context(query: str, detected_foods: dict = None, top_k: int = 3) -> str:
     """
@@ -476,22 +486,16 @@ def generate_nutrition_advice(count_dict_names, total_nutrition):
     import json
     prompt = json.dumps(facts, indent=2, ensure_ascii=False)
 
-    # Construct system prompt context to interpret the structured facts JSON
-    system_context = (
-        "Bạn là một chuyên gia tư vấn dinh dưỡng AI chuyên nghiệp chuyên về ẩm thực Việt Nam.\n"
-        "Người dùng sẽ cung cấp cho bạn một chuỗi JSON chứa các dữ liệu thực tế về bữa ăn của họ so với nhu cầu dinh dưỡng khuyến nghị hàng ngày (RDA) được tính toán dựa trên chỉ số BMI và TDEE của họ.\n"
-        "Dữ liệu JSON bao gồm:\n"
-        "- 'user_goal': Mục tiêu sức khỏe của người dùng.\n"
-        "- 'deficits': Các chất dinh dưỡng bị thiếu hụt nghiêm trọng trong bữa ăn này so với nhu cầu hàng ngày.\n"
-        "- 'excesses': Các chất dinh dưỡng bị dư thừa quá mức trong bữa ăn này so với nhu cầu hàng ngày.\n"
-        "- 'on_target': Các chất dinh dưỡng đạt mục tiêu lý tưởng.\n"
-        "- 'detected_foods': Các món ăn được nhận diện trong bữa ăn này.\n\n"
-        "Nhiệm vụ của bạn là:\n"
-        "1. Nhận xét ngắn gọn về các món ăn trong phần 'detected_foods'.\n"
-        "2. Đánh giá bữa ăn này có lành mạnh hay không dựa trên các chất thiếu hụt ('deficits'), dư thừa ('excesses') hoặc đạt mục tiêu ('on_target') so với nhu cầu RDA hàng ngày.\n"
-        "3. Đưa ra lời khuyên thiết thực (ăn thêm gì, bớt gì) để giúp người dùng đạt được mục tiêu 'user_goal'.\n\n"
-        "Hãy trả lời trực tiếp bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu (khoảng 3-4 đoạn ngắn). Không lặp lại hay giải thích bất kỳ định dạng hệ thống nào."
-    )
+    # Phase 5: Decoupled LLM advisory contract
+    try:
+        from nutrition_rule_engine import get_llm_advisory_contract
+        system_context = get_llm_advisory_contract()
+    except Exception:
+        system_context = (
+            "Bạn là một chuyên gia tư vấn dinh dưỡng AI chuyên nghiệp chuyên về ẩm thực Việt Nam.\n"
+            "Người dùng sẽ cung cấp cho bạn một chuỗi JSON chứa các dữ liệu thực tế về bữa ăn của họ so với nhu cầu dinh dưỡng khuyến nghị hàng ngày (RDA).\n"
+            "Hãy trả lời trực tiếp bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu (khoảng 3-4 đoạn ngắn)."
+        )
 
     if provider.startswith("Cerebras"):
         cerebras_api_key = st.session_state.get("cerebras_api_key", "")
@@ -730,7 +734,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
                 try:
                     backend_label = ("FoodSAM (SAM2 + SETR + nguyên liệu)"
                                      if seg_backend == "foodsam" else "SAM2")
-                    time_hint = ("1–3 phút" if seg_backend == "foodsam" else "~1 phút")
+                    time_hint = ("hơn 1 phút" if seg_backend == "foodsam" else "~1 phút")
                     with st.spinner(f"Đang ước lượng khẩu phần ({backend_label} "
                                     "+ chiều sâu — có thể mất tới " + time_hint + ")..."):
                         v_dets = volume_integration.extract_yolo_detections(
@@ -1122,6 +1126,148 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
         st.markdown(ui.no_food_alert(), unsafe_allow_html=True)
 
 
+def _nms_class_aware(boxes, scores, classes, iou_thr=0.55):
+    """Greedy NMS kept per class over one merged box pool (xyxy, numpy)."""
+    keep = []
+    for c in np.unique(classes):
+        idx = np.where(classes == c)[0]
+        order = idx[np.argsort(-scores[idx])]
+        while len(order):
+            i = int(order[0])
+            keep.append(i)
+            if len(order) == 1:
+                break
+            rest = order[1:]
+            ax1, ay1, ax2, ay2 = boxes[i]
+            ix1 = np.maximum(ax1, boxes[rest, 0])
+            iy1 = np.maximum(ay1, boxes[rest, 1])
+            ix2 = np.minimum(ax2, boxes[rest, 2])
+            iy2 = np.minimum(ay2, boxes[rest, 3])
+            inter = np.clip(ix2 - ix1, 0, None) * np.clip(iy2 - iy1, 0, None)
+            area_i = max((ax2 - ax1) * (ay2 - ay1), 1e-9)
+            area_r = (boxes[rest, 2] - boxes[rest, 0]) * (boxes[rest, 3] - boxes[rest, 1])
+            ious = inter / np.maximum(area_i + area_r - inter, 1e-9)
+            order = rest[ious <= iou_thr]
+    return np.array(keep, dtype=int)
+
+
+def _map_boxes_exif_to_upright(xyxy, orientation, w_raw, h_raw):
+    """Map boxes from raw-stored pixel coordinates to upright coordinates.
+
+    Applies the same geometric transform ImageOps.exif_transpose performs for
+    the given EXIF orientation tag (1-8); orientations 5-8 additionally swap
+    width/height. Returns (mapped_xyxy, (w_upright, h_upright)).
+    """
+    xyxy = np.asarray(xyxy, dtype=np.float64).reshape(-1, 4)
+    if orientation == 1:
+        return xyxy.copy(), (w_raw, h_raw)
+
+    def map_point(x, y):
+        if orientation == 2:
+            return w_raw - x, y
+        if orientation == 3:
+            return w_raw - x, h_raw - y
+        if orientation == 4:
+            return x, h_raw - y
+        if orientation == 5:
+            return y, x
+        if orientation == 6:
+            return h_raw - y, x
+        if orientation == 7:
+            return h_raw - y, w_raw - x
+        if orientation == 8:
+            return y, w_raw - x
+        raise ValueError(f"unsupported EXIF orientation: {orientation}")
+
+    out = np.empty_like(xyxy)
+    for i, (x1, y1, x2, y2) in enumerate(xyxy):
+        nx1, ny1 = map_point(x1, y1)
+        nx2, ny2 = map_point(x2, y2)
+        out[i] = (min(nx1, nx2), min(ny1, ny2), max(nx1, nx2), max(ny1, ny2))
+    if orientation >= 5:
+        return out, (h_raw, w_raw)
+    return out, (w_raw, h_raw)
+
+
+def predict_with_dual_preresize(model, pil_image, conf, imgsz=640):
+    """Detect via two PIL anti-aliased pre-resizes (stretch + letterbox), merged.
+
+    Ultralytics letterboxes with cv2.INTER_LINEAR, which aliases on
+    multi-megapixel photos and suppresses texture-dependent classes — on a
+    4000x1800 SupCua shot the same geometry scores 0.155 via the internal
+    cv2 path vs 0.917 with a PIL BILINEAR pre-resize. The two geometries
+    rescue different dishes (round bowls need undistorted letterbox, spread
+    table shots detect better stretched), so both run and merge.
+
+    Every box is inverse-mapped exactly once back to pil_image coordinates
+    (stretch: independent x/y scale; letterbox: uniform scale + pad) and the
+    pool is combined with class-aware NMS. The returned [Results] has the
+    same semantics as predict() on pil_image directly — boxes in
+    original-image coordinates, orig_img = the upright RGB frame — so
+    plotting, bbox crops and the volume path (bbox_scale) stay unchanged.
+
+    A third run over the raw (un-transposed) pixel orientation was evaluated
+    and REJECTED: on out-of-distribution orientations the model hallucinates
+    on background near the image edges (measured: high-confidence "Sup cua"
+    on plain table, "Pho" on a sink), and every raw-only box that survived
+    the class-level metrics was a position false positive under visual
+    audit. _map_boxes_exif_to_upright remains for the evaluation tooling.
+    """
+    if pil_image.mode != "RGB":
+        pil_image = pil_image.convert("RGB")
+    w, h = pil_image.size
+
+    stretch_img = pil_image.resize((imgsz, imgsz), Image.BILINEAR)
+    r = min(imgsz / w, imgsz / h)
+    nw, nh = int(round(w * r)), int(round(h * r))
+    pad_x, pad_y = (imgsz - nw) // 2, (imgsz - nh) // 2
+    letter_img = Image.new("RGB", (imgsz, imgsz), (114, 114, 114))
+    letter_img.paste(pil_image.resize((nw, nh), Image.BILINEAR), (pad_x, pad_y))
+
+    # Ultralytics select_device("cpu") sets CUDA_VISIBLE_DEVICES="-1"
+    # process-wide during predict; child processes (the volume worker)
+    # inherit it and lose the GPU. Restore the previous value afterwards.
+    prev_cvd = os.environ.get("CUDA_VISIBLE_DEVICES")
+    try:
+        res_s = model.predict(stretch_img, conf=conf, imgsz=imgsz, half=False, verbose=False)[0]
+        res_l = model.predict(letter_img, conf=conf, imgsz=imgsz, half=False, verbose=False)[0]
+    finally:
+        now_cvd = os.environ.get("CUDA_VISIBLE_DEVICES")
+        if now_cvd != prev_cvd:
+            if prev_cvd is None:
+                os.environ.pop("CUDA_VISIBLE_DEVICES", None)
+            else:
+                os.environ["CUDA_VISIBLE_DEVICES"] = prev_cvd
+
+    def _data(res):
+        d = res.boxes.data if res.boxes is not None else None
+        if d is None:
+            return np.zeros((0, 6), dtype=np.float32)
+        return d.cpu().numpy() if hasattr(d, "cpu") else np.asarray(d)
+
+    ds, dl = _data(res_s), _data(res_l)
+    xyxy_s = ds[:, :4].copy()
+    xyxy_s[:, [0, 2]] *= w / float(imgsz)
+    xyxy_s[:, [1, 3]] *= h / float(imgsz)
+    xyxy_l = dl[:, :4].copy()
+    xyxy_l[:, [0, 2]] = (xyxy_l[:, [0, 2]] - pad_x) / r
+    xyxy_l[:, [1, 3]] = (xyxy_l[:, [1, 3]] - pad_y) / r
+
+    if len(ds) + len(dl):
+        xyxy = np.concatenate([xyxy_s, xyxy_l], axis=0)
+        extra = np.concatenate([ds[:, 4:], dl[:, 4:]], axis=0)
+        keep = _nms_class_aware(xyxy, extra[:, 0], extra[:, 1])
+        boxes6 = torch.from_numpy(
+            np.concatenate([xyxy[keep], extra[keep]], axis=1).astype(np.float32))
+    else:
+        boxes6 = torch.zeros((0, 6), dtype=torch.float32)
+
+    orig_bgr = cv2.cvtColor(np.asarray(pil_image), cv2.COLOR_RGB2BGR)
+    merged = Results(orig_img=orig_bgr, path=res_s.path, names=res_s.names,
+                     boxes=boxes6, speed=res_s.speed)
+    return [merged]
+
+
 def detect_image(conf, uploaded_file, model, url=False):
         if "button_clicked" not in st.session_state:
             st.session_state.button_clicked = False
@@ -1156,20 +1302,20 @@ def detect_image(conf, uploaded_file, model, url=False):
         # transposed volume source — rotated overlays, wrong masks, tiny kcal.
         uploaded_image = ImageOps.exif_transpose(uploaded_image)
 
-        resized_uploaded_image = resize_image(uploaded_image)
-
-        # Volume pipeline source: aspect-preserving (the fixed 640x640 stretch
-        # corrupts ArUco/scale geometry — a 900x700 photo stretched to 640x640
-        # made the ArUco detector fire a false positive and distorted real
-        # marker scales ~4x). Capped at 2000px for pipeline speed.
+        # Volume pipeline source: aspect-preserving. Capped at 2000px for pipeline speed.
         # (EXIF orientation was already applied to uploaded_image above.)
         volume_source_image = uploaded_image.copy()
         volume_source_image.thumbnail((2000, 2000))
-        bbox_scale = (volume_source_image.width / 640.0,
-                      volume_source_image.height / 640.0)
+
+        # Consistent coordinate transform: rescale YOLO boxes from original image space
+        # (W_orig, H_orig) to volume_source_image space (W_vol, H_vol)
+        bbox_scale = (
+            float(volume_source_image.width) / float(uploaded_image.width),
+            float(volume_source_image.height) / float(uploaded_image.height),
+        )
 
         if st.session_state.show_image and not st.session_state.is_reset and not st.session_state.button_clicked:   
-            original_image = st.image(resized_uploaded_image, output_format="JPEG", width="stretch")
+            original_image = st.image(volume_source_image, output_format="JPEG", width="stretch")
 
         if not st.session_state.is_reset:
             col1, col2 = st.columns([0.8, 0.2], gap="large")
@@ -1190,7 +1336,7 @@ def detect_image(conf, uploaded_file, model, url=False):
         if st.session_state.button_clicked and not reset_button:
             with st.spinner("Đang phân tích món ăn..."):
                 t_yolo_start = time.time()
-                detected_image = model.predict(resized_uploaded_image, conf=conf, imgsz=640, half=False)
+                detected_image = predict_with_dual_preresize(model, uploaded_image, conf)
                 yolo_time_s = time.time() - t_yolo_start
                 image_path = getattr(uploaded_file, "name", None) if not isinstance(uploaded_file, str) else None
                 detect_image_result(detected_image, model,

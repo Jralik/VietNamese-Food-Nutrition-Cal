@@ -19,6 +19,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
@@ -74,8 +75,9 @@ def extract_yolo_detections(result, class_names: list, bbox_scale=None) -> List[
     Each dict: {"bbox": (x1, y1, x2, y2), "class_name": str, "confidence": float}.
     Non-food classes and low-confidence boxes are skipped.
 
-    `bbox_scale` = (sx, sy) rescales boxes from the YOLO input space (640x640)
-    to the aspect-preserving source image given to the volume pipeline.
+    `bbox_scale` = (sx, sy) rescales boxes from the original image space (the
+    coordinates Ultralytics already maps detections back to) to the
+    aspect-preserving source image given to the volume pipeline.
     """
     detections: List[Dict] = []
     for r in result:
@@ -157,6 +159,186 @@ class PipelineResultProxy:
     # mixed-plate audit: YOLO dishes removed from accounting by the FoodSAM
     # contradiction heuristic (class_name/confidence/bbox/reason/coverage)
     suppressed_dishes: List[Dict] = field(default_factory=list)
+    # Execution provenance diagnostics (transparent reporting for thesis benchmark)
+    worker_mode: str = "oneshot"
+    worker_fallback: bool = False
+    worker_pid: Optional[int] = None
+    worker_elapsed_s: float = 0.0
+
+
+import atexit
+import concurrent.futures
+import threading
+
+
+class WorkerDaemonManager:
+    """Manages a persistent volume_worker.py --daemon child process over stdin/stdout."""
+
+    def __init__(self):
+        self.proc: Optional[subprocess.Popen] = None
+        self.pid: Optional[int] = None
+        self.lock = threading.Lock()
+        self._executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+
+    def _get_python_exe(self) -> str:
+        python_exe = sys.executable
+        venv_exe = os.path.join(PROJECT_ROOT, ".venv", "Scripts", "python.exe")
+        if os.path.exists(venv_exe):
+            python_exe = venv_exe
+        return python_exe
+
+    def start(self, timeout_s: int = 60) -> bool:
+        """Start or restart the daemon process and wait for ready signal."""
+        self.kill()
+        python_exe = self._get_python_exe()
+        # Ultralytics select_device("cpu") (detector runs on CPU by design)
+        # sets CUDA_VISIBLE_DEVICES="-1" process-wide, and child processes
+        # inherit it — the volume worker would then see zero GPUs and drop to
+        # CPU (~17s/request instead of ~2s). Strip the poison for the worker.
+        spawn_env = dict(os.environ)
+        if spawn_env.get("CUDA_VISIBLE_DEVICES") == "-1":
+            del spawn_env["CUDA_VISIBLE_DEVICES"]
+        try:
+            logger.info("Starting persistent volume worker daemon...")
+            self.proc = subprocess.Popen(
+                [python_exe, WORKER_SCRIPT, "--daemon"],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=sys.stderr,  # direct stderr to console so buffer never deadlocks
+                text=True,
+                bufsize=1,
+                cwd=PROJECT_ROOT,
+                env=spawn_env,
+            )
+
+            def _read_ready():
+                return self.proc.stdout.readline()
+
+            fut = self._executor.submit(_read_ready)
+            ready_line = fut.result(timeout=timeout_s)
+            if not ready_line:
+                logger.error("Daemon exited before sending ready signal")
+                self.kill()
+                return False
+            data = json.loads(ready_line.strip())
+            if data.get("status") == "ready":
+                self.pid = data.get("pid", self.proc.pid)
+                logger.info(f"Persistent volume worker ready (PID {self.pid})")
+                return True
+            else:
+                logger.error(f"Unexpected daemon startup response: {ready_line}")
+                self.kill()
+                return False
+        except Exception as e:
+            logger.error(f"Failed to start persistent daemon: {e}")
+            self.kill()
+            return False
+
+    def send_request(self, job: dict, timeout_s: int = 120) -> Optional[dict]:
+        """Send job to daemon via stdin and read single JSON line response."""
+        with self.lock:
+            if self.proc is None or self.proc.poll() is not None:
+                ok = self.start(timeout_s=60)
+                if not ok:
+                    return None
+
+            try:
+                line = json.dumps(job) + "\n"
+                self.proc.stdin.write(line)
+                self.proc.stdin.flush()
+
+                def _read_line():
+                    return self.proc.stdout.readline()
+
+                fut = self._executor.submit(_read_line)
+                resp_line = fut.result(timeout=timeout_s)
+                if not resp_line:
+                    logger.error("Daemon process returned EOF (crashed)")
+                    self.kill()
+                    return None
+
+                payload = json.loads(resp_line.strip())
+                return payload
+            except concurrent.futures.TimeoutError:
+                logger.error(f"Daemon request timed out after {timeout_s}s")
+                self.kill()
+                return None
+            except Exception as e:
+                logger.error(f"Daemon communication error: {e}")
+                self.kill()
+                return None
+
+    def kill(self):
+        """Clean up child daemon process."""
+        if self.proc is not None:
+            try:
+                self.proc.stdin.close()
+            except Exception:
+                pass
+            try:
+                self.proc.terminate()
+                self.proc.wait(timeout=2)
+            except Exception:
+                try:
+                    self.proc.kill()
+                except Exception:
+                    pass
+            self.proc = None
+            self.pid = None
+
+
+_daemon_manager = WorkerDaemonManager()
+atexit.register(_daemon_manager.kill)
+
+
+def _run_oneshot_fallback(
+    python_exe: str,
+    job: dict,
+    timeout_s: int,
+    tmp_dir: str,
+) -> Optional[dict]:
+    """Execute legacy one-shot subprocess when daemon is unavailable or fails."""
+    job_path = output_path = None
+    try:
+        fd, job_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(job, f)
+
+        fd, output_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
+        os.close(fd)
+
+        t0 = time.time()
+        proc = subprocess.run(
+            [python_exe, WORKER_SCRIPT, job_path, output_path],
+            cwd=PROJECT_ROOT,
+            timeout=timeout_s,
+            capture_output=True,
+            text=True,
+        )
+        elapsed = time.time() - t0
+        if proc.returncode != 0 or not os.path.exists(output_path):
+            tail = (proc.stderr or "")[-400:]
+            logger.error(f"One-shot volume worker failed (rc={proc.returncode}): {tail}")
+            return None
+
+        with open(output_path, encoding="utf-8") as f:
+            payload = json.load(f)
+        if "error" in payload:
+            logger.error(f"One-shot volume worker error: {payload['error']}")
+            return None
+
+        payload["worker_mode"] = "oneshot"
+        payload["worker_fallback"] = True
+        payload["worker_pid"] = proc.args[0] if hasattr(proc, "args") else None
+        payload["worker_elapsed_s"] = round(elapsed, 3)
+        return payload
+    finally:
+        for p in (job_path, output_path):
+            if p and os.path.exists(p):
+                try:
+                    os.remove(p)
+                except OSError:
+                    pass
 
 
 def estimate_nutrition_volume(
@@ -166,33 +348,25 @@ def estimate_nutrition_volume(
     timeout_s: int = WORKER_TIMEOUT_S,
     backend: Optional[str] = None,
 ) -> Optional[PipelineResultProxy]:
-    """Run the volume pipeline in an isolated worker process.
+    """Run the volume pipeline via Persistent Daemon (warm) with One-shot fallback.
 
     `image` is a PIL image (RGB). `backend` overrides the segmentation backend
     for this request (None = pipeline_config.SEGMENTATION_BACKEND). Returns a
-    PipelineResultProxy, or None when the worker is unavailable, times out, or
-    crashes — callers should fall back to per-serving nutrition.
+    PipelineResultProxy, or None when all workers fail or time out.
     """
     import pipeline_config as _pc
     if backend is None:
         backend = getattr(_pc, "SEGMENTATION_BACKEND", "sam2")
 
-    # FoodSAM's own subprocess budget (FOODSAM_TIMEOUT_S) lives INSIDE the
-    # worker: if the outer budget equals it, a full-length FoodSAM run gets
-    # killed by both clocks at once. Give the worker headroom instead.
     if backend == "foodsam":
-        timeout_s = max(timeout_s,
-                        WORKER_TIMEOUT_S + int(getattr(_pc, "FOODSAM_TIMEOUT_S", 300)))
+        timeout_s = max(
+            timeout_s,
+            WORKER_TIMEOUT_S + int(getattr(_pc, "FOODSAM_TIMEOUT_S", 300)),
+        )
 
-    # FoodSAM with zero YOLO detections still runs: ingredient extraction is
-    # YOLO-independent (HomeCook YOLO-miss recovery). SAM2 has nothing to
-    # segment without detections.
     if not detections and backend != "foodsam":
         return None
 
-    # Prefer the project's own venv python: sys.executable follows whatever
-    # launched Streamlit (PATH may point at another project's venv whose
-    # package set differs).
     python_exe = sys.executable
     venv_exe = os.path.join(PROJECT_ROOT, ".venv", "Scripts", "python.exe")
     if os.path.exists(venv_exe):
@@ -201,45 +375,42 @@ def estimate_nutrition_volume(
     global last_error
     last_error = None
     tmp_dir = tempfile.gettempdir()
-    job_path = output_path = img_path = None
+    img_path = None
     try:
         fd, img_path = tempfile.mkstemp(suffix=".png", dir=tmp_dir)
         os.close(fd)
         image.convert("RGB").save(img_path)
 
-        fd, job_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
-        with os.fdopen(fd, "w") as f:
-            json.dump({"image_path": img_path, "detections": detections,
-                       "backend": backend}, f)
+        job = {
+            "image_path": img_path,
+            "detections": detections,
+            "backend": backend,
+        }
 
-        fd, output_path = tempfile.mkstemp(suffix=".json", dir=tmp_dir)
-        os.close(fd)
+        # 1. Primary path: Persistent Daemon Worker (Warm residency)
+        t_req_start = time.time()
+        payload = _daemon_manager.send_request(job, timeout_s=timeout_s)
 
-        proc = subprocess.run(
-            [python_exe, WORKER_SCRIPT, job_path, output_path],
-            cwd=PROJECT_ROOT,
-            timeout=timeout_s,
-            capture_output=True,
-            text=True,
-        )
-        if proc.returncode != 0 or not os.path.exists(output_path):
-            tail = (proc.stderr or "")[-400:]
-            last_error = f"worker exit {proc.returncode}: {tail}"
-            logger.error(f"Volume worker failed (rc={proc.returncode}): {tail}")
-            return None
+        # 2. Fallback path: Legacy one-shot subprocess if daemon failed
+        if payload is None or "error" in payload:
+            err_detail = payload.get("error", "no response") if payload else "daemon unreachable"
+            logger.warning(
+                f"Daemon worker returned error or unavailable ({err_detail}); "
+                f"initiating transparent one-shot fallback..."
+            )
+            payload = _run_oneshot_fallback(python_exe, job, timeout_s, tmp_dir)
+            if payload is None:
+                last_error = f"both daemon and oneshot worker failed: {err_detail}"
+                return None
 
-        with open(output_path, encoding="utf-8") as f:
-            payload = json.load(f)
-        if "error" in payload:
-            last_error = payload["error"][-400:]
-            logger.error(f"Volume worker error: {payload['error']}")
-            return None
         result = _proxy_from_payload(payload)
         n_extras = sum(1 for e in result.estimations if e.is_ingredient)
         logger.info(
-            f"Volume run ok: backend_used={result.seg_backend_used or '?'} "
-            f"fallback={result.seg_fallback_used} estimations={len(result.estimations)} "
-            f"ingredient_extras={n_extras} scale={result.scale_result.scale_source}")
+            f"Volume run ok: backend={result.seg_backend_used or '?'} "
+            f"mode={result.worker_mode} fallback={result.worker_fallback} "
+            f"time={result.worker_elapsed_s}s estimations={len(result.estimations)} "
+            f"extras={n_extras} scale={result.scale_result.scale_source}"
+        )
         return result
 
     except subprocess.TimeoutExpired:
@@ -251,12 +422,12 @@ def estimate_nutrition_volume(
         logger.exception("Volume worker orchestration failed")
         return None
     finally:
-        for p in (img_path, job_path, output_path):
-            if p and os.path.exists(p):
-                try:
-                    os.remove(p)
-                except OSError:
-                    pass
+        if img_path and os.path.exists(img_path):
+            try:
+                os.remove(img_path)
+            except OSError:
+                pass
+
 
 
 def _proxy_from_payload(payload: Dict) -> PipelineResultProxy:
@@ -301,4 +472,8 @@ def _proxy_from_payload(payload: Dict) -> PipelineResultProxy:
         seg_fallback_used=bool(payload.get("seg_fallback_used", False)),
         seg_error=payload.get("seg_error"),
         suppressed_dishes=payload.get("suppressed_dishes", []),
+        worker_mode=payload.get("worker_mode", "oneshot"),
+        worker_fallback=bool(payload.get("worker_fallback", False)),
+        worker_pid=payload.get("worker_pid"),
+        worker_elapsed_s=float(payload.get("worker_elapsed_s", 0.0)),
     )

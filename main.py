@@ -355,7 +355,7 @@ def render_scan_tab():
     with col_conf:
         confidence = float(st.slider(
             "Ngưỡng tin cậy (confidence threshold)",
-            min_value=10, max_value=100, value=50,
+            min_value=10, max_value=100, value=30,
             help="Cao hơn → dự đoán chính xác hơn nhưng có thể bỏ sót món. "
                  "Thấp hơn → phát hiện được nhiều vật thể hơn.")) / 100
     with col_note:
