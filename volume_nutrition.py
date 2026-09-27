@@ -892,11 +892,14 @@ class VolumeNutritionEstimator:
         Relative volume error is dominated by the scale source (assumed
         plate diameter, marker calibration) and by the volume method.
         """
+        # ASSUMED, NOT MEASURED (2026-09-28): các hệ số dưới đây là giả định kỹ thuật,
+        # không phải độ lệch chuẩn đo được. Frozen benchmark outputs phụ thuộc giá trị này —
+        # KHÔNG đổi nếu không chạy post-freeze evaluation riêng (results/frozen_numbers.md §0).
         scale_rel_uncertainty = {
             "aruco_marker": 0.10,      # calibrated marker (black square = 30mm)
             "checkerboard": 0.10,      # 30mm-square calibration board
             "plate_heuristic": 0.18,   # assumed plate/bowl diameter
-            "exif": 0.25,              # focal length from EXIF heuristic
+            "exif": 0.25,              # focal length from EXIF heuristic (vestigial — chưa từng được gán)
         }
         volume_rel = scale_rel_uncertainty.get(scale_source, 0.30)
         if volume_method == "bbox_approximation":
@@ -922,24 +925,29 @@ class VolumeNutritionEstimator:
         """Build a human-readable confidence note for the UI."""
         if estimation_method == "aruco_calibrated":
             note = (
-                "Ước lượng chính xác cao — sử dụng ArUco marker và depth map. "
-                "Sai số dự kiến: ~15-25%."
+                "Ước lượng có hiệu chuẩn reference (ArUco marker + depth map). "
+                "Sai số theo benchmark frozen trên 54 ảnh thật: MAPE matched-only toàn hệ thống "
+                "44.9% — thay đổi mạnh theo món (cơm/bún ~6-12%, bánh mì ~84%, món khó hơn). "
+                "Xem results/frozen_numbers.md."
             )
         elif estimation_method == "plate_heuristic":
             if volume_method == "bowl_container":
                 note = (
                     "Ước lượng bát 3D chuẩn hóa — sử dụng kích thước bát và đo mức đầy từ depth map. "
-                    "Sai số dự kiến: ~20-35%."
+                    "Benchmark frozen chưa tách riêng cấu hình này; tham chiếu MAPE toàn hệ thống "
+                    "44.9% trên 54 ảnh thật (results/frozen_numbers.md)."
                 )
             else:
                 note = (
-                    "Ước lượng gần đúng — sử dụng kích thước đĩa/bát ước lượng. "
-                    "Sai số dự kiến: ~25-40%. Để chính xác hơn, đặt ArUco marker cạnh đĩa."
+                    "Ước lượng gần đúng — sử dụng kích thước đĩa/bát ước lượng, sai số cao hơn "
+                    "cấu hình có marker (tham chiếu MAPE toàn hệ thống 44.9%, results/frozen_numbers.md). "
+                    "Để chính xác hơn, đặt ArUco marker cạnh đĩa."
                 )
         else:
             note = (
                 "Ước lượng sơ bộ — không có depth map hoặc reference scale. "
-                "Sai số có thể lớn (>50%). Kết quả chỉ mang tính tham khảo."
+                "Cấu hình này CHƯA được kiểm chứng bằng benchmark; "
+                "kết quả chỉ mang tính tham khảo, không dùng cho mục đích dinh dưỡng."
             )
 
         if warnings:

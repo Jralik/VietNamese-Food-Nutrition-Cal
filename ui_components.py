@@ -17,6 +17,19 @@ DEMO_DIR = ASSET_DIR / "demo"
 
 GITHUB_URL = "https://github.com/Jralik/VietNamese-Food-Nutrition-Cal"
 
+MEDICAL_DISCLAIMER = (
+    "⚠️ Thông tin dinh dưỡng và khối lượng ước lượng chỉ mang tính THAM KHẢO — không thay thế "
+    "chẩn đoán hay tư vấn của bác sĩ/chuyên gia dinh dưỡng. Sai số khối lượng theo benchmark frozen: "
+    "MAPE ≈ 45% trên 54 ảnh thật và thay đổi mạnh theo món (xem results/frozen_numbers.md). "
+    "Không dùng cho chế độ ăn trị liệu."
+)
+
+
+def render_medical_disclaimer(context: str = ""):
+    """Cảnh báo y tế cố định — hiển thị ở sidebar và dưới các vùng kết quả."""
+    prefix = f"**{context}** · " if context else ""
+    st.caption(f"{prefix}{MEDICAL_DISCLAIMER}")
+
 # Nhãn tiếng Việt cho các chất dinh dưỡng
 VI_NUTRIENT = {
     "Calories": "Calo",

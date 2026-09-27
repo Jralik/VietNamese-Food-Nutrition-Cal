@@ -248,6 +248,7 @@ def _display_detected_frame(conf, model, youtube_url=""):
                                     })
 
                     totals_placeholder.markdown(_totals_kpi_row(total_nutrition), unsafe_allow_html=True)
+                    ui.render_medical_disclaimer(context="Kết quả nhận diện")
                     if items:
                         cards = "".join(items.values())
                         results_placeholder.markdown(
@@ -1009,6 +1010,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
             total_nutrition_placeholder.markdown(
                 volume_status_note + time_html + _totals_kpi_row(total_nutrition, total_nutrition_std),
                 unsafe_allow_html=True)
+            ui.render_medical_disclaimer(context="Kết quả ước lượng khối lượng")
 
             _show_volume_visualizations(volume_result)
 
