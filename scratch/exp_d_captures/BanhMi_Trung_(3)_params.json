@@ -1,0 +1,33 @@
+{
+ "image": "BanhMi_Trung (3).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Banh mi (Vietnamese baguette sandwich)",
+   "mm_per_pixel": 0.32200348113199434,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    1596.0,
+    282.0,
+    1946.0,
+    791.0
+   ]
+  },
+  {
+   "instance": 1,
+   "class_name": "Trung (Egg)",
+   "mm_per_pixel": 0.32200348113199434,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    459.0,
+    213.0,
+    1150.0,
+    866.0
+   ]
+  }
+ ]
+}

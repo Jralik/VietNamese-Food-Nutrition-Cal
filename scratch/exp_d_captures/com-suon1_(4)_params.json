@@ -1,0 +1,33 @@
+{
+ "image": "com-suon1 (4).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Canh (Soup)",
+   "mm_per_pixel": 0.3306719195278883,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    1859.0,
+    0.0,
+    2000.0,
+    254.0
+   ]
+  },
+  {
+   "instance": 1,
+   "class_name": "Com tam (Broken rice)",
+   "mm_per_pixel": 0.3306719195278883,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    440.0,
+    33.0,
+    1262.0,
+    722.0
+   ]
+  }
+ ]
+}

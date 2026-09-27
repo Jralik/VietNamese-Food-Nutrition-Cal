@@ -13,6 +13,12 @@ Density entries are (mean_density_g_per_cm3, std_density_g_per_cm3, source):
   - "vn_nin_2017"     — Bảng thành phần thực phẩm Việt Nam (Viện Dinh dưỡng, 2017)
   - "literature"      — food-science literature values for the dish category
   - "category_estimate" — engineering estimate for that dish type
+  - https://viendinhduong.vn/  
+  - https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-thuc-pham 
+  - https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-mon-an
+  - https://thucdongiadinh.vn/app/main/dashboard
+  - https://thucdongiadinh.vn/app/tra-cuu/thanh-phan-dinh-duong-thuc-pham
+  - https://thucdongiadinh.vn/app/tra-cuu/ham-luong-theo-luong-tp
 
 Every lookup function has a *_with_source variant returning
 (value, source_label); the volume pipeline uses these to flag estimates
@@ -127,17 +133,17 @@ CATEGORY_DENSITY: Dict[str, Tuple[float, float]] = {
     "default":           (0.85, 0.15),   # last-resort generic
 }
 
-# Category per-100g reference (kcal, g) — typical Vietnamese preparations of
+# Category per-100g reference (kcal, g, mg) — typical Vietnamese preparations of
 # that dish type (VN National Institute of Nutrition 2017 ranges, midpoints).
 CATEGORY_NUTRITION_PER_100G: Dict[str, Dict[str, float]] = {
-    "soup_bowl":         {"Calories": 85,  "Protein": 5.5, "Fat": 3.2, "Carbs": 10.0, "Saturates": 0.9, "Sugar": 0.8, "Salt": 0.9},
-    "large_bowl":        {"Calories": 90,  "Protein": 6.5, "Fat": 4.0, "Carbs": 7.0,  "Saturates": 1.2, "Sugar": 1.0, "Salt": 1.0},
-    "rice_bowl":         {"Calories": 160, "Protein": 3.5, "Fat": 2.5, "Carbs": 30.0, "Saturates": 0.6, "Sugar": 0.5, "Salt": 0.3},
-    "flat_plate":        {"Calories": 200, "Protein": 9.0, "Fat": 9.0, "Carbs": 22.0, "Saturates": 2.8, "Sugar": 2.0, "Salt": 0.8},
-    "small_plate":       {"Calories": 180, "Protein": 10.0,"Fat": 8.0, "Carbs": 15.0, "Saturates": 2.5, "Sugar": 1.5, "Salt": 0.9},
-    "side_vegetables":   {"Calories": 30,  "Protein": 2.0, "Fat": 0.5, "Carbs": 5.0,  "Saturates": 0.1, "Sugar": 2.0, "Salt": 0.1},
-    "ingredient_small":  {"Calories": 55,  "Protein": 1.5, "Fat": 0.8, "Carbs": 10.0, "Saturates": 0.1, "Sugar": 3.0, "Salt": 0.2},
-    "default":           {"Calories": 150, "Protein": 5.0, "Fat": 5.0, "Carbs": 20.0, "Saturates": 1.0, "Sugar": 1.0, "Salt": 0.5},
+    "soup_bowl":         {"Calories": 85,  "Protein": 5.5, "Fat": 3.2, "Carbs": 10.0, "Saturates": 0.9, "Sugar": 0.8, "Salt": 0.9, "Sodium": 350.0, "Calcium": 25.0, "Iron": 0.8, "Zinc": 0.5, "Cholesterol": 15.0},
+    "large_bowl":        {"Calories": 90,  "Protein": 6.5, "Fat": 4.0, "Carbs": 7.0,  "Saturates": 1.2, "Sugar": 1.0, "Salt": 1.0, "Sodium": 400.0, "Calcium": 30.0, "Iron": 1.2, "Zinc": 0.8, "Cholesterol": 25.0},
+    "rice_bowl":         {"Calories": 160, "Protein": 3.5, "Fat": 2.5, "Carbs": 30.0, "Saturates": 0.6, "Sugar": 0.5, "Salt": 0.3, "Sodium": 120.0, "Calcium": 10.0, "Iron": 0.4, "Zinc": 0.6, "Cholesterol": 0.0},
+    "flat_plate":        {"Calories": 200, "Protein": 9.0, "Fat": 9.0, "Carbs": 22.0, "Saturates": 2.8, "Sugar": 2.0, "Salt": 0.8, "Sodium": 320.0, "Calcium": 35.0, "Iron": 1.5, "Zinc": 1.2, "Cholesterol": 40.0},
+    "small_plate":       {"Calories": 180, "Protein": 10.0,"Fat": 8.0, "Carbs": 15.0, "Saturates": 2.5, "Sugar": 1.5, "Salt": 0.9, "Sodium": 360.0, "Calcium": 40.0, "Iron": 1.8, "Zinc": 1.4, "Cholesterol": 45.0},
+    "side_vegetables":   {"Calories": 30,  "Protein": 2.0, "Fat": 0.5, "Carbs": 5.0,  "Saturates": 0.1, "Sugar": 2.0, "Salt": 0.1, "Sodium": 40.0,  "Calcium": 50.0, "Iron": 1.0, "Zinc": 0.3, "Cholesterol": 0.0},
+    "ingredient_small":  {"Calories": 55,  "Protein": 1.5, "Fat": 0.8, "Carbs": 10.0, "Saturates": 0.1, "Sugar": 3.0, "Salt": 0.2, "Sodium": 80.0,  "Calcium": 20.0, "Iron": 0.5, "Zinc": 0.3, "Cholesterol": 0.0},
+    "default":           {"Calories": 150, "Protein": 5.0, "Fat": 5.0, "Carbs": 20.0, "Saturates": 1.0, "Sugar": 1.0, "Salt": 0.5, "Sodium": 200.0, "Calcium": 25.0, "Iron": 1.0, "Zinc": 0.6, "Cholesterol": 20.0},
 }
 
 GENERIC_DENSITY = CATEGORY_DENSITY["default"]
@@ -279,4 +285,7 @@ def estimate_nutrition(mass_g: float, class_name: str) -> Dict[str, float]:
     """Scale per-100g nutrition values to the estimated mass."""
     per_100g = get_nutrition_per_100g(class_name)
     scale = mass_g / 100.0
-    return {k: round(v * scale, 1) for k, v in per_100g.items()}
+    return {
+        k: round(v * scale, 2) if k in ("Iron", "Zinc") else round(v * scale, 1)
+        for k, v in per_100g.items()
+    }

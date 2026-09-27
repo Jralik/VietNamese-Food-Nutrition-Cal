@@ -1,0 +1,284 @@
+{
+  "image_size": [
+    1200,
+    1200
+  ],
+  "n_sam_masks": 11,
+  "pps": 16,
+  "ingredient_mode": "breakdown_and_extra",
+  "ingredient_extraction": {
+    "enabled": true,
+    "candidate_count": 13,
+    "accepted_extra_count": 0
+  },
+  "detections": [
+    {
+      "class_name": "Bun dau (Vermicelli with tofu)",
+      "confidence": 0.97,
+      "bbox": [
+        65,
+        45,
+        1162,
+        1146
+      ],
+      "mask_indices": [],
+      "bbox_coverage": 0.7816,
+      "foodsam_labels": [],
+      "ingredient_breakdown": [
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "french fries",
+          "class_name": "Khoai tay chien (French fries)",
+          "mapping_type": "direct",
+          "pixel_area": 260710,
+          "area_ratio": 0.181,
+          "semantic_purity": 0.8739,
+          "bbox": [
+            185,
+            674,
+            924,
+            1161
+          ],
+          "overlap_ratio": 0.998,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "pork",
+          "class_name": "Thit heo (Pork)",
+          "mapping_type": "approximate",
+          "pixel_area": 115468,
+          "area_ratio": 0.0802,
+          "semantic_purity": 0.6623,
+          "bbox": [
+            62,
+            380,
+            443,
+            882
+          ],
+          "overlap_ratio": 0.9989,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "pork",
+          "class_name": "Thit heo (Pork)",
+          "mapping_type": "approximate",
+          "pixel_area": 8020,
+          "area_ratio": 0.0056,
+          "semantic_purity": 0.7219,
+          "bbox": [
+            821,
+            738,
+            890,
+            899
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "pork",
+          "class_name": "Thit heo (Pork)",
+          "mapping_type": "approximate",
+          "pixel_area": 2121,
+          "area_ratio": 0.0015,
+          "semantic_purity": 0.7543,
+          "bbox": [
+            663,
+            758,
+            739,
+            795
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "pork",
+          "class_name": "Thit heo (Pork)",
+          "mapping_type": "approximate",
+          "pixel_area": 201,
+          "area_ratio": 0.0001,
+          "semantic_purity": 0.7444,
+          "bbox": [
+            895,
+            823,
+            901,
+            868
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 4776,
+          "area_ratio": 0.0033,
+          "semantic_purity": 0.5001,
+          "bbox": [
+            780,
+            621,
+            869,
+            733
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 1,
+          "area_ratio": 0.0,
+          "semantic_purity": 1.0,
+          "bbox": [
+            869,
+            734,
+            870,
+            735
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 1363,
+          "area_ratio": 0.0009,
+          "semantic_purity": 0.5609,
+          "bbox": [
+            904,
+            899,
+            958,
+            944
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 211,
+          "area_ratio": 0.0001,
+          "semantic_purity": 0.405,
+          "bbox": [
+            1072,
+            899,
+            1093,
+            940
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 2,
+          "area_ratio": 0.0,
+          "semantic_purity": 0.6667,
+          "bbox": [
+            1058,
+            963,
+            1060,
+            965
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "cucumber",
+          "class_name": "Dua leo (Cucumber)",
+          "mapping_type": "direct",
+          "pixel_area": 120977,
+          "area_ratio": 0.084,
+          "semantic_purity": 0.686,
+          "bbox": [
+            121,
+            71,
+            609,
+            553
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "cilantro mint",
+          "class_name": "Rau (Vegetables)",
+          "mapping_type": "generic",
+          "pixel_area": 225001,
+          "area_ratio": 0.1563,
+          "semantic_purity": 0.8209,
+          "bbox": [
+            491,
+            27,
+            1151,
+            620
+          ],
+          "overlap_ratio": 0.9927,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "pepper",
+          "class_name": "Ot chuong (Bell pepper)",
+          "mapping_type": "approximate",
+          "pixel_area": 8838,
+          "area_ratio": 0.0061,
+          "semantic_purity": 1.0,
+          "bbox": [
+            567,
+            504,
+            667,
+            629
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Bun dau (Vermicelli with tofu)",
+          "owner_detection_index": 0
+        }
+      ],
+      "suppressed_mixed_plate": false,
+      "suppression_reason": null,
+      "suppressed_confidence": null,
+      "promoted_labels": [],
+      "promoted_area_coverage": null,
+      "warnings": []
+    }
+  ],
+  "extras": [],
+  "suppressed": [],
+  "timing_s": {
+    "sam2": 22.69,
+    "setr": 2.96,
+    "dish": 0.19,
+    "extract": 0.24
+  },
+  "vram_peak_mib": {
+    "sam2": 2403.1,
+    "setr": 1624.3
+  },
+  "device": "cuda"
+}

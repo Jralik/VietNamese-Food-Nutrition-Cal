@@ -1,0 +1,19 @@
+{
+ "image": "SupCua (3).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Sup cua (Crab soup)",
+   "mm_per_pixel": 0.22716600791975242,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    675.0,
+    161.0,
+    1246.0,
+    606.0
+   ]
+  }
+ ]
+}

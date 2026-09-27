@@ -23,12 +23,17 @@ fails/times out, dish detections fall back to refined GrabCut/ellipse masks
 a fallback as a hard error so research results are never silently degraded.
 """
 
+import atexit
+import concurrent.futures
 import json
 import logging
 import os
 import subprocess
+import sys
 import tempfile
-from typing import List, Tuple
+import threading
+import time
+from typing import Dict, List, Optional, Tuple
 
 import cv2
 import numpy as np
@@ -41,6 +46,127 @@ from food_segmentation import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+class FoodSAMDaemonManager:
+    """Manages a persistent foodsam_infer.py --daemon child process over stdin/stdout."""
+
+    def __init__(self, env_python: str, infer_script: str):
+        self.env_python = env_python
+        self.infer_script = infer_script
+        self.repo_dir = os.path.dirname(os.path.abspath(infer_script))
+        self.proc: Optional[subprocess.Popen] = None
+        self.pid: Optional[int] = None
+        self.lock = threading.Lock()
+        self._executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+
+    def start(self, timeout_s: int = 90) -> bool:
+        """Start or restart the daemon process and wait for ready signal."""
+        self.kill()
+        try:
+            logger.info("Starting persistent FoodSAM worker daemon...")
+            self.proc = subprocess.Popen(
+                [self.env_python, self.infer_script, "--daemon"],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=sys.stderr,  # direct stderr to console so buffer never deadlocks
+                text=True,
+                bufsize=1,
+                cwd=self.repo_dir,
+            )
+
+            def _read_ready():
+                return self.proc.stdout.readline()
+
+            fut = self._executor.submit(_read_ready)
+            ready_line = fut.result(timeout=timeout_s)
+            if not ready_line:
+                logger.error("FoodSAM daemon exited before sending ready signal")
+                self.kill()
+                return False
+            data = json.loads(ready_line.strip())
+            if data.get("status") == "ready":
+                self.pid = data.get("pid", self.proc.pid)
+                logger.info(f"Persistent FoodSAM worker ready (PID {self.pid})")
+                return True
+            else:
+                logger.error(f"Unexpected FoodSAM daemon startup response: {ready_line}")
+                self.kill()
+                return False
+        except Exception as e:
+            logger.error(f"Failed to start persistent FoodSAM daemon: {e}")
+            self.kill()
+            return False
+
+    def send_request(self, req: dict, timeout_s: int = 300) -> Optional[dict]:
+        """Send job to daemon via stdin and read single JSON line response."""
+        with self.lock:
+            if self.proc is None or self.proc.poll() is not None:
+                ok = self.start(timeout_s=90)
+                if not ok:
+                    return None
+
+            try:
+                line = json.dumps(req) + "\n"
+                self.proc.stdin.write(line)
+                self.proc.stdin.flush()
+
+                def _read_line():
+                    return self.proc.stdout.readline()
+
+                fut = self._executor.submit(_read_line)
+                resp_line = fut.result(timeout=timeout_s)
+                if not resp_line:
+                    logger.error("FoodSAM daemon returned EOF (crashed)")
+                    self.kill()
+                    return None
+
+                resp = json.loads(resp_line.strip())
+                if resp.get("status") == "ok":
+                    return resp
+                else:
+                    logger.error(f"FoodSAM daemon error response: {resp.get('error')}")
+                    return None
+            except concurrent.futures.TimeoutError:
+                logger.error(f"FoodSAM daemon request timed out after {timeout_s}s")
+                self.kill()
+                return None
+            except Exception as e:
+                logger.error(f"FoodSAM daemon communication error: {e}")
+                self.kill()
+                return None
+
+    def kill(self):
+        """Clean up child daemon process."""
+        if self.proc is not None:
+            try:
+                self.proc.stdin.close()
+            except Exception:
+                pass
+            try:
+                self.proc.terminate()
+                self.proc.wait(timeout=2)
+            except Exception:
+                try:
+                    self.proc.kill()
+                except Exception:
+                    pass
+            self.proc = None
+            self.pid = None
+
+
+_daemon_managers: Dict[Tuple[str, str], FoodSAMDaemonManager] = {}
+_daemon_lock = threading.Lock()
+
+
+def get_foodsam_daemon(env_python: str, infer_script: str) -> FoodSAMDaemonManager:
+    key = (env_python, infer_script)
+    with _daemon_lock:
+        if key not in _daemon_managers:
+            mgr = FoodSAMDaemonManager(env_python, infer_script)
+            _daemon_managers[key] = mgr
+            atexit.register(mgr.kill)
+        return _daemon_managers[key]
 
 
 class FoodSAMSegmenter:
@@ -79,12 +205,14 @@ class FoodSAMSegmenter:
             FOODSAM_POINTS_PER_SIDE,
             FOODSAM_REPO,
             FOODSAM_TIMEOUT_S,
+            FOODSAM_USE_DAEMON,
         )
 
         self.env_python = os.path.join(FOODSAM_REPO, "env", "Scripts", "python.exe")
         self.infer_script = FOODSAM_INFER_SCRIPT
         self.points_per_side = points_per_side or FOODSAM_POINTS_PER_SIDE
         self.timeout_s = timeout_s or FOODSAM_TIMEOUT_S
+        self.use_daemon = FOODSAM_USE_DAEMON
         self.erode_kernel = erode_kernel or FOODSAM_ERODE_KERNEL_SIZE
         self.oversized_threshold = oversized_threshold or FOODSAM_OVERSIZED_MASK_THRESHOLD
         self.ingredient_mode = FOODSAM_INGREDIENT_MODE
@@ -252,31 +380,143 @@ class FoodSAMSegmenter:
 
         return results
 
+    @staticmethod
+    def _unpack_payload_and_masks(payload: dict, out_dir: str, detections: List[dict]):
+        """Helper to unpack result payload and npz masks into pipeline structures."""
+        masks_path = os.path.join(out_dir, "masks.npz")
+        extras_path = os.path.join(out_dir, "extras.npz")
+        npz = np.load(masks_path)["masks"] if os.path.exists(masks_path) else np.zeros((0, 0, 0), dtype=bool)
+        extras_npz = np.load(extras_path)["extras"] if os.path.exists(extras_path) else np.zeros((0, 0, 0), dtype=bool)
+
+        dish_masks = [None] * len(detections)
+        dish_infos = [{"warnings": []} for _ in detections]
+        extras: List[dict] = []
+        suppressed = list(payload.get("suppressed", []))
+        suppressed_idx = {s.get("det_index") for s in suppressed}
+
+        for i, det_info in enumerate(payload.get("detections", [])):
+            if i in suppressed_idx:
+                continue  # suppressed dish — audit record only, no mask
+            if det_info.get("bbox_coverage", 0) > 0 and i < npz.shape[0]:
+                dish_masks[i] = npz[i]
+                dish_infos[i] = {
+                    "warnings": det_info.get("warnings", []),
+                    "bbox_coverage": det_info.get("bbox_coverage"),
+                    "foodsam_labels": det_info.get("foodsam_labels"),
+                    "ingredient_breakdown": det_info.get("ingredient_breakdown", []),
+                }
+
+        for j, ex in enumerate(payload.get("extras", [])):
+            if j < extras_npz.shape[0] and extras_npz[j].any():
+                ex_copy = dict(ex)
+                ex_copy["mask"] = extras_npz[j]
+                extras.append(ex_copy)
+
+        return dish_masks, dish_infos, extras, suppressed
+
     def _run_bridge(self, image_rgb, detections):
-        """Write image+detections+config to a temp dir, run foodsam_infer.py in
-        the FoodSAM env, load dish masks + extras + suppression audit back.
+        """Write image+detections+config to a temp dir, run foodsam_infer.py (via persistent
+        daemon when enabled, or via one-shot subprocess), and return dish masks + extras.
         Returns (dish_masks, dish_infos, extras, suppressed, bridge_fallback)."""
         dish_masks = [None] * len(detections)
         dish_infos = [{"warnings": []} for _ in detections]
         extras: List[dict] = []
         suppressed: List[dict] = []
         bridge_fallback = False
+
         try:
             with tempfile.TemporaryDirectory(prefix="foodsam_") as tmp:
                 img_path = os.path.join(tmp, "input.png")
+                out_dir = os.path.join(tmp, "out")
+                os.makedirs(out_dir, exist_ok=True)
+                cv2.imwrite(img_path, cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR))
+
+                # 1. Primary path: Persistent Worker Daemon
+                if getattr(self, "use_daemon", True):
+                    try:
+                        daemon = get_foodsam_daemon(self.env_python, self.infer_script)
+                        req = {
+                            "image_path": img_path,
+                            "detections": [
+                                {
+                                    "bbox": [
+                                        int(d["bbox"][0]),
+                                        int(d["bbox"][1]),
+                                        int(d["bbox"][2]),
+                                        int(d["bbox"][3]),
+                                    ],
+                                    "class_name": d["class_name"],
+                                    "confidence": float(d.get("confidence", 0.0)),
+                                }
+                                for d in detections
+                            ],
+                            "output_dir": out_dir,
+                            "pps": self.points_per_side,
+                            "ingredient_mode": self.ingredient_mode,
+                            "ingredient_map": self.ingredient_map,
+                            "suspect_classes": self.suspect_classes,
+                            **self.ingredient_args,
+                        }
+                        resp = daemon.send_request(req, timeout_s=self.timeout_s)
+                        if resp and resp.get("status") == "ok":
+                            payload = resp["payload"]
+                            dish_masks, dish_infos, extras, suppressed = (
+                                self._unpack_payload_and_masks(payload, out_dir, detections)
+                            )
+                            self.last_info = {
+                                k: payload.get(k)
+                                for k in (
+                                    "timing_s",
+                                    "vram_peak_mib",
+                                    "n_sam_masks",
+                                    "ingredient_extraction",
+                                )
+                            }
+                            self.last_info["suppressed_dishes"] = suppressed
+                            self.last_info["worker_mode"] = "daemon"
+                            self.last_info["worker_fallback"] = False
+                            self.last_info["worker_pid"] = resp.get("worker_pid")
+                            self.last_info["worker_elapsed_s"] = resp.get("worker_elapsed_s", 0.0)
+                            logger.info(
+                                f"FoodSAM daemon bridge ok: {payload.get('n_sam_masks')} masks, "
+                                f"{len(extras)} extras, {len(suppressed)} suppressed, "
+                                f"{payload.get('timing_s')}"
+                            )
+                            return dish_masks, dish_infos, extras, suppressed, False
+                        else:
+                            err_msg = resp.get("error") if resp else "no response"
+                            logger.warning(
+                                f"FoodSAM daemon returned error or None ({err_msg}), "
+                                f"initiating transparent one-shot fallback..."
+                            )
+                    except Exception as e:
+                        logger.warning(
+                            f"FoodSAM daemon invocation failed ({e}), "
+                            f"initiating transparent one-shot fallback..."
+                        )
+
+                # 2. Fallback path: One-shot subprocess
                 dets_path = os.path.join(tmp, "detections.json")
                 map_path = os.path.join(tmp, "ingredient_map.json")
                 suspect_path = os.path.join(tmp, "suspect_classes.json")
-                out_dir = os.path.join(tmp, "out")
-                cv2.imwrite(img_path, cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR))
                 with open(dets_path, "w", encoding="utf-8") as f:
                     json.dump(
-                        [{"bbox": [int(d["bbox"][0]), int(d["bbox"][1]),
-                                   int(d["bbox"][2]), int(d["bbox"][3])],
-                          "class_name": d["class_name"],
-                          "confidence": float(d.get("confidence", 0.0))}
-                         for d in detections],
-                        f, ensure_ascii=False)
+                        [
+                            {
+                                "bbox": [
+                                    int(d["bbox"][0]),
+                                    int(d["bbox"][1]),
+                                    int(d["bbox"][2]),
+                                    int(d["bbox"][3]),
+                                ],
+                                "class_name": d["class_name"],
+                                "confidence": float(d.get("confidence", 0.0)),
+                            }
+                            for d in detections
+                        ],
+                        f,
+                        ensure_ascii=False,
+                    )
                 with open(map_path, "w", encoding="utf-8") as f:
                     json.dump(self.ingredient_map, f, ensure_ascii=False)
                 with open(suspect_path, "w", encoding="utf-8") as f:
@@ -284,27 +524,52 @@ class FoodSAMSegmenter:
 
                 ia = self.ingredient_args
                 cmd = [
-                    self.env_python, self.infer_script,
-                    img_path, dets_path, out_dir,
-                    "--pps", str(self.points_per_side),
-                    "--ingredient-mode", self.ingredient_mode,
-                    "--ingredient-map", map_path,
-                    "--suspect-classes", suspect_path,
-                    "--overlap-breakdown", str(ia["overlap_breakdown"]),
-                    "--min-area-ratio", str(ia["min_area_ratio"]),
-                    "--large-area-flag", str(ia["large_area_flag"]),
-                    "--max-area-ratio", str(ia["max_area_ratio"]),
-                    "--min-purity", str(ia["min_purity"]),
-                    "--owner-tie-margin", str(ia["owner_tie_margin"]),
-                    "--promote-min-ratio", str(ia["promote_min_ratio"]),
-                    "--mixed-min-nonstaple", str(ia["mixed_min_nonstaple"]),
-                    "--mixed-group-min-ratio", str(ia["mixed_group_min_ratio"]),
-                    "--mixed-min-bbox-ratio", str(ia["mixed_min_bbox_ratio"]),
+                    self.env_python,
+                    self.infer_script,
+                    img_path,
+                    dets_path,
+                    out_dir,
+                    "--pps",
+                    str(self.points_per_side),
+                    "--ingredient-mode",
+                    self.ingredient_mode,
+                    "--ingredient-map",
+                    map_path,
+                    "--suspect-classes",
+                    suspect_path,
+                    "--overlap-breakdown",
+                    str(ia["overlap_breakdown"]),
+                    "--min-area-ratio",
+                    str(ia["min_area_ratio"]),
+                    "--large-area-flag",
+                    str(ia["large_area_flag"]),
+                    "--max-area-ratio",
+                    str(ia["max_area_ratio"]),
+                    "--min-purity",
+                    str(ia["min_purity"]),
+                    "--owner-tie-margin",
+                    str(ia["owner_tie_margin"]),
+                    "--promote-min-ratio",
+                    str(ia["promote_min_ratio"]),
+                    "--mixed-min-nonstaple",
+                    str(ia["mixed_min_nonstaple"]),
+                    "--mixed-group-min-ratio",
+                    str(ia["mixed_group_min_ratio"]),
+                    "--mixed-min-bbox-ratio",
+                    str(ia["mixed_min_bbox_ratio"]),
                 ]
+                t_oneshot = time.time()
                 proc = subprocess.run(
-                    cmd, capture_output=True, text=True,
-                    encoding="utf-8", errors="replace",
-                    timeout=self.timeout_s, cwd=os.path.dirname(self.infer_script))
+                    cmd,
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    timeout=self.timeout_s,
+                    cwd=os.path.dirname(self.infer_script),
+                )
+                oneshot_elapsed = time.time() - t_oneshot
+
                 if proc.returncode != 0:
                     logger.warning(f"foodsam_infer failed:\n{proc.stderr[-2000:]}")
                     self.last_error = f"exit {proc.returncode}: {proc.stderr[-300:]}"
@@ -312,37 +577,29 @@ class FoodSAMSegmenter:
 
                 with open(os.path.join(out_dir, "result.json"), encoding="utf-8") as f:
                     payload = json.load(f)
-                npz = np.load(os.path.join(out_dir, "masks.npz"))["masks"]
-                extras_npz = np.load(os.path.join(out_dir, "extras.npz"))["extras"]
 
-                suppressed = list(payload.get("suppressed", []))
-                suppressed_idx = {s.get("det_index") for s in suppressed}
-                for i, det_info in enumerate(payload["detections"]):
-                    if i in suppressed_idx:
-                        continue  # suppressed dish — audit record only, no mask
-                    if det_info.get("bbox_coverage", 0) > 0 and i < npz.shape[0]:
-                        dish_masks[i] = npz[i]
-                        dish_infos[i] = {
-                            "warnings": det_info.get("warnings", []),
-                            "bbox_coverage": det_info.get("bbox_coverage"),
-                            "foodsam_labels": det_info.get("foodsam_labels"),
-                            "ingredient_breakdown":
-                                det_info.get("ingredient_breakdown", []),
-                        }
-                for j, ex in enumerate(payload.get("extras", [])):
-                    if j < extras_npz.shape[0] and extras_npz[j].any():
-                        ex = dict(ex)
-                        ex["mask"] = extras_npz[j]
-                        extras.append(ex)
+                dish_masks, dish_infos, extras, suppressed = (
+                    self._unpack_payload_and_masks(payload, out_dir, detections)
+                )
                 self.last_info = {
-                    k: payload.get(k) for k in
-                    ("timing_s", "vram_peak_mib", "n_sam_masks",
-                     "ingredient_extraction")}
+                    k: payload.get(k)
+                    for k in (
+                        "timing_s",
+                        "vram_peak_mib",
+                        "n_sam_masks",
+                        "ingredient_extraction",
+                    )
+                }
                 self.last_info["suppressed_dishes"] = suppressed
+                self.last_info["worker_mode"] = "oneshot"
+                self.last_info["worker_fallback"] = True
+                self.last_info["worker_pid"] = None
+                self.last_info["worker_elapsed_s"] = round(oneshot_elapsed, 3)
                 logger.info(
-                    f"FoodSAM bridge ok: {payload.get('n_sam_masks')} masks, "
+                    f"FoodSAM one-shot bridge ok: {payload.get('n_sam_masks')} masks, "
                     f"{len(extras)} extras, {len(suppressed)} suppressed, "
-                    f"{payload.get('timing_s')}")
+                    f"{payload.get('timing_s')}"
+                )
         except subprocess.TimeoutExpired:
             self.last_error = f"timeout after {self.timeout_s}s"
             logger.warning(f"FoodSAM bridge timeout after {self.timeout_s}s")

@@ -1,0 +1,2507 @@
+{
+  "metadata": {
+    "title": "Bảng Kiểm Kê Ánh Xạ 68 Lớp VietFood68 (VietFood68 Inventory Checklist)",
+    "total_classes": 68,
+    "distribution": {
+      "direct": 30,
+      "approximate": 19,
+      "component_based": 16,
+      "unmapped": 3
+    },
+    "methodology": "Phân loại 4 nhóm theo tính chất thực phẩm và cấu trúc pipeline (Fast Mode vs Deep Mode FoodSAM)",
+    "confidence_interpretation": "mapping_confidence phản ánh độ tin cậy của quyết định ánh xạ phân loại, không phải độ chính xác dinh dưỡng sinh học",
+    "version": "1.0.0"
+  },
+  "inventory": [
+    {
+      "vietfood_class_id": 0,
+      "vietfood_class_name_en": "Vietnamese thick noodle soup",
+      "vietfood_class_name_vi": "Bánh canh",
+      "full_name": "Banh canh (Vietnamese thick noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bánh canh tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6945280a396fdfd8c109b2fa",
+        "nin_food_name": "Bánh canh thịt heo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 121.556
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6945280a396fdfd8c109b2fa",
+          "nin_food_name": "Bánh canh thịt heo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 121.556,
+          "match_reason": "Bánh canh thịt heo - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_694526bc396fdfd8c109b2f7",
+          "nin_food_name": "Bánh canh thịt gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 74.889,
+          "match_reason": "Bánh canh thịt gà - Suất ăn bình dân"
+        }
+      ],
+      "decision_rationale": "Món ăn tương đồng trực tiếp trong CSDL Món ăn VDD (Bánh canh thịt heo)"
+    },
+    {
+      "vietfood_class_id": 1,
+      "vietfood_class_name_en": "Square sticky rice cake",
+      "vietfood_class_name_vi": "Bánh chưng",
+      "full_name": "Banh chung (Square sticky rice cake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Khẩu phần bánh chưng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69491c415756e8e52e0ec993",
+        "nin_food_name": "Bánh chưng cỡ vừa",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 204.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69491c415756e8e52e0ec993",
+          "nin_food_name": "Bánh chưng cỡ vừa",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 204.0,
+          "match_reason": "Bánh chưng cỡ vừa - Bản ghi chuẩn VDD (200g)"
+        },
+        {
+          "nin_food_id": "nin_dish_6937c7b822c79417570839b2",
+          "nin_food_name": "Bánh chưng rán",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 431.8,
+          "match_reason": "Bánh chưng rán"
+        }
+      ],
+      "decision_rationale": "Khẩu phần bánh chưng truyền thống có trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 2,
+      "vietfood_class_name_en": "Rolled rice pancake",
+      "vietfood_class_name_vi": "Bánh cuốn",
+      "full_name": "Banh cuon (Rolled rice pancake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa bánh cuốn tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69491e3f2eb544b04a0add82",
+        "nin_food_name": "Bánh cuốn thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 440.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69491e3f2eb544b04a0add82",
+          "nin_food_name": "Bánh cuốn thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 440.0,
+          "match_reason": "Bánh cuốn thịt - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_694ba7d8e8b6133f930aec32",
+          "nin_food_name": "Bánh cuốn trứng + chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 354.0,
+          "match_reason": "Bánh cuốn trứng + chả"
+        }
+      ],
+      "decision_rationale": "Món bánh cuốn nhân thịt có trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 3,
+      "vietfood_class_name_en": "Mini savory pancakes",
+      "vietfood_class_name_vi": "Bánh khọt",
+      "full_name": "Banh khot (Mini savory pancakes)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Y văn dinh dưỡng món ăn Việt Nam (Literature fallback)",
+      "mapping_status": "unmapped_fallback",
+      "primary_match": null,
+      "nin_matches": [],
+      "decision_rationale": "Đặc sản Vũng Tàu / Nam Bộ, CSDL VDD quốc gia chưa có bản ghi tương ứng. Duy trì fallback literature đã kiểm toán Atwater."
+    },
+    {
+      "vietfood_class_id": 4,
+      "vietfood_class_name_en": "Vietnamese baguette sandwich",
+      "vietfood_class_name_vi": "Bánh mì",
+      "full_name": "Banh mi (Vietnamese baguette sandwich)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Ổ bánh mì kẹp thịt/trứng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937cc55bb1269d4c706878a",
+        "nin_food_name": "Bánh mỳ pate trứng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 296.133
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937cc55bb1269d4c706878a",
+          "nin_food_name": "Bánh mỳ pate trứng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 296.133,
+          "match_reason": "Bánh mỳ pate trứng - Khẩu phần tiêu chuẩn 200g"
+        },
+        {
+          "nin_food_id": "nin_dish_694bbfd847cf7703d00ad2b4",
+          "nin_food_name": "Bánh mỳ pate",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 361.0,
+          "match_reason": "Bánh mỳ pate"
+        }
+      ],
+      "decision_rationale": "Món bánh mì kẹp nhân tiêu chuẩn trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 5,
+      "vietfood_class_name_en": "Rice paper",
+      "vietfood_class_name_vi": "Bánh tráng",
+      "full_name": "Banh trang (Rice paper)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g phần ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cacc",
+        "nin_food_name": "Bánh đa nem",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 335.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cacc",
+          "nin_food_name": "Bánh đa nem",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 335.0,
+          "match_reason": "Bánh đa nem (Bánh tráng) - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Nguyên liệu bánh tráng khô trong CSDL thực phẩm thô NIN (Mã TPTP VN 1029)"
+    },
+    {
+      "vietfood_class_id": 6,
+      "vietfood_class_name_en": "Rice paper salad",
+      "vietfood_class_name_vi": "Bánh tráng trộn",
+      "full_name": "Banh trang tron (Rice paper salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Suất bánh tráng trộn ăn vặt)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+        "nin_food_name": "Bánh tráng trộn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 340.533
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 340.533,
+          "match_reason": "Bánh tráng trộn tổng hợp (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_690c592c1b9fac808f018f55",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 291.133,
+          "match_reason": "Bánh tráng trộn cỡ vừa"
+        }
+      ],
+      "decision_rationale": "Món ăn vặt phối hợp nhiều topping; Fast Mode ánh xạ đĩa bánh tráng trộn tổng hợp, Deep Mode phân rã topping qua FoodSAM",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1d",
+          "food_name": "Bánh tráng",
+          "role": "rice_paper_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7f",
+          "food_name": "Trứng cút",
+          "role": "egg_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Bò khô",
+          "role": "beef_jerky"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_topping"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 7,
+      "vietfood_class_name_en": "Vietnamese sizzling pancake",
+      "vietfood_class_name_vi": "Bánh xèo",
+      "full_name": "Banh xeo (Vietnamese sizzling pancake)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Cái bánh xèo cỡ vừa)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694e064bba5c59be9d0c5942",
+        "nin_food_name": "Bánh xèo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 306.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694e064bba5c59be9d0c5942",
+          "nin_food_name": "Bánh xèo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 306.0,
+          "match_reason": "Bánh xèo miền Trung/Nam - Công thức VDD (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Món bánh có vỏ bột và nhân tôm thịt giá đỗ tách biệt; Deep Mode FoodSAM phân rã vỏ bánh và nhân",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb05",
+          "food_name": "Bột gạo / Vỏ bánh",
+          "role": "crepe_crust"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt lợn ba chỉ",
+          "role": "pork_filling"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng",
+          "role": "shrimp_filling"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb65",
+          "food_name": "Giá đỗ",
+          "role": "bean_sprout"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 8,
+      "vietfood_class_name_en": "Beef stew",
+      "vietfood_class_name_vi": "Bò kho",
+      "full_name": "Bo kho (Beef stew)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 300,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bò kho bánh mì)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694bc1b51cc4830b4507fa53",
+        "nin_food_name": "Bánh mỳ sốt vang",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 382.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694bc1b51cc4830b4507fa53",
+          "nin_food_name": "Bánh mỳ sốt vang",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 382.0,
+          "match_reason": "Bánh mỳ sốt vang (Bò sốt vang VDD)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948c13a8d1550cdae0bdcd3",
+          "nin_food_name": "Phở bò sốt vang",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 107.333,
+          "match_reason": "Phở bò sốt vang"
+        }
+      ],
+      "decision_rationale": "Món bò sốt vang / bò kho có trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 9,
+      "vietfood_class_name_en": "Grilled beef wrapped in betel leaves",
+      "vietfood_class_name_vi": "Bò lá lốt",
+      "full_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa bò lá lốt nướng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69043ff355955b7f120af7b4",
+        "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 221.533
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69043ff355955b7f120af7b4",
+          "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 221.533,
+          "match_reason": "Cơm suất chả lá lốt - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_67f4a5fc094eed32f5052352",
+          "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 221.533,
+          "match_reason": "Cơm suất (sườn, đậu, chả lá lốt)"
+        }
+      ],
+      "decision_rationale": "Món chả lá lốt nướng / cơm suất chả lá lốt có trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 10,
+      "vietfood_class_name_en": "Cauliflower",
+      "vietfood_class_name_vi": "Bông cải",
+      "full_name": "Bong cai (Cauliflower)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g phần ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb7d",
+        "nin_food_name": "Súp lơ trắng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 34.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb7d",
+          "nin_food_name": "Súp lơ trắng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 34.0,
+          "match_reason": "Súp lơ trắng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Súp lơ trắng trong CSDL thực phẩm thô NIN (Mã TPTP VN 4030)"
+    },
+    {
+      "vietfood_class_id": 11,
+      "vietfood_class_name_en": "Rice vermicelli",
+      "vietfood_class_name_vi": "Bún",
+      "full_name": "Bun (Rice vermicelli)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát bún rối tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad6",
+        "nin_food_name": "Bún, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 116.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad6",
+          "nin_food_name": "Bún, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.0,
+          "match_reason": "Bún tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Bún tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 1012)"
+    },
+    {
+      "vietfood_class_id": 12,
+      "vietfood_class_name_en": "Hue beef noodle soup",
+      "vietfood_class_name_vi": "Bún bò Huế",
+      "full_name": "Bun bo Hue (Hue beef noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún bò Huế tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947cd314776d891e209df93",
+        "nin_food_name": "Bún bò giò heo (Huế)",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 116.444
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947cd314776d891e209df93",
+          "nin_food_name": "Bún bò giò heo (Huế)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.444,
+          "match_reason": "Bún bò giò heo (Huế) - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Món nước phức hợp nhiều topping (thịt bắp bò, giò heo, chả cua, huyết, sợi bún); Deep Mode phân rã các topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi sợi to",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bắp bò",
+          "role": "beef_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Móng giò heo",
+          "role": "pork_knuckle"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc8b",
+          "food_name": "Huyết heo",
+          "role": "blood_pudding"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 13,
+      "vietfood_class_name_en": "Grilled pork with vermicelli",
+      "vietfood_class_name_vi": "Bún chả",
+      "full_name": "Bun cha (Grilled pork with vermicelli)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Suất bún chả Hà Nội tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947db28eeaad7e26b0eb372",
+        "nin_food_name": "Bún chả",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 115.111
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947db28eeaad7e26b0eb372",
+          "nin_food_name": "Bún chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 115.111,
+          "match_reason": "Bún chả - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_68f85bb315beb6f6430a1595",
+          "nin_food_name": "Bún chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 165.889,
+          "match_reason": "Bún chả Hà Nội"
+        }
+      ],
+      "decision_rationale": "Món ăn kinh điển phân tách giữa bún đĩa riêng, chả nướng trong bát nước chấm và rau sống; Deep Mode FoodSAM phân rã",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "food_name": "Chả thịt nướng",
+          "role": "grilled_pork"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Rau sống kinh giới tía tô",
+          "role": "herbs_vegetable"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 14,
+      "vietfood_class_name_en": "Vermicelli with tofu",
+      "vietfood_class_name_vi": "Bún đậu",
+      "full_name": "Bun dau (Vermicelli with tofu)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Mẹt bún đậu thập cẩm)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947df802729431e960491d3",
+        "nin_food_name": "Bún đậu mắm tôm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 155.556
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947df802729431e960491d3",
+          "nin_food_name": "Bún đậu mắm tôm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 155.556,
+          "match_reason": "Bún đậu mắm tôm - Suất tiêu chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6947e033baf7aa40ef0050f4",
+          "nin_food_name": "Bún đậu mắm tôm thịt chân giò",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 173.111,
+          "match_reason": "Bún đậu mắm tôm thịt chân giò"
+        }
+      ],
+      "decision_rationale": "Mẹt bún đậu phân tách rõ rệt từng thành phần (bún lá, đậu rán, thịt luộc, chả cốm, mắm tôm); bài toán thực nghiệm cốt lõi của FoodSAM",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún lá",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_dish_693b81fc273f8370c302e6cb",
+          "food_name": "Đậu phụ rán",
+          "role": "fried_tofu"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt ba chỉ luộc",
+          "role": "boiled_pork"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbde",
+          "food_name": "Chả lụa / Chả cốm",
+          "role": "pork_patty"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 15,
+      "vietfood_class_name_en": "Fermented fish noodle soup",
+      "vietfood_class_name_vi": "Bún mắm",
+      "full_name": "Bun mam (Fermented fish noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún mắm Nam Bộ)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68786acb1767a9925a0e7d78",
+        "nin_food_name": "Bún mắm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 104.844
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68786acb1767a9925a0e7d78",
+          "nin_food_name": "Bún mắm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 104.844,
+          "match_reason": "Bún mắm - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_67f49e441cc4d415a20ddb27",
+          "nin_food_name": "Bún mắm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 104.844,
+          "match_reason": "Bún mắm miền Tây"
+        }
+      ],
+      "decision_rationale": "Món bún mắm miền Tây nhiều topping nổi (thịt quay, tôm, mực, cá lóc); Deep Mode phân rã các topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+          "food_name": "Thịt lợn quay",
+          "role": "roast_pork"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng / sú",
+          "role": "shrimp_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc3b",
+          "food_name": "Mực tươi",
+          "role": "squid_topping"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 16,
+      "vietfood_class_name_en": "Crab noodle soup",
+      "vietfood_class_name_vi": "Bún riêu",
+      "full_name": "Bun rieu (Crab noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún riêu cua đậu)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947e5ff511f8f0de60d7164",
+        "nin_food_name": "Bún riêu cua",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 61.111
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947e5ff511f8f0de60d7164",
+          "nin_food_name": "Bún riêu cua",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 61.111,
+          "match_reason": "Bún riêu cua - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_690c3ec70ec1a7e8e10041b2",
+          "nin_food_name": "Bún riêu",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 83.625,
+          "match_reason": "Bún riêu"
+        }
+      ],
+      "decision_rationale": "Món bún có riêu cua, đậu rán, cà chua, huyết phân tách rõ; Deep Mode phân rã topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc35",
+          "food_name": "Riêu cua đồng",
+          "role": "crab_paste"
+        },
+        {
+          "source_food_id": "nin_dish_693b81fc273f8370c302e6cb",
+          "food_name": "Đậu phụ rán",
+          "role": "fried_tofu"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua",
+          "role": "tomato"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 17,
+      "vietfood_class_name_en": "Fish",
+      "vietfood_class_name_vi": "Cá",
+      "full_name": "Ca (Fish)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cá tươi ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc54",
+        "nin_food_name": "Cá chép, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 96.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc54",
+          "nin_food_name": "Cá chép, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 96.0,
+          "match_reason": "Cá chép, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Cá nước ngọt / cá chép trong CSDL thực phẩm thô NIN (Mã TPTP VN 5035)"
+    },
+    {
+      "vietfood_class_id": 18,
+      "vietfood_class_name_en": "Tomato",
+      "vietfood_class_name_vi": "Cà chua",
+      "full_name": "Ca chua (Tomato)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cà chua tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1f",
+        "nin_food_name": "Quả cà chua, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 24.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1f",
+          "nin_food_name": "Quả cà chua, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 24.0,
+          "match_reason": "Quả cà chua, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Cà chua trong CSDL thực phẩm thô NIN (Mã TPTP VN 4004)"
+    },
+    {
+      "vietfood_class_id": 19,
+      "vietfood_class_name_en": "Pickled eggplant",
+      "vietfood_class_name_vi": "Cà pháo",
+      "full_name": "Ca phao (Pickled eggplant)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cà pháo muối)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8b",
+        "nin_food_name": "Cà pháo, muối nén",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 20.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8b",
+          "nin_food_name": "Cà pháo, muối nén",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 20.0,
+          "match_reason": "Cà pháo, muối nén - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Cà pháo muối trong CSDL thực phẩm thô NIN (Mã TPTP VN 4016)"
+    },
+    {
+      "vietfood_class_id": 20,
+      "vietfood_class_name_en": "Carrot",
+      "vietfood_class_name_vi": "Cà rốt",
+      "full_name": "Ca rot (Carrot)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cà rốt tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb21",
+        "nin_food_name": "Củ cà rốt, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 44.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb21",
+          "nin_food_name": "Củ cà rốt, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 44.0,
+          "match_reason": "Củ cà rốt, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Cà rốt trong CSDL thực phẩm thô NIN (Mã TPTP VN 4006)"
+    },
+    {
+      "vietfood_class_id": 21,
+      "vietfood_class_name_en": "Soup",
+      "vietfood_class_name_vi": "Canh",
+      "full_name": "Canh (Soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát canh rau thịt nạc tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a43e057dc35b55101fbf2",
+        "nin_food_name": "Canh rau ngót nấu thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 114.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a43e057dc35b55101fbf2",
+          "nin_food_name": "Canh rau ngót nấu thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 114.0,
+          "match_reason": "Canh rau ngót nấu thịt - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Canh rau ngót nấu thịt nạc đại diện cho canh gia đình Việt trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 22,
+      "vietfood_class_name_en": "Vietnamese pork roll",
+      "vietfood_class_name_vi": "Chả",
+      "full_name": "Cha (Vietnamese pork roll)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Khoanh giò lụa/chả quế)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc30",
+        "nin_food_name": "Giò lụa, chín",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 205.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc30",
+          "nin_food_name": "Giò lụa, chín",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 205.0,
+          "match_reason": "Giò lụa, chín - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Giò lụa trong CSDL thực phẩm thô NIN (Mã TPTP VN 5092)"
+    },
+    {
+      "vietfood_class_id": 23,
+      "vietfood_class_name_en": "Spring rolls",
+      "vietfood_class_name_vi": "Chả giò",
+      "full_name": "Cha gio (Spring rolls)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 120,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nem rán 3-4 cái)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b878a51af016fd5080c83",
+        "nin_food_name": "Nem rán / Chả giò chiên",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 102.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b878a51af016fd5080c83",
+          "nin_food_name": "Nem rán / Chả giò chiên",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 102.0,
+          "match_reason": "Nem rán / Chả giò chiên - Công thức VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6937d7c1e8ba4488430222d7",
+          "nin_food_name": "Nem rán",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 336.7,
+          "match_reason": "Nem rán"
+        }
+      ],
+      "decision_rationale": "Nem rán nhân thịt / chả giò chiên trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 24,
+      "vietfood_class_name_en": "Lime",
+      "vietfood_class_name_vi": "Chanh",
+      "full_name": "Chanh (Lime)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Quả chanh tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cba4",
+        "nin_food_name": "Chanh, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 29.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cba4",
+          "nin_food_name": "Chanh, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 29.0,
+          "match_reason": "Chanh, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Quả chanh trong CSDL thực phẩm thô NIN (Mã TPTP VN 4140)"
+    },
+    {
+      "vietfood_class_id": 25,
+      "vietfood_class_name_en": "Rice",
+      "vietfood_class_name_vi": "Cơm",
+      "full_name": "Com (Rice)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát cơm tẻ nấu chín)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f8aadc094e90b19f042a82",
+        "nin_food_name": "Cơm tẻ miệng bát",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 86.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f8aadc094e90b19f042a82",
+          "nin_food_name": "Cơm tẻ miệng bát",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 86.0,
+          "match_reason": "Cơm tẻ miệng bát - CSDL Món ăn VDD"
+        }
+      ],
+      "decision_rationale": "Cơm tẻ nấu chín trong CSDL thực phẩm thô NIN (Mã TPTP VN 1001)"
+    },
+    {
+      "vietfood_class_id": 26,
+      "vietfood_class_name_en": "Broken rice",
+      "vietfood_class_name_vi": "Cơm tấm",
+      "full_name": "Com tam (Broken rice)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm tấm sườn bì chả)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a2a2959d546807301b0c4",
+        "nin_food_name": "Cơm sườn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 205.333
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a2a2959d546807301b0c4",
+          "nin_food_name": "Cơm sườn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 205.333,
+          "match_reason": "Cơm sườn - Đĩa cơm văn phòng VDD (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Đĩa cơm tấm sườn bì chả gồm cơm tấm, sườn nướng, bì heo, chả trứng; bài toán thực nghiệm cốt lõi của FoodSAM",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb00",
+          "food_name": "Cơm tấm (gạo tấm nấu)",
+          "role": "rice_base"
+        },
+        {
+          "source_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "food_name": "Sườn heo nướng",
+          "role": "grilled_pork_chop"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Bì lợn",
+          "role": "shredded_pork_skin"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba3",
+          "food_name": "Dưa chuột / Cà chua thái lát",
+          "role": "vegetable_garnish"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 27,
+      "vietfood_class_name_en": "Human",
+      "vietfood_class_name_vi": "Con người",
+      "full_name": "Con nguoi (Human)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 0,
+      "serving_size_source": "Không áp dụng (Non-food class)",
+      "mapping_status": "unmapped_fallback",
+      "primary_match": null,
+      "nin_matches": [],
+      "decision_rationale": "Lớp phi thực phẩm (Non-food background class), gán giá trị dinh dưỡng 0"
+    },
+    {
+      "vietfood_class_id": 28,
+      "vietfood_class_name_en": "Pickled scallion head",
+      "vietfood_class_name_vi": "Củ kiệu",
+      "full_name": "Cu kieu (Pickled scallion head)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 30,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa củ kiệu ngâm chua ngọt)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb93",
+        "nin_food_name": "Kiệu, muối",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 29.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb93",
+          "nin_food_name": "Kiệu, muối",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 29.0,
+          "match_reason": "Kiệu, muối - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Củ kiệu muối trong CSDL thực phẩm thô NIN (Mã TPTP VN 4022)"
+    },
+    {
+      "vietfood_class_id": 29,
+      "vietfood_class_name_en": "Crab",
+      "vietfood_class_name_vi": "Cua",
+      "full_name": "Cua (Crab)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt cua ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc73",
+        "nin_food_name": "Cua đồng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 87.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc73",
+          "nin_food_name": "Cua đồng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 87.0,
+          "match_reason": "Cua đồng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Cua biển / cua đồng trong CSDL thực phẩm thô NIN (Mã TPTP VN 5056)"
+    },
+    {
+      "vietfood_class_id": 30,
+      "vietfood_class_name_en": "Tofu",
+      "vietfood_class_name_vi": "Đậu hũ",
+      "full_name": "Dau hu (Tofu)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bìa đậu phụ trắng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb11",
+        "nin_food_name": "Đậu phụ, sống",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 97.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb11",
+          "nin_food_name": "Đậu phụ, sống",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 97.0,
+          "match_reason": "Đậu phụ, sống - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Đậu phụ trắng trong CSDL thực phẩm thô NIN (Mã TPTP VN 3005)"
+    },
+    {
+      "vietfood_class_id": 31,
+      "vietfood_class_name_en": "Pickled vegetables",
+      "vietfood_class_name_vi": "Dưa chua",
+      "full_name": "Dua chua (Pickled vegetables)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa dưa cải chua)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8e",
+        "nin_food_name": "Dưa cải bẹ",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 25.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8e",
+          "nin_food_name": "Dưa cải bẹ",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 25.0,
+          "match_reason": "Dưa cải bẹ (muối dưa) - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Dưa cải muối chua trong CSDL thực phẩm thô NIN (Mã TPTP VN 4021)"
+    },
+    {
+      "vietfood_class_id": 32,
+      "vietfood_class_name_en": "Cucumber",
+      "vietfood_class_name_vi": "Dưa leo",
+      "full_name": "Dua leo (Cucumber)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g dưa leo tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb35",
+        "nin_food_name": "Dưa chuột, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 18.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb35",
+          "nin_food_name": "Dưa chuột, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 18.0,
+          "match_reason": "Dưa chuột, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Dưa chuột tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 4026)"
+    },
+    {
+      "vietfood_class_id": 33,
+      "vietfood_class_name_en": "Fresh spring rolls",
+      "vietfood_class_name_vi": "Gỏi cuốn",
+      "full_name": "Goi cuon (Fresh spring rolls)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 180,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa 3 cuốn gỏi cuốn tôm thịt)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+        "nin_food_name": "Bánh tráng trộn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 340.533
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 340.533,
+          "match_reason": "Món cuốn bánh tráng tổng hợp (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Gỏi cuốn gồm vỏ bánh tráng cuốn tôm, thịt luộc, bún và rau thơm tách biệt; Deep Mode phân rã topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1d",
+          "food_name": "Bánh tráng",
+          "role": "rice_paper_wrap"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng / sú hấp",
+          "role": "shrimp_filling"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt ba chỉ luộc",
+          "role": "pork_filling"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "vermicelli_filling"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 34,
+      "vietfood_class_name_en": "Hamburger",
+      "vietfood_class_name_vi": "Hamburger",
+      "full_name": "Hamburger",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 & USDA FDC (Cái bánh hamburger)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68a54029f57bee55470387d2",
+        "nin_food_name": "Hamburger lợn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 188.333
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68a54029f57bee55470387d2",
+          "nin_food_name": "Hamburger lợn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 188.333,
+          "match_reason": "Hamburger lợn - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_68a53fa2b7b91f09400109d2",
+          "nin_food_name": "Hamburger Gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 301.133,
+          "match_reason": "Hamburger gà"
+        }
+      ],
+      "decision_rationale": "Hamburger lợn / bánh mỳ kẹp thịt nướng trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 35,
+      "vietfood_class_name_en": "Roast pork",
+      "vietfood_class_name_vi": "Heo quay",
+      "full_name": "Heo quay (Roast pork)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt heo quay da giòn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+        "nin_food_name": "Thịt lợn quay",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 529.9
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+          "nin_food_name": "Thịt lợn quay",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 529.9,
+          "match_reason": "Thịt lợn quay da giòn - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Món thịt lợn quay trong CSDL Món ăn VDD (phương ngữ Bắc: Thịt lợn quay)"
+    },
+    {
+      "vietfood_class_id": 36,
+      "vietfood_class_name_en": "Clear rice noodle soup",
+      "vietfood_class_name_vi": "Hủ tiếu",
+      "full_name": "Hu tieu (Clear rice noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô hủ tiếu Nam Vang)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f9a0c0a4c9392ea30c4f32",
+        "nin_food_name": "Hủ tiếu Nam vang nước",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 107.244
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f9a0c0a4c9392ea30c4f32",
+          "nin_food_name": "Hủ tiếu Nam vang nước",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 107.244,
+          "match_reason": "Hủ tiếu Nam Vang nước - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948144291fda9d8b40a0f69",
+          "nin_food_name": "Hủ tiếu nước",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 100.889,
+          "match_reason": "Hủ tiếu nước"
+        }
+      ],
+      "decision_rationale": "Tô hủ tiếu Nam Vang gồm sợi hủ tiếu, tôm, thịt xá xíu, gan, trứng cút; Deep Mode phân rã topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Sợi hủ tiếu / bún",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt xá xíu / nạc heo",
+          "role": "pork_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm sú hấp",
+          "role": "shrimp_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcf",
+          "food_name": "Gan lợn luộc",
+          "role": "pork_liver"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 37,
+      "vietfood_class_name_en": "Stuffed bitter melon soup",
+      "vietfood_class_name_vi": "Khổ qua thịt",
+      "full_name": "Kho qua thit (Stuffed bitter melon soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô canh khổ qua nhồi thịt)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a40f6bb10bc44d2078612",
+        "nin_food_name": "Canh khổ qua (mướp đắng) nhồi thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 127.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a40f6bb10bc44d2078612",
+          "nin_food_name": "Canh khổ qua (mướp đắng) nhồi thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 127.0,
+          "match_reason": "Canh mướp đắng nhồi thịt - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Canh mướp đắng (khổ qua) nhồi thịt trong CSDL Món ăn VDD (phương ngữ Bắc: Mướp đắng nhồi thịt)"
+    },
+    {
+      "vietfood_class_id": 38,
+      "vietfood_class_name_en": "French fries",
+      "vietfood_class_name_vi": "Khoai tây chiên",
+      "full_name": "Khoai tay chien (French fries)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa khoai tây chiên giòn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b857f273f8370c302e6ce",
+        "nin_food_name": "Khoai tây chiên",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 466.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b857f273f8370c302e6ce",
+          "nin_food_name": "Khoai tây chiên",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 466.0,
+          "match_reason": "Khoai tây chiên giòn - Bản ghi chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Khoai tây chiên giòn trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 39,
+      "vietfood_class_name_en": "Hotpot",
+      "vietfood_class_name_vi": "Lẩu",
+      "full_name": "Lau (Hotpot)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Nồi lẩu thập cẩm chia suất)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948cd812eb544b04a0add76",
+        "nin_food_name": "Lẩu thập cẩm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 578.889
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948cd812eb544b04a0add76",
+          "nin_food_name": "Lẩu thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 578.889,
+          "match_reason": "Lẩu thập cẩm - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948ccb757030147bf026fb3",
+          "nin_food_name": "Lẩu hải sản",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 148.0,
+          "match_reason": "Lẩu hải sản"
+        }
+      ],
+      "decision_rationale": "Nồi lẩu gồm nước dùng và các đĩa nhúng (thịt bò, nấm, rau, mì); Deep Mode phân rã các đĩa nhúng",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bò nhúng",
+          "role": "beef_slice"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm / Hải sản",
+          "role": "seafood"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Rau cải nhúng lẩu",
+          "role": "greens"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb85",
+          "food_name": "Nấm rơm tươi",
+          "role": "mushroom"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 40,
+      "vietfood_class_name_en": "Pork offal",
+      "vietfood_class_name_vi": "Lòng heo",
+      "full_name": "Long heo (Pork offal)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa lòng lợn luộc)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a83606b1977ca8d0de216",
+        "nin_food_name": "Lòng lợn luộc",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 250.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a83606b1977ca8d0de216",
+          "nin_food_name": "Lòng lợn luộc",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 250.0,
+          "match_reason": "Lòng lợn luộc - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Lòng lợn luộc trong CSDL Món ăn VDD (phương ngữ Bắc: Lòng lợn luộc)"
+    },
+    {
+      "vietfood_class_id": 41,
+      "vietfood_class_name_en": "Egg noodles",
+      "vietfood_class_name_vi": "Mì",
+      "full_name": "Mi (Egg noodles)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g mì sợi luộc)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad8",
+        "nin_food_name": "Mỳ sợi, khô",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 350.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad8",
+          "nin_food_name": "Mỳ sợi, khô",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 350.0,
+          "match_reason": "Mỳ sợi, khô - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Mỳ sợi khô/nấu chín trong CSDL thực phẩm thô NIN (Mã TPTP VN 1019)"
+    },
+    {
+      "vietfood_class_id": 42,
+      "vietfood_class_name_en": "Squid",
+      "vietfood_class_name_vi": "Mực",
+      "full_name": "Muc (Squid)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g mực tươi ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc79",
+        "nin_food_name": "Mực, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 73.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc79",
+          "nin_food_name": "Mực, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 73.0,
+          "match_reason": "Mực, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Mực tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 5064)"
+    },
+    {
+      "vietfood_class_id": 43,
+      "vietfood_class_name_en": "Mushroom",
+      "vietfood_class_name_vi": "Nấm",
+      "full_name": "Nam (Mushroom)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g nấm tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
+        "nin_food_name": "Nấm hương, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 51.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
+          "nin_food_name": "Nấm hương, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 51.0,
+          "match_reason": "Nấm hương, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Nấm rơm tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 3088)"
+    },
+    {
+      "vietfood_class_id": 44,
+      "vietfood_class_name_en": "Snails",
+      "vietfood_class_name_vi": "Ốc",
+      "full_name": "Oc (Snails)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt ốc ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7c",
+        "nin_food_name": "Ốc nhồi, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 84.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7c",
+          "nin_food_name": "Ốc nhồi, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 84.0,
+          "match_reason": "Ốc nhồi, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Ốc nhồi / ốc vặn trong CSDL thực phẩm thô NIN (Mã TPTP VN 5070)"
+    },
+    {
+      "vietfood_class_id": 45,
+      "vietfood_class_name_en": "Bell pepper",
+      "vietfood_class_name_vi": "Ớt chuông",
+      "full_name": "Ot chuong (Bell pepper)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g ớt chuông tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb59",
+        "nin_food_name": "Ớt xanh to, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 31.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb59",
+          "nin_food_name": "Ớt xanh to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 31.0,
+          "match_reason": "Ớt xanh to, tươi (Ớt chuông xanh) - Bảng TPTP VN 2017"
+        },
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb57",
+          "nin_food_name": "Ớt đỏ to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 31.0,
+          "match_reason": "Ớt đỏ to, tươi (Ớt chuông đỏ) - Bảng TPTP VN 2017"
+        },
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb58",
+          "nin_food_name": "Ớt vàng to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 34.0,
+          "match_reason": "Ớt vàng to, tươi (Ớt chuông vàng) - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Ớt xanh to / ớt đỏ to (Ớt chuông ngọt) trong CSDL thực phẩm thô NIN (Mã TPTP VN 4085-4087)"
+    },
+    {
+      "vietfood_class_id": 46,
+      "vietfood_class_name_en": "Vietnamese noodle soup",
+      "vietfood_class_name_vi": "Phở",
+      "full_name": "Pho (Vietnamese noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô phở bò chín truyền thống)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f890821eff1748460a2632",
+        "nin_food_name": "Phở bò chín",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 99.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f890821eff1748460a2632",
+          "nin_food_name": "Phở bò chín",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 99.667,
+          "match_reason": "Phở bò chín - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6948c0a18d1550cdae0bdcd2",
+          "nin_food_name": "Phở bò chín bình dân",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 64.667,
+          "match_reason": "Phở bò chín bình dân"
+        }
+      ],
+      "decision_rationale": "Món phở bò chín truyền thống trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 47,
+      "vietfood_class_name_en": "Cheese",
+      "vietfood_class_name_vi": "Phô mai",
+      "full_name": "Pho mai (Cheese)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 30,
+      "serving_size_source": "Bảng TPTP VN 2017 (Miếng phô mai lát/tam giác)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69512eb4a0cfb0866108cb79",
+        "nin_food_name": "Phô mai tam giác",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 58.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69512eb4a0cfb0866108cb79",
+          "nin_food_name": "Phô mai tam giác",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 58.0,
+          "match_reason": "Phô mai tam giác - CSDL Món ăn VDD"
+        }
+      ],
+      "decision_rationale": "Pho mát trong CSDL thực phẩm thô NIN (Mã TPTP VN 6023)"
+    },
+    {
+      "vietfood_class_id": 48,
+      "vietfood_class_name_en": "Vegetables",
+      "vietfood_class_name_vi": "Rau",
+      "full_name": "Rau (Vegetables)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g rau xanh tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb6d",
+        "nin_food_name": "Rau muống,  tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 28.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb6d",
+          "nin_food_name": "Rau muống,  tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 28.0,
+          "match_reason": "Rau muống, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Rau muống / rau ăn lá tổng hợp trong CSDL thực phẩm thô NIN (Mã TPTP VN 4023)"
+    },
+    {
+      "vietfood_class_id": 49,
+      "vietfood_class_name_en": "Salad",
+      "vietfood_class_name_vi": "Salad",
+      "full_name": "Salad (Salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa salad trộn dầu giấm)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694524cacd788cb7ad036fb4",
+        "nin_food_name": "Salad rau củ",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 181.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694524cacd788cb7ad036fb4",
+          "nin_food_name": "Salad rau củ",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 181.0,
+          "match_reason": "Salad rau củ - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Đĩa rau trộn gồm xà lách, cà chua, dưa chuột và sốt dầu giấm; Deep Mode phân rã các loại rau",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Xà lách / Rau xanh",
+          "role": "lettuce_greens"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua bi",
+          "role": "cherry_tomato"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba3",
+          "food_name": "Dưa chuột",
+          "role": "cucumber"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 50,
+      "vietfood_class_name_en": "Beef",
+      "vietfood_class_name_vi": "Thịt bò",
+      "full_name": "Thit bo (Beef)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt bò nạc tươi)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbee",
+        "nin_food_name": "Thịt bò, loại I, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 118.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbee",
+          "nin_food_name": "Thịt bò, loại I, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 118.0,
+          "match_reason": "Thịt bò, loại I, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Thịt bò loại 1 trong CSDL thực phẩm thô NIN (Mã TPTP VN 5001)"
+    },
+    {
+      "vietfood_class_id": 51,
+      "vietfood_class_name_en": "Chicken",
+      "vietfood_class_name_vi": "Thịt gà",
+      "full_name": "Thit ga (Chicken)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt gà ta ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbf8",
+        "nin_food_name": "Thịt gà ta, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 199.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbf8",
+          "nin_food_name": "Thịt gà ta, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 199.0,
+          "match_reason": "Thịt gà ta, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Thịt gà ta trong CSDL thực phẩm thô NIN (Mã TPTP VN 5024)"
+    },
+    {
+      "vietfood_class_id": 52,
+      "vietfood_class_name_en": "Pork",
+      "vietfood_class_name_vi": "Thịt heo",
+      "full_name": "Thit heo (Pork)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt lợn nạc)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cde4",
+        "nin_food_name": "Thịt lợn nạc vai, luộc",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 126.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cde4",
+          "nin_food_name": "Thịt lợn nạc vai, luộc",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 126.0,
+          "match_reason": "Thịt lợn nạc vai, luộc - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Thịt lợn nạc trong CSDL thực phẩm thô NIN (Mã TPTP VN 5013)"
+    },
+    {
+      "vietfood_class_id": 53,
+      "vietfood_class_name_en": "Braised pork",
+      "vietfood_class_name_vi": "Thịt kho",
+      "full_name": "Thit kho (Braised pork)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt kho tàu)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a681731cab0f3540c9978",
+        "nin_food_name": "Thịt lợn ba chỉ kho tàu",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 260.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a681731cab0f3540c9978",
+          "nin_food_name": "Thịt lợn ba chỉ kho tàu",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 260.0,
+          "match_reason": "Thịt lợn ba chỉ kho tàu - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Thịt lợn ba chỉ kho tàu trong CSDL Món ăn VDD (phương ngữ Bắc: Thịt lợn kho tàu)"
+    },
+    {
+      "vietfood_class_id": 54,
+      "vietfood_class_name_en": "Grilled meat",
+      "vietfood_class_name_vi": "Thịt nướng",
+      "full_name": "Thit nuong (Grilled meat)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 120,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt lợn xiên nướng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+        "nin_food_name": "Thịt lợn xiên nướng",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 222.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "nin_food_name": "Thịt lợn xiên nướng",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 222.0,
+          "match_reason": "Thịt lợn xiên nướng - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Thịt lợn xiên nướng trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 55,
+      "vietfood_class_name_en": "Shrimp",
+      "vietfood_class_name_vi": "Tôm",
+      "full_name": "Tom (Shrimp)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g tôm tươi ăn được)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc85",
+        "nin_food_name": "Tôm đồng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 90.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc85",
+          "nin_food_name": "Tôm đồng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 90.0,
+          "match_reason": "Tôm đồng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Tôm đồng / tôm biển trong CSDL thực phẩm thô NIN (Mã TPTP VN 5049)"
+    },
+    {
+      "vietfood_class_id": 56,
+      "vietfood_class_name_en": "Egg",
+      "vietfood_class_name_vi": "Trứng",
+      "full_name": "Trung (Egg)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 55,
+      "serving_size_source": "Bảng TPTP VN 2017 (1 quả trứng gà trung bình)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
+        "nin_food_name": "Quả trứng gà, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 106.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
+          "nin_food_name": "Quả trứng gà, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 106.0,
+          "match_reason": "Quả trứng gà, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "decision_rationale": "Trứng gà toàn phần trong CSDL thực phẩm thô NIN (Mã TPTP VN 6001)"
+    },
+    {
+      "vietfood_class_id": 57,
+      "vietfood_class_name_en": "Sticky rice",
+      "vietfood_class_name_vi": "Xôi",
+      "full_name": "Xoi (Sticky rice)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Gói xôi trắng)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+        "nin_food_name": "Xôi trắng miệng bát",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 210.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+          "nin_food_name": "Xôi trắng miệng bát",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 210.0,
+          "match_reason": "Xôi trắng miệng bát - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Xôi trắng trong CSDL Món ăn VDD (món chế biến từ gạo nếp)"
+    },
+    {
+      "vietfood_class_id": 58,
+      "vietfood_class_name_en": "Vietnamese savory steamed rice cake",
+      "vietfood_class_name_vi": "Bánh bèo",
+      "full_name": "Banh beo (Vietnamese savory steamed rice cake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa/khay 5 chén bánh bèo)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6911b07c668d1a5d170be115",
+        "nin_food_name": "Bánh bèo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 300.733
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6911b07c668d1a5d170be115",
+          "nin_food_name": "Bánh bèo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 300.733,
+          "match_reason": "Bánh bèo - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6911b4726689d716fe071305",
+          "nin_food_name": "Bánh bèo 2 cái",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 599.333,
+          "match_reason": "Bánh bèo 2 cái"
+        }
+      ],
+      "decision_rationale": "Bánh bèo trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 59,
+      "vietfood_class_name_en": "Cao lau noodles",
+      "vietfood_class_name_vi": "Cao lầu",
+      "full_name": "Cao lau (Cao lau noodles)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 350,
+      "serving_size_source": "Y văn dinh dưỡng món ăn Việt Nam (Literature fallback)",
+      "mapping_status": "unmapped_fallback",
+      "primary_match": null,
+      "nin_matches": [],
+      "decision_rationale": "Đặc sản Hội An (sợi mì tro tràm và xá xíu đặc thù), CSDL VDD quốc gia chưa có bản ghi tương ứng. Duy trì fallback literature đã kiểm toán Atwater."
+    },
+    {
+      "vietfood_class_id": 60,
+      "vietfood_class_name_en": "Quang-style noodles",
+      "vietfood_class_name_vi": "Mì Quảng",
+      "full_name": "Mi Quang (Quang-style noodles)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô mì Quảng tôm thịt)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694818d0c2bdd1529907c387",
+        "nin_food_name": "Mỳ Quảng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 100.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694818d0c2bdd1529907c387",
+          "nin_food_name": "Mỳ Quảng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 100.667,
+          "match_reason": "Mỳ Quảng - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "decision_rationale": "Tô mì Quảng gồm sợi mì nghệ, tôm thịt ram, đậu phộng rang, bánh tráng nướng; Deep Mode phân rã topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cade",
+          "food_name": "Sợi mỳ Quảng nghệ",
+          "role": "noodle_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt heo ram",
+          "role": "pork_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm ram",
+          "role": "shrimp_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_garnish"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 61,
+      "vietfood_class_name_en": "Yangzhou fried rice",
+      "vietfood_class_name_vi": "Cơm chiên dương châu",
+      "full_name": "Com chien duong chau (Yangzhou fried rice)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm rang thập cẩm)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a27498bbe5e3730065343",
+        "nin_food_name": "Cơm rang thập cẩm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 207.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a27498bbe5e3730065343",
+          "nin_food_name": "Cơm rang thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 207.667,
+          "match_reason": "Cơm rang thập cẩm - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Món cơm rang thập cẩm trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 62,
+      "vietfood_class_name_en": "Fish cake noodle soup",
+      "vietfood_class_name_vi": "Bún chả cá",
+      "full_name": "Bun cha ca (Fish cake noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún chả cá Đà Nẵng / Quy Nhơn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947d40fa5cc4fdc720ebd82",
+        "nin_food_name": "Bún chả cá",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 141.111
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947d40fa5cc4fdc720ebd82",
+          "nin_food_name": "Bún chả cá",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 141.111,
+          "match_reason": "Bún chả cá - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Món bún chả cá có bản ghi chính thức trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 63,
+      "vietfood_class_name_en": "Fried rice with chicken",
+      "vietfood_class_name_vi": "Cơm chiên gà",
+      "full_name": "Com chien ga (Fried rice with chicken)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm rang gà / cơm gà)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68a683a410eddb46cf0f71a3",
+        "nin_food_name": "Cơm gà",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 380.133
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68a683a410eddb46cf0f71a3",
+          "nin_food_name": "Cơm gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 380.133,
+          "match_reason": "Cơm gà - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Món cơm gà trong CSDL Món ăn VDD"
+    },
+    {
+      "vietfood_class_id": 64,
+      "vietfood_class_name_en": "Pork organ congee",
+      "vietfood_class_name_vi": "Cháo lòng",
+      "full_name": "Chao long (Pork organ congee)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 400,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô cháo lòng tiêu chuẩn)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948020ae0a4ed42970317eb",
+        "nin_food_name": "Cháo lòng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 61.778
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948020ae0a4ed42970317eb",
+          "nin_food_name": "Cháo lòng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 61.778,
+          "match_reason": "Cháo lòng - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6937c168e94f0e9a7d0d9ea5",
+          "nin_food_name": "Cháo lòng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.175,
+          "match_reason": "Cháo lòng bình dân"
+        }
+      ],
+      "decision_rationale": "Tô cháo lòng gồm phần cháo gạo và đĩa lòng dồi gan luộc; Deep Mode FoodSAM phân rã topping phủ",
+      "components": [
+        {
+          "source_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+          "food_name": "Cháo gạo tẻ",
+          "role": "congee_base"
+        },
+        {
+          "source_food_id": "nin_dish_693a83606b1977ca8d0de216",
+          "food_name": "Lòng lợn luộc",
+          "role": "pork_intestines"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcf",
+          "food_name": "Gan lợn luộc",
+          "role": "pork_liver"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 65,
+      "vietfood_class_name_en": "Banana blossom salad",
+      "vietfood_class_name_vi": "Nộm hoa chuối",
+      "full_name": "Nom hoa chuoi (Banana blossom salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nộm hoa chuối tai heo)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694522f0396fdfd8c109b2f4",
+        "nin_food_name": "Nộm hoa chuối thịt gà",
+        "source_type": "dish",
+        "canonical_basis": "per_serving_unverified",
+        "energy_kcal": 604.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694522f0396fdfd8c109b2f4",
+          "nin_food_name": "Nộm hoa chuối thịt gà",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 604.0,
+          "match_reason": "Nộm hoa chuối thịt gà - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6945242ede4937594700ba32",
+          "nin_food_name": "Nộm tai heo thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 505.0,
+          "match_reason": "Nộm tai heo thập cẩm"
+        }
+      ],
+      "decision_rationale": "Đĩa nộm trộn giữa bắp hoa chuối thái sợi, tai heo / thịt gà xé, đậu phộng rang; Deep Mode phân rã topping",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb45",
+          "food_name": "Hoa chuối tươi thái sợi",
+          "role": "salad_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbe2",
+          "food_name": "Thịt gà xé / tai heo",
+          "role": "meat_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_garnish"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 66,
+      "vietfood_class_name_en": "Stir-fried macaroni with beef",
+      "vietfood_class_name_vi": "Nui xào bò",
+      "full_name": "Nui xao bo (Stir-fried macaroni with beef)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 300,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nui xào thịt bò cà chua)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+        "nin_food_name": "Nui, luộc",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 371.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+          "nin_food_name": "Nui, luộc",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 371.0,
+          "match_reason": "Nui luộc - Nguyên liệu cơ sở NIN"
+        }
+      ],
+      "decision_rationale": "CSDL NIN không có món nui xào bò nguyên đĩa; phân rã thành nui luộc + thịt bò xào dầu",
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+          "food_name": "Nui luộc",
+          "role": "macaroni_base"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bò nạc",
+          "role": "beef_topping"
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua xào",
+          "role": "tomato_sauce"
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 67,
+      "vietfood_class_name_en": "Crab soup",
+      "vietfood_class_name_vi": "Súp cua",
+      "full_name": "Sup cua (Crab soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát súp cua bắp)",
+      "mapping_status": "verified",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948122f2eb544b04a0add72",
+        "nin_food_name": "Súp ngô cua",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 32.222
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948122f2eb544b04a0add72",
+          "nin_food_name": "Súp ngô cua",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 32.222,
+          "match_reason": "Súp ngô cua - Công thức chuẩn VDD"
+        }
+      ],
+      "decision_rationale": "Món súp ngô cua trong CSDL Món ăn VDD"
+    }
+  ]
+}

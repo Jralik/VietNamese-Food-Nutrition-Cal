@@ -1,0 +1,33 @@
+{
+ "image": "BunBoHue1 (2).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Bun bo Hue (Hue beef noodle soup)",
+   "mm_per_pixel": 0.38124686892418586,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    696.0,
+    136.0,
+    1212.0,
+    646.0
+   ]
+  },
+  {
+   "instance": 1,
+   "class_name": "Rau (Vegetables)",
+   "mm_per_pixel": 0.38124686892418586,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    259.0,
+    341.0,
+    612.0,
+    700.0
+   ]
+  }
+ ]
+}

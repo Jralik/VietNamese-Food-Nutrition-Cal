@@ -341,3 +341,21 @@ if DEVICE == "cpu":
         _log.warning("CUDA unavailable — volume pipeline on CPU "
                      "(expect ~15-20s/request): %s: %s",
                      type(e).__name__, str(e)[:200])
+
+# ---------------------------------------------------------------------------
+# Cross-class duplicate suppression (post-freeze correctness fix)
+# ---------------------------------------------------------------------------
+# One dish region can carry two near-identical YOLO hypotheses of DIFFERENT
+# classes (both the ultralytics NMS and the app-level class-aware NMS only
+# compare same-class boxes); the duplicate then matches the same volume
+# estimation and its nutrition is counted twice. Reproduced on
+# bun-rieu (1).jpg: Bun bo Hue 0.955 + Bun rieu 0.354 on the same bowl,
+# IoU 0.988. The lower-confidence cross-class hypothesis overlapping a kept
+# box with IoU >= CROSS_CLASS_SUPPRESS_IOU is dropped after the class-aware
+# NMS, and recorded on the Results as `suppressed_cross_class`.
+# Threshold chosen from
+# evaluation_final/post_freeze/cross_class_threshold_validation.md
+# (54 val images: zero overlapping true two-dish pairs at GT class-set level,
+# 8 duplicate pairs removed — all at IoU >= 0.96).
+CROSS_CLASS_SUPPRESS_ENABLED = True
+CROSS_CLASS_SUPPRESS_IOU = 0.70

@@ -1,0 +1,19 @@
+{
+ "image": "BanhMiDucTri (2).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Banh mi (Vietnamese baguette sandwich)",
+   "mm_per_pixel": 0.21533447662598842,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    268.0,
+    431.0,
+    772.0,
+    1321.0
+   ]
+  }
+ ]
+}

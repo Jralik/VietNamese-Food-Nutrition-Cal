@@ -115,12 +115,18 @@ improvement**, chưa đưa vào production.
 
 ### 4.6.1 Soup container case study (Experiment C1, exploratory)
 
-Phân loại exploratory 10 ảnh súp cua theo điều kiện chụp: sai số trải từ -2.2% đến
-+160.1% và **không tách sạch theo binary top-down/tilted** (tilted có thể chính xác
--2.2%, high-angle có thể +78.6%). Trong phạm vi dữ liệu khảo sát, depth-anchor
-correction ratio tương quan với sai số thể tích mạnh hơn phân loại góc đơn giản —
-**tín hiệu quan sát được, chưa đủ khẳng định quan hệ nhân quả** (n hiệu dụng ≈ 4-5
-cảnh độc lập). Ghi vào limitation; C2 (controlled capture) là future work.
+Kết quả khảo sát cho thấy phân loại góc chụp nhị phân chưa đủ khả năng phân tách
+rõ các mức sai số: trong nhóm tilted có cả ảnh chính xác (-2.2%) lẫn ảnh lệch lớn
+(+157.6%), và một ảnh near-top-down vẫn lệch +78.6%. Trong khi đó, depth-anchor
+correction ratio quan sát được từ log của hệ thống cho thấy tín hiệu tương quan với
+sai số thể tích trên tập khảo sát nhỏ, do đó được xem là **một proxy tiềm năng cho
+điều kiện hình học của ảnh**.
+
+Cơ chế khả dĩ (limitation của phương pháp, chưa phải kết luận): monocular depth
+estimation gặp giới hạn trước **depth discontinuity tại biên hộp trong suốt, sự mơ hồ
+của mặt chất lỏng, và độ ổn định của anchor correction** — các yếu tố phụ thuộc cấu
+hình hình học quan sát chứ không chỉ góc chụp. C2 (controlled capture) là future
+work; ghi vào mục limitation của hệ thống.
 
 ---
 

@@ -120,6 +120,11 @@ thiểu: **A. Top-down · B. Inclined/tilted**, giữ nguyên pipeline/model/con
 - **C1 — Existing-data exploratory analysis**: phân loại 10 ảnh Súp cua trong val set
   (đã có cả top-down lẫn tilted) theo điều kiện chụp, so sánh MAPE per condition. Bản
   chất: **exploratory screening** trên dữ liệu hiện có — chưa phải validation mạnh.
+  **Kết quả khảo sát cho thấy phân loại góc chụp nhị phân chưa đủ khả năng phân tách
+  rõ các mức sai số** (tilted có thể chính xác -2.2%, high-angle có thể +78.6%). Trong
+  khi đó, anchor ratio quan sát được từ log cho thấy tín hiệu tương quan với sai số
+  trên tập khảo sát nhỏ, do đó được xem là **một proxy tiềm năng cho điều kiện hình
+  học của ảnh** — phân biệt rõ observation → evidence → interpretation → limitation.
 - **C2 — Controlled new capture**: chỉ làm nếu C1 cho thấy tín hiệu geometry nhất quán.
 
 Tín hiệu mạnh đã có: Súp cua top-down **-2%** vs tilted **+79-158%**.

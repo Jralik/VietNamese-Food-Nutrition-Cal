@@ -1,0 +1,19 @@
+{
+ "image": "Pho1 (2).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Pho (Vietnamese noodle soup)",
+   "mm_per_pixel": 0.30034461079419966,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    130.0,
+    625.0,
+    795.0,
+    1318.0
+   ]
+  }
+ ]
+}

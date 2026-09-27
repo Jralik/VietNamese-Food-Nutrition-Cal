@@ -1,0 +1,33 @@
+{
+ "image": "bun-rieu (3).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Bun bo Hue (Hue beef noodle soup)",
+   "mm_per_pixel": 0.3051040543280376,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    684.0,
+    109.0,
+    1303.0,
+    593.0
+   ]
+  },
+  {
+   "instance": 1,
+   "class_name": "Chanh (Lime)",
+   "mm_per_pixel": 0.3051040543280376,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    278.0,
+    483.0,
+    412.0,
+    568.0
+   ]
+  }
+ ]
+}

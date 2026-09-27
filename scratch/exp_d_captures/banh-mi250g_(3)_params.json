@@ -1,0 +1,19 @@
+{
+ "image": "banh-mi250g (3).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Hamburger",
+   "mm_per_pixel": 0.3214626971290592,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    161.0,
+    475.0,
+    833.0,
+    900.0
+   ]
+  }
+ ]
+}

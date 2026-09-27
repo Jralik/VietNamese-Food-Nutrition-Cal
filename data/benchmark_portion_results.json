@@ -1,0 +1,2734 @@
+{
+  "metadata": {
+    "title": "Real-Image Portion Estimation Ground Truth Benchmark (Phase 4)",
+    "date": "2026-09-26 00:46:51",
+    "dataset_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image",
+    "ground_truth_file": "portion-estimation_val.txt"
+  },
+  "overall_metrics": {
+    "total_images": 54,
+    "overall_mae_g": 232.5,
+    "overall_mape_pct": 51.6,
+    "overall_rmse_g": 354.1,
+    "execution_time_s": 1870.2
+  },
+  "summary_by_dish": {
+    "BanhCuon": {
+      "num_images": 6,
+      "avg_gt_mass_g": 315.5,
+      "avg_pred_mass_g": 102.5,
+      "mae_g": 213.0,
+      "mape_pct": 67.5,
+      "rmse_g": 221.8,
+      "group_cv": 0.604
+    },
+    "BanhMi": {
+      "num_images": 16,
+      "avg_gt_mass_g": 259.2,
+      "avg_pred_mass_g": 270.0,
+      "mae_g": 90.9,
+      "mape_pct": 34.5,
+      "rmse_g": 121.5,
+      "group_cv": 0.499
+    },
+    "BunBoHue": {
+      "num_images": 5,
+      "avg_gt_mass_g": 894.5,
+      "avg_pred_mass_g": 899.0,
+      "mae_g": 142.9,
+      "mape_pct": 16.0,
+      "rmse_g": 188.3,
+      "group_cv": 0.209
+    },
+    "BunRieu-CanhBun": {
+      "num_images": 7,
+      "avg_gt_mass_g": 868.9,
+      "avg_pred_mass_g": 997.7,
+      "mae_g": 159.4,
+      "mape_pct": 18.4,
+      "rmse_g": 184.9,
+      "group_cv": 0.138
+    },
+    "ComSuon": {
+      "num_images": 5,
+      "avg_gt_mass_g": 390.5,
+      "avg_pred_mass_g": 886.8,
+      "mae_g": 496.3,
+      "mape_pct": 127.1,
+      "rmse_g": 742.7,
+      "group_cv": 0.623
+    },
+    "Pho": {
+      "num_images": 5,
+      "avg_gt_mass_g": 819.5,
+      "avg_pred_mass_g": 622.7,
+      "mae_g": 375.0,
+      "mape_pct": 45.8,
+      "rmse_g": 477.5,
+      "group_cv": 0.699
+    },
+    "SupCua": {
+      "num_images": 10,
+      "avg_gt_mass_g": 482.6,
+      "avg_pred_mass_g": 418.7,
+      "mae_g": 363.8,
+      "mape_pct": 75.5,
+      "rmse_g": 438.9,
+      "group_cv": 1.041
+    }
+  },
+  "image_results": [
+    {
+      "index": 1,
+      "folder": "Pho",
+      "filename": "Pho1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (1).jpg",
+      "gt_mass_g": 819.5,
+      "pred_mass_g": 782.9,
+      "pred_vol_cm3": 824.1,
+      "abs_error_g": 36.6,
+      "rel_error_pct": 4.5,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3329,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Pho (Vietnamese noodle soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 782.9,
+          "calories": 587.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 587.2,
+        "Protein": 39.1,
+        "Fat": 15.7,
+        "Carbs": 90.0,
+        "Saturates": 5.5,
+        "Sugar": 4.7,
+        "Salt": 7.0,
+        "Sodium": 4565.7,
+        "Calcium": 238.0,
+        "Iron": 6.8,
+        "Zinc": 8.1,
+        "Cholesterol": 70.5
+      }
+    },
+    {
+      "index": 2,
+      "folder": "Pho",
+      "filename": "Pho1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (2).jpg",
+      "gt_mass_g": 819.5,
+      "pred_mass_g": 789.4,
+      "pred_vol_cm3": 839.8,
+      "abs_error_g": 30.1,
+      "rel_error_pct": 3.7,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3003,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun mam (Fermented fish noodle soup)",
+          "volume_cm3": 839.84,
+          "mass_g": 789.4,
+          "calories": 726.3
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 726.3,
+        "Protein": 41.1,
+        "Fat": 28.4,
+        "Carbs": 78.9,
+        "Saturates": 6.3,
+        "Sugar": 7.9,
+        "Salt": 9.5,
+        "Sodium": 1492.1,
+        "Calcium": 209.2,
+        "Iron": 3.9,
+        "Zinc": 1.9,
+        "Cholesterol": 221.0
+      }
+    },
+    {
+      "index": 3,
+      "folder": "Pho",
+      "filename": "Pho1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (3).jpg",
+      "gt_mass_g": 819.5,
+      "pred_mass_g": 64.9,
+      "pred_vol_cm3": 95.4,
+      "abs_error_g": 754.6,
+      "rel_error_pct": 92.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2834,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun (Rice vermicelli)",
+          "volume_cm3": 95.4,
+          "mass_g": 64.9,
+          "calories": 70.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 70.7,
+        "Protein": 1.2,
+        "Fat": 0.1,
+        "Carbs": 16.2,
+        "Saturates": 0.1,
+        "Sugar": 0.1,
+        "Salt": 0.0,
+        "Sodium": 0.0,
+        "Calcium": 7.8,
+        "Iron": 0.1,
+        "Zinc": 0.0,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 4,
+      "folder": "Pho",
+      "filename": "Pho1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (4).jpg",
+      "gt_mass_g": 819.5,
+      "pred_mass_g": 1264.8,
+      "pred_vol_cm3": 1295.2,
+      "abs_error_g": 445.3,
+      "rel_error_pct": 54.3,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2813,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 1200.0,
+          "mass_g": 1200.0,
+          "calories": 420.0
+        },
+        {
+          "class": "Bun (Rice vermicelli)",
+          "volume_cm3": 95.25,
+          "mass_g": 64.8,
+          "calories": 70.6
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 490.6,
+        "Protein": 31.2,
+        "Fat": 14.5,
+        "Carbs": 58.1,
+        "Saturates": 3.7,
+        "Sugar": 12.1,
+        "Salt": 7.2,
+        "Sodium": 2478.0,
+        "Calcium": 534.6,
+        "Iron": 10.3,
+        "Zinc": 5.4,
+        "Cholesterol": 81.6
+      }
+    },
+    {
+      "index": 5,
+      "folder": "Pho",
+      "filename": "Pho1 (5).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (5).jpg",
+      "gt_mass_g": 819.5,
+      "pred_mass_g": 211.3,
+      "pred_vol_cm3": 336.7,
+      "abs_error_g": 608.2,
+      "rel_error_pct": 74.2,
+      "scale_source": "plate_heuristic",
+      "scale_mm_per_pixel": 0.534,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun (Rice vermicelli)",
+          "volume_cm3": 290.3,
+          "mass_g": 197.4,
+          "calories": 215.2
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 46.41,
+          "mass_g": 13.9,
+          "calories": 3.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 218.7,
+        "Protein": 3.8,
+        "Fat": 0.4,
+        "Carbs": 49.8,
+        "Saturates": 0.2,
+        "Sugar": 0.5,
+        "Salt": 0.0,
+        "Sodium": 5.2,
+        "Calcium": 37.6,
+        "Iron": 0.6,
+        "Zinc": 0.1,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 6,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (6).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (6).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 48.2,
+      "pred_vol_cm3": 130.8,
+      "abs_error_g": 267.3,
+      "rel_error_pct": 84.7,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2246,
+      "num_detections": 6,
+      "detected_items": [
+        {
+          "class": "Dau hu (Tofu)",
+          "volume_cm3": 14.97,
+          "mass_g": 13.5,
+          "calories": 10.2
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 35.82,
+          "mass_g": 10.7,
+          "calories": 2.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 18.9,
+        "Protein": 1.7,
+        "Fat": 0.6,
+        "Carbs": 2.0,
+        "Saturates": 0.1,
+        "Sugar": 0.7,
+        "Salt": 0.0,
+        "Sodium": 13.7,
+        "Calcium": 37.9,
+        "Iron": 0.8,
+        "Zinc": 0.2,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 7,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (1).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 214.5,
+      "pred_vol_cm3": 204.3,
+      "abs_error_g": 101.0,
+      "rel_error_pct": 32.0,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2382,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 204.27,
+          "mass_g": 214.5,
+          "calories": 386.1
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 386.1,
+        "Protein": 30.0,
+        "Fat": 25.7,
+        "Carbs": 6.4,
+        "Saturates": 8.6,
+        "Sugar": 2.1,
+        "Salt": 3.2,
+        "Sodium": 0.0,
+        "Calcium": 0.0,
+        "Iron": 0.0,
+        "Zinc": 0.0,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 8,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (2).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 68.5,
+      "pred_vol_cm3": 132.2,
+      "abs_error_g": 247.0,
+      "rel_error_pct": 78.3,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2035,
+      "num_detections": 5,
+      "detected_items": [
+        {
+          "class": "Thit ga (Chicken)",
+          "volume_cm3": 44.38,
+          "mass_g": 42.2,
+          "calories": 80.1
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 27.8,
+          "mass_g": 8.3,
+          "calories": 2.1
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 86.7,
+        "Protein": 12.6,
+        "Fat": 3.1,
+        "Carbs": 1.3,
+        "Saturates": 0.8,
+        "Sugar": 0.5,
+        "Salt": 0.1,
+        "Sodium": 39.2,
+        "Calcium": 31.4,
+        "Iron": 1.0,
+        "Zinc": 0.7,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 9,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (3).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 156.4,
+      "pred_vol_cm3": 223.4,
+      "abs_error_g": 159.1,
+      "rel_error_pct": 50.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2729,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun dau (Vermicelli with tofu)",
+          "volume_cm3": 223.45,
+          "mass_g": 156.4,
+          "calories": 234.6
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 234.6,
+        "Protein": 10.2,
+        "Fat": 11.7,
+        "Carbs": 23.5,
+        "Saturates": 1.9,
+        "Sugar": 1.6,
+        "Salt": 1.3,
+        "Sodium": 384.5,
+        "Calcium": 148.4,
+        "Iron": 3.0,
+        "Zinc": 1.0,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 10,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (4).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 49.3,
+      "pred_vol_cm3": 118.5,
+      "abs_error_g": 266.2,
+      "rel_error_pct": 84.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2337,
+      "num_detections": 5,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 20.3,
+          "mass_g": 19.9,
+          "calories": 48.1
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 38.16,
+          "mass_g": 11.4,
+          "calories": 2.9
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 55.5,
+        "Protein": 5.9,
+        "Fat": 2.8,
+        "Carbs": 1.4,
+        "Saturates": 1.0,
+        "Sugar": 0.5,
+        "Salt": 0.0,
+        "Sodium": 10.9,
+        "Calcium": 33.4,
+        "Iron": 0.5,
+        "Zinc": 0.5,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 11,
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (5).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (5).jpg",
+      "gt_mass_g": 315.5,
+      "pred_mass_g": 77.9,
+      "pred_vol_cm3": 139.3,
+      "abs_error_g": 237.6,
+      "rel_error_pct": 75.3,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2012,
+      "num_detections": 10,
+      "detected_items": [
+        {
+          "class": "Thit ga (Chicken)",
+          "volume_cm3": 6.97,
+          "mass_g": 6.6,
+          "calories": 12.6
+        },
+        {
+          "class": "Thit ga (Chicken)",
+          "volume_cm3": 3.58,
+          "mass_g": 3.4,
+          "calories": 6.5
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 8.08,
+          "mass_g": 8.5,
+          "calories": 15.3
+        },
+        {
+          "class": "Cua (Crab)",
+          "volume_cm3": 1.33,
+          "mass_g": 1.1,
+          "calories": 1.0
+        },
+        {
+          "class": "Ca (Fish)",
+          "volume_cm3": 1.15,
+          "mass_g": 1.1,
+          "calories": 1.4
+        },
+        {
+          "class": "Dau hu (Tofu)",
+          "volume_cm3": 36.2,
+          "mass_g": 32.6,
+          "calories": 24.8
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 21.98,
+          "mass_g": 6.6,
+          "calories": 1.6
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 67.7,
+        "Protein": 7.5,
+        "Fat": 3.5,
+        "Carbs": 2.1,
+        "Saturates": 0.7,
+        "Sugar": 0.7,
+        "Salt": 0.1,
+        "Sodium": 35.7,
+        "Calcium": 43.1,
+        "Iron": 1.2,
+        "Zinc": 0.5,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 12,
+      "folder": "ComSuon",
+      "filename": "com-suon1 (5).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (5).jpg",
+      "gt_mass_g": 390.5,
+      "pred_mass_g": 1752.6,
+      "pred_vol_cm3": 1822.0,
+      "abs_error_g": 1362.1,
+      "rel_error_pct": 348.8,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2789,
+      "num_detections": 10,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 824.1,
+          "calories": 288.4
+        },
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 27.27,
+          "mass_g": 26.7,
+          "calories": 64.7
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 89.89,
+          "mass_g": 88.1,
+          "calories": 213.2
+        },
+        {
+          "class": "Bun (Rice vermicelli)",
+          "volume_cm3": 2.38,
+          "mass_g": 1.6,
+          "calories": 1.8
+        },
+        {
+          "class": "Com (Rice)",
+          "volume_cm3": 387.03,
+          "mass_g": 329.0,
+          "calories": 427.7
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 2.62,
+          "mass_g": 2.1,
+          "calories": 0.3
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 1.04,
+          "mass_g": 0.7,
+          "calories": 0.3
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 1.34,
+          "mass_g": 0.9,
+          "calories": 0.4
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1159.0,
+        "Protein": 72.0,
+        "Fat": 32.3,
+        "Carbs": 139.1,
+        "Saturates": 9.9,
+        "Sugar": 13.5,
+        "Salt": 7.9,
+        "Sodium": 2642.9,
+        "Calcium": 616.1,
+        "Iron": 12.9,
+        "Zinc": 9.4,
+        "Cholesterol": 86.7
+      }
+    },
+    {
+      "index": 13,
+      "folder": "ComSuon",
+      "filename": "com-suon1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (1).jpg",
+      "gt_mass_g": 390.5,
+      "pred_mass_g": 486.9,
+      "pred_vol_cm3": 539.7,
+      "abs_error_g": 96.4,
+      "rel_error_pct": 24.7,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3554,
+      "num_detections": 6,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 40.59,
+          "mass_g": 39.8,
+          "calories": 96.3
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 200.67,
+          "mass_g": 196.7,
+          "calories": 475.9
+        },
+        {
+          "class": "Com (Rice)",
+          "volume_cm3": 253.9,
+          "mass_g": 215.8,
+          "calories": 280.6
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 1.96,
+          "mass_g": 1.6,
+          "calories": 0.2
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 7.62,
+          "mass_g": 5.0,
+          "calories": 2.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 859.2,
+        "Protein": 69.8,
+        "Fat": 33.7,
+        "Carbs": 62.5,
+        "Saturates": 12.0,
+        "Sugar": 0.9,
+        "Salt": 0.5,
+        "Sodium": 9.3,
+        "Calcium": 73.0,
+        "Iron": 2.4,
+        "Zinc": 5.7,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 14,
+      "folder": "ComSuon",
+      "filename": "com-suon1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (2).jpg",
+      "gt_mass_g": 390.5,
+      "pred_mass_g": 1334.0,
+      "pred_vol_cm3": 1383.8,
+      "abs_error_g": 943.5,
+      "rel_error_pct": 241.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3737,
+      "num_detections": 6,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        },
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 33.55,
+          "mass_g": 32.9,
+          "calories": 79.6
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 150.47,
+          "mass_g": 147.5,
+          "calories": 356.8
+        },
+        {
+          "class": "Com (Rice)",
+          "volume_cm3": 262.09,
+          "mass_g": 222.8,
+          "calories": 289.6
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1046.2,
+        "Protein": 77.5,
+        "Fat": 36.7,
+        "Carbs": 95.4,
+        "Saturates": 12.0,
+        "Sugar": 9.7,
+        "Salt": 5.8,
+        "Sodium": 1870.6,
+        "Calcium": 456.0,
+        "Iron": 9.7,
+        "Zinc": 8.6,
+        "Cholesterol": 61.4
+      }
+    },
+    {
+      "index": 15,
+      "folder": "ComSuon",
+      "filename": "com-suon1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (3).jpg",
+      "gt_mass_g": 390.5,
+      "pred_mass_g": 434.3,
+      "pred_vol_cm3": 500.1,
+      "abs_error_g": 43.8,
+      "rel_error_pct": 11.2,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.44,
+      "num_detections": 5,
+      "detected_items": [
+        {
+          "class": "Com tam (Broken rice)",
+          "volume_cm3": 135.99,
+          "mass_g": 115.6,
+          "calories": 190.7
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 52.87,
+          "mass_g": 51.8,
+          "calories": 125.4
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 32.07,
+          "mass_g": 31.4,
+          "calories": 76.1
+        },
+        {
+          "class": "Com (Rice)",
+          "volume_cm3": 244.17,
+          "mass_g": 207.5,
+          "calories": 269.8
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 666.2,
+        "Protein": 36.4,
+        "Fat": 18.1,
+        "Carbs": 87.2,
+        "Saturates": 6.1,
+        "Sugar": 1.9,
+        "Salt": 1.2,
+        "Sodium": 30.7,
+        "Calcium": 59.3,
+        "Iron": 2.4,
+        "Zinc": 4.4,
+        "Cholesterol": 21.3
+      }
+    },
+    {
+      "index": 16,
+      "folder": "ComSuon",
+      "filename": "com-suon1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (4).jpg",
+      "gt_mass_g": 390.5,
+      "pred_mass_g": 426.0,
+      "pred_vol_cm3": 474.7,
+      "abs_error_g": 35.5,
+      "rel_error_pct": 9.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3307,
+      "num_detections": 7,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 32.6,
+          "mass_g": 32.0,
+          "calories": 77.3
+        },
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 159.02,
+          "mass_g": 155.8,
+          "calories": 377.1
+        },
+        {
+          "class": "Com (Rice)",
+          "volume_cm3": 244.17,
+          "mass_g": 207.5,
+          "calories": 269.8
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 1.38,
+          "mass_g": 1.1,
+          "calories": 0.2
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 1.28,
+          "mass_g": 0.8,
+          "calories": 0.3
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 1.24,
+          "mass_g": 0.8,
+          "calories": 0.3
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 729.2,
+        "Protein": 56.5,
+        "Fat": 26.9,
+        "Carbs": 59.7,
+        "Saturates": 9.6,
+        "Sugar": 0.7,
+        "Salt": 0.4,
+        "Sodium": 7.3,
+        "Calcium": 61.1,
+        "Iron": 2.1,
+        "Zinc": 4.7,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 17,
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (1).jpg",
+      "gt_mass_g": 894.5,
+      "pred_mass_g": 810.8,
+      "pred_vol_cm3": 1114.8,
+      "abs_error_g": 83.7,
+      "rel_error_pct": 9.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3825,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 756.09,
+          "mass_g": 703.2,
+          "calories": 632.8
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 49.39,
+          "mass_g": 14.8,
+          "calories": 3.7
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 309.34,
+          "mass_g": 92.8,
+          "calories": 23.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 659.7,
+        "Protein": 40.3,
+        "Fat": 24.8,
+        "Carbs": 68.2,
+        "Saturates": 7.0,
+        "Sugar": 6.4,
+        "Salt": 6.3,
+        "Sodium": 1113.2,
+        "Calcium": 234.2,
+        "Iron": 29.5,
+        "Zinc": 2.9,
+        "Cholesterol": 71.0
+      }
+    },
+    {
+      "index": 18,
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (2).jpg",
+      "gt_mass_g": 894.5,
+      "pred_mass_g": 880.4,
+      "pred_vol_cm3": 1217.7,
+      "abs_error_g": 14.1,
+      "rel_error_pct": 1.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3812,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 817.67,
+          "mass_g": 760.4,
+          "calories": 684.4
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 400.0,
+          "mass_g": 120.0,
+          "calories": 30.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 714.4,
+        "Protein": 43.6,
+        "Fat": 26.8,
+        "Carbs": 73.8,
+        "Saturates": 7.6,
+        "Sugar": 7.0,
+        "Salt": 6.8,
+        "Sodium": 1205.3,
+        "Calcium": 256.9,
+        "Iron": 31.9,
+        "Zinc": 3.2,
+        "Cholesterol": 76.8
+      }
+    },
+    {
+      "index": 19,
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (3).jpg",
+      "gt_mass_g": 894.5,
+      "pred_mass_g": 813.3,
+      "pred_vol_cm3": 980.4,
+      "abs_error_g": 81.2,
+      "rel_error_pct": 9.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3795,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 766.4,
+          "calories": 689.8
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 156.33,
+          "mass_g": 46.9,
+          "calories": 11.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 701.5,
+        "Protein": 42.9,
+        "Fat": 26.9,
+        "Carbs": 71.1,
+        "Saturates": 7.7,
+        "Sugar": 5.5,
+        "Salt": 6.9,
+        "Sodium": 1187.0,
+        "Calcium": 184.9,
+        "Iron": 31.2,
+        "Zinc": 2.9,
+        "Cholesterol": 77.4
+      }
+    },
+    {
+      "index": 20,
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (4).jpg",
+      "gt_mass_g": 894.5,
+      "pred_mass_g": 727.5,
+      "pred_vol_cm3": 1053.2,
+      "abs_error_g": 167.0,
+      "rel_error_pct": 18.7,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.4036,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 653.23,
+          "mass_g": 607.5,
+          "calories": 546.8
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 400.0,
+          "mass_g": 120.0,
+          "calories": 30.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 576.8,
+        "Protein": 35.2,
+        "Fat": 21.5,
+        "Carbs": 60.1,
+        "Saturates": 6.1,
+        "Sugar": 6.0,
+        "Salt": 5.5,
+        "Sodium": 972.0,
+        "Calcium": 229.4,
+        "Iron": 25.9,
+        "Zinc": 2.6,
+        "Cholesterol": 61.4
+      }
+    },
+    {
+      "index": 21,
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (5).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (5).jpg",
+      "gt_mass_g": 894.5,
+      "pred_mass_g": 1262.8,
+      "pred_vol_cm3": 1638.7,
+      "abs_error_g": 368.3,
+      "rel_error_pct": 41.2,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3963,
+      "num_detections": 5,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 766.4,
+          "calories": 689.8
+        },
+        {
+          "class": "Cua (Crab)",
+          "volume_cm3": 54.41,
+          "mass_g": 46.2,
+          "calories": 40.2
+        },
+        {
+          "class": "Cua (Crab)",
+          "volume_cm3": 119.29,
+          "mass_g": 101.4,
+          "calories": 88.2
+        },
+        {
+          "class": "Ca (Fish)",
+          "volume_cm3": 240.88,
+          "mass_g": 228.8,
+          "calories": 297.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 400.0,
+          "mass_g": 120.0,
+          "calories": 30.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1145.7,
+        "Protein": 111.8,
+        "Fat": 40.0,
+        "Carbs": 74.4,
+        "Saturates": 10.7,
+        "Sugar": 7.0,
+        "Salt": 8.3,
+        "Sodium": 3517.6,
+        "Calcium": 1516.5,
+        "Iron": 36.3,
+        "Zinc": 6.6,
+        "Cholesterol": 77.4
+      }
+    },
+    {
+      "index": 22,
+      "folder": "BanhMi",
+      "filename": "banh-mi1.jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi1.jpg",
+      "gt_mass_g": 242.6,
+      "pred_mass_g": 224.1,
+      "pred_vol_cm3": 498.0,
+      "abs_error_g": 18.5,
+      "rel_error_pct": 7.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2634,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 497.97,
+          "mass_g": 224.1,
+          "calories": 593.8
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 593.8,
+        "Protein": 19.0,
+        "Fat": 22.0,
+        "Carbs": 80.7,
+        "Saturates": 6.7,
+        "Sugar": 6.7,
+        "Salt": 2.5,
+        "Sodium": 113.8,
+        "Calcium": 118.8,
+        "Iron": 15.1,
+        "Zinc": 0.3,
+        "Cholesterol": 466.8
+      }
+    },
+    {
+      "index": 23,
+      "folder": "BanhMi",
+      "filename": "banh-mi2.jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi2.jpg",
+      "gt_mass_g": 242.6,
+      "pred_mass_g": 143.6,
+      "pred_vol_cm3": 280.7,
+      "abs_error_g": 99.0,
+      "rel_error_pct": 40.8,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2421,
+      "num_detections": 12,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 2.47,
+          "mass_g": 2.4,
+          "calories": 5.9
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 30.06,
+          "mass_g": 31.6,
+          "calories": 56.8
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 43.1,
+          "mass_g": 19.4,
+          "calories": 51.4
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 51.24,
+          "mass_g": 23.1,
+          "calories": 61.1
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.52,
+          "mass_g": 1.4,
+          "calories": 0.2
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.0,
+          "mass_g": 0.9,
+          "calories": 0.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 26.09,
+          "mass_g": 20.9,
+          "calories": 3.1
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 2.77,
+          "mass_g": 1.8,
+          "calories": 0.7
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 15.35,
+          "mass_g": 10.0,
+          "calories": 4.1
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 67.08,
+          "mass_g": 20.1,
+          "calories": 5.0
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 191.5,
+        "Protein": 9.4,
+        "Fat": 8.3,
+        "Carbs": 19.8,
+        "Saturates": 2.7,
+        "Sugar": 3.2,
+        "Salt": 1.0,
+        "Sodium": 42.7,
+        "Calcium": 65.3,
+        "Iron": 3.6,
+        "Zinc": 0.4,
+        "Cholesterol": 88.4
+      }
+    },
+    {
+      "index": 24,
+      "folder": "BanhMi",
+      "filename": "banh-mi3.jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi3.jpg",
+      "gt_mass_g": 242.6,
+      "pred_mass_g": 134.9,
+      "pred_vol_cm3": 215.9,
+      "abs_error_g": 107.7,
+      "rel_error_pct": 44.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2264,
+      "num_detections": 11,
+      "detected_items": [
+        {
+          "class": "Pho mai (Cheese)",
+          "volume_cm3": 3.84,
+          "mass_g": 4.0,
+          "calories": 14.1
+        },
+        {
+          "class": "Pho mai (Cheese)",
+          "volume_cm3": 4.69,
+          "mass_g": 4.9,
+          "calories": 17.2
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 31.74,
+          "mass_g": 33.3,
+          "calories": 60.0
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 6.46,
+          "mass_g": 6.8,
+          "calories": 12.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 2.78,
+          "mass_g": 1.3,
+          "calories": 3.3
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 68.06,
+          "mass_g": 30.6,
+          "calories": 81.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 3.52,
+          "mass_g": 2.3,
+          "calories": 0.9
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 16.43,
+          "mass_g": 10.7,
+          "calories": 4.4
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 23.4,
+          "mass_g": 7.0,
+          "calories": 1.8
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 200.8,
+        "Protein": 10.8,
+        "Fat": 10.4,
+        "Carbs": 15.7,
+        "Saturates": 4.1,
+        "Sugar": 2.6,
+        "Salt": 1.1,
+        "Sodium": 46.2,
+        "Calcium": 52.2,
+        "Iron": 2.7,
+        "Zinc": 0.3,
+        "Cholesterol": 71.9
+      }
+    },
+    {
+      "index": 25,
+      "folder": "BanhMi",
+      "filename": "banh-mi4.jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi4.jpg",
+      "gt_mass_g": 242.6,
+      "pred_mass_g": 279.1,
+      "pred_vol_cm3": 462.9,
+      "abs_error_g": 36.5,
+      "rel_error_pct": 15.0,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2764,
+      "num_detections": 16,
+      "detected_items": [
+        {
+          "class": "Thit bo (Beef)",
+          "volume_cm3": 2.83,
+          "mass_g": 2.9,
+          "calories": 6.2
+        },
+        {
+          "class": "Thit bo (Beef)",
+          "volume_cm3": 8.44,
+          "mass_g": 8.6,
+          "calories": 18.5
+        },
+        {
+          "class": "Thit bo (Beef)",
+          "volume_cm3": 5.23,
+          "mass_g": 5.3,
+          "calories": 11.5
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 81.02,
+          "mass_g": 85.1,
+          "calories": 153.1
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 1.56,
+          "mass_g": 1.6,
+          "calories": 3.0
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 10.42,
+          "mass_g": 10.9,
+          "calories": 19.7
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 94.31,
+          "mass_g": 42.4,
+          "calories": 112.5
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 25.46,
+          "mass_g": 11.5,
+          "calories": 30.4
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 30.9,
+          "mass_g": 13.9,
+          "calories": 36.8
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 48.61,
+          "mass_g": 21.9,
+          "calories": 58.0
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.0,
+          "mass_g": 0.9,
+          "calories": 0.2
+        },
+        {
+          "class": "Dua leo (Cucumber)",
+          "volume_cm3": 35.0,
+          "mass_g": 28.0,
+          "calories": 4.2
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 22.21,
+          "mass_g": 14.4,
+          "calories": 5.9
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 8.49,
+          "mass_g": 5.5,
+          "calories": 2.3
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 67.41,
+          "mass_g": 20.2,
+          "calories": 5.1
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 468.9,
+        "Protein": 26.4,
+        "Fat": 22.4,
+        "Carbs": 39.3,
+        "Saturates": 7.4,
+        "Sugar": 5.7,
+        "Salt": 2.5,
+        "Sodium": 83.5,
+        "Calcium": 90.8,
+        "Iron": 7.4,
+        "Zinc": 0.9,
+        "Cholesterol": 186.9
+      }
+    },
+    {
+      "index": 26,
+      "folder": "BanhMi",
+      "filename": "banh-mi5.jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi5.jpg",
+      "gt_mass_g": 242.6,
+      "pred_mass_g": 0.0,
+      "pred_vol_cm3": 0.0,
+      "abs_error_g": 242.6,
+      "rel_error_pct": 100.0,
+      "scale_source": "failed",
+      "scale_mm_per_pixel": 0.0,
+      "num_detections": 0,
+      "detected_items": [],
+      "pred_nutrition": {}
+    },
+    {
+      "index": 27,
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (1).jpg",
+      "gt_mass_g": 255.6,
+      "pred_mass_g": 198.4,
+      "pred_vol_cm3": 440.8,
+      "abs_error_g": 57.2,
+      "rel_error_pct": 22.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3194,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 440.83,
+          "mass_g": 198.4,
+          "calories": 525.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 525.7,
+        "Protein": 16.9,
+        "Fat": 19.4,
+        "Carbs": 71.4,
+        "Saturates": 6.0,
+        "Sugar": 6.0,
+        "Salt": 2.2,
+        "Sodium": 100.8,
+        "Calcium": 105.1,
+        "Iron": 13.3,
+        "Zinc": 0.3,
+        "Cholesterol": 413.2
+      }
+    },
+    {
+      "index": 28,
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (2).jpg",
+      "gt_mass_g": 255.6,
+      "pred_mass_g": 331.3,
+      "pred_vol_cm3": 736.2,
+      "abs_error_g": 75.7,
+      "rel_error_pct": 29.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.301,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 736.22,
+          "mass_g": 331.3,
+          "calories": 877.9
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 877.9,
+        "Protein": 28.2,
+        "Fat": 32.5,
+        "Carbs": 119.3,
+        "Saturates": 9.9,
+        "Sugar": 9.9,
+        "Salt": 3.6,
+        "Sodium": 168.3,
+        "Calcium": 175.6,
+        "Iron": 22.3,
+        "Zinc": 0.4,
+        "Cholesterol": 690.1
+      }
+    },
+    {
+      "index": 29,
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (3).jpg",
+      "gt_mass_g": 255.6,
+      "pred_mass_g": 392.4,
+      "pred_vol_cm3": 871.9,
+      "abs_error_g": 136.8,
+      "rel_error_pct": 53.5,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3215,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Hamburger",
+          "volume_cm3": 871.89,
+          "mass_g": 392.4,
+          "calories": 980.9
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 980.9,
+        "Protein": 51.0,
+        "Fat": 47.1,
+        "Carbs": 94.2,
+        "Saturates": 17.7,
+        "Sugar": 15.7,
+        "Salt": 4.7,
+        "Sodium": 1012.7,
+        "Calcium": 551.6,
+        "Iron": 6.5,
+        "Zinc": 5.2,
+        "Cholesterol": 41.2
+      }
+    },
+    {
+      "index": 30,
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (4).jpg",
+      "gt_mass_g": 255.6,
+      "pred_mass_g": 281.6,
+      "pred_vol_cm3": 625.8,
+      "abs_error_g": 26.0,
+      "rel_error_pct": 10.2,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3196,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 625.83,
+          "mass_g": 281.6,
+          "calories": 746.3
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 746.3,
+        "Protein": 23.9,
+        "Fat": 27.6,
+        "Carbs": 101.4,
+        "Saturates": 8.4,
+        "Sugar": 8.4,
+        "Salt": 3.1,
+        "Sodium": 143.1,
+        "Calcium": 149.3,
+        "Iron": 18.9,
+        "Zinc": 0.4,
+        "Cholesterol": 586.6
+      }
+    },
+    {
+      "index": 31,
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (1).jpg",
+      "gt_mass_g": 210.0,
+      "pred_mass_g": 244.6,
+      "pred_vol_cm3": 482.1,
+      "abs_error_g": 34.6,
+      "rel_error_pct": 16.5,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.1957,
+      "num_detections": 15,
+      "detected_items": [
+        {
+          "class": "Pho mai (Cheese)",
+          "volume_cm3": 1.16,
+          "mass_g": 1.2,
+          "calories": 4.3
+        },
+        {
+          "class": "Pho mai (Cheese)",
+          "volume_cm3": 1.47,
+          "mass_g": 1.5,
+          "calories": 5.4
+        },
+        {
+          "class": "Pho mai (Cheese)",
+          "volume_cm3": 0.7,
+          "mass_g": 0.7,
+          "calories": 2.6
+        },
+        {
+          "class": "Thit ga (Chicken)",
+          "volume_cm3": 22.38,
+          "mass_g": 21.3,
+          "calories": 40.4
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 7.89,
+          "mass_g": 8.3,
+          "calories": 14.9
+        },
+        {
+          "class": "Cha (Vietnamese pork roll)",
+          "volume_cm3": 17.56,
+          "mass_g": 18.4,
+          "calories": 33.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 349.94,
+          "mass_g": 157.5,
+          "calories": 417.3
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 12.34,
+          "mass_g": 11.1,
+          "calories": 2.0
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.4,
+          "mass_g": 1.3,
+          "calories": 0.2
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.56,
+          "mass_g": 1.4,
+          "calories": 0.3
+        },
+        {
+          "class": "Ca chua (Tomato)",
+          "volume_cm3": 1.0,
+          "mass_g": 0.9,
+          "calories": 0.2
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Ca rot (Carrot)",
+          "volume_cm3": 4.66,
+          "mass_g": 3.0,
+          "calories": 1.2
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 20.0,
+          "mass_g": 6.0,
+          "calories": 1.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 526.5,
+        "Protein": 24.6,
+        "Fat": 21.1,
+        "Carbs": 59.2,
+        "Saturates": 6.7,
+        "Sugar": 5.7,
+        "Salt": 2.1,
+        "Sodium": 110.7,
+        "Calcium": 111.2,
+        "Iron": 11.4,
+        "Zinc": 0.7,
+        "Cholesterol": 330.0
+      }
+    },
+    {
+      "index": 32,
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (2).jpg",
+      "gt_mass_g": 210.0,
+      "pred_mass_g": 265.8,
+      "pred_vol_cm3": 590.7,
+      "abs_error_g": 55.8,
+      "rel_error_pct": 26.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2153,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 590.7,
+          "mass_g": 265.8,
+          "calories": 704.4
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 704.4,
+        "Protein": 22.6,
+        "Fat": 26.0,
+        "Carbs": 95.7,
+        "Saturates": 8.0,
+        "Sugar": 8.0,
+        "Salt": 2.9,
+        "Sodium": 135.0,
+        "Calcium": 140.9,
+        "Iron": 17.9,
+        "Zinc": 0.3,
+        "Cholesterol": 553.7
+      }
+    },
+    {
+      "index": 33,
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (3).jpg",
+      "gt_mass_g": 210.0,
+      "pred_mass_g": 267.1,
+      "pred_vol_cm3": 593.6,
+      "abs_error_g": 57.1,
+      "rel_error_pct": 27.2,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2336,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 593.62,
+          "mass_g": 267.1,
+          "calories": 707.9
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 707.9,
+        "Protein": 22.7,
+        "Fat": 26.2,
+        "Carbs": 96.2,
+        "Saturates": 8.0,
+        "Sugar": 8.0,
+        "Salt": 2.9,
+        "Sodium": 135.7,
+        "Calcium": 141.6,
+        "Iron": 18.0,
+        "Zinc": 0.3,
+        "Cholesterol": 556.4
+      }
+    },
+    {
+      "index": 34,
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (4).jpg",
+      "gt_mass_g": 320.5,
+      "pred_mass_g": 637.8,
+      "pred_vol_cm3": 1333.9,
+      "abs_error_g": 317.3,
+      "rel_error_pct": 99.0,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3642,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 953.75,
+          "mass_g": 429.2,
+          "calories": 1137.4
+        },
+        {
+          "class": "Trung (Egg)",
+          "volume_cm3": 80.0,
+          "mass_g": 73.6,
+          "calories": 105.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 300.11,
+          "mass_g": 135.0,
+          "calories": 357.9
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1600.5,
+        "Protein": 57.3,
+        "Fat": 62.3,
+        "Carbs": 203.6,
+        "Saturates": 19.3,
+        "Sugar": 17.3,
+        "Salt": 6.4,
+        "Sodium": 286.6,
+        "Calcium": 373.4,
+        "Iron": 38.0,
+        "Zinc": 0.7,
+        "Cholesterol": 1175.3
+      }
+    },
+    {
+      "index": 35,
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (1).jpg",
+      "gt_mass_g": 320.5,
+      "pred_mass_g": 384.1,
+      "pred_vol_cm3": 770.0,
+      "abs_error_g": 63.6,
+      "rel_error_pct": 19.8,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3211,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 495.63,
+          "mass_g": 223.0,
+          "calories": 591.0
+        },
+        {
+          "class": "Trung (Egg)",
+          "volume_cm3": 80.0,
+          "mass_g": 73.6,
+          "calories": 105.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 194.42,
+          "mass_g": 87.5,
+          "calories": 231.8
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 928.0,
+        "Protein": 35.7,
+        "Fat": 37.5,
+        "Carbs": 112.3,
+        "Saturates": 11.6,
+        "Sugar": 9.6,
+        "Salt": 3.7,
+        "Sodium": 157.7,
+        "Calcium": 238.9,
+        "Iron": 20.9,
+        "Zinc": 0.4,
+        "Cholesterol": 646.8
+      }
+    },
+    {
+      "index": 36,
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (2).jpg",
+      "gt_mass_g": 320.5,
+      "pred_mass_g": 330.1,
+      "pred_vol_cm3": 650.0,
+      "abs_error_g": 9.6,
+      "rel_error_pct": 3.0,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3315,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 344.07,
+          "mass_g": 154.8,
+          "calories": 410.3
+        },
+        {
+          "class": "Trung (Egg)",
+          "volume_cm3": 80.0,
+          "mass_g": 73.6,
+          "calories": 105.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 225.96,
+          "mass_g": 101.7,
+          "calories": 269.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 785.0,
+        "Protein": 31.1,
+        "Fat": 32.2,
+        "Carbs": 92.8,
+        "Saturates": 10.0,
+        "Sugar": 8.0,
+        "Salt": 3.0,
+        "Sodium": 130.4,
+        "Calcium": 210.3,
+        "Iron": 17.3,
+        "Zinc": 0.3,
+        "Cholesterol": 534.3
+      }
+    },
+    {
+      "index": 37,
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (3).jpg",
+      "gt_mass_g": 320.5,
+      "pred_mass_g": 204.8,
+      "pred_vol_cm3": 371.5,
+      "abs_error_g": 115.7,
+      "rel_error_pct": 36.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.322,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 197.23,
+          "mass_g": 88.8,
+          "calories": 235.2
+        },
+        {
+          "class": "Trung (Egg)",
+          "volume_cm3": 80.0,
+          "mass_g": 73.6,
+          "calories": 105.2
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 94.22,
+          "mass_g": 42.4,
+          "calories": 112.4
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 452.8,
+        "Protein": 20.4,
+        "Fat": 19.9,
+        "Carbs": 47.8,
+        "Saturates": 6.3,
+        "Sugar": 4.3,
+        "Salt": 1.7,
+        "Sodium": 66.6,
+        "Calcium": 143.8,
+        "Iron": 8.8,
+        "Zinc": 0.2,
+        "Cholesterol": 273.2
+      }
+    },
+    {
+      "index": 38,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (4).jpg",
+      "gt_mass_g": 838.9,
+      "pred_mass_g": 925.8,
+      "pred_vol_cm3": 995.5,
+      "abs_error_g": 86.9,
+      "rel_error_pct": 10.4,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.27,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 995.48,
+          "mass_g": 925.8,
+          "calories": 833.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 833.2,
+        "Protein": 50.9,
+        "Fat": 32.4,
+        "Carbs": 83.3,
+        "Saturates": 9.3,
+        "Sugar": 5.6,
+        "Salt": 8.3,
+        "Sodium": 1412.8,
+        "Calcium": 166.6,
+        "Iron": 36.9,
+        "Zinc": 3.3,
+        "Cholesterol": 93.5
+      }
+    },
+    {
+      "index": 39,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (1).jpg",
+      "gt_mass_g": 838.9,
+      "pred_mass_g": 1053.5,
+      "pred_vol_cm3": 1132.8,
+      "abs_error_g": 214.6,
+      "rel_error_pct": 25.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3631,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun rieu (Crab noodle soup)",
+          "volume_cm3": 1132.83,
+          "mass_g": 1053.5,
+          "calories": 895.5
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 895.5,
+        "Protein": 50.6,
+        "Fat": 33.7,
+        "Carbs": 96.9,
+        "Saturates": 7.4,
+        "Sugar": 8.4,
+        "Salt": 8.4,
+        "Sodium": 5094.9,
+        "Calcium": 147.5,
+        "Iron": 1.9,
+        "Zinc": 0.1,
+        "Cholesterol": 7.4
+      }
+    },
+    {
+      "index": 40,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (2).jpg",
+      "gt_mass_g": 838.9,
+      "pred_mass_g": 766.4,
+      "pred_vol_cm3": 824.1,
+      "abs_error_g": 72.5,
+      "rel_error_pct": 8.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2818,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun rieu (Crab noodle soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 766.4,
+          "calories": 651.4
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 651.4,
+        "Protein": 36.8,
+        "Fat": 24.5,
+        "Carbs": 70.5,
+        "Saturates": 5.4,
+        "Sugar": 6.1,
+        "Salt": 6.1,
+        "Sodium": 3706.3,
+        "Calcium": 107.3,
+        "Iron": 1.4,
+        "Zinc": 0.1,
+        "Cholesterol": 5.4
+      }
+    },
+    {
+      "index": 41,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (3).jpg",
+      "gt_mass_g": 838.9,
+      "pred_mass_g": 1116.0,
+      "pred_vol_cm3": 1200.0,
+      "abs_error_g": 277.1,
+      "rel_error_pct": 33.0,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2747,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 1200.0,
+          "mass_g": 1116.0,
+          "calories": 1004.4
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1004.4,
+        "Protein": 61.4,
+        "Fat": 39.1,
+        "Carbs": 100.4,
+        "Saturates": 11.2,
+        "Sugar": 6.7,
+        "Salt": 10.0,
+        "Sodium": 1703.0,
+        "Calcium": 200.9,
+        "Iron": 44.4,
+        "Zinc": 4.0,
+        "Cholesterol": 112.7
+      }
+    },
+    {
+      "index": 42,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (3).jpg",
+      "gt_mass_g": 908.9,
+      "pred_mass_g": 1194.8,
+      "pred_vol_cm3": 1555.7,
+      "abs_error_g": 285.9,
+      "rel_error_pct": 31.5,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3051,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun bo Hue (Hue beef noodle soup)",
+          "volume_cm3": 1155.72,
+          "mass_g": 1074.8,
+          "calories": 967.3
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 400.0,
+          "mass_g": 120.0,
+          "calories": 30.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 997.3,
+        "Protein": 60.9,
+        "Fat": 37.8,
+        "Carbs": 102.1,
+        "Saturates": 10.7,
+        "Sugar": 8.8,
+        "Salt": 9.7,
+        "Sodium": 1685.1,
+        "Calcium": 313.5,
+        "Iron": 44.5,
+        "Zinc": 4.3,
+        "Cholesterol": 108.6
+      }
+    },
+    {
+      "index": 43,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (1).jpg",
+      "gt_mass_g": 908.9,
+      "pred_mass_g": 1052.9,
+      "pred_vol_cm3": 1286.2,
+      "abs_error_g": 144.0,
+      "rel_error_pct": 15.8,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.3136,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun rieu (Crab noodle soup)",
+          "volume_cm3": 1058.81,
+          "mass_g": 984.7,
+          "calories": 837.0
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 227.44,
+          "mass_g": 68.2,
+          "calories": 17.1
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 854.1,
+        "Protein": 48.3,
+        "Fat": 31.6,
+        "Carbs": 93.7,
+        "Saturates": 6.9,
+        "Sugar": 9.3,
+        "Salt": 7.9,
+        "Sodium": 4787.5,
+        "Calcium": 206.1,
+        "Iron": 2.7,
+        "Zinc": 0.3,
+        "Cholesterol": 6.9
+      }
+    },
+    {
+      "index": 44,
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (2).jpg",
+      "gt_mass_g": 908.9,
+      "pred_mass_g": 874.2,
+      "pred_vol_cm3": 1210.9,
+      "abs_error_g": 34.7,
+      "rel_error_pct": 3.8,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.325,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Bun rieu (Crab noodle soup)",
+          "volume_cm3": 810.93,
+          "mass_g": 754.2,
+          "calories": 641.0
+        },
+        {
+          "class": "Rau (Vegetables)",
+          "volume_cm3": 400.0,
+          "mass_g": 120.0,
+          "calories": 30.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 671.0,
+        "Protein": 38.0,
+        "Fat": 24.3,
+        "Carbs": 74.8,
+        "Saturates": 5.3,
+        "Sugar": 8.4,
+        "Salt": 6.0,
+        "Sodium": 3692.0,
+        "Calcium": 225.6,
+        "Iron": 3.0,
+        "Zinc": 0.5,
+        "Cholesterol": 5.3
+      }
+    },
+    {
+      "index": 45,
+      "folder": "SupCua",
+      "filename": "SupCua (6).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (6).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 451.4,
+      "pred_vol_cm3": 451.4,
+      "abs_error_g": 19.2,
+      "rel_error_pct": 4.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.1883,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 158.0,
+        "Protein": 11.3,
+        "Fat": 5.4,
+        "Carbs": 15.8,
+        "Saturates": 1.4,
+        "Sugar": 4.5,
+        "Salt": 2.7,
+        "Sodium": 932.0,
+        "Calcium": 198.1,
+        "Iron": 3.8,
+        "Zinc": 2.0,
+        "Cholesterol": 30.7
+      }
+    },
+    {
+      "index": 46,
+      "folder": "SupCua",
+      "filename": "SupCua (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (1).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 1304.8,
+      "pred_vol_cm3": 1305.3,
+      "abs_error_g": 834.2,
+      "rel_error_pct": 177.3,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2117,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 29.85,
+          "mass_g": 29.3,
+          "calories": 70.8
+        },
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 824.08,
+          "mass_g": 824.1,
+          "calories": 288.4
+        },
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 517.2,
+        "Protein": 39.8,
+        "Fat": 19.4,
+        "Carbs": 44.6,
+        "Saturates": 5.4,
+        "Sugar": 12.7,
+        "Salt": 7.7,
+        "Sodium": 2633.7,
+        "Calcium": 565.8,
+        "Iron": 11.0,
+        "Zinc": 6.3,
+        "Cholesterol": 86.7
+      }
+    },
+    {
+      "index": 47,
+      "folder": "SupCua",
+      "filename": "SupCua (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (2).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 34.6,
+      "pred_vol_cm3": 35.3,
+      "abs_error_g": 436.0,
+      "rel_error_pct": 92.6,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2389,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 35.31,
+          "mass_g": 34.6,
+          "calories": 83.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 83.7,
+        "Protein": 9.3,
+        "Fat": 4.8,
+        "Carbs": 0.0,
+        "Saturates": 1.7,
+        "Sugar": 0.0,
+        "Salt": 0.1,
+        "Sodium": 0.0,
+        "Calcium": 7.0,
+        "Iron": 0.2,
+        "Zinc": 0.7,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 48,
+      "folder": "SupCua",
+      "filename": "SupCua (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (3).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 27.1,
+      "pred_vol_cm3": 27.7,
+      "abs_error_g": 443.5,
+      "rel_error_pct": 94.2,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.2272,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 27.7,
+          "mass_g": 27.1,
+          "calories": 65.7
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 65.7,
+        "Protein": 7.3,
+        "Fat": 3.8,
+        "Carbs": 0.0,
+        "Saturates": 1.4,
+        "Sugar": 0.0,
+        "Salt": 0.1,
+        "Sodium": 0.0,
+        "Calcium": 5.5,
+        "Iron": 0.1,
+        "Zinc": 0.6,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 49,
+      "folder": "SupCua",
+      "filename": "SupCua (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (4).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 0.0,
+      "pred_vol_cm3": 0.0,
+      "abs_error_g": 470.6,
+      "rel_error_pct": 100.0,
+      "scale_source": "failed",
+      "scale_mm_per_pixel": 0.0,
+      "num_detections": 0,
+      "detected_items": [],
+      "pred_nutrition": {}
+    },
+    {
+      "index": 50,
+      "folder": "SupCua",
+      "filename": "SupCua (5).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (5).jpg",
+      "gt_mass_g": 470.6,
+      "pred_mass_g": 451.4,
+      "pred_vol_cm3": 451.4,
+      "abs_error_g": 19.2,
+      "rel_error_pct": 4.1,
+      "scale_source": "aruco_marker",
+      "scale_mm_per_pixel": 0.1601,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 451.35,
+          "mass_g": 451.4,
+          "calories": 158.0
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 158.0,
+        "Protein": 11.3,
+        "Fat": 5.4,
+        "Carbs": 15.8,
+        "Saturates": 1.4,
+        "Sugar": 4.5,
+        "Salt": 2.7,
+        "Sodium": 932.0,
+        "Calcium": 198.1,
+        "Iron": 3.8,
+        "Zinc": 2.0,
+        "Cholesterol": 30.7
+      }
+    },
+    {
+      "index": 51,
+      "folder": "SupCua",
+      "filename": "SupCua1 (4).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (4).jpg",
+      "gt_mass_g": 500.6,
+      "pred_mass_g": 0.0,
+      "pred_vol_cm3": 0.0,
+      "abs_error_g": 500.6,
+      "rel_error_pct": 100.0,
+      "scale_source": "failed",
+      "scale_mm_per_pixel": 0.0,
+      "num_detections": 0,
+      "detected_items": [],
+      "pred_nutrition": {}
+    },
+    {
+      "index": 52,
+      "folder": "SupCua",
+      "filename": "SupCua1 (1).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (1).jpg",
+      "gt_mass_g": 500.6,
+      "pred_mass_g": 1041.7,
+      "pred_vol_cm3": 1036.3,
+      "abs_error_g": 541.1,
+      "rel_error_pct": 108.1,
+      "scale_source": "plate_heuristic",
+      "scale_mm_per_pixel": 0.214,
+      "num_detections": 2,
+      "detected_items": [
+        {
+          "class": "Canh (Soup)",
+          "volume_cm3": 769.47,
+          "mass_g": 769.5,
+          "calories": 269.3
+        },
+        {
+          "class": "Thit bo (Beef)",
+          "volume_cm3": 266.85,
+          "mass_g": 272.2,
+          "calories": 585.2
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 854.5,
+        "Protein": 90.0,
+        "Fat": 41.9,
+        "Carbs": 26.9,
+        "Saturates": 15.4,
+        "Sugar": 7.7,
+        "Salt": 5.1,
+        "Sodium": 1814.9,
+        "Calcium": 370.5,
+        "Iron": 15.0,
+        "Zinc": 9.4,
+        "Cholesterol": 52.3
+      }
+    },
+    {
+      "index": 53,
+      "folder": "SupCua",
+      "filename": "SupCua1 (2).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (2).jpg",
+      "gt_mass_g": 500.6,
+      "pred_mass_g": 250.8,
+      "pred_vol_cm3": 278.7,
+      "abs_error_g": 249.8,
+      "rel_error_pct": 49.9,
+      "scale_source": "plate_heuristic",
+      "scale_mm_per_pixel": 0.6667,
+      "num_detections": 1,
+      "detected_items": [
+        {
+          "class": "Dau hu (Tofu)",
+          "volume_cm3": 278.71,
+          "mass_g": 250.8,
+          "calories": 190.6
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 190.6,
+        "Protein": 20.1,
+        "Fat": 12.0,
+        "Carbs": 4.8,
+        "Saturates": 1.8,
+        "Sugar": 1.3,
+        "Salt": 0.1,
+        "Sodium": 17.6,
+        "Calcium": 60.2,
+        "Iron": 5.5,
+        "Zinc": 2.0,
+        "Cholesterol": 0.0
+      }
+    },
+    {
+      "index": 54,
+      "folder": "SupCua",
+      "filename": "SupCua1 (3).jpg",
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (3).jpg",
+      "gt_mass_g": 500.6,
+      "pred_mass_g": 624.8,
+      "pred_vol_cm3": 744.8,
+      "abs_error_g": 124.2,
+      "rel_error_pct": 24.8,
+      "scale_source": "plate_heuristic",
+      "scale_mm_per_pixel": 0.275,
+      "num_detections": 3,
+      "detected_items": [
+        {
+          "class": "Thit heo (Pork)",
+          "volume_cm3": 315.27,
+          "mass_g": 309.0,
+          "calories": 747.7
+        },
+        {
+          "class": "Banh mi (Vietnamese baguette sandwich)",
+          "volume_cm3": 157.13,
+          "mass_g": 70.7,
+          "calories": 187.4
+        },
+        {
+          "class": "Dau hu (Tofu)",
+          "volume_cm3": 272.38,
+          "mass_g": 245.1,
+          "calories": 186.3
+        }
+      ],
+      "pred_nutrition": {
+        "Calories": 1121.4,
+        "Protein": 109.0,
+        "Fat": 62.0,
+        "Carbs": 30.2,
+        "Saturates": 19.2,
+        "Sugar": 3.3,
+        "Salt": 1.4,
+        "Sodium": 53.1,
+        "Calcium": 158.4,
+        "Iron": 11.9,
+        "Zinc": 8.3,
+        "Cholesterol": 147.3
+      }
+    }
+  ]
+}

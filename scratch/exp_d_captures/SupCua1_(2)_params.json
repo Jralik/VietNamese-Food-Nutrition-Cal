@@ -1,0 +1,19 @@
+{
+ "image": "SupCua1 (2).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Sup cua (Crab soup)",
+   "mm_per_pixel": 0.38876889848812096,
+   "scale_source": "plate_heuristic",
+   "scale_confidence": "medium",
+   "depth_anchored": false,
+   "bbox": [
+    220.0,
+    718.0,
+    682.0,
+    1181.0
+   ]
+  }
+ ]
+}

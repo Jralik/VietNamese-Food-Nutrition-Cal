@@ -1,0 +1,4794 @@
+{
+  "metadata": {
+    "title": "Ma Trận Ánh Xạ VietFood68 Sang CSDL Viện Dinh Dưỡng Quốc Gia (NIN Mapping Matrix)",
+    "total_classes": 68,
+    "distribution": {
+      "direct": 30,
+      "approximate": 19,
+      "component_based": 16,
+      "unmapped": 3
+    },
+    "provenance_standard": "Bảng thành phần thực phẩm Việt Nam (NIN) & USDA FoodData Central",
+    "audit_source": "data/vietfood68_inventory_checklist.json",
+    "version": "1.0.0"
+  },
+  "mappings": [
+    {
+      "vietfood_class_id": 0,
+      "vietfood_class_name_vi": "Bánh canh",
+      "vietfood_class_name_en": "Vietnamese thick noodle soup",
+      "full_name": "Banh canh (Vietnamese thick noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bánh canh tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món ăn tương đồng trực tiếp trong CSDL Món ăn VDD (Bánh canh thịt heo)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6945280a396fdfd8c109b2fa",
+        "nin_food_name": "Bánh canh thịt heo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 121.556
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 121.556,
+        "protein_g": 5.267,
+        "fat_g": 6.533,
+        "carbs_g": 10.4,
+        "fiber_g": 0.2,
+        "sugar_g": 0.0,
+        "sodium_mg": 110.622,
+        "salt_equivalent_g": 0.277,
+        "calcium_mg": 13.289,
+        "iron_mg": 0.711,
+        "zinc_mg": 0.298,
+        "cholesterol_mg": 17.511,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 16.511,
+        "vitamin_a_mcg": 8.756,
+        "vitamin_c_mg": 0.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6945280a396fdfd8c109b2fa",
+          "nin_food_name": "Bánh canh thịt heo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 121.556,
+          "match_reason": "Bánh canh thịt heo - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_694526bc396fdfd8c109b2f7",
+          "nin_food_name": "Bánh canh thịt gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 74.889,
+          "match_reason": "Bánh canh thịt gà - Suất ăn bình dân"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 1,
+      "vietfood_class_name_vi": "Bánh chưng",
+      "vietfood_class_name_en": "Square sticky rice cake",
+      "full_name": "Banh chung (Square sticky rice cake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Khẩu phần bánh chưng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Khẩu phần bánh chưng truyền thống có trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69491c415756e8e52e0ec993",
+        "nin_food_name": "Bánh chưng cỡ vừa",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 204.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 204.0,
+        "protein_g": 4.7,
+        "fat_g": 5.6,
+        "carbs_g": 33.9,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 0.0,
+        "iron_mg": 0.0,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69491c415756e8e52e0ec993",
+          "nin_food_name": "Bánh chưng cỡ vừa",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 204.0,
+          "match_reason": "Bánh chưng cỡ vừa - Bản ghi chuẩn VDD (200g)"
+        },
+        {
+          "nin_food_id": "nin_dish_6937c7b822c79417570839b2",
+          "nin_food_name": "Bánh chưng rán",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 431.8,
+          "match_reason": "Bánh chưng rán"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 2,
+      "vietfood_class_name_vi": "Bánh cuốn",
+      "vietfood_class_name_en": "Rolled rice pancake",
+      "full_name": "Banh cuon (Rolled rice pancake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa bánh cuốn tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bánh cuốn nhân thịt có trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69491e3f2eb544b04a0add82",
+        "nin_food_name": "Bánh cuốn thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 440.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 440.0,
+        "protein_g": 16.7,
+        "fat_g": 18.5,
+        "carbs_g": 51.5,
+        "fiber_g": 0.4,
+        "sugar_g": 0.0,
+        "sodium_mg": 45.8,
+        "salt_equivalent_g": 0.115,
+        "calcium_mg": 29.8,
+        "iron_mg": 3.43,
+        "zinc_mg": 0.11,
+        "cholesterol_mg": 45.3,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 254.7,
+        "vitamin_a_mcg": 7.6,
+        "vitamin_c_mg": 1.9
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69491e3f2eb544b04a0add82",
+          "nin_food_name": "Bánh cuốn thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 440.0,
+          "match_reason": "Bánh cuốn thịt - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_694ba7d8e8b6133f930aec32",
+          "nin_food_name": "Bánh cuốn trứng + chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 354.0,
+          "match_reason": "Bánh cuốn trứng + chả"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 3,
+      "vietfood_class_name_vi": "Bánh khọt",
+      "vietfood_class_name_en": "Mini savory pancakes",
+      "full_name": "Banh khot (Mini savory pancakes)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Y văn dinh dưỡng món ăn Việt Nam (Literature fallback)",
+      "mapping_status": "unmapped_fallback",
+      "decision_rationale": "Đặc sản Vũng Tàu / Nam Bộ, CSDL VDD quốc gia chưa có bản ghi tương ứng. Duy trì fallback literature đã kiểm toán Atwater.",
+      "primary_match": null,
+      "primary_nutrition_per_100g": null,
+      "nin_matches": [],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 4,
+      "vietfood_class_name_vi": "Bánh mì",
+      "vietfood_class_name_en": "Vietnamese baguette sandwich",
+      "full_name": "Banh mi (Vietnamese baguette sandwich)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Ổ bánh mì kẹp thịt/trứng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bánh mì kẹp nhân tiêu chuẩn trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937cc55bb1269d4c706878a",
+        "nin_food_name": "Bánh mỳ pate trứng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 296.133
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 296.133,
+        "protein_g": 18.933,
+        "fat_g": 9.733,
+        "carbs_g": 33.2,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 50.8,
+        "salt_equivalent_g": 0.127,
+        "calcium_mg": 53.0,
+        "iron_mg": 6.733,
+        "zinc_mg": 0.133,
+        "cholesterol_mg": 208.267,
+        "magnesium_mg": 51.533,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 588.533,
+        "vitamin_c_mg": 2.533
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937cc55bb1269d4c706878a",
+          "nin_food_name": "Bánh mỳ pate trứng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 296.133,
+          "match_reason": "Bánh mỳ pate trứng - Khẩu phần tiêu chuẩn 200g"
+        },
+        {
+          "nin_food_id": "nin_dish_694bbfd847cf7703d00ad2b4",
+          "nin_food_name": "Bánh mỳ pate",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 361.0,
+          "match_reason": "Bánh mỳ pate"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 5,
+      "vietfood_class_name_vi": "Bánh tráng",
+      "vietfood_class_name_en": "Rice paper",
+      "full_name": "Banh trang (Rice paper)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g phần ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Nguyên liệu bánh tráng khô trong CSDL thực phẩm thô NIN (Mã TPTP VN 1029)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cacc",
+        "nin_food_name": "Bánh đa nem",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 335.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 335.0,
+        "protein_g": 4.0,
+        "fat_g": 0.2,
+        "carbs_g": 79.4,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 20.0,
+        "iron_mg": 0.3,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cacc",
+          "nin_food_name": "Bánh đa nem",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 335.0,
+          "match_reason": "Bánh đa nem (Bánh tráng) - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 6,
+      "vietfood_class_name_vi": "Bánh tráng trộn",
+      "vietfood_class_name_en": "Rice paper salad",
+      "full_name": "Banh trang tron (Rice paper salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Suất bánh tráng trộn ăn vặt)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món ăn vặt phối hợp nhiều topping; Fast Mode ánh xạ đĩa bánh tráng trộn tổng hợp, Deep Mode phân rã topping qua FoodSAM",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+        "nin_food_name": "Bánh tráng trộn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 340.533
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 340.533,
+        "protein_g": 17.667,
+        "fat_g": 9.067,
+        "carbs_g": 47.067,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 271.533,
+        "salt_equivalent_g": 0.679,
+        "calcium_mg": 114.6,
+        "iron_mg": 2.333,
+        "zinc_mg": 0.8,
+        "cholesterol_mg": 235.2,
+        "magnesium_mg": 32.467,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 94.067,
+        "vitamin_c_mg": 9.2
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 340.533,
+          "match_reason": "Bánh tráng trộn tổng hợp (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_690c592c1b9fac808f018f55",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 291.133,
+          "match_reason": "Bánh tráng trộn cỡ vừa"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1d",
+          "food_name": "Bánh tráng",
+          "role": "rice_paper_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 29.0,
+            "protein_g": 0.3,
+            "fat_g": 0.07,
+            "carbs_g": 6.83,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 8.4,
+            "salt_equivalent_g": 0.021,
+            "calcium_mg": 24.0,
+            "iron_mg": 0.5,
+            "zinc_mg": 0.1,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 10.0,
+            "potassium_mg": 348.5,
+            "vitamin_a_mcg": 236.83,
+            "vitamin_c_mg": 9.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7f",
+          "food_name": "Trứng cút",
+          "role": "egg_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 77.0,
+            "protein_g": 12.9,
+            "fat_g": 2.8,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 3520.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Bò khô",
+          "role": "beef_jerky",
+          "nutrition_per_100g": {
+            "energy_kcal": 48.0,
+            "protein_g": 0.7,
+            "fat_g": 0.2,
+            "carbs_g": 10.8,
+            "fiber_g": 0.0,
+            "sugar_g": 9.8,
+            "sodium_mg": 5.0,
+            "salt_equivalent_g": 0.013,
+            "calcium_mg": 19.0,
+            "iron_mg": 2.3,
+            "zinc_mg": 0.13,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 7.0,
+            "potassium_mg": 88.4,
+            "vitamin_a_mcg": 2.5,
+            "vitamin_c_mg": 4.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 45.0,
+            "protein_g": 1.8,
+            "fat_g": 0.11,
+            "carbs_g": 9.29,
+            "fiber_g": 0.0,
+            "sugar_g": 4.28,
+            "sodium_mg": 7.5,
+            "salt_equivalent_g": 0.019,
+            "calcium_mg": 38.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 1.43,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 23.0,
+            "potassium_mg": 220.7,
+            "vitamin_a_mcg": 0.08,
+            "vitamin_c_mg": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 7,
+      "vietfood_class_name_vi": "Bánh xèo",
+      "vietfood_class_name_en": "Vietnamese sizzling pancake",
+      "full_name": "Banh xeo (Vietnamese sizzling pancake)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Cái bánh xèo cỡ vừa)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bánh có vỏ bột và nhân tôm thịt giá đỗ tách biệt; Deep Mode FoodSAM phân rã vỏ bánh và nhân",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694e064bba5c59be9d0c5942",
+        "nin_food_name": "Bánh xèo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 306.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 306.0,
+        "protein_g": 20.7,
+        "fat_g": 2.9,
+        "carbs_g": 49.5,
+        "fiber_g": 2.1,
+        "sugar_g": 0.0,
+        "sodium_mg": 411.9,
+        "salt_equivalent_g": 1.03,
+        "calcium_mg": 64.9,
+        "iron_mg": 3.09,
+        "zinc_mg": 2.1,
+        "cholesterol_mg": 15.6,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 440.2,
+        "vitamin_a_mcg": 4.2,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694e064bba5c59be9d0c5942",
+          "nin_food_name": "Bánh xèo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 306.0,
+          "match_reason": "Bánh xèo miền Trung/Nam - Công thức VDD (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb05",
+          "food_name": "Bột gạo / Vỏ bánh",
+          "role": "crepe_crust",
+          "nutrition_per_100g": {
+            "energy_kcal": 363.0,
+            "protein_g": 6.82,
+            "fat_g": 1.81,
+            "carbs_g": 79.76,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 5.0,
+            "salt_equivalent_g": 0.013,
+            "calcium_mg": 29.0,
+            "iron_mg": 2.29,
+            "zinc_mg": 1.41,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 137.0,
+            "potassium_mg": 726.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 58.5
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt lợn ba chỉ",
+          "role": "pork_filling",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng",
+          "role": "shrimp_filling",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb65",
+          "food_name": "Giá đỗ",
+          "role": "bean_sprout",
+          "nutrition_per_100g": {
+            "energy_kcal": 34.0,
+            "protein_g": 2.2,
+            "fat_g": 0.52,
+            "carbs_g": 5.08,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 91.0,
+            "salt_equivalent_g": 0.228,
+            "calcium_mg": 202.0,
+            "iron_mg": 4.8,
+            "zinc_mg": 0.91,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 73.13,
+            "potassium_mg": 148.0,
+            "vitamin_a_mcg": 263.75,
+            "vitamin_c_mg": 27.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 8,
+      "vietfood_class_name_vi": "Bò kho",
+      "vietfood_class_name_en": "Beef stew",
+      "full_name": "Bo kho (Beef stew)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 300,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bò kho bánh mì)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bò sốt vang / bò kho có trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694bc1b51cc4830b4507fa53",
+        "nin_food_name": "Bánh mỳ sốt vang",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 382.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 382.0,
+        "protein_g": 19.3,
+        "fat_g": 12.6,
+        "carbs_g": 41.6,
+        "fiber_g": 1.5,
+        "sugar_g": 0.0,
+        "sodium_mg": 464.6,
+        "salt_equivalent_g": 1.161,
+        "calcium_mg": 58.6,
+        "iron_mg": 5.42,
+        "zinc_mg": 1.72,
+        "cholesterol_mg": 47.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 467.9,
+        "vitamin_a_mcg": 1.6,
+        "vitamin_c_mg": 47.9
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694bc1b51cc4830b4507fa53",
+          "nin_food_name": "Bánh mỳ sốt vang",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 382.0,
+          "match_reason": "Bánh mỳ sốt vang (Bò sốt vang VDD)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948c13a8d1550cdae0bdcd3",
+          "nin_food_name": "Phở bò sốt vang",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 107.333,
+          "match_reason": "Phở bò sốt vang"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 9,
+      "vietfood_class_name_vi": "Bò lá lốt",
+      "vietfood_class_name_en": "Grilled beef wrapped in betel leaves",
+      "full_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa bò lá lốt nướng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món chả lá lốt nướng / cơm suất chả lá lốt có trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69043ff355955b7f120af7b4",
+        "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 221.533
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 221.533,
+        "protein_g": 11.1,
+        "fat_g": 6.867,
+        "carbs_g": 28.867,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 1032.667,
+        "salt_equivalent_g": 2.582,
+        "calcium_mg": 105.867,
+        "iron_mg": 1.967,
+        "zinc_mg": 2.0,
+        "cholesterol_mg": 28.633,
+        "magnesium_mg": 25.333,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 94.7,
+        "vitamin_c_mg": 21.4
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69043ff355955b7f120af7b4",
+          "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 221.533,
+          "match_reason": "Cơm suất chả lá lốt - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_67f4a5fc094eed32f5052352",
+          "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 221.533,
+          "match_reason": "Cơm suất (sườn, đậu, chả lá lốt)"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 10,
+      "vietfood_class_name_vi": "Bông cải",
+      "vietfood_class_name_en": "Cauliflower",
+      "full_name": "Bong cai (Cauliflower)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g phần ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Súp lơ trắng trong CSDL thực phẩm thô NIN (Mã TPTP VN 4030)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb7d",
+        "nin_food_name": "Súp lơ trắng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 34.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 34.0,
+        "protein_g": 2.5,
+        "fat_g": 0.15,
+        "carbs_g": 5.65,
+        "fiber_g": 0.0,
+        "sugar_g": 2.4,
+        "sodium_mg": 20.0,
+        "salt_equivalent_g": 0.05,
+        "calcium_mg": 26.0,
+        "iron_mg": 1.4,
+        "zinc_mg": 0.2,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 22.0,
+        "potassium_mg": 349.0,
+        "vitamin_a_mcg": 0.67,
+        "vitamin_c_mg": 34.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb7d",
+          "nin_food_name": "Súp lơ trắng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 34.0,
+          "match_reason": "Súp lơ trắng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 11,
+      "vietfood_class_name_vi": "Bún",
+      "vietfood_class_name_en": "Rice vermicelli",
+      "full_name": "Bun (Rice vermicelli)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát bún rối tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Bún tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 1012)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad6",
+        "nin_food_name": "Bún, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 116.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 116.0,
+        "protein_g": 1.7,
+        "fat_g": 0.9,
+        "carbs_g": 25.3,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 12.0,
+        "iron_mg": 0.2,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad6",
+          "nin_food_name": "Bún, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.0,
+          "match_reason": "Bún tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 12,
+      "vietfood_class_name_vi": "Bún bò Huế",
+      "vietfood_class_name_en": "Hue beef noodle soup",
+      "full_name": "Bun bo Hue (Hue beef noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún bò Huế tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món nước phức hợp nhiều topping (thịt bắp bò, giò heo, chả cua, huyết, sợi bún); Deep Mode phân rã các topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947cd314776d891e209df93",
+        "nin_food_name": "Bún bò giò heo (Huế)",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 116.444
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 116.444,
+        "protein_g": 6.289,
+        "fat_g": 3.711,
+        "carbs_g": 14.467,
+        "fiber_g": 0.311,
+        "sugar_g": 0.0,
+        "sodium_mg": 152.644,
+        "salt_equivalent_g": 0.382,
+        "calcium_mg": 18.022,
+        "iron_mg": 3.978,
+        "zinc_mg": 0.356,
+        "cholesterol_mg": 10.089,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 52.0,
+        "vitamin_a_mcg": 27.333,
+        "vitamin_c_mg": 13.711
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947cd314776d891e209df93",
+          "nin_food_name": "Bún bò giò heo (Huế)",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.444,
+          "match_reason": "Bún bò giò heo (Huế) - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi sợi to",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bắp bò",
+          "role": "beef_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 48.0,
+            "protein_g": 0.7,
+            "fat_g": 0.2,
+            "carbs_g": 10.8,
+            "fiber_g": 0.0,
+            "sugar_g": 9.8,
+            "sodium_mg": 5.0,
+            "salt_equivalent_g": 0.013,
+            "calcium_mg": 19.0,
+            "iron_mg": 2.3,
+            "zinc_mg": 0.13,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 7.0,
+            "potassium_mg": 88.4,
+            "vitamin_a_mcg": 2.5,
+            "vitamin_c_mg": 4.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Móng giò heo",
+          "role": "pork_knuckle",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc8b",
+          "food_name": "Huyết heo",
+          "role": "blood_pudding",
+          "nutrition_per_100g": {
+            "energy_kcal": 312.0,
+            "protein_g": 65.7,
+            "fat_g": 4.1,
+            "carbs_g": 3.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 26.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 13,
+      "vietfood_class_name_vi": "Bún chả",
+      "vietfood_class_name_en": "Grilled pork with vermicelli",
+      "full_name": "Bun cha (Grilled pork with vermicelli)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Suất bún chả Hà Nội tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món ăn kinh điển phân tách giữa bún đĩa riêng, chả nướng trong bát nước chấm và rau sống; Deep Mode FoodSAM phân rã",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947db28eeaad7e26b0eb372",
+        "nin_food_name": "Bún chả",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 115.111
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 115.111,
+        "protein_g": 5.733,
+        "fat_g": 2.444,
+        "carbs_g": 20.067,
+        "fiber_g": 0.356,
+        "sugar_g": 0.0,
+        "sodium_mg": 258.222,
+        "salt_equivalent_g": 0.646,
+        "calcium_mg": 22.444,
+        "iron_mg": 0.504,
+        "zinc_mg": 0.571,
+        "cholesterol_mg": 14.889,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 84.667,
+        "vitamin_a_mcg": 1.333,
+        "vitamin_c_mg": 0.289
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947db28eeaad7e26b0eb372",
+          "nin_food_name": "Bún chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 115.111,
+          "match_reason": "Bún chả - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_68f85bb315beb6f6430a1595",
+          "nin_food_name": "Bún chả",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 165.889,
+          "match_reason": "Bún chả Hà Nội"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "food_name": "Chả thịt nướng",
+          "role": "grilled_pork",
+          "nutrition_per_100g": {
+            "energy_kcal": 222.0,
+            "protein_g": 27.6,
+            "fat_g": 10.02,
+            "carbs_g": 5.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 83.22,
+            "salt_equivalent_g": 0.20805,
+            "calcium_mg": 11.0,
+            "iron_mg": 1.4,
+            "zinc_mg": 3.6,
+            "cholesterol_mg": 87.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 392.85,
+            "vitamin_a_mcg": 2.9,
+            "vitamin_c_mg": 1.45
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Rau sống kinh giới tía tô",
+          "role": "herbs_vegetable",
+          "nutrition_per_100g": {
+            "energy_kcal": 17.0,
+            "protein_g": 1.5,
+            "fat_g": 0.2,
+            "carbs_g": 2.18,
+            "fiber_g": 0.0,
+            "sugar_g": 1.18,
+            "sodium_mg": 65.0,
+            "salt_equivalent_g": 0.163,
+            "calcium_mg": 105.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 0.19,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 19.0,
+            "potassium_mg": 252.0,
+            "vitamin_a_mcg": 223.0,
+            "vitamin_c_mg": 45.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 14,
+      "vietfood_class_name_vi": "Bún đậu",
+      "vietfood_class_name_en": "Vermicelli with tofu",
+      "full_name": "Bun dau (Vermicelli with tofu)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Mẹt bún đậu thập cẩm)",
+      "mapping_status": "verified",
+      "decision_rationale": "Mẹt bún đậu phân tách rõ rệt từng thành phần (bún lá, đậu rán, thịt luộc, chả cốm, mắm tôm); bài toán thực nghiệm cốt lõi của FoodSAM",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947df802729431e960491d3",
+        "nin_food_name": "Bún đậu mắm tôm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 155.556
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 155.556,
+        "protein_g": 10.556,
+        "fat_g": 6.044,
+        "carbs_g": 14.733,
+        "fiber_g": 0.6,
+        "sugar_g": 0.0,
+        "sodium_mg": 245.778,
+        "salt_equivalent_g": 0.614,
+        "calcium_mg": 94.889,
+        "iron_mg": 1.902,
+        "zinc_mg": 0.653,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 98.667,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.022
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947df802729431e960491d3",
+          "nin_food_name": "Bún đậu mắm tôm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 155.556,
+          "match_reason": "Bún đậu mắm tôm - Suất tiêu chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6947e033baf7aa40ef0050f4",
+          "nin_food_name": "Bún đậu mắm tôm thịt chân giò",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 173.111,
+          "match_reason": "Bún đậu mắm tôm thịt chân giò"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún lá",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_693b81fc273f8370c302e6cb",
+          "food_name": "Đậu phụ rán",
+          "role": "fried_tofu",
+          "nutrition_per_100g": {
+            "energy_kcal": 69.5,
+            "protein_g": 4.35,
+            "fat_g": 5.65,
+            "carbs_g": 0.3,
+            "fiber_g": 0.15,
+            "sugar_g": 0.0,
+            "sodium_mg": 3.0,
+            "salt_equivalent_g": 0.007,
+            "calcium_mg": 9.5,
+            "iron_mg": 0.88,
+            "zinc_mg": 0.32,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 48.5,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt ba chỉ luộc",
+          "role": "boiled_pork",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbde",
+          "food_name": "Chả lụa / Chả cốm",
+          "role": "pork_patty",
+          "nutrition_per_100g": {
+            "energy_kcal": 897.0,
+            "protein_g": 0.0,
+            "fat_g": 99.7,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 15,
+      "vietfood_class_name_vi": "Bún mắm",
+      "vietfood_class_name_en": "Fermented fish noodle soup",
+      "full_name": "Bun mam (Fermented fish noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún mắm Nam Bộ)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bún mắm miền Tây nhiều topping nổi (thịt quay, tôm, mực, cá lóc); Deep Mode phân rã các topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68786acb1767a9925a0e7d78",
+        "nin_food_name": "Bún mắm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 104.844
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 104.844,
+        "protein_g": 5.0,
+        "fat_g": 3.578,
+        "carbs_g": 13.178,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 189.044,
+        "salt_equivalent_g": 0.473,
+        "calcium_mg": 26.533,
+        "iron_mg": 0.489,
+        "zinc_mg": 0.244,
+        "cholesterol_mg": 28.022,
+        "magnesium_mg": 7.311,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 8.956,
+        "vitamin_c_mg": 2.978
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68786acb1767a9925a0e7d78",
+          "nin_food_name": "Bún mắm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 104.844,
+          "match_reason": "Bún mắm - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_67f49e441cc4d415a20ddb27",
+          "nin_food_name": "Bún mắm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 104.844,
+          "match_reason": "Bún mắm miền Tây"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+          "food_name": "Thịt lợn quay",
+          "role": "roast_pork",
+          "nutrition_per_100g": {
+            "energy_kcal": 529.9,
+            "protein_g": 81.1,
+            "fat_g": 21.3,
+            "carbs_g": 3.4,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 801.9,
+            "salt_equivalent_g": 2.00475,
+            "calcium_mg": 31.0,
+            "iron_mg": 4.1,
+            "zinc_mg": 9.0,
+            "cholesterol_mg": 267.6,
+            "magnesium_mg": 112.3,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 8.2,
+            "vitamin_c_mg": 5.3
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng / sú",
+          "role": "shrimp_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc3b",
+          "food_name": "Mực tươi",
+          "role": "squid_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 90.0,
+            "protein_g": 20.0,
+            "fat_g": 1.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 58.0,
+            "salt_equivalent_g": 0.145,
+            "calcium_mg": 18.0,
+            "iron_mg": 1.5,
+            "zinc_mg": 1.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 20.0,
+            "potassium_mg": 285.0,
+            "vitamin_a_mcg": 15.0,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 16,
+      "vietfood_class_name_vi": "Bún riêu",
+      "vietfood_class_name_en": "Crab noodle soup",
+      "full_name": "Bun rieu (Crab noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún riêu cua đậu)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bún có riêu cua, đậu rán, cà chua, huyết phân tách rõ; Deep Mode phân rã topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947e5ff511f8f0de60d7164",
+        "nin_food_name": "Bún riêu cua",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 61.111
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 61.111,
+        "protein_g": 1.311,
+        "fat_g": 0.8,
+        "carbs_g": 12.178,
+        "fiber_g": 0.244,
+        "sugar_g": 0.0,
+        "sodium_mg": 483.556,
+        "salt_equivalent_g": 1.209,
+        "calcium_mg": 14.0,
+        "iron_mg": 0.182,
+        "zinc_mg": 0.009,
+        "cholesterol_mg": 0.667,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 13.356,
+        "vitamin_a_mcg": 46.667,
+        "vitamin_c_mg": 13.333
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947e5ff511f8f0de60d7164",
+          "nin_food_name": "Bún riêu cua",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 61.111,
+          "match_reason": "Bún riêu cua - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_690c3ec70ec1a7e8e10041b2",
+          "nin_food_name": "Bún riêu",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 83.625,
+          "match_reason": "Bún riêu"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc35",
+          "food_name": "Riêu cua đồng",
+          "role": "crab_paste",
+          "nutrition_per_100g": {
+            "energy_kcal": 369.0,
+            "protein_g": 46.6,
+            "fat_g": 20.3,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 1472.0,
+            "salt_equivalent_g": 3.68,
+            "calcium_mg": 28.5,
+            "iron_mg": 0.3,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 64.0,
+            "potassium_mg": 371.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_693b81fc273f8370c302e6cb",
+          "food_name": "Đậu phụ rán",
+          "role": "fried_tofu",
+          "nutrition_per_100g": {
+            "energy_kcal": 69.5,
+            "protein_g": 4.35,
+            "fat_g": 5.65,
+            "carbs_g": 0.3,
+            "fiber_g": 0.15,
+            "sugar_g": 0.0,
+            "sodium_mg": 3.0,
+            "salt_equivalent_g": 0.007,
+            "calcium_mg": 9.5,
+            "iron_mg": 0.88,
+            "zinc_mg": 0.32,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 48.5,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua",
+          "role": "tomato",
+          "nutrition_per_100g": {
+            "energy_kcal": 23.0,
+            "protein_g": 1.5,
+            "fat_g": 0.0,
+            "carbs_g": 4.2,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 17,
+      "vietfood_class_name_vi": "Cá",
+      "vietfood_class_name_en": "Fish",
+      "full_name": "Ca (Fish)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cá tươi ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cá nước ngọt / cá chép trong CSDL thực phẩm thô NIN (Mã TPTP VN 5035)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc54",
+        "nin_food_name": "Cá chép, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 96.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 96.0,
+        "protein_g": 16.0,
+        "fat_g": 3.6,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 49.0,
+        "salt_equivalent_g": 0.122,
+        "calcium_mg": 17.0,
+        "iron_mg": 0.9,
+        "zinc_mg": 1.48,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 30.0,
+        "potassium_mg": 397.0,
+        "vitamin_a_mcg": 8.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc54",
+          "nin_food_name": "Cá chép, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 96.0,
+          "match_reason": "Cá chép, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 18,
+      "vietfood_class_name_vi": "Cà chua",
+      "vietfood_class_name_en": "Tomato",
+      "full_name": "Ca chua (Tomato)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cà chua tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cà chua trong CSDL thực phẩm thô NIN (Mã TPTP VN 4004)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1f",
+        "nin_food_name": "Quả cà chua, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 24.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 24.0,
+        "protein_g": 0.6,
+        "fat_g": 0.23,
+        "carbs_g": 4.77,
+        "fiber_g": 0.0,
+        "sugar_g": 2.63,
+        "sodium_mg": 12.2,
+        "salt_equivalent_g": 0.03,
+        "calcium_mg": 12.0,
+        "iron_mg": 1.4,
+        "zinc_mg": 0.74,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 15.0,
+        "potassium_mg": 275.2,
+        "vitamin_a_mcg": 58.67,
+        "vitamin_c_mg": 40.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1f",
+          "nin_food_name": "Quả cà chua, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 24.0,
+          "match_reason": "Quả cà chua, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 19,
+      "vietfood_class_name_vi": "Cà pháo",
+      "vietfood_class_name_en": "Pickled eggplant",
+      "full_name": "Ca phao (Pickled eggplant)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cà pháo muối)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cà pháo muối trong CSDL thực phẩm thô NIN (Mã TPTP VN 4016)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8b",
+        "nin_food_name": "Cà pháo, muối nén",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 20.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 20.0,
+        "protein_g": 1.3,
+        "fat_g": 0.0,
+        "carbs_g": 3.7,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 15.0,
+        "iron_mg": 0.8,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 3.33,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8b",
+          "nin_food_name": "Cà pháo, muối nén",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 20.0,
+          "match_reason": "Cà pháo, muối nén - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 20,
+      "vietfood_class_name_vi": "Cà rốt",
+      "vietfood_class_name_en": "Carrot",
+      "full_name": "Ca rot (Carrot)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g cà rốt tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cà rốt trong CSDL thực phẩm thô NIN (Mã TPTP VN 4006)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb21",
+        "nin_food_name": "Củ cà rốt, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 44.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 44.0,
+        "protein_g": 1.5,
+        "fat_g": 0.17,
+        "carbs_g": 9.03,
+        "fiber_g": 0.0,
+        "sugar_g": 4.54,
+        "sodium_mg": 52.0,
+        "salt_equivalent_g": 0.13,
+        "calcium_mg": 43.0,
+        "iron_mg": 0.8,
+        "zinc_mg": 1.11,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 12.0,
+        "potassium_mg": 265.5,
+        "vitamin_a_mcg": 681.46,
+        "vitamin_c_mg": 3.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb21",
+          "nin_food_name": "Củ cà rốt, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 44.0,
+          "match_reason": "Củ cà rốt, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 21,
+      "vietfood_class_name_vi": "Canh",
+      "vietfood_class_name_en": "Soup",
+      "full_name": "Canh (Soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát canh rau thịt nạc tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Canh rau ngót nấu thịt nạc đại diện cho canh gia đình Việt trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a43e057dc35b55101fbf2",
+        "nin_food_name": "Canh rau ngót nấu thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 57.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 57.0,
+        "protein_g": 3.0,
+        "fat_g": 4.65,
+        "carbs_g": 0.85,
+        "fiber_g": 0.65,
+        "sugar_g": 0.0,
+        "sodium_mg": 206.5,
+        "salt_equivalent_g": 0.516,
+        "calcium_mg": 43.9,
+        "iron_mg": 0.85,
+        "zinc_mg": 0.45,
+        "cholesterol_mg": 6.8,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 1428.5,
+        "vitamin_a_mcg": 1.0,
+        "vitamin_c_mg": 93.5
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a43e057dc35b55101fbf2",
+          "nin_food_name": "Canh rau ngót nấu thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 114.0,
+          "match_reason": "Canh rau ngót nấu thịt - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 22,
+      "vietfood_class_name_vi": "Chả",
+      "vietfood_class_name_en": "Vietnamese pork roll",
+      "full_name": "Cha (Vietnamese pork roll)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Khoanh giò lụa/chả quế)",
+      "mapping_status": "verified",
+      "decision_rationale": "Giò lụa trong CSDL thực phẩm thô NIN (Mã TPTP VN 5092)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc30",
+        "nin_food_name": "Giò lụa, chín",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 205.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 205.0,
+        "protein_g": 16.9,
+        "fat_g": 15.0,
+        "carbs_g": 1.8,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 0.0,
+        "iron_mg": 0.0,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc30",
+          "nin_food_name": "Giò lụa, chín",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 205.0,
+          "match_reason": "Giò lụa, chín - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 23,
+      "vietfood_class_name_vi": "Chả giò",
+      "vietfood_class_name_en": "Spring rolls",
+      "full_name": "Cha gio (Spring rolls)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 120,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nem rán 3-4 cái)",
+      "mapping_status": "verified",
+      "decision_rationale": "Nem rán nhân thịt / chả giò chiên trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b878a51af016fd5080c83",
+        "nin_food_name": "Nem rán / Chả giò chiên",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 85.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 85.0,
+        "protein_g": 6.5,
+        "fat_g": 6.25,
+        "carbs_g": 69.25,
+        "fiber_g": 0.75,
+        "sugar_g": 0.0,
+        "sodium_mg": 15.0,
+        "salt_equivalent_g": 0.037,
+        "calcium_mg": 35.0,
+        "iron_mg": 1.492,
+        "zinc_mg": 0.833,
+        "cholesterol_mg": 24.167,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 73.333,
+        "vitamin_a_mcg": 5.833,
+        "vitamin_c_mg": 5.833
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b878a51af016fd5080c83",
+          "nin_food_name": "Nem rán / Chả giò chiên",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 102.0,
+          "match_reason": "Nem rán / Chả giò chiên - Công thức VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6937d7c1e8ba4488430222d7",
+          "nin_food_name": "Nem rán",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 336.7,
+          "match_reason": "Nem rán"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 24,
+      "vietfood_class_name_vi": "Chanh",
+      "vietfood_class_name_en": "Lime",
+      "full_name": "Chanh (Lime)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Quả chanh tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Quả chanh trong CSDL thực phẩm thô NIN (Mã TPTP VN 4140)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cba4",
+        "nin_food_name": "Chanh, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 29.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 29.0,
+        "protein_g": 0.9,
+        "fat_g": 0.14,
+        "carbs_g": 5.96,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 3.0,
+        "salt_equivalent_g": 0.007,
+        "calcium_mg": 40.0,
+        "iron_mg": 0.6,
+        "zinc_mg": 0.1,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 12.0,
+        "potassium_mg": 145.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 77.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cba4",
+          "nin_food_name": "Chanh, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 29.0,
+          "match_reason": "Chanh, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 25,
+      "vietfood_class_name_vi": "Cơm",
+      "vietfood_class_name_en": "Rice",
+      "full_name": "Com (Rice)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát cơm tẻ nấu chín)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cơm tẻ nấu chín trong CSDL thực phẩm thô NIN (Mã TPTP VN 1001)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f8aadc094e90b19f042a82",
+        "nin_food_name": "Cơm tẻ miệng bát",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 86.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 86.0,
+        "protein_g": 1.9,
+        "fat_g": 0.267,
+        "carbs_g": 19.067,
+        "fiber_g": 0.1,
+        "sugar_g": 0.0,
+        "sodium_mg": 1.333,
+        "salt_equivalent_g": 0.003,
+        "calcium_mg": 7.667,
+        "iron_mg": 0.327,
+        "zinc_mg": 0.377,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 60.333,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f8aadc094e90b19f042a82",
+          "nin_food_name": "Cơm tẻ miệng bát",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 86.0,
+          "match_reason": "Cơm tẻ miệng bát - CSDL Món ăn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 26,
+      "vietfood_class_name_vi": "Cơm tấm",
+      "vietfood_class_name_en": "Broken rice",
+      "full_name": "Com tam (Broken rice)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm tấm sườn bì chả)",
+      "mapping_status": "verified",
+      "decision_rationale": "Đĩa cơm tấm sườn bì chả gồm cơm tấm, sườn nướng, bì heo, chả trứng; bài toán thực nghiệm cốt lõi của FoodSAM",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a2a2959d546807301b0c4",
+        "nin_food_name": "Cơm sườn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 205.333
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 205.333,
+        "protein_g": 8.167,
+        "fat_g": 5.4,
+        "carbs_g": 31.0,
+        "fiber_g": 0.267,
+        "sugar_g": 0.0,
+        "sodium_mg": 21.0,
+        "salt_equivalent_g": 0.052,
+        "calcium_mg": 17.5,
+        "iron_mg": 0.863,
+        "zinc_mg": 1.663,
+        "cholesterol_mg": 18.417,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 183.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 15.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a2a2959d546807301b0c4",
+          "nin_food_name": "Cơm sườn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 205.333,
+          "match_reason": "Cơm sườn - Đĩa cơm văn phòng VDD (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb00",
+          "food_name": "Cơm tấm (gạo tấm nấu)",
+          "role": "rice_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 341.0,
+            "protein_g": 23.2,
+            "fat_g": 2.1,
+            "carbs_g": 57.4,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 160.0,
+            "iron_mg": 6.8,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.83,
+            "vitamin_c_mg": 3.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "food_name": "Sườn heo nướng",
+          "role": "grilled_pork_chop",
+          "nutrition_per_100g": {
+            "energy_kcal": 222.0,
+            "protein_g": 27.6,
+            "fat_g": 10.02,
+            "carbs_g": 5.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 83.22,
+            "salt_equivalent_g": 0.20805,
+            "calcium_mg": 11.0,
+            "iron_mg": 1.4,
+            "zinc_mg": 3.6,
+            "cholesterol_mg": 87.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 392.85,
+            "vitamin_a_mcg": 2.9,
+            "vitamin_c_mg": 1.45
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Bì lợn",
+          "role": "shredded_pork_skin",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba3",
+          "food_name": "Dưa chuột / Cà chua thái lát",
+          "role": "vegetable_garnish",
+          "nutrition_per_100g": {
+            "energy_kcal": 43.0,
+            "protein_g": 0.9,
+            "fat_g": 0.06,
+            "carbs_g": 9.74,
+            "fiber_g": 0.0,
+            "sugar_g": 9.35,
+            "sodium_mg": 3.5,
+            "salt_equivalent_g": 0.009,
+            "calcium_mg": 34.0,
+            "iron_mg": 0.4,
+            "zinc_mg": 0.22,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 10.0,
+            "potassium_mg": 108.1,
+            "vitamin_a_mcg": 7.75,
+            "vitamin_c_mg": 40.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 27,
+      "vietfood_class_name_vi": "Con người",
+      "vietfood_class_name_en": "Human",
+      "full_name": "Con nguoi (Human)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 0,
+      "serving_size_source": "Không áp dụng (Non-food class)",
+      "mapping_status": "unmapped_fallback",
+      "decision_rationale": "Lớp phi thực phẩm (Non-food background class), gán giá trị dinh dưỡng 0",
+      "primary_match": null,
+      "primary_nutrition_per_100g": null,
+      "nin_matches": [],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 28,
+      "vietfood_class_name_vi": "Củ kiệu",
+      "vietfood_class_name_en": "Pickled scallion head",
+      "full_name": "Cu kieu (Pickled scallion head)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 30,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa củ kiệu ngâm chua ngọt)",
+      "mapping_status": "verified",
+      "decision_rationale": "Củ kiệu muối trong CSDL thực phẩm thô NIN (Mã TPTP VN 4022)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb93",
+        "nin_food_name": "Kiệu, muối",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 29.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 29.0,
+        "protein_g": 1.3,
+        "fat_g": 0.0,
+        "carbs_g": 5.9,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 812.0,
+        "salt_equivalent_g": 2.03,
+        "calcium_mg": 50.0,
+        "iron_mg": 1.2,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 102.0,
+        "potassium_mg": 120.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 12.4
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb93",
+          "nin_food_name": "Kiệu, muối",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 29.0,
+          "match_reason": "Kiệu, muối - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 29,
+      "vietfood_class_name_vi": "Cua",
+      "vietfood_class_name_en": "Crab",
+      "full_name": "Cua (Crab)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt cua ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Cua biển / cua đồng trong CSDL thực phẩm thô NIN (Mã TPTP VN 5056)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc73",
+        "nin_food_name": "Cua đồng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 87.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 87.0,
+        "protein_g": 12.3,
+        "fat_g": 3.3,
+        "carbs_g": 2.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 1484.0,
+        "salt_equivalent_g": 3.71,
+        "calcium_mg": 826.0,
+        "iron_mg": 1.4,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 154.0,
+        "potassium_mg": 27.0,
+        "vitamin_a_mcg": 2.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc73",
+          "nin_food_name": "Cua đồng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 87.0,
+          "match_reason": "Cua đồng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 30,
+      "vietfood_class_name_vi": "Đậu hũ",
+      "vietfood_class_name_en": "Tofu",
+      "full_name": "Dau hu (Tofu)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bìa đậu phụ trắng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Đậu phụ trắng trong CSDL thực phẩm thô NIN (Mã TPTP VN 3005)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb11",
+        "nin_food_name": "Đậu phụ, sống",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 97.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 97.0,
+        "protein_g": 10.9,
+        "fat_g": 5.4,
+        "carbs_g": 1.1,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 7.0,
+        "salt_equivalent_g": 0.018,
+        "calcium_mg": 24.0,
+        "iron_mg": 2.2,
+        "zinc_mg": 0.8,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 30.0,
+        "potassium_mg": 121.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.1
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb11",
+          "nin_food_name": "Đậu phụ, sống",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 97.0,
+          "match_reason": "Đậu phụ, sống - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 31,
+      "vietfood_class_name_vi": "Dưa chua",
+      "vietfood_class_name_en": "Pickled vegetables",
+      "full_name": "Dua chua (Pickled vegetables)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 50,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa dưa cải chua)",
+      "mapping_status": "verified",
+      "decision_rationale": "Dưa cải muối chua trong CSDL thực phẩm thô NIN (Mã TPTP VN 4021)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8e",
+        "nin_food_name": "Dưa cải bẹ",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 25.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 25.0,
+        "protein_g": 1.8,
+        "fat_g": 0.0,
+        "carbs_g": 4.5,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 100.0,
+        "iron_mg": 3.0,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 62.08,
+        "vitamin_c_mg": 3.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8e",
+          "nin_food_name": "Dưa cải bẹ",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 25.0,
+          "match_reason": "Dưa cải bẹ (muối dưa) - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 32,
+      "vietfood_class_name_vi": "Dưa leo",
+      "vietfood_class_name_en": "Cucumber",
+      "full_name": "Dua leo (Cucumber)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g dưa leo tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Dưa chuột tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 4026)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb35",
+        "nin_food_name": "Dưa chuột, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 18.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 18.0,
+        "protein_g": 0.8,
+        "fat_g": 0.09,
+        "carbs_g": 3.61,
+        "fiber_g": 0.0,
+        "sugar_g": 1.67,
+        "sodium_mg": 13.3,
+        "salt_equivalent_g": 0.033,
+        "calcium_mg": 23.0,
+        "iron_mg": 1.0,
+        "zinc_mg": 0.18,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 15.0,
+        "potassium_mg": 168.8,
+        "vitamin_a_mcg": 11.5,
+        "vitamin_c_mg": 5.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb35",
+          "nin_food_name": "Dưa chuột, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 18.0,
+          "match_reason": "Dưa chuột, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 33,
+      "vietfood_class_name_vi": "Gỏi cuốn",
+      "vietfood_class_name_en": "Fresh spring rolls",
+      "full_name": "Goi cuon (Fresh spring rolls)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 180,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa 3 cuốn gỏi cuốn tôm thịt)",
+      "mapping_status": "verified",
+      "decision_rationale": "Gỏi cuốn gồm vỏ bánh tráng cuốn tôm, thịt luộc, bún và rau thơm tách biệt; Deep Mode phân rã topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+        "nin_food_name": "Bánh tráng trộn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 340.533
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 340.533,
+        "protein_g": 17.667,
+        "fat_g": 9.067,
+        "carbs_g": 47.067,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 271.533,
+        "salt_equivalent_g": 0.679,
+        "calcium_mg": 114.6,
+        "iron_mg": 2.333,
+        "zinc_mg": 0.8,
+        "cholesterol_mg": 235.2,
+        "magnesium_mg": 32.467,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 94.067,
+        "vitamin_c_mg": 9.2
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937d0e889b64dde6009d507",
+          "nin_food_name": "Bánh tráng trộn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 340.533,
+          "match_reason": "Món cuốn bánh tráng tổng hợp (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb1d",
+          "food_name": "Bánh tráng",
+          "role": "rice_paper_wrap",
+          "nutrition_per_100g": {
+            "energy_kcal": 29.0,
+            "protein_g": 0.3,
+            "fat_g": 0.07,
+            "carbs_g": 6.83,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 8.4,
+            "salt_equivalent_g": 0.021,
+            "calcium_mg": 24.0,
+            "iron_mg": 0.5,
+            "zinc_mg": 0.1,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 10.0,
+            "potassium_mg": 348.5,
+            "vitamin_a_mcg": 236.83,
+            "vitamin_c_mg": 9.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm đồng / sú hấp",
+          "role": "shrimp_filling",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt ba chỉ luộc",
+          "role": "pork_filling",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Bún tươi",
+          "role": "vermicelli_filling",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 34,
+      "vietfood_class_name_vi": "Hamburger",
+      "vietfood_class_name_en": "Hamburger",
+      "full_name": "Hamburger",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 & USDA FDC (Cái bánh hamburger)",
+      "mapping_status": "verified",
+      "decision_rationale": "Hamburger lợn / bánh mỳ kẹp thịt nướng trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68a54029f57bee55470387d2",
+        "nin_food_name": "Hamburger lợn",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 188.333
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 188.333,
+        "protein_g": 12.267,
+        "fat_g": 6.6,
+        "carbs_g": 20.067,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 258.133,
+        "salt_equivalent_g": 0.645,
+        "calcium_mg": 140.6,
+        "iron_mg": 1.667,
+        "zinc_mg": 1.333,
+        "cholesterol_mg": 10.533,
+        "magnesium_mg": 12.0,
+        "potassium_mg": 60.2,
+        "vitamin_a_mcg": 28.8,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68a54029f57bee55470387d2",
+          "nin_food_name": "Hamburger lợn",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 188.333,
+          "match_reason": "Hamburger lợn - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_68a53fa2b7b91f09400109d2",
+          "nin_food_name": "Hamburger Gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 301.133,
+          "match_reason": "Hamburger gà"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 35,
+      "vietfood_class_name_vi": "Heo quay",
+      "vietfood_class_name_en": "Roast pork",
+      "full_name": "Heo quay (Roast pork)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt heo quay da giòn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món thịt lợn quay trong CSDL Món ăn VDD (phương ngữ Bắc: Thịt lợn quay)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+        "nin_food_name": "Thịt lợn quay",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 353.267
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 353.267,
+        "protein_g": 54.067,
+        "fat_g": 14.2,
+        "carbs_g": 2.267,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 534.6,
+        "salt_equivalent_g": 1.337,
+        "calcium_mg": 20.667,
+        "iron_mg": 2.733,
+        "zinc_mg": 6.0,
+        "cholesterol_mg": 178.4,
+        "magnesium_mg": 74.867,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 5.467,
+        "vitamin_c_mg": 3.533
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6937da5ee8ba4488430222d8",
+          "nin_food_name": "Thịt lợn quay",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 529.9,
+          "match_reason": "Thịt lợn quay da giòn - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 36,
+      "vietfood_class_name_vi": "Hủ tiếu",
+      "vietfood_class_name_en": "Clear rice noodle soup",
+      "full_name": "Hu tieu (Clear rice noodle soup)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô hủ tiếu Nam Vang)",
+      "mapping_status": "verified",
+      "decision_rationale": "Tô hủ tiếu Nam Vang gồm sợi hủ tiếu, tôm, thịt xá xíu, gan, trứng cút; Deep Mode phân rã topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f9a0c0a4c9392ea30c4f32",
+        "nin_food_name": "Hủ tiếu Nam vang nước",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 107.244
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 107.244,
+        "protein_g": 7.0,
+        "fat_g": 3.778,
+        "carbs_g": 11.311,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 354.667,
+        "salt_equivalent_g": 0.887,
+        "calcium_mg": 38.956,
+        "iron_mg": 1.511,
+        "zinc_mg": 0.867,
+        "cholesterol_mg": 72.556,
+        "magnesium_mg": 11.2,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 240.133,
+        "vitamin_c_mg": 12.644
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f9a0c0a4c9392ea30c4f32",
+          "nin_food_name": "Hủ tiếu Nam vang nước",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 107.244,
+          "match_reason": "Hủ tiếu Nam Vang nước - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948144291fda9d8b40a0f69",
+          "nin_food_name": "Hủ tiếu nước",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 100.889,
+          "match_reason": "Hủ tiếu nước"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb0c",
+          "food_name": "Sợi hủ tiếu / bún",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 582.0,
+            "protein_g": 20.1,
+            "fat_g": 46.4,
+            "carbs_g": 21.1,
+            "fiber_g": 0.0,
+            "sugar_g": 0.3,
+            "sodium_mg": 11.0,
+            "salt_equivalent_g": 0.028,
+            "calcium_mg": 975.0,
+            "iron_mg": 14.55,
+            "zinc_mg": 7.75,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 351.0,
+            "potassium_mg": 468.0,
+            "vitamin_a_mcg": 1.25,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt xá xíu / nạc heo",
+          "role": "pork_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm sú hấp",
+          "role": "shrimp_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcf",
+          "food_name": "Gan lợn luộc",
+          "role": "pork_liver",
+          "nutrition_per_100g": {
+            "energy_kcal": 42.0,
+            "protein_g": 0.9,
+            "fat_g": 0.0,
+            "carbs_g": 9.6,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 124.0,
+            "iron_mg": 0.3,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 8.33,
+            "vitamin_c_mg": 43.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 37,
+      "vietfood_class_name_vi": "Khổ qua thịt",
+      "vietfood_class_name_en": "Stuffed bitter melon soup",
+      "full_name": "Kho qua thit (Stuffed bitter melon soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô canh khổ qua nhồi thịt)",
+      "mapping_status": "verified",
+      "decision_rationale": "Canh mướp đắng (khổ qua) nhồi thịt trong CSDL Món ăn VDD (phương ngữ Bắc: Mướp đắng nhồi thịt)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a40f6bb10bc44d2078612",
+        "nin_food_name": "Canh khổ qua (mướp đắng) nhồi thịt",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 50.8
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 50.8,
+        "protein_g": 3.0,
+        "fat_g": 3.08,
+        "carbs_g": 2.84,
+        "fiber_g": 0.68,
+        "sugar_g": 0.0,
+        "sodium_mg": 167.84,
+        "salt_equivalent_g": 0.42,
+        "calcium_mg": 19.24,
+        "iron_mg": 1.64,
+        "zinc_mg": 0.8,
+        "cholesterol_mg": 9.52,
+        "magnesium_mg": 198.6,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a40f6bb10bc44d2078612",
+          "nin_food_name": "Canh khổ qua (mướp đắng) nhồi thịt",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 127.0,
+          "match_reason": "Canh mướp đắng nhồi thịt - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 38,
+      "vietfood_class_name_vi": "Khoai tây chiên",
+      "vietfood_class_name_en": "French fries",
+      "full_name": "Khoai tay chien (French fries)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa khoai tây chiên giòn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Khoai tây chiên giòn trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b857f273f8370c302e6ce",
+        "nin_food_name": "Khoai tây chiên",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 466.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 466.0,
+        "protein_g": 1.6,
+        "fat_g": 10.0,
+        "carbs_g": 17.0,
+        "fiber_g": 0.8,
+        "sugar_g": 0.0,
+        "sodium_mg": 387.5,
+        "salt_equivalent_g": 0.969,
+        "calcium_mg": 9.0,
+        "iron_mg": 1.0,
+        "zinc_mg": 0.24,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 318.05,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 8.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b857f273f8370c302e6ce",
+          "nin_food_name": "Khoai tây chiên",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 466.0,
+          "match_reason": "Khoai tây chiên giòn - Bản ghi chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 39,
+      "vietfood_class_name_vi": "Lẩu",
+      "vietfood_class_name_en": "Hotpot",
+      "full_name": "Lau (Hotpot)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Nồi lẩu thập cẩm chia suất)",
+      "mapping_status": "verified",
+      "decision_rationale": "Nồi lẩu gồm nước dùng và các đĩa nhúng (thịt bò, nấm, rau, mì); Deep Mode phân rã các đĩa nhúng",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948cd812eb544b04a0add76",
+        "nin_food_name": "Lẩu thập cẩm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 578.889
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 578.889,
+        "protein_g": 43.822,
+        "fat_g": 26.578,
+        "carbs_g": 43.111,
+        "fiber_g": 2.289,
+        "sugar_g": 0.0,
+        "sodium_mg": 1414.444,
+        "salt_equivalent_g": 3.536,
+        "calcium_mg": 205.556,
+        "iron_mg": 8.047,
+        "zinc_mg": 2.669,
+        "cholesterol_mg": 665.556,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 709.111,
+        "vitamin_a_mcg": 57.667,
+        "vitamin_c_mg": 41.111
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948cd812eb544b04a0add76",
+          "nin_food_name": "Lẩu thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 578.889,
+          "match_reason": "Lẩu thập cẩm - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6948ccb757030147bf026fb3",
+          "nin_food_name": "Lẩu hải sản",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 148.0,
+          "match_reason": "Lẩu hải sản"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bò nhúng",
+          "role": "beef_slice",
+          "nutrition_per_100g": {
+            "energy_kcal": 48.0,
+            "protein_g": 0.7,
+            "fat_g": 0.2,
+            "carbs_g": 10.8,
+            "fiber_g": 0.0,
+            "sugar_g": 9.8,
+            "sodium_mg": 5.0,
+            "salt_equivalent_g": 0.013,
+            "calcium_mg": 19.0,
+            "iron_mg": 2.3,
+            "zinc_mg": 0.13,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 7.0,
+            "potassium_mg": 88.4,
+            "vitamin_a_mcg": 2.5,
+            "vitamin_c_mg": 4.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm / Hải sản",
+          "role": "seafood",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Rau cải nhúng lẩu",
+          "role": "greens",
+          "nutrition_per_100g": {
+            "energy_kcal": 17.0,
+            "protein_g": 1.5,
+            "fat_g": 0.2,
+            "carbs_g": 2.18,
+            "fiber_g": 0.0,
+            "sugar_g": 1.18,
+            "sodium_mg": 65.0,
+            "salt_equivalent_g": 0.163,
+            "calcium_mg": 105.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 0.19,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 19.0,
+            "potassium_mg": 252.0,
+            "vitamin_a_mcg": 223.0,
+            "vitamin_c_mg": 45.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb85",
+          "food_name": "Nấm rơm tươi",
+          "role": "mushroom",
+          "nutrition_per_100g": {
+            "energy_kcal": 28.0,
+            "protein_g": 2.2,
+            "fat_g": 0.0,
+            "carbs_g": 4.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 11.95,
+            "salt_equivalent_g": 0.03,
+            "calcium_mg": 112.0,
+            "iron_mg": 4.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 49.56,
+            "potassium_mg": 423.98,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 40,
+      "vietfood_class_name_vi": "Lòng heo",
+      "vietfood_class_name_en": "Pork offal",
+      "full_name": "Long heo (Pork offal)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa lòng lợn luộc)",
+      "mapping_status": "verified",
+      "decision_rationale": "Lòng lợn luộc trong CSDL Món ăn VDD (phương ngữ Bắc: Lòng lợn luộc)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a83606b1977ca8d0de216",
+        "nin_food_name": "Lòng lợn luộc",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 250.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 250.0,
+        "protein_g": 30.8,
+        "fat_g": 13.6,
+        "carbs_g": 1.2,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 41.3,
+        "salt_equivalent_g": 0.103,
+        "calcium_mg": 41.0,
+        "iron_mg": 2.5,
+        "zinc_mg": 1.2,
+        "cholesterol_mg": 1197.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 98.7,
+        "vitamin_a_mcg": 6008.0,
+        "vitamin_c_mg": 19.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a83606b1977ca8d0de216",
+          "nin_food_name": "Lòng lợn luộc",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 250.0,
+          "match_reason": "Lòng lợn luộc - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 41,
+      "vietfood_class_name_vi": "Mì",
+      "vietfood_class_name_en": "Egg noodles",
+      "full_name": "Mi (Egg noodles)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g mì sợi luộc)",
+      "mapping_status": "verified",
+      "decision_rationale": "Mỳ sợi khô/nấu chín trong CSDL thực phẩm thô NIN (Mã TPTP VN 1019)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad8",
+        "nin_food_name": "Mỳ sợi, khô",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 350.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 350.0,
+        "protein_g": 11.0,
+        "fat_g": 0.9,
+        "carbs_g": 74.5,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 34.0,
+        "iron_mg": 1.5,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cad8",
+          "nin_food_name": "Mỳ sợi, khô",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 350.0,
+          "match_reason": "Mỳ sợi, khô - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 42,
+      "vietfood_class_name_vi": "Mực",
+      "vietfood_class_name_en": "Squid",
+      "full_name": "Muc (Squid)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g mực tươi ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Mực tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 5064)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc79",
+        "nin_food_name": "Mực, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 73.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 73.0,
+        "protein_g": 16.3,
+        "fat_g": 0.9,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 44.0,
+        "salt_equivalent_g": 0.11,
+        "calcium_mg": 14.0,
+        "iron_mg": 0.6,
+        "zinc_mg": 0.7,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 33.0,
+        "potassium_mg": 273.0,
+        "vitamin_a_mcg": 10.0,
+        "vitamin_c_mg": 4.7
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc79",
+          "nin_food_name": "Mực, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 73.0,
+          "match_reason": "Mực, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 43,
+      "vietfood_class_name_vi": "Nấm",
+      "vietfood_class_name_en": "Mushroom",
+      "full_name": "Nam (Mushroom)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g nấm tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Nấm rơm tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 3088)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
+        "nin_food_name": "Nấm hương, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 51.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 51.0,
+        "protein_g": 5.5,
+        "fat_g": 0.5,
+        "carbs_g": 6.1,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 27.0,
+        "iron_mg": 5.2,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
+          "nin_food_name": "Nấm hương, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 51.0,
+          "match_reason": "Nấm hương, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 44,
+      "vietfood_class_name_vi": "Ốc",
+      "vietfood_class_name_en": "Snails",
+      "full_name": "Oc (Snails)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt ốc ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Ốc nhồi / ốc vặn trong CSDL thực phẩm thô NIN (Mã TPTP VN 5070)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7c",
+        "nin_food_name": "Ốc nhồi, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 84.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 84.0,
+        "protein_g": 11.9,
+        "fat_g": 0.7,
+        "carbs_g": 7.6,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 11.0,
+        "iron_mg": 0.0,
+        "zinc_mg": 1.1,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc7c",
+          "nin_food_name": "Ốc nhồi, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 84.0,
+          "match_reason": "Ốc nhồi, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 45,
+      "vietfood_class_name_vi": "Ớt chuông",
+      "vietfood_class_name_en": "Bell pepper",
+      "full_name": "Ot chuong (Bell pepper)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g ớt chuông tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Ớt xanh to / ớt đỏ to (Ớt chuông ngọt) trong CSDL thực phẩm thô NIN (Mã TPTP VN 4085-4087)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb59",
+        "nin_food_name": "Ớt xanh to, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 31.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 31.0,
+        "protein_g": 1.3,
+        "fat_g": 0.13,
+        "carbs_g": 6.07,
+        "fiber_g": 0.0,
+        "sugar_g": 2.4,
+        "sodium_mg": 3.0,
+        "salt_equivalent_g": 0.007,
+        "calcium_mg": 6.0,
+        "iron_mg": 0.8,
+        "zinc_mg": 0.13,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 10.0,
+        "potassium_mg": 175.0,
+        "vitamin_a_mcg": 17.42,
+        "vitamin_c_mg": 103.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb59",
+          "nin_food_name": "Ớt xanh to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 31.0,
+          "match_reason": "Ớt xanh to, tươi (Ớt chuông xanh) - Bảng TPTP VN 2017"
+        },
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb57",
+          "nin_food_name": "Ớt đỏ to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 31.0,
+          "match_reason": "Ớt đỏ to, tươi (Ớt chuông đỏ) - Bảng TPTP VN 2017"
+        },
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb58",
+          "nin_food_name": "Ớt vàng to, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 34.0,
+          "match_reason": "Ớt vàng to, tươi (Ớt chuông vàng) - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 46,
+      "vietfood_class_name_vi": "Phở",
+      "vietfood_class_name_en": "Vietnamese noodle soup",
+      "full_name": "Pho (Vietnamese noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 500,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô phở bò chín truyền thống)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món phở bò chín truyền thống trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68f890821eff1748460a2632",
+        "nin_food_name": "Phở bò chín",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 99.667
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 99.667,
+        "protein_g": 6.933,
+        "fat_g": 1.489,
+        "carbs_g": 14.6,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 583.156,
+        "salt_equivalent_g": 1.458,
+        "calcium_mg": 30.378,
+        "iron_mg": 0.867,
+        "zinc_mg": 1.044,
+        "cholesterol_mg": 9.022,
+        "magnesium_mg": 12.133,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 21.0,
+        "vitamin_c_mg": 8.956
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68f890821eff1748460a2632",
+          "nin_food_name": "Phở bò chín",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 99.667,
+          "match_reason": "Phở bò chín - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6948c0a18d1550cdae0bdcd2",
+          "nin_food_name": "Phở bò chín bình dân",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 64.667,
+          "match_reason": "Phở bò chín bình dân"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 47,
+      "vietfood_class_name_vi": "Phô mai",
+      "vietfood_class_name_en": "Cheese",
+      "full_name": "Pho mai (Cheese)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 30,
+      "serving_size_source": "Bảng TPTP VN 2017 (Miếng phô mai lát/tam giác)",
+      "mapping_status": "verified",
+      "decision_rationale": "Pho mát trong CSDL thực phẩm thô NIN (Mã TPTP VN 6023)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_69512eb4a0cfb0866108cb79",
+        "nin_food_name": "Phô mai tam giác",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 58.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 58.0,
+        "protein_g": 3.8,
+        "fat_g": 4.8,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 165.0,
+        "salt_equivalent_g": 0.412,
+        "calcium_mg": 115.0,
+        "iron_mg": 0.0,
+        "zinc_mg": 0.5,
+        "cholesterol_mg": 61.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 9.0,
+        "vitamin_a_mcg": 41.3,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_69512eb4a0cfb0866108cb79",
+          "nin_food_name": "Phô mai tam giác",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 58.0,
+          "match_reason": "Phô mai tam giác - CSDL Món ăn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 48,
+      "vietfood_class_name_vi": "Rau",
+      "vietfood_class_name_en": "Vegetables",
+      "full_name": "Rau (Vegetables)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g rau xanh tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Rau muống / rau ăn lá tổng hợp trong CSDL thực phẩm thô NIN (Mã TPTP VN 4023)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb6d",
+        "nin_food_name": "Rau muống,  tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 28.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 28.0,
+        "protein_g": 3.2,
+        "fat_g": 0.24,
+        "carbs_g": 3.26,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 37.4,
+        "salt_equivalent_g": 0.093,
+        "calcium_mg": 100.0,
+        "iron_mg": 1.4,
+        "zinc_mg": 0.35,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 14.83,
+        "potassium_mg": 330.5,
+        "vitamin_a_mcg": 141.75,
+        "vitamin_c_mg": 20.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb6d",
+          "nin_food_name": "Rau muống,  tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 28.0,
+          "match_reason": "Rau muống, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 49,
+      "vietfood_class_name_vi": "Salad",
+      "vietfood_class_name_en": "Salad",
+      "full_name": "Salad (Salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa salad trộn dầu giấm)",
+      "mapping_status": "verified",
+      "decision_rationale": "Đĩa rau trộn gồm xà lách, cà chua, dưa chuột và sốt dầu giấm; Deep Mode phân rã các loại rau",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694524cacd788cb7ad036fb4",
+        "nin_food_name": "Salad rau củ",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 120.667
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 120.667,
+        "protein_g": 1.333,
+        "fat_g": 10.667,
+        "carbs_g": 5.333,
+        "fiber_g": 1.333,
+        "sugar_g": 0.0,
+        "sodium_mg": 91.333,
+        "salt_equivalent_g": 0.228,
+        "calcium_mg": 37.333,
+        "iron_mg": 2.0,
+        "zinc_mg": 0.667,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 353.333,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 7.333
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694524cacd788cb7ad036fb4",
+          "nin_food_name": "Salad rau củ",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 181.0,
+          "match_reason": "Salad rau củ - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba0",
+          "food_name": "Xà lách / Rau xanh",
+          "role": "lettuce_greens",
+          "nutrition_per_100g": {
+            "energy_kcal": 17.0,
+            "protein_g": 1.5,
+            "fat_g": 0.2,
+            "carbs_g": 2.18,
+            "fiber_g": 0.0,
+            "sugar_g": 1.18,
+            "sodium_mg": 65.0,
+            "salt_equivalent_g": 0.163,
+            "calcium_mg": 105.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 0.19,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 19.0,
+            "potassium_mg": 252.0,
+            "vitamin_a_mcg": 223.0,
+            "vitamin_c_mg": 45.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua bi",
+          "role": "cherry_tomato",
+          "nutrition_per_100g": {
+            "energy_kcal": 23.0,
+            "protein_g": 1.5,
+            "fat_g": 0.0,
+            "carbs_g": 4.2,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cba3",
+          "food_name": "Dưa chuột",
+          "role": "cucumber",
+          "nutrition_per_100g": {
+            "energy_kcal": 43.0,
+            "protein_g": 0.9,
+            "fat_g": 0.06,
+            "carbs_g": 9.74,
+            "fiber_g": 0.0,
+            "sugar_g": 9.35,
+            "sodium_mg": 3.5,
+            "salt_equivalent_g": 0.009,
+            "calcium_mg": 34.0,
+            "iron_mg": 0.4,
+            "zinc_mg": 0.22,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 10.0,
+            "potassium_mg": 108.1,
+            "vitamin_a_mcg": 7.75,
+            "vitamin_c_mg": 40.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 50,
+      "vietfood_class_name_vi": "Thịt bò",
+      "vietfood_class_name_en": "Beef",
+      "full_name": "Thit bo (Beef)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt bò nạc tươi)",
+      "mapping_status": "verified",
+      "decision_rationale": "Thịt bò loại 1 trong CSDL thực phẩm thô NIN (Mã TPTP VN 5001)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbee",
+        "nin_food_name": "Thịt bò, loại I, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 118.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 118.0,
+        "protein_g": 21.0,
+        "fat_g": 3.8,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 83.0,
+        "salt_equivalent_g": 0.207,
+        "calcium_mg": 12.0,
+        "iron_mg": 3.1,
+        "zinc_mg": 2.2,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 28.0,
+        "potassium_mg": 378.0,
+        "vitamin_a_mcg": 12.0,
+        "vitamin_c_mg": 1.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbee",
+          "nin_food_name": "Thịt bò, loại I, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 118.0,
+          "match_reason": "Thịt bò, loại I, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 51,
+      "vietfood_class_name_vi": "Thịt gà",
+      "vietfood_class_name_en": "Chicken",
+      "full_name": "Thit ga (Chicken)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt gà ta ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Thịt gà ta trong CSDL thực phẩm thô NIN (Mã TPTP VN 5024)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbf8",
+        "nin_food_name": "Thịt gà ta, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 199.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 199.0,
+        "protein_g": 20.3,
+        "fat_g": 13.1,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 70.0,
+        "salt_equivalent_g": 0.175,
+        "calcium_mg": 12.0,
+        "iron_mg": 1.5,
+        "zinc_mg": 1.5,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 29.0,
+        "potassium_mg": 189.0,
+        "vitamin_a_mcg": 120.0,
+        "vitamin_c_mg": 4.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbf8",
+          "nin_food_name": "Thịt gà ta, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 199.0,
+          "match_reason": "Thịt gà ta, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 52,
+      "vietfood_class_name_vi": "Thịt heo",
+      "vietfood_class_name_en": "Pork",
+      "full_name": "Thit heo (Pork)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g thịt lợn nạc)",
+      "mapping_status": "verified",
+      "decision_rationale": "Thịt lợn nạc trong CSDL thực phẩm thô NIN (Mã TPTP VN 5013)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cde4",
+        "nin_food_name": "Thịt lợn nạc vai, luộc",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 126.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 126.0,
+        "protein_g": 17.65,
+        "fat_g": 6.18,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 20.08,
+        "iron_mg": 0.57,
+        "zinc_mg": 2.02,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.93,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cde4",
+          "nin_food_name": "Thịt lợn nạc vai, luộc",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 126.0,
+          "match_reason": "Thịt lợn nạc vai, luộc - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 53,
+      "vietfood_class_name_vi": "Thịt kho",
+      "vietfood_class_name_en": "Braised pork",
+      "full_name": "Thit kho (Braised pork)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt kho tàu)",
+      "mapping_status": "verified",
+      "decision_rationale": "Thịt lợn ba chỉ kho tàu trong CSDL Món ăn VDD (phương ngữ Bắc: Thịt lợn kho tàu)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a681731cab0f3540c9978",
+        "nin_food_name": "Thịt lợn ba chỉ kho tàu",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 173.333
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 173.333,
+        "protein_g": 11.0,
+        "fat_g": 14.333,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 795.333,
+        "salt_equivalent_g": 1.988,
+        "calcium_mg": 11.333,
+        "iron_mg": 1.027,
+        "zinc_mg": 1.273,
+        "cholesterol_mg": 45.333,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 190.0,
+        "vitamin_a_mcg": 6.667,
+        "vitamin_c_mg": 1.333
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a681731cab0f3540c9978",
+          "nin_food_name": "Thịt lợn ba chỉ kho tàu",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 260.0,
+          "match_reason": "Thịt lợn ba chỉ kho tàu - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 54,
+      "vietfood_class_name_vi": "Thịt nướng",
+      "vietfood_class_name_en": "Grilled meat",
+      "full_name": "Thit nuong (Grilled meat)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 120,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa thịt lợn xiên nướng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Thịt lợn xiên nướng trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+        "nin_food_name": "Thịt lợn xiên nướng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 185.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 185.0,
+        "protein_g": 23.0,
+        "fat_g": 8.35,
+        "carbs_g": 4.25,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 69.35,
+        "salt_equivalent_g": 0.173,
+        "calcium_mg": 9.167,
+        "iron_mg": 1.167,
+        "zinc_mg": 3.0,
+        "cholesterol_mg": 72.5,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 327.375,
+        "vitamin_a_mcg": 2.417,
+        "vitamin_c_mg": 1.208
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693b74e2c5b06f2f1b0b0864",
+          "nin_food_name": "Thịt lợn xiên nướng",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 222.0,
+          "match_reason": "Thịt lợn xiên nướng - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 55,
+      "vietfood_class_name_vi": "Tôm",
+      "vietfood_class_name_en": "Shrimp",
+      "full_name": "Tom (Shrimp)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 100,
+      "serving_size_source": "Bảng TPTP VN 2017 (100g tôm tươi ăn được)",
+      "mapping_status": "verified",
+      "decision_rationale": "Tôm đồng / tôm biển trong CSDL thực phẩm thô NIN (Mã TPTP VN 5049)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc85",
+        "nin_food_name": "Tôm đồng, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 90.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 90.0,
+        "protein_g": 18.4,
+        "fat_g": 1.8,
+        "carbs_g": 0.0,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 418.0,
+        "salt_equivalent_g": 1.045,
+        "calcium_mg": 73.0,
+        "iron_mg": 2.2,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 42.0,
+        "potassium_mg": 316.0,
+        "vitamin_a_mcg": 15.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc85",
+          "nin_food_name": "Tôm đồng, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 90.0,
+          "match_reason": "Tôm đồng, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 56,
+      "vietfood_class_name_vi": "Trứng",
+      "vietfood_class_name_en": "Egg",
+      "full_name": "Trung (Egg)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 55,
+      "serving_size_source": "Bảng TPTP VN 2017 (1 quả trứng gà trung bình)",
+      "mapping_status": "verified",
+      "decision_rationale": "Trứng gà toàn phần trong CSDL thực phẩm thô NIN (Mã TPTP VN 6001)",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
+        "nin_food_name": "Quả trứng gà, tươi",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 106.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 106.0,
+        "protein_g": 4.3,
+        "fat_g": 0.4,
+        "carbs_g": 21.3,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 0.0,
+        "salt_equivalent_g": 0.0,
+        "calcium_mg": 101.0,
+        "iron_mg": 0.0,
+        "zinc_mg": 0.0,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
+          "nin_food_name": "Quả trứng gà, tươi",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 106.0,
+          "match_reason": "Quả trứng gà, tươi - Bảng TPTP VN 2017"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 57,
+      "vietfood_class_name_vi": "Xôi",
+      "vietfood_class_name_en": "Sticky rice",
+      "full_name": "Xoi (Sticky rice)",
+      "mapping_type": "direct",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Gói xôi trắng)",
+      "mapping_status": "verified",
+      "decision_rationale": "Xôi trắng trong CSDL Món ăn VDD (món chế biến từ gạo nếp)",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+        "nin_food_name": "Xôi trắng miệng bát",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 210.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 210.0,
+        "protein_g": 5.05,
+        "fat_g": 5.95,
+        "carbs_g": 45.25,
+        "fiber_g": 0.3,
+        "sugar_g": 0.0,
+        "sodium_mg": 2.0,
+        "salt_equivalent_g": 0.005,
+        "calcium_mg": 9.5,
+        "iron_mg": 0.72,
+        "zinc_mg": 1.32,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 169.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+          "nin_food_name": "Xôi trắng miệng bát",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 210.0,
+          "match_reason": "Xôi trắng miệng bát - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 58,
+      "vietfood_class_name_vi": "Bánh bèo",
+      "vietfood_class_name_en": "Vietnamese savory steamed rice cake",
+      "full_name": "Banh beo (Vietnamese savory steamed rice cake)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 150,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa/khay 5 chén bánh bèo)",
+      "mapping_status": "verified",
+      "decision_rationale": "Bánh bèo trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6911b07c668d1a5d170be115",
+        "nin_food_name": "Bánh bèo",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 300.733
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 300.733,
+        "protein_g": 12.667,
+        "fat_g": 11.467,
+        "carbs_g": 36.733,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 617.533,
+        "salt_equivalent_g": 1.544,
+        "calcium_mg": 113.867,
+        "iron_mg": 3.8,
+        "zinc_mg": 0.867,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 14.933,
+        "potassium_mg": 0.0,
+        "vitamin_a_mcg": 3.6,
+        "vitamin_c_mg": 9.733
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6911b07c668d1a5d170be115",
+          "nin_food_name": "Bánh bèo",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 300.733,
+          "match_reason": "Bánh bèo - Công thức chuẩn VDD"
+        },
+        {
+          "nin_food_id": "nin_dish_6911b4726689d716fe071305",
+          "nin_food_name": "Bánh bèo 2 cái",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 599.333,
+          "match_reason": "Bánh bèo 2 cái"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 59,
+      "vietfood_class_name_vi": "Cao lầu",
+      "vietfood_class_name_en": "Cao lau noodles",
+      "full_name": "Cao lau (Cao lau noodles)",
+      "mapping_type": "unmapped",
+      "mapping_confidence": "none",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 350,
+      "serving_size_source": "Y văn dinh dưỡng món ăn Việt Nam (Literature fallback)",
+      "mapping_status": "unmapped_fallback",
+      "decision_rationale": "Đặc sản Hội An (sợi mì tro tràm và xá xíu đặc thù), CSDL VDD quốc gia chưa có bản ghi tương ứng. Duy trì fallback literature đã kiểm toán Atwater.",
+      "primary_match": null,
+      "primary_nutrition_per_100g": null,
+      "nin_matches": [],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 60,
+      "vietfood_class_name_vi": "Mì Quảng",
+      "vietfood_class_name_en": "Quang-style noodles",
+      "full_name": "Mi Quang (Quang-style noodles)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô mì Quảng tôm thịt)",
+      "mapping_status": "verified",
+      "decision_rationale": "Tô mì Quảng gồm sợi mì nghệ, tôm thịt ram, đậu phộng rang, bánh tráng nướng; Deep Mode phân rã topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694818d0c2bdd1529907c387",
+        "nin_food_name": "Mỳ Quảng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 100.667
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 100.667,
+        "protein_g": 4.067,
+        "fat_g": 1.711,
+        "carbs_g": 17.289,
+        "fiber_g": 0.044,
+        "sugar_g": 0.0,
+        "sodium_mg": 118.644,
+        "salt_equivalent_g": 0.297,
+        "calcium_mg": 12.889,
+        "iron_mg": 0.382,
+        "zinc_mg": 0.189,
+        "cholesterol_mg": 34.933,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 32.4,
+        "vitamin_a_mcg": 36.067,
+        "vitamin_c_mg": 0.4
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694818d0c2bdd1529907c387",
+          "nin_food_name": "Mỳ Quảng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 100.667,
+          "match_reason": "Mỳ Quảng - Công thức chuẩn VDD (Fast Mode reference)"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cade",
+          "food_name": "Sợi mỳ Quảng nghệ",
+          "role": "noodle_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 1.0,
+            "protein_g": 5.32,
+            "fat_g": 0.27,
+            "carbs_g": 82.23,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcc",
+          "food_name": "Thịt heo ram",
+          "role": "pork_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 62.0,
+            "protein_g": 1.8,
+            "fat_g": 0.0,
+            "carbs_g": 13.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 37.6,
+            "iron_mg": 1.6,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cc2e",
+          "food_name": "Tôm ram",
+          "role": "shrimp_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 114.0,
+            "protein_g": 12.4,
+            "fat_g": 7.1,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 28.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_garnish",
+          "nutrition_per_100g": {
+            "energy_kcal": 45.0,
+            "protein_g": 1.8,
+            "fat_g": 0.11,
+            "carbs_g": 9.29,
+            "fiber_g": 0.0,
+            "sugar_g": 4.28,
+            "sodium_mg": 7.5,
+            "salt_equivalent_g": 0.019,
+            "calcium_mg": 38.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 1.43,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 23.0,
+            "potassium_mg": 220.7,
+            "vitamin_a_mcg": 0.08,
+            "vitamin_c_mg": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 61,
+      "vietfood_class_name_vi": "Cơm chiên dương châu",
+      "vietfood_class_name_en": "Yangzhou fried rice",
+      "full_name": "Com chien duong chau (Yangzhou fried rice)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm rang thập cẩm)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món cơm rang thập cẩm trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_693a27498bbe5e3730065343",
+        "nin_food_name": "Cơm rang thập cẩm",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 207.667
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 207.667,
+        "protein_g": 6.633,
+        "fat_g": 7.3,
+        "carbs_g": 28.867,
+        "fiber_g": 0.5,
+        "sugar_g": 0.0,
+        "sodium_mg": 431.667,
+        "salt_equivalent_g": 1.079,
+        "calcium_mg": 35.333,
+        "iron_mg": 1.06,
+        "zinc_mg": 0.69,
+        "cholesterol_mg": 93.333,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 132.333,
+        "vitamin_a_mcg": 36.0,
+        "vitamin_c_mg": 0.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_693a27498bbe5e3730065343",
+          "nin_food_name": "Cơm rang thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 207.667,
+          "match_reason": "Cơm rang thập cẩm - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 62,
+      "vietfood_class_name_vi": "Bún chả cá",
+      "vietfood_class_name_en": "Fish cake noodle soup",
+      "full_name": "Bun cha ca (Fish cake noodle soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 450,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô bún chả cá Đà Nẵng / Quy Nhơn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món bún chả cá có bản ghi chính thức trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6947d40fa5cc4fdc720ebd82",
+        "nin_food_name": "Bún chả cá",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 141.111
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 141.111,
+        "protein_g": 4.822,
+        "fat_g": 6.667,
+        "carbs_g": 15.467,
+        "fiber_g": 1.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 327.756,
+        "salt_equivalent_g": 0.819,
+        "calcium_mg": 75.467,
+        "iron_mg": 0.607,
+        "zinc_mg": 0.138,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 120.867,
+        "vitamin_a_mcg": 17.178,
+        "vitamin_c_mg": 17.667
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6947d40fa5cc4fdc720ebd82",
+          "nin_food_name": "Bún chả cá",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 141.111,
+          "match_reason": "Bún chả cá - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 63,
+      "vietfood_class_name_vi": "Cơm chiên gà",
+      "vietfood_class_name_en": "Fried rice with chicken",
+      "full_name": "Com chien ga (Fried rice with chicken)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 250,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa cơm rang gà / cơm gà)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món cơm gà trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_68a683a410eddb46cf0f71a3",
+        "nin_food_name": "Cơm gà",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 380.133
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 380.133,
+        "protein_g": 17.267,
+        "fat_g": 18.833,
+        "carbs_g": 35.4,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 187.133,
+        "salt_equivalent_g": 0.468,
+        "calcium_mg": 69.833,
+        "iron_mg": 2.333,
+        "zinc_mg": 1.967,
+        "cholesterol_mg": 116.067,
+        "magnesium_mg": 21.7,
+        "potassium_mg": 237.7,
+        "vitamin_a_mcg": 49.4,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_68a683a410eddb46cf0f71a3",
+          "nin_food_name": "Cơm gà",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 380.133,
+          "match_reason": "Cơm gà - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    },
+    {
+      "vietfood_class_id": 64,
+      "vietfood_class_name_vi": "Cháo lòng",
+      "vietfood_class_name_en": "Pork organ congee",
+      "full_name": "Chao long (Pork organ congee)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 400,
+      "serving_size_source": "Bảng TPTP VN 2017 (Tô cháo lòng tiêu chuẩn)",
+      "mapping_status": "verified",
+      "decision_rationale": "Tô cháo lòng gồm phần cháo gạo và đĩa lòng dồi gan luộc; Deep Mode FoodSAM phân rã topping phủ",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948020ae0a4ed42970317eb",
+        "nin_food_name": "Cháo lòng",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 61.778
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 61.778,
+        "protein_g": 5.667,
+        "fat_g": 2.067,
+        "carbs_g": 5.156,
+        "fiber_g": 0.022,
+        "sugar_g": 0.0,
+        "sodium_mg": 149.089,
+        "salt_equivalent_g": 0.373,
+        "calcium_mg": 8.733,
+        "iron_mg": 6.222,
+        "zinc_mg": 0.289,
+        "cholesterol_mg": 11.178,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 30.444,
+        "vitamin_a_mcg": 194.0,
+        "vitamin_c_mg": 0.444
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948020ae0a4ed42970317eb",
+          "nin_food_name": "Cháo lòng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 61.778,
+          "match_reason": "Cháo lòng - Công thức chuẩn VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6937c168e94f0e9a7d0d9ea5",
+          "nin_food_name": "Cháo lòng",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 116.175,
+          "match_reason": "Cháo lòng bình dân"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_dish_694e3d69d2b36a66b1080cb3",
+          "food_name": "Cháo gạo tẻ",
+          "role": "congee_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 210.0,
+            "protein_g": 5.05,
+            "fat_g": 5.95,
+            "carbs_g": 45.25,
+            "fiber_g": 0.3,
+            "sugar_g": 0.0,
+            "sodium_mg": 2.0,
+            "salt_equivalent_g": 0.005,
+            "calcium_mg": 9.5,
+            "iron_mg": 0.72,
+            "zinc_mg": 1.32,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 169.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_dish_693a83606b1977ca8d0de216",
+          "food_name": "Lòng lợn luộc",
+          "role": "pork_intestines",
+          "nutrition_per_100g": {
+            "energy_kcal": 250.0,
+            "protein_g": 30.8,
+            "fat_g": 13.6,
+            "carbs_g": 1.2,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 41.3,
+            "salt_equivalent_g": 0.10325,
+            "calcium_mg": 41.0,
+            "iron_mg": 2.5,
+            "zinc_mg": 1.2,
+            "cholesterol_mg": 1197.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 98.7,
+            "vitamin_a_mcg": 6008.0,
+            "vitamin_c_mg": 19.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbcf",
+          "food_name": "Gan lợn luộc",
+          "role": "pork_liver",
+          "nutrition_per_100g": {
+            "energy_kcal": 42.0,
+            "protein_g": 0.9,
+            "fat_g": 0.0,
+            "carbs_g": 9.6,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 124.0,
+            "iron_mg": 0.3,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 8.33,
+            "vitamin_c_mg": 43.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 65,
+      "vietfood_class_name_vi": "Nộm hoa chuối",
+      "vietfood_class_name_en": "Banana blossom salad",
+      "full_name": "Nom hoa chuoi (Banana blossom salad)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nộm hoa chuối tai heo)",
+      "mapping_status": "verified",
+      "decision_rationale": "Đĩa nộm trộn giữa bắp hoa chuối thái sợi, tai heo / thịt gà xé, đậu phộng rang; Deep Mode phân rã topping",
+      "primary_match": {
+        "nin_food_id": "nin_dish_694522f0396fdfd8c109b2f4",
+        "nin_food_name": "Nộm hoa chuối thịt gà",
+        "source_type": "dish",
+        "canonical_basis": "per_100g_mapping_derived",
+        "energy_kcal": 302.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 302.0,
+        "protein_g": 17.05,
+        "fat_g": 14.65,
+        "carbs_g": 25.05,
+        "fiber_g": 3.45,
+        "sugar_g": 0.0,
+        "sodium_mg": 131.6,
+        "salt_equivalent_g": 0.329,
+        "calcium_mg": 164.8,
+        "iron_mg": 3.31,
+        "zinc_mg": 2.06,
+        "cholesterol_mg": 34.55,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 799.5,
+        "vitamin_a_mcg": 51.85,
+        "vitamin_c_mg": 22.35
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_694522f0396fdfd8c109b2f4",
+          "nin_food_name": "Nộm hoa chuối thịt gà",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 604.0,
+          "match_reason": "Nộm hoa chuối thịt gà - Công thức VDD (Fast Mode reference)"
+        },
+        {
+          "nin_food_id": "nin_dish_6945242ede4937594700ba32",
+          "nin_food_name": "Nộm tai heo thập cẩm",
+          "source_type": "dish",
+          "canonical_basis": "per_serving_unverified",
+          "energy_kcal": 505.0,
+          "match_reason": "Nộm tai heo thập cẩm"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb45",
+          "food_name": "Hoa chuối tươi thái sợi",
+          "role": "salad_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 28.0,
+            "protein_g": 1.5,
+            "fat_g": 0.0,
+            "carbs_g": 5.5,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 44.0,
+            "iron_mg": 0.9,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 14.17,
+            "vitamin_c_mg": 5.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbe2",
+          "food_name": "Thịt gà xé / tai heo",
+          "role": "meat_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 900.0,
+            "protein_g": 0.0,
+            "fat_g": 100.0,
+            "carbs_g": 0.0,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb41",
+          "food_name": "Đậu phộng rang",
+          "role": "peanut_garnish",
+          "nutrition_per_100g": {
+            "energy_kcal": 45.0,
+            "protein_g": 1.8,
+            "fat_g": 0.11,
+            "carbs_g": 9.29,
+            "fiber_g": 0.0,
+            "sugar_g": 4.28,
+            "sodium_mg": 7.5,
+            "salt_equivalent_g": 0.019,
+            "calcium_mg": 38.0,
+            "iron_mg": 0.8,
+            "zinc_mg": 1.43,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 23.0,
+            "potassium_mg": 220.7,
+            "vitamin_a_mcg": 0.08,
+            "vitamin_c_mg": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 66,
+      "vietfood_class_name_vi": "Nui xào bò",
+      "vietfood_class_name_en": "Stir-fried macaroni with beef",
+      "full_name": "Nui xao bo (Stir-fried macaroni with beef)",
+      "mapping_type": "component_based",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 300,
+      "serving_size_source": "Bảng TPTP VN 2017 (Đĩa nui xào thịt bò cà chua)",
+      "mapping_status": "verified",
+      "decision_rationale": "CSDL NIN không có món nui xào bò nguyên đĩa; phân rã thành nui luộc + thịt bò xào dầu",
+      "primary_match": {
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+        "nin_food_name": "Nui, luộc",
+        "source_type": "ingredient",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 371.0
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 371.0,
+        "protein_g": 13.0,
+        "fat_g": 1.51,
+        "carbs_g": 74.7,
+        "fiber_g": 0.0,
+        "sugar_g": 0.0,
+        "sodium_mg": 6.0,
+        "salt_equivalent_g": 0.015,
+        "calcium_mg": 21.0,
+        "iron_mg": 1.3,
+        "zinc_mg": 1.41,
+        "cholesterol_mg": 0.0,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 223.0,
+        "vitamin_a_mcg": 0.0,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+          "nin_food_name": "Nui, luộc",
+          "source_type": "ingredient",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 371.0,
+          "match_reason": "Nui luộc - Nguyên liệu cơ sở NIN"
+        }
+      ],
+      "components": [
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cd8f",
+          "food_name": "Nui luộc",
+          "role": "macaroni_base",
+          "nutrition_per_100g": {
+            "energy_kcal": 371.0,
+            "protein_g": 13.0,
+            "fat_g": 1.51,
+            "carbs_g": 74.7,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 6.0,
+            "salt_equivalent_g": 0.015,
+            "calcium_mg": 21.0,
+            "iron_mg": 1.3,
+            "zinc_mg": 1.41,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 223.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cbb8",
+          "food_name": "Thịt bò nạc",
+          "role": "beef_topping",
+          "nutrition_per_100g": {
+            "energy_kcal": 48.0,
+            "protein_g": 0.7,
+            "fat_g": 0.2,
+            "carbs_g": 10.8,
+            "fiber_g": 0.0,
+            "sugar_g": 9.8,
+            "sodium_mg": 5.0,
+            "salt_equivalent_g": 0.013,
+            "calcium_mg": 19.0,
+            "iron_mg": 2.3,
+            "zinc_mg": 0.13,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 7.0,
+            "potassium_mg": 88.4,
+            "vitamin_a_mcg": 2.5,
+            "vitamin_c_mg": 4.0
+          }
+        },
+        {
+          "source_food_id": "nin_ing_6877a6b660d6c84e9bd5cb8c",
+          "food_name": "Cà chua xào",
+          "role": "tomato_sauce",
+          "nutrition_per_100g": {
+            "energy_kcal": 23.0,
+            "protein_g": 1.5,
+            "fat_g": 0.0,
+            "carbs_g": 4.2,
+            "fiber_g": 0.0,
+            "sugar_g": 0.0,
+            "sodium_mg": 0.0,
+            "salt_equivalent_g": 0.0,
+            "calcium_mg": 0.0,
+            "iron_mg": 0.0,
+            "zinc_mg": 0.0,
+            "cholesterol_mg": 0.0,
+            "magnesium_mg": 0.0,
+            "potassium_mg": 0.0,
+            "vitamin_a_mcg": 0.0,
+            "vitamin_c_mg": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "vietfood_class_id": 67,
+      "vietfood_class_name_vi": "Súp cua",
+      "vietfood_class_name_en": "Crab soup",
+      "full_name": "Sup cua (Crab soup)",
+      "mapping_type": "approximate",
+      "mapping_confidence": "high",
+      "mapping_confidence_note": "Mức độ tin cậy của quyết định ánh xạ phân loại ngữ nghĩa (không biểu thị sai số sinh học)",
+      "serving_size_g": 200,
+      "serving_size_source": "Bảng TPTP VN 2017 (Bát súp cua bắp)",
+      "mapping_status": "verified",
+      "decision_rationale": "Món súp ngô cua trong CSDL Món ăn VDD",
+      "primary_match": {
+        "nin_food_id": "nin_dish_6948122f2eb544b04a0add72",
+        "nin_food_name": "Súp ngô cua",
+        "source_type": "dish",
+        "canonical_basis": "per_100g",
+        "energy_kcal": 32.222
+      },
+      "primary_nutrition_per_100g": {
+        "energy_kcal": 32.222,
+        "protein_g": 2.111,
+        "fat_g": 0.778,
+        "carbs_g": 4.178,
+        "fiber_g": 0.089,
+        "sugar_g": 0.0,
+        "sodium_mg": 4.6,
+        "salt_equivalent_g": 0.011,
+        "calcium_mg": 7.756,
+        "iron_mg": 0.204,
+        "zinc_mg": 0.073,
+        "cholesterol_mg": 17.2,
+        "magnesium_mg": 0.0,
+        "potassium_mg": 25.111,
+        "vitamin_a_mcg": 20.289,
+        "vitamin_c_mg": 0.0
+      },
+      "nin_matches": [
+        {
+          "nin_food_id": "nin_dish_6948122f2eb544b04a0add72",
+          "nin_food_name": "Súp ngô cua",
+          "source_type": "dish",
+          "canonical_basis": "per_100g",
+          "energy_kcal": 32.222,
+          "match_reason": "Súp ngô cua - Công thức chuẩn VDD"
+        }
+      ],
+      "components": []
+    }
+  ]
+}

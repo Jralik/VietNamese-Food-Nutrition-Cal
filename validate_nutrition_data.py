@@ -21,6 +21,7 @@ Usage:
 """
 
 import sys
+sys.stdout.reconfigure(encoding='utf-8')
 from class_names import class_names
 import class_names as class_names_module
 import density_db
@@ -35,6 +36,8 @@ TRUSTED_NUTRITION_SOURCES = {
     "class_names:usda_fdc",
     "class_names:vn_nin_2017",
     "class_names:literature",
+    "class_names:literature_fallback",
+    "class_names:non_food",
     "class_names:per_100g",
     "class_names:serving_derived",
 }
@@ -94,7 +97,7 @@ def audit():
                     f"per-100g x {serving_g}g = {expected:.1f}"
                 )
 
-        # 4. Plausibility (per 100 g)
+        # 4. Plausibility (per 100 g) - Macros
         bounds = {
             "Calories": (0, 950), "Protein": (0, 90), "Fat": (0, 100),
             "Carbs": (0, 100), "Saturates": (0, 60), "Sugar": (0, 100),
@@ -105,7 +108,36 @@ def audit():
             if v is not None and not (lo <= v <= hi):
                 issues.append(f"[range] {name}: {k}={v} outside ({lo}, {hi})")
 
-        # 4b. Chemistry: saturated fat can never exceed total fat
+        # 4a. Plausibility / Sanity Checks (per 100 g) - 5 Micronutrients
+        import math
+        micro_bounds = {
+            "Sodium": (0.0, 5000.0),
+            "Calcium": (0.0, 2000.0),
+            "Iron": (0.0, 50.0),
+            "Zinc": (0.0, 30.0),
+            "Cholesterol": (0.0, 600.0),
+        }
+        for k, (lo, hi) in micro_bounds.items():
+            v = per100.get(k)
+            if v is None:
+                issues.append(f"[coverage] {name}: missing micronutrient {k}")
+            elif not (isinstance(v, (int, float)) and math.isfinite(v)):
+                issues.append(f"[sanity] {name}: {k}={v} is not finite numeric")
+            elif v < 0:
+                issues.append(f"[sanity] {name}: {k}={v} is negative")
+            elif not (lo <= v <= hi):
+                warnings.append(f"[sanity-warning] {name}: {k}={v} outside expected sanity band ({lo}, {hi})")
+
+        # 4b. Serving consistency for micronutrients
+        if serving and serving_g:
+            for k in micro_bounds:
+                v100 = per100.get(k, 0.0)
+                v_serv = serving.get(k, 0.0)
+                expected = v100 * serving_g / 100.0
+                if abs(expected - v_serv) > 0.15:
+                    issues.append(f"[serving-micro] {name}: serving {k}={v_serv} vs scaled {expected:.2f}")
+
+        # 4c. Chemistry: saturated fat can never exceed total fat
         fat, sat = per100.get("Fat"), per100.get("Saturates")
         if fat is not None and sat is not None and sat > fat + 1e-9:
             issues.append(f"[chemistry] {name}: Saturates ({sat}) > Fat ({fat})")

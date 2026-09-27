@@ -1,0 +1,611 @@
+{
+  "records": [
+    {
+      "line": 1,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (1).jpg",
+      "filename": "Pho1 (1).jpg",
+      "folder": "Pho",
+      "components": {
+        "portion": 819.5
+      },
+      "total_mass_g": 819.5,
+      "exists": true
+    },
+    {
+      "line": 2,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (2).jpg",
+      "filename": "Pho1 (2).jpg",
+      "folder": "Pho",
+      "components": {
+        "portion": 819.5
+      },
+      "total_mass_g": 819.5,
+      "exists": true
+    },
+    {
+      "line": 3,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (3).jpg",
+      "filename": "Pho1 (3).jpg",
+      "folder": "Pho",
+      "components": {
+        "portion": 819.5
+      },
+      "total_mass_g": 819.5,
+      "exists": true
+    },
+    {
+      "line": 4,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (4).jpg",
+      "filename": "Pho1 (4).jpg",
+      "folder": "Pho",
+      "components": {
+        "portion": 819.5
+      },
+      "total_mass_g": 819.5,
+      "exists": true
+    },
+    {
+      "line": 5,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (5).jpg",
+      "filename": "Pho1 (5).jpg",
+      "folder": "Pho",
+      "components": {
+        "portion": 819.5
+      },
+      "total_mass_g": 819.5,
+      "exists": true
+    },
+    {
+      "line": 7,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (6).jpg",
+      "filename": "BanhCuon1 (6).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 8,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (1).jpg",
+      "filename": "BanhCuon1 (1).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 9,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (2).jpg",
+      "filename": "BanhCuon1 (2).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 10,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (3).jpg",
+      "filename": "BanhCuon1 (3).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 11,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (4).jpg",
+      "filename": "BanhCuon1 (4).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 12,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon1 (5).jpg",
+      "filename": "BanhCuon1 (5).jpg",
+      "folder": "BanhCuon",
+      "components": {
+        "portion": 315.5
+      },
+      "total_mass_g": 315.5,
+      "exists": true
+    },
+    {
+      "line": 14,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (5).jpg",
+      "filename": "com-suon1 (5).jpg",
+      "folder": "ComSuon",
+      "components": {
+        "portion": 390.5
+      },
+      "total_mass_g": 390.5,
+      "exists": true
+    },
+    {
+      "line": 15,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (1).jpg",
+      "filename": "com-suon1 (1).jpg",
+      "folder": "ComSuon",
+      "components": {
+        "portion": 390.5
+      },
+      "total_mass_g": 390.5,
+      "exists": true
+    },
+    {
+      "line": 16,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (2).jpg",
+      "filename": "com-suon1 (2).jpg",
+      "folder": "ComSuon",
+      "components": {
+        "portion": 390.5
+      },
+      "total_mass_g": 390.5,
+      "exists": true
+    },
+    {
+      "line": 17,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (3).jpg",
+      "filename": "com-suon1 (3).jpg",
+      "folder": "ComSuon",
+      "components": {
+        "portion": 390.5
+      },
+      "total_mass_g": 390.5,
+      "exists": true
+    },
+    {
+      "line": 18,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (4).jpg",
+      "filename": "com-suon1 (4).jpg",
+      "folder": "ComSuon",
+      "components": {
+        "portion": 390.5
+      },
+      "total_mass_g": 390.5,
+      "exists": true
+    },
+    {
+      "line": 20,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (1).jpg",
+      "filename": "BunBoHue1 (1).jpg",
+      "folder": "BunBoHue",
+      "components": {
+        "Bun bo Hue": 804.5,
+        "Rau": 90.0
+      },
+      "total_mass_g": 894.5,
+      "exists": true
+    },
+    {
+      "line": 21,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (2).jpg",
+      "filename": "BunBoHue1 (2).jpg",
+      "folder": "BunBoHue",
+      "components": {
+        "Bun bo Hue": 804.5,
+        "Rau": 90.0
+      },
+      "total_mass_g": 894.5,
+      "exists": true
+    },
+    {
+      "line": 22,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (3).jpg",
+      "filename": "BunBoHue1 (3).jpg",
+      "folder": "BunBoHue",
+      "components": {
+        "Bun bo Hue": 804.5,
+        "Rau": 90.0
+      },
+      "total_mass_g": 894.5,
+      "exists": true
+    },
+    {
+      "line": 23,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (4).jpg",
+      "filename": "BunBoHue1 (4).jpg",
+      "folder": "BunBoHue",
+      "components": {
+        "Bun bo Hue": 804.5,
+        "Rau": 90.0
+      },
+      "total_mass_g": 894.5,
+      "exists": true
+    },
+    {
+      "line": 24,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (5).jpg",
+      "filename": "BunBoHue1 (5).jpg",
+      "folder": "BunBoHue",
+      "components": {
+        "Bun bo Hue": 804.5,
+        "Rau": 90.0
+      },
+      "total_mass_g": 894.5,
+      "exists": true
+    },
+    {
+      "line": 26,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi1.jpg",
+      "filename": "banh-mi1.jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 242.6
+      },
+      "total_mass_g": 242.6,
+      "exists": true
+    },
+    {
+      "line": 27,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi2.jpg",
+      "filename": "banh-mi2.jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 242.6
+      },
+      "total_mass_g": 242.6,
+      "exists": true
+    },
+    {
+      "line": 28,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi3.jpg",
+      "filename": "banh-mi3.jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 242.6
+      },
+      "total_mass_g": 242.6,
+      "exists": true
+    },
+    {
+      "line": 29,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi4.jpg",
+      "filename": "banh-mi4.jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 242.6
+      },
+      "total_mass_g": 242.6,
+      "exists": true
+    },
+    {
+      "line": 30,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi5.jpg",
+      "filename": "banh-mi5.jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 242.6
+      },
+      "total_mass_g": 242.6,
+      "exists": true
+    },
+    {
+      "line": 32,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (1).jpg",
+      "filename": "banh-mi250g (1).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 255.6
+      },
+      "total_mass_g": 255.6,
+      "exists": true
+    },
+    {
+      "line": 33,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (2).jpg",
+      "filename": "banh-mi250g (2).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 255.6
+      },
+      "total_mass_g": 255.6,
+      "exists": true
+    },
+    {
+      "line": 34,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (3).jpg",
+      "filename": "banh-mi250g (3).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 255.6
+      },
+      "total_mass_g": 255.6,
+      "exists": true
+    },
+    {
+      "line": 35,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (4).jpg",
+      "filename": "banh-mi250g (4).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 255.6
+      },
+      "total_mass_g": 255.6,
+      "exists": true
+    },
+    {
+      "line": 37,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (1).jpg",
+      "filename": "BanhMiDucTri (1).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 210.0
+      },
+      "total_mass_g": 210.0,
+      "exists": true
+    },
+    {
+      "line": 38,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (2).jpg",
+      "filename": "BanhMiDucTri (2).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 210.0
+      },
+      "total_mass_g": 210.0,
+      "exists": true
+    },
+    {
+      "line": 39,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (3).jpg",
+      "filename": "BanhMiDucTri (3).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "portion": 210.0
+      },
+      "total_mass_g": 210.0,
+      "exists": true
+    },
+    {
+      "line": 40,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (4).jpg",
+      "filename": "BanhMi_Trung (4).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "banh mi": 99.3,
+        "trung": 221.2
+      },
+      "total_mass_g": 320.5,
+      "exists": true
+    },
+    {
+      "line": 41,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (1).jpg",
+      "filename": "BanhMi_Trung (1).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "banh mi": 99.3,
+        "trung": 221.2
+      },
+      "total_mass_g": 320.5,
+      "exists": true
+    },
+    {
+      "line": 42,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (2).jpg",
+      "filename": "BanhMi_Trung (2).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "banh mi": 99.3,
+        "trung": 221.2
+      },
+      "total_mass_g": 320.5,
+      "exists": true
+    },
+    {
+      "line": 43,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (3).jpg",
+      "filename": "BanhMi_Trung (3).jpg",
+      "folder": "BanhMi",
+      "components": {
+        "banh mi": 99.3,
+        "trung": 221.2
+      },
+      "total_mass_g": 320.5,
+      "exists": true
+    },
+    {
+      "line": 45,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (4).jpg",
+      "filename": "bun-rieu1 (4).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9
+      },
+      "total_mass_g": 838.9,
+      "exists": true
+    },
+    {
+      "line": 46,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (1).jpg",
+      "filename": "bun-rieu1 (1).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9
+      },
+      "total_mass_g": 838.9,
+      "exists": true
+    },
+    {
+      "line": 47,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (2).jpg",
+      "filename": "bun-rieu1 (2).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9
+      },
+      "total_mass_g": 838.9,
+      "exists": true
+    },
+    {
+      "line": 48,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (3).jpg",
+      "filename": "bun-rieu1 (3).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9
+      },
+      "total_mass_g": 838.9,
+      "exists": true
+    },
+    {
+      "line": 50,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (3).jpg",
+      "filename": "bun-rieu (3).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9,
+        "Rau": 70.0
+      },
+      "total_mass_g": 908.9,
+      "exists": true
+    },
+    {
+      "line": 51,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (1).jpg",
+      "filename": "bun-rieu (1).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9,
+        "Rau": 70.0
+      },
+      "total_mass_g": 908.9,
+      "exists": true
+    },
+    {
+      "line": 52,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (2).jpg",
+      "filename": "bun-rieu (2).jpg",
+      "folder": "BunRieu-CanhBun",
+      "components": {
+        "Bun rieu": 838.9,
+        "Rau": 70.0
+      },
+      "total_mass_g": 908.9,
+      "exists": true
+    },
+    {
+      "line": 55,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (6).jpg",
+      "filename": "SupCua (6).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 56,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (1).jpg",
+      "filename": "SupCua (1).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 57,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (2).jpg",
+      "filename": "SupCua (2).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 58,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (3).jpg",
+      "filename": "SupCua (3).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 59,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (4).jpg",
+      "filename": "SupCua (4).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 60,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (5).jpg",
+      "filename": "SupCua (5).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 470.6
+      },
+      "total_mass_g": 470.6,
+      "exists": true
+    },
+    {
+      "line": 62,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (4).jpg",
+      "filename": "SupCua1 (4).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 500.6
+      },
+      "total_mass_g": 500.6,
+      "exists": true
+    },
+    {
+      "line": 63,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (1).jpg",
+      "filename": "SupCua1 (1).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 500.6
+      },
+      "total_mass_g": 500.6,
+      "exists": true
+    },
+    {
+      "line": 64,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (2).jpg",
+      "filename": "SupCua1 (2).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 500.6
+      },
+      "total_mass_g": 500.6,
+      "exists": true
+    },
+    {
+      "line": 65,
+      "path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua1 (3).jpg",
+      "filename": "SupCua1 (3).jpg",
+      "folder": "SupCua",
+      "components": {
+        "portion": 500.6
+      },
+      "total_mass_g": 500.6,
+      "exists": true
+    }
+  ],
+  "total_images": 54
+}

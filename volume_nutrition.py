@@ -54,6 +54,27 @@ class NutritionEstimate:
     # Per-100g reference values (for comparison)
     nutrition_per_100g: Optional[Dict[str, float]] = None
 
+    # Micronutrient convenience properties (in mg)
+    @property
+    def sodium_mg(self) -> float:
+        return float(self.nutrition.get("Sodium", 0.0))
+
+    @property
+    def calcium_mg(self) -> float:
+        return float(self.nutrition.get("Calcium", 0.0))
+
+    @property
+    def iron_mg(self) -> float:
+        return float(self.nutrition.get("Iron", 0.0))
+
+    @property
+    def zinc_mg(self) -> float:
+        return float(self.nutrition.get("Zinc", 0.0))
+
+    @property
+    def cholesterol_mg(self) -> float:
+        return float(self.nutrition.get("Cholesterol", 0.0))
+
 
 def relief_scale_factor(
     plane_z_median_mm: float,
@@ -608,8 +629,10 @@ class VolumeNutritionEstimator:
                 mass_g=0.0,
                 mass_std_g=0.0,
                 density_g_per_cm3=0.0,
-                nutrition={"Calories": 0.0, "Protein": 0.0, "Fat": 0.0, "Carbs": 0.0, "Saturates": 0.0, "Sugar": 0.0, "Salt": 0.0},
-                nutrition_std={"Calories": 0.0, "Protein": 0.0, "Fat": 0.0, "Carbs": 0.0, "Saturates": 0.0, "Sugar": 0.0, "Salt": 0.0},
+                nutrition={"Calories": 0.0, "Protein": 0.0, "Fat": 0.0, "Carbs": 0.0, "Saturates": 0.0, "Sugar": 0.0, "Salt": 0.0,
+                           "Sodium": 0.0, "Calcium": 0.0, "Iron": 0.0, "Zinc": 0.0, "Cholesterol": 0.0},
+                nutrition_std={"Calories": 0.0, "Protein": 0.0, "Fat": 0.0, "Carbs": 0.0, "Saturates": 0.0, "Sugar": 0.0, "Salt": 0.0,
+                               "Sodium": 0.0, "Calcium": 0.0, "Iron": 0.0, "Zinc": 0.0, "Cholesterol": 0.0},
                 estimation_method="non_food",
                 confidence="high",
                 confidence_note="Đối tượng không phải thực phẩm",
@@ -883,7 +906,10 @@ class VolumeNutritionEstimator:
         mass_std_g = mass_g * total_rel if mass_g > 0 else 0.0
         nutrition_std = {}
         if nutrition and mass_g > 0:
-            nutrition_std = {k: round(v * total_rel, 1) for k, v in nutrition.items()}
+            nutrition_std = {
+                k: round(v * total_rel, 2) if k in ("Iron", "Zinc") else round(v * total_rel, 1)
+                for k, v in nutrition.items()
+            }
         return mass_std_g, nutrition_std
 
     def _build_confidence_note(

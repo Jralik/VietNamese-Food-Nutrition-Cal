@@ -700,6 +700,12 @@ def _show_volume_visualizations(volume_result):
 def detect_image_result(detected_image, model, source_image=None, image_path=None,
                         bbox_scale=None, yolo_time_s=None):
     boxes = detected_image[0].boxes
+    # Cross-class duplicates removed by the detector (audit trail only — a
+    # suppressed hypothesis never contributed nutrition).
+    cross_class_suppressed = list(
+        getattr(detected_image[0], "suppressed_cross_class", []) or [])
+    if cross_class_suppressed:
+        st.session_state["suppressed_cross_class"] = cross_class_suppressed
     seg_backend = st.session_state.get("seg_backend", "sam2")
 
     # FoodSAM ingredient recovery: with ZERO YOLO boxes the FoodSAM backend
@@ -1087,6 +1093,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
                 "total_nutrition": total_nutrition,
                 "total_nutrition_std": total_nutrition_std,
                 "items": nutrition_data,
+                "suppressed_cross_class": cross_class_suppressed,
             }
             the_json = json.dumps(json_payload, ensure_ascii=False, indent=2).encode("utf-8")
 
@@ -1151,6 +1158,63 @@ def _nms_class_aware(boxes, scores, classes, iou_thr=0.55):
     return np.array(keep, dtype=int)
 
 
+def _suppress_cross_class_duplicates(boxes, scores, classes, iou_thr):
+    """Cross-class duplicate suppression (class-agnostic NMS stage).
+
+    Runs AFTER `_nms_class_aware` and removes lower-confidence boxes of a
+    DIFFERENT class overlapping a higher-confidence box with IoU >= iou_thr.
+    One dish region can carry two near-identical class hypotheses (the
+    ultralytics NMS is class-aware, so both survive); the duplicate then
+    matches the same volume estimation and its nutrition is double-counted
+    (reproduced on bun-rieu (1).jpg: Bun bo Hue 0.955 + Bun rieu 0.354,
+    IoU 0.988). Same-class pairs are left to `_nms_class_aware`.
+
+    Greedy over confidence-descending order, so the outcome is independent
+    of input order. Returns (kept_indices, records) where each record is
+    {class_name, confidence, bbox, kept_class, kept_confidence, iou, reason}.
+    """
+    n = len(boxes)
+    order = np.argsort(-np.asarray(scores, dtype=np.float64))
+    suppressed = np.zeros(n, dtype=bool)
+    keep = []
+    records = []
+    for i in order:
+        i = int(i)
+        if suppressed[i]:
+            continue
+        keep.append(i)
+        ax1, ay1, ax2, ay2 = boxes[i]
+        area_i = max((ax2 - ax1) * (ay2 - ay1), 1e-9)
+        for j in order:
+            j = int(j)
+            if j == i or suppressed[j] or classes[j] == classes[i]:
+                continue
+            ix1 = max(ax1, boxes[j][0])
+            iy1 = max(ay1, boxes[j][1])
+            ix2 = min(ax2, boxes[j][2])
+            iy2 = min(ay2, boxes[j][3])
+            inter = max(0.0, ix2 - ix1) * max(0.0, iy2 - iy1)
+            area_j = max((boxes[j][2] - boxes[j][0]) * (boxes[j][3] - boxes[j][1]), 1e-9)
+            iou = inter / max(area_i + area_j - inter, 1e-9)
+            if iou >= iou_thr:
+                suppressed[j] = True
+                records.append({
+                    "class_name": _class_display_name(classes[j]),
+                    "confidence": float(scores[j]),
+                    "bbox": [float(v) for v in boxes[j]],
+                    "kept_class": _class_display_name(classes[i]),
+                    "kept_confidence": float(scores[i]),
+                    "iou": float(iou),
+                    "reason": "cross_class_duplicate",
+                })
+    return np.array(sorted(keep), dtype=int), records
+
+
+def _class_display_name(class_id):
+    c = class_names[int(class_id)]
+    return c["name"] if isinstance(c, dict) else str(c)
+
+
 def _map_boxes_exif_to_upright(xyxy, orientation, w_raw, h_raw):
     """Map boxes from raw-stored pixel coordinates to upright coordinates.
 
@@ -1189,7 +1253,9 @@ def _map_boxes_exif_to_upright(xyxy, orientation, w_raw, h_raw):
     return out, (w_raw, h_raw)
 
 
-def predict_with_dual_preresize(model, pil_image, conf, imgsz=640):
+def predict_with_dual_preresize(model, pil_image, conf, imgsz=640,
+                                suppress_cross_class=None,
+                                suppress_cross_class_iou=None):
     """Detect via two PIL anti-aliased pre-resizes (stretch + letterbox), merged.
 
     Ultralytics letterboxes with cv2.INTER_LINEAR, which aliases on
@@ -1205,6 +1271,18 @@ def predict_with_dual_preresize(model, pil_image, conf, imgsz=640):
     same semantics as predict() on pil_image directly — boxes in
     original-image coordinates, orig_img = the upright RGB frame — so
     plotting, bbox crops and the volume path (bbox_scale) stay unchanged.
+
+    Cross-class duplicate suppression (class-agnostic NMS) runs after the
+    class-aware NMS: lower-confidence boxes of a different class overlapping
+    a kept box with IoU >= threshold are removed, and the removed hypotheses
+    are attached to the Results as `suppressed_cross_class` records. Without
+    it, one dish region can reach the volume path twice under two class
+    labels and its nutrition is counted twice (post-freeze correctness fix;
+    threshold validation: evaluation_final/post_freeze/).
+    suppress_cross_class: None = pipeline_config.CROSS_CLASS_SUPPRESS_ENABLED,
+    False = off (reproduces the frozen baseline), True = force on.
+    suppress_cross_class_iou: None = pipeline_config.CROSS_CLASS_SUPPRESS_IOU,
+    else an explicit IoU threshold override.
 
     A third run over the raw (un-transposed) pixel orientation was evaluated
     and REJECTED: on out-of-distribution orientations the model hallucinates
@@ -1253,10 +1331,26 @@ def predict_with_dual_preresize(model, pil_image, conf, imgsz=640):
     xyxy_l[:, [0, 2]] = (xyxy_l[:, [0, 2]] - pad_x) / r
     xyxy_l[:, [1, 3]] = (xyxy_l[:, [1, 3]] - pad_y) / r
 
+    cross_records = []
     if len(ds) + len(dl):
         xyxy = np.concatenate([xyxy_s, xyxy_l], axis=0)
         extra = np.concatenate([ds[:, 4:], dl[:, 4:]], axis=0)
         keep = _nms_class_aware(xyxy, extra[:, 0], extra[:, 1])
+        enabled, thr = suppress_cross_class, suppress_cross_class_iou
+        if enabled is None or thr is None:
+            # Import here, AFTER the two predicts — never at module level:
+            # pipeline_config touches torch.cuda, and a CUDA-API call before
+            # the first YOLO predict segfaults bare (non-Streamlit) processes
+            # (measured: R2b/R2c repros); post-predict it is safe (R4).
+            import pipeline_config as _pc
+            if enabled is None:
+                enabled = bool(getattr(_pc, "CROSS_CLASS_SUPPRESS_ENABLED", True))
+            if thr is None:
+                thr = float(getattr(_pc, "CROSS_CLASS_SUPPRESS_IOU", 0.70))
+        if enabled and thr > 0:
+            keep_sub, cross_records = _suppress_cross_class_duplicates(
+                xyxy[keep], extra[keep, 0], extra[keep, 1], thr)
+            keep = keep[keep_sub]
         boxes6 = torch.from_numpy(
             np.concatenate([xyxy[keep], extra[keep]], axis=1).astype(np.float32))
     else:
@@ -1265,6 +1359,7 @@ def predict_with_dual_preresize(model, pil_image, conf, imgsz=640):
     orig_bgr = cv2.cvtColor(np.asarray(pil_image), cv2.COLOR_RGB2BGR)
     merged = Results(orig_img=orig_bgr, path=res_s.path, names=res_s.names,
                      boxes=boxes6, speed=res_s.speed)
+    merged.suppressed_cross_class = cross_records
     return [merged]
 
 

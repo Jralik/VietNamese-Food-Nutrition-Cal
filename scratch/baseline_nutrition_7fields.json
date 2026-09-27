@@ -1,0 +1,1430 @@
+{
+  "Banh canh (Vietnamese thick noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 75,
+      "Protein": 3.8,
+      "Fat": 2.5,
+      "Carbs": 9.5,
+      "Saturates": 0.6,
+      "Sugar": 0.8,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 337.5,
+      "Protein": 17.1,
+      "Fat": 11.25,
+      "Carbs": 42.75,
+      "Saturates": 2.7,
+      "Sugar": 3.6,
+      "Salt": 2.7
+    }
+  },
+  "Banh chung (Square sticky rice cake)": {
+    "serving_size_g": 200,
+    "nutrition_per_100g": {
+      "Calories": 195,
+      "Protein": 4.5,
+      "Fat": 3.8,
+      "Carbs": 36,
+      "Saturates": 1.2,
+      "Sugar": 0.3,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 390,
+      "Protein": 9,
+      "Fat": 7.6,
+      "Carbs": 72,
+      "Saturates": 2.4,
+      "Sugar": 0.6,
+      "Salt": 0.8
+    }
+  },
+  "Banh cuon (Rolled rice pancake)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 125,
+      "Protein": 3.5,
+      "Fat": 4,
+      "Carbs": 18,
+      "Saturates": 1,
+      "Sugar": 0.8,
+      "Salt": 0.5
+    },
+    "nutrition": {
+      "Calories": 187.5,
+      "Protein": 5.25,
+      "Fat": 6,
+      "Carbs": 27,
+      "Saturates": 1.5,
+      "Sugar": 1.2,
+      "Salt": 0.75
+    }
+  },
+  "Banh khot (Mini savory pancakes)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 195,
+      "Protein": 4,
+      "Fat": 9.5,
+      "Carbs": 23.5,
+      "Saturates": 2,
+      "Sugar": 1.8,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 292.5,
+      "Protein": 6,
+      "Fat": 14.25,
+      "Carbs": 35.25,
+      "Saturates": 3,
+      "Sugar": 2.7,
+      "Salt": 1.05
+    }
+  },
+  "Banh mi (Vietnamese baguette sandwich)": {
+    "serving_size_g": 200,
+    "nutrition_per_100g": {
+      "Calories": 265,
+      "Protein": 8.5,
+      "Fat": 9.8,
+      "Carbs": 36,
+      "Saturates": 3,
+      "Sugar": 3,
+      "Salt": 1.1
+    },
+    "nutrition": {
+      "Calories": 530,
+      "Protein": 17,
+      "Fat": 19.6,
+      "Carbs": 72,
+      "Saturates": 6,
+      "Sugar": 6,
+      "Salt": 2.2
+    }
+  },
+  "Banh trang (Rice paper)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 333,
+      "Protein": 0.5,
+      "Fat": 0.2,
+      "Carbs": 82,
+      "Saturates": 0.1,
+      "Sugar": 0,
+      "Salt": 0.2
+    },
+    "nutrition": {
+      "Calories": 333,
+      "Protein": 0.5,
+      "Fat": 0.2,
+      "Carbs": 82,
+      "Saturates": 0.1,
+      "Sugar": 0,
+      "Salt": 0.2
+    }
+  },
+  "Banh trang tron (Rice paper salad)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 160,
+      "Protein": 4,
+      "Fat": 6.5,
+      "Carbs": 21,
+      "Saturates": 1,
+      "Sugar": 2,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 240,
+      "Protein": 6,
+      "Fat": 9.75,
+      "Carbs": 31.5,
+      "Saturates": 1.5,
+      "Sugar": 3,
+      "Salt": 1.2
+    }
+  },
+  "Banh xeo (Vietnamese sizzling pancake)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 190,
+      "Protein": 5,
+      "Fat": 9.5,
+      "Carbs": 21,
+      "Saturates": 2.8,
+      "Sugar": 1.5,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 285,
+      "Protein": 7.5,
+      "Fat": 14.25,
+      "Carbs": 31.5,
+      "Saturates": 4.2,
+      "Sugar": 2.25,
+      "Salt": 1.05
+    }
+  },
+  "Bo kho (Beef stew)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 115,
+      "Protein": 9.5,
+      "Fat": 5.8,
+      "Carbs": 6,
+      "Saturates": 2.2,
+      "Sugar": 1.5,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 172.5,
+      "Protein": 14.25,
+      "Fat": 8.7,
+      "Carbs": 9,
+      "Saturates": 3.3,
+      "Sugar": 2.25,
+      "Salt": 1.35
+    }
+  },
+  "Bo la lot (Grilled beef wrapped in betel leaves)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 175,
+      "Protein": 12,
+      "Fat": 11,
+      "Carbs": 5,
+      "Saturates": 3.5,
+      "Sugar": 1.2,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 262.5,
+      "Protein": 18,
+      "Fat": 16.5,
+      "Carbs": 7.5,
+      "Saturates": 5.25,
+      "Sugar": 1.8,
+      "Salt": 1.2
+    }
+  },
+  "Bong cai (Cauliflower)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 25,
+      "Protein": 2,
+      "Fat": 0.1,
+      "Carbs": 5,
+      "Saturates": 0,
+      "Sugar": 2,
+      "Salt": 0.02
+    },
+    "nutrition": {
+      "Calories": 25,
+      "Protein": 2,
+      "Fat": 0.1,
+      "Carbs": 5,
+      "Saturates": 0,
+      "Sugar": 2,
+      "Salt": 0.02
+    }
+  },
+  "Bun (Rice vermicelli)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 109,
+      "Protein": 1.8,
+      "Fat": 0.2,
+      "Carbs": 24.9,
+      "Saturates": 0.1,
+      "Sugar": 0.1,
+      "Salt": 0.02
+    },
+    "nutrition": {
+      "Calories": 109,
+      "Protein": 1.8,
+      "Fat": 0.2,
+      "Carbs": 24.9,
+      "Saturates": 0.1,
+      "Sugar": 0.1,
+      "Salt": 0.02
+    }
+  },
+  "Bun bo Hue (Hue beef noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 90,
+      "Protein": 5.5,
+      "Fat": 3.5,
+      "Carbs": 9,
+      "Saturates": 1,
+      "Sugar": 0.6,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 405,
+      "Protein": 24.75,
+      "Fat": 15.75,
+      "Carbs": 40.5,
+      "Saturates": 4.5,
+      "Sugar": 2.7,
+      "Salt": 4.05
+    }
+  },
+  "Bun cha (Grilled pork with vermicelli)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 136,
+      "Protein": 6.1,
+      "Fat": 4.4,
+      "Carbs": 17.9,
+      "Saturates": 2,
+      "Sugar": 2,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 204,
+      "Protein": 9.15,
+      "Fat": 6.6,
+      "Carbs": 26.85,
+      "Saturates": 3,
+      "Sugar": 3,
+      "Salt": 1.2
+    }
+  },
+  "Bun dau (Vermicelli with tofu)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 150,
+      "Protein": 6.5,
+      "Fat": 7.5,
+      "Carbs": 15,
+      "Saturates": 1.2,
+      "Sugar": 1,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 225,
+      "Protein": 9.75,
+      "Fat": 11.25,
+      "Carbs": 22.5,
+      "Saturates": 1.8,
+      "Sugar": 1.5,
+      "Salt": 1.2
+    }
+  },
+  "Bun mam (Fermented fish noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 92,
+      "Protein": 5.2,
+      "Fat": 3.6,
+      "Carbs": 10,
+      "Saturates": 0.8,
+      "Sugar": 1,
+      "Salt": 1.2
+    },
+    "nutrition": {
+      "Calories": 414,
+      "Protein": 23.4,
+      "Fat": 16.2,
+      "Carbs": 45,
+      "Saturates": 3.6,
+      "Sugar": 4.5,
+      "Salt": 5.4
+    }
+  },
+  "Bun rieu (Crab noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 85,
+      "Protein": 4.8,
+      "Fat": 3.2,
+      "Carbs": 9.2,
+      "Saturates": 0.7,
+      "Sugar": 0.8,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 382.5,
+      "Protein": 21.6,
+      "Fat": 14.4,
+      "Carbs": 41.4,
+      "Saturates": 3.15,
+      "Sugar": 3.6,
+      "Salt": 3.6
+    }
+  },
+  "Ca (Fish)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 130,
+      "Protein": 18,
+      "Fat": 5,
+      "Carbs": 0,
+      "Saturates": 1.2,
+      "Sugar": 0,
+      "Salt": 0.3
+    },
+    "nutrition": {
+      "Calories": 130,
+      "Protein": 18,
+      "Fat": 5,
+      "Carbs": 0,
+      "Saturates": 1.2,
+      "Sugar": 0,
+      "Salt": 0.3
+    }
+  },
+  "Ca chua (Tomato)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 18,
+      "Protein": 0.9,
+      "Fat": 0.2,
+      "Carbs": 3.9,
+      "Saturates": 0,
+      "Sugar": 2.6,
+      "Salt": 0.01
+    },
+    "nutrition": {
+      "Calories": 18,
+      "Protein": 0.9,
+      "Fat": 0.2,
+      "Carbs": 3.9,
+      "Saturates": 0,
+      "Sugar": 2.6,
+      "Salt": 0.01
+    }
+  },
+  "Ca phao (Pickled eggplant)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 22,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 1.5,
+      "Salt": 1.5
+    },
+    "nutrition": {
+      "Calories": 22,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 1.5,
+      "Salt": 1.5
+    }
+  },
+  "Ca rot (Carrot)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 41,
+      "Protein": 0.9,
+      "Fat": 0.2,
+      "Carbs": 9.6,
+      "Saturates": 0,
+      "Sugar": 4.7,
+      "Salt": 0.07
+    },
+    "nutrition": {
+      "Calories": 41,
+      "Protein": 0.9,
+      "Fat": 0.2,
+      "Carbs": 9.6,
+      "Saturates": 0,
+      "Sugar": 4.7,
+      "Salt": 0.07
+    }
+  },
+  "Canh (Soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 35,
+      "Protein": 2.5,
+      "Fat": 1.2,
+      "Carbs": 3.5,
+      "Saturates": 0.3,
+      "Sugar": 1,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 157.5,
+      "Protein": 11.25,
+      "Fat": 5.4,
+      "Carbs": 15.75,
+      "Saturates": 1.35,
+      "Sugar": 4.5,
+      "Salt": 2.7
+    }
+  },
+  "Cha (Vietnamese pork roll)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 180,
+      "Protein": 14,
+      "Fat": 12,
+      "Carbs": 3,
+      "Saturates": 4,
+      "Sugar": 1,
+      "Salt": 1.5
+    },
+    "nutrition": {
+      "Calories": 180,
+      "Protein": 14,
+      "Fat": 12,
+      "Carbs": 3,
+      "Saturates": 4,
+      "Sugar": 1,
+      "Salt": 1.5
+    }
+  },
+  "Cha gio (Spring rolls)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 240,
+      "Protein": 7.5,
+      "Fat": 14,
+      "Carbs": 21,
+      "Saturates": 3,
+      "Sugar": 1.8,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 360,
+      "Protein": 11.25,
+      "Fat": 21,
+      "Carbs": 31.5,
+      "Saturates": 4.5,
+      "Sugar": 2.7,
+      "Salt": 1.35
+    }
+  },
+  "Chanh (Lime)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 30,
+      "Protein": 0.7,
+      "Fat": 0.2,
+      "Carbs": 10.5,
+      "Saturates": 0,
+      "Sugar": 1.7,
+      "Salt": 0.01
+    },
+    "nutrition": {
+      "Calories": 30,
+      "Protein": 0.7,
+      "Fat": 0.2,
+      "Carbs": 10.5,
+      "Saturates": 0,
+      "Sugar": 1.7,
+      "Salt": 0.01
+    }
+  },
+  "Com (Rice)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 130,
+      "Protein": 2.7,
+      "Fat": 0.3,
+      "Carbs": 28.2,
+      "Saturates": 0.1,
+      "Sugar": 0.1,
+      "Salt": 0.01
+    },
+    "nutrition": {
+      "Calories": 130,
+      "Protein": 2.7,
+      "Fat": 0.3,
+      "Carbs": 28.2,
+      "Saturates": 0.1,
+      "Sugar": 0.1,
+      "Salt": 0.01
+    }
+  },
+  "Com tam (Broken rice)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 165,
+      "Protein": 7,
+      "Fat": 5,
+      "Carbs": 24,
+      "Saturates": 1.5,
+      "Sugar": 1,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 247.5,
+      "Protein": 10.5,
+      "Fat": 7.5,
+      "Carbs": 36,
+      "Saturates": 2.25,
+      "Sugar": 1.5,
+      "Salt": 1.35
+    }
+  },
+  "Con nguoi (Human)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 0,
+      "Protein": 0,
+      "Fat": 0,
+      "Carbs": 0,
+      "Saturates": 0,
+      "Sugar": 0,
+      "Salt": 0
+    },
+    "nutrition": {
+      "Calories": 0,
+      "Protein": 0,
+      "Fat": 0,
+      "Carbs": 0,
+      "Saturates": 0,
+      "Sugar": 0,
+      "Salt": 0
+    }
+  },
+  "Cu kieu (Pickled scallion head)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 35,
+      "Protein": 1.2,
+      "Fat": 0.1,
+      "Carbs": 7.5,
+      "Saturates": 0,
+      "Sugar": 4,
+      "Salt": 1.2
+    },
+    "nutrition": {
+      "Calories": 35,
+      "Protein": 1.2,
+      "Fat": 0.1,
+      "Carbs": 7.5,
+      "Saturates": 0,
+      "Sugar": 4,
+      "Salt": 1.2
+    }
+  },
+  "Cua (Crab)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 87,
+      "Protein": 18,
+      "Fat": 1.1,
+      "Carbs": 0,
+      "Saturates": 0.2,
+      "Sugar": 0,
+      "Salt": 0.5
+    },
+    "nutrition": {
+      "Calories": 87,
+      "Protein": 18,
+      "Fat": 1.1,
+      "Carbs": 0,
+      "Saturates": 0.2,
+      "Sugar": 0,
+      "Salt": 0.5
+    }
+  },
+  "Dau hu (Tofu)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 76,
+      "Protein": 8,
+      "Fat": 4.8,
+      "Carbs": 1.9,
+      "Saturates": 0.7,
+      "Sugar": 0.5,
+      "Salt": 0.02
+    },
+    "nutrition": {
+      "Calories": 76,
+      "Protein": 8,
+      "Fat": 4.8,
+      "Carbs": 1.9,
+      "Saturates": 0.7,
+      "Sugar": 0.5,
+      "Salt": 0.02
+    }
+  },
+  "Dua chua (Pickled vegetables)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 20,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 3.5,
+      "Saturates": 0,
+      "Sugar": 1.5,
+      "Salt": 1.5
+    },
+    "nutrition": {
+      "Calories": 20,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 3.5,
+      "Saturates": 0,
+      "Sugar": 1.5,
+      "Salt": 1.5
+    }
+  },
+  "Dua leo (Cucumber)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 15,
+      "Protein": 0.7,
+      "Fat": 0.1,
+      "Carbs": 3.6,
+      "Saturates": 0,
+      "Sugar": 1.7,
+      "Salt": 0.01
+    },
+    "nutrition": {
+      "Calories": 15,
+      "Protein": 0.7,
+      "Fat": 0.1,
+      "Carbs": 3.6,
+      "Saturates": 0,
+      "Sugar": 1.7,
+      "Salt": 0.01
+    }
+  },
+  "Goi cuon (Fresh spring rolls)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 115,
+      "Protein": 5.5,
+      "Fat": 2.5,
+      "Carbs": 18,
+      "Saturates": 0.5,
+      "Sugar": 1.8,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 172.5,
+      "Protein": 8.25,
+      "Fat": 3.75,
+      "Carbs": 27,
+      "Saturates": 0.75,
+      "Sugar": 2.7,
+      "Salt": 0.9
+    }
+  },
+  "Hamburger": {
+    "serving_size_g": 200,
+    "nutrition_per_100g": {
+      "Calories": 250,
+      "Protein": 13,
+      "Fat": 12,
+      "Carbs": 24,
+      "Saturates": 4.5,
+      "Sugar": 4,
+      "Salt": 1.2
+    },
+    "nutrition": {
+      "Calories": 500,
+      "Protein": 26,
+      "Fat": 24,
+      "Carbs": 48,
+      "Saturates": 9,
+      "Sugar": 8,
+      "Salt": 2.4
+    }
+  },
+  "Heo quay (Roast pork)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 290,
+      "Protein": 18,
+      "Fat": 23,
+      "Carbs": 1.5,
+      "Saturates": 8,
+      "Sugar": 0.5,
+      "Salt": 1.1
+    },
+    "nutrition": {
+      "Calories": 290,
+      "Protein": 18,
+      "Fat": 23,
+      "Carbs": 1.5,
+      "Saturates": 8,
+      "Sugar": 0.5,
+      "Salt": 1.1
+    }
+  },
+  "Hu tieu (Clear rice noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 88,
+      "Protein": 5,
+      "Fat": 3,
+      "Carbs": 10,
+      "Saturates": 0.8,
+      "Sugar": 1,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 396,
+      "Protein": 22.5,
+      "Fat": 13.5,
+      "Carbs": 45,
+      "Saturates": 3.6,
+      "Sugar": 4.5,
+      "Salt": 3.6
+    }
+  },
+  "Kho qua thit (Stuffed bitter melon soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 65,
+      "Protein": 5,
+      "Fat": 3.2,
+      "Carbs": 4,
+      "Saturates": 1,
+      "Sugar": 1.5,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 292.5,
+      "Protein": 22.5,
+      "Fat": 14.4,
+      "Carbs": 18,
+      "Saturates": 4.5,
+      "Sugar": 6.75,
+      "Salt": 3.15
+    }
+  },
+  "Khoai tay chien (French fries)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 312,
+      "Protein": 3.4,
+      "Fat": 15,
+      "Carbs": 41,
+      "Saturates": 2.3,
+      "Sugar": 0.3,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 312,
+      "Protein": 3.4,
+      "Fat": 15,
+      "Carbs": 41,
+      "Saturates": 2.3,
+      "Sugar": 0.3,
+      "Salt": 0.6
+    }
+  },
+  "Lau (Hotpot)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 90,
+      "Protein": 6.5,
+      "Fat": 4,
+      "Carbs": 7,
+      "Saturates": 1.2,
+      "Sugar": 1,
+      "Salt": 1
+    },
+    "nutrition": {
+      "Calories": 405,
+      "Protein": 29.25,
+      "Fat": 18,
+      "Carbs": 31.5,
+      "Saturates": 5.4,
+      "Sugar": 4.5,
+      "Salt": 4.5
+    }
+  },
+  "Long heo (Pork offal)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 140,
+      "Protein": 15,
+      "Fat": 8,
+      "Carbs": 1,
+      "Saturates": 2.8,
+      "Sugar": 0,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 140,
+      "Protein": 15,
+      "Fat": 8,
+      "Carbs": 1,
+      "Saturates": 2.8,
+      "Sugar": 0,
+      "Salt": 0.4
+    }
+  },
+  "Mi (Egg noodles)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 138,
+      "Protein": 4.5,
+      "Fat": 2.1,
+      "Carbs": 25,
+      "Saturates": 0.5,
+      "Sugar": 0.8,
+      "Salt": 0.3
+    },
+    "nutrition": {
+      "Calories": 138,
+      "Protein": 4.5,
+      "Fat": 2.1,
+      "Carbs": 25,
+      "Saturates": 0.5,
+      "Sugar": 0.8,
+      "Salt": 0.3
+    }
+  },
+  "Muc (Squid)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 92,
+      "Protein": 15.6,
+      "Fat": 1.4,
+      "Carbs": 3.1,
+      "Saturates": 0.4,
+      "Sugar": 0,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 92,
+      "Protein": 15.6,
+      "Fat": 1.4,
+      "Carbs": 3.1,
+      "Saturates": 0.4,
+      "Sugar": 0,
+      "Salt": 0.4
+    }
+  },
+  "Nam (Mushroom)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 28,
+      "Protein": 3,
+      "Fat": 0.3,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 1.8,
+      "Salt": 0.01
+    },
+    "nutrition": {
+      "Calories": 28,
+      "Protein": 3,
+      "Fat": 0.3,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 1.8,
+      "Salt": 0.01
+    }
+  },
+  "Oc (Snails)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 79,
+      "Protein": 15,
+      "Fat": 1.4,
+      "Carbs": 2,
+      "Saturates": 0.3,
+      "Sugar": 0,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 79,
+      "Protein": 15,
+      "Fat": 1.4,
+      "Carbs": 2,
+      "Saturates": 0.3,
+      "Sugar": 0,
+      "Salt": 0.4
+    }
+  },
+  "Ot chuong (Bell pepper)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 20,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 4.6,
+      "Saturates": 0,
+      "Sugar": 4.2,
+      "Salt": 0.02
+    },
+    "nutrition": {
+      "Calories": 20,
+      "Protein": 1,
+      "Fat": 0.2,
+      "Carbs": 4.6,
+      "Saturates": 0,
+      "Sugar": 4.2,
+      "Salt": 0.02
+    }
+  },
+  "Pho (Vietnamese noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 75,
+      "Protein": 5.0,
+      "Fat": 2.0,
+      "Carbs": 11.5,
+      "Saturates": 0.7,
+      "Sugar": 0.6,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 337.5,
+      "Protein": 22.5,
+      "Fat": 9.0,
+      "Carbs": 51.75,
+      "Saturates": 3.15,
+      "Sugar": 2.7,
+      "Salt": 4.05
+    }
+  },
+  "Pho mai (Cheese)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 350,
+      "Protein": 22,
+      "Fat": 28,
+      "Carbs": 2,
+      "Saturates": 18,
+      "Sugar": 1,
+      "Salt": 1.6
+    },
+    "nutrition": {
+      "Calories": 350,
+      "Protein": 22,
+      "Fat": 28,
+      "Carbs": 2,
+      "Saturates": 18,
+      "Sugar": 1,
+      "Salt": 1.6
+    }
+  },
+  "Rau (Vegetables)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 25,
+      "Protein": 1.5,
+      "Fat": 0.2,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 2,
+      "Salt": 0.02
+    },
+    "nutrition": {
+      "Calories": 25,
+      "Protein": 1.5,
+      "Fat": 0.2,
+      "Carbs": 4.5,
+      "Saturates": 0,
+      "Sugar": 2,
+      "Salt": 0.02
+    }
+  },
+  "Salad (Salad)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 50,
+      "Protein": 1.5,
+      "Fat": 3,
+      "Carbs": 4.5,
+      "Saturates": 0.5,
+      "Sugar": 2,
+      "Salt": 0.3
+    },
+    "nutrition": {
+      "Calories": 75,
+      "Protein": 2.25,
+      "Fat": 4.5,
+      "Carbs": 6.75,
+      "Saturates": 0.75,
+      "Sugar": 3,
+      "Salt": 0.45
+    }
+  },
+  "Thit bo (Beef)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 215,
+      "Protein": 26,
+      "Fat": 12,
+      "Carbs": 0,
+      "Saturates": 4.8,
+      "Sugar": 0,
+      "Salt": 0.2
+    },
+    "nutrition": {
+      "Calories": 215,
+      "Protein": 26,
+      "Fat": 12,
+      "Carbs": 0,
+      "Saturates": 4.8,
+      "Sugar": 0,
+      "Salt": 0.2
+    }
+  },
+  "Thit ga (Chicken)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 190,
+      "Protein": 29,
+      "Fat": 7.4,
+      "Carbs": 0,
+      "Saturates": 2,
+      "Sugar": 0,
+      "Salt": 0.2
+    },
+    "nutrition": {
+      "Calories": 190,
+      "Protein": 29,
+      "Fat": 7.4,
+      "Carbs": 0,
+      "Saturates": 2,
+      "Sugar": 0,
+      "Salt": 0.2
+    }
+  },
+  "Thit heo (Pork)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 242,
+      "Protein": 27,
+      "Fat": 14,
+      "Carbs": 0,
+      "Saturates": 5,
+      "Sugar": 0,
+      "Salt": 0.2
+    },
+    "nutrition": {
+      "Calories": 242,
+      "Protein": 27,
+      "Fat": 14,
+      "Carbs": 0,
+      "Saturates": 5,
+      "Sugar": 0,
+      "Salt": 0.2
+    }
+  },
+  "Thit kho (Braised pork)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 220,
+      "Protein": 15,
+      "Fat": 16,
+      "Carbs": 4,
+      "Saturates": 5.5,
+      "Sugar": 3,
+      "Salt": 1.5
+    },
+    "nutrition": {
+      "Calories": 220,
+      "Protein": 15,
+      "Fat": 16,
+      "Carbs": 4,
+      "Saturates": 5.5,
+      "Sugar": 3,
+      "Salt": 1.5
+    }
+  },
+  "Thit nuong (Grilled meat)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 230,
+      "Protein": 20,
+      "Fat": 15,
+      "Carbs": 2.5,
+      "Saturates": 5,
+      "Sugar": 2,
+      "Salt": 1
+    },
+    "nutrition": {
+      "Calories": 230,
+      "Protein": 20,
+      "Fat": 15,
+      "Carbs": 2.5,
+      "Saturates": 5,
+      "Sugar": 2,
+      "Salt": 1
+    }
+  },
+  "Tom (Shrimp)": {
+    "serving_size_g": 100,
+    "nutrition_per_100g": {
+      "Calories": 99,
+      "Protein": 24,
+      "Fat": 0.3,
+      "Carbs": 0.2,
+      "Saturates": 0.1,
+      "Sugar": 0,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 99,
+      "Protein": 24,
+      "Fat": 0.3,
+      "Carbs": 0.2,
+      "Saturates": 0.1,
+      "Sugar": 0,
+      "Salt": 0.4
+    }
+  },
+  "Trung (Egg)": {
+    "serving_size_g": 50,
+    "nutrition_per_100g": {
+      "Calories": 143,
+      "Protein": 12.6,
+      "Fat": 9.5,
+      "Carbs": 0.7,
+      "Saturates": 3.1,
+      "Sugar": 0.4,
+      "Salt": 0.32
+    },
+    "nutrition": {
+      "Calories": 71.5,
+      "Protein": 6.3,
+      "Fat": 4.75,
+      "Carbs": 0.35,
+      "Saturates": 1.55,
+      "Sugar": 0.2,
+      "Salt": 0.16
+    }
+  },
+  "Xoi (Sticky rice)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 195,
+      "Protein": 4.2,
+      "Fat": 2.5,
+      "Carbs": 39,
+      "Saturates": 0.6,
+      "Sugar": 0.3,
+      "Salt": 0.2
+    },
+    "nutrition": {
+      "Calories": 292.5,
+      "Protein": 6.3,
+      "Fat": 3.75,
+      "Carbs": 58.5,
+      "Saturates": 0.9,
+      "Sugar": 0.45,
+      "Salt": 0.3
+    }
+  },
+  "Banh beo (Vietnamese savory steamed rice cake)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 120,
+      "Protein": 3.8,
+      "Fat": 3.5,
+      "Carbs": 18,
+      "Saturates": 0.8,
+      "Sugar": 1.2,
+      "Salt": 0.4
+    },
+    "nutrition": {
+      "Calories": 180,
+      "Protein": 5.7,
+      "Fat": 5.25,
+      "Carbs": 27,
+      "Saturates": 1.2,
+      "Sugar": 1.8,
+      "Salt": 0.6
+    }
+  },
+  "Cao lau (Cao lau noodles)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 135,
+      "Protein": 6.8,
+      "Fat": 4.5,
+      "Carbs": 17,
+      "Saturates": 1.2,
+      "Sugar": 1,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 202.5,
+      "Protein": 10.2,
+      "Fat": 6.75,
+      "Carbs": 25.5,
+      "Saturates": 1.8,
+      "Sugar": 1.5,
+      "Salt": 1.2
+    }
+  },
+  "Mi Quang (Quang-style noodles)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 130,
+      "Protein": 6,
+      "Fat": 4.8,
+      "Carbs": 16,
+      "Saturates": 1.2,
+      "Sugar": 1,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 195,
+      "Protein": 9,
+      "Fat": 7.2,
+      "Carbs": 24,
+      "Saturates": 1.8,
+      "Sugar": 1.5,
+      "Salt": 1.05
+    }
+  },
+  "Com chien duong chau (Yangzhou fried rice)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 175,
+      "Protein": 4.5,
+      "Fat": 6.5,
+      "Carbs": 25,
+      "Saturates": 1.5,
+      "Sugar": 0.8,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 262.5,
+      "Protein": 6.75,
+      "Fat": 9.75,
+      "Carbs": 37.5,
+      "Saturates": 2.25,
+      "Sugar": 1.2,
+      "Salt": 1.2
+    }
+  },
+  "Bun cha ca (Fish cake noodle soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 95,
+      "Protein": 5.5,
+      "Fat": 3.2,
+      "Carbs": 11,
+      "Saturates": 0.8,
+      "Sugar": 0.8,
+      "Salt": 0.9
+    },
+    "nutrition": {
+      "Calories": 427.5,
+      "Protein": 24.75,
+      "Fat": 14.4,
+      "Carbs": 49.5,
+      "Saturates": 3.6,
+      "Sugar": 3.6,
+      "Salt": 4.05
+    }
+  },
+  "Com chien ga (Fried rice with chicken)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 180,
+      "Protein": 6.5,
+      "Fat": 6.8,
+      "Carbs": 23,
+      "Saturates": 1.6,
+      "Sugar": 0.8,
+      "Salt": 0.8
+    },
+    "nutrition": {
+      "Calories": 270,
+      "Protein": 9.75,
+      "Fat": 10.2,
+      "Carbs": 34.5,
+      "Saturates": 2.4,
+      "Sugar": 1.2,
+      "Salt": 1.2
+    }
+  },
+  "Chao long (Pork organ congee)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 80,
+      "Protein": 4.5,
+      "Fat": 2.8,
+      "Carbs": 9.5,
+      "Saturates": 0.8,
+      "Sugar": 0.5,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 120,
+      "Protein": 6.75,
+      "Fat": 4.2,
+      "Carbs": 14.25,
+      "Saturates": 1.2,
+      "Sugar": 0.75,
+      "Salt": 1.05
+    }
+  },
+  "Nom hoa chuoi (Banana blossom salad)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 65,
+      "Protein": 2.5,
+      "Fat": 3,
+      "Carbs": 7,
+      "Saturates": 0.5,
+      "Sugar": 2.5,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 97.5,
+      "Protein": 3.75,
+      "Fat": 4.5,
+      "Carbs": 10.5,
+      "Saturates": 0.75,
+      "Sugar": 3.75,
+      "Salt": 0.9
+    }
+  },
+  "Nui xao bo (Stir-fried macaroni with beef)": {
+    "serving_size_g": 150,
+    "nutrition_per_100g": {
+      "Calories": 160,
+      "Protein": 7.5,
+      "Fat": 6,
+      "Carbs": 19,
+      "Saturates": 2,
+      "Sugar": 1.2,
+      "Salt": 0.7
+    },
+    "nutrition": {
+      "Calories": 240,
+      "Protein": 11.25,
+      "Fat": 9,
+      "Carbs": 28.5,
+      "Saturates": 3,
+      "Sugar": 1.8,
+      "Salt": 1.05
+    }
+  },
+  "Sup cua (Crab soup)": {
+    "serving_size_g": 450,
+    "nutrition_per_100g": {
+      "Calories": 70,
+      "Protein": 4.5,
+      "Fat": 2,
+      "Carbs": 8.5,
+      "Saturates": 0.4,
+      "Sugar": 0.8,
+      "Salt": 0.6
+    },
+    "nutrition": {
+      "Calories": 315,
+      "Protein": 20.25,
+      "Fat": 9,
+      "Carbs": 38.25,
+      "Saturates": 1.8,
+      "Sugar": 3.6,
+      "Salt": 2.7
+    }
+  }
+}
