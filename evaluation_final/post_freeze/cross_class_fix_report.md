@@ -163,3 +163,24 @@ Vì vậy:
   (`evaluation_final/post_freeze/`, `scratch/*.jsonl`).
 - Không amend `18cd148`; không sửa `evaluation_final/` (file cũ),
   `scratch/evaluation_summary.md`, hay bất kỳ số liệu Chapter 4 nào.
+
+## 9. Quyết định protocol Experiment D (chốt)
+
+Experiment D sử dụng pipeline tại checkpoint `8427cc1`, trong đó cross-class
+duplicate suppression được bật mặc định (`suppress_cross_class=True`, IoU
+threshold = 0.70). Chế độ `suppress_cross_class=False` chỉ được sử dụng cho
+các phép đối chiếu với frozen baseline `18cd148` và không được sử dụng trong
+kết quả chính của Experiment D.
+
+Khi báo cáo kết quả Experiment D, tách ba lớp:
+
+- **Detection metrics**: biến động recall/precision instance-level.
+- **Nutrition correctness**: vùng duplicate không còn bị đưa vào tính dinh
+  dưỡng hai lần.
+- **Limitation**: validation hiện tại không có spatial bounding-box GT, nên
+  chưa thể chứng minh đầy đủ rằng mọi cross-class overlap bị suppress đều là
+  duplicate thực sự.
+
+Con số recall 0.7703 chỉ mô tả instance-level evaluation dưới protocol GT
+hiện tại; mục tiêu trực tiếp của thay đổi là loại bỏ double-counting do
+cross-class duplicate, không phải tối ưu một detection metric đơn lẻ.
