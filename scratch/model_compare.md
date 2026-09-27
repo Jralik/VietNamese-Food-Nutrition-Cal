@@ -1,15 +1,19 @@
 
-# Model comparison — v26m (app) vs yolov10b, 54 anh val
+# Model comparison — v26m (eval-pipeline historical) vs yolov10b, 54 anh val
+
+> **Provenance note (2026-09-28):** "v26m-dual" chạy trên `model/yolov26/best.onnx` qua eval pipeline lịch sử —
+> KHÔNG phải model production. App production load `model/yolov10/YOLOv10b_VietFood67_SGD_new_bigger.pt`
+> (`utils.py:295`, `main.py:402`). Label cũ "app hien tai" đã sửa theo `results/frozen_numbers.md` §1.
 
 | Config | Recall@0.50 | Recall@0.30 | Anh 0 box @0.50 | ms/anh (CPU) |
 |---|---|---|---|---|
-| v26m-dual (app hien tai) | 0.546 | 0.546 | 12/54 | 1089 |
+| v26m-dual (eval-pipeline historical) | 0.546 | 0.546 | 12/54 | 1089 |
 | v10b-dual | 0.759 | 0.759 | 2/54 | 1574 |
 | v10b-stretch (ref pipeline) | 0.611 | 0.611 | 6/54 | 735 |
 
 ## Recall@0.50 theo nhom mon
 
-| Nhom | v26m-dual (app hien tai) | v10b-dual | v10b-stretch (ref pipeline) |
+| Nhom | v26m-dual (eval-pipeline historical) | v10b-dual | v10b-stretch (ref pipeline) |
 |---|---|---|---|
 | BanhCuon | 0.00 | 0.00 | 0.00 |
 | BanhMi | 0.75 | 0.91 | 0.69 |
@@ -21,7 +25,7 @@
 
 ## Recall@0.50 theo class (tren cac anh co class do)
 
-| Class | So anh | v26m-dual (app hien tai) | v10b-dual | v10b-stretch (ref pipeline) |
+| Class | So anh | v26m-dual (eval-pipeline historical) | v10b-dual | v10b-stretch (ref pipeline) |
 |---|---|---|---|---|
 | Banh cuon (Rolled rice pancake) | 6 | 0/6 | 0/6 | 0/6 |
 | Banh mi (Vietnamese baguette sandwich) | 16 | 14/16 | 16/16 | 12/16 |
@@ -37,12 +41,12 @@
 
 | Config | Class | So anh miss | median max-conf | max max-conf | Sẽ bat duoi slider 0.30? |
 |---|---|---|---|---|---|
-| v26m-dual (app hien tai) | Rau (Vegetables) | 8 | 0.000 | 0.196 | Khong |
-| v26m-dual (app hien tai) | Sup cua (Crab soup) | 8 | 0.000 | 0.094 | Khong |
-| v26m-dual (app hien tai) | Banh cuon (Rolled rice pancake) | 6 | 0.000 | 0.000 | Khong |
-| v26m-dual (app hien tai) | Trung (Egg) | 4 | 0.000 | 0.090 | Khong |
-| v26m-dual (app hien tai) | Bun rieu (Crab noodle soup) | 3 | 0.000 | 0.000 | Khong |
-| v26m-dual (app hien tai) | Banh mi (Vietnamese baguette sandwich) | 2 | 0.396 | 0.476 | Co |
+| v26m-dual (eval-pipeline historical) | Rau (Vegetables) | 8 | 0.000 | 0.196 | Khong |
+| v26m-dual (eval-pipeline historical) | Sup cua (Crab soup) | 8 | 0.000 | 0.094 | Khong |
+| v26m-dual (eval-pipeline historical) | Banh cuon (Rolled rice pancake) | 6 | 0.000 | 0.000 | Khong |
+| v26m-dual (eval-pipeline historical) | Trung (Egg) | 4 | 0.000 | 0.090 | Khong |
+| v26m-dual (eval-pipeline historical) | Bun rieu (Crab noodle soup) | 3 | 0.000 | 0.000 | Khong |
+| v26m-dual (eval-pipeline historical) | Banh mi (Vietnamese baguette sandwich) | 2 | 0.396 | 0.476 | Co |
 | v10b-dual | Banh cuon (Rolled rice pancake) | 6 | 0.000 | 0.105 | Khong |
 | v10b-dual | Rau (Vegetables) | 4 | 0.234 | 0.387 | Khong |
 | v10b-dual | Trung (Egg) | 3 | 0.215 | 0.408 | Khong |
