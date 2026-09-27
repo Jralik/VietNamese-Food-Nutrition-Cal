@@ -1,0 +1,2 @@
+{"mode": "OFF", "images": 54, "gt_instances": 74, "det_instances": 96, "matched_instances": 60, "recall": 0.8108, "precision": 0.625, "suppressed_cross_class": 0, "elapsed_s": 85.0}
+{"mode": "ON", "images": 54, "gt_instances": 74, "det_instances": 88, "matched_instances": 57, "recall": 0.7703, "precision": 0.6477, "suppressed_cross_class": 8, "elapsed_s": 168.1}
