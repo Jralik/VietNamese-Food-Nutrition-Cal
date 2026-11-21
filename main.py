@@ -130,6 +130,7 @@ def render_sidebar():
         render_sidebar_ai_config()
 
         st.divider()
+        ui.render_medical_disclaimer()
         st.markdown(
             f'<div style="font-size:11px; color: var(--text-faint); line-height:1.7;">'
             f'🍜 FoodDetector AI — đồ án tốt nghiệp<br>'
@@ -745,6 +746,8 @@ def render_chat_tab():
                             "và đề xuất các mẹo ăn uống lành mạnh (ví dụ: bớt nước lèo khi ăn phở, ăn thêm rau xà lách...).\n"
                             "Hãy trả lời bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu.\n"
                             "Không nói dông dài, đi thẳng vào vấn đề chính. Chỉ đưa ra câu trả lời trực tiếp bằng tiếng Việt, không lặp lại bất kỳ mô tả vai trò, nhiệm vụ hay cấu hình hệ thống nào.\n"
+                            "LƯU Ý Y TẾ: khối lượng và dinh dưỡng do hệ thống ước lượng có sai số đáng kể (MAPE ≈ 45% trên tập đánh giá thực tế, thay đổi mạnh theo món) — chỉ mang tính tham khảo. "
+                            "Khi người dùng hỏi về bệnh lý (tiểu đường, tim mạch, thai kỳ...), khuyên họ tham khảo bác sĩ/chuyên gia dinh dưỡng, không đưa ra phác đồ ăn uống trị liệu.\n"
                             f"{rag_context}"
                             f"{meal_context}"
                         )

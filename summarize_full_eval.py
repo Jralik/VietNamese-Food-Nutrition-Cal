@@ -213,7 +213,7 @@ def main():
     # ── report ──
     total_targets = sum(v["count"] for r in records if not r.get("error")
                         for v in r["gt"].values())
-    L = ["", "# Full-pipeline evaluation — 54 ảnh portion-estimation_val", ""]
+    L = ["", f"# Full-pipeline evaluation — {len(records)} ảnh portion-estimation_val", ""]
     L.append(f"Pipeline: v10b + dual-preresize @ conf=0.30 (app default) → "
              f"volume SAM2 daemon (ArUco scale, 2000px source) → nutrition. "
              f"GT: {total_targets} targets / "

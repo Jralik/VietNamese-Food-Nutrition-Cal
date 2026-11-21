@@ -1,0 +1,5102 @@
+{
+  "metadata": {
+    "source": "Cơ sở dữ liệu món ăn — Cổng Thực đơn gia đình (thucdongiadinh.vn), Viện Nghiên Cứu Dinh Dưỡng TP.HCM",
+    "api_endpoint": "https://app.thucdongiadinh.vn/api/services/app/MonAn/GetAllServerPaging",
+    "basis_original": "per_serving",
+    "description": "Món ăn kèm hàm lượng dinh dưỡng theo khẩu phần (phần lớn là sản phẩm chế biến sẵn thương mại)",
+    "total_records": 160,
+    "synced_at": "2026-09-28 20:03:10"
+  },
+  "data": [
+    {
+      "tenVi": " NutiFood Dr.Cháo Vị Cá hồi, Đậu hà lan, Hạt sen 240g/ gói",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 130.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "54d49fcf-0a08-46ef-9eb7-6b52c03ce33b",
+      "khoiLuong": null,
+      "khoiLuongAuto": 240.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Cháo, mì, phở gói các loại"
+      ],
+      "arrNhomMonAnId": [
+        68
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16671,
+        "stt": null,
+        "tenDonVi": "Gói",
+        "khoiLuong": 240.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4628
+      },
+      "id": 16671
+    },
+    {
+      "tenVi": " NutiFood Dr.Cháo Vị Gà Ác, Đậu xanh 240g/ gói",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 130.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "82b3a311-ba64-4b29-9b48-b15f536003ab",
+      "khoiLuong": null,
+      "khoiLuongAuto": 240.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Cháo, mì, phở gói các loại"
+      ],
+      "arrNhomMonAnId": [
+        68
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16669,
+        "stt": null,
+        "tenDonVi": "Gói",
+        "khoiLuong": 240.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4629
+      },
+      "id": 16669
+    },
+    {
+      "tenVi": " NutiFood Dr.Cháo Vị Lươn, Đậu xanh 240g/ gói",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 130.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "da41b80e-b487-43bf-8cad-f517e4938c35",
+      "khoiLuong": null,
+      "khoiLuongAuto": 240.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Cháo, mì, phở gói các loại"
+      ],
+      "arrNhomMonAnId": [
+        68
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16670,
+        "stt": null,
+        "tenDonVi": "Gói",
+        "khoiLuong": 240.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4630
+      },
+      "id": 16670
+    },
+    {
+      "tenVi": " Riso Opti Gold hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 87.395,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d6c600a7-d3d6-4999-afea-1186bcda2cd9",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15805,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4293
+      },
+      "id": 15805
+    },
+    {
+      "tenVi": "Dr.Lucen Colostrum 1+ cho trẻ 1- 2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 166.32,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "ed8ae631-5691-4f4b-bdec-5abba021a178",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt DR Lucen Colostrum 1+  (tương đương 36g) với 180ml nước chín ấm (khoảng 50oC). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14304,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7052
+      },
+      "id": 14304
+    },
+    {
+      "tenVi": "Dr.Lucen Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 165.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "290b9275-3cdd-4f55-bc88-b0f2ef4d1601",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Dr.Lucen Colostrum 2+ tương đương 36 g với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15380,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7223
+      },
+      "id": 15380
+    },
+    {
+      "tenVi": "Dr.Lucen Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 165.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "1295eddc-4876-475c-9174-d01621d5dd10",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 05 phút và để nguội dần đến 50⁰C.\nPha 7 muỗng gạt DR.LUCEN COLOSTRUM 2+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15567,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7263
+      },
+      "id": 15567
+    },
+    {
+      "tenVi": "Dr.Lucen Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 165.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "749caa47-ef0d-410a-8201-2090ece2bdd7",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt DR.LUCEN COLOSTRUM 2+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15749,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4191
+      },
+      "id": 15749
+    },
+    {
+      "tenVi": "Dr.Lucen Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 165.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cd68ebd1-232b-4140-9109-e4e872df9e23",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 5 phút và để nguội dần đến 50 độ C. Pha 7 muỗng gạt Dr.Lucen Colostrum 2+ (tương đương 36g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15780,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4257
+      },
+      "id": 15780
+    },
+    {
+      "tenVi": "Dr.Lucen Nutri Max cho trẻ gầy & biếng ăn -  200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 179.36,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a26bc513-e92d-4064-bb36-f4f2468b58b3",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Dr. Lucen NutriMax (tương đương 38g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15568,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7055
+      },
+      "id": 15568
+    },
+    {
+      "tenVi": "Dr.Lucen Nutri Max cho trẻ gầy & biếng ăn - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 179.36,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4b35c756-182e-4d01-a7d3-3231d16c2942",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Dr. Lucen NutriMax (tương đương 38g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15382,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7186
+      },
+      "id": 15382
+    },
+    {
+      "tenVi": "Dr.Lucen Nutri Max cho trẻ gầy & biếng ăn - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 179.36,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "514d02be-0396-45f2-a0a3-1ee44ef0bf4e",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 5 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Dr. Lucen NutriMax (tương đương 38g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15781,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4258
+      },
+      "id": 15781
+    },
+    {
+      "tenVi": "Dr.Lucen Nutri Max cho trẻ gầy & biếng ăn cho trẻ 1 tuổi trở lên- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 179.36,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "17d45365-9e19-4dfa-9315-fa42daf046c2",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": " Pha 7 muỗng gạt Dr. Lucen NutriMax (tương đương 38g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14305,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7019
+      },
+      "id": 14305
+    },
+    {
+      "tenVi": "Dr.Lucen Step 3 cho trẻ 1-2 tuổi -200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.04,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b9cab854-661d-4215-bafa-8647888d1052",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "1 muỗng gạt (tương đương 4.4g) pha với 30ml nước. Pha 7 muỗng gạt tương đương 36 g sữa bột với 180 ml nước để được 1 ly 200 ml sữa thành phẩm.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14306,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7131
+      },
+      "id": 14306
+    },
+    {
+      "tenVi": "Famna 1 từ 0-6 tháng -100ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 67.23,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "fd171e2f-2595-4585-a7c5-a0ef1bc8b26b",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 13.5,
+      "isActive": false,
+      "cachCheBien": "1 muỗng gạt = 4.5g pha với 30ml nước.\nPha 3 muỗng gạt tương đương 13.5g sữa bột với 90 ml nước để được 1 ly 100 ml sữa thành phẩm.",
+      "arrNhomMonAn": [
+        "Sữa bột 0-6 tháng"
+      ],
+      "arrNhomMonAnId": [
+        170
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16760,
+        "stt": null,
+        "tenDonVi": "Ly 100 ml",
+        "khoiLuong": 100.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 6996
+      },
+      "id": 16760
+    },
+    {
+      "tenVi": "Famna 2 từ 6-12 tháng- 100ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 65.88,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e4aa53a5-2c89-4470-be1a-c84654928551",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 13.5,
+      "isActive": false,
+      "cachCheBien": "1 muỗng gạt = 4.5g pha với 30ml nước. Khuyến nghị 7 muỗng/ lần, 3-4 lần/ ngày",
+      "arrNhomMonAn": [
+        "Sữa bột 6-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        199
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16861,
+        "stt": null,
+        "tenDonVi": "Ly 100 ml",
+        "khoiLuong": 100.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 6999
+      },
+      "id": 16861
+    },
+    {
+      "tenVi": "Famna 3 từ 1-2 tuổi - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "2bb07dd8-b30b-455d-acaa-d513579a5332",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 7 muỗng gạt Famna 3 (khoảng 36 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16762,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7124
+      },
+      "id": 16762
+    },
+    {
+      "tenVi": "Famna 4 trên 2 tuổi - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d07bf09c-46d8-43f2-8cc1-e53fc56e871f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 7 muỗng gạt Famna 4 (khoảng 36 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16763,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4698
+      },
+      "id": 16763
+    },
+    {
+      "tenVi": "Famna 4 trên 2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "f24aa0fb-8ebb-4efa-bba1-17a21556a072",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Famna 4 (khoảng 36 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16778,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7205
+      },
+      "id": 16778
+    },
+    {
+      "tenVi": "Famna 4 trên 2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9d455871-06f3-4f7b-8139-a7695861db37",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Famna 4 (khoảng 36 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16779,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7268
+      },
+      "id": 16779
+    },
+    {
+      "tenVi": "Famna trên 1 tuổi Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 91.6666,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "5bf48ebd-0463-4608-a0de-f2ae1337b776",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16764,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4692
+      },
+      "id": 16764
+    },
+    {
+      "tenVi": "Famna trên 1 tuổi Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 150.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "c34f8ffe-e894-4bbb-9468-9a5bd73a2c43",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16773,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4690
+      },
+      "id": 16773
+    },
+    {
+      "tenVi": "Grow Plus Diamond 2+ Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 181.64,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "87df53ed-f67f-4a08-aa4c-dafde4754a2a",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha\nPha 7 muỗng gạt GrowPLUS+ Diamond +2 (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15756,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4198
+      },
+      "id": 15756
+    },
+    {
+      "tenVi": "Grow Plus+ Gold Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.44,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "f95aa17a-c7ca-4f1d-ad9a-4d338689612f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15755,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4197
+      },
+      "id": 15755
+    },
+    {
+      "tenVi": "GrowPlus +  cho trẻ chậm tăng cân - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 175.94,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "88ee684d-02ef-49a4-9a3c-fd98a763ba40",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C)",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15388,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7216
+      },
+      "id": 15388
+    },
+    {
+      "tenVi": "GrowPlus + cho trẻ chậm tăng cân - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 175.94,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0be8bc81-f384-43e9-9bcf-31bf3dd8a286",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15753,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4195
+      },
+      "id": 15753
+    },
+    {
+      "tenVi": "Growplus + cho trẻ chậm tăng cân - 200ml/ly ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 175.94,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0c5ccf73-e507-4b9f-bb74-18c58aef5c54",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15784,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4260
+      },
+      "id": 15784
+    },
+    {
+      "tenVi": "GrowPLUS + Gold  >1 tuổi Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.44,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a1e92eac-576a-4b8a-a245-bf866cb9b341",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "'Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15391,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7058
+      },
+      "id": 15391
+    },
+    {
+      "tenVi": "GrowPlus + Gold  Suy dinh dưỡng cho trẻ 1 tuổi trở lên- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.44,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "62ea748d-39d5-49b1-ba64-e3812d8c513f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14311,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7021
+      },
+      "id": 14311
+    },
+    {
+      "tenVi": "Growplus + Gold Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.44,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "db028762-f643-401f-899b-74e01a0634b8",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15786,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4262
+      },
+      "id": 15786
+    },
+    {
+      "tenVi": "GrowPlus + Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 179.36,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "eda19276-8e71-436c-8f22-05aa6b6cde7e",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19201,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7507
+      },
+      "id": 19201
+    },
+    {
+      "tenVi": "GrowPlus Diamond 1+ Suy dinh dưỡng cho trẻ từ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.82,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0842e264-5b7d-498b-8fa3-cee399678a9f",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ Diamond 1+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14312,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7031
+      },
+      "id": 14312
+    },
+    {
+      "tenVi": "GrowPlus Diamond 2+ Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 181.64,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "99b6d9fd-669d-45ef-8b90-bd2b70782c7e",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt (tương đương 38g) với 180ml nước chín ấm (khoảng 50⁰C). Khuấy đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15574,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7254
+      },
+      "id": 15574
+    },
+    {
+      "tenVi": "Growplus Diamond 2+ Suy dinh dưỡng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 181.64,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e477be15-9701-4429-b9c6-39ca8a09bf04",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ Diamond +2 (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15787,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4265
+      },
+      "id": 15787
+    },
+    {
+      "tenVi": "GrowPlus Diamond 2+ Suy dinh dưỡng -200 m/ ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 181.64,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "40f0c68f-0b62-4132-964d-a3e1722d8b6d",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ Diamond 2+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15393,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7221
+      },
+      "id": 15393
+    },
+    {
+      "tenVi": "GrowPlus Diamond 2+ Suy dinh dưỡng- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 181.64,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "85082b85-a8dc-4866-8cef-836ea451fe16",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ Diamond 2+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14870,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7139
+      },
+      "id": 14870
+    },
+    {
+      "tenVi": "GrowPlus+ cho trẻ chậm tăng cân -200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 175.94,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "eaa46f22-8b35-49bf-b187-0a8d8d845ee5",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+ (tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15571,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7275
+      },
+      "id": 15571
+    },
+    {
+      "tenVi": "Nutfood- GrowPlus+ Trắng kiểm soát cân nặng Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 93.006,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "153b6eb9-fd2a-459d-84f1-c0c3335355ea",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16730,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4699
+      },
+      "id": 16730
+    },
+    {
+      "tenVi": "Nuti IQ Diamond hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 92.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cf2e4088-a6e9-4ded-9bdb-3c3ffae44e48",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15801,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4287
+      },
+      "id": 15801
+    },
+    {
+      "tenVi": "Nuti IQ Diamond hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 150.546,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "8a4c10d6-8881-4b56-912a-7cf53d0cd122",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16406,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4315
+      },
+      "id": 16406
+    },
+    {
+      "tenVi": "Nuti IQ Diamond Step 4 - 200ml/ ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.76,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d9b53c88-f8c8-470a-bfee-f05233013900",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "'Pha 7 muỗng gạt Nuti IQ DIAMOND 4 (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15397,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7220
+      },
+      "id": 15397
+    },
+    {
+      "tenVi": "Nuti IQ Diamond Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 177.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cf7bd665-968d-4885-bdab-961cae6f882f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Nuti IQ Step 4 (tương đương 38g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15758,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4200
+      },
+      "id": 15758
+    },
+    {
+      "tenVi": "Nuti IQ Diamond Step 4 - 200ml/ly ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 177.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "146a3078-86c7-4bcf-b6d0-e4e14592f06e",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Nuti IQ Step 4 (tương đương 38g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15788,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4266
+      },
+      "id": 15788
+    },
+    {
+      "tenVi": "Nuti IQ Diamond Step 4 -200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 177.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "12de05e2-a7e8-4258-bc44-76898018769b",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuti IQ Step 4 (tương đương 38g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15576,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7255
+      },
+      "id": 15576
+    },
+    {
+      "tenVi": "Nuti IQ Gold Step 3 cho trẻ 1-2 tuổi-200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.04,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "19568247-1b07-418f-89e1-867a3bc807fb",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuti IQ Gold Step 3 (tương đương 36g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14315,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7148
+      },
+      "id": 14315
+    },
+    {
+      "tenVi": "Nuti IQ Step 3 cho trẻ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 176.32,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9ba4d9c5-03a1-4bde-be84-dd3572ec9e28",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 4 muỗng gạt Nuti IQ Step 3 (tương đương 38 g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14316,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7126
+      },
+      "id": 14316
+    },
+    {
+      "tenVi": "Nuti IQ Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 176.32,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "fff88484-0e27-472f-a2de-c203cef1ae8f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 4 muỗng gạt Nuti IQ Step 4 (tương đương 38 g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15401,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7212
+      },
+      "id": 15401
+    },
+    {
+      "tenVi": "Nuti IQ Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 176.32,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "25131bcb-1ced-4638-a14c-2574b1a675e3",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 4 muỗng gạt Nuti IQ Step 4 (tương đương 38 g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15578,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7272
+      },
+      "id": 15578
+    },
+    {
+      "tenVi": "Nuti Smart -210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 158.78,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "978b930f-d7c9-49bf-91e2-c89910b435f2",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 5 muỗng vun (khoảng 34 g) với 200 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16803,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4758
+      },
+      "id": 16803
+    },
+    {
+      "tenVi": "Nuti Smart -220ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 158.78,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "c757bbd2-b2fc-439b-bc04-949768482edd",
+      "khoiLuong": 220.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 5 muỗng vun (khoảng 34 g) với 200 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16805,
+        "stt": null,
+        "tenDonVi": "Ly 220 ml",
+        "khoiLuong": 220.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7129
+      },
+      "id": 16805
+    },
+    {
+      "tenVi": "Nuti Smart- 220ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 158.78,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "3808f16d-d730-4631-b6d9-0efe30536c8d",
+      "khoiLuong": 220.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 5 muỗng vun (khoảng 34 g) với 200 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16804,
+        "stt": null,
+        "tenDonVi": "Ly 220 ml",
+        "khoiLuong": 220.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7122
+      },
+      "id": 16804
+    },
+    {
+      "tenVi": "Nuti Smart- 220ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 158.78,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4f723c94-5607-4643-91c2-8f6059c58410",
+      "khoiLuong": 220.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 5 muỗng vun (khoảng 34 g) với 200 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16806,
+        "stt": null,
+        "tenDonVi": "Ly 220 ml",
+        "khoiLuong": 220.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7229
+      },
+      "id": 16806
+    },
+    {
+      "tenVi": "Nutifood- Growplus trắng kiểm soát cân nặng ít đường Hộp 180ml",
+      "tenEn": "",
+      "moTa": "",
+      "nangLuongKcal": 102.96,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "1e59bae6-60a3-474e-9672-f8bf71f47ec6",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19177,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7474
+      },
+      "id": 19177
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a57cee57-9634-47ad-9342-0b75f6f642f8",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 6 muỗng gạt (khoảng 30 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16729,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4704
+      },
+      "id": 16729
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cd939693-840e-4c90-916b-d586bf1f0630",
+      "khoiLuong": null,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 6 muỗng gạt (khoảng 30 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16784,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7130
+      },
+      "id": 16784
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 56.837,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "c5109662-f1b1-41db-8281-510434d5dc7c",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19155,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7397
+      },
+      "id": 19155
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 56.837,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "16f2aafa-88e3-42c5-8c97-95506859d873",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19156,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7412
+      },
+      "id": 19156
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 93.006,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "044363ba-3ea8-42ab-8457-f64cc74f90e4",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19153,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7388
+      },
+      "id": 19153
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+ Trắng kiểm soát cân nặng- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "64f77824-5275-4b9d-906a-58888c5c874a",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 6 muỗng gạt (khoảng 30 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16786,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4703
+      },
+      "id": 16786
+    },
+    {
+      "tenVi": "Nutifood- GrowPlus+Trắng kiểm soát cân nặng- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "284e2805-2209-42d0-9fb4-c4249dd10b2e",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 6 muỗng gạt (khoảng 30 g) với 180 ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16785,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7274
+      },
+      "id": 16785
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 97.9,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cce9d04a-4163-4cf6-bb1a-1bfbddcd9bdd",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16467,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4666
+      },
+      "id": 16467
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 97.9,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d40c1290-1b71-43bf-bd06-d7a85ba9ac44",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16479,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4466
+      },
+      "id": 16479
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 160.2,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "30ceb7e2-64bd-43bb-b715-a11934c694d0",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16466,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4671
+      },
+      "id": 16466
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 160.2,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cc8768a4-5003-4fd3-9f1b-77f06f9a99fd",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16478,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4467
+      },
+      "id": 16478
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 1L",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 890.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "88037e5e-2f85-47df-b788-bf177ae05836",
+      "khoiLuong": null,
+      "khoiLuongAuto": 1000.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16465,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 1000.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4670
+      },
+      "id": 16465
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tiệt trùng Đường đen Hộp 1L",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 890.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "657b35be-a998-4daa-a863-526665a74cc0",
+      "khoiLuong": null,
+      "khoiLuongAuto": 1000.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16477,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 1000.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4468
+      },
+      "id": 16477
+    },
+    {
+      "tenVi": "Nuvita Grow 1+ (từ 1-3 tuổi)- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 163.2,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "f789dc7e-b859-4496-b125-2eac23a33c89",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Pha 34g NuVita Grow 1+ (tương đương 7 muỗng gạt) với 180ml nước chín ấm (khoảng 50ºC), được một ly NuVita Grow 1+.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9609,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7150
+      },
+      "id": 9609
+    },
+    {
+      "tenVi": "NuVita Grow 1+ từ 1-3 tuổi - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 163.2,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a3729026-3299-4bd0-aaf2-80ae43004e48",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Pha 34g NuVita Grow 1+ (tương đương 7 muỗng gạt) với 180ml nước chín ấm (khoảng 50ºC), được một ly NuVita Grow 1+.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15408,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7211
+      },
+      "id": 15408
+    },
+    {
+      "tenVi": "NuVita Grow 3+ giúp phát triển chiều cao - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 159.12,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d9c4f74c-366b-436c-8d53-71298c1b3cf5",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 34.0,
+      "isActive": false,
+      "cachCheBien": "Pha 34g NuVita Grow 3+ (tương đương 7 muỗng gạt) với 180ml nước chín ấm (khoảng 50ºC), được một ly NuVita Grow 3+.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15410,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7197
+      },
+      "id": 15410
+    },
+    {
+      "tenVi": "Nuvita Grow Diamond 1+ cho trẻ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 169.92,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "3e147234-4f9c-426b-93b8-a7a5c69efb7d",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuvita Grow Diamond 1+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14320,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7143
+      },
+      "id": 14320
+    },
+    {
+      "tenVi": "NuVita Grow Diamond 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 168.48,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4b3468a9-82f9-44ee-b27b-d01f39997dc4",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50 ºC.\nPha 7 muỗng gạt Nuvita Grow Diamond 2+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15763,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4205
+      },
+      "id": 15763
+    },
+    {
+      "tenVi": "Nuvita Grow Diamond 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 168.48,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "84ba61fb-8e47-4461-b555-8e98f7410882",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Nuti Grow Diamond 1+ (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15792,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4275
+      },
+      "id": 15792
+    },
+    {
+      "tenVi": "NuVita Grow Diamond 2+ 200ml ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 168.48,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9cdc0bbf-dba2-4f7d-ae1c-e3d8ba0f712a",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuvita Grow Diamond 2+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15583,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7256
+      },
+      "id": 15583
+    },
+    {
+      "tenVi": "Nuvita Grow Diamond hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 93.5,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "da18c308-f7c1-4dc7-80b7-22493a4039e4",
+      "khoiLuong": 110.0,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15804,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7521
+      },
+      "id": 15804
+    },
+    {
+      "tenVi": "Nuvita Grow Diamond hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 153.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "175b03ac-52ad-442f-806b-1ebfeafb8255",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16409,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4318
+      },
+      "id": 16409
+    },
+    {
+      "tenVi": "Pedia Plus cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 210.15,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0cb68e5e-3248-46de-ae88-e8b645ac582b",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt PediaPlus (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15794,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4277
+      },
+      "id": 15794
+    },
+    {
+      "tenVi": "Pedia Plus Gold cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 217.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9820309a-04cb-4a47-b694-522e20e316b8",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt PediaPlus Gold (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. Dùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15795,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4281
+      },
+      "id": 15795
+    },
+    {
+      "tenVi": "PediaPlus cho trẻ biếng ăn -  210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 210.15,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a3257514-f208-4f49-a879-545e28dfb608",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": " Pha 45g Pedia Plus, tương đương 7 muỗng gạt, với 180ml nước chín, ấm (khoảng 50 độ C), được 210ml Pedia Plus, cung cấp 210kcal (1ml Pedia Plus pha theo hướng dẫn cung cấp 1 kcal)",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15585,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7271
+      },
+      "id": 15585
+    },
+    {
+      "tenVi": "PediaPlus cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 210.15,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a8f59c1f-a20a-4df1-864f-3ac2d22bf3c1",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "- Rửa tay và dụng cụ thật sạch trước khi pha.\n- Đun sôi nước trong 5 phút và để nguội dần đến 500C.\n- Pha 45g Pedia Plus, tương đương 7 muỗng gạt, với 180ml nước chín, ấm (khoảng 50 độ C), được 210ml Pedia Plus, cung cấp 210kcal (1ml Pedia Plus pha theo hướng dẫn cung cấp 1 kcal).\n- Dùng 01 – 03 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15765,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4206
+      },
+      "id": 15765
+    },
+    {
+      "tenVi": "PediaPlus cho trẻ biếng ăn -210ml/ly ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 210.15,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "17aa265f-6990-41e1-889f-ae569f54abad",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": " Pha 45g Pedia Plus, tương đương 7 muỗng gạt, với 180ml nước chín, ấm (khoảng 50 độ C), được 210ml Pedia Plus",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15416,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7227
+      },
+      "id": 15416
+    },
+    {
+      "tenVi": "PediaPlus cho trẻ biếng ăn cho trẻ 1 tuổi trở lên- 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 210.15,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a2de7c22-9eb5-4cc9-8fda-d4a72919f504",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Pha 45g Pedia Plus, tương đương 7 muỗng gạt, với 180ml nước chín, ấm (khoảng 50 độ C), được 210ml Pedia Plus",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14322,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7042
+      },
+      "id": 14322
+    },
+    {
+      "tenVi": "PediaPlus Gold cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 217.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b1824423-1c98-41d8-8076-33d7fcb82ae0",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Pedia Plus Gold (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15418,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7228
+      },
+      "id": 15418
+    },
+    {
+      "tenVi": "PediaPlus Gold cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 217.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "185bcb91-db6a-4245-bfb5-76001995e46b",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Pedia Plus Gold (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15586,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7278
+      },
+      "id": 15586
+    },
+    {
+      "tenVi": "PediaPlus Gold cho trẻ biếng ăn - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 217.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "de315009-0b1a-443f-a593-11699ab1304d",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "+ Rửa tay và dụng cụ thật sạch trước khi pha\n+ Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50oC.\n+ Pha 7 muỗng gạt Pedia Plus Gold (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.\n+ Dùng 2 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha.",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15766,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4207
+      },
+      "id": 15766
+    },
+    {
+      "tenVi": "PediaPlus Gold cho trẻ biếng ăn cho trẻ 1 tuổi trở lên- 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 217.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "71bc2579-7141-44c4-9e7a-35300ec93429",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 45.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Pedia Plus Gold (tương đương 45g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14323,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7032
+      },
+      "id": 14323
+    },
+    {
+      "tenVi": "PediaPlus Gold Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 113.3,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4c1d871b-66e3-4b8b-a05a-c1b5d04e86c4",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16849,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4802
+      },
+      "id": 16849
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum 1+ cho trẻ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 175.56,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e11de028-4113-4f62-80fa-167a51d9a88d",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 6 muỗng gạt RISO OPTI GOLD COLOSTRUM 1+ (tương đương 38g) với 190ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14324,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7145
+      },
+      "id": 14324
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 174.8,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "5a1bdd62-2fcd-48da-8291-069bb92ff1ce",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 6 muỗng gạt Riso Opti Gold Colostrum (tương đương 38g) với 190 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15796,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4279
+      },
+      "id": 15796
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum 2+ - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 174.8,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "17875da1-643b-4d74-90b8-dc2443630780",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 6 muỗng gạt RISO OPTI GOLD COLOSTRUM (tương đương 38g) với 190ml nước chín ấm (khoảng 50 oC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15421,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7051
+      },
+      "id": 15421
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum 2+ - 210ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 174.8,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0d31c1d7-9b8e-4146-b34e-ad280a1c809d",
+      "khoiLuong": 210.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 6 muỗng gạt Riso Opti Gold Colostrum (tương đương 38g) với 190 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. ",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15767,
+        "stt": null,
+        "tenDonVi": "Ly 210 ml",
+        "khoiLuong": 210.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4209
+      },
+      "id": 15767
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 92.004,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "5d89a583-dee5-47d0-8179-e960ed4f9598",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16791,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4710
+      },
+      "id": 16791
+    },
+    {
+      "tenVi": "Riso Opti Gold Goat Plus 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.76,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9b929415-86f6-4881-a1ff-5cc79688df2f",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15797,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4280
+      },
+      "id": 15797
+    },
+    {
+      "tenVi": "Riso Opti Gold Goat Plus 3 - 100ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 83.7,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "2d05ae8c-7aba-4d17-b4bc-d7bd92d36960",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 18.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Riso Opti Gold Goat Plus 3 (tương đương 36g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15424,
+        "stt": null,
+        "tenDonVi": "Ly 100 ml",
+        "khoiLuong": 100.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7225
+      },
+      "id": 15424
+    },
+    {
+      "tenVi": "Riso Opti Gold Goat Plus 3 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a8835f79-e817-400a-a6d5-ee26dc3676e0",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15769,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4211
+      },
+      "id": 15769
+    },
+    {
+      "tenVi": "Riso Opti Gold Goat Plus 3+ - 200ml/ly",
+      "tenEn": "",
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a81a07aa-8342-45fe-afc9-4bce7acd9546",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15798,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4282
+      },
+      "id": 15798
+    },
+    {
+      "tenVi": "Riso Opti Gold Goatplus 2+ -  100ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 83.88,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "8f33af6c-a18c-4614-9ae5-252cffb24232",
+      "khoiLuong": 100.0,
+      "khoiLuongAuto": 18.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt RISO OPTI GOLD GOATPLUS 2 (tương đương 36g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15423,
+        "stt": null,
+        "tenDonVi": "Ly 100 ml",
+        "khoiLuong": 100.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7208
+      },
+      "id": 15423
+    },
+    {
+      "tenVi": "Riso Opti Gold GoatPlus 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.76,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cb007ef9-8ae5-47ea-9e8d-0c0a12664f25",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 6-10 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        224
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15768,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4210
+      },
+      "id": 15768
+    },
+    {
+      "tenVi": "Riso Opti Gold GoatPlus 2+ 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.76,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "d22a849d-2b33-4e6a-b171-f8b9ceb50c74",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15588,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7269
+      },
+      "id": 15588
+    },
+    {
+      "tenVi": "Riso Opti Gold GoatPlus 3 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "2e8451ff-a382-4ade-8caf-4fa3196da8f2",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15589,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7249
+      },
+      "id": 15589
+    },
+    {
+      "tenVi": "Riso Opti Gold Hạnh nhân óc chó hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 142.364,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "84b401d9-a513-49bd-9413-43a1b4b1f8a7",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16411,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4320
+      },
+      "id": 16411
+    },
+    {
+      "tenVi": "Riso Opti Gold hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 143.01,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "fa9d6df4-f207-4610-9152-fd77aa31f896",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16410,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4319
+      },
+      "id": 16410
+    },
+    {
+      "tenVi": "Riso Opti Gold Step 3 cho trẻ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "1c02f182-0a19-4a2d-b5f0-93f409334407",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt RISO OPTI GOLD 3 (tương đương 36g) với 180ml nước chín ấm (khoảng 50oC). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14325,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7146
+      },
+      "id": 14325
+    },
+    {
+      "tenVi": "Riso Opti Gold Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "786de3b6-4a93-4a94-81a8-c703cb198677",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Riso Opti Gold 4 (tương đương 36g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15426,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7226
+      },
+      "id": 15426
+    },
+    {
+      "tenVi": "Riso Opti Gold Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "fc805168-1c48-4153-8619-87cd8a800237",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha.\nĐun sôi nước trong 5 phút và để nguội dần đến 50°C.\nPha 7 muỗng gạt RISO OPTI GOLD 4 (tương đương 36g) với 180ml nước chín ấm (khoảng 50oC). Khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15590,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7260
+      },
+      "id": 15590
+    },
+    {
+      "tenVi": "Riso Opti Gold Step 4 - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "7118d6da-69a0-4f5e-8b2f-f5d221f4b790",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 7 muỗng gạt Riso Opti Gold (tương đương 36g) với 180 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. \n",
+      "arrNhomMonAn": [
+        "Sữa bột 10 -18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        85
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15799,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4284
+      },
+      "id": 15799
+    },
+    {
+      "tenVi": "Sữa non Colostrum 100% NutiFood- 3g/ phần",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 10.98,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "7d9599b4-b15f-445a-9359-efed1349459b",
+      "khoiLuong": null,
+      "khoiLuongAuto": 3.0,
+      "isActive": false,
+      "cachCheBien": "Hướng dẫn sử dụng\nDùng 1 muỗng/ lần, mỗi muỗng 3g. có thể pha với nước, đồ uống hoặc thực phẩm khác để tăng giá trị dinh dưỡng. \nLắc hoặc khuấy đều để hòa tan và sử dụng. \nLiều lượng sử dụng\nTrẻ từ 6 – 12 tháng tuổi: dùng 1 lần/ ngày.\nTừ 1 tuổi trở lên và người lớn: dùng từ 1 – 3 lần/ ngày.\n ",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16716,
+        "stt": null,
+        "tenDonVi": "Phần",
+        "khoiLuong": 3.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4748
+      },
+      "id": 16716
+    },
+    {
+      "tenVi": "Thuốc",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 0.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": null,
+      "khoiLuong": null,
+      "khoiLuongAuto": 42.0,
+      "isActive": false,
+      "cachCheBien": " Rửa tay và dụng cụ thật sạch trước khi pha\n\n– Đun sôi nước trong 5 phút và để nguội dần đến khoảng 50 độ C\n\n– Pha 7 muỗng gạt Nutifood Grow Plus+ (tương đương 38g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho dến khi hòa tan hoàn toàn.\n\n",
+      "arrNhomMonAn": [
+        "Cơm 18 tháng đến 18 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        100
+      ],
+      "stt": 0,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": null,
+      "id": 19214
+    },
+    {
+      "tenVi": " Diabet Care Diamond Chai 237ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 182.49,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "61cdbc51-4d93-4dfc-add5-a0a874c61b88",
+      "khoiLuong": null,
+      "khoiLuongAuto": 237.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16715,
+        "stt": null,
+        "tenDonVi": "Chai",
+        "khoiLuong": 237.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4749
+      },
+      "id": 16715
+    },
+    {
+      "tenVi": " Dr.Lucen Care Max - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 177.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "030219ee-4ec4-4bc1-b18c-2570d08c35ea",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 4 muỗng gạt Dr. Lucen CareMax (tương đương 38g) với 180ml nước chín ấm (khoảng 50 0C). Khuấy đều cho đến khi hòa tan hoàn toàn.\nDùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ.\nSử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9424,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 746
+      },
+      "id": 9424
+    },
+    {
+      "tenVi": " EnPlus Chai 237ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 241.74,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "88e5b233-04fd-4025-8955-e5b87bd10813",
+      "khoiLuong": null,
+      "khoiLuongAuto": 237.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16714,
+        "stt": null,
+        "tenDonVi": "Chai",
+        "khoiLuong": 237.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4750
+      },
+      "id": 16714
+    },
+    {
+      "tenVi": "Dr.Lucen Bone Max - 220ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.9,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a7f085cc-1038-45e3-9df3-41e2409d7d9e",
+      "khoiLuong": 220.0,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Pha 3 muỗng gạt Dr. Lucen BoneMax (tương đương 30g) với 200ml nước chín ấm (khoảng 50 độ C) khuấy đều đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9429,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 220.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 735
+      },
+      "id": 9429
+    },
+    {
+      "tenVi": "Dr.Lucen Canxi Max -220ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 114.9,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4ca2e8b7-b445-459d-ab6a-2a6d88ac145d",
+      "khoiLuong": 220.0,
+      "khoiLuongAuto": 30.0,
+      "isActive": false,
+      "cachCheBien": "Pha 3 muỗng gạt Dr. Lucen CanxiMax (tương đương 30g) với 200ml nước chín ấm (khoảng 500C) khuấy đều đến khi hòa tan hoàn toàn. Dùng 2 ly mỗi ngày kết hợp cùng chế độ dinh dưỡng hợp lý, cho hệ xương răng vững chắc từ bên trong.\nSử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9428,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 220.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 736
+      },
+      "id": 9428
+    },
+    {
+      "tenVi": "Dr.Lucen Gain Max - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 177.08,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b94827ad-814d-4f50-bb3a-864ca4a51c5d",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 4 muỗng gạt Dr. Lucen CareMax (tương đương 38g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn.\nDùng 1 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ.\nSử dụng ngay sau khi pha.\"\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9423,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 747
+      },
+      "id": 9423
+    },
+    {
+      "tenVi": "Dr.Lucen Mum Care - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 157.56,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "69e3c50e-3d0d-4ea7-9810-d863bb9f65f7",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 39.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha\nĐun sôi nước trong 5 phút và để nguội dần đến 500C\nPha 4 muỗng gạt Dr. Lucen MumCare (tương đương 39g) với 180ml nước chín ấm (khoảng 50 độ C). Khuấy đều đến khi hòa tan hoàn toàn.\nSử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 10424,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 748
+      },
+      "id": 10424
+    },
+    {
+      "tenVi": "EnPlus Diamond - 230ml/ly ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 234.9,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "efe19b82-fe84-46f8-8cc9-6333613b5211",
+      "khoiLuong": 230.0,
+      "khoiLuongAuto": 54.0,
+      "isActive": false,
+      "cachCheBien": "Pha 6 muỗng gạt EnPlus Diamond (tương đương 54g) với 200ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hoà tan hoàn toàn (1ml EnPlus Diamond pha theo hướng dẫn cung cấp khoảng 1 Kcal). Dùng 2 - 3 ly mỗi ngày hoặc theo hướng dẫn của bác sĩ. Sử dụng ngay sau khi pha \n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 9422,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 230.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 749
+      },
+      "id": 9422
+    },
+    {
+      "tenVi": "GrowPlus Diamond hạnh nhân óc chó Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 102.3,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "f18da468-79f6-4e56-b7a2-f91b782bd52c",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16807,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4760
+      },
+      "id": 16807
+    },
+    {
+      "tenVi": "GrowPlus Diamond hạnh nhân óc chó hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "42e5815b-181d-490e-b9a7-06ec0d8e2e8d",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16812,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4765
+      },
+      "id": 16812
+    },
+    {
+      "tenVi": "GrowPlus Diamond Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 102.3,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b2f80759-ed9c-46df-8b47-f76e2908065a",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16821,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4774
+      },
+      "id": 16821
+    },
+    {
+      "tenVi": "GrowPlus Diamond Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0dd07940-1653-45c0-a3e9-82d00d994fa1",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16825,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4778
+      },
+      "id": 16825
+    },
+    {
+      "tenVi": "Nucalci Diamond Hộp 125ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 96.25,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0925df38-111f-4838-a1b0-9ce35cfd0796",
+      "khoiLuong": null,
+      "khoiLuongAuto": 125.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16853,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 125.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4806
+      },
+      "id": 16853
+    },
+    {
+      "tenVi": "Nuti IQ Diamond hạnh nhân óc chó hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 92.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "77dc21f0-10d4-4f37-afd5-75da7cecddca",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16837,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4790
+      },
+      "id": 16837
+    },
+    {
+      "tenVi": "Nuti IQ Diamond hạnh nhân óc chó hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 151.2,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "f649f753-dc4b-4e12-bd23-e6d522d5edfc",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16841,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4794
+      },
+      "id": 16841
+    },
+    {
+      "tenVi": "Nuti IQ Mum Gold - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 159.51,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "01781c88-2340-4e5d-b9f2-aed604151575",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 39.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 5 phút và để nguội dần đến khoảng 50°C. Pha 4 muỗng gạt Nuti IQ Mum Gold (tương đương 39g) với 180ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hoà tan hoàn toàn. Sử dụng ngay sau khi pha.\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 10431,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 752
+      },
+      "id": 10431
+    },
+    {
+      "tenVi": "Nuti IQ Mum Gold Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 86.35,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "c143c045-76e5-4e8c-a56a-53b71260bacd",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16713,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4751
+      },
+      "id": 16713
+    },
+    {
+      "tenVi": "PediaPlus Gold Chai 237ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 244.11,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "68641230-40cc-4f6d-a20f-00f60f99ba86",
+      "khoiLuong": null,
+      "khoiLuongAuto": 237.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16845,
+        "stt": null,
+        "tenDonVi": "Chai",
+        "khoiLuong": 237.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4798
+      },
+      "id": 16845
+    },
+    {
+      "tenVi": "PediaPlus Gold hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "74d43d9c-6f93-4664-bffb-a3d5c1d88f35",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16744,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4714
+      },
+      "id": 16744
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum Hộp 110ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 92.004,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "8481eb9c-a448-48d9-9299-8a938186a5f4",
+      "khoiLuong": null,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước (từ 1 tuổi trở lên)"
+      ],
+      "arrNhomMonAnId": [
+        86
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16739,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4709
+      },
+      "id": 16739
+    },
+    {
+      "tenVi": "Riso Opti Gold Mum Hộp 180ml",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 143.1,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4a2e3bf3-a1cc-4ebf-8875-e07e2bc92bbd",
+      "khoiLuong": null,
+      "khoiLuongAuto": 180.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 16712,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 180.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 4752
+      },
+      "id": 16712
+    },
+    {
+      "tenVi": "Riso Opti Mum Gold - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 158.73,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "026445d1-6451-4db7-9370-b0adfeb074bb",
+      "khoiLuong": null,
+      "khoiLuongAuto": 39.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 5 phút và để nguội dần đến khoảng 50°C. Pha 4 muỗng gạt RISO OPTI GOLD MUM (tương đương 39g) với 180ml nước chín ấm (khoảng 50°C). Khuấy đều cho đến khi hoà tan hoàn toàn. Sử dụng ngay sau khi pha\n",
+      "arrNhomMonAn": [
+        "Sữa bột"
+      ],
+      "arrNhomMonAnId": [
+        62
+      ],
+      "stt": 1,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 10433,
+        "stt": null,
+        "tenDonVi": "Ly",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 754
+      },
+      "id": 10433
+    },
+    {
+      "tenVi": "NuVita Grow Diamond 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 168.48,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b1d8feef-8dc5-4c00-b926-45ed3dd66569",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuvita Grow Diamond 2+ (tương đương 36 g) với 180 ml nước chín ấm (khoảng 50 ºC). Khuấy đều đến khi hòa tan hoàn toàn",
+      "arrNhomMonAn": [
+        "Sữa bột 2-3 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        222
+      ],
+      "stt": 6,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15412,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7222
+      },
+      "id": 15412
+    },
+    {
+      "tenVi": "GrowPlus + Gold  Suy dinh dưỡng-  200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 185.44,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b64f3414-2c63-4779-a05a-2d23a88f0425",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt GrowPLUS+(tương đương 38 gram) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan.",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 19,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15573,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7047
+      },
+      "id": 15573
+    },
+    {
+      "tenVi": "Riso Opti Gold Colostrum 2+ - 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 174.8,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "7a1f28f7-65ae-43bd-ac80-07905d076f94",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 38.0,
+      "isActive": false,
+      "cachCheBien": "Rửa tay và dụng cụ thật sạch trước khi pha. Đun sôi nước trong 05 phút và để nguội dần đến khoảng 50 độ C. Pha 6 muỗng gạt Riso Opti Gold Colostrum (tương đương 38g) với 190 ml nước chín ấm (khoảng 50 độ C). Khuấy đều cho đến khi hòa tan hoàn toàn. ",
+      "arrNhomMonAn": [
+        "Sữa bột 3-6 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        223
+      ],
+      "stt": 30,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 15587,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7089
+      },
+      "id": 15587
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị mặn",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 215.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "84ba4518-bf21-4184-86dc-f7563de1303a",
+      "khoiLuong": null,
+      "khoiLuongAuto": 50.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12915,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 50.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 601
+      },
+      "id": 12915
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị mặn",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 215.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0d8aebcd-b155-4307-8809-e433ad64ffba",
+      "khoiLuong": null,
+      "khoiLuongAuto": 50.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14858,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 50.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3202
+      },
+      "id": 14858
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị mặn ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 150.5,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0f1dbbd6-bfb4-4c81-adae-975816817e2d",
+      "khoiLuong": null,
+      "khoiLuongAuto": 35.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12899,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 35.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 191
+      },
+      "id": 12899
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị ngọt",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 148.05,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "0ce6fcab-a4e8-40cc-b263-c80afc309908",
+      "khoiLuong": null,
+      "khoiLuongAuto": 35.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12900,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 35.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 192
+      },
+      "id": 12900
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị ngọt",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 211.5,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "a0b491d5-2a9d-477b-a30d-2693fe1e4780",
+      "khoiLuong": null,
+      "khoiLuongAuto": 50.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12916,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 50.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 630
+      },
+      "id": 12916
+    },
+    {
+      "tenVi": "Bột ăn dặm Nuti IQ vị ngọt",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 211.5,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "1589d4e0-1b5d-45d5-8f86-8634b98efc82",
+      "khoiLuong": null,
+      "khoiLuongAuto": 50.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14859,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 50.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3203
+      },
+      "id": 14859
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo chuối sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 149.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "4ca6fe24-d245-4eba-8233-e4b477590bb7",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12901,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 193
+      },
+      "id": 12901
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo chuối sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 227.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e63c2ef3-2e0b-4891-96f8-6b7ff20c635c",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12917,
+        "stt": null,
+        "tenDonVi": "Chén",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3079
+      },
+      "id": 12917
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo chuối sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 227.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e8204352-5ea7-428e-ac04-36405af29fd1",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14860,
+        "stt": null,
+        "tenDonVi": "Chén",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3204
+      },
+      "id": 14860
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 149.7,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "394a6156-e776-40cc-8383-e62572a38228",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12902,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 194
+      },
+      "id": 12902
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 228.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "5dd1605d-0be8-4759-933f-68733806365a",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12918,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3076
+      },
+      "id": 12918
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị gạo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 228.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "493414bf-ecb8-42de-b0ee-e5eb89485224",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14861,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3205
+      },
+      "id": 14861
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị yến mạch lúa mì táo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 150.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "49a54dc8-40f2-4931-8506-3902574c77a9",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12903,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 195
+      },
+      "id": 12903
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị yến mạch lúa mì táo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 229.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "9c933753-d95c-49f3-9417-85c29d1744aa",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12919,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3075
+      },
+      "id": 12919
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic GrowPlus vị yến mạch lúa mì táo sữa ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 229.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "c083bc40-b0c3-4444-827d-646ff14c1435",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14862,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3206
+      },
+      "id": 14862
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso gạo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 228.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "61da3c34-8adc-41aa-b9ec-9f1118c9a551",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14863,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3207
+      },
+      "id": 14863
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso gạo sữa ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 149.7,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "b3215fb9-0335-471c-8002-8e3a43ee31a5",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12904,
+        "stt": null,
+        "tenDonVi": "Chén",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 196
+      },
+      "id": 12904
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso gạo sữa ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 228.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "5dd87d78-753c-4452-9601-c07f06e8ef1d",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12920,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3077
+      },
+      "id": 12920
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị gạo chuối sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 227.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "3c73a637-cfd1-4732-bdc8-653060f9947e",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12921,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3078
+      },
+      "id": 12921
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị gạo chuối sữa ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 149.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "cd9f1acc-acdf-4d22-96e3-3f30f99e3121",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12905,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 197
+      },
+      "id": 12905
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị gạo chuối sữa ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 227.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "7f388dca-b7a9-44d8-8ac8-c29fc02ce448",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14864,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3208
+      },
+      "id": 14864
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị yến mạch lúa mì táo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 150.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "030287e3-80ca-4755-9720-b9d5dec862a2",
+      "khoiLuong": null,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 4 muỗng bột khoảng 35g vào tô, khuấy đều đến khi bột mịn. Thêm 1/2 muỗng cà phê dầu ăn khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 7-8 tháng"
+      ],
+      "arrNhomMonAnId": [
+        162
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12906,
+        "stt": null,
+        "tenDonVi": "Chén ",
+        "khoiLuong": 36.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 198
+      },
+      "id": 12906
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị yến mạch lúa mì táo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 229.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "bf05bcf3-bcdd-4b8c-887d-3dfcf9ce03a8",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 13-24 tháng"
+      ],
+      "arrNhomMonAnId": [
+        163
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 12922,
+        "stt": null,
+        "tenDonVi": "Chén",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3074
+      },
+      "id": 12922
+    },
+    {
+      "tenVi": "Bột ăn dặm Organic Riso vị yến mạch lúa mì táo sữa",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 229.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "57678f70-cb84-44db-a0e0-553cd020952e",
+      "khoiLuong": null,
+      "khoiLuongAuto": 53.0,
+      "isActive": false,
+      "cachCheBien": "Rót 200 ml nước ấm khoảng 50 độ vào tô, rắc từ từ 6 muỗng bột khoảng 50g vào tô, khuấy đều đến khi bột mịn. Thêm 1 muỗng cà phê dầu mè vào khuấy đều.",
+      "arrNhomMonAn": [
+        "Bột ăn dặm công thức 9-12 tháng"
+      ],
+      "arrNhomMonAnId": [
+        157
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14865,
+        "stt": null,
+        "tenDonVi": "Chén",
+        "khoiLuong": 53.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 3209
+      },
+      "id": 14865
+    },
+    {
+      "tenVi": "Cơm trắng gạo thường",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 207.6,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": null,
+      "khoiLuong": null,
+      "khoiLuongAuto": 60.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Cơm"
+      ],
+      "arrNhomMonAnId": [
+        44
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": null,
+      "id": 19695
+    },
+    {
+      "tenVi": "GẠO TẺ",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 346.0,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": null,
+      "khoiLuong": null,
+      "khoiLuongAuto": 100.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Cơm"
+      ],
+      "arrNhomMonAnId": [
+        44
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": null,
+      "id": 19659
+    },
+    {
+      "tenVi": "Nuti IQ Diamond Step 3 cho trẻ 1-2 tuổi- 200ml/ly",
+      "tenEn": null,
+      "moTa": null,
+      "nangLuongKcal": 167.4,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "7782feed-eae9-47df-ae26-456b2b67994d",
+      "khoiLuong": 200.0,
+      "khoiLuongAuto": 36.0,
+      "isActive": false,
+      "cachCheBien": "Pha 7 muỗng gạt Nuti IQ Diamond 4 (khoảng 36g) với 180 ml nước chín ấm (khoảng 50oC). Khuấy đều cho đến khi hòa tan hoàn toàn.",
+      "arrNhomMonAn": [
+        "Sữa bột 1-2 tuổi"
+      ],
+      "arrNhomMonAnId": [
+        205
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 14314,
+        "stt": null,
+        "tenDonVi": "Ly 200 ml",
+        "khoiLuong": 200.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7125
+      },
+      "id": 14314
+    },
+    {
+      "tenVi": "NutiMilk Sữa tươi tươi sạch tiệt trùng nguyên chất Hộp 110ml",
+      "tenEn": "",
+      "moTa": "",
+      "nangLuongKcal": 74.8,
+      "nangLuongKJ": null,
+      "imgBinaryObjectId": "e9a4c9b6-57a0-4d82-970e-8d2fbd5e72b7",
+      "khoiLuong": 180.0,
+      "khoiLuongAuto": 110.0,
+      "isActive": false,
+      "cachCheBien": null,
+      "arrNhomMonAn": [
+        "Sữa nước"
+      ],
+      "arrNhomMonAnId": [
+        63
+      ],
+      "stt": 999,
+      "dinhDuong": [],
+      "kickThuocKhauPhanMacDinh": {
+        "monAnId": 19372,
+        "stt": null,
+        "tenDonVi": "Hộp",
+        "khoiLuong": 110.0,
+        "imgBinaryObjectId": null,
+        "thuVienAnhId": null,
+        "isKTKPMacDinh": true,
+        "isDelete": false,
+        "id": 7617
+      },
+      "id": 19372
+    }
+  ]
+}

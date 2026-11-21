@@ -1,3 +1,4 @@
+import os
 """
 SAM2 Segmentation Module — YOLO bbox → pixel-accurate food mask.
 
@@ -461,4 +462,283 @@ class SAM2Segmenter:
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1,
                        cv2.LINE_AA)
 
+        return overlay
+
+
+
+class MobileSAMSegmenter:
+    """Segment food items using MobileSAM (TinyViT) via Ultralytics SAMPredictor.
+
+    Runs the TinyViT image encoder once per image (`get_im_features`), then
+    decodes masks per bounding box prompt (`prompt_inference`) and scales masks
+    back to original image coordinates.
+    """
+
+    def __init__(
+        self,
+        checkpoint: str = None,
+        device: str = None,
+        erode_kernel: int = None,
+        min_mask_threshold: float = None,
+        oversized_threshold: float = None,
+        enable_candidate_filter: bool = None,
+        enable_erosion: bool = None,
+    ):
+        from pipeline_config import (
+            MOBILESAM_CHECKPOINT,
+            DEVICE,
+            MOBILESAM_ENABLE_CANDIDATE_FILTER,
+            MOBILESAM_ENABLE_EROSION,
+            MOBILESAM_ERODE_KERNEL_SIZE,
+            MOBILESAM_MIN_MASK_RATIO,
+            MOBILESAM_OVERSIZED_MASK_THRESHOLD,
+        )
+
+        self.checkpoint = checkpoint or MOBILESAM_CHECKPOINT
+        self.device = device or DEVICE
+        self.enable_candidate_filter = (
+            enable_candidate_filter
+            if enable_candidate_filter is not None
+            else MOBILESAM_ENABLE_CANDIDATE_FILTER
+        )
+        self.enable_erosion = (
+            enable_erosion if enable_erosion is not None else MOBILESAM_ENABLE_EROSION
+        )
+        self.erode_kernel = erode_kernel if erode_kernel is not None else MOBILESAM_ERODE_KERNEL_SIZE
+        self.min_mask_threshold = (
+            min_mask_threshold if min_mask_threshold is not None else MOBILESAM_MIN_MASK_RATIO
+        )
+        self.oversized_threshold = (
+            oversized_threshold if oversized_threshold is not None else MOBILESAM_OVERSIZED_MASK_THRESHOLD
+        )
+        self._predictor = None
+        self._available = None
+
+    def _load_model(self):
+        """Lazy-load MobileSAM via Ultralytics SAMPredictor."""
+        if self._predictor is not None:
+            return
+        import torch  # noqa: F401 (must precede av so CUDA stays available)
+        try:
+            import av  # noqa: F401
+        except Exception:
+            pass
+        try:
+            from ultralytics.models.sam import Predictor as SAMPredictor
+
+            ckpt = self.checkpoint if os.path.isfile(self.checkpoint) else "mobile_sam.pt"
+            overrides = dict(
+                conf=0.25,
+                task="segment",
+                mode="predict",
+                imgsz=1024,
+                model=ckpt,
+                device=self.device,
+                save=False,
+                verbose=False,
+            )
+            self._predictor = SAMPredictor(overrides=overrides)
+            self._predictor.setup_model(model=None, verbose=False)
+            self._available = True
+            logger.info(f"MobileSAM loaded successfully via Ultralytics SAMPredictor ({ckpt}), device={self.device}")
+        except Exception as e:
+            logger.warning(f"MobileSAM not available ({e}). Using refined GrabCut/ellipse fallback.")
+            self._available = False
+
+    @property
+    def is_available(self) -> bool:
+        if self._available is None:
+            self._load_model()
+        return bool(self._available)
+
+    @staticmethod
+    def _bbox_fallback_mask(
+        image_rgb: np.ndarray, bbox: Tuple[int, int, int, int]
+    ) -> np.ndarray:
+        """Refined GrabCut/ellipse fallback mask within the bbox."""
+        h, w = image_rgb.shape[:2]
+        x1, y1, x2, y2 = bbox
+        x1, y1 = max(0, int(x1)), max(0, int(y1))
+        x2, y2 = min(w, int(x2)), min(h, int(y2))
+        bw, bh = x2 - x1, y2 - y1
+        if bw <= 4 or bh <= 4:
+            mask = np.zeros((h, w), dtype=bool)
+            mask[y1:y2, x1:x2] = True
+            return mask
+        try:
+            crop = image_rgb[y1:y2, x1:x2]
+            gc_mask = np.zeros(crop.shape[:2], np.uint8)
+            bgdModel = np.zeros((1, 65), np.float64)
+            fgdModel = np.zeros((1, 65), np.float64)
+            rect = (max(1, int(bw * 0.05)), max(1, int(bh * 0.05)), int(bw * 0.9), int(bh * 0.9))
+            cv2.grabCut(crop, gc_mask, rect, bgdModel, fgdModel, 2, cv2.GC_INIT_WITH_RECT)
+            gc_fg = (gc_mask == 1) | (gc_mask == 3)
+            refined_mask = np.zeros((h, w), dtype=bool)
+            refined_mask[y1:y2, x1:x2] = gc_fg
+            if refined_mask.sum() > 0.15 * (bw * bh):
+                return refined_mask
+        except Exception:
+            pass
+        mask = np.zeros((h, w), dtype=np.uint8)
+        cv2.ellipse(
+            mask,
+            ((x1 + x2) // 2, (y1 + y2) // 2),
+            (int(bw * 0.45), int(bh * 0.45)),
+            0, 0, 360, 255, -1,
+        )
+        return mask.astype(bool)
+
+    def segment(
+        self,
+        image_rgb: np.ndarray,
+        detections: List[dict],
+        raw_only: bool = False,
+    ) -> List[SegmentationResult]:
+        """Segment detected food items using MobileSAM box prompts.
+
+        Args:
+            image_rgb: Input RGB image (H, W, 3), uint8.
+            detections: List of dicts with "bbox", "class_name", "confidence".
+            raw_only: If True, returns pure model output (argmax score mask
+                scaled to original image size, without heuristic candidate
+                filtering, point-prompt supplement, fallback, or erosion).
+        """
+        self._load_model()
+        results: List[SegmentationResult] = []
+        all_masks: List[np.ndarray] = []
+        all_class_names: List[str] = []
+
+        import torch
+        from ultralytics.utils import ops
+
+        h_orig, w_orig = image_rgb.shape[:2]
+        # Ultralytics SAMPredictor.preprocess flips channels [..., ::-1] (expects BGR)
+        image_bgr = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR)
+
+        if self._available and self._predictor is not None and len(detections) > 0:
+            self._predictor.reset_image()
+            self._predictor.batch = [["in_memory.jpg"], [image_bgr], None]
+            with torch.inference_mode():
+                im_tensor = self._predictor.preprocess([image_bgr])
+                self._predictor.im = im_tensor
+                self._predictor.features = self._predictor.get_im_features(im_tensor)
+
+        for det in detections:
+            bbox = det["bbox"]
+            class_name = det["class_name"]
+            confidence = det.get("confidence", 0.0)
+            warnings: List[str] = []
+            x1, y1, x2, y2 = bbox
+            bbox_area = max(1.0, float((x2 - x1) * (y2 - y1)))
+
+            if self._available and self._predictor is not None:
+                try:
+                    with torch.inference_mode():
+                        pred_logits, pred_scores = self._predictor.prompt_inference(
+                            self._predictor.im,
+                            bboxes=[[float(x1), float(y1), float(x2), float(y2)]],
+                            multimask_output=True,
+                        )
+                        scaled_logits = ops.scale_masks(
+                            pred_logits[None].float(), (h_orig, w_orig), padding=False
+                        )[0]
+                        cand_masks = (
+                            (scaled_logits > self._predictor.model.mask_threshold)
+                            .cpu()
+                            .numpy()
+                            .astype(bool)
+                        )
+                        scores_np = pred_scores.cpu().numpy()
+
+                    if raw_only or not self.enable_candidate_filter:
+                        best_idx = int(np.argmax(scores_np))
+                        mask = cand_masks[best_idx]
+                    else:
+                        candidate_list = [cand_masks[i] for i in range(cand_masks.shape[0])]
+                        valid_candidates = [
+                            m for m in candidate_list
+                            if (m.sum() / bbox_area) >= self.min_mask_threshold
+                        ]
+                        if valid_candidates:
+                            mask = min(valid_candidates, key=lambda m: m.sum())
+                        else:
+                            mask = max(candidate_list, key=lambda m: m.sum())
+                        if (mask.sum() / bbox_area) < self.min_mask_threshold:
+                            fallback_fg = self._bbox_fallback_mask(image_rgb, bbox)
+                            mask = mask | fallback_fg
+                except Exception as e:
+                    logger.warning(f"MobileSAM predict failed for '{class_name}': {e}")
+                    mask = (
+                        np.zeros((h_orig, w_orig), dtype=bool)
+                        if raw_only
+                        else self._bbox_fallback_mask(image_rgb, bbox)
+                    )
+                    warnings.append(f"MobileSAM prediction failed: {e}")
+            else:
+                mask = (
+                    np.zeros((h_orig, w_orig), dtype=bool)
+                    if raw_only
+                    else self._bbox_fallback_mask(image_rgb, bbox)
+                )
+                warnings.append("MobileSAM not available")
+
+            if not raw_only and self.enable_erosion and self.erode_kernel and self.erode_kernel > 0:
+                mask = erode_boundary(mask, self.erode_kernel)
+
+            if flag_oversized_mask(mask, bbox_area, self.oversized_threshold):
+                warnings.append(
+                    f"Mask for '{class_name}' covers >{self.oversized_threshold*100:.0f}% "
+                    f"of bbox ? plate/bowl rim may be included."
+                )
+
+            results.append(SegmentationResult(
+                mask=mask,
+                class_name=class_name,
+                bbox=(int(x1), int(y1), int(x2), int(y2)),
+                confidence=confidence,
+                warnings=warnings,
+            ))
+            all_masks.append(mask)
+            all_class_names.append(class_name)
+
+        merge_warnings = check_mask_multiplicity(all_masks, all_class_names)
+        if merge_warnings:
+            for r in results:
+                r.warnings.extend(merge_warnings)
+
+        if self._available and self._predictor is not None:
+            self._predictor.reset_image()
+
+        return results
+
+    def visualize_masks(
+        self,
+        image_rgb: np.ndarray,
+        seg_results: List[SegmentationResult],
+        alpha: float = 0.45,
+    ) -> np.ndarray:
+        """Overlay colored masks on the original image for visualization."""
+        overlay = image_rgb.copy()
+        colors = [
+            (255, 100, 100), (100, 255, 100), (100, 100, 255),
+            (255, 255, 100), (255, 100, 255), (100, 255, 255),
+            (200, 150, 50),  (50, 200, 150),  (150, 50, 200),
+        ]
+        for i, seg in enumerate(seg_results):
+            color = colors[i % len(colors)]
+            mask_3ch = np.stack([seg.mask] * 3, axis=-1)
+            color_mask = np.zeros_like(overlay)
+            color_mask[:] = color
+            overlay = np.where(
+                mask_3ch,
+                (overlay * (1 - alpha) + color_mask * alpha).astype(np.uint8),
+                overlay,
+            )
+            x1, y1, x2, y2 = seg.bbox
+            cv2.rectangle(overlay, (x1, y1), (x2, y2), color, 2)
+            label = f"{seg.class_name} ({seg.confidence:.0%})"
+            cv2.putText(
+                overlay, label, (x1, max(y1 - 8, 12)),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA,
+            )
         return overlay

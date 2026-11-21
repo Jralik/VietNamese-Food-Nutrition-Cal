@@ -3,7 +3,8 @@ RAG Knowledge Base for FoodDetector
 =====================================
 Vector store  : Qdrant Cloud (Free Tier)
 Embedding     : Google text-embedding-004 (768-dim)
-Knowledge     : VietFood67 nutrition DB + Medical/Nutrition docs
+Knowledge     : VietFood68 nutrition DB (NIN 2017 SSOT, cross-checked with
+                thucdongiadinh.vn & USDA FDC) + Medical/Nutrition docs
 
 Credentials required in .streamlit/secrets.toml:
   QDRANT_URL     = "https://your-cluster.qdrant.io:6333"
@@ -18,7 +19,11 @@ import uuid
 import time
 from typing import List, Optional
 
-COLLECTION_NAME = "fooddetector_knowledge_v1"
+# v2: food documents now carry per-100g values + authoritative provenance
+# (NIN 2017 SSOT cross-checked with thucdongiadinh.vn / USDA FDC) and the
+# knowledge set includes data_provenance_sources.txt. Bumping the name forces
+# a clean rebuild instead of serving stale v1 chunks.
+COLLECTION_NAME = "fooddetector_knowledge_v2"
 EMBEDDING_DIM   = 768        # text-embedding-004 output dimension
 EMBEDDING_MODEL = "models/text-embedding-004"
 SCORE_THRESHOLD = 0.45       # minimum cosine similarity to return a chunk
@@ -95,21 +100,47 @@ def _embed(text: str, task_type: str = "retrieval_document") -> Optional[List[fl
 # Document builders
 # ---------------------------------------------------------------------------
 
+def _food_provenance(name: str) -> str:
+    """Resolve the authoritative source label for a food class from
+    class_names.NUTRITION_SOURCES (vn_nin_2017 | usda_fdc | literature …)."""
+    try:
+        from class_names import NUTRITION_SOURCES
+        hit = NUTRITION_SOURCES.get(name)
+        if hit:
+            return hit[0]
+    except Exception:
+        pass
+    return "unknown"
+
+
 def _build_food_documents() -> List[dict]:
     """
     Convert every entry in class_names.py into a rich text document
-    suitable for semantic retrieval.
+    suitable for semantic retrieval. Nutrition values come from the
+    NIN 2017 (Bảng thành phần thực phẩm Việt Nam) SSOT — provenance is
+    embedded so retrieved chunks can cite their authoritative source.
     """
     try:
         from class_names import class_names
     except ImportError:
         return []
 
+    SOURCE_LABELS = {
+        "vn_nin_2017": "Bảng thành phần thực phẩm Việt Nam 2017 — Viện Dinh dưỡng Quốc gia (viendinhduong.vn)",
+        "usda_fdc": "USDA FoodData Central (fdc.nal.usda.gov)",
+        "literature": "Tài liệu khoa học thực phẩm",
+        "literature_fallback": "Tài liệu khoa học thực phẩm (fallback)",
+        "non_food": "Lớp phi-thực phẩm (nền)",
+    }
+
     docs = []
     for food in class_names:
         name    = food.get("name", "Unknown")
         serving = food.get("serving_type", "N/A")
         n       = food.get("nutrition", {})
+        p100    = food.get("nutrition_per_100g", {})
+        provenance = _food_provenance(name)
+        source_desc = SOURCE_LABELS.get(provenance, provenance)
 
         calories   = n.get("Calories",  0)
         protein    = n.get("Protein",   0)
@@ -117,12 +148,13 @@ def _build_food_documents() -> List[dict]:
         saturates  = n.get("Saturates", 0)
         sugar      = n.get("Sugar",     0)
         salt       = n.get("Salt",      0)
+        # Sodium straight from the SSOT when present (mg), else Salt-derived
+        sodium_mg  = p100.get("Sodium") if p100.get("Sodium") is not None else round(salt * 400, 0)
 
         # Derived values
-        sodium_mg     = round(salt * 400, 0)          # Salt (g) → Sodium (mg)  (1g salt ≈ 400mg Na)
         density_score = round(protein / calories * 100, 1) if calories > 0 else 0.0
 
-        # Traffic light labels
+        # Traffic light labels (UK-style thresholds, per 100 g)
         def _fat_label(v):
             return "Thấp (Green)" if v < 3 else ("Trung bình (Yellow)" if v < 17.5 else "Cao (Red)")
         def _salt_label(v):
@@ -136,22 +168,31 @@ def _build_food_documents() -> List[dict]:
             f"Món ăn: {name}\n"
             f"Khẩu phần: {serving}\n"
             f"\n"
-            f"Thông tin dinh dưỡng:\n"
+            f"Thông tin dinh dưỡng theo khẩu phần:\n"
             f"- Calories: {calories} kcal\n"
             f"- Protein: {protein} g\n"
             f"- Chất béo (Fat): {fat} g  [{_fat_label(fat)}]\n"
             f"- Chất béo bão hòa (Saturates): {saturates} g  [{_sat_label(saturates)}]\n"
             f"- Đường (Sugar): {sugar} g  [{_sugar_label(sugar)}]\n"
             f"- Muối (Salt): {salt} g  [{_salt_label(salt)}]\n"
-            f"- Natri ước tính (Sodium): {sodium_mg:.0f} mg\n"
+            f"- Natri (Sodium): {sodium_mg:.0f} mg\n"
             f"- Chỉ số mật độ Protein (Protein Density): {density_score}% (protein/calorie ratio)\n"
+            f"\n"
+            f"Tham chiếu per-100g: {p100.get('Calories', 0)} kcal, protein {p100.get('Protein', 0)} g, "
+            f"chất béo {p100.get('Fat', 0)} g, tinh bột {p100.get('Carbs', 0)} g "
+            f"(trên 100 g phần ăn được)\n"
+            f"\n"
+            f"Nguồn dữ liệu: {source_desc}. Dữ liệu được đối chiếu chéo giữa "
+            f"Viện Dinh dưỡng Quốc gia (viendinhduong.vn) và Bảng thành phần thực phẩm "
+            f"Việt Nam trên cổng thucdongiadinh.vn."
         )
 
         docs.append({
             "id":   str(uuid.uuid5(uuid.NAMESPACE_DNS, f"food::{name}")),
             "text": text,
             "metadata": {
-                "source":    "VietFood67",
+                "source":    provenance,
+                "dataset":   "VietFood68",
                 "category":  "food_nutrition",
                 "food_name": name,
                 "serving":   serving,

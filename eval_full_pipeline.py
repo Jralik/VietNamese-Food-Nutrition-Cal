@@ -24,6 +24,7 @@ then aggregates into scratch/full_pipeline_eval.md.
 import json
 import os
 import re
+import sys
 import time
 
 import av  # noqa: F401  (venv DLL quirk guard: must precede ultralytics)
@@ -126,6 +127,20 @@ def main():
     records = []
     t0 = time.time()
 
+    existing_records = {}
+    if os.path.exists(OUT_JSONL) and "--fresh" not in sys.argv:
+        with open(OUT_JSONL, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    try:
+                        r = json.loads(line)
+                        if r.get("image") and not r.get("error"):
+                            existing_records[r["image"]] = r
+                    except Exception:
+                        pass
+        print(f"Loaded {len(existing_records)} existing valid records from {OUT_JSONL}. Resuming...")
+
     # OneDrive hydration: cloud-only placeholders transiently fail
     # os.path.exists/open during collection — force-download once up front.
     for img_path, _gt in entries:
@@ -141,7 +156,19 @@ def main():
 
     for idx, (img_path, gt) in enumerate(entries):
         fname = os.path.basename(img_path)
-        rec = {"image": fname, "group": img_path.split("\\")[-2], "gt": {}, "est": [],
+        group = img_path.replace("/", "\\").split("\\")[-2]
+        if fname in existing_records:
+            rec = existing_records[fname]
+            rec["group"] = group
+            rec["gt"] = {}
+            for cid, v in gt.items():
+                rec["gt"][str(cid)] = dict(v)
+            records.append(rec)
+            print(f"[{idx + 1}/{len(entries)}] {fname}: (cached) "
+                  f"{len(rec['detections'])} det, {len(rec['est'])} est", flush=True)
+            continue
+
+        rec = {"image": fname, "group": group, "gt": {}, "est": [],
                "detections": [], "scale_source": "", "worker_s": None, "error": None}
         for cid, v in gt.items():
             rec["gt"][str(cid)] = dict(v)
@@ -200,11 +227,18 @@ def main():
         print(f"[{idx + 1}/{len(entries)}] {fname}: "
               f"{len(rec['detections'])} det, {len(rec['est'])} est{err}", flush=True)
 
+    # Rewrite OUT_JSONL in the exact order of entries to ensure clean order
+    with open(OUT_JSONL, "w", encoding="utf-8") as f:
+        for r in records:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
     print(f"collection done in {time.time() - t0:.0f}s -> {OUT_JSONL}")
 
 
 if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT_MD), exist_ok=True)
-    if os.path.exists(OUT_JSONL):
+    if "--fresh" in sys.argv and os.path.exists(OUT_JSONL):
         os.remove(OUT_JSONL)
     main()
+    import summarize_full_eval
+    summarize_full_eval.main()

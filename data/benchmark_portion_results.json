@@ -3,7 +3,8 @@
     "title": "Real-Image Portion Estimation Ground Truth Benchmark (Phase 4)",
     "date": "2026-09-26 00:46:51",
     "dataset_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image",
-    "ground_truth_file": "portion-estimation_val.txt"
+    "ground_truth_file": "portion-estimation_val.txt",
+    "nutrition_recomputed_at": "2026-09-28 — per-100g source-aligned (post-freeze realignment); mass results unchanged"
   },
   "overall_metrics": {
     "total_images": 54,
@@ -107,7 +108,7 @@
         "Saturates": 5.5,
         "Sugar": 4.7,
         "Salt": 7.0,
-        "Sodium": 4565.7,
+        "Sodium": 4565.9,
         "Calcium": 238.0,
         "Iron": 6.8,
         "Zinc": 8.1,
@@ -132,18 +133,18 @@
           "class": "Bun mam (Fermented fish noodle soup)",
           "volume_cm3": 839.84,
           "mass_g": 789.4,
-          "calories": 726.3
+          "calories": 726.2
         }
       ],
       "pred_nutrition": {
-        "Calories": 726.3,
-        "Protein": 41.1,
+        "Calories": 726.2,
+        "Protein": 41.0,
         "Fat": 28.4,
         "Carbs": 78.9,
         "Saturates": 6.3,
         "Sugar": 7.9,
         "Salt": 9.5,
-        "Sodium": 1492.1,
+        "Sodium": 1492.0,
         "Calcium": 209.2,
         "Iron": 3.9,
         "Zinc": 1.9,
@@ -252,14 +253,14 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 46.41,
           "mass_g": 13.9,
-          "calories": 3.5
+          "calories": 3.9
         }
       ],
       "pred_nutrition": {
-        "Calories": 218.7,
-        "Protein": 3.8,
+        "Calories": 219.1,
+        "Protein": 4.0,
         "Fat": 0.4,
-        "Carbs": 49.8,
+        "Carbs": 49.7,
         "Saturates": 0.2,
         "Sugar": 0.5,
         "Salt": 0.0,
@@ -288,51 +289,51 @@
           "class": "Dau hu (Tofu)",
           "volume_cm3": 14.97,
           "mass_g": 13.5,
-          "calories": 10.2
+          "calories": 13.1
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 35.82,
           "mass_g": 10.7,
-          "calories": 2.7
+          "calories": 3.0
         }
       ],
       "pred_nutrition": {
-        "Calories": 18.9,
-        "Protein": 1.7,
-        "Fat": 0.6,
-        "Carbs": 2.0,
+        "Calories": 22.9,
+        "Protein": 2.6,
+        "Fat": 0.7,
+        "Carbs": 1.3,
         "Saturates": 0.1,
         "Sugar": 0.7,
         "Salt": 0.0,
         "Sodium": 13.7,
         "Calcium": 37.9,
         "Iron": 0.8,
-        "Zinc": 0.2,
+        "Zinc": 0.1,
         "Cholesterol": 0.0
       }
     },
@@ -390,45 +391,45 @@
           "class": "Thit ga (Chicken)",
           "volume_cm3": 44.38,
           "mass_g": 42.2,
-          "calories": 80.1
+          "calories": 84.0
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 27.8,
           "mass_g": 8.3,
-          "calories": 2.1
+          "calories": 2.3
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 86.7,
-        "Protein": 12.6,
-        "Fat": 3.1,
-        "Carbs": 1.3,
+        "Calories": 91.4,
+        "Protein": 9.5,
+        "Fat": 5.5,
+        "Carbs": 0.9,
         "Saturates": 0.8,
         "Sugar": 0.5,
         "Salt": 0.1,
         "Sodium": 39.2,
         "Calcium": 31.4,
         "Iron": 1.0,
-        "Zinc": 0.7,
+        "Zinc": 0.6,
         "Cholesterol": 0.0
       }
     },
@@ -461,7 +462,7 @@
         "Saturates": 1.9,
         "Sugar": 1.6,
         "Salt": 1.3,
-        "Sodium": 384.5,
+        "Sodium": 384.4,
         "Calcium": 148.4,
         "Iron": 3.0,
         "Zinc": 1.0,
@@ -486,45 +487,45 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 20.3,
           "mass_g": 19.9,
-          "calories": 48.1
+          "calories": 25.1
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 38.16,
           "mass_g": 11.4,
-          "calories": 2.9
+          "calories": 3.2
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 55.5,
-        "Protein": 5.9,
-        "Fat": 2.8,
-        "Carbs": 1.4,
+        "Calories": 33.4,
+        "Protein": 4.5,
+        "Fat": 1.2,
+        "Carbs": 1.0,
         "Saturates": 1.0,
         "Sugar": 0.5,
         "Salt": 0.0,
         "Sodium": 10.9,
         "Calcium": 33.4,
-        "Iron": 0.5,
-        "Zinc": 0.5,
+        "Iron": 0.6,
+        "Zinc": 0.4,
         "Cholesterol": 0.0
       }
     },
@@ -546,13 +547,13 @@
           "class": "Thit ga (Chicken)",
           "volume_cm3": 6.97,
           "mass_g": 6.6,
-          "calories": 12.6
+          "calories": 13.1
         },
         {
           "class": "Thit ga (Chicken)",
           "volume_cm3": 3.58,
           "mass_g": 3.4,
-          "calories": 6.5
+          "calories": 6.8
         },
         {
           "class": "Cha (Vietnamese pork roll)",
@@ -570,50 +571,50 @@
           "class": "Ca (Fish)",
           "volume_cm3": 1.15,
           "mass_g": 1.1,
-          "calories": 1.4
+          "calories": 1.1
         },
         {
           "class": "Dau hu (Tofu)",
           "volume_cm3": 36.2,
           "mass_g": 32.6,
-          "calories": 24.8
+          "calories": 31.6
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 21.98,
           "mass_g": 6.6,
-          "calories": 1.6
+          "calories": 1.8
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 67.7,
-        "Protein": 7.5,
-        "Fat": 3.5,
-        "Carbs": 2.1,
+        "Calories": 75.8,
+        "Protein": 7.9,
+        "Fat": 4.1,
+        "Carbs": 1.5,
         "Saturates": 0.7,
         "Sugar": 0.7,
         "Salt": 0.1,
-        "Sodium": 35.7,
-        "Calcium": 43.1,
-        "Iron": 1.2,
+        "Sodium": 35.2,
+        "Calcium": 42.9,
+        "Iron": 1.3,
         "Zinc": 0.5,
         "Cholesterol": 0.0
       }
@@ -648,19 +649,19 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 27.27,
           "mass_g": 26.7,
-          "calories": 64.7
+          "calories": 33.6
         },
         {
           "class": "Thit heo (Pork)",
           "volume_cm3": 89.89,
           "mass_g": 88.1,
-          "calories": 213.2
+          "calories": 111.0
         },
         {
           "class": "Bun (Rice vermicelli)",
           "volume_cm3": 2.38,
           "mass_g": 1.6,
-          "calories": 1.8
+          "calories": 1.7
         },
         {
           "class": "Com (Rice)",
@@ -694,17 +695,17 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 1159.0,
-        "Protein": 72.0,
-        "Fat": 32.3,
+        "Calories": 1025.6,
+        "Protein": 61.2,
+        "Fat": 23.5,
         "Carbs": 139.1,
         "Saturates": 9.9,
         "Sugar": 13.5,
         "Salt": 7.9,
-        "Sodium": 2642.9,
-        "Calcium": 616.1,
+        "Sodium": 2643.1,
+        "Calcium": 616.2,
         "Iron": 12.9,
-        "Zinc": 9.4,
+        "Zinc": 9.2,
         "Cholesterol": 86.7
       }
     },
@@ -726,19 +727,19 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 40.59,
           "mass_g": 39.8,
-          "calories": 96.3
+          "calories": 50.1
         },
         {
           "class": "Thit heo (Pork)",
           "volume_cm3": 200.67,
           "mass_g": 196.7,
-          "calories": 475.9
+          "calories": 247.8
         },
         {
           "class": "Com (Rice)",
           "volume_cm3": 253.9,
           "mass_g": 215.8,
-          "calories": 280.6
+          "calories": 280.5
         },
         {
           "class": "Dua leo (Cucumber)",
@@ -756,20 +757,20 @@
           "class": "Ca rot (Carrot)",
           "volume_cm3": 7.62,
           "mass_g": 5.0,
-          "calories": 2.0
+          "calories": 2.1
         }
       ],
       "pred_nutrition": {
-        "Calories": 859.2,
-        "Protein": 69.8,
-        "Fat": 33.7,
+        "Calories": 584.9,
+        "Protein": 47.6,
+        "Fat": 15.3,
         "Carbs": 62.5,
         "Saturates": 12.0,
         "Sugar": 0.9,
         "Salt": 0.5,
         "Sodium": 9.3,
         "Calcium": 73.0,
-        "Iron": 2.4,
+        "Iron": 2.3,
         "Zinc": 5.7,
         "Cholesterol": 0.0
       }
@@ -804,13 +805,13 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 33.55,
           "mass_g": 32.9,
-          "calories": 79.6
+          "calories": 41.5
         },
         {
           "class": "Thit heo (Pork)",
           "volume_cm3": 150.47,
           "mass_g": 147.5,
-          "calories": 356.8
+          "calories": 185.9
         },
         {
           "class": "Com (Rice)",
@@ -826,17 +827,17 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 1046.2,
-        "Protein": 77.5,
-        "Fat": 36.7,
+        "Calories": 837.2,
+        "Protein": 60.6,
+        "Fat": 22.6,
         "Carbs": 95.4,
         "Saturates": 12.0,
         "Sugar": 9.7,
         "Salt": 5.8,
-        "Sodium": 1870.6,
-        "Calcium": 456.0,
-        "Iron": 9.7,
-        "Zinc": 8.6,
+        "Sodium": 1870.8,
+        "Calcium": 456.2,
+        "Iron": 9.6,
+        "Zinc": 8.7,
         "Cholesterol": 61.4
       }
     },
@@ -864,13 +865,13 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 52.87,
           "mass_g": 51.8,
-          "calories": 125.4
+          "calories": 65.3
         },
         {
           "class": "Thit heo (Pork)",
           "volume_cm3": 32.07,
           "mass_g": 31.4,
-          "calories": 76.1
+          "calories": 39.6
         },
         {
           "class": "Com (Rice)",
@@ -886,17 +887,17 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 666.2,
-        "Protein": 36.4,
-        "Fat": 18.1,
+        "Calories": 569.6,
+        "Protein": 28.5,
+        "Fat": 11.5,
         "Carbs": 87.2,
         "Saturates": 6.1,
         "Sugar": 1.9,
         "Salt": 1.2,
         "Sodium": 30.7,
         "Calcium": 59.3,
-        "Iron": 2.4,
-        "Zinc": 4.4,
+        "Iron": 2.5,
+        "Zinc": 4.5,
         "Cholesterol": 21.3
       }
     },
@@ -918,13 +919,13 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 32.6,
           "mass_g": 32.0,
-          "calories": 77.3
+          "calories": 40.3
         },
         {
           "class": "Thit heo (Pork)",
           "volume_cm3": 159.02,
           "mass_g": 155.8,
-          "calories": 377.1
+          "calories": 196.3
         },
         {
           "class": "Com (Rice)",
@@ -958,17 +959,17 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 729.2,
-        "Protein": 56.5,
-        "Fat": 26.9,
+        "Calories": 511.4,
+        "Protein": 38.8,
+        "Fat": 12.3,
         "Carbs": 59.7,
         "Saturates": 9.6,
         "Sugar": 0.7,
         "Salt": 0.4,
         "Sodium": 7.3,
-        "Calcium": 61.1,
+        "Calcium": 61.0,
         "Iron": 2.1,
-        "Zinc": 4.7,
+        "Zinc": 4.6,
         "Cholesterol": 0.0
       }
     },
@@ -990,33 +991,33 @@
           "class": "Bun bo Hue (Hue beef noodle soup)",
           "volume_cm3": 756.09,
           "mass_g": 703.2,
-          "calories": 632.8
+          "calories": 632.9
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 49.39,
           "mass_g": 14.8,
-          "calories": 3.7
+          "calories": 4.1
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 309.34,
           "mass_g": 92.8,
-          "calories": 23.2
+          "calories": 26.0
         }
       ],
       "pred_nutrition": {
-        "Calories": 659.7,
-        "Protein": 40.3,
+        "Calories": 663.0,
+        "Protein": 42.2,
         "Fat": 24.8,
-        "Carbs": 68.2,
+        "Carbs": 66.9,
         "Saturates": 7.0,
         "Sugar": 6.4,
         "Salt": 6.3,
-        "Sodium": 1113.2,
+        "Sodium": 1113.3,
         "Calcium": 234.2,
         "Iron": 29.5,
-        "Zinc": 2.9,
+        "Zinc": 2.8,
         "Cholesterol": 71.0
       }
     },
@@ -1044,21 +1045,21 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 400.0,
           "mass_g": 120.0,
-          "calories": 30.0
+          "calories": 33.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 714.4,
-        "Protein": 43.6,
+        "Calories": 718.0,
+        "Protein": 45.6,
         "Fat": 26.8,
-        "Carbs": 73.8,
+        "Carbs": 72.4,
         "Saturates": 7.6,
         "Sugar": 7.0,
         "Salt": 6.8,
         "Sodium": 1205.3,
         "Calcium": 256.9,
-        "Iron": 31.9,
-        "Zinc": 3.2,
+        "Iron": 32.0,
+        "Zinc": 3.1,
         "Cholesterol": 76.8
       }
     },
@@ -1086,21 +1087,21 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 156.33,
           "mass_g": 46.9,
-          "calories": 11.7
+          "calories": 13.1
         }
       ],
       "pred_nutrition": {
-        "Calories": 701.5,
-        "Protein": 42.9,
+        "Calories": 702.9,
+        "Protein": 43.7,
         "Fat": 26.9,
-        "Carbs": 71.1,
+        "Carbs": 70.5,
         "Saturates": 7.7,
         "Sugar": 5.5,
         "Salt": 6.9,
         "Sodium": 1187.0,
         "Calcium": 184.9,
         "Iron": 31.2,
-        "Zinc": 2.9,
+        "Zinc": 3.0,
         "Cholesterol": 77.4
       }
     },
@@ -1128,18 +1129,18 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 400.0,
           "mass_g": 120.0,
-          "calories": 30.0
+          "calories": 33.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 576.8,
-        "Protein": 35.2,
+        "Calories": 580.4,
+        "Protein": 37.2,
         "Fat": 21.5,
-        "Carbs": 60.1,
+        "Carbs": 58.7,
         "Saturates": 6.1,
         "Sugar": 6.0,
         "Salt": 5.5,
-        "Sodium": 972.0,
+        "Sodium": 971.9,
         "Calcium": 229.4,
         "Iron": 25.9,
         "Zinc": 2.6,
@@ -1182,25 +1183,25 @@
           "class": "Ca (Fish)",
           "volume_cm3": 240.88,
           "mass_g": 228.8,
-          "calories": 297.5
+          "calories": 219.6
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 400.0,
           "mass_g": 120.0,
-          "calories": 30.0
+          "calories": 33.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 1145.7,
-        "Protein": 111.8,
+        "Calories": 1071.4,
+        "Protein": 100.8,
         "Fat": 40.0,
-        "Carbs": 74.4,
+        "Carbs": 75.9,
         "Saturates": 10.7,
         "Sugar": 7.0,
         "Salt": 8.3,
-        "Sodium": 3517.6,
-        "Calcium": 1516.5,
+        "Sodium": 3516.9,
+        "Calcium": 1516.1,
         "Iron": 36.3,
         "Zinc": 6.6,
         "Cholesterol": 77.4
@@ -1224,11 +1225,11 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 497.97,
           "mass_g": 224.1,
-          "calories": 593.8
+          "calories": 593.9
         }
       ],
       "pred_nutrition": {
-        "Calories": 593.8,
+        "Calories": 593.9,
         "Protein": 19.0,
         "Fat": 22.0,
         "Carbs": 80.7,
@@ -1260,13 +1261,13 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 2.47,
           "mass_g": 2.4,
-          "calories": 5.9
+          "calories": 3.0
         },
         {
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 30.06,
           "mass_g": 31.6,
-          "calories": 56.8
+          "calories": 56.9
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
@@ -1278,13 +1279,13 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 51.24,
           "mass_g": 23.1,
-          "calories": 61.1
+          "calories": 61.2
         },
         {
           "class": "Ca chua (Tomato)",
           "volume_cm3": 1.52,
           "mass_g": 1.4,
-          "calories": 0.2
+          "calories": 0.3
         },
         {
           "class": "Ca chua (Tomato)",
@@ -1314,34 +1315,34 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 67.08,
           "mass_g": 20.1,
-          "calories": 5.0
+          "calories": 5.6
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 191.5,
-        "Protein": 9.4,
-        "Fat": 8.3,
-        "Carbs": 19.8,
+        "Calories": 189.9,
+        "Protein": 9.6,
+        "Fat": 8.1,
+        "Carbs": 19.4,
         "Saturates": 2.7,
         "Sugar": 3.2,
         "Salt": 1.0,
         "Sodium": 42.7,
         "Calcium": 65.3,
-        "Iron": 3.6,
-        "Zinc": 0.4,
-        "Cholesterol": 88.4
+        "Iron": 3.7,
+        "Zinc": 0.3,
+        "Cholesterol": 88.5
       }
     },
     {
@@ -1362,7 +1363,7 @@
           "class": "Pho mai (Cheese)",
           "volume_cm3": 3.84,
           "mass_g": 4.0,
-          "calories": 14.1
+          "calories": 14.0
         },
         {
           "class": "Pho mai (Cheese)",
@@ -1374,7 +1375,7 @@
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 31.74,
           "mass_g": 33.3,
-          "calories": 60.0
+          "calories": 59.9
         },
         {
           "class": "Cha (Vietnamese pork roll)",
@@ -1386,13 +1387,13 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 2.78,
           "mass_g": 1.3,
-          "calories": 3.3
+          "calories": 3.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 68.06,
           "mass_g": 30.6,
-          "calories": 81.2
+          "calories": 81.1
         },
         {
           "class": "Dua leo (Cucumber)",
@@ -1416,28 +1417,28 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 23.4,
           "mass_g": 7.0,
-          "calories": 1.8
+          "calories": 2.0
         }
       ],
       "pred_nutrition": {
-        "Calories": 200.8,
-        "Protein": 10.8,
+        "Calories": 201.0,
+        "Protein": 11.1,
         "Fat": 10.4,
-        "Carbs": 15.7,
+        "Carbs": 15.5,
         "Saturates": 4.1,
         "Sugar": 2.6,
         "Salt": 1.1,
-        "Sodium": 46.2,
-        "Calcium": 52.2,
-        "Iron": 2.7,
+        "Sodium": 120.0,
+        "Calcium": 103.5,
+        "Iron": 2.8,
         "Zinc": 0.3,
-        "Cholesterol": 71.9
+        "Cholesterol": 99.1
       }
     },
     {
@@ -1458,49 +1459,49 @@
           "class": "Thit bo (Beef)",
           "volume_cm3": 2.83,
           "mass_g": 2.9,
-          "calories": 6.2
+          "calories": 3.4
         },
         {
           "class": "Thit bo (Beef)",
           "volume_cm3": 8.44,
           "mass_g": 8.6,
-          "calories": 18.5
+          "calories": 10.1
         },
         {
           "class": "Thit bo (Beef)",
           "volume_cm3": 5.23,
           "mass_g": 5.3,
-          "calories": 11.5
+          "calories": 6.3
         },
         {
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 81.02,
           "mass_g": 85.1,
-          "calories": 153.1
+          "calories": 153.2
         },
         {
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 1.56,
           "mass_g": 1.6,
-          "calories": 3.0
+          "calories": 2.9
         },
         {
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 10.42,
           "mass_g": 10.9,
-          "calories": 19.7
+          "calories": 19.6
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 94.31,
           "mass_g": 42.4,
-          "calories": 112.5
+          "calories": 112.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 25.46,
           "mass_g": 11.5,
-          "calories": 30.4
+          "calories": 30.5
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
@@ -1542,27 +1543,27 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 67.41,
           "mass_g": 20.2,
-          "calories": 5.1
+          "calories": 5.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 468.9,
-        "Protein": 26.4,
-        "Fat": 22.4,
-        "Carbs": 39.3,
-        "Saturates": 7.4,
+        "Calories": 453.2,
+        "Protein": 25.9,
+        "Fat": 21.1,
+        "Carbs": 39.0,
+        "Saturates": 6.8,
         "Sugar": 5.7,
         "Salt": 2.5,
-        "Sodium": 83.5,
+        "Sodium": 83.4,
         "Calcium": 90.8,
-        "Iron": 7.4,
-        "Zinc": 0.9,
+        "Iron": 7.5,
+        "Zinc": 1.0,
         "Cholesterol": 186.9
       }
     },
@@ -1600,11 +1601,11 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 440.83,
           "mass_g": 198.4,
-          "calories": 525.7
+          "calories": 525.8
         }
       ],
       "pred_nutrition": {
-        "Calories": 525.7,
+        "Calories": 525.8,
         "Protein": 16.9,
         "Fat": 19.4,
         "Carbs": 71.4,
@@ -1612,10 +1613,10 @@
         "Sugar": 6.0,
         "Salt": 2.2,
         "Sodium": 100.8,
-        "Calcium": 105.1,
+        "Calcium": 105.2,
         "Iron": 13.3,
         "Zinc": 0.3,
-        "Cholesterol": 413.2
+        "Cholesterol": 413.3
       }
     },
     {
@@ -1672,19 +1673,19 @@
           "class": "Hamburger",
           "volume_cm3": 871.89,
           "mass_g": 392.4,
-          "calories": 980.9
+          "calories": 981.0
         }
       ],
       "pred_nutrition": {
-        "Calories": 980.9,
+        "Calories": 981.0,
         "Protein": 51.0,
         "Fat": 47.1,
         "Carbs": 94.2,
         "Saturates": 17.7,
         "Sugar": 15.7,
         "Salt": 4.7,
-        "Sodium": 1012.7,
-        "Calcium": 551.6,
+        "Sodium": 1012.8,
+        "Calcium": 551.7,
         "Iron": 6.5,
         "Zinc": 5.2,
         "Cholesterol": 41.2
@@ -1708,11 +1709,11 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 625.83,
           "mass_g": 281.6,
-          "calories": 746.3
+          "calories": 746.2
         }
       ],
       "pred_nutrition": {
-        "Calories": 746.3,
+        "Calories": 746.2,
         "Protein": 23.9,
         "Fat": 27.6,
         "Carbs": 101.4,
@@ -1720,7 +1721,7 @@
         "Sugar": 8.4,
         "Salt": 3.1,
         "Sodium": 143.1,
-        "Calcium": 149.3,
+        "Calcium": 149.2,
         "Iron": 18.9,
         "Zinc": 0.4,
         "Cholesterol": 586.6
@@ -1744,25 +1745,25 @@
           "class": "Pho mai (Cheese)",
           "volume_cm3": 1.16,
           "mass_g": 1.2,
-          "calories": 4.3
+          "calories": 4.2
         },
         {
           "class": "Pho mai (Cheese)",
           "volume_cm3": 1.47,
           "mass_g": 1.5,
-          "calories": 5.4
+          "calories": 5.2
         },
         {
           "class": "Pho mai (Cheese)",
           "volume_cm3": 0.7,
           "mass_g": 0.7,
-          "calories": 2.6
+          "calories": 2.4
         },
         {
           "class": "Thit ga (Chicken)",
           "volume_cm3": 22.38,
           "mass_g": 21.3,
-          "calories": 40.4
+          "calories": 42.4
         },
         {
           "class": "Cha (Vietnamese pork roll)",
@@ -1774,25 +1775,25 @@
           "class": "Cha (Vietnamese pork roll)",
           "volume_cm3": 17.56,
           "mass_g": 18.4,
-          "calories": 33.2
+          "calories": 33.1
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 349.94,
           "mass_g": 157.5,
-          "calories": 417.3
+          "calories": 417.4
         },
         {
           "class": "Ca chua (Tomato)",
           "volume_cm3": 12.34,
           "mass_g": 11.1,
-          "calories": 2.0
+          "calories": 2.7
         },
         {
           "class": "Ca chua (Tomato)",
           "volume_cm3": 1.4,
           "mass_g": 1.3,
-          "calories": 0.2
+          "calories": 0.3
         },
         {
           "class": "Ca chua (Tomato)",
@@ -1810,7 +1811,7 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Ca rot (Carrot)",
@@ -1822,28 +1823,28 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 20.0,
           "mass_g": 6.0,
-          "calories": 1.5
+          "calories": 1.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 526.5,
-        "Protein": 24.6,
-        "Fat": 21.1,
-        "Carbs": 59.2,
+        "Calories": 529.4,
+        "Protein": 23.0,
+        "Fat": 22.3,
+        "Carbs": 59.1,
         "Saturates": 6.7,
         "Sugar": 5.7,
         "Salt": 2.1,
-        "Sodium": 110.7,
-        "Calcium": 111.2,
+        "Sodium": 138.8,
+        "Calcium": 130.7,
         "Iron": 11.4,
         "Zinc": 0.7,
-        "Cholesterol": 330.0
+        "Cholesterol": 340.6
       }
     },
     {
@@ -1900,11 +1901,11 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 593.62,
           "mass_g": 267.1,
-          "calories": 707.9
+          "calories": 707.8
         }
       ],
       "pred_nutrition": {
-        "Calories": 707.9,
+        "Calories": 707.8,
         "Protein": 22.7,
         "Fat": 26.2,
         "Carbs": 96.2,
@@ -1942,28 +1943,28 @@
           "class": "Trung (Egg)",
           "volume_cm3": 80.0,
           "mass_g": 73.6,
-          "calories": 105.2
+          "calories": 110.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 300.11,
           "mass_g": 135.0,
-          "calories": 357.9
+          "calories": 357.8
         }
       ],
       "pred_nutrition": {
-        "Calories": 1600.5,
-        "Protein": 57.3,
-        "Fat": 62.3,
-        "Carbs": 203.6,
+        "Calories": 1605.6,
+        "Protein": 57.6,
+        "Fat": 62.9,
+        "Carbs": 204.0,
         "Saturates": 19.3,
         "Sugar": 17.3,
         "Salt": 6.4,
-        "Sodium": 286.6,
-        "Calcium": 373.4,
-        "Iron": 38.0,
-        "Zinc": 0.7,
-        "Cholesterol": 1175.3
+        "Sodium": 402.9,
+        "Calcium": 339.6,
+        "Iron": 40.0,
+        "Zinc": 1.5,
+        "Cholesterol": 1175.2
       }
     },
     {
@@ -1990,27 +1991,27 @@
           "class": "Trung (Egg)",
           "volume_cm3": 80.0,
           "mass_g": 73.6,
-          "calories": 105.2
+          "calories": 110.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 194.42,
           "mass_g": 87.5,
-          "calories": 231.8
+          "calories": 231.9
         }
       ],
       "pred_nutrition": {
-        "Calories": 928.0,
-        "Protein": 35.7,
-        "Fat": 37.5,
-        "Carbs": 112.3,
+        "Calories": 933.3,
+        "Protein": 36.0,
+        "Fat": 38.1,
+        "Carbs": 112.7,
         "Saturates": 11.6,
         "Sugar": 9.6,
         "Salt": 3.7,
-        "Sodium": 157.7,
-        "Calcium": 238.9,
-        "Iron": 20.9,
-        "Zinc": 0.4,
+        "Sodium": 274.0,
+        "Calcium": 205.1,
+        "Iron": 22.9,
+        "Zinc": 1.1,
         "Cholesterol": 646.8
       }
     },
@@ -2032,13 +2033,13 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 344.07,
           "mass_g": 154.8,
-          "calories": 410.3
+          "calories": 410.2
         },
         {
           "class": "Trung (Egg)",
           "volume_cm3": 80.0,
           "mass_g": 73.6,
-          "calories": 105.2
+          "calories": 110.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
@@ -2048,18 +2049,18 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 785.0,
-        "Protein": 31.1,
-        "Fat": 32.2,
-        "Carbs": 92.8,
+        "Calories": 790.1,
+        "Protein": 31.4,
+        "Fat": 32.8,
+        "Carbs": 93.2,
         "Saturates": 10.0,
         "Sugar": 8.0,
         "Salt": 3.0,
-        "Sodium": 130.4,
-        "Calcium": 210.3,
-        "Iron": 17.3,
-        "Zinc": 0.3,
-        "Cholesterol": 534.3
+        "Sodium": 246.6,
+        "Calcium": 176.4,
+        "Iron": 19.2,
+        "Zinc": 1.0,
+        "Cholesterol": 534.2
       }
     },
     {
@@ -2080,13 +2081,13 @@
           "class": "Banh mi (Vietnamese baguette sandwich)",
           "volume_cm3": 197.23,
           "mass_g": 88.8,
-          "calories": 235.2
+          "calories": 235.3
         },
         {
           "class": "Trung (Egg)",
           "volume_cm3": 80.0,
           "mass_g": 73.6,
-          "calories": 105.2
+          "calories": 110.4
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
@@ -2096,18 +2097,18 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 452.8,
-        "Protein": 20.4,
-        "Fat": 19.9,
-        "Carbs": 47.8,
+        "Calories": 458.1,
+        "Protein": 20.7,
+        "Fat": 20.5,
+        "Carbs": 48.2,
         "Saturates": 6.3,
         "Sugar": 4.3,
         "Salt": 1.7,
-        "Sodium": 66.6,
-        "Calcium": 143.8,
-        "Iron": 8.8,
-        "Zinc": 0.2,
-        "Cholesterol": 273.2
+        "Sodium": 182.9,
+        "Calcium": 110.1,
+        "Iron": 10.8,
+        "Zinc": 0.9,
+        "Cholesterol": 273.3
       }
     },
     {
@@ -2175,7 +2176,7 @@
         "Saturates": 7.4,
         "Sugar": 8.4,
         "Salt": 8.4,
-        "Sodium": 5094.9,
+        "Sodium": 5094.7,
         "Calcium": 147.5,
         "Iron": 1.9,
         "Zinc": 0.1,
@@ -2278,18 +2279,18 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 400.0,
           "mass_g": 120.0,
-          "calories": 30.0
+          "calories": 33.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 997.3,
-        "Protein": 60.9,
+        "Calories": 1000.9,
+        "Protein": 62.9,
         "Fat": 37.8,
-        "Carbs": 102.1,
+        "Carbs": 100.7,
         "Saturates": 10.7,
         "Sugar": 8.8,
         "Salt": 9.7,
-        "Sodium": 1685.1,
+        "Sodium": 1685.0,
         "Calcium": 313.5,
         "Iron": 44.5,
         "Zinc": 4.3,
@@ -2320,20 +2321,20 @@
           "class": "Rau (Vegetables)",
           "volume_cm3": 227.44,
           "mass_g": 68.2,
-          "calories": 17.1
+          "calories": 19.1
         }
       ],
       "pred_nutrition": {
-        "Calories": 854.1,
-        "Protein": 48.3,
+        "Calories": 856.1,
+        "Protein": 49.5,
         "Fat": 31.6,
-        "Carbs": 93.7,
+        "Carbs": 92.9,
         "Saturates": 6.9,
         "Sugar": 9.3,
         "Salt": 7.9,
         "Sodium": 4787.5,
         "Calcium": 206.1,
-        "Iron": 2.7,
+        "Iron": 2.8,
         "Zinc": 0.3,
         "Cholesterol": 6.9
       }
@@ -2356,26 +2357,26 @@
           "class": "Bun rieu (Crab noodle soup)",
           "volume_cm3": 810.93,
           "mass_g": 754.2,
-          "calories": 641.0
+          "calories": 641.1
         },
         {
           "class": "Rau (Vegetables)",
           "volume_cm3": 400.0,
           "mass_g": 120.0,
-          "calories": 30.0
+          "calories": 33.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 671.0,
-        "Protein": 38.0,
+        "Calories": 674.7,
+        "Protein": 40.0,
         "Fat": 24.3,
-        "Carbs": 74.8,
+        "Carbs": 73.4,
         "Saturates": 5.3,
         "Sugar": 8.4,
         "Salt": 6.0,
-        "Sodium": 3692.0,
+        "Sodium": 3692.2,
         "Calcium": 225.6,
-        "Iron": 3.0,
+        "Iron": 3.1,
         "Zinc": 0.5,
         "Cholesterol": 5.3
       }
@@ -2409,8 +2410,8 @@
         "Saturates": 1.4,
         "Sugar": 4.5,
         "Salt": 2.7,
-        "Sodium": 932.0,
-        "Calcium": 198.1,
+        "Sodium": 932.1,
+        "Calcium": 198.2,
         "Iron": 3.8,
         "Zinc": 2.0,
         "Cholesterol": 30.7
@@ -2434,7 +2435,7 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 29.85,
           "mass_g": 29.3,
-          "calories": 70.8
+          "calories": 36.9
         },
         {
           "class": "Canh (Soup)",
@@ -2450,15 +2451,15 @@
         }
       ],
       "pred_nutrition": {
-        "Calories": 517.2,
-        "Protein": 39.8,
-        "Fat": 19.4,
+        "Calories": 483.3,
+        "Protein": 37.1,
+        "Fat": 17.1,
         "Carbs": 44.6,
         "Saturates": 5.4,
         "Sugar": 12.7,
         "Salt": 7.7,
-        "Sodium": 2633.7,
-        "Calcium": 565.8,
+        "Sodium": 2633.9,
+        "Calcium": 565.9,
         "Iron": 11.0,
         "Zinc": 6.3,
         "Cholesterol": 86.7
@@ -2482,13 +2483,13 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 35.31,
           "mass_g": 34.6,
-          "calories": 83.7
+          "calories": 43.6
         }
       ],
       "pred_nutrition": {
-        "Calories": 83.7,
-        "Protein": 9.3,
-        "Fat": 4.8,
+        "Calories": 43.6,
+        "Protein": 6.1,
+        "Fat": 2.1,
         "Carbs": 0.0,
         "Saturates": 1.7,
         "Sugar": 0.0,
@@ -2518,19 +2519,19 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 27.7,
           "mass_g": 27.1,
-          "calories": 65.7
+          "calories": 34.1
         }
       ],
       "pred_nutrition": {
-        "Calories": 65.7,
-        "Protein": 7.3,
-        "Fat": 3.8,
+        "Calories": 34.1,
+        "Protein": 4.8,
+        "Fat": 1.7,
         "Carbs": 0.0,
         "Saturates": 1.4,
         "Sugar": 0.0,
         "Salt": 0.1,
         "Sodium": 0.0,
-        "Calcium": 5.5,
+        "Calcium": 5.4,
         "Iron": 0.1,
         "Zinc": 0.6,
         "Cholesterol": 0.0
@@ -2581,8 +2582,8 @@
         "Saturates": 1.4,
         "Sugar": 4.5,
         "Salt": 2.7,
-        "Sodium": 932.0,
-        "Calcium": 198.1,
+        "Sodium": 932.1,
+        "Calcium": 198.2,
         "Iron": 3.8,
         "Zinc": 2.0,
         "Cholesterol": 30.7
@@ -2628,21 +2629,21 @@
           "class": "Thit bo (Beef)",
           "volume_cm3": 266.85,
           "mass_g": 272.2,
-          "calories": 585.2
+          "calories": 321.2
         }
       ],
       "pred_nutrition": {
-        "Calories": 854.5,
-        "Protein": 90.0,
-        "Fat": 41.9,
+        "Calories": 590.5,
+        "Protein": 76.4,
+        "Fat": 19.5,
         "Carbs": 26.9,
-        "Saturates": 15.4,
+        "Saturates": 6.4,
         "Sugar": 7.7,
         "Salt": 5.1,
         "Sodium": 1814.9,
         "Calcium": 370.5,
-        "Iron": 15.0,
-        "Zinc": 9.4,
+        "Iron": 14.9,
+        "Zinc": 9.5,
         "Cholesterol": 52.3
       }
     },
@@ -2664,14 +2665,14 @@
           "class": "Dau hu (Tofu)",
           "volume_cm3": 278.71,
           "mass_g": 250.8,
-          "calories": 190.6
+          "calories": 243.3
         }
       ],
       "pred_nutrition": {
-        "Calories": 190.6,
-        "Protein": 20.1,
-        "Fat": 12.0,
-        "Carbs": 4.8,
+        "Calories": 243.3,
+        "Protein": 27.3,
+        "Fat": 13.5,
+        "Carbs": 2.8,
         "Saturates": 1.8,
         "Sugar": 1.3,
         "Salt": 0.1,
@@ -2700,7 +2701,7 @@
           "class": "Thit heo (Pork)",
           "volume_cm3": 315.27,
           "mass_g": 309.0,
-          "calories": 747.7
+          "calories": 389.3
         },
         {
           "class": "Banh mi (Vietnamese baguette sandwich)",
@@ -2712,20 +2713,20 @@
           "class": "Dau hu (Tofu)",
           "volume_cm3": 272.38,
           "mass_g": 245.1,
-          "calories": 186.3
+          "calories": 237.7
         }
       ],
       "pred_nutrition": {
-        "Calories": 1121.4,
-        "Protein": 109.0,
-        "Fat": 62.0,
-        "Carbs": 30.2,
+        "Calories": 814.4,
+        "Protein": 87.1,
+        "Fat": 39.3,
+        "Carbs": 28.2,
         "Saturates": 19.2,
         "Sugar": 3.3,
         "Salt": 1.4,
         "Sodium": 53.1,
         "Calcium": 158.4,
-        "Iron": 11.9,
+        "Iron": 12.0,
         "Zinc": 8.3,
         "Cholesterol": 147.3
       }

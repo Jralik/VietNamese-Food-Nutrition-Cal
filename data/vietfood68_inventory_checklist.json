@@ -1642,23 +1642,23 @@
       "serving_size_source": "Bảng TPTP VN 2017 (100g nấm tươi)",
       "mapping_status": "verified",
       "primary_match": {
-        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
-        "nin_food_name": "Nấm hương, tươi",
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb9a",
+        "nin_food_name": "Nấm mỡ (Nấm tây), tươi",
         "source_type": "ingredient",
         "canonical_basis": "per_100g",
-        "energy_kcal": 51.0
+        "energy_kcal": 37.0
       },
       "nin_matches": [
         {
-          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb99",
-          "nin_food_name": "Nấm hương, tươi",
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cb9a",
+          "nin_food_name": "Nấm mỡ (Nấm tây), tươi",
           "source_type": "ingredient",
           "canonical_basis": "per_100g",
-          "energy_kcal": 51.0,
-          "match_reason": "Nấm hương, tươi - Bảng TPTP VN 2017"
+          "energy_kcal": 37.0,
+          "match_reason": "Nấm mỡ (Nấm tây), tươi - nấm ăn generic phổ biến nhất (Bảng TPTP VN 2017)"
         }
       ],
-      "decision_rationale": "Nấm rơm tươi trong CSDL thực phẩm thô NIN (Mã TPTP VN 3088)"
+      "decision_rationale": "Nấm ăn phổ biến/generic trong CSDL thực phẩm thô NIN (Mã TPTP VN - Nấm mỡ/Nấm tây, tươi). Sửa 2026-09-28: anchor cũ 'Nấm hương, tươi' là giống đặc sản (51 kcal) không đại diện cho lớp generic 'Nam (Mushroom)'; giá trị macro gốc của lớp (28/3/0.3/4.5) gần nấm tây (37/4/0.3/4.5) hơn — repoint anchor để giá trị tính toán truy vết được về nguồn (cross-check §5)."
     },
     {
       "vietfood_class_id": 44,
@@ -2073,23 +2073,23 @@
       "serving_size_source": "Bảng TPTP VN 2017 (1 quả trứng gà trung bình)",
       "mapping_status": "verified",
       "primary_match": {
-        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
-        "nin_food_name": "Quả trứng gà, tươi",
+        "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc98",
+        "nin_food_name": "Trứng gà ta",
         "source_type": "ingredient",
         "canonical_basis": "per_100g",
-        "energy_kcal": 106.0
+        "energy_kcal": 150.0
       },
       "nin_matches": [
         {
-          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cbce",
-          "nin_food_name": "Quả trứng gà, tươi",
+          "nin_food_id": "nin_ing_6877a6b660d6c84e9bd5cc98",
+          "nin_food_name": "Trứng gà ta",
           "source_type": "ingredient",
           "canonical_basis": "per_100g",
-          "energy_kcal": 106.0,
-          "match_reason": "Quả trứng gà, tươi - Bảng TPTP VN 2017"
+          "energy_kcal": 150.0,
+          "match_reason": "Trứng gà ta (Bảng TPTP VN 2017, Mã 9001) - bản ghi trứng gà đúng; bản ghi cũ là trái cây canistel"
         }
       ],
-      "decision_rationale": "Trứng gà toàn phần trong CSDL thực phẩm thô NIN (Mã TPTP VN 6001)"
+      "decision_rationale": "Trứng gà toàn phần trong CSDL thực phẩm thô NIN (Mã TPTP VN 9001 - Trứng gà ta). Sửa 2026-09-28: bản ghi cũ 'Quả trứng gà, tươi' (Mã 6001) là TRÁI CÂY lê ki ma/canistel (protein 4.3g, fat 0.4g) chứ không phải trứng gà — phát hiện qua cross-check TDGD (data/source_crosscheck_report.md); bản ghi 'Trứng gà ta' khớp macro gốc của lớp (143 kcal, đạm 12.6, béo 9.5) và có vi chất đầy đủ."
     },
     {
       "vietfood_class_id": 57,

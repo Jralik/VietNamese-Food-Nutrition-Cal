@@ -10,11 +10,12 @@ import os
 # ---------------------------------------------------------------------------
 # Segmentation backend
 # ---------------------------------------------------------------------------
-# "sam2"    = SAM2Segmenter (SAM 2.1 box-prompted, proven default)
+# "sam2"      = SAM2Segmenter (SAM 2.1 box-prompted, proven default)
+# "mobilesam" = MobileSAMSegmenter (TinyViT box-prompted via Ultralytics SAMPredictor)
 # "foodsam" = FoodSAMSegmenter (FoodSAM stack: SAM2.1 AMG + SETR-MLA
 #             FoodSeg103 semantic + composite matching, runs in the isolated
 #             FoodSAM env via subprocess — see foodsam_segmenter.py)
-SEGMENTATION_BACKEND = "sam2"
+SEGMENTATION_BACKEND = "mobilesam"
 
 # ---------------------------------------------------------------------------
 # FoodSAM (external env — no dependencies installed into this project)
@@ -154,6 +155,23 @@ SAM2_MIN_MASK_RATIO = 2.0 / 3.0     # mask must occupy at least > 2/3 (~66.7%) o
 SAM2_OVERSIZED_MASK_THRESHOLD = 0.95  # flag mask if area > 95% of bbox
 
 # ---------------------------------------------------------------------------
+# MobileSAM Segmentation (Ultralytics SAMPredictor + TinyViT)
+# ---------------------------------------------------------------------------
+MOBILESAM_CHECKPOINT = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "checkpoints", "mobile_sam.pt"
+)
+# Candidate Area Filter (Config C / Config D):
+#   Filters multimask candidates occupying >= 2/3 bbox area and picks min(area)
+#   to capture the food boundary while discarding the outer bowl rim (>95%).
+MOBILESAM_ENABLE_CANDIDATE_FILTER = True
+MOBILESAM_MIN_MASK_RATIO = 2.0 / 3.0        # threshold (66.7% bbox) for candidate filter
+# Boundary Erosion (False = Config C default; True = Config D with 3x3 erosion):
+MOBILESAM_ENABLE_EROSION = False
+MOBILESAM_ERODE_KERNEL_SIZE = 3
+# Diagnostic threshold only (used by flag_oversized_mask, NOT a hard candidate filter cutoff):
+MOBILESAM_OVERSIZED_MASK_THRESHOLD = 0.95
+
+# ---------------------------------------------------------------------------
 # Depth Anything V2
 # ---------------------------------------------------------------------------
 # Supported encoder: "vits" (~25MB/90MB, fast GPU), "vitb" (~100MB), "vitl" (~350MB)
@@ -191,7 +209,7 @@ PLATE_DIAMETER_HEURISTICS = {
     "soup_bowl":         180.0,  # bát phở, bát bún bò, hủ tiếu, canh, ...
     "large_bowl":        220.0,  # bát canh lớn, nồi lẩu, ...
     "rice_bowl":         120.0,  # chén cơm, chén xôi, ...
-    "small_plate":       150.0,  # đĩa nhỏ chả, đĩa bún chả, khoai tây chiên, ...
+    "small_plate":       130.0,  # đĩa nhỏ chả, đậu hũ, mực, thịt nướng, khoai tây chiên, ...
     "default":           200.0,  # fallback
 }
 
@@ -205,7 +223,7 @@ CLASS_TO_DISH_TYPE = {
     "Bo kho (Beef stew)":                                "soup_bowl",
     "Bun (Rice vermicelli)":                             "flat_plate",
     "Bun bo Hue (Hue beef noodle soup)":                 "soup_bowl",
-    "Bun cha (Grilled pork with vermicelli)":            "small_plate",
+    "Bun cha (Grilled pork with vermicelli)":            "soup_bowl",
     "Bun cha ca (Fish cake noodle soup)":                "soup_bowl",
     "Bun dau (Vermicelli with tofu)":                    "flat_plate",
     "Bun mam (Fermented fish noodle soup)":              "soup_bowl",
@@ -214,7 +232,6 @@ CLASS_TO_DISH_TYPE = {
     "Cao lau (Cao lau noodles)":                         "soup_bowl",
     "Chao long (Pork organ congee)":                     "soup_bowl",
     "Hu tieu (Clear rice noodle soup)":                  "soup_bowl",
-    "Kho qua thit (Stuffed bitter melon soup)":          "soup_bowl",
     "Lau (Hotpot)":                                      "large_bowl",
     "Mi (Egg noodles)":                                  "soup_bowl",
     "Mi Quang (Quang-style noodles)":                    "soup_bowl",
@@ -228,37 +245,38 @@ CLASS_TO_DISH_TYPE = {
     "Banh beo (Vietnamese savory steamed rice cake)":    "flat_plate",
     "Banh chung (Square sticky rice cake)":              "flat_plate",
     "Banh cuon (Rolled rice pancake)":                   "flat_plate",
-    "Banh khot (Mini savory pancakes)":                  "flat_plate",
     "Banh mi (Vietnamese baguette sandwich)":            "flat_plate",
     "Banh trang (Rice paper)":                           "flat_plate",
     "Banh trang tron (Rice paper salad)":                "flat_plate",
     "Banh xeo (Vietnamese sizzling pancake)":            "flat_plate",
-    "Bo la lot (Grilled beef wrapped in betel leaves)":  "flat_plate",
-    "Ca (Fish)":                                         "flat_plate",
-    "Cha gio (Spring rolls)":                            "flat_plate",
     "Com chien duong chau (Yangzhou fried rice)":        "flat_plate",
     "Com chien ga (Fried rice with chicken)":            "flat_plate",
     "Com tam (Broken rice)":                             "flat_plate",
     "Cua (Crab)":                                        "flat_plate",
-    "Dau hu (Tofu)":                                     "flat_plate",
-    "Goi cuon (Fresh spring rolls)":                     "flat_plate",
     "Hamburger":                                         "flat_plate",
     "Heo quay (Roast pork)":                             "flat_plate",
-    "Long heo (Pork offal)":                             "flat_plate",
-    "Muc (Squid)":                                       "flat_plate",
     "Nom hoa chuoi (Banana blossom salad)":              "flat_plate",
     "Nui xao bo (Stir-fried macaroni with beef)":        "flat_plate",
     "Oc (Snails)":                                       "flat_plate",
-    "Thit bo (Beef)":                                    "flat_plate",
-    "Thit ga (Chicken)":                                 "flat_plate",
-    "Thit heo (Pork)":                                   "flat_plate",
-    "Thit nuong (Grilled meat)":                         "flat_plate",
-    "Tom (Shrimp)":                                      "flat_plate",
 
-    # ── Small Plates ──
+    # ── Small Plates (Discrete Meats, Seafood, Tofu, Fried Snacks, Rolls) ──
+    "Banh khot (Mini savory pancakes)":                  "small_plate",
+    "Bo la lot (Grilled beef wrapped in betel leaves)":  "small_plate",
+    "Ca (Fish)":                                         "small_plate",
     "Cha (Vietnamese pork roll)":                        "small_plate",
+    "Cha gio (Spring rolls)":                            "small_plate",
+    "Dau hu (Tofu)":                                     "small_plate",
+    "Goi cuon (Fresh spring rolls)":                     "small_plate",
+    "Kho qua thit (Stuffed bitter melon soup)":          "small_plate",
     "Khoai tay chien (French fries)":                    "small_plate",
+    "Long heo (Pork offal)":                             "small_plate",
+    "Muc (Squid)":                                       "small_plate",
     "Pho mai (Cheese)":                                  "small_plate",
+    "Thit bo (Beef)":                                    "small_plate",
+    "Thit ga (Chicken)":                                 "small_plate",
+    "Thit heo (Pork)":                                   "small_plate",
+    "Thit nuong (Grilled meat)":                         "small_plate",
+    "Tom (Shrimp)":                                      "small_plate",
 
     # ── Side Vegetables (Leafy / Loose Mound Structure) ──
     "Rau (Vegetables)":                                  "side_vegetables",

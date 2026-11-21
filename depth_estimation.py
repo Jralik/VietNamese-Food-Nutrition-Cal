@@ -308,7 +308,13 @@ class DepthEstimator:
             inputs = {k: v.half() if v.dtype == torch.float32 else v for k, v in inputs.items()}
 
         with torch.no_grad():
-            outputs = self._model(**inputs)
+            cudnn_prev = torch.backends.cudnn.enabled
+            try:
+                # Disable cuDNN convolution search to avoid RuntimeError on Turing cards
+                torch.backends.cudnn.enabled = False
+                outputs = self._model(**inputs)
+            finally:
+                torch.backends.cudnn.enabled = cudnn_prev
             predicted_depth = outputs.predicted_depth.float()
 
         # predicted_depth shape: (1, H', W') in meters (metric model)
