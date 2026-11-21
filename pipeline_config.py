@@ -145,7 +145,7 @@ FOODSAM_OVERSIZED_MASK_THRESHOLD = 0.95
 # ---------------------------------------------------------------------------
 # Supported: "sam2.1_hiera_tiny", "sam2.1_hiera_small",
 #            "sam2.1_hiera_base_plus", "sam2.1_hiera_large"
-SAM2_MODEL_CFG = "configs/sam2.1/sam2.1_hiera_small.yaml"
+SAM2_MODEL_CFG = "configs/sam2.1/sam2.1_hiera_s.yaml"
 SAM2_CHECKPOINT = "checkpoints/sam2.1_hiera_small.pt"
 
 # Post-processing

@@ -20,7 +20,10 @@ for _name in ("volume_integration", "food_volume_pipeline", "foodsam_segmenter",
         _h.setFormatter(logging.Formatter(
             "%(asctime)s [%(levelname)s] %(name)s: %(message)s"))
         _lg.addHandler(_h)
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 import time
 import json
 from pathlib import Path
@@ -134,19 +137,54 @@ def render_sidebar():
             unsafe_allow_html=True)
 
 
+def get_ollama_models(host="http://localhost:11434"):
+    try:
+        import requests
+        response = requests.get(f"{host.rstrip('/')}/api/tags", timeout=3)
+        if response.status_code == 200:
+            data = response.json()
+            models = [model["name"] for model in data.get("models", [])]
+            if models:
+                favorites = [
+                    "dinhduong-ai:latest", "dinhduong-ai",
+                    "Qwen3.5-4B:latest", "Qwen3.5-4B",
+                    "llama3.2:latest", "tbay-ai:latest"
+                ]
+                for fav in reversed(favorites):
+                    if fav in models:
+                        models.remove(fav)
+                        models.insert(0, fav)
+                return models
+    except Exception:
+        pass
+    return ["dinhduong-ai:latest", "Qwen3.5-4B:latest", "llama3.2:latest"]
+
+
 def render_sidebar_ai_config():
     st.markdown(ui.section_header("🔑 Cấu hình Trợ lý AI",
                                   "API key chỉ lưu trong phiên làm việc của bạn."), unsafe_allow_html=True)
 
     llm_provider = st.selectbox(
         "Chọn nhà cung cấp AI",
-        ["Gemini", "Cerebras", "OpenRouter", "Cloudflare"],
+        ["Ollama (Local)", "Gemini", "Cerebras", "OpenRouter", "Cloudflare"],
         index=0,
         help="Đánh giá bữa ăn và chat tư vấn sẽ dùng nhà cung cấp này.",
     )
     st.session_state.llm_provider = llm_provider
 
-    if llm_provider == "Gemini":
+    if llm_provider == "Ollama (Local)":
+        ollama_host_input = st.text_input(
+            "Ollama Host URL",
+            value=st.session_state.get("ollama_host", "http://localhost:11434"),
+            help="Địa chỉ Ollama API chạy trên máy local của bạn (mặc định: http://localhost:11434)"
+        )
+        st.session_state.ollama_host = ollama_host_input
+        available_models = get_ollama_models(ollama_host_input)
+        st.session_state.ollama_model = st.selectbox(
+            "Mô hình Ollama (GPU RTX 3060)", available_models, index=0
+        )
+        st.success(f"✅ Đã kết nối Ollama Local (`{st.session_state.ollama_model}`)", icon=None)
+    elif llm_provider == "Gemini":
         api_key_input = st.text_input("Gemini API Key", type="password",
                                       help="Nhận key miễn phí từ Google AI Studio")
         if api_key_input:
@@ -537,8 +575,9 @@ def render_chat_tab():
         "Hỏi về calo, chất béo, thực đơn lành mạnh — trợ lý hiểu bối cảnh bữa ăn "
         "vừa quét và thể trạng của bạn."), unsafe_allow_html=True)
 
-    provider = st.session_state.get("llm_provider", "Gemini")
+    provider = st.session_state.get("llm_provider", "Ollama (Local)")
     key_status = {
+        "Ollama (Local)": True,
         "Gemini": bool(st.session_state.get("gemini_api_key")),
         "Cerebras": bool(st.session_state.get("cerebras_api_key")),
         "OpenRouter": bool(st.session_state.get("openrouter_api_key")),
@@ -557,7 +596,9 @@ def render_chat_tab():
     cloudflare_account_id = st.session_state.get("cloudflare_account_id", "")
     cloudflare_api_token = st.session_state.get("cloudflare_api_token", "")
 
-    if llm_provider == "Gemini":
+    if llm_provider == "Ollama (Local)":
+        pass  # Không cần API key
+    elif llm_provider == "Gemini":
         if not api_key:
             st.info("💡 **Gợi ý**: nhập **Gemini API Key** ở thanh bên để kích hoạt trợ lý. "
                     "Lấy key miễn phí từ [Google AI Studio](https://aistudio.google.com/).")
@@ -663,15 +704,32 @@ def render_chat_tab():
                     try:
                         last_dishes = st.session_state.get("last_detected_dishes")
                         last_nutri = st.session_state.get("last_total_nutrition")
+                        last_items = st.session_state.get("last_nutrition_items") or []
                         user_profile = st.session_state.get("user_profile")
                         user_rda = st.session_state.get("user_rda")
                         meal_context = ""
-                        if last_dishes and last_nutri and user_profile and user_rda:
-                            facts = build_structured_facts(last_nutri, user_profile, user_rda, last_dishes)
+                        if last_nutri:
+                            items_str = []
+                            for it in last_items:
+                                m_g = it.get("mass", "—")
+                                n_d = it.get("nutrition", {})
+                                c_kcal = n_d.get("Calories", 0)
+                                p_g = n_d.get("Protein", 0)
+                                f_g = n_d.get("Fat", 0)
+                                cb_g = n_d.get("Carbs", 0)
+                                items_str.append(f"- {it.get('name')}: khối lượng thực tế cân đo từ camera là {m_g}g ({c_kcal} kcal, {p_g}g đạm, {f_g}g chất béo, {cb_g}g carb)")
+                            
+                            items_desc = "\n".join(items_str) if items_str else (", ".join(last_dishes.keys()) if last_dishes else "")
+                            tot_kcal = last_nutri.get("Calories", 0.0)
+                            tot_p = last_nutri.get("Protein", 0.0)
+                            tot_f = last_nutri.get("Fat", 0.0)
+                            tot_c = last_nutri.get("Carbs", 0.0)
+
                             meal_context = (
-                                f"\n[BỐI CẢNH BỮA ĂN VỪA PHÁT HIỆN DƯỚI DẠNG JSON FACTS]:\n"
-                                f"{json.dumps(facts, indent=2, ensure_ascii=False)}\n"
-                                f"Hãy sử dụng các sự thật (facts) có cấu trúc này để trả lời nếu người dùng hỏi về món ăn hiện tại, bữa ăn của họ, hoặc xin lời khuyên dinh dưỡng."
+                                f"\n\n[DỮ LIỆU ĐỊNH LƯỢNG THỰC TẾ BỮA ĂN VỪA QUÉT TỪ CAMERA]:\n"
+                                f"{items_desc}\n"
+                                f"TỔNG NĂNG LƯỢNG THỰC TẾ: {tot_kcal:.1f} kcal (Protein: {tot_p:.1f}g, Chất béo: {tot_f:.1f}g, Carb: {tot_c:.1f}g).\n"
+                                f"QUY TẮC BẮT BUỘC: Bạn PHẢI DÙNG CHÍNH XÁC các con số thực tế vừa đo được ({tot_kcal:.1f} kcal) để trả lời người dùng. TUYỆT ĐỐI KHÔNG dùng con số 100g mặc định (ví dụ 180 kcal) từ tài liệu mẫu nếu người dùng hỏi về món ăn vừa quét.\n"
                             )
 
                         rag_context = retrieve_context(
@@ -690,6 +748,49 @@ def render_chat_tab():
                             f"{rag_context}"
                             f"{meal_context}"
                         )
+
+                        if llm_provider == "Ollama (Local)":
+                            ollama_host = st.session_state.get("ollama_host", "http://localhost:11434").rstrip("/")
+                            model_id = st.session_state.get("ollama_model", "dinhduong-ai")
+                            import requests
+                            payload = {
+                                "model": model_id,
+                                "messages": [{"role": "system", "content": system_context}] + st.session_state.chat_messages,
+                                "stream": True,
+                                "options": {
+                                    "temperature": 0.35,
+                                    "top_p": 0.85
+                                }
+                            }
+                            try:
+                                res = requests.post(f"{ollama_host}/api/chat", json=payload, stream=True, timeout=60)
+                                if res.status_code == 200:
+                                    response_text = ""
+                                    thinking_text = ""
+                                    for line in res.iter_lines():
+                                        if line:
+                                            chunk = json.loads(line.decode("utf-8"))
+                                            msg = chunk.get("message", {})
+                                            token = msg.get("content", "")
+                                            thinking = msg.get("thinking", "")
+                                            
+                                            if token:
+                                                response_text += token
+                                                disp = (f"> 💭 *Suy nghĩ: {thinking_text[:120]}...*\n\n" if thinking_text else "") + response_text
+                                                message_placeholder.markdown(disp + "▌")
+                                            elif thinking:
+                                                thinking_text += thinking
+                                                message_placeholder.markdown(f"💭 *AI đang suy nghĩ ({len(thinking_text)} ký tự)...*")
+                                                
+                                    final_disp = (f"> 💭 *Suy nghĩ: {thinking_text[:120]}...*\n\n" if thinking_text else "") + response_text
+                                    output = final_disp if final_disp.strip() else (thinking_text if thinking_text.strip() else "*(Không nhận được phản hồi từ mô hình)*")
+                                    message_placeholder.markdown(output)
+                                    st.session_state.chat_messages.append({"role": "assistant", "content": output})
+                                else:
+                                    message_placeholder.markdown(f"❌ Lỗi từ Ollama (Mã lỗi {res.status_code}): {res.text}")
+                            except Exception as e:
+                                message_placeholder.markdown(f"❌ Không thể kết nối tới Ollama tại {ollama_host}: {e}")
+                            return
 
                         if llm_provider.startswith("Cerebras"):
                             model_id = st.session_state.get("cerebras_model", "gpt-oss-120b")

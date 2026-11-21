@@ -157,15 +157,12 @@ def process_job(job: dict, pipeline) -> dict:
 
 
 def _wait_for_cuda(attempts: int = 3, delay_s: float = 3.0) -> None:
-    """Brief retry for transient GPU-visibility windows.
-
-    DEVICE is frozen when pipeline_config is imported below. Short windows
-    where the GPU disappears from enumeration ("No CUDA GPUs are available",
-    observed on this machine's GTX 1650 under heavy CUDA context churn) used
-    to silently downgrade the whole daemon session to CPU (~17s/request
-    instead of ~2s).
-    """
+    """Brief retry for transient GPU-visibility windows."""
     import torch
+
+    if getattr(torch.version, "cuda", None) is None:
+        logger.warning("Torch was compiled without CUDA — skipping wait, running directly on CPU")
+        return
 
     for attempt in range(1, attempts + 1):
         if torch.cuda.is_available():

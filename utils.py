@@ -292,13 +292,21 @@ def _display_detected_frame(conf, model, youtube_url=""):
 
 @st.cache_resource
 def load_model():
-    modelpath = r"./model/yolov10/YOLOv10b_VietFood67_SGD_new_bigger.pt"
+    modelpath_pt = r"./model/yolov10/YOLOv10b_VietFood67_SGD_new_bigger.pt"
+    modelpath_onnx = r"./model/yolov26/best.onnx"
 
-    model = YOLO(modelpath)
-    # Deployment workaround, not an architecture choice: keep the detector on
-    # CPU. An in-process CUDA context conflicts with the volume worker's GPU
-    # state (CUBLAS init failures measured); the worker owns the GPU.
-    model.overrides["device"] = "cpu"
+    if os.path.exists(modelpath_pt):
+        model = YOLO(modelpath_pt)
+        # Deployment workaround, not an architecture choice: keep the detector on
+        # CPU. An in-process CUDA context conflicts with the volume worker's GPU
+        # state (CUBLAS init failures measured); the worker owns the GPU.
+        model.overrides["device"] = "cpu"
+    elif os.path.exists(modelpath_onnx):
+        model = YOLO(modelpath_onnx, task="detect")
+    else:
+        raise FileNotFoundError(
+            f"Không tìm thấy model tại '{modelpath_pt}' hoặc '{modelpath_onnx}'"
+        )
     return model
 
 def resize_image(image):
@@ -464,7 +472,7 @@ def retrieve_context(query: str, detected_foods: dict = None, top_k: int = 3) ->
     return (
         "\n\n[KIẾN THỨC DINH DƯỠNG THAM KHẢO TỪ CƠ SỞ DỮ LIỆU]:\n"
         f"{formatted}\n"
-        "[Hãy ưu tiên sử dụng các thông tin trên để trả lời, chỉ sử dụng kiến thức nội tại nếu tài liệu không đủ.]\n"
+        "[Tài liệu tham khảo chung. Nếu có dữ liệu định lượng thực tế từ camera, BẮT BUỘC ưu tiên số liệu đo được từ camera thay vì số liệu mẫu 100g trong tài liệu này.]\n"
     )
 
 
@@ -496,6 +504,36 @@ def generate_nutrition_advice(count_dict_names, total_nutrition):
             "Người dùng sẽ cung cấp cho bạn một chuỗi JSON chứa các dữ liệu thực tế về bữa ăn của họ so với nhu cầu dinh dưỡng khuyến nghị hàng ngày (RDA).\n"
             "Hãy trả lời trực tiếp bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu (khoảng 3-4 đoạn ngắn)."
         )
+
+    if provider == "Ollama (Local)":
+        ollama_host = st.session_state.get("ollama_host", "http://localhost:11434").rstrip("/")
+        model_id = st.session_state.get("ollama_model", "dinhduong-ai")
+        payload = {
+            "model": model_id,
+            "messages": [
+                {"role": "system", "content": system_context},
+                {"role": "user", "content": prompt}
+            ],
+            "stream": False,
+            "options": {
+                "temperature": 0.35,
+                "top_p": 0.85
+            }
+        }
+        try:
+            import requests
+            res = requests.post(f"{ollama_host}/api/chat", json=payload, timeout=60)
+            if res.status_code == 200:
+                msg = res.json().get("message", {})
+                response_text = msg.get("content", "") or msg.get("thinking", "")
+                if not response_text:
+                    response_text = "*(Mô hình không trả về nội dung tư vấn. Vui lòng thử lại hoặc chọn mô hình khác)*"
+                advice_placeholder.markdown(response_text)
+            else:
+                advice_placeholder.markdown(f"❌ Lỗi từ Ollama (Mã lỗi {res.status_code}): {res.text}")
+        except Exception as e:
+            advice_placeholder.markdown(f"❌ Không thể kết nối tới Ollama tại {ollama_host}: {e}")
+        return
 
     if provider.startswith("Cerebras"):
         cerebras_api_key = st.session_state.get("cerebras_api_key", "")
@@ -1126,6 +1164,7 @@ def detect_image_result(detected_image, model, source_image=None, image_path=Non
 
         st.session_state.last_detected_dishes = count_dict_names
         st.session_state.last_total_nutrition = total_nutrition
+        st.session_state.last_nutrition_items = nutrition_data
 
         generate_nutrition_advice(count_dict_names, total_nutrition)
 

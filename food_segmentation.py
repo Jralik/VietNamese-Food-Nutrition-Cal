@@ -12,6 +12,7 @@ Post-processing includes:
 Fallback: if SAM2 is not available, returns rectangular bbox masks.
 """
 
+import os
 import numpy as np
 import cv2
 import logging
@@ -122,7 +123,28 @@ class SAM2Segmenter:
         if self._predictor is not None:
             return
 
-        # 1. Try SAM2 via from_pretrained (HuggingFace Hub)
+        # 1. Try SAM2 via build_sam2 with local checkpoint (Fast & offline)
+        if os.path.exists(self.checkpoint):
+            try:
+                from sam2.build_sam import build_sam2
+                from sam2.sam2_image_predictor import SAM2ImagePredictor
+
+                sam2_model = build_sam2(
+                    self.model_cfg,
+                    self.checkpoint,
+                    device=self.device,
+                )
+                self._predictor = SAM2ImagePredictor(sam2_model)
+                self._available = True
+                logger.info(
+                    f"SAM2 loaded successfully from checkpoint: cfg={self.model_cfg}, "
+                    f"ckpt={self.checkpoint}, device={self.device}"
+                )
+                return
+            except Exception as e:
+                logger.info(f"SAM2 build_sam2 from local checkpoint failed: {e}")
+
+        # 2. Try SAM2 via from_pretrained (HuggingFace Hub)
         try:
             from sam2.sam2_image_predictor import SAM2ImagePredictor
             logger.info("Attempting to load SAM2 via from_pretrained('facebook/sam2.1-hiera-small')...")
@@ -135,26 +157,6 @@ class SAM2Segmenter:
             return
         except Exception as e:
             logger.info(f"SAM2 from_pretrained not available: {e}")
-
-        # 2. Try SAM2 via build_sam2 with config
-        try:
-            from sam2.build_sam import build_sam2
-            from sam2.sam2_image_predictor import SAM2ImagePredictor
-
-            sam2_model = build_sam2(
-                self.model_cfg,
-                self.checkpoint,
-                device=self.device,
-            )
-            self._predictor = SAM2ImagePredictor(sam2_model)
-            self._available = True
-            logger.info(
-                f"SAM2 loaded successfully: cfg={self.model_cfg}, "
-                f"device={self.device}"
-            )
-            return
-        except Exception as e:
-            logger.info(f"SAM2 build_sam2 not available: {e}")
 
         # 3. Try HuggingFace Transformers SAM
         try:
