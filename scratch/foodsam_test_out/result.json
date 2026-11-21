@@ -1,0 +1,140 @@
+{
+  "image_size": [
+    700,
+    900
+  ],
+  "n_sam_masks": 6,
+  "pps": 16,
+  "ingredient_mode": "breakdown_and_extra",
+  "ingredient_extraction": {
+    "enabled": true,
+    "candidate_count": 5,
+    "accepted_extra_count": 0
+  },
+  "detections": [
+    {
+      "class_name": "Pho (Vietnamese noodle soup)",
+      "confidence": 0.96,
+      "bbox": [
+        67,
+        159,
+        833,
+        673
+      ],
+      "mask_indices": [],
+      "bbox_coverage": 0.5992,
+      "foodsam_labels": [],
+      "ingredient_breakdown": [
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "steak",
+          "class_name": "Thit bo (Beef)",
+          "mapping_type": "approximate",
+          "pixel_area": 56658,
+          "area_ratio": 0.0899,
+          "semantic_purity": 0.4489,
+          "bbox": [
+            349,
+            182,
+            744,
+            591
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Pho (Vietnamese noodle soup)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "steak",
+          "class_name": "Thit bo (Beef)",
+          "mapping_type": "approximate",
+          "pixel_area": 4205,
+          "area_ratio": 0.0067,
+          "semantic_purity": 0.6551,
+          "bbox": [
+            350,
+            419,
+            396,
+            565
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Pho (Vietnamese noodle soup)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "soup",
+          "class_name": "Canh (Soup)",
+          "mapping_type": "approximate",
+          "pixel_area": 83,
+          "area_ratio": 0.0001,
+          "semantic_purity": 1.0,
+          "bbox": [
+            340,
+            617,
+            349,
+            630
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Pho (Vietnamese noodle soup)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "soup",
+          "class_name": "Canh (Soup)",
+          "mapping_type": "approximate",
+          "pixel_area": 51,
+          "area_ratio": 0.0001,
+          "semantic_purity": 0.9808,
+          "bbox": [
+            319,
+            646,
+            327,
+            655
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Pho (Vietnamese noodle soup)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0000",
+          "foodseg_label": "soup",
+          "class_name": "Canh (Soup)",
+          "mapping_type": "approximate",
+          "pixel_area": 79,
+          "area_ratio": 0.0001,
+          "semantic_purity": 1.0,
+          "bbox": [
+            341,
+            651,
+            349,
+            665
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Pho (Vietnamese noodle soup)",
+          "owner_detection_index": 0
+        }
+      ],
+      "suppressed_mixed_plate": false,
+      "suppression_reason": null,
+      "suppressed_confidence": null,
+      "promoted_labels": [],
+      "promoted_area_coverage": null,
+      "warnings": []
+    }
+  ],
+  "extras": [],
+  "suppressed": [],
+  "timing_s": {
+    "sam2": 13.58,
+    "setr": 3.21,
+    "dish": 0.07,
+    "extract": 0.01
+  },
+  "vram_peak_mib": {
+    "sam2": 2397.2,
+    "setr": 1884.7
+  },
+  "device": "cuda"
+}

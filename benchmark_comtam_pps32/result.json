@@ -1,0 +1,256 @@
+{
+  "image_size": [
+    600,
+    800
+  ],
+  "n_sam_masks": 60,
+  "pps": 32,
+  "ingredient_mode": "breakdown_and_extra",
+  "ingredient_extraction": {
+    "enabled": true,
+    "candidate_count": 11,
+    "accepted_extra_count": 7
+  },
+  "detections": [
+    {
+      "class_name": "Com tam (Broken rice)",
+      "confidence": 0.96,
+      "bbox": [
+        123,
+        120,
+        574,
+        518
+      ],
+      "mask_indices": [],
+      "bbox_coverage": 0.764,
+      "foodsam_labels": [],
+      "ingredient_breakdown": [
+        {
+          "component_id": "bd_0002",
+          "foodseg_label": "rice",
+          "class_name": "Com (Rice)",
+          "mapping_type": "direct",
+          "pixel_area": 38,
+          "area_ratio": 0.0001,
+          "semantic_purity": 1.0,
+          "bbox": [
+            123,
+            264,
+            130,
+            271
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Com tam (Broken rice)",
+          "owner_detection_index": 0
+        },
+        {
+          "component_id": "bd_0002",
+          "foodseg_label": "carrot",
+          "class_name": "Ca rot (Carrot)",
+          "mapping_type": "direct",
+          "pixel_area": 312,
+          "area_ratio": 0.0006,
+          "semantic_purity": 0.6724,
+          "bbox": [
+            378,
+            143,
+            399,
+            173
+          ],
+          "overlap_ratio": 1.0,
+          "owner": "Com tam (Broken rice)",
+          "owner_detection_index": 0
+        }
+      ],
+      "suppressed_mixed_plate": true,
+      "suppression_reason": "mixed_plate_contradiction",
+      "suppressed_confidence": 0.96,
+      "promoted_labels": [
+        "Ca rot (Carrot)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)",
+        "Thit heo (Pork)"
+      ],
+      "promoted_area_coverage": 0.9972,
+      "warnings": []
+    }
+  ],
+  "extras": [
+    {
+      "component_id": "soup_01",
+      "class_name": "Canh (Soup)",
+      "foodseg_label": "soup",
+      "mapping_type": "approximate",
+      "bbox": [
+        600,
+        104,
+        728,
+        204
+      ],
+      "pixel_area": 5499,
+      "area_ratio": 0.0115,
+      "r_all": 0.0,
+      "semantic_purity": 0.6789,
+      "suspicious_large": false,
+      "promoted_from_breakdown": false,
+      "warnings": []
+    },
+    {
+      "component_id": "rice_02",
+      "class_name": "Com (Rice)",
+      "foodseg_label": "rice",
+      "mapping_type": "direct",
+      "bbox": [
+        0,
+        54,
+        59,
+        198
+      ],
+      "pixel_area": 4568,
+      "area_ratio": 0.0095,
+      "r_all": 0.0,
+      "semantic_purity": 1.0,
+      "suspicious_large": false,
+      "promoted_from_breakdown": false,
+      "warnings": []
+    },
+    {
+      "component_id": "pork_p03",
+      "class_name": "Thit heo (Pork)",
+      "foodseg_label": "pork",
+      "mapping_type": "approximate",
+      "bbox": [
+        121,
+        121,
+        394,
+        473
+      ],
+      "pixel_area": 53111,
+      "area_ratio": 0.1106,
+      "r_all": 0.9996,
+      "semantic_purity": 0.6239,
+      "suspicious_large": false,
+      "promoted_from_breakdown": true,
+      "warnings": [
+        "Ước lượng từ nguyên liệu của món bị ẩn (mixed-plate contradiction) — không đếm chồng"
+      ]
+    },
+    {
+      "component_id": "rice_p04",
+      "class_name": "Com (Rice)",
+      "foodseg_label": "rice",
+      "mapping_type": "direct",
+      "bbox": [
+        207,
+        150,
+        498,
+        517
+      ],
+      "pixel_area": 40861,
+      "area_ratio": 0.0851,
+      "r_all": 1.0,
+      "semantic_purity": 0.4116,
+      "suspicious_large": false,
+      "promoted_from_breakdown": true,
+      "warnings": [
+        "Ước lượng từ nguyên liệu của món bị ẩn (mixed-plate contradiction) — không đếm chồng"
+      ]
+    },
+    {
+      "component_id": "rice_p05",
+      "class_name": "Com (Rice)",
+      "foodseg_label": "rice",
+      "mapping_type": "direct",
+      "bbox": [
+        136,
+        392,
+        190,
+        431
+      ],
+      "pixel_area": 1366,
+      "area_ratio": 0.0028,
+      "r_all": 1.0,
+      "semantic_purity": 0.7103,
+      "suspicious_large": false,
+      "promoted_from_breakdown": true,
+      "warnings": [
+        "Ước lượng từ nguyên liệu của món bị ẩn (mixed-plate contradiction) — không đếm chồng"
+      ]
+    },
+    {
+      "component_id": "cucumber_p06",
+      "class_name": "Dua leo (Cucumber)",
+      "foodseg_label": "cucumber",
+      "mapping_type": "direct",
+      "bbox": [
+        417,
+        139,
+        574,
+        411
+      ],
+      "pixel_area": 25093,
+      "area_ratio": 0.0523,
+      "r_all": 1.0,
+      "semantic_purity": 0.7424,
+      "suspicious_large": false,
+      "promoted_from_breakdown": true,
+      "warnings": [
+        "Ước lượng từ nguyên liệu của món bị ẩn (mixed-plate contradiction) — không đếm chồng"
+      ]
+    },
+    {
+      "component_id": "carrot_p07",
+      "class_name": "Ca rot (Carrot)",
+      "foodseg_label": "carrot",
+      "mapping_type": "direct",
+      "bbox": [
+        390,
+        195,
+        476,
+        254
+      ],
+      "pixel_area": 2905,
+      "area_ratio": 0.0061,
+      "r_all": 1.0,
+      "semantic_purity": 0.5725,
+      "suspicious_large": false,
+      "promoted_from_breakdown": true,
+      "warnings": [
+        "Ước lượng từ nguyên liệu của món bị ẩn (mixed-plate contradiction) — không đếm chồng"
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "det_index": 0,
+      "class_name": "Com tam (Broken rice)",
+      "confidence": 0.96,
+      "bbox": [
+        123,
+        120,
+        574,
+        518
+      ],
+      "status": "suppressed",
+      "reason": "mixed_plate_contradiction",
+      "promoted_labels": [
+        "Ca rot (Carrot)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)",
+        "Thit heo (Pork)"
+      ],
+      "promoted_area_coverage": 0.9972
+    }
+  ],
+  "timing_s": {
+    "sam2": 65.22,
+    "setr": 3.87,
+    "dish": 0.07,
+    "extract": 0.05
+  },
+  "vram_peak_mib": {
+    "sam2": 2439.4,
+    "setr": 1767.6
+  },
+  "device": "cuda"
+}

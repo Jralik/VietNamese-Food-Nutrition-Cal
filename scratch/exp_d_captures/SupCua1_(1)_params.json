@@ -1,0 +1,19 @@
+{
+ "image": "SupCua1 (1).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Lau (Hotpot)",
+   "mm_per_pixel": 0.39497307001795334,
+   "scale_source": "plate_heuristic",
+   "scale_confidence": "medium",
+   "depth_anchored": false,
+   "bbox": [
+    147.0,
+    471.0,
+    704.0,
+    968.0
+   ]
+  }
+ ]
+}

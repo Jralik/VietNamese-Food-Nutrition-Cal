@@ -1,0 +1,7 @@
+variant,banh_mi_mape_pct,median_area_ratio,median_volume_ratio,median_mass_ratio
+original,84.8,1.0,1.0,1.0
+otsu,93.0,0.32,0.42,0.42
+fixed60,80.9,0.45,0.61,0.61
+fixed60cc,87.7,0.2,0.43,0.43
+fixed80cc,89.2,0.2,0.36,0.36
+cconly,61.6,0.89,0.91,0.92

@@ -1,0 +1,1674 @@
+{
+  "Banh Canh 1.jpg": {
+    "z_marker_depth_mm": 1093.75,
+    "z_marker_tvec_mm": 255.3218778782907
+  },
+  "Banh Canh 2.jpg": {
+    "z_marker_depth_mm": 1111.172119140625,
+    "z_marker_tvec_mm": 258.41239448298154
+  },
+  "Banh Canh 3.jpg": {
+    "z_marker_depth_mm": 231.6473846435547,
+    "z_marker_tvec_mm": 226.5214305616062
+  },
+  "Banh Canh 4.jpg": {
+    "z_marker_depth_mm": 1045.396484375,
+    "z_marker_tvec_mm": 199.3656186678565
+  },
+  "Banh Canh 5.jpg": {
+    "z_marker_depth_mm": 1102.5390625,
+    "z_marker_tvec_mm": 242.50815428093122
+  },
+  "Banh Canh 6.jpg": {
+    "z_marker_depth_mm": 1140.0595703125,
+    "z_marker_tvec_mm": 201.96919258400823
+  },
+  "Banh Canh 7.jpg": {
+    "z_marker_depth_mm": 456.46563720703125,
+    "z_marker_tvec_mm": 424.8621168853274
+  },
+  "Banh Canh 8.jpg": {
+    "z_marker_depth_mm": 466.0635986328125,
+    "z_marker_tvec_mm": 440.83058078128505
+  },
+  "Banh Trang 1_Loai_3.jpg": {
+    "z_marker_depth_mm": 1023.4375,
+    "z_marker_tvec_mm": 219.45956253351247
+  },
+  "Banh Trang 2_Loai_3.jpg": {
+    "z_marker_depth_mm": 302.9801940917969,
+    "z_marker_tvec_mm": 296.15467763603584
+  },
+  "Banh beo 1.jpg": {
+    "z_marker_depth_mm": 398.4573669433594,
+    "z_marker_tvec_mm": 395.92581392753164
+  },
+  "Banh beo 10.jpg": {
+    "z_marker_depth_mm": 374.6031494140625,
+    "z_marker_tvec_mm": 367.9721387482355
+  },
+  "Banh beo 2.jpg": {
+    "z_marker_depth_mm": 353.8031005859375,
+    "z_marker_tvec_mm": 351.4893200226704
+  },
+  "Banh beo 3.jpg": {
+    "z_marker_depth_mm": 353.21728515625,
+    "z_marker_tvec_mm": 345.85059027818176
+  },
+  "Banh beo 4.jpg": {
+    "z_marker_depth_mm": 297.67193603515625,
+    "z_marker_tvec_mm": 289.5589128634046
+  },
+  "Banh beo 5.jpg": {
+    "z_marker_depth_mm": 320.0904541015625,
+    "z_marker_tvec_mm": 313.6882759268283
+  },
+  "Banh beo 6.jpg": {
+    "z_marker_depth_mm": 336.27679443359375,
+    "z_marker_tvec_mm": 334.2650424337973
+  },
+  "Banh beo 8.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Banh beo 9.jpg": {
+    "z_marker_depth_mm": 391.4197692871094,
+    "z_marker_tvec_mm": 388.71070755473414
+  },
+  "Banh trang 4.jpg": {
+    "z_marker_depth_mm": 861.1965942382812,
+    "z_marker_tvec_mm": 207.20504688574246
+  },
+  "BanhCuon2 (1).jpg": {
+    "z_marker_depth_mm": 365.46551513671875,
+    "z_marker_tvec_mm": 362.10997362508357
+  },
+  "BanhCuon2 (2).jpg": {
+    "z_marker_depth_mm": 365.915771484375,
+    "z_marker_tvec_mm": 362.6788348615396
+  },
+  "BanhCuon2 (3).jpg": {
+    "z_marker_depth_mm": 350.0932312011719,
+    "z_marker_tvec_mm": 348.4720012333874
+  },
+  "BanhCuon2 (4).jpg": {
+    "z_marker_depth_mm": 361.07684326171875,
+    "z_marker_tvec_mm": 357.9141741186849
+  },
+  "BanhCuon2 (5).jpg": {
+    "z_marker_depth_mm": 386.4538269042969,
+    "z_marker_tvec_mm": 384.3937498395374
+  },
+  "BanhCuon2 (6).jpg": {
+    "z_marker_depth_mm": 352.1879577636719,
+    "z_marker_tvec_mm": 348.90261523182704
+  },
+  "BanhCuon2 (7).jpg": {
+    "z_marker_depth_mm": 397.9996643066406,
+    "z_marker_tvec_mm": 393.91305530829084
+  },
+  "BanhCuon2 (8).jpg": {
+    "z_marker_depth_mm": 405.4789123535156,
+    "z_marker_tvec_mm": 403.97179149429235
+  },
+  "BanhCuon2 (9).jpg": {
+    "z_marker_depth_mm": 426.04241943359375,
+    "z_marker_tvec_mm": 423.96405072060713
+  },
+  "BanhKhot1(1).jpg": {
+    "z_marker_depth_mm": 360.4371337890625,
+    "z_marker_tvec_mm": 359.55039781988853
+  },
+  "BanhKhot1(2).jpg": {
+    "z_marker_depth_mm": 345.1409912109375,
+    "z_marker_tvec_mm": 344.33726983955586
+  },
+  "BanhKhot1(3).jpg": {
+    "z_marker_depth_mm": 338.26837158203125,
+    "z_marker_tvec_mm": 332.31413765048126
+  },
+  "BanhKhot1(4).jpg": {
+    "z_marker_depth_mm": 380.6935729980469,
+    "z_marker_tvec_mm": 377.67561367455596
+  },
+  "BanhKhot1(5).jpg": {
+    "z_marker_depth_mm": 383.63238525390625,
+    "z_marker_tvec_mm": 377.6784673385499
+  },
+  "BanhKhot1(6).jpg": {
+    "z_marker_depth_mm": 347.9830627441406,
+    "z_marker_tvec_mm": 343.55368889637236
+  },
+  "BanhKhot1(7).jpg": {
+    "z_marker_depth_mm": 391.363525390625,
+    "z_marker_tvec_mm": 382.1024525165395
+  },
+  "BanhMiDucTri (1).jpg": {
+    "z_marker_depth_mm": 299.7583312988281,
+    "z_marker_tvec_mm": 296.95697241642233
+  },
+  "BanhMiDucTri (2).jpg": {
+    "z_marker_depth_mm": 332.0869140625,
+    "z_marker_tvec_mm": 328.63601404985235
+  },
+  "BanhMiDucTri (3).jpg": {
+    "z_marker_depth_mm": 347.63531494140625,
+    "z_marker_tvec_mm": 342.91548517908535
+  },
+  "BanhMi_Trung (1).jpg": {
+    "z_marker_depth_mm": 488.9235534667969,
+    "z_marker_tvec_mm": 487.9205497909353
+  },
+  "BanhMi_Trung (2).jpg": {
+    "z_marker_depth_mm": 520.1830444335938,
+    "z_marker_tvec_mm": 512.134417036033
+  },
+  "BanhMi_Trung (3).jpg": {
+    "z_marker_depth_mm": 492.5845642089844,
+    "z_marker_tvec_mm": 478.46710426309414
+  },
+  "BanhMi_Trung (4).jpg": {
+    "z_marker_depth_mm": 522.8809814453125,
+    "z_marker_tvec_mm": 520.8989547692111
+  },
+  "BanhTranTron1(4).jpg": {
+    "z_marker_depth_mm": 398.39764404296875,
+    "z_marker_tvec_mm": 392.0754767643701
+  },
+  "BanhTrangTron1(1).jpg": {
+    "z_marker_depth_mm": 366.76629638671875,
+    "z_marker_tvec_mm": 356.0921543705099
+  },
+  "BanhTrangTron1(2).jpg": {
+    "z_marker_depth_mm": 295.4718017578125,
+    "z_marker_tvec_mm": 291.30998143664294
+  },
+  "BanhTrangTron1(3).jpg": {
+    "z_marker_depth_mm": 341.3154602050781,
+    "z_marker_tvec_mm": 330.68629232706076
+  },
+  "BanhTrangTron2(1).jpg": {
+    "z_marker_depth_mm": 377.0646667480469,
+    "z_marker_tvec_mm": 370.43998026319906
+  },
+  "BanhTrangTron2(2).jpg": {
+    "z_marker_depth_mm": 341.16650390625,
+    "z_marker_tvec_mm": 334.35544076412833
+  },
+  "BanhTrangTron2(3).jpg": {
+    "z_marker_depth_mm": 326.9256286621094,
+    "z_marker_tvec_mm": 317.80084870661796
+  },
+  "BanhTrangTron2(4).jpg": {
+    "z_marker_depth_mm": 374.4546203613281,
+    "z_marker_tvec_mm": 366.9744449810228
+  },
+  "BanhXeo(1).jpg": {
+    "z_marker_depth_mm": 414.0904846191406,
+    "z_marker_tvec_mm": 408.0708460430324
+  },
+  "BanhXeo(2).jpg": {
+    "z_marker_depth_mm": 435.89300537109375,
+    "z_marker_tvec_mm": 422.7955353779387
+  },
+  "BanhXeo(3).jpg": {
+    "z_marker_depth_mm": 454.93695068359375,
+    "z_marker_tvec_mm": 446.88495554591964
+  },
+  "BanhXeo-BanhTrang1(1).jpg": {
+    "z_marker_depth_mm": 696.9144287109375,
+    "z_marker_tvec_mm": 685.9410080712564
+  },
+  "BanhXeo-Rau-BanhTrang1(1).jpg": {
+    "z_marker_depth_mm": 893.4170532226562,
+    "z_marker_tvec_mm": 887.7494596343107
+  },
+  "BanhXeo-Rau-BanhTrang1(2).jpg": {
+    "z_marker_depth_mm": 750.2817993164062,
+    "z_marker_tvec_mm": 743.7590999703657
+  },
+  "BanhXeo-Rau-BanhTrang1(3).jpg": {
+    "z_marker_depth_mm": 584.15673828125,
+    "z_marker_tvec_mm": 581.1350548662012
+  },
+  "BanhXeo-Rau-BanhTrang1(4).jpg": {
+    "z_marker_depth_mm": 653.0318603515625,
+    "z_marker_tvec_mm": 648.8222986022901
+  },
+  "BanhXeo1(1).jpg": {
+    "z_marker_depth_mm": 568.9085693359375,
+    "z_marker_tvec_mm": 561.0807865985141
+  },
+  "BanhXeo1(2)(1).jpg": {
+    "z_marker_depth_mm": 549.9443359375,
+    "z_marker_tvec_mm": 537.8163932776612
+  },
+  "BanhXeo1(2)(2).jpg": {
+    "z_marker_depth_mm": 415.6414794921875,
+    "z_marker_tvec_mm": 413.19197240903577
+  },
+  "BanhXeo1(2).jpg": {
+    "z_marker_depth_mm": 482.96234130859375,
+    "z_marker_tvec_mm": 480.5397236642973
+  },
+  "BanhXeo2(1).jpg": {
+    "z_marker_depth_mm": 534.527587890625,
+    "z_marker_tvec_mm": 526.6945269180364
+  },
+  "BanhXeo2(2).jpg": {
+    "z_marker_depth_mm": 507.240478515625,
+    "z_marker_tvec_mm": 499.33100941022803
+  },
+  "BanhXeo2(3).jpg": {
+    "z_marker_depth_mm": 485.68865966796875,
+    "z_marker_tvec_mm": 482.02707117674026
+  },
+  "BanhXeo2(4).jpg": {
+    "z_marker_depth_mm": 554.1788330078125,
+    "z_marker_tvec_mm": 551.7849428854562
+  },
+  "BanhXeo2(5).jpg": {
+    "z_marker_depth_mm": 361.4573669433594,
+    "z_marker_tvec_mm": 357.00495696115917
+  },
+  "BoKho1(1).jpg": {
+    "z_marker_depth_mm": 638.77783203125,
+    "z_marker_tvec_mm": 631.4639451651623
+  },
+  "BoKho1(2).jpg": {
+    "z_marker_depth_mm": 517.499267578125,
+    "z_marker_tvec_mm": 512.0072319294379
+  },
+  "BoKho1(3).jpg": {
+    "z_marker_depth_mm": 495.9906005859375,
+    "z_marker_tvec_mm": 493.39473811998766
+  },
+  "BoKho1(4).jpg": {
+    "z_marker_depth_mm": 545.0482177734375,
+    "z_marker_tvec_mm": 540.3816480530163
+  },
+  "BoKho2(1).jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "BoKho2(2).jpg": {
+    "z_marker_depth_mm": 480.0478820800781,
+    "z_marker_tvec_mm": 465.2642851087049
+  },
+  "BoKho2(3).jpg": {
+    "z_marker_depth_mm": 592.9635009765625,
+    "z_marker_tvec_mm": 589.5224264686448
+  },
+  "BoKho2(4).jpg": {
+    "z_marker_depth_mm": 642.3007202148438,
+    "z_marker_tvec_mm": 639.6876471418528
+  },
+  "BoLaLot(8).jpg": {
+    "z_marker_depth_mm": 336.0661926269531,
+    "z_marker_tvec_mm": 334.90170249143154
+  },
+  "BoLaLot-BanhKhot1(1).jpg": {
+    "z_marker_depth_mm": 482.8987121582031,
+    "z_marker_tvec_mm": 478.0841295732023
+  },
+  "BoLaLot-BanhKhot1(2).jpg": {
+    "z_marker_depth_mm": 355.8203125,
+    "z_marker_tvec_mm": 354.7139400633833
+  },
+  "BoLaLot1(1).jpg": {
+    "z_marker_depth_mm": 311.18768310546875,
+    "z_marker_tvec_mm": 307.2951770248548
+  },
+  "BoLaLot1(2).jpg": {
+    "z_marker_depth_mm": 383.7602233886719,
+    "z_marker_tvec_mm": 376.0437852990244
+  },
+  "BoLaLot1(3).jpg": {
+    "z_marker_depth_mm": 302.37200927734375,
+    "z_marker_tvec_mm": 298.9088552023491
+  },
+  "BoLaLot1(4).jpg": {
+    "z_marker_depth_mm": 373.9772033691406,
+    "z_marker_tvec_mm": 366.73548839776294
+  },
+  "BoLaLot1(5).jpg": {
+    "z_marker_depth_mm": 360.59320068359375,
+    "z_marker_tvec_mm": 348.60379284147564
+  },
+  "BoLaLot1(7).jpg": {
+    "z_marker_depth_mm": 361.4382019042969,
+    "z_marker_tvec_mm": 355.60523116859184
+  },
+  "BolaLot1(6).jpg": {
+    "z_marker_depth_mm": 347.9049987792969,
+    "z_marker_tvec_mm": 336.0982775478791
+  },
+  "BongCai(1).jpg": {
+    "z_marker_depth_mm": 337.28350830078125,
+    "z_marker_tvec_mm": 332.9082266057853
+  },
+  "BongCai(2).jpg": {
+    "z_marker_depth_mm": 318.21051025390625,
+    "z_marker_tvec_mm": 314.13701975092346
+  },
+  "BongCai(3).jpg": {
+    "z_marker_depth_mm": 364.14422607421875,
+    "z_marker_tvec_mm": 348.8847550388131
+  },
+  "BongCai(4).jpg": {
+    "z_marker_depth_mm": 360.2125244140625,
+    "z_marker_tvec_mm": 356.7264252053483
+  },
+  "Bun 3.jpg": {
+    "z_marker_depth_mm": 351.4359436035156,
+    "z_marker_tvec_mm": 348.3179874668455
+  },
+  "Bun 4.jpg": {
+    "z_marker_depth_mm": 358.65185546875,
+    "z_marker_tvec_mm": 351.77047075409905
+  },
+  "Bun 5.jpg": {
+    "z_marker_depth_mm": 234.31643676757812,
+    "z_marker_tvec_mm": 232.64640177365496
+  },
+  "Bun 6.jpg": {
+    "z_marker_depth_mm": 229.75872802734375,
+    "z_marker_tvec_mm": 226.47299885768015
+  },
+  "Bun 7.jpg": {
+    "z_marker_depth_mm": 239.94139099121094,
+    "z_marker_tvec_mm": 232.34548326483542
+  },
+  "Bun 8.jpg": {
+    "z_marker_depth_mm": 337.493896484375,
+    "z_marker_tvec_mm": 333.10789289621243
+  },
+  "Bun Cha Ca 1.jpg": {
+    "z_marker_depth_mm": 405.05633544921875,
+    "z_marker_tvec_mm": 382.60497490409495
+  },
+  "Bun Cha Ca 2.jpg": {
+    "z_marker_depth_mm": 1195.4439697265625,
+    "z_marker_tvec_mm": 292.9129225509138
+  },
+  "Bun Cha Ca 3.jpg": {
+    "z_marker_depth_mm": 965.3212890625,
+    "z_marker_tvec_mm": 224.58884848180827
+  },
+  "Bun Cha Ca 4.jpg": {
+    "z_marker_depth_mm": 1194.935546875,
+    "z_marker_tvec_mm": 270.08191681507105
+  },
+  "Bun Cha Ca 5.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Bun Dau 1.jpg": {
+    "z_marker_depth_mm": 385.98980712890625,
+    "z_marker_tvec_mm": 384.2615866048922
+  },
+  "Bun Dau 2.jpg": {
+    "z_marker_depth_mm": 370.5054931640625,
+    "z_marker_tvec_mm": 369.0826137108854
+  },
+  "Bun Dau 3.jpg": {
+    "z_marker_depth_mm": 1256.083984375,
+    "z_marker_tvec_mm": 290.74403704076246
+  },
+  "Bun Dau 4.jpg": {
+    "z_marker_depth_mm": 1115.0244140625,
+    "z_marker_tvec_mm": 260.9374469200954
+  },
+  "Bun Dau 5.jpg": {
+    "z_marker_depth_mm": 1197.72021484375,
+    "z_marker_tvec_mm": 284.84359325023036
+  },
+  "Bun Dau 6.jpg": {
+    "z_marker_depth_mm": 527.886474609375,
+    "z_marker_tvec_mm": 499.9932005278823
+  },
+  "Bun bo 2.jpg": {
+    "z_marker_depth_mm": 413.7342834472656,
+    "z_marker_tvec_mm": 393.7366939879076
+  },
+  "Bun bo 3.jpg": {
+    "z_marker_depth_mm": 423.7091064453125,
+    "z_marker_tvec_mm": 404.6137467534104
+  },
+  "Bun bo 4.jpg": {
+    "z_marker_depth_mm": 426.668701171875,
+    "z_marker_tvec_mm": 404.81973018136097
+  },
+  "Bun bo 5.jpg": {
+    "z_marker_depth_mm": 231.74513244628906,
+    "z_marker_tvec_mm": 228.41739417434627
+  },
+  "Bun bo 6.jpg": {
+    "z_marker_depth_mm": 284.6985168457031,
+    "z_marker_tvec_mm": 282.7090515468882
+  },
+  "Bun bo 8.jpg": {
+    "z_marker_depth_mm": 460.24176025390625,
+    "z_marker_tvec_mm": 442.0160136599072
+  },
+  "Bun bo 9.jpg": {
+    "z_marker_depth_mm": 221.97433471679688,
+    "z_marker_tvec_mm": 210.1868914636121
+  },
+  "BunBoHue1 (1).jpg": {
+    "z_marker_depth_mm": 601.28955078125,
+    "z_marker_tvec_mm": 591.8388741851873
+  },
+  "BunBoHue1 (2).jpg": {
+    "z_marker_depth_mm": 587.72216796875,
+    "z_marker_tvec_mm": 586.5840083706682
+  },
+  "BunBoHue1 (3).jpg": {
+    "z_marker_depth_mm": 562.4068603515625,
+    "z_marker_tvec_mm": 561.0756976102365
+  },
+  "BunBoHue1 (4).jpg": {
+    "z_marker_depth_mm": 621.200927734375,
+    "z_marker_tvec_mm": 619.3601155462741
+  },
+  "BunBoHue1 (5).jpg": {
+    "z_marker_depth_mm": 591.73095703125,
+    "z_marker_tvec_mm": 582.071183720297
+  },
+  "BunCha1(1).jpg": {
+    "z_marker_depth_mm": 444.4688415527344,
+    "z_marker_tvec_mm": 432.34958660427907
+  },
+  "BunCha2(1).jpg": {
+    "z_marker_depth_mm": 573.4927368164062,
+    "z_marker_tvec_mm": 567.9606168496671
+  },
+  "BunCha2(2).jpg": {
+    "z_marker_depth_mm": 521.614013671875,
+    "z_marker_tvec_mm": 513.8511392985172
+  },
+  "BunCha2(3).jpg": {
+    "z_marker_depth_mm": 489.1737060546875,
+    "z_marker_tvec_mm": 480.6702699082501
+  },
+  "BunMam(1).jpg": {
+    "z_marker_depth_mm": 374.7342224121094,
+    "z_marker_tvec_mm": 356.8645469501563
+  },
+  "BunMam(2).jpg": {
+    "z_marker_depth_mm": 462.081298828125,
+    "z_marker_tvec_mm": 452.6988661528978
+  },
+  "BunMam(3).jpg": {
+    "z_marker_depth_mm": 419.351318359375,
+    "z_marker_tvec_mm": 407.1841735930894
+  },
+  "BunMam(4).jpg": {
+    "z_marker_depth_mm": 498.872314453125,
+    "z_marker_tvec_mm": 487.52808846182336
+  },
+  "BunMam(5).jpg": {
+    "z_marker_depth_mm": 491.06689453125,
+    "z_marker_tvec_mm": 474.2486911491248
+  },
+  "BunMam(6).jpg": {
+    "z_marker_depth_mm": 493.3943786621094,
+    "z_marker_tvec_mm": 478.9408822106476
+  },
+  "BunMam(7).jpg": {
+    "z_marker_depth_mm": 440.53125,
+    "z_marker_tvec_mm": 434.0953405205443
+  },
+  "BunRieu2(1).jpg": {
+    "z_marker_depth_mm": 470.24554443359375,
+    "z_marker_tvec_mm": 468.6805713812569
+  },
+  "BunRieu2(2).jpg": {
+    "z_marker_depth_mm": 532.7149047851562,
+    "z_marker_tvec_mm": 526.0872058729299
+  },
+  "BunRieu2(3).jpg": {
+    "z_marker_depth_mm": 442.09478759765625,
+    "z_marker_tvec_mm": 440.9533223919949
+  },
+  "BunRieu2(4).jpg": {
+    "z_marker_depth_mm": 458.68182373046875,
+    "z_marker_tvec_mm": 457.0808422790681
+  },
+  "BunRieu2(5).jpg": {
+    "z_marker_depth_mm": 428.73590087890625,
+    "z_marker_tvec_mm": 427.1968791500203
+  },
+  "BunRieu2(6).jpg": {
+    "z_marker_depth_mm": 456.15631103515625,
+    "z_marker_tvec_mm": 449.8778234845005
+  },
+  "CaChua1(1).jpg": {
+    "z_marker_depth_mm": 299.41876220703125,
+    "z_marker_tvec_mm": 295.18642868770195
+  },
+  "CaChua1(2).jpg": {
+    "z_marker_depth_mm": 309.02435302734375,
+    "z_marker_tvec_mm": 303.645011552989
+  },
+  "CaChua1(3).jpg": {
+    "z_marker_depth_mm": 260.0366516113281,
+    "z_marker_tvec_mm": 255.61502125450357
+  },
+  "CaChua2(1).jpg": {
+    "z_marker_depth_mm": 287.49041748046875,
+    "z_marker_tvec_mm": 285.9587753934977
+  },
+  "CaChua2(2).jpg": {
+    "z_marker_depth_mm": 335.10986328125,
+    "z_marker_tvec_mm": 333.4372087353789
+  },
+  "CaChua2(3).jpg": {
+    "z_marker_depth_mm": 275.50628662109375,
+    "z_marker_tvec_mm": 274.33013332998826
+  },
+  "CaChua3(1)-weight_58,8.jpg": {
+    "z_marker_depth_mm": 377.52691650390625,
+    "z_marker_tvec_mm": 372.3914854924582
+  },
+  "CaChua3(2).jpg": {
+    "z_marker_depth_mm": 356.9681701660156,
+    "z_marker_tvec_mm": 345.90184703357727
+  },
+  "CaChua3(3).jpg": {
+    "z_marker_depth_mm": 311.45782470703125,
+    "z_marker_tvec_mm": 307.2181699765046
+  },
+  "CaChua3(4).jpg": {
+    "z_marker_depth_mm": 312.26934814453125,
+    "z_marker_tvec_mm": 308.4591705091749
+  },
+  "Cha Gio 1.jpg": {
+    "z_marker_depth_mm": 254.7187042236328,
+    "z_marker_tvec_mm": 252.1097833473292
+  },
+  "Cha Gio 10.jpg": {
+    "z_marker_depth_mm": 459.8183898925781,
+    "z_marker_tvec_mm": 436.51202759285246
+  },
+  "Cha Gio 2.jpg": {
+    "z_marker_depth_mm": 1138.80615234375,
+    "z_marker_tvec_mm": 273.0493632310325
+  },
+  "Cha Gio 3.jpg": {
+    "z_marker_depth_mm": 770.091552734375,
+    "z_marker_tvec_mm": 165.12375337953742
+  },
+  "Cha Gio 4.jpg": {
+    "z_marker_depth_mm": 246.40411376953125,
+    "z_marker_tvec_mm": 243.3479296444385
+  },
+  "Cha Gio 5.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Cha Gio 6.jpg": {
+    "z_marker_depth_mm": 1071.6290283203125,
+    "z_marker_tvec_mm": 243.08086871328615
+  },
+  "Cha Gio 7.jpg": {
+    "z_marker_depth_mm": 358.46356201171875,
+    "z_marker_tvec_mm": 341.83410682932015
+  },
+  "Cha Gio 8.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Cha Gio 9.jpg": {
+    "z_marker_depth_mm": 458.2903137207031,
+    "z_marker_tvec_mm": 437.93463896976704
+  },
+  "Chao Long 1.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Chao Long 2.jpg": {
+    "z_marker_depth_mm": 407.46746826171875,
+    "z_marker_tvec_mm": 392.2089746799284
+  },
+  "Chao Long 3.jpg": {
+    "z_marker_depth_mm": 229.2629852294922,
+    "z_marker_tvec_mm": 215.95211353274215
+  },
+  "Chao Long 4.jpg": {
+    "z_marker_depth_mm": 194.9423828125,
+    "z_marker_tvec_mm": 179.2412210697406
+  },
+  "Chao Long 5.jpg": {
+    "z_marker_depth_mm": 383.1505126953125,
+    "z_marker_tvec_mm": 367.52825525808043
+  },
+  "Chao Long 6.jpg": {
+    "z_marker_depth_mm": 345.98388671875,
+    "z_marker_tvec_mm": 344.2441340467104
+  },
+  "Chao Long 7.jpg": {
+    "z_marker_depth_mm": 356.612060546875,
+    "z_marker_tvec_mm": 354.78499144309336
+  },
+  "Chao Long 8.jpg": {
+    "z_marker_depth_mm": 477.69915771484375,
+    "z_marker_tvec_mm": 456.57865567192584
+  },
+  "Com(1).jpg": {
+    "z_marker_depth_mm": 454.5472412109375,
+    "z_marker_tvec_mm": 446.8053794227234
+  },
+  "Com(2).jpg": {
+    "z_marker_depth_mm": 389.9034729003906,
+    "z_marker_tvec_mm": 374.67874436720325
+  },
+  "Com(3).jpg": {
+    "z_marker_depth_mm": 362.8678283691406,
+    "z_marker_tvec_mm": 359.0876024213193
+  },
+  "ComGa1 (1).jpg": {
+    "z_marker_depth_mm": 335.1661682128906,
+    "z_marker_tvec_mm": 333.2310476917403
+  },
+  "ComGa1 (2).jpg": {
+    "z_marker_depth_mm": 372.7177734375,
+    "z_marker_tvec_mm": 363.2751554293784
+  },
+  "ComGa1 (3).jpg": {
+    "z_marker_depth_mm": 384.3172607421875,
+    "z_marker_tvec_mm": 369.5301463635103
+  },
+  "ComGa1 (4).jpg": {
+    "z_marker_depth_mm": 450.3898010253906,
+    "z_marker_tvec_mm": 440.9994629923673
+  },
+  "ComGa1 (5).jpg": {
+    "z_marker_depth_mm": 325.5180969238281,
+    "z_marker_tvec_mm": 324.82609508868813
+  },
+  "ComGa1 (6).jpg": {
+    "z_marker_depth_mm": 371.6466979980469,
+    "z_marker_tvec_mm": 365.3329401291305
+  },
+  "ComGa1 (7).jpg": {
+    "z_marker_depth_mm": 381.2367248535156,
+    "z_marker_tvec_mm": 370.9709244822045
+  },
+  "ComGa1 (8).jpg": {
+    "z_marker_depth_mm": 484.57916259765625,
+    "z_marker_tvec_mm": 476.7918874200372
+  },
+  "ComGa2 (1).jpg": {
+    "z_marker_depth_mm": 388.4586181640625,
+    "z_marker_tvec_mm": 384.1152459022064
+  },
+  "ComGa2 (2).jpg": {
+    "z_marker_depth_mm": 419.116943359375,
+    "z_marker_tvec_mm": 418.3132067070889
+  },
+  "ComGa2 (3).jpg": {
+    "z_marker_depth_mm": 374.682861328125,
+    "z_marker_tvec_mm": 371.15065354353163
+  },
+  "ComThitNuong2(1).jpg": {
+    "z_marker_depth_mm": 369.3808288574219,
+    "z_marker_tvec_mm": 361.0526011223249
+  },
+  "ComThitNuong2(2).jpg": {
+    "z_marker_depth_mm": 373.2930603027344,
+    "z_marker_tvec_mm": 366.1409497098554
+  },
+  "ComThitNuong2(3).jpg": {
+    "z_marker_depth_mm": 424.59686279296875,
+    "z_marker_tvec_mm": 419.5351794282153
+  },
+  "DauHu(1).jpg": {
+    "z_marker_depth_mm": 338.5369567871094,
+    "z_marker_tvec_mm": 334.47869605928634
+  },
+  "DauHu(2).jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "DauHu(3).jpg": {
+    "z_marker_depth_mm": 318.6626892089844,
+    "z_marker_tvec_mm": 312.5994998618221
+  },
+  "DauHu(4).jpg": {
+    "z_marker_depth_mm": 1366.2109375,
+    "z_marker_tvec_mm": 313.43705809477893
+  },
+  "DoChua1(3).jpg": {
+    "z_marker_depth_mm": 244.96408081054688,
+    "z_marker_tvec_mm": 241.22843057594213
+  },
+  "DoChua1(4).jpg": {
+    "z_marker_depth_mm": 1050.603515625,
+    "z_marker_tvec_mm": 228.90544320738726
+  },
+  "DuaLeo1(1).jpg": {
+    "z_marker_depth_mm": 308.9925842285156,
+    "z_marker_tvec_mm": 304.79488356868063
+  },
+  "DuaLeo1(2).jpg": {
+    "z_marker_depth_mm": 299.94586181640625,
+    "z_marker_tvec_mm": 295.4927168703668
+  },
+  "DuaLeo1(3).jpg": {
+    "z_marker_depth_mm": 271.7886047363281,
+    "z_marker_tvec_mm": 267.21854084430396
+  },
+  "DuaLeo2(1).jpg": {
+    "z_marker_depth_mm": 327.576171875,
+    "z_marker_tvec_mm": 323.892242867134
+  },
+  "DuaLeo2(2).jpg": {
+    "z_marker_depth_mm": 300.46636962890625,
+    "z_marker_tvec_mm": 295.79397542794607
+  },
+  "DuaLeo2(3).jpg": {
+    "z_marker_depth_mm": 314.7447509765625,
+    "z_marker_tvec_mm": 311.7623445726773
+  },
+  "Goi Cuon 1.jpg": {
+    "z_marker_depth_mm": 263.31707763671875,
+    "z_marker_tvec_mm": 261.9096181898167
+  },
+  "Goi cuon 10.jpg": {
+    "z_marker_depth_mm": 1056.920654296875,
+    "z_marker_tvec_mm": 206.4215078882954
+  },
+  "Goi cuon 11.jpg": {
+    "z_marker_depth_mm": 414.5313720703125,
+    "z_marker_tvec_mm": 398.98626959022545
+  },
+  "Goi cuon 2.jpg": {
+    "z_marker_depth_mm": 1191.2333984375,
+    "z_marker_tvec_mm": 189.30550926069415
+  },
+  "Goi cuon 3.jpg": {
+    "z_marker_depth_mm": 348.63543701171875,
+    "z_marker_tvec_mm": 331.33614893426187
+  },
+  "Goi cuon 4.jpg": {
+    "z_marker_depth_mm": 273.52752685546875,
+    "z_marker_tvec_mm": 272.1367310132731
+  },
+  "Goi cuon 5.jpg": {
+    "z_marker_depth_mm": 941.89453125,
+    "z_marker_tvec_mm": 193.30106101869274
+  },
+  "Goi cuon 6.jpg": {
+    "z_marker_depth_mm": 372.02105712890625,
+    "z_marker_tvec_mm": 356.77718368710754
+  },
+  "Goi cuon 7.jpg": {
+    "z_marker_depth_mm": 881.1014404296875,
+    "z_marker_tvec_mm": 173.11369592569602
+  },
+  "Goi cuon 8.jpg": {
+    "z_marker_depth_mm": 256.2335205078125,
+    "z_marker_tvec_mm": 254.95615860069614
+  },
+  "Goi cuon 9.jpg": {
+    "z_marker_depth_mm": 276.20501708984375,
+    "z_marker_tvec_mm": 274.7896754029542
+  },
+  "Hamburger 1.jpg": {
+    "z_marker_depth_mm": 341.6356201171875,
+    "z_marker_tvec_mm": 339.8870945056299
+  },
+  "Hamburger 10.jpg": {
+    "z_marker_depth_mm": 292.0937805175781,
+    "z_marker_tvec_mm": 283.89363659824545
+  },
+  "Hamburger 11.jpg": {
+    "z_marker_depth_mm": 1032.3017578125,
+    "z_marker_tvec_mm": 216.347450567215
+  },
+  "Hamburger 12.jpg": {
+    "z_marker_depth_mm": 323.7501220703125,
+    "z_marker_tvec_mm": 307.8171113903188
+  },
+  "Hamburger 2.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Hamburger 3.jpg": {
+    "z_marker_depth_mm": 312.7919616699219,
+    "z_marker_tvec_mm": 310.682923975137
+  },
+  "Hamburger 4.jpg": {
+    "z_marker_depth_mm": 369.05645751953125,
+    "z_marker_tvec_mm": 366.45755651044
+  },
+  "Hamburger 5.jpg": {
+    "z_marker_depth_mm": 299.425537109375,
+    "z_marker_tvec_mm": 297.84049278868184
+  },
+  "Hamburger 6.jpg": {
+    "z_marker_depth_mm": 225.99378967285156,
+    "z_marker_tvec_mm": 225.0566716696434
+  },
+  "Hamburger 7.jpg": {
+    "z_marker_depth_mm": 292.36236572265625,
+    "z_marker_tvec_mm": 287.54223249987194
+  },
+  "Hamburger 8.jpg": {
+    "z_marker_depth_mm": 216.59344482421875,
+    "z_marker_tvec_mm": 204.41118015705
+  },
+  "Hamburger 9.jpg": {
+    "z_marker_depth_mm": 319.5910949707031,
+    "z_marker_tvec_mm": 316.47961638572093
+  },
+  "HeoQuay1(1).jpg": {
+    "z_marker_depth_mm": 260.50115966796875,
+    "z_marker_tvec_mm": 257.8848204541756
+  },
+  "HomeCook13 (2).jpg": {
+    "z_marker_depth_mm": 485.6060791015625,
+    "z_marker_tvec_mm": 479.44667491303585
+  },
+  "HomeCook13 (3).jpg": {
+    "z_marker_depth_mm": 401.95086669921875,
+    "z_marker_tvec_mm": 401.82412787992456
+  },
+  "HomeCook13 (4).jpg": {
+    "z_marker_depth_mm": 433.4584655761719,
+    "z_marker_tvec_mm": 432.47948851422285
+  },
+  "HomeCook14 (1).jpg": {
+    "z_marker_depth_mm": 550.377685546875,
+    "z_marker_tvec_mm": 523.055813203262
+  },
+  "HomeCook14 (2).jpg": {
+    "z_marker_depth_mm": 534.5244140625,
+    "z_marker_tvec_mm": 531.6523393929255
+  },
+  "HomeCook14 (7).jpg": {
+    "z_marker_depth_mm": 509.1680603027344,
+    "z_marker_tvec_mm": 506.75146648222056
+  },
+  "HomeCook14 (8).jpg": {
+    "z_marker_depth_mm": 511.0798034667969,
+    "z_marker_tvec_mm": 508.61827867916963
+  },
+  "HomeCook4 (1).jpg": {
+    "z_marker_depth_mm": 578.9107055664062,
+    "z_marker_tvec_mm": 572.4033403515156
+  },
+  "HomeCook4 (2).jpg": {
+    "z_marker_depth_mm": 538.7962646484375,
+    "z_marker_tvec_mm": 534.387986042415
+  },
+  "HomeCook4 (3).jpg": {
+    "z_marker_depth_mm": 517.767578125,
+    "z_marker_tvec_mm": 511.2455833345354
+  },
+  "HomeCook4 (4).jpg": {
+    "z_marker_depth_mm": 557.19189453125,
+    "z_marker_tvec_mm": 552.9117521259302
+  },
+  "HomeCook4 (5).jpg": {
+    "z_marker_depth_mm": 515.5900268554688,
+    "z_marker_tvec_mm": 513.1120915176656
+  },
+  "HomeCook6 (6).jpg": {
+    "z_marker_depth_mm": 475.6826171875,
+    "z_marker_tvec_mm": 473.97515234920854
+  },
+  "HuTieu1(1).jpg": {
+    "z_marker_depth_mm": 389.9287109375,
+    "z_marker_tvec_mm": 381.53222700532586
+  },
+  "HuTieu1(2).jpg": {
+    "z_marker_depth_mm": 444.6833801269531,
+    "z_marker_tvec_mm": 429.66563767629646
+  },
+  "HuTieu1(3).jpg": {
+    "z_marker_depth_mm": 524.5919189453125,
+    "z_marker_tvec_mm": 521.6947926978055
+  },
+  "HuTieu1(4).jpg": {
+    "z_marker_depth_mm": 474.9715576171875,
+    "z_marker_tvec_mm": 464.09881125682995
+  },
+  "HuTieu1(5).jpg": {
+    "z_marker_depth_mm": 481.400146484375,
+    "z_marker_tvec_mm": 472.1467690401435
+  },
+  "HuTieu1(6).jpg": {
+    "z_marker_depth_mm": 467.82330322265625,
+    "z_marker_tvec_mm": 458.304528626165
+  },
+  "IMG_20260927_133655.jpg": {
+    "z_marker_depth_mm": 410.5901184082031,
+    "z_marker_tvec_mm": 403.50682449057393
+  },
+  "IMG_20260927_133702.jpg": {
+    "z_marker_depth_mm": 343.1438293457031,
+    "z_marker_tvec_mm": 329.7381573216882
+  },
+  "IMG_20260927_133705.jpg": {
+    "z_marker_depth_mm": 327.62188720703125,
+    "z_marker_tvec_mm": 324.5789093229743
+  },
+  "IMG_20260927_133719.jpg": {
+    "z_marker_depth_mm": 400.1302185058594,
+    "z_marker_tvec_mm": 388.7143895977329
+  },
+  "IMG_20260927_133942.jpg": {
+    "z_marker_depth_mm": 406.53192138671875,
+    "z_marker_tvec_mm": 396.620596506226
+  },
+  "IMG_20260927_134002.jpg": {
+    "z_marker_depth_mm": 358.2294616699219,
+    "z_marker_tvec_mm": 350.687842702749
+  },
+  "IMG_20260927_134008.jpg": {
+    "z_marker_depth_mm": 342.1071472167969,
+    "z_marker_tvec_mm": 334.67624073800835
+  },
+  "IMG_20260927_134223.jpg": {
+    "z_marker_depth_mm": 456.663818359375,
+    "z_marker_tvec_mm": 447.0458578641729
+  },
+  "IMG_20260927_134227.jpg": {
+    "z_marker_depth_mm": 417.72259521484375,
+    "z_marker_tvec_mm": 409.9426412224181
+  },
+  "IMG_20260927_134235.jpg": {
+    "z_marker_depth_mm": 478.7632141113281,
+    "z_marker_tvec_mm": 475.5591412374292
+  },
+  "IMG_20260927_134244.jpg": {
+    "z_marker_depth_mm": 373.5831604003906,
+    "z_marker_tvec_mm": 369.8698061099532
+  },
+  "IMG_20260927_134916.jpg": {
+    "z_marker_depth_mm": 397.1567687988281,
+    "z_marker_tvec_mm": 390.0465281834974
+  },
+  "IMG_20260927_135647.jpg": {
+    "z_marker_depth_mm": 448.6705017089844,
+    "z_marker_tvec_mm": 444.844047410085
+  },
+  "IMG_20260927_135652.jpg": {
+    "z_marker_depth_mm": 500.2765808105469,
+    "z_marker_tvec_mm": 495.76579347640273
+  },
+  "IMG_20260927_135709.jpg": {
+    "z_marker_depth_mm": 399.28839111328125,
+    "z_marker_tvec_mm": 397.52880387724764
+  },
+  "IMG_20260927_135713.jpg": {
+    "z_marker_depth_mm": 382.5010986328125,
+    "z_marker_tvec_mm": 377.5032069109895
+  },
+  "IMG_20261110_082335.jpg": {
+    "z_marker_depth_mm": 338.64312744140625,
+    "z_marker_tvec_mm": 331.8028811507833
+  },
+  "IMG_20261110_082339.jpg": {
+    "z_marker_depth_mm": 275.84796142578125,
+    "z_marker_tvec_mm": 270.78272177543096
+  },
+  "Kho Qua Thit 1.jpg": {
+    "z_marker_depth_mm": 766.6015625,
+    "z_marker_tvec_mm": 170.60188928150436
+  },
+  "Kho Qua Thit 2.jpg": {
+    "z_marker_depth_mm": 399.900146484375,
+    "z_marker_tvec_mm": 398.55937760060516
+  },
+  "Kho Qua Thit 3.jpg": {
+    "z_marker_depth_mm": 362.1986083984375,
+    "z_marker_tvec_mm": 357.34802061756085
+  },
+  "Kho Qua Thit 4.jpg": {
+    "z_marker_depth_mm": 315.60491943359375,
+    "z_marker_tvec_mm": 307.3325571364901
+  },
+  "Kho Qua Thit 5.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Kho Qua Thit 6.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Kho Qua Thit 7.jpg": {
+    "z_marker_depth_mm": 283.9263610839844,
+    "z_marker_tvec_mm": 281.355529627075
+  },
+  "Kho Qua Thit 8.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Khoai Tay Chien 2.jpg": {
+    "z_marker_depth_mm": 474.3505554199219,
+    "z_marker_tvec_mm": 453.8321001991912
+  },
+  "Khoai Tay Chien 3.jpg": {
+    "z_marker_depth_mm": 458.5351257324219,
+    "z_marker_tvec_mm": 438.4163672746704
+  },
+  "Khoai Tay Chien 4.jpg": {
+    "z_marker_depth_mm": 464.7069396972656,
+    "z_marker_tvec_mm": 447.0327372609223
+  },
+  "Khoai Tay Chien 5.jpg": {
+    "z_marker_depth_mm": 493.00518798828125,
+    "z_marker_tvec_mm": 469.81964077125986
+  },
+  "Khoai Tay Chien 6.jpg": {
+    "z_marker_depth_mm": 391.90887451171875,
+    "z_marker_tvec_mm": 375.2965566667656
+  },
+  "Long Heo 1.jpg": {
+    "z_marker_depth_mm": 1343.2724609375,
+    "z_marker_tvec_mm": 212.46013693903708
+  },
+  "Long Heo 2.jpg": {
+    "z_marker_depth_mm": 1603.2208251953125,
+    "z_marker_tvec_mm": 234.0312036910441
+  },
+  "Long Heo 5.jpg": {
+    "z_marker_depth_mm": 1172.4884033203125,
+    "z_marker_tvec_mm": 193.01957090906643
+  },
+  "Mi 1.jpg": {
+    "z_marker_depth_mm": 298.1676025390625,
+    "z_marker_tvec_mm": 296.63600087446923
+  },
+  "Mi 2.jpg": {
+    "z_marker_depth_mm": 267.58770751953125,
+    "z_marker_tvec_mm": 266.1110129550456
+  },
+  "Mi 3.jpg": {
+    "z_marker_depth_mm": 292.5006408691406,
+    "z_marker_tvec_mm": 291.0087701803172
+  },
+  "Mi 4.jpg": {
+    "z_marker_depth_mm": 288.0010986328125,
+    "z_marker_tvec_mm": 286.53121149461344
+  },
+  "Mi 5.jpg": {
+    "z_marker_depth_mm": 340.1020812988281,
+    "z_marker_tvec_mm": 333.48309513397083
+  },
+  "Mi Quang 1.jpg": {
+    "z_marker_depth_mm": 1053.231201171875,
+    "z_marker_tvec_mm": 180.545576599462
+  },
+  "Mi Quang 2.jpg": {
+    "z_marker_depth_mm": 279.14666748046875,
+    "z_marker_tvec_mm": 259.48984551457363
+  },
+  "Mi Quang 3.jpg": {
+    "z_marker_depth_mm": 762.9640502929688,
+    "z_marker_tvec_mm": 178.04804701372805
+  },
+  "Mi Quang 4.jpg": {
+    "z_marker_depth_mm": 213.90762329101562,
+    "z_marker_tvec_mm": 194.6535287834434
+  },
+  "Mi Quang 5.jpg": {
+    "z_marker_depth_mm": 290.3821105957031,
+    "z_marker_tvec_mm": 285.4966606865217
+  },
+  "Muc 1.jpg": {
+    "z_marker_depth_mm": 1445.1820068359375,
+    "z_marker_tvec_mm": 239.31949265743208
+  },
+  "Muc 2.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Muc 4.jpg": {
+    "z_marker_depth_mm": 1435.524169921875,
+    "z_marker_tvec_mm": 242.5280389808808
+  },
+  "Muc 5.jpg": {
+    "z_marker_depth_mm": 1404.2318115234375,
+    "z_marker_tvec_mm": 214.8452032220131
+  },
+  "Muc 6.jpg": {
+    "z_marker_depth_mm": 1404.923828125,
+    "z_marker_tvec_mm": 247.26724663243434
+  },
+  "MucLau(1).jpg": {
+    "z_marker_depth_mm": 440.6383361816406,
+    "z_marker_tvec_mm": 432.5389172627554
+  },
+  "MucLau(2).jpg": {
+    "z_marker_depth_mm": 360.33648681640625,
+    "z_marker_tvec_mm": 345.0949121907589
+  },
+  "MucLau(3).jpg": {
+    "z_marker_depth_mm": 1352.38818359375,
+    "z_marker_tvec_mm": 307.69618337075985
+  },
+  "MucLau(4).jpg": {
+    "z_marker_depth_mm": 320.7192077636719,
+    "z_marker_tvec_mm": 313.0115440431562
+  },
+  "Nam 2.jpg": {
+    "z_marker_depth_mm": 1397.9549560546875,
+    "z_marker_tvec_mm": 249.7873259898656
+  },
+  "Nam 3.jpg": {
+    "z_marker_depth_mm": 1213.76953125,
+    "z_marker_tvec_mm": 240.6196078798145
+  },
+  "Nam 4.jpg": {
+    "z_marker_depth_mm": 1195.232177734375,
+    "z_marker_tvec_mm": 239.59181624478057
+  },
+  "Nui xao bo 1.jpg": {
+    "z_marker_depth_mm": 232.49990844726562,
+    "z_marker_tvec_mm": 231.1779654235638
+  },
+  "Nui xao bo 10.jpg": {
+    "z_marker_depth_mm": 278.6020202636719,
+    "z_marker_tvec_mm": 272.3327624500569
+  },
+  "Nui xao bo 11.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Nui xao bo 12.jpg": {
+    "z_marker_depth_mm": 227.40579223632812,
+    "z_marker_tvec_mm": 225.56929113492072
+  },
+  "Nui xao bo 2.jpg": {
+    "z_marker_depth_mm": 227.47149658203125,
+    "z_marker_tvec_mm": 225.97997089360027
+  },
+  "Nui xao bo 3.jpg": {
+    "z_marker_depth_mm": 258.6590576171875,
+    "z_marker_tvec_mm": 257.14130653653376
+  },
+  "Nui xao bo 4.jpg": {
+    "z_marker_depth_mm": 259.7524719238281,
+    "z_marker_tvec_mm": 258.17774754135917
+  },
+  "Nui xao bo 5.jpg": {
+    "z_marker_depth_mm": 272.4372253417969,
+    "z_marker_tvec_mm": 270.6769368639919
+  },
+  "Nui xao bo 6.jpg": {
+    "z_marker_depth_mm": 228.01211547851562,
+    "z_marker_tvec_mm": 225.76462432118728
+  },
+  "Nui xao bo 7.jpg": {
+    "z_marker_depth_mm": 259.21258544921875,
+    "z_marker_tvec_mm": 257.4365029974722
+  },
+  "Nui xao bo 8.jpg": {
+    "z_marker_depth_mm": 275.11053466796875,
+    "z_marker_tvec_mm": 273.61691143814505
+  },
+  "Nui xao bo 9.jpg": {
+    "z_marker_depth_mm": 269.3243713378906,
+    "z_marker_tvec_mm": 266.543236494873
+  },
+  "Oc 2.jpg": {
+    "z_marker_depth_mm": 247.3212127685547,
+    "z_marker_tvec_mm": 245.32314859168585
+  },
+  "Oc 3.jpg": {
+    "z_marker_depth_mm": 1006.8359375,
+    "z_marker_tvec_mm": 174.95557643742728
+  },
+  "Oc 5.jpg": {
+    "z_marker_depth_mm": 1035.963623046875,
+    "z_marker_tvec_mm": 176.9627455119373
+  },
+  "Oc 6.jpg": {
+    "z_marker_depth_mm": 251.029052734375,
+    "z_marker_tvec_mm": 249.35587521386603
+  },
+  "Pho1 (1).jpg": {
+    "z_marker_depth_mm": 500.4118957519531,
+    "z_marker_tvec_mm": 484.91080799268025
+  },
+  "Pho1 (2).jpg": {
+    "z_marker_depth_mm": 475.737548828125,
+    "z_marker_tvec_mm": 465.8824886348638
+  },
+  "Pho1 (3).jpg": {
+    "z_marker_depth_mm": 444.6869812011719,
+    "z_marker_tvec_mm": 441.78218476316033
+  },
+  "Pho1 (4).jpg": {
+    "z_marker_depth_mm": 446.154052734375,
+    "z_marker_tvec_mm": 426.9811913427504
+  },
+  "Pho1 (5).jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "Suon1(2).jpg": {
+    "z_marker_depth_mm": 322.1279296875,
+    "z_marker_tvec_mm": 312.5330793414919
+  },
+  "Suon1(3).jpg": {
+    "z_marker_depth_mm": 390.7021789550781,
+    "z_marker_tvec_mm": 384.15493301109484
+  },
+  "Suon1.jpg": {
+    "z_marker_depth_mm": 352.01171875,
+    "z_marker_tvec_mm": 346.8238909920717
+  },
+  "SupCua (1).jpg": {
+    "z_marker_depth_mm": 324.65625,
+    "z_marker_tvec_mm": 323.03499384474804
+  },
+  "SupCua (2).jpg": {
+    "z_marker_depth_mm": 370.4616394042969,
+    "z_marker_tvec_mm": 365.9732193270906
+  },
+  "SupCua (3).jpg": {
+    "z_marker_depth_mm": 345.75360107421875,
+    "z_marker_tvec_mm": 335.32093943808144
+  },
+  "SupCua (4).jpg": {
+    "z_marker_depth_mm": 340.3914489746094,
+    "z_marker_tvec_mm": 339.85519784480897
+  },
+  "SupCua (5).jpg": {
+    "z_marker_depth_mm": 246.8418731689453,
+    "z_marker_tvec_mm": 245.07878151177002
+  },
+  "SupCua (6).jpg": {
+    "z_marker_depth_mm": 291.37176513671875,
+    "z_marker_tvec_mm": 290.36421149031094
+  },
+  "ThitBo(1).jpg": {
+    "z_marker_depth_mm": 333.6576843261719,
+    "z_marker_tvec_mm": 328.8002183704493
+  },
+  "ThitBo(2).jpg": {
+    "z_marker_depth_mm": 316.5586853027344,
+    "z_marker_tvec_mm": 312.6586270782105
+  },
+  "ThitBo(3).jpg": {
+    "z_marker_depth_mm": 287.14886474609375,
+    "z_marker_tvec_mm": 283.18823264234163
+  },
+  "ThitChien1(1).jpg": {
+    "z_marker_depth_mm": 372.85675048828125,
+    "z_marker_tvec_mm": 365.64081390606293
+  },
+  "ThitChien2(2).jpg": {
+    "z_marker_depth_mm": 341.6316833496094,
+    "z_marker_tvec_mm": 334.06184105626863
+  },
+  "ThitChien2(3).jpg": {
+    "z_marker_depth_mm": 388.0080261230469,
+    "z_marker_tvec_mm": 386.450636133805
+  },
+  "ThitChien2(4).jpg": {
+    "z_marker_depth_mm": 346.6624755859375,
+    "z_marker_tvec_mm": 340.13372369743007
+  },
+  "ThitGa(1).jpg": {
+    "z_marker_depth_mm": 338.1867980957031,
+    "z_marker_tvec_mm": 330.80009951294124
+  },
+  "ThitGa(2).jpg": {
+    "z_marker_depth_mm": 299.1342468261719,
+    "z_marker_tvec_mm": 294.04829157984216
+  },
+  "ThitGa(3).jpg": {
+    "z_marker_depth_mm": 1238.6412353515625,
+    "z_marker_tvec_mm": 264.1247176580382
+  },
+  "ThitGa(4).jpg": {
+    "z_marker_depth_mm": 1205.7691650390625,
+    "z_marker_tvec_mm": 294.0281513784248
+  },
+  "ThitGa1 (1).jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "ThitGa1 (3).jpg": {
+    "z_marker_depth_mm": 449.18408203125,
+    "z_marker_tvec_mm": 447.305628674657
+  },
+  "ThitGa1 (4).jpg": {
+    "z_marker_depth_mm": 377.9564514160156,
+    "z_marker_tvec_mm": 368.6438334529529
+  },
+  "ThitGa1 (6).jpg": {
+    "z_marker_depth_mm": 489.8849792480469,
+    "z_marker_tvec_mm": 487.90650784357655
+  },
+  "ThitGa2 (1).jpg": {
+    "z_marker_depth_mm": 385.08563232421875,
+    "z_marker_tvec_mm": 381.9989297138843
+  },
+  "ThitGa2 (3).jpg": {
+    "z_marker_depth_mm": 389.9992980957031,
+    "z_marker_tvec_mm": 383.26140819673583
+  },
+  "ThitGa2 (4).jpg": {
+    "z_marker_depth_mm": 497.93511962890625,
+    "z_marker_tvec_mm": 496.02981022003655
+  },
+  "ThitGa2 (5).jpg": {
+    "z_marker_depth_mm": 398.0823059082031,
+    "z_marker_tvec_mm": 393.8548265559787
+  },
+  "ThitGa2 (6).jpg": {
+    "z_marker_depth_mm": 403.72601318359375,
+    "z_marker_tvec_mm": 390.24617575622256
+  },
+  "ThitGaChien (1).jpg": {
+    "z_marker_depth_mm": 363.1827087402344,
+    "z_marker_tvec_mm": 355.81189685469906
+  },
+  "ThitGaChien (2).jpg": {
+    "z_marker_depth_mm": 328.1597595214844,
+    "z_marker_tvec_mm": 320.2788196423512
+  },
+  "ThitGaChien (3).jpg": {
+    "z_marker_depth_mm": 386.6976013183594,
+    "z_marker_tvec_mm": 378.7938203593863
+  },
+  "ThitGaChien (4).jpg": {
+    "z_marker_depth_mm": 341.0367431640625,
+    "z_marker_tvec_mm": 331.46979277649285
+  },
+  "ThitKho1 (1).jpg": {
+    "z_marker_depth_mm": 393.5874938964844,
+    "z_marker_tvec_mm": 385.3239916128222
+  },
+  "ThitKho1 (2).jpg": {
+    "z_marker_depth_mm": 452.7093505859375,
+    "z_marker_tvec_mm": 444.3544171188731
+  },
+  "ThitKho1 (3).jpg": {
+    "z_marker_depth_mm": 324.67510986328125,
+    "z_marker_tvec_mm": 312.2562156895993
+  },
+  "ThitKho1 (4).jpg": {
+    "z_marker_depth_mm": 368.0307312011719,
+    "z_marker_tvec_mm": 360.6449977186578
+  },
+  "ThitKho1 (5).jpg": {
+    "z_marker_depth_mm": 281.02252197265625,
+    "z_marker_tvec_mm": 279.68963619541296
+  },
+  "ThitKho1 (6).jpg": {
+    "z_marker_depth_mm": 344.23297119140625,
+    "z_marker_tvec_mm": 339.767200821006
+  },
+  "ThitKho2(2).jpg": {
+    "z_marker_depth_mm": 251.9609832763672,
+    "z_marker_tvec_mm": 245.73527097659172
+  },
+  "ThitKho2(3).jpg": {
+    "z_marker_depth_mm": 263.1172180175781,
+    "z_marker_tvec_mm": 257.14662785736044
+  },
+  "ThitKho2(4).jpg": {
+    "z_marker_depth_mm": 339.6925048828125,
+    "z_marker_tvec_mm": 333.8904460794464
+  },
+  "ThitNuong1(2).jpg": {
+    "z_marker_depth_mm": 361.4357604980469,
+    "z_marker_tvec_mm": 351.9391829257189
+  },
+  "ThitNuong1(3).jpg": {
+    "z_marker_depth_mm": 393.63555908203125,
+    "z_marker_tvec_mm": 380.1880230157142
+  },
+  "ThitNuong1(4).jpg": {
+    "z_marker_depth_mm": 294.4386901855469,
+    "z_marker_tvec_mm": 282.9420935085211
+  },
+  "ThitNuong1(5).jpg": {
+    "z_marker_depth_mm": 393.63555908203125,
+    "z_marker_tvec_mm": 380.1880230157142
+  },
+  "Trung1(1).jpg": {
+    "z_marker_depth_mm": 314.3879089355469,
+    "z_marker_tvec_mm": 312.81861241015787
+  },
+  "Trung1(2).jpg": {
+    "z_marker_depth_mm": 284.25762939453125,
+    "z_marker_tvec_mm": 283.39605846878953
+  },
+  "Trung1(3).jpg": {
+    "z_marker_depth_mm": 303.4143981933594,
+    "z_marker_tvec_mm": 301.19553828023703
+  },
+  "TrungChien1(1).jpg": {
+    "z_marker_depth_mm": 310.0653381347656,
+    "z_marker_tvec_mm": 299.7948912757519
+  },
+  "TrungChien1(2).jpg": {
+    "z_marker_depth_mm": 348.8167724609375,
+    "z_marker_tvec_mm": 339.53159648307815
+  },
+  "TrungChien1(3).jpg": {
+    "z_marker_depth_mm": 360.5266418457031,
+    "z_marker_tvec_mm": 358.452875832686
+  },
+  "Xoi1 (1).jpg": {
+    "z_marker_depth_mm": 421.3067626953125,
+    "z_marker_tvec_mm": 415.9551243744016
+  },
+  "Xoi1 (2).jpg": {
+    "z_marker_depth_mm": 340.0045471191406,
+    "z_marker_tvec_mm": 335.8846961874821
+  },
+  "Xoi1 (3).jpg": {
+    "z_marker_depth_mm": 350.9059143066406,
+    "z_marker_tvec_mm": 348.45933771320716
+  },
+  "Xoi1 (4).jpg": {
+    "z_marker_depth_mm": 326.66278076171875,
+    "z_marker_tvec_mm": 325.0093837628577
+  },
+  "Xoi1 (5).jpg": {
+    "z_marker_depth_mm": 306.7655944824219,
+    "z_marker_tvec_mm": 305.21281040443944
+  },
+  "Xoi1 (6).jpg": {
+    "z_marker_depth_mm": 402.55401611328125,
+    "z_marker_tvec_mm": 398.3190337571154
+  },
+  "Xoi1 (7).jpg": {
+    "z_marker_depth_mm": 382.50628662109375,
+    "z_marker_tvec_mm": 373.9043629963574
+  },
+  "banh-mi1.jpg": {
+    "z_marker_depth_mm": 398.19305419921875,
+    "z_marker_tvec_mm": 396.9151111526592
+  },
+  "banh-mi2.jpg": {
+    "z_marker_depth_mm": 362.97357177734375,
+    "z_marker_tvec_mm": 359.73943640130074
+  },
+  "banh-mi250g (1).jpg": {
+    "z_marker_depth_mm": 469.05108642578125,
+    "z_marker_tvec_mm": 467.8671717842812
+  },
+  "banh-mi250g (2).jpg": {
+    "z_marker_depth_mm": 454.235107421875,
+    "z_marker_tvec_mm": 454.173435501688
+  },
+  "banh-mi250g (3).jpg": {
+    "z_marker_depth_mm": 488.17889404296875,
+    "z_marker_tvec_mm": 487.4116341975662
+  },
+  "banh-mi250g (4).jpg": {
+    "z_marker_depth_mm": 492.6246337890625,
+    "z_marker_tvec_mm": 489.4560067285221
+  },
+  "banh-mi3.jpg": {
+    "z_marker_depth_mm": 348.9993896484375,
+    "z_marker_tvec_mm": 347.5835262584725
+  },
+  "banh-mi4.jpg": {
+    "z_marker_depth_mm": 427.3917236328125,
+    "z_marker_tvec_mm": 425.6965624880198
+  },
+  "banh-mi5.jpg": {
+    "z_marker_depth_mm": 439.13299560546875,
+    "z_marker_tvec_mm": 433.67663503857216
+  },
+  "bun-rieu (1).jpg": {
+    "z_marker_depth_mm": 465.42633056640625,
+    "z_marker_tvec_mm": 457.266831487558
+  },
+  "bun-rieu (2).jpg": {
+    "z_marker_depth_mm": 501.3168640136719,
+    "z_marker_tvec_mm": 499.7491938520554
+  },
+  "bun-rieu (3).jpg": {
+    "z_marker_depth_mm": 446.09307861328125,
+    "z_marker_tvec_mm": 440.97661404898804
+  },
+  "bun-rieu1 (1).jpg": {
+    "z_marker_depth_mm": 530.2194213867188,
+    "z_marker_tvec_mm": 520.6680381421122
+  },
+  "bun-rieu1 (2).jpg": {
+    "z_marker_depth_mm": 436.50537109375,
+    "z_marker_tvec_mm": 431.29937019467167
+  },
+  "bun-rieu1 (3).jpg": {
+    "z_marker_depth_mm": 409.5496520996094,
+    "z_marker_tvec_mm": 402.4047094660418
+  },
+  "bun-rieu1 (4).jpg": {
+    "z_marker_depth_mm": 406.1795654296875,
+    "z_marker_tvec_mm": 402.5438502981521
+  },
+  "bun1(1).jpg": {
+    "z_marker_depth_mm": 407.4156799316406,
+    "z_marker_tvec_mm": 402.35569566443667
+  },
+  "bun1(2).jpg": {
+    "z_marker_depth_mm": 450.9111328125,
+    "z_marker_tvec_mm": 445.60102253597995
+  },
+  "ca1(0).jpg": {
+    "z_marker_depth_mm": 357.8337097167969,
+    "z_marker_tvec_mm": 351.6686820091743
+  },
+  "ca1(1).jpg": {
+    "z_marker_depth_mm": 303.6195068359375,
+    "z_marker_tvec_mm": 298.73647768116433
+  },
+  "ca1(2).jpg": {
+    "z_marker_depth_mm": 293.7637023925781,
+    "z_marker_tvec_mm": 289.4822996105333
+  },
+  "ca1(3).jpg": {
+    "z_marker_depth_mm": 334.6666564941406,
+    "z_marker_tvec_mm": 331.07033199757916
+  },
+  "chalua-cachua1(1).jpg": {
+    "z_marker_depth_mm": 373.3604736328125,
+    "z_marker_tvec_mm": 372.34153194923647
+  },
+  "chalua-cachua1(2).jpg": {
+    "z_marker_depth_mm": 362.63232421875,
+    "z_marker_tvec_mm": 361.5854482022604
+  },
+  "chalua-cachua1(3).jpg": {
+    "z_marker_depth_mm": 380.49078369140625,
+    "z_marker_tvec_mm": 370.92366044979707
+  },
+  "chalua1(1).jpg": {
+    "z_marker_depth_mm": 274.73748779296875,
+    "z_marker_tvec_mm": 268.30180667994904
+  },
+  "chalua1(2).jpg": {
+    "z_marker_depth_mm": 282.32037353515625,
+    "z_marker_tvec_mm": 275.83742278699356
+  },
+  "chalua2(1).jpg": {
+    "z_marker_depth_mm": 221.72567749023438,
+    "z_marker_tvec_mm": 215.66510102439258
+  },
+  "chalua2(2).jpg": {
+    "z_marker_depth_mm": 1149.1915283203125,
+    "z_marker_tvec_mm": 271.43913022209955
+  },
+  "com chien 1.jpg": {
+    "z_marker_depth_mm": null,
+    "z_marker_tvec_mm": null
+  },
+  "com chien 2.jpg": {
+    "z_marker_depth_mm": 573.8995361328125,
+    "z_marker_tvec_mm": 543.402110648785
+  },
+  "com chien 3.jpg": {
+    "z_marker_depth_mm": 573.8995361328125,
+    "z_marker_tvec_mm": 543.402110648785
+  },
+  "com chien 4.jpg": {
+    "z_marker_depth_mm": 576.5668334960938,
+    "z_marker_tvec_mm": 544.5224637949967
+  },
+  "com chien 5.jpg": {
+    "z_marker_depth_mm": 514.0201416015625,
+    "z_marker_tvec_mm": 491.2076327686513
+  },
+  "com-suon1 (1).jpg": {
+    "z_marker_depth_mm": 503.19952392578125,
+    "z_marker_tvec_mm": 487.6610782264192
+  },
+  "com-suon1 (2).jpg": {
+    "z_marker_depth_mm": 573.0214233398438,
+    "z_marker_tvec_mm": 563.4845661464334
+  },
+  "com-suon1 (3).jpg": {
+    "z_marker_depth_mm": 662.694091796875,
+    "z_marker_tvec_mm": 655.8663052791532
+  },
+  "com-suon1 (4).jpg": {
+    "z_marker_depth_mm": 454.08319091796875,
+    "z_marker_tvec_mm": 448.03411531946955
+  },
+  "com-suon1 (5).jpg": {
+    "z_marker_depth_mm": 406.0940246582031,
+    "z_marker_tvec_mm": 400.11518849577647
+  },
+  "thitNuong1(1).jpg": {
+    "z_marker_depth_mm": 391.6263122558594,
+    "z_marker_tvec_mm": 385.29159807046403
+  },
+  "tom1(1).jpg": {
+    "z_marker_depth_mm": 317.8736267089844,
+    "z_marker_tvec_mm": 316.78573716352133
+  },
+  "tom1(2).jpg": {
+    "z_marker_depth_mm": 278.5859375,
+    "z_marker_tvec_mm": 277.0993453210572
+  },
+  "tom1(3).jpg": {
+    "z_marker_depth_mm": 244.62857055664062,
+    "z_marker_tvec_mm": 242.76440754903248
+  },
+  "tom1(4).jpg": {
+    "z_marker_depth_mm": 1122.0703125,
+    "z_marker_tvec_mm": 271.5215197035053
+  },
+  "tom2(1).jpg": {
+    "z_marker_depth_mm": 348.2383728027344,
+    "z_marker_tvec_mm": 342.4487469397439
+  },
+  "tom2(2).jpg": {
+    "z_marker_depth_mm": 303.79449462890625,
+    "z_marker_tvec_mm": 296.2345902883493
+  }
+}

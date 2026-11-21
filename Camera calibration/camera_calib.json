@@ -1,0 +1,127 @@
+{
+    "image_width": 1800,
+    "image_height": 4000,
+    "reprojection_error": 0.9738631970311575,
+    "rmse_error": 0.9738631014527471,
+    "fx": 3058.594252755987,
+    "fy": 3062.0812620042566,
+    "cx": 880.062159055394,
+    "cy": 1954.5592050978894,
+    "camera_matrix_K": [
+        [
+            3058.594252755987,
+            0.0,
+            880.062159055394
+        ],
+        [
+            0.0,
+            3062.0812620042566,
+            1954.5592050978894
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients_dist": [
+        0.19970372597308086,
+        -1.036808035881207,
+        -0.010677854684958934,
+        -0.003348566829017494,
+        2.485603531042083
+    ],
+    "pattern_size": [
+        8,
+        6
+    ],
+    "square_size_mm": 30.0,
+    "inlier_images_count": 21,
+    "total_images_count": 27,
+    "per_image_errors": [
+        {
+            "image": "IMG_20260822_210243.jpg",
+            "reprojection_error_px": 0.7095794708085923
+        },
+        {
+            "image": "IMG_20260822_210249.jpg",
+            "reprojection_error_px": 0.352521910970075
+        },
+        {
+            "image": "IMG_20260822_220352.jpg",
+            "reprojection_error_px": 0.49085464821690505
+        },
+        {
+            "image": "IMG_20260822_220405.jpg",
+            "reprojection_error_px": 0.9008311231104372
+        },
+        {
+            "image": "IMG_20260822_220421.jpg",
+            "reprojection_error_px": 0.5797088862373728
+        },
+        {
+            "image": "IMG_20260822_220431.jpg",
+            "reprojection_error_px": 0.5942995516171381
+        },
+        {
+            "image": "IMG_20260822_220458.jpg",
+            "reprojection_error_px": 0.8405573631185482
+        },
+        {
+            "image": "IMG_20260822_220548.jpg",
+            "reprojection_error_px": 0.6720335445212533
+        },
+        {
+            "image": "IMG_20260822_220803.jpg",
+            "reprojection_error_px": 1.7294649609149524
+        },
+        {
+            "image": "IMG_20260822_220842.jpg",
+            "reprojection_error_px": 1.4616098826862138
+        },
+        {
+            "image": "IMG_20260822_220928.jpg",
+            "reprojection_error_px": 1.0663304037582613
+        },
+        {
+            "image": "IMG_20260822_220936.jpg",
+            "reprojection_error_px": 0.824955717667715
+        },
+        {
+            "image": "IMG_20260822_220945.jpg",
+            "reprojection_error_px": 0.7697199022018975
+        },
+        {
+            "image": "IMG_20260822_221029.jpg",
+            "reprojection_error_px": 0.9212617987408439
+        },
+        {
+            "image": "IMG_20260822_221035.jpg",
+            "reprojection_error_px": 1.0292785644108997
+        },
+        {
+            "image": "IMG_20260822_221042.jpg",
+            "reprojection_error_px": 1.0218435355853774
+        },
+        {
+            "image": "IMG_20260822_221052.jpg",
+            "reprojection_error_px": 1.0156065067550832
+        },
+        {
+            "image": "IMG_20260822_221116.jpg",
+            "reprojection_error_px": 1.1165854564699778
+        },
+        {
+            "image": "IMG_20260822_221126.jpg",
+            "reprojection_error_px": 1.131698701022296
+        },
+        {
+            "image": "IMG_20260822_221141.jpg",
+            "reprojection_error_px": 1.1181334619849943
+        },
+        {
+            "image": "IMG_20260822_221211.jpg",
+            "reprojection_error_px": 1.0440530130021957
+        }
+    ]
+}

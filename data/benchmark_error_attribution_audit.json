@@ -1,0 +1,977 @@
+{
+  "metadata": {
+    "title": "Phase 4 Two-Tier Error Attribution and Target-Association Audit",
+    "total_images": 54,
+    "overall_p1_mape_pct": 51.6,
+    "overall_p2_mape_pct": 42.9,
+    "attribution_protocol": {
+      "type": "two_tier_causal_taxonomy",
+      "tier_1_definition": "Upstream target detection status (Mutually exclusive: each image has exactly one status)",
+      "tier_2_definition": "Downstream and evaluation interference factors (Multi-label: each image has zero or more factors)",
+      "note": "Tier 1 sums to 54 (100%). Tier 2 factors are non-exclusive and do not sum to 100%."
+    }
+  },
+  "summary_comparison": {
+    "BanhCuon": {
+      "p1_mape": 67.5,
+      "p2_mape": 67.5,
+      "diff": 0.0
+    },
+    "BanhMi": {
+      "p1_mape": 34.5,
+      "p2_mape": 43.3,
+      "diff": -8.8
+    },
+    "BunBoHue": {
+      "p1_mape": 16.0,
+      "p2_mape": 19.4,
+      "diff": -3.4
+    },
+    "BunRieu-CanhBun": {
+      "p1_mape": 18.4,
+      "p2_mape": 17.3,
+      "diff": 1.1
+    },
+    "ComSuon": {
+      "p1_mape": 127.1,
+      "p2_mape": 15.4,
+      "diff": 111.6
+    },
+    "Pho": {
+      "p1_mape": 45.8,
+      "p2_mape": 46.1,
+      "diff": -0.3
+    },
+    "SupCua": {
+      "p1_mape": 75.5,
+      "p2_mape": 69.5,
+      "diff": 6.1
+    }
+  },
+  "tier_1_detection_status_counts": {
+    "D1_correct_target_detected": 34,
+    "D2_misclassified": 12,
+    "D3_missed_or_partial": 5,
+    "D4_fragmented": 1,
+    "D5_duplicate_detection": 2
+  },
+  "tier_2_interference_factor_counts": {
+    "E3_downstream_geometric_depth_error": 6,
+    "E1_auxiliary_side_dish_interference": 10,
+    "E2_target_association_mismatch": 2
+  },
+  "image_audit_records": [
+    {
+      "folder": "Pho",
+      "filename": "Pho1 (1).jpg",
+      "gt_mass_g": 819.5,
+      "pred_m_protocol1_g": 782.9,
+      "rel_err_p1_pct": 4.5,
+      "pred_m_protocol2_g": 782.9,
+      "rel_err_p2_pct": 4.5,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Pho (Vietnamese noodle soup)"
+      ]
+    },
+    {
+      "folder": "Pho",
+      "filename": "Pho1 (2).jpg",
+      "gt_mass_g": 819.5,
+      "pred_m_protocol1_g": 789.4,
+      "rel_err_p1_pct": 3.7,
+      "pred_m_protocol2_g": 789.4,
+      "rel_err_p2_pct": 3.7,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun mam (Fermented fish noodle soup)"
+      ]
+    },
+    {
+      "folder": "Pho",
+      "filename": "Pho1 (3).jpg",
+      "gt_mass_g": 819.5,
+      "pred_m_protocol1_g": 64.9,
+      "rel_err_p1_pct": 92.1,
+      "pred_m_protocol2_g": 64.9,
+      "rel_err_p2_pct": 92.1,
+      "upstream_detection_status": "D3_missed_or_partial",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun (Rice vermicelli)"
+      ]
+    },
+    {
+      "folder": "Pho",
+      "filename": "Pho1 (4).jpg",
+      "gt_mass_g": 819.5,
+      "pred_m_protocol1_g": 1264.8,
+      "rel_err_p1_pct": 54.3,
+      "pred_m_protocol2_g": 1264.8,
+      "rel_err_p2_pct": 54.3,
+      "upstream_detection_status": "D4_fragmented",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Canh (Soup)",
+        "Bun (Rice vermicelli)"
+      ]
+    },
+    {
+      "folder": "Pho",
+      "filename": "Pho1 (5).jpg",
+      "gt_mass_g": 819.5,
+      "pred_m_protocol1_g": 211.3,
+      "rel_err_p1_pct": 74.2,
+      "pred_m_protocol2_g": 197.4,
+      "rel_err_p2_pct": 75.9,
+      "upstream_detection_status": "D3_missed_or_partial",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun (Rice vermicelli)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (6).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 48.2,
+      "rel_err_p1_pct": 84.7,
+      "pred_m_protocol2_g": 48.2,
+      "rel_err_p2_pct": 84.7,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Dau hu (Tofu)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (1).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 214.5,
+      "rel_err_p1_pct": 32.0,
+      "pred_m_protocol2_g": 214.5,
+      "rel_err_p2_pct": 32.0,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Cha (Vietnamese pork roll)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (2).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 68.5,
+      "rel_err_p1_pct": 78.3,
+      "pred_m_protocol2_g": 68.5,
+      "rel_err_p2_pct": 78.3,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Thit ga (Chicken)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (3).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 156.4,
+      "rel_err_p1_pct": 50.4,
+      "pred_m_protocol2_g": 156.4,
+      "rel_err_p2_pct": 50.4,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Bun dau (Vermicelli with tofu)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (4).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 49.3,
+      "rel_err_p1_pct": 84.4,
+      "pred_m_protocol2_g": 49.3,
+      "rel_err_p2_pct": 84.4,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhCuon",
+      "filename": "BanhCuon1 (5).jpg",
+      "gt_mass_g": 315.5,
+      "pred_m_protocol1_g": 77.9,
+      "rel_err_p1_pct": 75.3,
+      "pred_m_protocol2_g": 77.9,
+      "rel_err_p2_pct": 75.3,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [
+        "E3_downstream_geometric_depth_error"
+      ],
+      "detected_classes": [
+        "Thit ga (Chicken)",
+        "Thit ga (Chicken)",
+        "Cha (Vietnamese pork roll)",
+        "Cua (Crab)",
+        "Ca (Fish)",
+        "Dau hu (Tofu)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "ComSuon",
+      "filename": "com-suon1 (5).jpg",
+      "gt_mass_g": 390.5,
+      "pred_m_protocol1_g": 1752.6,
+      "rel_err_p1_pct": 348.8,
+      "pred_m_protocol2_g": 475.5,
+      "rel_err_p2_pct": 21.8,
+      "upstream_detection_status": "D5_duplicate_detection",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference",
+        "E2_target_association_mismatch"
+      ],
+      "detected_classes": [
+        "Canh (Soup)",
+        "Canh (Soup)",
+        "Thit heo (Pork)",
+        "Thit heo (Pork)",
+        "Bun (Rice vermicelli)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)",
+        "Ca rot (Carrot)"
+      ]
+    },
+    {
+      "folder": "ComSuon",
+      "filename": "com-suon1 (1).jpg",
+      "gt_mass_g": 390.5,
+      "pred_m_protocol1_g": 486.9,
+      "rel_err_p1_pct": 24.7,
+      "pred_m_protocol2_g": 486.9,
+      "rel_err_p2_pct": 24.7,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Thit heo (Pork)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)"
+      ]
+    },
+    {
+      "folder": "ComSuon",
+      "filename": "com-suon1 (2).jpg",
+      "gt_mass_g": 390.5,
+      "pred_m_protocol1_g": 1334.0,
+      "rel_err_p1_pct": 241.6,
+      "pred_m_protocol2_g": 431.2,
+      "rel_err_p2_pct": 10.4,
+      "upstream_detection_status": "D5_duplicate_detection",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference",
+        "E2_target_association_mismatch"
+      ],
+      "detected_classes": [
+        "Canh (Soup)",
+        "Canh (Soup)",
+        "Thit heo (Pork)",
+        "Thit heo (Pork)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)"
+      ]
+    },
+    {
+      "folder": "ComSuon",
+      "filename": "com-suon1 (3).jpg",
+      "gt_mass_g": 390.5,
+      "pred_m_protocol1_g": 434.3,
+      "rel_err_p1_pct": 11.2,
+      "pred_m_protocol2_g": 434.3,
+      "rel_err_p2_pct": 11.2,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Com tam (Broken rice)",
+        "Thit heo (Pork)",
+        "Thit heo (Pork)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)"
+      ]
+    },
+    {
+      "folder": "ComSuon",
+      "filename": "com-suon1 (4).jpg",
+      "gt_mass_g": 390.5,
+      "pred_m_protocol1_g": 426.0,
+      "rel_err_p1_pct": 9.1,
+      "pred_m_protocol2_g": 426.0,
+      "rel_err_p2_pct": 9.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Thit heo (Pork)",
+        "Com (Rice)",
+        "Dua leo (Cucumber)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)",
+        "Ca rot (Carrot)"
+      ]
+    },
+    {
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (1).jpg",
+      "gt_mass_g": 894.5,
+      "pred_m_protocol1_g": 810.8,
+      "rel_err_p1_pct": 9.4,
+      "pred_m_protocol2_g": 703.2,
+      "rel_err_p2_pct": 21.4,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (2).jpg",
+      "gt_mass_g": 894.5,
+      "pred_m_protocol1_g": 880.4,
+      "rel_err_p1_pct": 1.6,
+      "pred_m_protocol2_g": 760.4,
+      "rel_err_p2_pct": 15.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (3).jpg",
+      "gt_mass_g": 894.5,
+      "pred_m_protocol1_g": 813.3,
+      "rel_err_p1_pct": 9.1,
+      "pred_m_protocol2_g": 766.4,
+      "rel_err_p2_pct": 14.3,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (4).jpg",
+      "gt_mass_g": 894.5,
+      "pred_m_protocol1_g": 727.5,
+      "rel_err_p1_pct": 18.7,
+      "pred_m_protocol2_g": 607.5,
+      "rel_err_p2_pct": 32.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunBoHue",
+      "filename": "BunBoHue1 (5).jpg",
+      "gt_mass_g": 894.5,
+      "pred_m_protocol1_g": 1262.8,
+      "rel_err_p1_pct": 41.2,
+      "pred_m_protocol2_g": 766.4,
+      "rel_err_p2_pct": 14.3,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Cua (Crab)",
+        "Cua (Crab)",
+        "Ca (Fish)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi1.jpg",
+      "gt_mass_g": 242.6,
+      "pred_m_protocol1_g": 224.1,
+      "rel_err_p1_pct": 7.6,
+      "pred_m_protocol2_g": 224.1,
+      "rel_err_p2_pct": 7.6,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi2.jpg",
+      "gt_mass_g": 242.6,
+      "pred_m_protocol1_g": 143.6,
+      "rel_err_p1_pct": 40.8,
+      "pred_m_protocol2_g": 42.5,
+      "rel_err_p2_pct": 82.5,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Cha (Vietnamese pork roll)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Ca chua (Tomato)",
+        "Ca chua (Tomato)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)",
+        "Ca rot (Carrot)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi3.jpg",
+      "gt_mass_g": 242.6,
+      "pred_m_protocol1_g": 134.9,
+      "rel_err_p1_pct": 44.4,
+      "pred_m_protocol2_g": 31.9,
+      "rel_err_p2_pct": 86.9,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Pho mai (Cheese)",
+        "Pho mai (Cheese)",
+        "Cha (Vietnamese pork roll)",
+        "Cha (Vietnamese pork roll)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)",
+        "Ca rot (Carrot)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi4.jpg",
+      "gt_mass_g": 242.6,
+      "pred_m_protocol1_g": 279.1,
+      "rel_err_p1_pct": 15.0,
+      "pred_m_protocol2_g": 89.7,
+      "rel_err_p2_pct": 63.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit bo (Beef)",
+        "Thit bo (Beef)",
+        "Thit bo (Beef)",
+        "Cha (Vietnamese pork roll)",
+        "Cha (Vietnamese pork roll)",
+        "Cha (Vietnamese pork roll)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Ca chua (Tomato)",
+        "Dua leo (Cucumber)",
+        "Ca rot (Carrot)",
+        "Ca rot (Carrot)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi5.jpg",
+      "gt_mass_g": 242.6,
+      "pred_m_protocol1_g": 0.0,
+      "rel_err_p1_pct": 100.0,
+      "pred_m_protocol2_g": 0,
+      "rel_err_p2_pct": 100.0,
+      "upstream_detection_status": "D3_missed_or_partial",
+      "downstream_interference_factors": [],
+      "detected_classes": []
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (1).jpg",
+      "gt_mass_g": 255.6,
+      "pred_m_protocol1_g": 198.4,
+      "rel_err_p1_pct": 22.4,
+      "pred_m_protocol2_g": 198.4,
+      "rel_err_p2_pct": 22.4,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (2).jpg",
+      "gt_mass_g": 255.6,
+      "pred_m_protocol1_g": 331.3,
+      "rel_err_p1_pct": 29.6,
+      "pred_m_protocol2_g": 331.3,
+      "rel_err_p2_pct": 29.6,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (3).jpg",
+      "gt_mass_g": 255.6,
+      "pred_m_protocol1_g": 392.4,
+      "rel_err_p1_pct": 53.5,
+      "pred_m_protocol2_g": 392.4,
+      "rel_err_p2_pct": 53.5,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Hamburger"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "banh-mi250g (4).jpg",
+      "gt_mass_g": 255.6,
+      "pred_m_protocol1_g": 281.6,
+      "rel_err_p1_pct": 10.2,
+      "pred_m_protocol2_g": 281.6,
+      "rel_err_p2_pct": 10.2,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (1).jpg",
+      "gt_mass_g": 210.0,
+      "pred_m_protocol1_g": 244.6,
+      "rel_err_p1_pct": 16.5,
+      "pred_m_protocol2_g": 157.5,
+      "rel_err_p2_pct": 25.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Pho mai (Cheese)",
+        "Pho mai (Cheese)",
+        "Pho mai (Cheese)",
+        "Thit ga (Chicken)",
+        "Cha (Vietnamese pork roll)",
+        "Cha (Vietnamese pork roll)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Ca chua (Tomato)",
+        "Ca chua (Tomato)",
+        "Ca chua (Tomato)",
+        "Ca chua (Tomato)",
+        "Rau (Vegetables)",
+        "Ca rot (Carrot)",
+        "Rau (Vegetables)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (2).jpg",
+      "gt_mass_g": 210.0,
+      "pred_m_protocol1_g": 265.8,
+      "rel_err_p1_pct": 26.6,
+      "pred_m_protocol2_g": 265.8,
+      "rel_err_p2_pct": 26.6,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMiDucTri (3).jpg",
+      "gt_mass_g": 210.0,
+      "pred_m_protocol1_g": 267.1,
+      "rel_err_p1_pct": 27.2,
+      "pred_m_protocol2_g": 267.1,
+      "rel_err_p2_pct": 27.2,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (4).jpg",
+      "gt_mass_g": 320.5,
+      "pred_m_protocol1_g": 637.8,
+      "rel_err_p1_pct": 99.0,
+      "pred_m_protocol2_g": 564.2,
+      "rel_err_p2_pct": 76.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Trung (Egg)",
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (1).jpg",
+      "gt_mass_g": 320.5,
+      "pred_m_protocol1_g": 384.1,
+      "rel_err_p1_pct": 19.8,
+      "pred_m_protocol2_g": 310.5,
+      "rel_err_p2_pct": 3.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Trung (Egg)",
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (2).jpg",
+      "gt_mass_g": 320.5,
+      "pred_m_protocol1_g": 330.1,
+      "rel_err_p1_pct": 3.0,
+      "pred_m_protocol2_g": 256.5,
+      "rel_err_p2_pct": 20.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Trung (Egg)",
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BanhMi",
+      "filename": "BanhMi_Trung (3).jpg",
+      "gt_mass_g": 320.5,
+      "pred_m_protocol1_g": 204.8,
+      "rel_err_p1_pct": 36.1,
+      "pred_m_protocol2_g": 131.2,
+      "rel_err_p2_pct": 59.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Trung (Egg)",
+        "Banh mi (Vietnamese baguette sandwich)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (4).jpg",
+      "gt_mass_g": 838.9,
+      "pred_m_protocol1_g": 925.8,
+      "rel_err_p1_pct": 10.4,
+      "pred_m_protocol2_g": 925.8,
+      "rel_err_p2_pct": 10.4,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (1).jpg",
+      "gt_mass_g": 838.9,
+      "pred_m_protocol1_g": 1053.5,
+      "rel_err_p1_pct": 25.6,
+      "pred_m_protocol2_g": 1053.5,
+      "rel_err_p2_pct": 25.6,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun rieu (Crab noodle soup)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (2).jpg",
+      "gt_mass_g": 838.9,
+      "pred_m_protocol1_g": 766.4,
+      "rel_err_p1_pct": 8.6,
+      "pred_m_protocol2_g": 766.4,
+      "rel_err_p2_pct": 8.6,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun rieu (Crab noodle soup)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu1 (3).jpg",
+      "gt_mass_g": 838.9,
+      "pred_m_protocol1_g": 1116.0,
+      "rel_err_p1_pct": 33.0,
+      "pred_m_protocol2_g": 1116.0,
+      "rel_err_p2_pct": 33.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (3).jpg",
+      "gt_mass_g": 908.9,
+      "pred_m_protocol1_g": 1194.8,
+      "rel_err_p1_pct": 31.5,
+      "pred_m_protocol2_g": 1074.8,
+      "rel_err_p2_pct": 18.3,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun bo Hue (Hue beef noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (1).jpg",
+      "gt_mass_g": 908.9,
+      "pred_m_protocol1_g": 1052.9,
+      "rel_err_p1_pct": 15.8,
+      "pred_m_protocol2_g": 984.7,
+      "rel_err_p2_pct": 8.3,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun rieu (Crab noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "BunRieu-CanhBun",
+      "filename": "bun-rieu (2).jpg",
+      "gt_mass_g": 908.9,
+      "pred_m_protocol1_g": 874.2,
+      "rel_err_p1_pct": 3.8,
+      "pred_m_protocol2_g": 754.2,
+      "rel_err_p2_pct": 17.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [
+        "E1_auxiliary_side_dish_interference"
+      ],
+      "detected_classes": [
+        "Bun rieu (Crab noodle soup)",
+        "Rau (Vegetables)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (6).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 451.4,
+      "rel_err_p1_pct": 4.1,
+      "pred_m_protocol2_g": 451.4,
+      "rel_err_p2_pct": 4.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Canh (Soup)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (1).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 1304.8,
+      "rel_err_p1_pct": 177.3,
+      "pred_m_protocol2_g": 1275.5,
+      "rel_err_p2_pct": 171.0,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Canh (Soup)",
+        "Canh (Soup)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (2).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 34.6,
+      "rel_err_p1_pct": 92.6,
+      "pred_m_protocol2_g": 34.6,
+      "rel_err_p2_pct": 92.6,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (3).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 27.1,
+      "rel_err_p1_pct": 94.2,
+      "pred_m_protocol2_g": 27.1,
+      "rel_err_p2_pct": 94.2,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (4).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 0.0,
+      "rel_err_p1_pct": 100.0,
+      "pred_m_protocol2_g": 0.0,
+      "rel_err_p2_pct": 100.0,
+      "upstream_detection_status": "D3_missed_or_partial",
+      "downstream_interference_factors": [],
+      "detected_classes": []
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua (5).jpg",
+      "gt_mass_g": 470.6,
+      "pred_m_protocol1_g": 451.4,
+      "rel_err_p1_pct": 4.1,
+      "pred_m_protocol2_g": 451.4,
+      "rel_err_p2_pct": 4.1,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Canh (Soup)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua1 (4).jpg",
+      "gt_mass_g": 500.6,
+      "pred_m_protocol1_g": 0.0,
+      "rel_err_p1_pct": 100.0,
+      "pred_m_protocol2_g": 0.0,
+      "rel_err_p2_pct": 100.0,
+      "upstream_detection_status": "D3_missed_or_partial",
+      "downstream_interference_factors": [],
+      "detected_classes": []
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua1 (1).jpg",
+      "gt_mass_g": 500.6,
+      "pred_m_protocol1_g": 1041.7,
+      "rel_err_p1_pct": 108.1,
+      "pred_m_protocol2_g": 769.5,
+      "rel_err_p2_pct": 53.7,
+      "upstream_detection_status": "D1_correct_target_detected",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Canh (Soup)",
+        "Thit bo (Beef)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua1 (2).jpg",
+      "gt_mass_g": 500.6,
+      "pred_m_protocol1_g": 250.8,
+      "rel_err_p1_pct": 49.9,
+      "pred_m_protocol2_g": 250.8,
+      "rel_err_p2_pct": 49.9,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Dau hu (Tofu)"
+      ]
+    },
+    {
+      "folder": "SupCua",
+      "filename": "SupCua1 (3).jpg",
+      "gt_mass_g": 500.6,
+      "pred_m_protocol1_g": 624.8,
+      "rel_err_p1_pct": 24.8,
+      "pred_m_protocol2_g": 624.8,
+      "rel_err_p2_pct": 24.8,
+      "upstream_detection_status": "D2_misclassified",
+      "downstream_interference_factors": [],
+      "detected_classes": [
+        "Thit heo (Pork)",
+        "Banh mi (Vietnamese baguette sandwich)",
+        "Dau hu (Tofu)"
+      ]
+    }
+  ]
+}

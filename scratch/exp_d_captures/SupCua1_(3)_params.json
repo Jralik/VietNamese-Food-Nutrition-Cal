@@ -1,0 +1,19 @@
+{
+ "image": "SupCua1 (3).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Canh (Soup)",
+   "mm_per_pixel": 0.3290676416819013,
+   "scale_source": "plate_heuristic",
+   "scale_confidence": "medium",
+   "depth_anchored": false,
+   "bbox": [
+    171.0,
+    637.0,
+    718.0,
+    1078.0
+   ]
+  }
+ ]
+}

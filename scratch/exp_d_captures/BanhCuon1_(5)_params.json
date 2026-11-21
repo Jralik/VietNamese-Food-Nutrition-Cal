@@ -1,0 +1,19 @@
+{
+ "image": "BanhCuon1 (5).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Cha (Vietnamese pork roll)",
+   "mm_per_pixel": 0.20115354716674583,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    174.0,
+    503.0,
+    513.0,
+    937.0
+   ]
+  }
+ ]
+}

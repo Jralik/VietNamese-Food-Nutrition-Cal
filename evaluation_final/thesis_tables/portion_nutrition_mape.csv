@@ -1,0 +1,10 @@
+class,portion_n,portion_mae_g,portion_mape_pct,nutrition_n,nutrition_mae_kcal,nutrition_mape_pct
+Banh mi,16,113.4,51.0,16,300.7,51.0
+Bun bo Hue,5,88.8,11.0,5,79.9,11.0
+Bun rieu,6,101.5,12.1,6,86.3,12.1
+Canh,1,301.4,200.9,1,105.5,201.0
+Com tam,5,81.3,13.2,5,134.2,13.2
+Pho,5,179.7,21.9,5,134.8,21.9
+Rau,4,30.0,33.3,4,7.5,33.3
+Trung,2,147.6,66.7,2,211.1,66.7
+Sup cua,7,289.5,61.3,7,202.7,61.3

@@ -1,0 +1,19 @@
+{
+ "image": "banh-mi2.jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Banh mi (Vietnamese baguette sandwich)",
+   "mm_per_pixel": 0.24213502678094087,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    584.0,
+    32.0,
+    1437.0,
+    513.0
+   ]
+  }
+ ]
+}

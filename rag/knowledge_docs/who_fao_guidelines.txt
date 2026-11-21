@@ -1,0 +1,50 @@
+== HƯỚNG DẪN DINH DƯỠNG WHO VÀ FAO ==
+Nguồn: Tổ chức Y tế Thế giới (WHO) và Tổ chức Nông Lương Liên Hợp Quốc (FAO)
+
+NĂNG LƯỢNG VÀ MACRONUTRIENTS (WHO/FAO 2003, updated 2023)
+WHO khuyến nghị phân phối năng lượng hàng ngày như sau:
+- Carbohydrate: 55–75% tổng năng lượng hàng ngày
+- Chất béo (Fat): 15–30% tổng năng lượng — ưu tiên chất béo không bão hòa (unsaturated)
+- Protein: 10–15% tổng năng lượng — tối thiểu 0.83 g/kg trọng lượng cơ thể/ngày
+- Chất béo bão hòa (Saturated fat): dưới 10% tổng năng lượng
+- Chất béo chuyển hóa (Trans fat): dưới 1% tổng năng lượng
+
+ĐƯỜNG TỰ DO (Free Sugars) — WHO 2015
+WHO khuyến nghị mạnh mẽ: lượng đường tự do (thêm vào trong chế biến) nên dưới 10% tổng năng lượng mỗi ngày. Khuyến nghị bổ sung: giảm xuống dưới 5% (khoảng 25g/ngày cho người ăn 2000 kcal) để có thêm lợi ích sức khỏe. Đường tự do bao gồm: đường cát, mật ong, si-rô, nước ép trái cây. Không bao gồm đường tự nhiên trong rau củ quả nguyên.
+
+MUỐI VÀ NATRI (Salt/Sodium) — WHO 2012, reaffirmed 2023
+WHO khuyến nghị: dưới 5g muối/ngày (tương đương dưới 2g Natri/ngày) cho người trưởng thành. Trẻ em cần ít hơn tùy theo độ tuổi. Hầu hết người Việt Nam tiêu thụ muối cao hơn mức khuyến nghị do nước mắm, mắm tôm, và nước dùng. Giảm muối là biện pháp hiệu quả nhất để phòng ngừa tăng huyết áp và bệnh tim mạch. 1g muối = 400mg Natri.
+
+CHẤT XƠ (Dietary Fiber) — FAO/WHO 2003
+FAO và WHO khuyến nghị: ít nhất 25g chất xơ/ngày. Chất xơ hòa tan (trong yến mạch, đậu, táo) giúp giảm cholesterol LDL. Chất xơ không hòa tan (trong rau, ngũ cốc nguyên hạt) hỗ trợ tiêu hóa và phòng ung thư đại tràng. Người Việt thường nhận đủ chất xơ qua rau xanh và các loại đậu trong ẩm thực truyền thống.
+
+CHẤT BÉO — FAO/WHO JOINT EXPERT CONSULTATION 2010
+Không phải tất cả chất béo đều xấu. Phân loại:
+- Chất béo không bão hòa đa (PUFA — omega-3, omega-6): có lợi cho tim mạch, có trong cá, hạt lanh, hạt chia
+- Chất béo không bão hòa đơn (MUFA): có trong dầu olive, bơ, các loại hạt — bảo vệ tim mạch
+- Chất béo bão hòa (SFA): có trong mỡ động vật, dầu dừa, dầu cọ — nên hạn chế (<10% năng lượng)
+- Trans fat: hoàn toàn nên tránh (từ margarine, đồ chiên công nghiệp)
+
+PROTEIN — WHO/FAO/UNU 2007
+Nhu cầu protein tối thiểu: 0.66 g/kg trọng lượng cơ thể/ngày (safe level). Nhu cầu thực tế khuyến nghị: 0.83 g/kg/ngày. Người hoạt động thể lực cao và vận động viên có thể cần 1.2–2.0 g/kg/ngày. Nguồn protein tốt từ ẩm thực Việt: thịt gà, cá, đậu phụ, tôm, trứng. Protein động vật đầy đủ amino acid thiết yếu hơn protein thực vật — nhưng kết hợp đậu + gạo cũng cung cấp đủ amino acid.
+
+MICRONUTRIENTS — WHO/FAO
+Sắt (Iron): Nam 8mg/ngày, Nữ premenopausal 18mg/ngày. Nguồn: thịt đỏ, gan, rau lá xanh đậm, đậu. Hấp thu tốt hơn khi ăn cùng vitamin C.
+Canxi (Calcium): 700–1000mg/ngày. Nguồn: sữa, phô mai, tôm, cá nhỏ ăn cả xương, rau lá xanh đậm.
+Vitamin D: 15–20 mcg (600–800 IU)/ngày. Nguồn: ánh nắng mặt trời, cá béo, trứng, sữa tăng cường.
+Kẽm (Zinc): 8–11mg/ngày. Nguồn: thịt đỏ, hải sản (đặc biệt hàu), hạt bí đỏ.
+Folate (B9): 400 mcg/ngày, 600 mcg cho phụ nữ mang thai. Nguồn: rau lá xanh, đậu, ngũ cốc tăng cường.
+
+CHỈ SỐ KHỐI CƠ THỂ BMI — WHO CLASSIFICATION
+Gầy (Underweight): BMI < 18.5
+Bình thường (Normal weight): 18.5 – 24.9
+Thừa cân (Overweight): 25.0 – 29.9
+Béo phì cấp 1 (Obese Class I): 30.0 – 34.9
+Béo phì cấp 2 (Obese Class II): 35.0 – 39.9
+Béo phì nặng (Obese Class III): ≥ 40.0
+Lưu ý: Người châu Á có nguy cơ mắc bệnh tim mạch và tiểu đường ở mức BMI thấp hơn — WHO đề xuất ngưỡng hành động sớm hơn ở BMI 23 (thừa cân) và 27.5 (béo phì) cho người châu Á.
+
+ĂN UỐNG LÀNH MẠNH — NGUYÊN TẮC CHUNG WHO
+Tăng cường: rau xanh và trái cây (ít nhất 400g/ngày hoặc 5 phần); ngũ cốc nguyên hạt; đậu các loại; cá và thịt gia cầm không da; các loại hạt.
+Hạn chế: thực phẩm chế biến sẵn; đồ chiên rán; nước ngọt có đường; thịt đỏ và thịt chế biến (xúc xích, lạp xưởng); rượu bia.
+Tránh: trans fat; quá nhiều muối; thực phẩm siêu chế biến (ultra-processed foods).

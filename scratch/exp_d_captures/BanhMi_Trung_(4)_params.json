@@ -1,0 +1,33 @@
+{
+ "image": "BanhMi_Trung (4).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Banh mi (Vietnamese baguette sandwich)",
+   "mm_per_pixel": 0.3642068177075485,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    431.0,
+    54.0,
+    859.0,
+    687.0
+   ]
+  },
+  {
+   "instance": 1,
+   "class_name": "Banh mi (Vietnamese baguette sandwich)",
+   "mm_per_pixel": 0.3642068177075485,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    821.0,
+    341.0,
+    1134.0,
+    660.0
+   ]
+  }
+ ]
+}

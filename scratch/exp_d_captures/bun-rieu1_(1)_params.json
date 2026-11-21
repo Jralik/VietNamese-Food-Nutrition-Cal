@@ -1,0 +1,19 @@
+{
+ "image": "bun-rieu1 (1).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Bun rieu (Crab noodle soup)",
+   "mm_per_pixel": 0.36310728885136073,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    78.0,
+    618.0,
+    687.0,
+    1184.0
+   ]
+  }
+ ]
+}

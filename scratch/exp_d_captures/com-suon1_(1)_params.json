@@ -1,0 +1,19 @@
+{
+ "image": "com-suon1 (1).jpg",
+ "items": [
+  {
+   "instance": 0,
+   "class_name": "Com tam (Broken rice)",
+   "mm_per_pixel": 0.3554192588002232,
+   "scale_source": "aruco_marker",
+   "scale_confidence": "high",
+   "depth_anchored": true,
+   "bbox": [
+    126.0,
+    428.0,
+    800.0,
+    1118.0
+   ]
+  }
+ ]
+}

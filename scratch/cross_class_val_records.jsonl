@@ -1,0 +1,11 @@
+{"image": "Pho1 (3).jpg", "folder": "Pho", "iou": 0.9837, "category": "candidate", "class_i": 12, "conf_i": 0.3423, "class_j": 46, "conf_j": 0.9405, "gt_class_ids": [46]}
+{"image": "BunBoHue1 (2).jpg", "folder": "BunBoHue", "iou": 0.0632, "category": "candidate", "class_i": 24, "conf_i": 0.3957, "class_j": 48, "conf_j": 0.5497, "gt_class_ids": [12, 48]}
+{"image": "BunBoHue1 (4).jpg", "folder": "BunBoHue", "iou": 0.0308, "category": "candidate", "class_i": 24, "conf_i": 0.4705, "class_j": 48, "conf_j": 0.7158, "gt_class_ids": [12, 48]}
+{"image": "banh-mi250g (2).jpg", "folder": "BanhMi", "iou": 0.9781, "category": "candidate", "class_i": 4, "conf_i": 0.965, "class_j": 34, "conf_j": 0.9028, "gt_class_ids": [4]}
+{"image": "banh-mi250g (3).jpg", "folder": "BanhMi", "iou": 0.9722, "category": "candidate", "class_i": 4, "conf_i": 0.8866, "class_j": 34, "conf_j": 0.9599, "gt_class_ids": [4]}
+{"image": "bun-rieu1 (4).jpg", "folder": "BunRieu-CanhBun", "iou": 0.9625, "category": "candidate", "class_i": 12, "conf_i": 0.9365, "class_j": 16, "conf_j": 0.9614, "gt_class_ids": [16]}
+{"image": "bun-rieu1 (1).jpg", "folder": "BunRieu-CanhBun", "iou": 0.9862, "category": "candidate", "class_i": 12, "conf_i": 0.5425, "class_j": 16, "conf_j": 0.8513, "gt_class_ids": [16]}
+{"image": "bun-rieu (3).jpg", "folder": "BunRieu-CanhBun", "iou": 0.9674, "category": "candidate", "class_i": 12, "conf_i": 0.9387, "class_j": 16, "conf_j": 0.5496, "gt_class_ids": [16, 48]}
+{"image": "bun-rieu (3).jpg", "folder": "BunRieu-CanhBun", "iou": 0.0537, "category": "candidate", "class_i": 24, "conf_i": 0.8469, "class_j": 48, "conf_j": 0.3738, "gt_class_ids": [16, 48]}
+{"image": "bun-rieu (1).jpg", "folder": "BunRieu-CanhBun", "iou": 0.9879, "category": "candidate", "class_i": 12, "conf_i": 0.9551, "class_j": 16, "conf_j": 0.3538, "gt_class_ids": [16, 48]}
+{"image": "SupCua1 (2).jpg", "folder": "SupCua", "iou": 0.971, "category": "candidate", "class_i": 21, "conf_i": 0.4625, "class_j": 67, "conf_j": 0.9159, "gt_class_ids": [67]}

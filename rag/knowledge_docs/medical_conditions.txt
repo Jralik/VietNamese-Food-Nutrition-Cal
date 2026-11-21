@@ -1,0 +1,61 @@
+== DINH DƯỠNG CHO CÁC BỆNH LÝ MÃN TÍNH ==
+Nguồn: WHO, NIH, American Diabetes Association (ADA), American Heart Association (AHA), Bộ Y tế Việt Nam
+
+TIỂU ĐƯỜNG TYPE 2 — NGUYÊN TẮC ĂN UỐNG
+Tiểu đường type 2 là bệnh mãn tính liên quan đến kháng insulin và rối loạn chuyển hóa đường. Chế độ ăn đóng vai trò then chốt trong kiểm soát đường huyết.
+
+Kiểm soát carbohydrate: Không cần loại bỏ hoàn toàn carb nhưng cần kiểm soát chất lượng và số lượng. Ưu tiên carb có chỉ số đường huyết (GI) thấp: gạo lứt, ngũ cốc nguyên hạt, đậu các loại, rau củ không tinh bột. Tránh: nước ngọt, đồ ngọt, gạo trắng ăn quá nhiều, bánh mì trắng, cháo trắng (GI rất cao).
+
+Phương pháp đĩa thức ăn cho người tiểu đường (ADA Plate Method):
+- 1/2 đĩa = rau không tinh bột (rau xanh, dưa leo, bông cải)
+- 1/4 đĩa = protein nạc (cá, gà, đậu hũ, trứng)
+- 1/4 đĩa = ngũ cốc/tinh bột (gạo lứt, khoai lang, ngô)
+Tránh thức ăn ngọt, nước ép trái cây, rượu bia.
+
+Các món ăn Việt Nam phù hợp với người tiểu đường:
+- Canh rau xanh (ít calo, nhiều chất xơ)
+- Gỏi cuốn (không chiên, nhiều rau)
+- Cá hấp/luộc
+- Đậu hũ các dạng (luộc, hấp — không chiên)
+- Rau muống xào ít dầu
+Cần hạn chế: cơm trắng nhiều, phở, bún, cháo (nhiều tinh bột tinh chế), các món chiên.
+
+Chỉ số đường huyết (GI) của một số thực phẩm thông dụng trong ẩm thực Việt:
+- Gạo trắng: GI 64–93 (cao) — ăn vừa phải, kết hợp với protein và chất xơ để giảm GI bữa ăn
+- Cháo trắng: GI 78–87 (rất cao) — hạn chế
+- Bún/phở: GI 40–75 — tùy cách chế biến, phần protein và rau kèm theo
+- Bánh mì Việt Nam: GI ~70 — ăn vừa phải
+- Khoai lang: GI 44–61 (trung bình thấp) — tốt hơn gạo trắng
+- Đậu các loại: GI 20–45 (thấp) — rất phù hợp
+
+TĂNG HUYẾT ÁP — NGUYÊN TẮC ĂN UỐNG
+Tăng huyết áp (huyết áp ≥ 140/90 mmHg) ảnh hưởng đến 26% người Việt Nam trưởng thành.
+
+Natri/Muối: Đây là yếu tố quan trọng nhất. Giảm từ 10g xuống 6g muối/ngày có thể giảm huyết áp tâm thu 4–6 mmHg. Mục tiêu: < 5g muối/ngày (< 2000mg natri). Trong ẩm thực Việt, nguồn muối chính: nước mắm, mắm tôm, mắm ruốc, tương, xì dầu, nước dùng. Mẹo giảm muối: nấu nhạt và chấm ít; thay nước mắm bằng nước cốt chanh và ớt để tạo vị.
+
+Kali (Potassium): Tăng kali giúp đối trọng tác dụng của natri và hạ huyết áp. Mục tiêu: 3500–4700mg/ngày. Nguồn kali tốt: chuối (422mg/quả), khoai lang (541mg/củ), rau bina/cải xanh, cà chua, đậu. Trong ẩm thực Việt: rau muống, rau ngót, bí đỏ đều giàu kali.
+
+Magie và Canxi: Cũng hỗ trợ kiểm soát huyết áp. Nguồn magie: hạt bí, các loại đậu, rau lá xanh. Nguồn canxi: sữa, đậu hũ, tôm tép, cá nhỏ.
+
+Chế độ DASH cho người huyết áp cao: xem thêm nih_usda_dietary.txt.
+
+Cần tránh tuyệt đối: rượu bia (làm tăng huyết áp); thực phẩm chế biến nhiều muối (xúc xích, lạp xưởng, đồ hộp, mì gói); cafein quá nhiều.
+
+MỠ MÁU CAO (HYPERLIPIDEMIA / HIGH CHOLESTEROL)
+Cholesterol toàn phần > 200 mg/dL, LDL-cholesterol > 130 mg/dL là các ngưỡng cần chú ý.
+
+Chất béo bão hòa (Saturated Fat): Yếu tố làm tăng LDL-cholesterol mạnh nhất. Giới hạn < 7% năng lượng (tương đương <15g/ngày với 2000 kcal). Nguồn trong ẩm thực Việt: mỡ lợn, bơ, dừa, phần da thịt, lòng đỏ trứng nhiều.
+
+Trans Fat: Tăng LDL và giảm HDL (double-bad). Tránh hoàn toàn. Có trong margarine, đồ chiên công nghiệp, bánh quy, bánh ngọt.
+
+Chất béo có lợi (Unsaturated Fat): Omega-3 từ cá béo (cá thu, cá hồi, cá trích), hạt lanh, hạt chia, óc chó giúp giảm triglyceride và bảo vệ tim mạch. Dầu olive và omega-9 giúp tăng HDL.
+
+Chất xơ hòa tan (Soluble Fiber): Giảm cholesterol LDL bằng cách kết hợp với axit mật trong ruột. Có trong yến mạch, đậu các loại, táo, lê, cà rốt. Mục tiêu: 5–10g chất xơ hòa tan/ngày có thể giảm LDL 5%.
+
+Thực phẩm tốt cho người mỡ máu cao trong ẩm thực Việt: cá (hấp/luộc), đậu hũ, rau xanh nhiều, giá đỗ, nấm, tỏi (tỏi có đặc tính giảm cholesterol nhẹ). Hạn chế: thịt mỡ, da thịt, phủ tạng (gan, lòng), đồ chiên.
+
+BỆNH THẬN MÃN TÍNH — NGUYÊN TẮC ĂN UỐNG
+Người bệnh thận mãn (CKD) cần hạn chế: Protein (giảm gánh nặng lọc máu — thường 0.6–0.8g/kg/ngày tùy giai đoạn); Kali (nếu kali máu cao — tránh chuối, cam, khoai tây nhiều); Photpho (hạn chế sữa, đồ uống có gas, thịt chế biến); Natri (như tăng huyết áp). Chế độ ăn cho người bệnh thận cần được bác sĩ hoặc chuyên gia dinh dưỡng tư vấn cụ thể.
+
+BỆNH GÚT (GOUT) — NGUYÊN TẮC ĂN UỐNG
+Gút là bệnh do tích tụ axit uric. Cần hạn chế thực phẩm giàu purine: nội tạng (gan, thận, lòng), cá trích, cá thu, tôm, cua, thịt đỏ nhiều. Hoàn toàn tránh: rượu bia (đặc biệt bia). Tốt cho người gút: nước (uống ≥ 2 lít/ngày), rau xanh, trái cây (trừ dứa và một số trái cây có purine cao), sữa ít béo (giúp giảm axit uric).
