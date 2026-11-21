@@ -679,7 +679,7 @@ def render_chat_tab():
             if last_dishes:
                 dishes_names = list(last_dishes.keys())
                 if dishes_names:
-                    suggestions.insert(0, f"Tư vấn dinh dưỡng cho bữa ăn vừa quét ({', '.join(dishes_names)})")
+                    suggestions.insert(0, f"Tư vấn bữa ăn vừa quét ({', '.join(dishes_names)}), trừ calo theo TDEE và gợi ý bữa ăn tiếp theo")
                     if len(suggestions) > 4:
                         suggestions.pop()
             cols = st.columns(2)
@@ -718,19 +718,41 @@ def render_chat_tab():
                                 p_g = n_d.get("Protein", 0)
                                 f_g = n_d.get("Fat", 0)
                                 cb_g = n_d.get("Carbs", 0)
-                                items_str.append(f"- {it.get('name')}: khối lượng thực tế cân đo từ camera là {m_g}g ({c_kcal} kcal, {p_g}g đạm, {f_g}g chất béo, {cb_g}g carb)")
+                                items_str.append(f"- {it.get('name')}: khối lượng đo được từ camera là {m_g}g ({c_kcal} kcal, {p_g}g đạm, {f_g}g chất béo, {cb_g}g carb)")
                             
                             items_desc = "\n".join(items_str) if items_str else (", ".join(last_dishes.keys()) if last_dishes else "")
-                            tot_kcal = last_nutri.get("Calories", 0.0)
-                            tot_p = last_nutri.get("Protein", 0.0)
-                            tot_f = last_nutri.get("Fat", 0.0)
-                            tot_c = last_nutri.get("Carbs", 0.0)
+                            tot_kcal = float(last_nutri.get("Calories", 0.0))
+                            tot_p = float(last_nutri.get("Protein", 0.0))
+                            tot_f = float(last_nutri.get("Fat", 0.0))
+                            tot_c = float(last_nutri.get("Carbs", 0.0))
+
+                            target_kcal = float(user_rda.get("Calories", 2000.0)) if user_rda else 2000.0
+                            target_protein = float(user_rda.get("Protein", 60.0)) if user_rda else 60.0
+                            goal_str = user_profile.get("goal", "Giữ cân") if user_profile else "Giữ cân"
+                            rem_kcal = max(0.0, round(target_kcal - tot_kcal, 1))
+                            rem_protein = max(0.0, round(target_protein - tot_p, 1))
 
                             meal_context = (
                                 f"\n\n[DỮ LIỆU ĐỊNH LƯỢNG THỰC TẾ BỮA ĂN VỪA QUÉT TỪ CAMERA]:\n"
                                 f"{items_desc}\n"
-                                f"TỔNG NĂNG LƯỢNG THỰC TẾ: {tot_kcal:.1f} kcal (Protein: {tot_p:.1f}g, Chất béo: {tot_f:.1f}g, Carb: {tot_c:.1f}g).\n"
-                                f"QUY TẮC BẮT BUỘC: Bạn PHẢI DÙNG CHÍNH XÁC các con số thực tế vừa đo được ({tot_kcal:.1f} kcal) để trả lời người dùng. TUYỆT ĐỐI KHÔNG dùng con số 100g mặc định (ví dụ 180 kcal) từ tài liệu mẫu nếu người dùng hỏi về món ăn vừa quét.\n"
+                                f"• Năng lượng bữa vừa ăn: {tot_kcal:.1f} kcal (Protein: {tot_p:.1f}g, Fat: {tot_f:.1f}g, Carb: {tot_c:.1f}g).\n\n"
+                                f"[MỤC TIÊU THỂ TRẠNG VÀ PHÉP TRỪ CALO CỦA NGƯỜI DÙNG]:\n"
+                                f"• Mục tiêu: {goal_str} | Nhu cầu năng lượng cả ngày (TDEE): {target_kcal:.0f} kcal, {target_protein:.1f}g Protein.\n"
+                                f"• PHÉP TÍNH TRỪ CALO CỤ THỂ: {target_kcal:.0f} kcal (Mục tiêu ngày) - {tot_kcal:.1f} kcal (Đã nạp) = CÒN LẠI {rem_kcal:.1f} kcal cho các bữa tiếp theo (Protein còn thiếu: {rem_protein:.1f}g).\n\n"
+                                f"[QUY TẮC PHẢN HỒI BẮT BUỘC - LUÔN TRẢ LỜI ĐẦY ĐỦ 3 PHẦN DƯỚI ĐÂY]:\n"
+                                f"**Phần 1: Đánh giá bữa ăn vừa quét** - Nêu rõ tên món, khối lượng thực tế và con số {tot_kcal:.1f} kcal đo được. Nhận xét ngắn gọn 1 câu về tỷ lệ dinh dưỡng.\n"
+                                f"**Phần 2: Phép trừ calo trong ngày** - Trình bày rõ phép trừ: Mục tiêu ngày {target_kcal:.0f} kcal - Bữa vừa ăn {tot_kcal:.1f} kcal = Bạn còn lại chính xác **{rem_kcal:.1f} kcal** (và {rem_protein:.1f}g protein) cho các bữa còn lại.\n"
+                                f"**Phần 3: Gợi ý thực đơn cho bữa ăn tiếp theo** - Dựa vào mức calo còn lại ({rem_kcal:.1f} kcal), hãy đề xuất cụ thể 1-2 thực đơn món ăn Việt Nam lành mạnh phù hợp cho bữa tiếp theo (ví dụ: bữa tối hoặc bữa phụ), chỉ rõ tên món và ước lượng calo/protein để bù đắp dinh dưỡng còn thiếu.\n"
+                                f"TUYỆT ĐỐI KHÔNG đưa ra lời khuyên chung chung sáo rỗng (như 'thêm hạt điều', 'bớt nước lèo'). Đi thẳng vào số liệu và gợi ý thực đơn cụ thể."
+                            )
+                        elif user_rda:
+                            target_kcal = float(user_rda.get("Calories", 2000.0))
+                            target_protein = float(user_rda.get("Protein", 60.0))
+                            goal_str = user_profile.get("goal", "Giữ cân") if user_profile else "Giữ cân"
+                            meal_context = (
+                                f"\n\n[MỤC TIÊU THỂ TRẠNG NGƯỜI DÙNG]:\n"
+                                f"• Mục tiêu: {goal_str} | TDEE mục tiêu: {target_kcal:.0f} kcal/ngày, {target_protein:.0f}g Protein.\n"
+                                f"• Hãy dựa vào mục tiêu này để gợi ý các món ăn Việt Nam cụ thể, định lượng rõ calo và protein cho từng bữa ăn."
                             )
 
                         rag_context = retrieve_context(
@@ -740,14 +762,10 @@ def render_chat_tab():
                         )
 
                         system_context = (
-                            "Bạn là một chuyên gia tư vấn dinh dưỡng AI chuyên nghiệp chuyên về ẩm thực Việt Nam.\n"
-                            "Nhiệm vụ của bạn là tư vấn dinh dưỡng cho người dùng dựa trên câu hỏi của họ, "
-                            "phân tích calo, chất béo, carb, protein, đường, muối của các món ăn Việt Nam "
-                            "và đề xuất các mẹo ăn uống lành mạnh (ví dụ: bớt nước lèo khi ăn phở, ăn thêm rau xà lách...).\n"
-                            "Hãy trả lời bằng tiếng Việt, giọng điệu lịch sự, khoa học, thực tế và ngắn gọn dễ hiểu.\n"
-                            "Không nói dông dài, đi thẳng vào vấn đề chính. Chỉ đưa ra câu trả lời trực tiếp bằng tiếng Việt, không lặp lại bất kỳ mô tả vai trò, nhiệm vụ hay cấu hình hệ thống nào.\n"
-                            "LƯU Ý Y TẾ: khối lượng và dinh dưỡng do hệ thống ước lượng có sai số đáng kể (MAPE ≈ 45% trên tập đánh giá thực tế, thay đổi mạnh theo món) — chỉ mang tính tham khảo. "
-                            "Khi người dùng hỏi về bệnh lý (tiểu đường, tim mạch, thai kỳ...), khuyên họ tham khảo bác sĩ/chuyên gia dinh dưỡng, không đưa ra phác đồ ăn uống trị liệu.\n"
+                            "Bạn là Chuyên gia Dinh dưỡng AI chuyên sâu về ẩm thực Việt Nam.\n"
+                            "Nhiệm vụ: Tư vấn dinh dưỡng cá nhân hóa, bám sát các số liệu đo lường thực tế, thực hiện trừ calo theo TDEE và gợi ý cụ thể món ăn Việt cho bữa tiếp theo.\n"
+                            "Phong cách: Đi thẳng vào vấn đề, khoa học, súc tích, thực tế, tuyệt đối không dùng lời khuyên rập khuôn chung chung, không lặp lại câu chữ.\n"
+                            "LƯU Ý Y TẾ: Số liệu mang tính tham khảo dinh dưỡng. Khi người dùng hỏi bệnh lý nặng, khuyên họ tham khảo bác sĩ.\n"
                             f"{rag_context}"
                             f"{meal_context}"
                         )
@@ -761,8 +779,10 @@ def render_chat_tab():
                                 "messages": [{"role": "system", "content": system_context}] + st.session_state.chat_messages,
                                 "stream": True,
                                 "options": {
-                                    "temperature": 0.35,
-                                    "top_p": 0.85
+                                    "temperature": 0.3,
+                                    "top_p": 0.85,
+                                    "repeat_penalty": 1.15,
+                                    "num_predict": 500
                                 }
                             }
                             try:

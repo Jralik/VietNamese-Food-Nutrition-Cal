@@ -456,6 +456,14 @@ def build_structured_facts(
             "daily_energy_target_kcal": daily_energy_target_kcal,
             "goal": user_profile.get("goal", "maintain")
         },
+        "remaining_daily_budget": {
+            "daily_target_kcal": daily_energy_target_kcal,
+            "consumed_kcal": round(calories, 1),
+            "remaining_kcal": max(0.0, round(daily_energy_target_kcal - calories, 1)),
+            "remaining_protein_g": max(0.0, round(ref_values.get("Protein_g", 50.0) - protein, 1)),
+            "target_protein_g": ref_values.get("Protein_g", 50.0),
+            "user_goal": user_profile.get("goal", "maintain")
+        },
         "meal_summary": {
             "energy_kcal": round(calories, 1),
             "energy_coverage_pct": energy_coverage_pct,
@@ -522,17 +530,13 @@ def get_llm_advisory_contract() -> str:
         "- Reference values & energy coverage (nhu cầu khuyến nghị RNI 2016 & mục tiêu TDEE)\n"
         "- System-defined rule warnings (các cảnh báo vượt ngưỡng do Rule Engine kích hoạt)\n"
         "- User profile context (thông tin cá nhân cần thiết: BMI, mục tiêu cân nặng)\n\n"
-        "TRÁCH NHIỆM CỦA BẠN (LLM RESPONSIBILITY):\n"
-        "1. Giải thích ý nghĩa dinh dưỡng của bữa ăn đối với sức khỏe và mục tiêu của người dùng.\n"
-        "2. Tóm tắt và giải thích rõ ràng các cảnh báo vượt ngưỡng (nếu có trong 'system_warnings').\n"
-        "3. Đưa ra gợi ý lối sống và điều chỉnh bữa ăn lành mạnh bằng tiếng Việt tự nhiên, thân thiện.\n\n"
-        "GIỚI HẠN BẮT BUỘC (LLM DOES NOT):\n"
-        "- KHÔNG tính toán dinh dưỡng hoặc thay đổi các con số đã được cung cấp.\n"
-        "- KHÔNG tự ý tính toán lại TDEE, BMR hay tỷ lệ % năng lượng.\n"
-        "- KHÔNG tự xác định các ngưỡng cảnh báo mới ngoài hệ thống.\n"
-        "- KHÔNG điều chỉnh các sự thật số học (numeric facts) trong JSON.\n"
-        "- KHÔNG đóng vai trò như một cơ sở dữ liệu dinh dưỡng độc lập.\n"
-        "- LƯU Ý VỀ MAPPING CONFIDENCE: Trường 'mapping_confidence' trong detected_items là độ tin cậy "
-        "của ánh xạ ngữ nghĩa giữa tên món và CSDL NIN, KHÔNG PHẢI độ chính xác hay sai số dinh dưỡng.\n\n"
-        "ĐỊNH DẠNG: Trả lời ngắn gọn (3-4 đoạn), định dạng Markdown rõ ràng, lịch sự và mang tính hành động."
+        "TRÁCH NHIỆM CỦA BẠN (LLM RESPONSIBILITY) - TRẢ LỜI NGẮN GỌN THEO 3 PHẦN:\n"
+        "1. Đánh giá bữa vừa ăn: Nêu rõ tên món, khối lượng thực tế và con số calo (energy_kcal). Nhận xét nhanh về cân bằng dinh dưỡng.\n"
+        "2. Nêu rõ phép trừ ngân sách calo cả ngày: Lấy mục tiêu ngày (daily_target_kcal) trừ đi bữa vừa ăn (consumed_kcal) để chỉ ra người dùng CÒN LẠI chính xác bao nhiêu calo (remaining_kcal) và protein (remaining_protein_g) cho các bữa tiếp theo trong ngày.\n"
+        "3. Gợi ý cụ thể thực đơn bữa ăn tiếp theo: Dựa vào số calo còn lại (remaining_kcal), hãy đề xuất cụ thể 1-2 thực đơn món ăn Việt Nam lành mạnh (nêu rõ tên món và ước tính calo) cho bữa tiếp theo (ví dụ bữa tối/bữa phụ) để bù đắp dinh dưỡng còn thiếu.\n\n"
+        "GIỚI HẠN & PHONG CÁCH:\n"
+        "- Trả lời súc tích, ngắn gọn (tổng dưới 200 từ), đi thẳng vào số liệu và tên món cụ thể.\n"
+        "- TUYỆT ĐỐI KHÔNG đưa ra lời khuyên chung chung sáo rỗng (như 'thêm hạt điều', 'bớt nước lèo').\n"
+        "- KHÔNG tự ý tính toán lại các con số đã được cung cấp trong remaining_daily_budget.\n"
+        "- LƯU Ý Y TẾ: Số liệu mang tính tham khảo dinh dưỡng. Khi người dùng hỏi bệnh lý nặng, khuyên họ tham khảo bác sĩ."
     )

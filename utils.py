@@ -515,21 +515,29 @@ def generate_nutrition_advice(count_dict_names, total_nutrition):
                 {"role": "system", "content": system_context},
                 {"role": "user", "content": prompt}
             ],
-            "stream": False,
+            "stream": True,
             "options": {
-                "temperature": 0.35,
-                "top_p": 0.85
+                "temperature": 0.3,
+                "top_p": 0.85,
+                "repeat_penalty": 1.15,
+                "num_predict": 500
             }
         }
         try:
             import requests
-            res = requests.post(f"{ollama_host}/api/chat", json=payload, timeout=60)
+            res = requests.post(f"{ollama_host}/api/chat", json=payload, stream=True, timeout=60)
             if res.status_code == 200:
-                msg = res.json().get("message", {})
-                response_text = msg.get("content", "") or msg.get("thinking", "")
-                if not response_text:
-                    response_text = "*(Mô hình không trả về nội dung tư vấn. Vui lòng thử lại hoặc chọn mô hình khác)*"
-                advice_placeholder.markdown(response_text)
+                response_text = ""
+                for line in res.iter_lines():
+                    if line:
+                        chunk = json.loads(line.decode("utf-8"))
+                        msg = chunk.get("message", {})
+                        token = msg.get("content", "")
+                        if token:
+                            response_text += token
+                            advice_placeholder.markdown(response_text + "▌")
+                final_text = response_text.strip() if response_text.strip() else "*(Không nhận được phản hồi từ mô hình)*"
+                advice_placeholder.markdown(final_text)
             else:
                 advice_placeholder.markdown(f"❌ Lỗi từ Ollama (Mã lỗi {res.status_code}): {res.text}")
         except Exception as e:
