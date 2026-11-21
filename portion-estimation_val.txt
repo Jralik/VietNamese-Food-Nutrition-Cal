@@ -10,6 +10,15 @@
 "C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (3).jpg", Banh cuon: 1 - 315.5;
 "C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (4).jpg", Banh cuon: 1 - 315.5;
 "C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon1 (5).jpg", Banh cuon: 1 - 315.5;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (1).jpg",  Banh cuon: 1 - 293.3;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (2).jpg",  Banh cuon: 1 - 293.3;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (3).jpg",  Banh cuon: 1 - 293.3;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (4).jpg",  Banh cuon: 1 - 293.3;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (5).jpg",  Banh cuon: 1 - 315.7;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (6).jpg",  Banh cuon: 1 - 315.7;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (7).jpg",  Banh cuon: 1 - 315.7;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (8).jpg",  Banh cuon: 1 - 315.7;
+"C:\Users\huynh\OneDrive\Pictures\test-image\BanhCuon\BanhCuon2 (9).jpg",  Banh cuon: 1 - 315.7;
 
 "C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (5).jpg", Com tam: 1 - 390.5, Soup: 1 - 150g; 
 "C:\Users\huynh\OneDrive\Pictures\test-image\ComSuon\com-suon1 (1).jpg", Com tam: 1 - 390.5, Soup: 1 - 150g;
@@ -64,4 +73,417 @@
 "C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (2).jpg", Sup cua: 1 - 500.6;
 "C:\Users\huynh\OneDrive\Pictures\test-image\SupCua\SupCua1 (3).jpg", Sup cua: 1 - 500.6;
 
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (5).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (6).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (7).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (1).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (2).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (3).jpg",  Xoi: 1 - 316.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\Xoi\Xoi1 (4).jpg",  Xoi: 1 - 316.0;
 
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (1).jpg", Thit kho: 1 - 92.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (2).jpg", Thit kho: 1 - 92.0, Trung: 1 - 65.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (3).jpg", Thit kho: 1 - 92.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (4).jpg", Thit kho: 1 - 92.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (5).jpg", Thit kho: 1 - 92.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ThitKho\ThitKho1 (6).jpg", Thit kho: 1 - 92.0, Trung: 1 - 65.0;
+
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (1).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (2).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (3).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (4).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (5).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (6).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (7).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa1 (8).jpg", Com chien ga: 1 - 466.1;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa2 (1).jpg", Com chien ga: 1 - 466.1, Thit ga: 1 - 106.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa2 (2).jpg", Com chien ga: 1 - 466.1, Thit ga: 1 - 106.0;
+"C:\Users\huynh\OneDrive\Pictures\test-image\ComGa\ComGa2 (3).jpg", Com chien ga: 1 - 466.1, Thit ga: 1 - 106.0;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 1.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 2.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 3.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 4.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 5.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 6.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 8.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 9.jpg", BanhBeo: 1 - 248.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhBeo\Banh beo 10.jpg", BanhBeo: 1 - 248.9;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 1.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 2.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 3.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 4.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 5.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 6.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 7.jpg", BanhCanh: 1 - 842.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhCanh\Banh Canh 8.jpg", BanhCanh: 1 - 842.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(1).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(2).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(3).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(4).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(5).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(6).jpg", BanhKhot: 1 - 172.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhKhot\BanhKhot1(7).jpg", BanhKhot: 1 - 172.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron1(1).jpg", BanhTrangTron: 1 - 210.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron1(2).jpg", BanhTrangTron: 1 - 210.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron1(3).jpg", BanhTrangTron: 1 - 210.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTranTron1(4).jpg", BanhTrangTron: 1 - 210.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron2(1).jpg", BanhTrangTron: 1 - 166.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron2(2).jpg", BanhTrangTron: 1 - 166.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron2(3).jpg", BanhTrangTron: 1 - 166.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\BanhTrangTron2(4).jpg", BanhTrangTron: 1 - 166.6;
+
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\Loai 1\Banh trang 4.jpg", BanhTrang: 1 - 95.1;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\Loai 3\Banh Trang 1.jpg", BanhTrang: 1 - 56.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhTrang\Loai 3\Banh Trang 2.jpg", BanhTrang: 1 - 56.7;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo1(1).jpg", BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo1(2)(1).jpg", BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo1(2)(2).jpg", BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo1(2).jpg", BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo2(1).jpg", BanhXeo: 1 - 142.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo2(2).jpg", BanhXeo: 1 - 142.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo2(3).jpg", BanhXeo: 1 - 142.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo2(4).jpg", BanhXeo: 1 - 142.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo2(5).jpg", BanhXeo: 1 - 142.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo(1).jpg", BanhXeo: 1 - 227.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo(2).jpg", BanhXeo: 1 - 227.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo(3).jpg", BanhXeo: 1 - 227.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo-BanhTrang1(1).jpg", BanhTrang: 1 - 21.0, BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo-Rau-BanhTrang1(1).jpg", Rau: 1 - 188.4, BanhTrang: 1 - 21.0, BanhXeo: 1 - 292.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo-Rau-BanhTrang1(2).jpg", BanhTrang: 1 - 21.0, BanhXeo: 1 - 292.5, Rau: 1 - 188.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo-Rau-BanhTrang1(3).jpg", Rau: 1 - 188.4, BanhXeo: 1 - 292.5, BanhTrang: 1 - 21.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BanhXeo\BanhXeo-Rau-BanhTrang1(4).jpg", BanhTrang: 1 - 21.0, BanhXeo: 1 - 292.5, Rau: 1 - 188.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho1(1).jpg", Banh mi: 1 - 56.9, Rau: 1 - 53.3, BoKho: 1 - 444.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho1(2).jpg", Banh mi: 1 - 56.9, Rau: 1 - 53.3, BoKho: 1 - 444.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho1(3).jpg", Banh mi: 1 - 56.9, Rau: 1 - 53.3, BoKho: 1 - 444.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho1(4).jpg", BoKho: 1 - 444.0, Rau: 1 - 53.3, Banh mi: 1 - 56.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho2(1).jpg", BoKho: 1 - 444.0, Banh mi: 1 - 56.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho2(2).jpg", Banh mi: 1 - 56.9, BoKho: 1 - 444.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho2(3).jpg", BoKho: 1 - 444.0, Rau: 1 - 53.3, Banh mi: 1 - 56.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoKho\BoKho2(4).jpg", Rau: 1 - 53.3, Banh mi: 1 - 56.9, BoKho: 1 - 444.0;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(1).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(2).jpg", BoLaLot: 2 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(3).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(4).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(5).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BolaLot1(6).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot1(7).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot(8).jpg", BoLaLot: 1 - 156.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot-BanhKhot1(1).jpg", BoLaLot: 1 - 156.7, BanhKhot: 1 - 175.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BoLaLot\BoLaLot-BanhKhot1(2).jpg", BoLaLot: 1 - 156.7, BanhKhot: 1 - 175.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BongCai\BongCai(1).jpg", BongCai: 1 - 72.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BongCai\BongCai(2).jpg", BongCai: 1 - 72.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BongCai\BongCai(3).jpg", BongCai: 1 - 72.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BongCai\BongCai(4).jpg", BongCai: 1 - 72.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 3.jpg", Bun: 1 - 272.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 4.jpg", Bun: 1 - 272.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 5.jpg", Bun: 1 - 272.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 6.jpg", Bun: 1 - 272.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 7.jpg", Bun: 1 - 272.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Bun\Bun 8.jpg", Bun: 1 - 272.7;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 2.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 3.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 4.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 5.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 6.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 8.jpg", Bun bo Hue: 1 - 781.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunBo\Bun bo 9.jpg", Bun bo Hue: 1 - 781.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\bun1(1).jpg", Bun: 1 - 323.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\bun1(2).jpg", Bun: 1 - 323.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\BunCha1(1).jpg", BunCha: 1 - 329.4, Bun: 1 - 323.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\BunCha2(1).jpg", Bun: 1 - 323.4, BunCha: 1 - 329.4, Rau: 1 - 65.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\BunCha2(2).jpg", BunCha: 1 - 329.4, Bun: 1 - 323.4, Rau: 1 - 65.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\BunCha2(3).jpg", Rau: 1 - 65.6, Bun: 1 - 323.4, BunCha: 1 - 329.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\DoChua1(3).jpg", BunCha: 1 - 329.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunCha\DoChua1(4).jpg", Bun: 1 - 323.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunChaCa\Bun Cha Ca 1.jpg", BunChaCa: 1 - 771.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunChaCa\Bun Cha Ca 2.jpg", BunChaCa: 1 - 771.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunChaCa\Bun Cha Ca 3.jpg", BunChaCa: 1 - 771.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunChaCa\Bun Cha Ca 4.jpg", BunChaCa: 1 - 771.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunChaCa\Bun Cha Ca 5.jpg", BunChaCa: 1 - 771.2;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 1.jpg", BunDau: 2 - ?, Bun: 1 - ?, All: 353.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 2.jpg", BunDau: 2 - ?, Bun: 1 - ?, All: 353.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 3.jpg", Bun: 1 - ?, BunDau: 1 - ?, All: 353.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 4.jpg", Bun: 1 - ?, BunDau: 1 - ?, All: 353.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 5.jpg", BunDau: 2 - ?, Bun: 1 - ?, All: 353.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunDau\Bun Dau 6.jpg", BunDau: 2 - ?, Bun: 1 - ?, All: 353.5;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(1).jpg", Rau: 1 - 125.8, BunMam: 1 - 861.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(2).jpg", BunMam: 1 - 861.2, Rau: 1 - 125.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(3).jpg", BunMam: 1 - 861.2, Rau: 1 - 125.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(4).jpg", Rau: 1 - 125.8, BunMam: 1 - 861.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(5).jpg", BunMam: 1 - 861.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(6).jpg", BunMam: 1 - 861.2, Rau: 1 - 125.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunMam\BunMam(7).jpg", BunMam: 1 - 861.2, Rau: 1 - 125.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(1).jpg", Rau: 1 - 60.4, Bun rieu: 1 - 705.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(2).jpg", Rau: 1 - 60.4, Bun rieu: 1 - 705.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(3).jpg", Bun rieu: 1 - 705.2, Rau: 1 - 60.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(4).jpg", Rau: 1 - 60.4, Bun rieu: 1 - 705.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(5).jpg", Bun rieu: 1 - 705.2, Rau: 1 - 60.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\BunRieu-CanhBun\BunRieu2(6).jpg", Rau: 1 - 60.4, Bun rieu: 1 - 705.2;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ca1(0).jpg", Ca: 1 - 111.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ca1(1).jpg", Ca: 1 - 111.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ca1(2).jpg", Ca: 1 - 111.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ca1(3).jpg", Ca: 1 - 111.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ThitGaChien (1).jpg", Ca: 3 - 54.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ThitGaChien (2).jpg", Ca: 2 - 54.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ThitGaChien (3).jpg", Ca: 3 - 54.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Ca\ThitGaChien (4).jpg", Ca: 2 - 54.6;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua1(1).jpg", CaChua: 2 - 212.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua1(2).jpg", CaChua: 1 - 212.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua1(3).jpg", CaChua: 1 - 212.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua2(1).jpg", CaChua: 1 - 79.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua2(2).jpg", CaChua: 1 - 79.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua2(3).jpg", CaChua: 1 - 79.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua3(1)-weight_58,8.jpg", CaChua: 1 - 58.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua3(2).jpg", CaChua: 1 - 58.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua3(3).jpg", CaChua: 1 - 58.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\CaChua\CaChua3(4).jpg", CaChua: 1 - 58.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 1.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 2.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 3.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 4.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 5.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 6.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 7.jpg", ChaGio: 2 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 8.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 9.jpg", ChaGio: 1 - 115.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaGio\Cha Gio 10.jpg", ChaGio: 1 - 115.3;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua1(1).jpg", Cha: 1 - 59.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua1(2).jpg", Cha: 1 - 59.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua2(1).jpg", Cha: 1 - 62.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua2(2).jpg", Cha: 1 - 62.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua-cachua1(1).jpg", CaChua: 2 - 212.8, Cha: 1 - 59.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua-cachua1(2).jpg", Cha: 1 - 59.2, CaChua: 1 - 212.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaLua\chalua-cachua1(3).jpg", CaChua: 1 - 212.8, Cha: 1 - 59.2;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 1.jpg", ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 2.jpg", ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 3.jpg", ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 4.jpg", ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 5.jpg", ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 6.jpg", LongHeo: 1 - 74.2, ChaoLong: 1 - 765.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 7.jpg", ChaoLong: 1 - 765.4, LongHeo: 1 - 74.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ChaoLong\Chao Long 8.jpg", LongHeo: 1 - 74.2, ChaoLong: 1 - 765.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\Com(1).jpg", Com: 1 - 252.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\Com(2).jpg", Com: 1 - 252.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\Com(3).jpg", Com: 1 - 252.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook4 (1).jpg", Thit ga: 1 - 82.7, Com: 1 - 237.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook4 (2).jpg", Thit ga: 1 - 82.7, Com: 1 - 237.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook4 (3).jpg", Com: 1 - 237.3, Thit ga: 1 - 82.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook4 (4).jpg", Thit ga: 1 - 82.7, Com: 1 - 237.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook4 (5).jpg", Com: 1 - 237.3, Thit ga: 1 - 82.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook13 (2).jpg", Com tam: 1 - 407.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook13 (3).jpg", Com tam: 1 - 407.9, Com: 1 - 293.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Com\HomeCook13 (4).jpg", Com tam: 1 - 407.9;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComChienDuongChau\com chien 1.jpg", ComChienDuongChau: 1 - 459.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComChienDuongChau\com chien 2.jpg", ComChienDuongChau: 1 - 459.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComChienDuongChau\com chien 3.jpg", ComChienDuongChau: 1 - 459.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComChienDuongChau\com chien 4.jpg", ComChienDuongChau: 1 - 459.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComChienDuongChau\com chien 5.jpg", ComChienDuongChau: 1 - 459.5;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_133655.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_133702.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_133705.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_133719.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_133942.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134002.jpg", ThitNuong: 2 - 133.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134008.jpg", ThitNuong: 2 - 133.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134223.jpg", ThitNuong: 1 - 75.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134227.jpg", Com: 1 - 280.0, ThitNuong: 1 - 133.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134235.jpg", Com: 1 - 280.0, ThitNuong: 1 - 133.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134244.jpg", ThitNuong: 1 - 133.5, Com tam: 1 - 413.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_134916.jpg", Trung: 1 - 111.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_135647.jpg", Com tam: 1 - 467.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_135652.jpg", Com tam: 1 - 467.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_135709.jpg", Com tam: 1 - 467.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ComSuonTrung\IMG_20260927_135713.jpg", Com tam: 1 - 467.2;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DauHu\DauHu(1).jpg", DauHu: 1 - 51.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DauHu\DauHu(2).jpg", DauHu: 1 - 51.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DauHu\DauHu(3).jpg", DauHu: 1 - 51.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DauHu\DauHu(4).jpg", DauHu: 1 - 51.9;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo1(1).jpg", DuaLeo: 1 - 63.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo1(2).jpg", DuaLeo: 1 - 63.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo1(3).jpg", DuaLeo: 1 - 63.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo2(1).jpg", DuaLeo: 2 - 35.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo2(2).jpg", DuaLeo: 2 - 35.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\DuaLeo\DuaLeo2(3).jpg", DuaLeo: 2 - 35.7;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi Cuon 1.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 2.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 3.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 4.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 5.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 6.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 7.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 8.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 9.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 10.jpg", GoiCuon: 1 - 173.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\GoiCuon\Goi cuon 11.jpg", GoiCuon: 1 - 173.7;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 1.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 2.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 3.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 4.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 5.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 6.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 7.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 8.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 9.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 10.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 11.jpg", Hamburger: 1 - 184.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Hamburger\Hamburger 12.jpg", Hamburger: 1 - 184.5;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HeoQuay\HeoQuay1(1).jpg", ThitHeo: 1 - 57.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HeoQuay\IMG_20261110_082335.jpg", ThitHeo: 1 - 57.7;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HeoQuay\IMG_20261110_082339.jpg", ThitHeo: 1 - 57.7;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(1).jpg", HuTieu: 1 - 704.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(2).jpg", HuTieu: 1 - 704.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(3).jpg", HuTieu: 1 - 704.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(4).jpg", HuTieu: 1 - 704.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(5).jpg", HuTieu: 1 - 704.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\HuTieu\HuTieu1(6).jpg", HuTieu: 1 - 704.0;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoaiTayChien\Khoai Tay Chien 2.jpg", KhoaiTayChien: 2 - 153.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoaiTayChien\Khoai Tay Chien 3.jpg", KhoaiTayChien: 2 - 153.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoaiTayChien\Khoai Tay Chien 4.jpg", KhoaiTayChien: 2 - 153.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoaiTayChien\Khoai Tay Chien 5.jpg", KhoaiTayChien: 2 - 153.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoaiTayChien\Khoai Tay Chien 6.jpg", KhoaiTayChien: 3 - 153.3;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 1.jpg", KhoQuaThit: 1 - 149.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 2.jpg", KhoQuaThit: 1 - 149.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 3.jpg", KhoQuaThit: 1 - 149.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 4.jpg", KhoQuaThit: 1 - 149.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 5.jpg", Canh: 1 - 408.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 6.jpg", Canh: 1 - 408.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 7.jpg", Canh: 1 - 408.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\KhoQuaThit\Kho Qua Thit 8.jpg", KhoQuaThit: 1 - 149.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\LongHeo\Long Heo 1.jpg", LongHeo: 1 - 74.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\LongHeo\Long Heo 2.jpg", LongHeo: 1 - 74.2;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\LongHeo\Long Heo 5.jpg", LongHeo: 1 - 74.2;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Mi\Mi 1.jpg", Mi: 1 - 167.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Mi\Mi 2.jpg", Mi: 1 - 167.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Mi\Mi 3.jpg", Mi: 1 - 167.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Mi\Mi 4.jpg", Mi: 1 - 167.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Mi\Mi 5.jpg", Mi: 1 - 167.3;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\MiQuang\Mi Quang 1.jpg", MiQuang: 1 - 793.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\MiQuang\Mi Quang 2.jpg", MiQuang: 1 - 793.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\MiQuang\Mi Quang 3.jpg", MiQuang: 1 - 793.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\MiQuang\Mi Quang 4.jpg", MiQuang: 1 - 793.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\MiQuang\Mi Quang 5.jpg", MiQuang: 1 - 793.6;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\Muc 1.jpg", Muc: 1 - 101.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\Muc 2.jpg", Muc: 1 - 101.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\Muc 4.jpg", Muc: 1 - 101.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\Muc 5.jpg", Muc: 1 - 101.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\Muc 6.jpg", Muc: 1 - 101.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\MucLau(1).jpg", Muc: 2 - 46.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\MucLau(2).jpg", Muc: 1 - 46.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\MucLau(3).jpg", Muc: 1 - 46.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Muc\MucLau(4).jpg", Muc: 1 - 46.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Nam\Nam 2.jpg", Nam: 1 - 143.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Nam\Nam 3.jpg", Nam: 1 - 143.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Nam\Nam 4.jpg", Nam: 1 - 143.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 1.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 2.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 3.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 4.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 5.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 6.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 7.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 8.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 9.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 10.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 11.jpg", NuiXaoBo: 1 - 288.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\NuiXaoBo\Nui xao bo 12.jpg", NuiXaoBo: 1 - 288.5;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Oc\Oc 2.jpg", Oc: 1 - 280.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Oc\Oc 3.jpg", Oc: 1 - 280.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Oc\Oc 5.jpg", Oc: 1 - 280.9;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Oc\Oc 6.jpg", Oc: 1 - 280.9;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\HomeCook6 (6).jpg", Trung: 1 - 60.2, Thit bo: 1 - 72.5, Thit ga: 1 - 146.1, Com: 1 - 250.3;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\HomeCook14 (1).jpg", Cha: 2 - 129.0, Com: 1 - 312.0, Thit bo: 1 - 99.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\HomeCook14 (2).jpg", Com: 1 - 312.0, Thit bo: 1 - 99.4, Cha: 1 - 54.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\HomeCook14 (7).jpg", Thit bo: 1 - 99.4, Com: 1 - 312.0, Cha: 1 - 54.0;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\HomeCook14 (8).jpg", Cha: 1 - 54.0, Com: 1 - 312.0, Thit bo: 1 - 99.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\ThitBo(1).jpg", Thit bo: 1 - 98.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\ThitBo(2).jpg", Thit bo: 1 - 98.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitBo\ThitBo(3).jpg", Thit bo: 1 - 98.1;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa1 (1).jpg", Thit ga: 1 - 298.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa1 (3).jpg", Thit ga: 1 - 298.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa1 (4).jpg", Thit ga: 1 - 298.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa1 (6).jpg", Thit ga: 1 - 298.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa2 (1).jpg", Thit ga: 1 - 370.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa2 (3).jpg", Thit ga: 1 - 370.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa2 (4).jpg", Thit ga: 1 - 370.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa2 (5).jpg", Thit ga: 2 - 370.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa2 (6).jpg", Thit ga: 1 - 370.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa(1).jpg", Thit ga: 1 - 157.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa(2).jpg", Thit ga: 1 - 157.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa(3).jpg", Thit ga: 1 - 157.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitGa\ThitGa(4).jpg", Thit ga: 1 - 157.4;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitKho\ThitKho2(2).jpg", Thit kho: 1 - 55.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitKho\ThitKho2(3).jpg", Thit kho: 1 - 55.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitKho\ThitKho2(4).jpg", Thit kho: 1 - 55.6;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ComThitNuong2(1).jpg", Com tam: 2 - 297.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ComThitNuong2(2).jpg", Com tam: 2 - 297.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ComThitNuong2(3).jpg", Com tam: 2 - 297.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\Suon1(2).jpg", ThitNuong: 1 - 70.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\Suon1(3).jpg", ThitNuong: 1 - 70.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\Suon1.jpg", ThitNuong: 1 - 70.6;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitChien1(1).jpg", ThitNuong: 1 - 56.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitChien2(2).jpg", ThitNuong: 1 - 56.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitChien2(3).jpg", ThitNuong: 1 - 56.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitChien2(4).jpg", ThitNuong: 1 - 56.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\thitNuong1(1).jpg", ThitNuong: 1 - 94.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitNuong1(2).jpg", ThitNuong: 1 - 94.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitNuong1(3).jpg", ThitNuong: 1 - 94.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitNuong1(4).jpg", ThitNuong: 1 - 94.5;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\ThitNuong\ThitNuong1(5).jpg", ThitNuong: 1 - 94.5;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom1(1).jpg", Tom: 1 - 43.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom1(2).jpg", Tom: 1 - 43.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom1(3).jpg", Tom: 1 - 43.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom1(4).jpg", Tom: 1 - 43.1;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom2(1).jpg", Tom: 1 - 20.8;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Tom\tom2(2).jpg", Tom: 1 - 20.8;
+
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\Trung1(1).jpg", Trung: 1 - 53.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\Trung1(2).jpg", Trung: 1 - 53.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\Trung1(3).jpg", Trung: 1 - 53.4;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\TrungChien1(1).jpg", Trung: 1 - 107;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\TrungChien1(2).jpg", Trung: 1 - 107;
+"D:\Document\Year4_Semester1\KhoaLuanTotNghiep\FoodImage\Trung\TrungChien1(3).jpg", Trung: 1 - 107;

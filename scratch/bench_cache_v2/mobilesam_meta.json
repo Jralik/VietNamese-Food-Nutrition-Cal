@@ -1,0 +1,7944 @@
+{
+  "Banh Canh 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.04,
+      "encode": 87.06,
+      "decode": 8.32,
+      "postprocess": 40.22,
+      "total": 153.65
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4334.5,
+    "yolo_timing": {
+      "preprocess": 16.31,
+      "encode": 85.82,
+      "decode": 8.05,
+      "postprocess": 36.39,
+      "total": 146.58
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.23,
+      "encode": 86.92,
+      "decode": 11.51,
+      "postprocess": 39.35,
+      "total": 155.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.2,
+    "yolo_timing": {
+      "preprocess": 20.92,
+      "encode": 87.64,
+      "decode": 8.12,
+      "postprocess": 36.17,
+      "total": 152.86
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.05,
+      "encode": 86.9,
+      "decode": 8.07,
+      "postprocess": 42.62,
+      "total": 157.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.3,
+    "yolo_timing": {
+      "preprocess": 16.02,
+      "encode": 87.31,
+      "decode": 9.28,
+      "postprocess": 37.64,
+      "total": 150.25
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.97,
+      "encode": 87.53,
+      "decode": 8.56,
+      "postprocess": 42.57,
+      "total": 159.63
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.3,
+    "yolo_timing": {
+      "preprocess": 17.47,
+      "encode": 87.53,
+      "decode": 9.09,
+      "postprocess": 37.73,
+      "total": 151.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.47,
+      "encode": 87.85,
+      "decode": 8.23,
+      "postprocess": 38.79,
+      "total": 151.33
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.4,
+    "yolo_timing": {
+      "preprocess": 17.17,
+      "encode": 87.66,
+      "decode": 10.05,
+      "postprocess": 35.69,
+      "total": 150.57
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.7,
+      "encode": 87.42,
+      "decode": 14.74,
+      "postprocess": 36.61,
+      "total": 156.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.4,
+    "yolo_timing": {
+      "preprocess": 16.14,
+      "encode": 87.67,
+      "decode": 8.24,
+      "postprocess": 36.39,
+      "total": 148.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 21.17,
+      "encode": 87.55,
+      "decode": 8.92,
+      "postprocess": 40.04,
+      "total": 157.68
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.4,
+    "yolo_timing": {
+      "preprocess": 16.27,
+      "encode": 87.92,
+      "decode": 8.15,
+      "postprocess": 38.37,
+      "total": 150.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Canh 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.99,
+      "encode": 87.58,
+      "decode": 9.74,
+      "postprocess": 36.27,
+      "total": 150.58
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.5,
+    "yolo_timing": {
+      "preprocess": 17.43,
+      "encode": 87.53,
+      "decode": 11.81,
+      "postprocess": 45.39,
+      "total": 162.16
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh Trang 1_Loai_3.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.48,
+      "encode": 87.76,
+      "decode": 8.3,
+      "postprocess": 38.79,
+      "total": 153.34
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.5,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Banh Trang 2_Loai_3.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.18,
+      "encode": 87.28,
+      "decode": 8.07,
+      "postprocess": 40.34,
+      "total": 152.87
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4321.4,
+    "yolo_timing": {
+      "preprocess": 18.61,
+      "encode": 92.17,
+      "decode": 8.58,
+      "postprocess": 40.89,
+      "total": 160.24
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.52,
+      "encode": 87.44,
+      "decode": 8.32,
+      "postprocess": 38.96,
+      "total": 153.25
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4321.5,
+    "yolo_timing": {
+      "preprocess": 16.14,
+      "encode": 87.6,
+      "decode": 8.77,
+      "postprocess": 38.89,
+      "total": 151.41
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 10.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.35,
+      "encode": 87.84,
+      "decode": 13.25,
+      "postprocess": 31.6,
+      "total": 150.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4321.5,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Banh beo 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.68,
+      "encode": 87.25,
+      "decode": 8.41,
+      "postprocess": 40.97,
+      "total": 157.31
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.7,
+    "yolo_timing": {
+      "preprocess": 16.89,
+      "encode": 87.73,
+      "decode": 8.1,
+      "postprocess": 32.47,
+      "total": 145.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 21.92,
+      "encode": 88.08,
+      "decode": 13.38,
+      "postprocess": 39.21,
+      "total": 162.6
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.7,
+    "yolo_timing": {
+      "preprocess": 18.51,
+      "encode": 87.7,
+      "decode": 11.42,
+      "postprocess": 37.12,
+      "total": 154.76
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.57,
+      "encode": 87.12,
+      "decode": 8.6,
+      "postprocess": 38.29,
+      "total": 151.58
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.7,
+    "yolo_timing": {
+      "preprocess": 18.81,
+      "encode": 87.46,
+      "decode": 11.42,
+      "postprocess": 39.01,
+      "total": 156.7
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.87,
+      "encode": 87.44,
+      "decode": 11.45,
+      "postprocess": 52.33,
+      "total": 170.09
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.8,
+    "yolo_timing": {
+      "preprocess": 16.88,
+      "encode": 87.67,
+      "decode": 9.42,
+      "postprocess": 37.23,
+      "total": 151.21
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.32,
+      "encode": 87.66,
+      "decode": 16.58,
+      "postprocess": 44.89,
+      "total": 168.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.8,
+    "yolo_timing": {
+      "preprocess": 19.86,
+      "encode": 87.43,
+      "decode": 9.0,
+      "postprocess": 37.78,
+      "total": 154.07
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.96,
+      "encode": 87.4,
+      "decode": 11.92,
+      "postprocess": 38.83,
+      "total": 156.1
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.9,
+    "yolo_timing": {
+      "preprocess": 17.68,
+      "encode": 87.64,
+      "decode": 8.62,
+      "postprocess": 44.71,
+      "total": 158.65
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh beo 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.7,
+      "encode": 87.37,
+      "decode": 8.68,
+      "postprocess": 40.49,
+      "total": 152.24
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.9,
+    "yolo_timing": {
+      "preprocess": 16.46,
+      "encode": 87.94,
+      "decode": 12.03,
+      "postprocess": 33.2,
+      "total": 149.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Banh trang 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.26,
+      "encode": 88.27,
+      "decode": 11.5,
+      "postprocess": 45.36,
+      "total": 164.39
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4335.9,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "BanhCuon2 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.45,
+      "encode": 87.1,
+      "decode": 20.56,
+      "postprocess": 71.63,
+      "total": 197.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4350.2,
+    "yolo_timing": {
+      "preprocess": 25.26,
+      "encode": 88.54,
+      "decode": 8.48,
+      "postprocess": 49.61,
+      "total": 171.88
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.26,
+      "encode": 87.6,
+      "decode": 8.7,
+      "postprocess": 49.61,
+      "total": 163.17
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4339.9,
+    "yolo_timing": {
+      "preprocess": 17.18,
+      "encode": 87.55,
+      "decode": 9.33,
+      "postprocess": 52.77,
+      "total": 166.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.84,
+      "encode": 87.6,
+      "decode": 13.54,
+      "postprocess": 52.49,
+      "total": 172.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4340.0,
+    "yolo_timing": {
+      "preprocess": 19.02,
+      "encode": 87.72,
+      "decode": 8.91,
+      "postprocess": 52.39,
+      "total": 168.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.75,
+      "encode": 87.38,
+      "decode": 9.74,
+      "postprocess": 52.14,
+      "total": 167.0
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4340.0,
+    "yolo_timing": {
+      "preprocess": 20.59,
+      "encode": 87.52,
+      "decode": 9.24,
+      "postprocess": 59.1,
+      "total": 176.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.33,
+      "encode": 87.59,
+      "decode": 8.15,
+      "postprocess": 41.42,
+      "total": 154.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4340.0,
+    "yolo_timing": {
+      "preprocess": 18.24,
+      "encode": 87.44,
+      "decode": 26.47,
+      "postprocess": 126.34,
+      "total": 258.5
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.15,
+      "encode": 87.11,
+      "decode": 11.57,
+      "postprocess": 51.02,
+      "total": 168.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4340.1,
+    "yolo_timing": {
+      "preprocess": 14.93,
+      "encode": 87.62,
+      "decode": 11.43,
+      "postprocess": 42.62,
+      "total": 156.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (7).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.02,
+      "encode": 87.32,
+      "decode": 13.34,
+      "postprocess": 449.99,
+      "total": 567.68
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4340.1,
+    "yolo_timing": {
+      "preprocess": 91.37,
+      "encode": 223.79,
+      "decode": 370.68,
+      "postprocess": 1623.0,
+      "total": 2308.84
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (8).jpg": {
+    "oracle_timing": {
+      "preprocess": 25.09,
+      "encode": 224.26,
+      "decode": 16.98,
+      "postprocess": 57.73,
+      "total": 324.06
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 4361.4,
+    "yolo_timing": {
+      "preprocess": 20.84,
+      "encode": 88.89,
+      "decode": 30.55,
+      "postprocess": 187.71,
+      "total": 328.0
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhCuon2 (9).jpg": {
+    "oracle_timing": {
+      "preprocess": 44.82,
+      "encode": 86.91,
+      "decode": 17.67,
+      "postprocess": 79.27,
+      "total": 228.67
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3345.6,
+    "yolo_timing": {
+      "preprocess": 33.7,
+      "encode": 87.14,
+      "decode": 18.59,
+      "postprocess": 45.37,
+      "total": 184.8
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.88,
+      "encode": 86.87,
+      "decode": 10.2,
+      "postprocess": 50.12,
+      "total": 163.06
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.4,
+    "yolo_timing": {
+      "preprocess": 14.48,
+      "encode": 87.22,
+      "decode": 28.67,
+      "postprocess": 55.96,
+      "total": 186.34
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.29,
+      "encode": 87.31,
+      "decode": 10.54,
+      "postprocess": 58.9,
+      "total": 177.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.5,
+    "yolo_timing": {
+      "preprocess": 14.56,
+      "encode": 87.37,
+      "decode": 8.99,
+      "postprocess": 45.93,
+      "total": 156.84
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.39,
+      "encode": 87.69,
+      "decode": 8.83,
+      "postprocess": 57.35,
+      "total": 167.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.5,
+    "yolo_timing": {
+      "preprocess": 14.34,
+      "encode": 87.51,
+      "decode": 19.97,
+      "postprocess": 50.64,
+      "total": 172.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.75,
+      "encode": 87.27,
+      "decode": 9.94,
+      "postprocess": 51.34,
+      "total": 167.31
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.6,
+    "yolo_timing": {
+      "preprocess": 19.33,
+      "encode": 87.52,
+      "decode": 11.92,
+      "postprocess": 60.85,
+      "total": 179.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 25.76,
+      "encode": 87.36,
+      "decode": 9.23,
+      "postprocess": 42.79,
+      "total": 165.14
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.7,
+    "yolo_timing": {
+      "preprocess": 16.08,
+      "encode": 87.48,
+      "decode": 18.31,
+      "postprocess": 94.38,
+      "total": 216.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(6).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.6,
+      "encode": 87.23,
+      "decode": 10.08,
+      "postprocess": 39.77,
+      "total": 152.68
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.7,
+    "yolo_timing": {
+      "preprocess": 12.82,
+      "encode": 87.68,
+      "decode": 9.92,
+      "postprocess": 50.91,
+      "total": 161.34
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhKhot1(7).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.15,
+      "encode": 87.44,
+      "decode": 9.03,
+      "postprocess": 52.71,
+      "total": 165.34
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.7,
+    "yolo_timing": {
+      "preprocess": 13.97,
+      "encode": 87.45,
+      "decode": 8.49,
+      "postprocess": 55.1,
+      "total": 165.01
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMiDucTri (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.17,
+      "encode": 87.06,
+      "decode": 8.16,
+      "postprocess": 45.54,
+      "total": 157.93
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.7,
+    "yolo_timing": {
+      "preprocess": 14.61,
+      "encode": 87.47,
+      "decode": 23.65,
+      "postprocess": 103.43,
+      "total": 229.15
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMiDucTri (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 686.88,
+      "encode": 727.93,
+      "decode": 1289.95,
+      "postprocess": 420.48,
+      "total": 3125.22
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.8,
+    "yolo_timing": {
+      "preprocess": 44.27,
+      "encode": 234.98,
+      "decode": 53.74,
+      "postprocess": 104.91,
+      "total": 437.9
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMiDucTri (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 31.48,
+      "encode": 91.97,
+      "decode": 19.88,
+      "postprocess": 80.82,
+      "total": 224.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3274.8,
+    "yolo_timing": {
+      "preprocess": 38.78,
+      "encode": 90.29,
+      "decode": 16.36,
+      "postprocess": 86.47,
+      "total": 231.9
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMi_Trung (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.99,
+      "encode": 87.28,
+      "decode": 69.61,
+      "postprocess": 274.21,
+      "total": 451.08
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3350.4,
+    "yolo_timing": {
+      "preprocess": 25.07,
+      "encode": 87.63,
+      "decode": 39.4,
+      "postprocess": 216.14,
+      "total": 368.24
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMi_Trung (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.11,
+      "encode": 87.0,
+      "decode": 43.22,
+      "postprocess": 158.23,
+      "total": 309.55
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3350.4,
+    "yolo_timing": {
+      "preprocess": 17.54,
+      "encode": 87.68,
+      "decode": 17.29,
+      "postprocess": 102.13,
+      "total": 224.64
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMi_Trung (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.11,
+      "encode": 87.11,
+      "decode": 25.65,
+      "postprocess": 201.16,
+      "total": 332.03
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3350.5,
+    "yolo_timing": {
+      "preprocess": 14.92,
+      "encode": 87.05,
+      "decode": 26.5,
+      "postprocess": 164.0,
+      "total": 292.46
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhMi_Trung (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.93,
+      "encode": 87.34,
+      "decode": 27.71,
+      "postprocess": 151.73,
+      "total": 281.71
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3350.6,
+    "yolo_timing": {
+      "preprocess": 16.0,
+      "encode": 87.38,
+      "decode": 30.94,
+      "postprocess": 101.68,
+      "total": 236.0
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTranTron1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.12,
+      "encode": 87.26,
+      "decode": 12.71,
+      "postprocess": 47.34,
+      "total": 160.43
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.0,
+    "yolo_timing": {
+      "preprocess": 14.88,
+      "encode": 87.61,
+      "decode": 8.32,
+      "postprocess": 43.61,
+      "total": 154.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.74,
+      "encode": 87.34,
+      "decode": 10.39,
+      "postprocess": 44.27,
+      "total": 158.74
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.1,
+    "yolo_timing": {
+      "preprocess": 17.63,
+      "encode": 87.37,
+      "decode": 8.2,
+      "postprocess": 54.69,
+      "total": 167.9
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 130.93,
+      "encode": 232.41,
+      "decode": 14.79,
+      "postprocess": 45.56,
+      "total": 423.69
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.1,
+    "yolo_timing": {
+      "preprocess": 14.97,
+      "encode": 99.73,
+      "decode": 10.02,
+      "postprocess": 51.55,
+      "total": 176.27
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.01,
+      "encode": 87.49,
+      "decode": 14.7,
+      "postprocess": 61.83,
+      "total": 182.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.2,
+    "yolo_timing": {
+      "preprocess": 15.96,
+      "encode": 87.19,
+      "decode": 11.61,
+      "postprocess": 66.68,
+      "total": 181.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.87,
+      "encode": 87.09,
+      "decode": 12.68,
+      "postprocess": 91.02,
+      "total": 204.66
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.1,
+    "yolo_timing": {
+      "preprocess": 16.62,
+      "encode": 87.36,
+      "decode": 12.41,
+      "postprocess": 42.69,
+      "total": 159.08
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.31,
+      "encode": 87.74,
+      "decode": 10.23,
+      "postprocess": 54.85,
+      "total": 170.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.1,
+    "yolo_timing": {
+      "preprocess": 20.08,
+      "encode": 88.12,
+      "decode": 10.4,
+      "postprocess": 56.82,
+      "total": 175.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.96,
+      "encode": 87.54,
+      "decode": 8.51,
+      "postprocess": 45.34,
+      "total": 161.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.2,
+    "yolo_timing": {
+      "preprocess": 16.57,
+      "encode": 87.9,
+      "decode": 12.73,
+      "postprocess": 44.1,
+      "total": 161.3
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhTrangTron2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.74,
+      "encode": 87.23,
+      "decode": 8.2,
+      "postprocess": 52.58,
+      "total": 166.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.2,
+    "yolo_timing": {
+      "preprocess": 15.64,
+      "encode": 87.78,
+      "decode": 14.58,
+      "postprocess": 71.38,
+      "total": 189.39
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.09,
+      "encode": 91.53,
+      "decode": 144.95,
+      "postprocess": 530.3,
+      "total": 784.86
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.2,
+    "yolo_timing": {
+      "preprocess": 131.91,
+      "encode": 432.83,
+      "decode": 203.75,
+      "postprocess": 1021.69,
+      "total": 1790.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 24.11,
+      "encode": 347.39,
+      "decode": 11.76,
+      "postprocess": 48.52,
+      "total": 431.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.3,
+    "yolo_timing": {
+      "preprocess": 23.6,
+      "encode": 99.12,
+      "decode": 24.47,
+      "postprocess": 49.98,
+      "total": 197.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.83,
+      "encode": 87.01,
+      "decode": 9.07,
+      "postprocess": 40.66,
+      "total": 154.57
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.3,
+    "yolo_timing": {
+      "preprocess": 20.55,
+      "encode": 87.19,
+      "decode": 7.95,
+      "postprocess": 72.23,
+      "total": 187.92
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo-BanhTrang1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.69,
+      "encode": 87.66,
+      "decode": 34.3,
+      "postprocess": 117.65,
+      "total": 260.31
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3323.5,
+    "yolo_timing": {
+      "preprocess": 20.66,
+      "encode": 87.36,
+      "decode": 17.68,
+      "postprocess": 102.91,
+      "total": 228.61
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo-Rau-BanhTrang1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.93,
+      "encode": 87.38,
+      "decode": 29.82,
+      "postprocess": 148.15,
+      "total": 285.29
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.0,
+    "yolo_timing": {
+      "preprocess": 13.95,
+      "encode": 87.51,
+      "decode": 30.07,
+      "postprocess": 154.58,
+      "total": 286.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo-Rau-BanhTrang1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 116.23,
+      "encode": 202.45,
+      "decode": 541.07,
+      "postprocess": 2894.78,
+      "total": 3754.53
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3330.4,
+    "yolo_timing": {
+      "preprocess": 26.0,
+      "encode": 293.78,
+      "decode": 70.29,
+      "postprocess": 223.89,
+      "total": 613.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo-Rau-BanhTrang1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.28,
+      "encode": 91.75,
+      "decode": 34.71,
+      "postprocess": 245.5,
+      "total": 387.24
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3330.5,
+    "yolo_timing": {
+      "preprocess": 20.05,
+      "encode": 91.05,
+      "decode": 33.65,
+      "postprocess": 184.0,
+      "total": 328.76
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo-Rau-BanhTrang1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.95,
+      "encode": 87.32,
+      "decode": 29.72,
+      "postprocess": 152.82,
+      "total": 285.81
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.1,
+    "yolo_timing": {
+      "preprocess": 18.36,
+      "encode": 87.18,
+      "decode": 29.43,
+      "postprocess": 171.88,
+      "total": 306.86
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 155.85,
+      "encode": 440.41,
+      "decode": 185.08,
+      "postprocess": 460.04,
+      "total": 1241.38
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.6,
+    "yolo_timing": {
+      "preprocess": 25.07,
+      "encode": 99.8,
+      "decode": 8.85,
+      "postprocess": 62.95,
+      "total": 196.67
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo1(2)(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.87,
+      "encode": 87.01,
+      "decode": 11.26,
+      "postprocess": 67.56,
+      "total": 184.71
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.6,
+    "yolo_timing": {
+      "preprocess": 18.2,
+      "encode": 87.46,
+      "decode": 14.84,
+      "postprocess": 52.21,
+      "total": 172.7
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo1(2)(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.12,
+      "encode": 87.37,
+      "decode": 12.01,
+      "postprocess": 69.38,
+      "total": 188.88
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.7,
+    "yolo_timing": {
+      "preprocess": 19.41,
+      "encode": 89.33,
+      "decode": 12.99,
+      "postprocess": 83.17,
+      "total": 204.9
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.53,
+      "encode": 87.13,
+      "decode": 11.32,
+      "postprocess": 59.66,
+      "total": 175.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.7,
+    "yolo_timing": {
+      "preprocess": 18.95,
+      "encode": 87.42,
+      "decode": 13.1,
+      "postprocess": 61.81,
+      "total": 181.28
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.4,
+      "encode": 87.2,
+      "decode": 8.66,
+      "postprocess": 37.83,
+      "total": 153.09
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.7,
+    "yolo_timing": {
+      "preprocess": 15.29,
+      "encode": 87.68,
+      "decode": 8.59,
+      "postprocess": 37.3,
+      "total": 148.86
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.62,
+      "encode": 87.61,
+      "decode": 9.15,
+      "postprocess": 40.73,
+      "total": 155.12
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.8,
+    "yolo_timing": {
+      "preprocess": 15.76,
+      "encode": 87.66,
+      "decode": 12.67,
+      "postprocess": 45.28,
+      "total": 161.37
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.07,
+      "encode": 88.93,
+      "decode": 124.52,
+      "postprocess": 603.5,
+      "total": 834.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.8,
+    "yolo_timing": {
+      "preprocess": 100.54,
+      "encode": 260.23,
+      "decode": 124.03,
+      "postprocess": 546.11,
+      "total": 1030.92
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.87,
+      "encode": 251.28,
+      "decode": 15.67,
+      "postprocess": 69.87,
+      "total": 354.68
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.8,
+    "yolo_timing": {
+      "preprocess": 15.33,
+      "encode": 89.62,
+      "decode": 29.53,
+      "postprocess": 115.66,
+      "total": 250.14
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BanhXeo2(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.77,
+      "encode": 87.43,
+      "decode": 8.43,
+      "postprocess": 54.18,
+      "total": 163.81
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3275.8,
+    "yolo_timing": {
+      "preprocess": 23.66,
+      "encode": 87.28,
+      "decode": 16.64,
+      "postprocess": 82.72,
+      "total": 210.29
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.14,
+      "encode": 87.35,
+      "decode": 31.87,
+      "postprocess": 187.06,
+      "total": 320.42
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.4,
+    "yolo_timing": {
+      "preprocess": 18.51,
+      "encode": 87.43,
+      "decode": 34.59,
+      "postprocess": 181.29,
+      "total": 321.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.77,
+      "encode": 87.41,
+      "decode": 33.22,
+      "postprocess": 141.13,
+      "total": 278.52
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.4,
+    "yolo_timing": {
+      "preprocess": 15.99,
+      "encode": 87.51,
+      "decode": 24.4,
+      "postprocess": 163.02,
+      "total": 290.91
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 25.11,
+      "encode": 318.63,
+      "decode": 45.52,
+      "postprocess": 174.1,
+      "total": 563.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.5,
+    "yolo_timing": {
+      "preprocess": 20.16,
+      "encode": 86.96,
+      "decode": 28.57,
+      "postprocess": 217.1,
+      "total": 352.79
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.16,
+      "encode": 87.29,
+      "decode": 30.55,
+      "postprocess": 170.04,
+      "total": 308.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.5,
+    "yolo_timing": {
+      "preprocess": 23.81,
+      "encode": 87.36,
+      "decode": 30.78,
+      "postprocess": 201.42,
+      "total": 343.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.14,
+      "encode": 88.64,
+      "decode": 31.34,
+      "postprocess": 136.71,
+      "total": 270.83
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3324.1,
+    "yolo_timing": {
+      "preprocess": 18.35,
+      "encode": 87.76,
+      "decode": 18.7,
+      "postprocess": 162.93,
+      "total": 287.73
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.38,
+      "encode": 87.36,
+      "decode": 32.85,
+      "postprocess": 144.88,
+      "total": 281.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3324.1,
+    "yolo_timing": {
+      "preprocess": 17.82,
+      "encode": 87.51,
+      "decode": 48.63,
+      "postprocess": 181.38,
+      "total": 335.34
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 32.81,
+      "encode": 87.43,
+      "decode": 61.94,
+      "postprocess": 424.22,
+      "total": 606.4
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.6,
+    "yolo_timing": {
+      "preprocess": 116.21,
+      "encode": 221.03,
+      "decode": 496.26,
+      "postprocess": 2273.24,
+      "total": 3106.73
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoKho2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.17,
+      "encode": 240.92,
+      "decode": 30.0,
+      "postprocess": 156.04,
+      "total": 446.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3351.6,
+    "yolo_timing": {
+      "preprocess": 16.44,
+      "encode": 86.88,
+      "decode": 46.89,
+      "postprocess": 257.21,
+      "total": 407.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot(8).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.53,
+      "encode": 86.69,
+      "decode": 8.08,
+      "postprocess": 45.15,
+      "total": 159.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.7,
+    "yolo_timing": {
+      "preprocess": 13.94,
+      "encode": 87.55,
+      "decode": 18.69,
+      "postprocess": 40.26,
+      "total": 160.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot-BanhKhot1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.92,
+      "encode": 87.38,
+      "decode": 18.22,
+      "postprocess": 124.59,
+      "total": 250.11
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3324.2,
+    "yolo_timing": {
+      "preprocess": 19.16,
+      "encode": 87.65,
+      "decode": 22.16,
+      "postprocess": 149.97,
+      "total": 278.94
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot-BanhKhot1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.01,
+      "encode": 87.35,
+      "decode": 180.8,
+      "postprocess": 1069.78,
+      "total": 1350.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3324.2,
+    "yolo_timing": {
+      "preprocess": 144.01,
+      "encode": 577.96,
+      "decode": 345.57,
+      "postprocess": 1206.68,
+      "total": 2274.22
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.35,
+      "encode": 252.87,
+      "decode": 10.92,
+      "postprocess": 65.98,
+      "total": 351.12
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3276.1,
+    "yolo_timing": {
+      "preprocess": 20.61,
+      "encode": 90.78,
+      "decode": 14.26,
+      "postprocess": 60.4,
+      "total": 186.05
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 12.75,
+      "encode": 87.12,
+      "decode": 16.16,
+      "postprocess": 93.28,
+      "total": 209.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3324.2,
+    "yolo_timing": {
+      "preprocess": 15.49,
+      "encode": 85.18,
+      "decode": 19.3,
+      "postprocess": 48.1,
+      "total": 168.07
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.11,
+      "encode": 87.12,
+      "decode": 12.62,
+      "postprocess": 54.67,
+      "total": 167.52
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.8,
+    "yolo_timing": {
+      "preprocess": 16.52,
+      "encode": 87.84,
+      "decode": 11.24,
+      "postprocess": 61.19,
+      "total": 176.79
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.39,
+      "encode": 87.31,
+      "decode": 8.1,
+      "postprocess": 52.16,
+      "total": 162.96
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.8,
+    "yolo_timing": {
+      "preprocess": 18.37,
+      "encode": 88.0,
+      "decode": 9.12,
+      "postprocess": 55.19,
+      "total": 170.68
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.39,
+      "encode": 87.23,
+      "decode": 8.68,
+      "postprocess": 69.76,
+      "total": 180.05
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.8,
+    "yolo_timing": {
+      "preprocess": 17.87,
+      "encode": 87.56,
+      "decode": 13.86,
+      "postprocess": 64.17,
+      "total": 183.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BoLaLot1(7).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.28,
+      "encode": 87.78,
+      "decode": 13.58,
+      "postprocess": 344.41,
+      "total": 461.05
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.8,
+    "yolo_timing": {
+      "preprocess": 94.11,
+      "encode": 216.57,
+      "decode": 114.68,
+      "postprocess": 391.15,
+      "total": 816.51
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BolaLot1(6).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.22,
+      "encode": 241.56,
+      "decode": 13.58,
+      "postprocess": 72.15,
+      "total": 346.5
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.8,
+    "yolo_timing": {
+      "preprocess": 20.21,
+      "encode": 99.27,
+      "decode": 14.97,
+      "postprocess": 53.92,
+      "total": 188.37
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BongCai(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.65,
+      "encode": 87.87,
+      "decode": 8.81,
+      "postprocess": 67.97,
+      "total": 182.31
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.9,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "BongCai(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.11,
+      "encode": 87.06,
+      "decode": 11.13,
+      "postprocess": 83.65,
+      "total": 200.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3276.3,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "BongCai(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.5,
+      "encode": 87.18,
+      "decode": 10.3,
+      "postprocess": 61.14,
+      "total": 175.11
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3296.9,
+    "yolo_timing": {
+      "preprocess": 14.75,
+      "encode": 85.63,
+      "decode": 11.08,
+      "postprocess": 60.88,
+      "total": 172.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BongCai(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 12.8,
+      "encode": 87.6,
+      "decode": 8.24,
+      "postprocess": 51.81,
+      "total": 160.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3297.0,
+    "yolo_timing": {
+      "preprocess": 15.08,
+      "encode": 87.21,
+      "decode": 8.18,
+      "postprocess": 54.38,
+      "total": 164.85
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.91,
+      "encode": 87.41,
+      "decode": 11.46,
+      "postprocess": 39.31,
+      "total": 154.09
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.2,
+    "yolo_timing": {
+      "preprocess": 12.44,
+      "encode": 88.17,
+      "decode": 8.68,
+      "postprocess": 36.43,
+      "total": 145.72
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.26,
+      "encode": 88.32,
+      "decode": 8.11,
+      "postprocess": 34.18,
+      "total": 149.87
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.2,
+    "yolo_timing": {
+      "preprocess": 14.23,
+      "encode": 87.93,
+      "decode": 8.91,
+      "postprocess": 35.87,
+      "total": 146.93
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.28,
+      "encode": 87.49,
+      "decode": 42.44,
+      "postprocess": 79.7,
+      "total": 226.91
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.3,
+    "yolo_timing": {
+      "preprocess": 23.36,
+      "encode": 89.06,
+      "decode": 9.09,
+      "postprocess": 33.85,
+      "total": 155.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.11,
+      "encode": 87.66,
+      "decode": 9.59,
+      "postprocess": 33.83,
+      "total": 150.19
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.3,
+    "yolo_timing": {
+      "preprocess": 13.67,
+      "encode": 88.33,
+      "decode": 11.66,
+      "postprocess": 33.84,
+      "total": 147.49
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.74,
+      "encode": 88.15,
+      "decode": 8.79,
+      "postprocess": 33.31,
+      "total": 143.98
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.3,
+    "yolo_timing": {
+      "preprocess": 16.03,
+      "encode": 88.64,
+      "decode": 8.24,
+      "postprocess": 34.58,
+      "total": 147.5
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.72,
+      "encode": 87.61,
+      "decode": 17.26,
+      "postprocess": 44.4,
+      "total": 163.98
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.3,
+    "yolo_timing": {
+      "preprocess": 20.38,
+      "encode": 87.9,
+      "decode": 8.67,
+      "postprocess": 38.79,
+      "total": 155.74
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Cha Ca 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.81,
+      "encode": 217.81,
+      "decode": 153.26,
+      "postprocess": 533.66,
+      "total": 922.53
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.6,
+    "yolo_timing": {
+      "preprocess": 105.34,
+      "encode": 242.1,
+      "decode": 160.96,
+      "postprocess": 449.55,
+      "total": 957.95
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Cha Ca 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 22.76,
+      "encode": 234.84,
+      "decode": 9.22,
+      "postprocess": 25.83,
+      "total": 292.65
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.7,
+    "yolo_timing": {
+      "preprocess": 18.09,
+      "encode": 100.16,
+      "decode": 9.84,
+      "postprocess": 32.23,
+      "total": 160.32
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Cha Ca 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.36,
+      "encode": 87.13,
+      "decode": 10.39,
+      "postprocess": 25.53,
+      "total": 136.41
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.7,
+    "yolo_timing": {
+      "preprocess": 14.79,
+      "encode": 87.38,
+      "decode": 15.91,
+      "postprocess": 26.84,
+      "total": 144.92
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Cha Ca 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.13,
+      "encode": 87.34,
+      "decode": 17.1,
+      "postprocess": 36.89,
+      "total": 155.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.7,
+    "yolo_timing": {
+      "preprocess": 16.78,
+      "encode": 88.69,
+      "decode": 9.19,
+      "postprocess": 34.77,
+      "total": 149.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Cha Ca 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 21.56,
+      "encode": 88.19,
+      "decode": 9.02,
+      "postprocess": 25.68,
+      "total": 144.44
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3262.7,
+    "yolo_timing": {
+      "preprocess": 20.53,
+      "encode": 88.25,
+      "decode": 14.6,
+      "postprocess": 45.04,
+      "total": 168.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.76,
+      "encode": 87.85,
+      "decode": 29.63,
+      "postprocess": 93.84,
+      "total": 228.08
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.3,
+    "yolo_timing": {
+      "preprocess": 16.45,
+      "encode": 87.93,
+      "decode": 29.08,
+      "postprocess": 96.49,
+      "total": 229.94
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.59,
+      "encode": 87.64,
+      "decode": 33.12,
+      "postprocess": 102.76,
+      "total": 241.11
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.4,
+    "yolo_timing": {
+      "preprocess": 12.26,
+      "encode": 87.68,
+      "decode": 34.29,
+      "postprocess": 112.76,
+      "total": 246.99
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 89.4,
+      "encode": 219.45,
+      "decode": 489.33,
+      "postprocess": 1220.92,
+      "total": 2019.1
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3286.4,
+    "yolo_timing": {
+      "preprocess": 132.87,
+      "encode": 322.93,
+      "decode": 699.34,
+      "postprocess": 391.38,
+      "total": 1546.53
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.89,
+      "encode": 130.16,
+      "decode": 57.47,
+      "postprocess": 114.74,
+      "total": 320.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.5,
+    "yolo_timing": {
+      "preprocess": 15.08,
+      "encode": 112.39,
+      "decode": 29.46,
+      "postprocess": 93.56,
+      "total": 250.5
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.45,
+      "encode": 87.58,
+      "decode": 35.99,
+      "postprocess": 107.33,
+      "total": 248.34
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.5,
+    "yolo_timing": {
+      "preprocess": 17.92,
+      "encode": 87.44,
+      "decode": 15.82,
+      "postprocess": 54.13,
+      "total": 175.31
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun Dau 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.82,
+      "encode": 87.64,
+      "decode": 25.79,
+      "postprocess": 90.74,
+      "total": 224.99
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.6,
+    "yolo_timing": {
+      "preprocess": 14.5,
+      "encode": 87.93,
+      "decode": 26.36,
+      "postprocess": 98.44,
+      "total": 227.24
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.59,
+      "encode": 87.23,
+      "decode": 8.13,
+      "postprocess": 29.67,
+      "total": 139.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3248.9,
+    "yolo_timing": {
+      "preprocess": 13.82,
+      "encode": 87.5,
+      "decode": 9.5,
+      "postprocess": 31.89,
+      "total": 142.72
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.98,
+      "encode": 88.09,
+      "decode": 8.66,
+      "postprocess": 31.63,
+      "total": 147.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3248.9,
+    "yolo_timing": {
+      "preprocess": 15.53,
+      "encode": 88.07,
+      "decode": 8.14,
+      "postprocess": 33.63,
+      "total": 145.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.8,
+      "encode": 87.44,
+      "decode": 8.32,
+      "postprocess": 30.47,
+      "total": 143.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.0,
+    "yolo_timing": {
+      "preprocess": 14.44,
+      "encode": 88.26,
+      "decode": 8.09,
+      "postprocess": 30.78,
+      "total": 141.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.72,
+      "encode": 88.07,
+      "decode": 9.55,
+      "postprocess": 32.02,
+      "total": 145.35
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.0,
+    "yolo_timing": {
+      "preprocess": 13.56,
+      "encode": 87.87,
+      "decode": 8.1,
+      "postprocess": 31.08,
+      "total": 140.61
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.89,
+      "encode": 88.32,
+      "decode": 9.13,
+      "postprocess": 33.44,
+      "total": 146.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.0,
+    "yolo_timing": {
+      "preprocess": 14.63,
+      "encode": 87.88,
+      "decode": 8.75,
+      "postprocess": 30.18,
+      "total": 141.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.58,
+      "encode": 87.88,
+      "decode": 8.97,
+      "postprocess": 27.46,
+      "total": 136.88
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.0,
+    "yolo_timing": {
+      "preprocess": 14.57,
+      "encode": 88.76,
+      "decode": 110.62,
+      "postprocess": 273.68,
+      "total": 487.63
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Bun bo 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 176.41,
+      "encode": 300.55,
+      "decode": 190.2,
+      "postprocess": 556.59,
+      "total": 1223.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.0,
+    "yolo_timing": {
+      "preprocess": 169.35,
+      "encode": 170.13,
+      "decode": 15.58,
+      "postprocess": 30.25,
+      "total": 385.31
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunBoHue1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.81,
+      "encode": 87.25,
+      "decode": 49.97,
+      "postprocess": 122.2,
+      "total": 274.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.5,
+    "yolo_timing": {
+      "preprocess": 30.41,
+      "encode": 87.23,
+      "decode": 16.9,
+      "postprocess": 105.98,
+      "total": 240.53
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunBoHue1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.78,
+      "encode": 87.87,
+      "decode": 18.01,
+      "postprocess": 145.49,
+      "total": 265.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.5,
+    "yolo_timing": {
+      "preprocess": 19.1,
+      "encode": 87.45,
+      "decode": 39.12,
+      "postprocess": 171.9,
+      "total": 317.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunBoHue1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.55,
+      "encode": 87.39,
+      "decode": 21.66,
+      "postprocess": 102.92,
+      "total": 226.51
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.6,
+    "yolo_timing": {
+      "preprocess": 17.38,
+      "encode": 87.66,
+      "decode": 24.11,
+      "postprocess": 146.41,
+      "total": 275.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunBoHue1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.4,
+      "encode": 87.49,
+      "decode": 16.7,
+      "postprocess": 104.88,
+      "total": 224.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.6,
+    "yolo_timing": {
+      "preprocess": 16.01,
+      "encode": 87.54,
+      "decode": 38.41,
+      "postprocess": 412.59,
+      "total": 554.54
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunBoHue1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 28.53,
+      "encode": 359.53,
+      "decode": 29.13,
+      "postprocess": 125.81,
+      "total": 543.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.6,
+    "yolo_timing": {
+      "preprocess": 21.16,
+      "encode": 88.14,
+      "decode": 18.81,
+      "postprocess": 133.0,
+      "total": 261.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunCha1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.61,
+      "encode": 87.11,
+      "decode": 16.57,
+      "postprocess": 121.05,
+      "total": 243.34
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.6,
+    "yolo_timing": {
+      "preprocess": 15.68,
+      "encode": 87.54,
+      "decode": 16.09,
+      "postprocess": 102.87,
+      "total": 222.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunCha2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.94,
+      "encode": 87.11,
+      "decode": 28.31,
+      "postprocess": 156.42,
+      "total": 286.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3353.1,
+    "yolo_timing": {
+      "preprocess": 16.06,
+      "encode": 87.17,
+      "decode": 26.45,
+      "postprocess": 156.71,
+      "total": 286.4
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunCha2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.43,
+      "encode": 87.85,
+      "decode": 39.37,
+      "postprocess": 755.86,
+      "total": 900.51
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3332.5,
+    "yolo_timing": {
+      "preprocess": 108.86,
+      "encode": 308.4,
+      "decode": 575.29,
+      "postprocess": 1972.11,
+      "total": 2964.66
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunCha2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.66,
+      "encode": 299.91,
+      "decode": 27.85,
+      "postprocess": 156.0,
+      "total": 505.43
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3353.1,
+    "yolo_timing": {
+      "preprocess": 18.2,
+      "encode": 87.81,
+      "decode": 25.43,
+      "postprocess": 145.04,
+      "total": 276.49
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.2,
+      "encode": 87.07,
+      "decode": 21.51,
+      "postprocess": 125.8,
+      "total": 250.58
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.7,
+    "yolo_timing": {
+      "preprocess": 13.93,
+      "encode": 87.29,
+      "decode": 10.37,
+      "postprocess": 58.46,
+      "total": 170.06
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.36,
+      "encode": 87.5,
+      "decode": 17.53,
+      "postprocess": 94.77,
+      "total": 216.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.7,
+    "yolo_timing": {
+      "preprocess": 17.37,
+      "encode": 87.51,
+      "decode": 8.14,
+      "postprocess": 50.58,
+      "total": 163.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.14,
+      "encode": 87.93,
+      "decode": 21.39,
+      "postprocess": 105.51,
+      "total": 230.97
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.7,
+    "yolo_timing": {
+      "preprocess": 94.58,
+      "encode": 195.91,
+      "decode": 104.77,
+      "postprocess": 554.58,
+      "total": 949.84
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.53,
+      "encode": 238.52,
+      "decode": 35.62,
+      "postprocess": 130.33,
+      "total": 425.0
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.7,
+    "yolo_timing": {
+      "preprocess": 19.93,
+      "encode": 87.58,
+      "decode": 55.14,
+      "postprocess": 192.05,
+      "total": 354.69
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.04,
+      "encode": 87.06,
+      "decode": 9.3,
+      "postprocess": 39.47,
+      "total": 155.88
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3277.7,
+    "yolo_timing": {
+      "preprocess": 17.66,
+      "encode": 87.79,
+      "decode": 21.59,
+      "postprocess": 141.6,
+      "total": 268.64
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(6).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.81,
+      "encode": 87.4,
+      "decode": 22.66,
+      "postprocess": 97.4,
+      "total": 223.27
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.8,
+    "yolo_timing": {
+      "preprocess": 15.29,
+      "encode": 87.21,
+      "decode": 24.53,
+      "postprocess": 152.9,
+      "total": 279.94
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunMam(7).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.71,
+      "encode": 87.25,
+      "decode": 21.52,
+      "postprocess": 97.51,
+      "total": 220.99
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.8,
+    "yolo_timing": {
+      "preprocess": 15.65,
+      "encode": 87.65,
+      "decode": 17.18,
+      "postprocess": 101.62,
+      "total": 222.09
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 122.0,
+      "encode": 377.13,
+      "decode": 437.16,
+      "postprocess": 1446.18,
+      "total": 2382.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.8,
+    "yolo_timing": {
+      "preprocess": 21.5,
+      "encode": 295.12,
+      "decode": 9.13,
+      "postprocess": 90.72,
+      "total": 416.47
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.31,
+      "encode": 99.74,
+      "decode": 23.57,
+      "postprocess": 116.97,
+      "total": 258.59
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.9,
+    "yolo_timing": {
+      "preprocess": 13.68,
+      "encode": 87.14,
+      "decode": 11.92,
+      "postprocess": 83.91,
+      "total": 196.64
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.82,
+      "encode": 87.28,
+      "decode": 18.66,
+      "postprocess": 87.57,
+      "total": 209.33
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.9,
+    "yolo_timing": {
+      "preprocess": 15.92,
+      "encode": 87.41,
+      "decode": 8.39,
+      "postprocess": 50.64,
+      "total": 162.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.72,
+      "encode": 87.72,
+      "decode": 16.08,
+      "postprocess": 100.1,
+      "total": 217.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3325.9,
+    "yolo_timing": {
+      "preprocess": 14.15,
+      "encode": 87.42,
+      "decode": 17.83,
+      "postprocess": 103.94,
+      "total": 223.35
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.49,
+      "encode": 87.37,
+      "decode": 17.09,
+      "postprocess": 90.09,
+      "total": 209.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.0,
+    "yolo_timing": {
+      "preprocess": 17.16,
+      "encode": 87.47,
+      "decode": 8.16,
+      "postprocess": 50.04,
+      "total": 162.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "BunRieu2(6).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.45,
+      "encode": 87.27,
+      "decode": 19.76,
+      "postprocess": 92.29,
+      "total": 213.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.0,
+    "yolo_timing": {
+      "preprocess": 23.1,
+      "encode": 87.41,
+      "decode": 7.98,
+      "postprocess": 44.51,
+      "total": 162.99
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.79,
+      "encode": 87.9,
+      "decode": 19.2,
+      "postprocess": 101.14,
+      "total": 223.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.0,
+    "yolo_timing": {
+      "preprocess": 15.39,
+      "encode": 88.02,
+      "decode": 27.89,
+      "postprocess": 153.82,
+      "total": 285.12
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.08,
+      "encode": 87.77,
+      "decode": 8.63,
+      "postprocess": 751.92,
+      "total": 863.4
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3277.9,
+    "yolo_timing": {
+      "preprocess": 479.68,
+      "encode": 521.83,
+      "decode": 812.82,
+      "postprocess": 1110.74,
+      "total": 2925.06
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.73,
+      "encode": 337.95,
+      "decode": 8.78,
+      "postprocess": 39.83,
+      "total": 408.29
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3277.9,
+    "yolo_timing": {
+      "preprocess": 14.76,
+      "encode": 99.66,
+      "decode": 18.28,
+      "postprocess": 102.4,
+      "total": 235.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.54,
+      "encode": 87.35,
+      "decode": 13.85,
+      "postprocess": 58.74,
+      "total": 181.48
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.0,
+    "yolo_timing": {
+      "preprocess": 19.11,
+      "encode": 87.56,
+      "decode": 20.7,
+      "postprocess": 131.56,
+      "total": 258.93
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.64,
+      "encode": 87.16,
+      "decode": 8.26,
+      "postprocess": 51.55,
+      "total": 163.61
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.0,
+    "yolo_timing": {
+      "preprocess": 15.1,
+      "encode": 85.2,
+      "decode": 8.25,
+      "postprocess": 60.6,
+      "total": 169.16
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.03,
+      "encode": 87.68,
+      "decode": 8.74,
+      "postprocess": 59.45,
+      "total": 171.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.0,
+    "yolo_timing": {
+      "preprocess": 13.45,
+      "encode": 85.24,
+      "decode": 20.03,
+      "postprocess": 120.37,
+      "total": 239.09
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua3(1)-weight_58,8.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.7,
+      "encode": 87.09,
+      "decode": 14.46,
+      "postprocess": 49.51,
+      "total": 165.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.0,
+    "yolo_timing": {
+      "preprocess": 15.13,
+      "encode": 88.7,
+      "decode": 298.12,
+      "postprocess": 1425.43,
+      "total": 1827.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua3(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 31.18,
+      "encode": 316.75,
+      "decode": 14.44,
+      "postprocess": 58.28,
+      "total": 420.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3298.6,
+    "yolo_timing": {
+      "preprocess": 13.3,
+      "encode": 100.13,
+      "decode": 22.54,
+      "postprocess": 125.31,
+      "total": 261.27
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua3(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.04,
+      "encode": 87.16,
+      "decode": 11.28,
+      "postprocess": 55.68,
+      "total": 167.16
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.0,
+    "yolo_timing": {
+      "preprocess": 15.2,
+      "encode": 87.22,
+      "decode": 35.1,
+      "postprocess": 208.22,
+      "total": 345.75
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "CaChua3(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.59,
+      "encode": 87.12,
+      "decode": 15.67,
+      "postprocess": 48.78,
+      "total": 169.16
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3298.6,
+    "yolo_timing": {
+      "preprocess": 15.51,
+      "encode": 87.63,
+      "decode": 29.0,
+      "postprocess": 154.53,
+      "total": 286.67
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.35,
+      "encode": 87.77,
+      "decode": 9.64,
+      "postprocess": 29.66,
+      "total": 140.42
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.7,
+    "yolo_timing": {
+      "preprocess": 13.23,
+      "encode": 88.37,
+      "decode": 9.59,
+      "postprocess": 25.39,
+      "total": 136.57
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 10.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.13,
+      "encode": 87.82,
+      "decode": 12.18,
+      "postprocess": 35.11,
+      "total": 149.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.7,
+    "yolo_timing": {
+      "preprocess": 14.49,
+      "encode": 87.7,
+      "decode": 15.41,
+      "postprocess": 26.94,
+      "total": 144.53
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.25,
+      "encode": 87.78,
+      "decode": 8.05,
+      "postprocess": 270.75,
+      "total": 380.83
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.8,
+    "yolo_timing": {
+      "preprocess": 89.53,
+      "encode": 258.06,
+      "decode": 104.95,
+      "postprocess": 303.35,
+      "total": 755.89
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 106.84,
+      "encode": 267.58,
+      "decode": 158.61,
+      "postprocess": 129.26,
+      "total": 662.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.8,
+    "yolo_timing": {
+      "preprocess": 15.83,
+      "encode": 99.66,
+      "decode": 19.02,
+      "postprocess": 37.65,
+      "total": 172.16
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.82,
+      "encode": 99.56,
+      "decode": 14.0,
+      "postprocess": 37.81,
+      "total": 165.2
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.8,
+    "yolo_timing": {
+      "preprocess": 17.84,
+      "encode": 87.73,
+      "decode": 8.1,
+      "postprocess": 28.59,
+      "total": 142.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.06,
+      "encode": 84.71,
+      "decode": 11.14,
+      "postprocess": 42.83,
+      "total": 157.74
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.8,
+    "yolo_timing": {
+      "preprocess": 12.85,
+      "encode": 87.61,
+      "decode": 12.02,
+      "postprocess": 43.75,
+      "total": 156.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.0,
+      "encode": 87.44,
+      "decode": 11.41,
+      "postprocess": 28.49,
+      "total": 145.35
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3249.8,
+    "yolo_timing": {
+      "preprocess": 18.88,
+      "encode": 88.4,
+      "decode": 11.99,
+      "postprocess": 26.02,
+      "total": 145.28
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.33,
+      "encode": 87.82,
+      "decode": 17.08,
+      "postprocess": 54.54,
+      "total": 173.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3282.7,
+    "yolo_timing": {
+      "preprocess": 12.31,
+      "encode": 87.82,
+      "decode": 8.31,
+      "postprocess": 29.78,
+      "total": 138.22
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.21,
+      "encode": 87.84,
+      "decode": 8.23,
+      "postprocess": 28.28,
+      "total": 137.55
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.9,
+    "yolo_timing": {
+      "preprocess": 12.38,
+      "encode": 88.1,
+      "decode": 8.98,
+      "postprocess": 26.18,
+      "total": 135.63
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Cha Gio 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.4,
+      "encode": 87.89,
+      "decode": 9.61,
+      "postprocess": 26.13,
+      "total": 136.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.9,
+    "yolo_timing": {
+      "preprocess": 14.92,
+      "encode": 88.43,
+      "decode": 12.35,
+      "postprocess": 26.76,
+      "total": 142.46
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.18,
+      "encode": 87.62,
+      "decode": 9.98,
+      "postprocess": 35.24,
+      "total": 148.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.0,
+    "yolo_timing": {
+      "preprocess": 17.62,
+      "encode": 88.43,
+      "decode": 8.21,
+      "postprocess": 39.37,
+      "total": 153.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.92,
+      "encode": 88.88,
+      "decode": 9.21,
+      "postprocess": 36.86,
+      "total": 147.87
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.0,
+    "yolo_timing": {
+      "preprocess": 14.42,
+      "encode": 88.36,
+      "decode": 8.6,
+      "postprocess": 36.29,
+      "total": 147.67
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.76,
+      "encode": 87.88,
+      "decode": 9.49,
+      "postprocess": 38.12,
+      "total": 153.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.0,
+    "yolo_timing": {
+      "preprocess": 15.75,
+      "encode": 88.39,
+      "decode": 8.71,
+      "postprocess": 39.6,
+      "total": 152.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.86,
+      "encode": 88.24,
+      "decode": 8.11,
+      "postprocess": 33.22,
+      "total": 146.42
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.0,
+    "yolo_timing": {
+      "preprocess": 14.72,
+      "encode": 88.01,
+      "decode": 8.28,
+      "postprocess": 35.38,
+      "total": 146.39
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.65,
+      "encode": 87.96,
+      "decode": 8.83,
+      "postprocess": 37.07,
+      "total": 147.51
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.1,
+    "yolo_timing": {
+      "preprocess": 14.53,
+      "encode": 87.96,
+      "decode": 11.02,
+      "postprocess": 44.85,
+      "total": 158.35
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.45,
+      "encode": 88.02,
+      "decode": 26.45,
+      "postprocess": 721.05,
+      "total": 853.96
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3268.7,
+    "yolo_timing": {
+      "preprocess": 109.62,
+      "encode": 231.34,
+      "decode": 276.2,
+      "postprocess": 1080.27,
+      "total": 1697.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 21.31,
+      "encode": 243.87,
+      "decode": 18.69,
+      "postprocess": 68.87,
+      "total": 352.74
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3282.8,
+    "yolo_timing": {
+      "preprocess": 14.9,
+      "encode": 89.3,
+      "decode": 16.57,
+      "postprocess": 64.51,
+      "total": 185.27
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Chao Long 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.85,
+      "encode": 87.55,
+      "decode": 23.31,
+      "postprocess": 72.17,
+      "total": 198.87
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3282.9,
+    "yolo_timing": {
+      "preprocess": 17.59,
+      "encode": 87.86,
+      "decode": 38.15,
+      "postprocess": 71.76,
+      "total": 215.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Com(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.98,
+      "encode": 87.23,
+      "decode": 23.91,
+      "postprocess": 66.98,
+      "total": 194.09
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.3,
+    "yolo_timing": {
+      "preprocess": 17.03,
+      "encode": 87.2,
+      "decode": 11.32,
+      "postprocess": 79.21,
+      "total": 194.77
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Com(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.1,
+      "encode": 87.96,
+      "decode": 8.26,
+      "postprocess": 54.21,
+      "total": 169.54
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.3,
+    "yolo_timing": {
+      "preprocess": 17.38,
+      "encode": 87.63,
+      "decode": 10.14,
+      "postprocess": 71.66,
+      "total": 186.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Com(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.35,
+      "encode": 87.61,
+      "decode": 10.59,
+      "postprocess": 79.98,
+      "total": 196.54
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.4,
+    "yolo_timing": {
+      "preprocess": 17.19,
+      "encode": 87.62,
+      "decode": 30.78,
+      "postprocess": 134.55,
+      "total": 270.14
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.26,
+      "encode": 87.42,
+      "decode": 8.6,
+      "postprocess": 47.36,
+      "total": 158.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.4,
+    "yolo_timing": {
+      "preprocess": 23.88,
+      "encode": 88.18,
+      "decode": 8.39,
+      "postprocess": 43.75,
+      "total": 164.2
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.2,
+      "encode": 87.38,
+      "decode": 10.75,
+      "postprocess": 43.72,
+      "total": 162.05
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.4,
+    "yolo_timing": {
+      "preprocess": 19.26,
+      "encode": 87.82,
+      "decode": 9.18,
+      "postprocess": 45.61,
+      "total": 161.87
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.0,
+      "encode": 87.44,
+      "decode": 10.62,
+      "postprocess": 50.09,
+      "total": 163.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 16.21,
+      "encode": 87.74,
+      "decode": 9.17,
+      "postprocess": 51.94,
+      "total": 165.06
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.86,
+      "encode": 87.55,
+      "decode": 9.1,
+      "postprocess": 48.05,
+      "total": 159.56
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 15.88,
+      "encode": 87.69,
+      "decode": 9.51,
+      "postprocess": 406.25,
+      "total": 519.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 128.07,
+      "encode": 240.86,
+      "decode": 165.34,
+      "postprocess": 69.47,
+      "total": 603.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 16.51,
+      "encode": 96.0,
+      "decode": 8.69,
+      "postprocess": 49.31,
+      "total": 170.51
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.64,
+      "encode": 95.97,
+      "decode": 9.27,
+      "postprocess": 66.19,
+      "total": 187.07
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 17.97,
+      "encode": 91.0,
+      "decode": 23.79,
+      "postprocess": 43.86,
+      "total": 176.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (7).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.66,
+      "encode": 87.33,
+      "decode": 11.31,
+      "postprocess": 59.84,
+      "total": 174.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 26.48,
+      "encode": 87.2,
+      "decode": 8.41,
+      "postprocess": 61.73,
+      "total": 183.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa1 (8).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.58,
+      "encode": 87.48,
+      "decode": 12.33,
+      "postprocess": 46.75,
+      "total": 162.14
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.5,
+    "yolo_timing": {
+      "preprocess": 14.57,
+      "encode": 87.99,
+      "decode": 16.36,
+      "postprocess": 51.08,
+      "total": 170.0
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa2 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.87,
+      "encode": 87.98,
+      "decode": 17.22,
+      "postprocess": 103.72,
+      "total": 224.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.6,
+    "yolo_timing": {
+      "preprocess": 15.32,
+      "encode": 88.06,
+      "decode": 16.09,
+      "postprocess": 101.75,
+      "total": 221.22
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa2 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 22.37,
+      "encode": 87.89,
+      "decode": 16.53,
+      "postprocess": 96.0,
+      "total": 222.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.6,
+    "yolo_timing": {
+      "preprocess": 16.24,
+      "encode": 88.73,
+      "decode": 16.48,
+      "postprocess": 93.76,
+      "total": 215.22
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComGa2 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 92.12,
+      "encode": 367.71,
+      "decode": 179.16,
+      "postprocess": 102.14,
+      "total": 741.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.7,
+    "yolo_timing": {
+      "preprocess": 14.55,
+      "encode": 99.59,
+      "decode": 19.01,
+      "postprocess": 102.97,
+      "total": 236.12
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComThitNuong2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.78,
+      "encode": 100.66,
+      "decode": 26.74,
+      "postprocess": 129.98,
+      "total": 277.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.7,
+    "yolo_timing": {
+      "preprocess": 19.87,
+      "encode": 87.68,
+      "decode": 18.59,
+      "postprocess": 131.89,
+      "total": 258.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComThitNuong2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.54,
+      "encode": 87.44,
+      "decode": 20.35,
+      "postprocess": 93.03,
+      "total": 217.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.7,
+    "yolo_timing": {
+      "preprocess": 15.25,
+      "encode": 87.74,
+      "decode": 18.19,
+      "postprocess": 96.04,
+      "total": 217.21
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ComThitNuong2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.06,
+      "encode": 87.5,
+      "decode": 16.52,
+      "postprocess": 97.54,
+      "total": 216.61
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.7,
+    "yolo_timing": {
+      "preprocess": 14.14,
+      "encode": 87.92,
+      "decode": 16.47,
+      "postprocess": 102.96,
+      "total": 221.49
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DauHu(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.62,
+      "encode": 87.72,
+      "decode": 8.08,
+      "postprocess": 43.49,
+      "total": 155.92
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 16.98,
+      "encode": 87.87,
+      "decode": 8.31,
+      "postprocess": 44.54,
+      "total": 157.69
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DauHu(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 110.26,
+      "encode": 376.22,
+      "decode": 137.34,
+      "postprocess": 546.55,
+      "total": 1170.37
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 24.68,
+      "encode": 194.83,
+      "decode": 16.35,
+      "postprocess": 62.92,
+      "total": 298.77
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DauHu(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.04,
+      "encode": 93.66,
+      "decode": 9.77,
+      "postprocess": 64.83,
+      "total": 187.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 20.07,
+      "encode": 87.42,
+      "decode": 8.33,
+      "postprocess": 43.16,
+      "total": 158.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DauHu(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.44,
+      "encode": 87.5,
+      "decode": 8.53,
+      "postprocess": 57.39,
+      "total": 169.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 13.84,
+      "encode": 87.5,
+      "decode": 9.58,
+      "postprocess": 61.79,
+      "total": 172.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DoChua1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.27,
+      "encode": 87.89,
+      "decode": 9.06,
+      "postprocess": 80.04,
+      "total": 194.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 18.73,
+      "encode": 87.83,
+      "decode": 19.81,
+      "postprocess": 106.49,
+      "total": 232.85
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DoChua1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.52,
+      "encode": 87.55,
+      "decode": 8.07,
+      "postprocess": 38.48,
+      "total": 150.63
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.7,
+    "yolo_timing": {
+      "preprocess": 14.26,
+      "encode": 87.7,
+      "decode": 17.76,
+      "postprocess": 100.11,
+      "total": 219.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.3,
+      "encode": 87.65,
+      "decode": 12.02,
+      "postprocess": 52.73,
+      "total": 166.7
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.8,
+    "yolo_timing": {
+      "preprocess": 15.71,
+      "encode": 87.38,
+      "decode": 8.69,
+      "postprocess": 50.89,
+      "total": 162.67
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.36,
+      "encode": 87.35,
+      "decode": 8.81,
+      "postprocess": 52.52,
+      "total": 163.03
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.8,
+    "yolo_timing": {
+      "preprocess": 13.08,
+      "encode": 88.06,
+      "decode": 8.47,
+      "postprocess": 50.82,
+      "total": 160.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.98,
+      "encode": 87.51,
+      "decode": 13.31,
+      "postprocess": 68.4,
+      "total": 184.2
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3278.8,
+    "yolo_timing": {
+      "preprocess": 18.77,
+      "encode": 87.6,
+      "decode": 8.39,
+      "postprocess": 62.21,
+      "total": 176.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.93,
+      "encode": 87.59,
+      "decode": 19.46,
+      "postprocess": 93.94,
+      "total": 216.93
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.9,
+    "yolo_timing": {
+      "preprocess": 16.1,
+      "encode": 88.03,
+      "decode": 9.58,
+      "postprocess": 55.84,
+      "total": 169.55
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.84,
+      "encode": 87.49,
+      "decode": 16.46,
+      "postprocess": 973.61,
+      "total": 1091.41
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3306.3,
+    "yolo_timing": {
+      "preprocess": 116.97,
+      "encode": 410.69,
+      "decode": 145.17,
+      "postprocess": 866.89,
+      "total": 1539.73
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "DuaLeo2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.48,
+      "encode": 261.6,
+      "decode": 22.06,
+      "postprocess": 118.69,
+      "total": 423.83
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3326.9,
+    "yolo_timing": {
+      "preprocess": 17.39,
+      "encode": 88.53,
+      "decode": 10.84,
+      "postprocess": 61.42,
+      "total": 178.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi Cuon 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.53,
+      "encode": 88.04,
+      "decode": 10.74,
+      "postprocess": 30.54,
+      "total": 145.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.7,
+    "yolo_timing": {
+      "preprocess": 16.72,
+      "encode": 88.54,
+      "decode": 10.16,
+      "postprocess": 46.96,
+      "total": 162.37
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 10.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.17,
+      "encode": 87.91,
+      "decode": 8.34,
+      "postprocess": 34.85,
+      "total": 145.27
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.7,
+    "yolo_timing": {
+      "preprocess": 14.8,
+      "encode": 88.18,
+      "decode": 12.19,
+      "postprocess": 47.21,
+      "total": 162.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 11.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.17,
+      "encode": 87.68,
+      "decode": 9.46,
+      "postprocess": 30.72,
+      "total": 144.03
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.7,
+    "yolo_timing": {
+      "preprocess": 14.16,
+      "encode": 88.34,
+      "decode": 12.21,
+      "postprocess": 30.99,
+      "total": 145.69
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.67,
+      "encode": 87.89,
+      "decode": 8.78,
+      "postprocess": 33.89,
+      "total": 144.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3264.7,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Goi cuon 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.86,
+      "encode": 87.9,
+      "decode": 8.87,
+      "postprocess": 28.81,
+      "total": 140.44
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.6,
+    "yolo_timing": {
+      "preprocess": 33.57,
+      "encode": 88.07,
+      "decode": 21.47,
+      "postprocess": 35.32,
+      "total": 178.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.87,
+      "encode": 87.93,
+      "decode": 12.79,
+      "postprocess": 30.38,
+      "total": 145.97
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.6,
+    "yolo_timing": {
+      "preprocess": 14.43,
+      "encode": 88.05,
+      "decode": 8.63,
+      "postprocess": 33.03,
+      "total": 144.14
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.73,
+      "encode": 88.06,
+      "decode": 11.61,
+      "postprocess": 30.62,
+      "total": 144.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.6,
+    "yolo_timing": {
+      "preprocess": 15.48,
+      "encode": 88.42,
+      "decode": 8.01,
+      "postprocess": 29.87,
+      "total": 141.78
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.25,
+      "encode": 88.5,
+      "decode": 12.86,
+      "postprocess": 30.75,
+      "total": 147.35
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 20.64,
+      "encode": 87.84,
+      "decode": 10.83,
+      "postprocess": 45.14,
+      "total": 164.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.44,
+      "encode": 89.12,
+      "decode": 12.94,
+      "postprocess": 42.43,
+      "total": 161.94
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 17.37,
+      "encode": 87.99,
+      "decode": 11.78,
+      "postprocess": 34.83,
+      "total": 151.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.92,
+      "encode": 87.8,
+      "decode": 11.16,
+      "postprocess": 43.94,
+      "total": 158.82
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 15.25,
+      "encode": 87.87,
+      "decode": 11.58,
+      "postprocess": 31.68,
+      "total": 146.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Goi cuon 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 93.18,
+      "encode": 225.27,
+      "decode": 190.81,
+      "postprocess": 397.53,
+      "total": 906.8
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 109.81,
+      "encode": 249.8,
+      "decode": 229.3,
+      "postprocess": 431.02,
+      "total": 1019.94
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.71,
+      "encode": 211.94,
+      "decode": 19.05,
+      "postprocess": 33.51,
+      "total": 285.21
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 17.06,
+      "encode": 102.21,
+      "decode": 12.54,
+      "postprocess": 34.17,
+      "total": 165.99
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 10.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.91,
+      "encode": 87.93,
+      "decode": 19.76,
+      "postprocess": 31.85,
+      "total": 153.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 15.4,
+      "encode": 88.44,
+      "decode": 16.97,
+      "postprocess": 32.52,
+      "total": 153.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 11.jpg": {
+    "oracle_timing": {
+      "preprocess": 20.63,
+      "encode": 87.61,
+      "decode": 10.02,
+      "postprocess": 33.99,
+      "total": 152.25
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 17.13,
+      "encode": 88.2,
+      "decode": 12.12,
+      "postprocess": 50.2,
+      "total": 167.64
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 12.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.66,
+      "encode": 87.55,
+      "decode": 9.97,
+      "postprocess": 34.09,
+      "total": 147.27
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 13.38,
+      "encode": 88.69,
+      "decode": 13.0,
+      "postprocess": 34.99,
+      "total": 150.06
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.05,
+      "encode": 88.14,
+      "decode": 8.41,
+      "postprocess": 32.64,
+      "total": 143.24
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.7,
+    "yolo_timing": {
+      "preprocess": 14.61,
+      "encode": 87.86,
+      "decode": 8.72,
+      "postprocess": 29.5,
+      "total": 140.69
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.92,
+      "encode": 87.9,
+      "decode": 9.01,
+      "postprocess": 33.28,
+      "total": 143.1
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 14.4,
+      "encode": 88.2,
+      "decode": 9.39,
+      "postprocess": 29.5,
+      "total": 141.49
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.76,
+      "encode": 88.4,
+      "decode": 8.49,
+      "postprocess": 30.51,
+      "total": 140.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 14.9,
+      "encode": 88.08,
+      "decode": 13.7,
+      "postprocess": 31.43,
+      "total": 148.11
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.97,
+      "encode": 87.89,
+      "decode": 9.15,
+      "postprocess": 30.91,
+      "total": 142.92
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 16.93,
+      "encode": 88.43,
+      "decode": 8.48,
+      "postprocess": 30.13,
+      "total": 143.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.54,
+      "encode": 88.07,
+      "decode": 9.85,
+      "postprocess": 29.96,
+      "total": 141.43
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 13.03,
+      "encode": 88.0,
+      "decode": 8.33,
+      "postprocess": 30.44,
+      "total": 139.8
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.47,
+      "encode": 88.24,
+      "decode": 8.86,
+      "postprocess": 31.34,
+      "total": 140.9
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 17.63,
+      "encode": 87.94,
+      "decode": 10.08,
+      "postprocess": 45.09,
+      "total": 160.75
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 12.38,
+      "encode": 87.86,
+      "decode": 9.31,
+      "postprocess": 35.07,
+      "total": 144.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 13.84,
+      "encode": 88.14,
+      "decode": 9.79,
+      "postprocess": 32.63,
+      "total": 144.4
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Hamburger 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.85,
+      "encode": 87.56,
+      "decode": 16.57,
+      "postprocess": 32.97,
+      "total": 153.94
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3250.8,
+    "yolo_timing": {
+      "preprocess": 15.46,
+      "encode": 88.67,
+      "decode": 8.97,
+      "postprocess": 32.78,
+      "total": 145.87
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HeoQuay1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.21,
+      "encode": 88.86,
+      "decode": 124.02,
+      "postprocess": 805.61,
+      "total": 1032.71
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3279.1,
+    "yolo_timing": {
+      "preprocess": 148.13,
+      "encode": 250.5,
+      "decode": 313.03,
+      "postprocess": 683.22,
+      "total": 1394.88
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook13 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.91,
+      "encode": 200.76,
+      "decode": 12.88,
+      "postprocess": 65.25,
+      "total": 297.8
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3279.2,
+    "yolo_timing": {
+      "preprocess": 22.03,
+      "encode": 95.59,
+      "decode": 17.8,
+      "postprocess": 71.2,
+      "total": 206.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook13 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.81,
+      "encode": 87.22,
+      "decode": 30.89,
+      "postprocess": 151.2,
+      "total": 284.12
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.3,
+    "yolo_timing": {
+      "preprocess": 24.45,
+      "encode": 87.75,
+      "decode": 10.91,
+      "postprocess": 73.16,
+      "total": 196.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook13 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.98,
+      "encode": 87.63,
+      "decode": 13.54,
+      "postprocess": 70.92,
+      "total": 191.07
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3299.8,
+    "yolo_timing": {
+      "preprocess": 19.16,
+      "encode": 88.17,
+      "decode": 13.05,
+      "postprocess": 45.58,
+      "total": 165.96
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook14 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.11,
+      "encode": 87.3,
+      "decode": 35.78,
+      "postprocess": 286.61,
+      "total": 426.79
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3382.3,
+    "yolo_timing": {
+      "preprocess": 19.11,
+      "encode": 88.16,
+      "decode": 17.91,
+      "postprocess": 93.0,
+      "total": 218.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook14 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 119.07,
+      "encode": 228.49,
+      "decode": 435.1,
+      "postprocess": 2617.18,
+      "total": 3399.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3334.2,
+    "yolo_timing": {
+      "preprocess": 153.01,
+      "encode": 272.61,
+      "decode": 442.99,
+      "postprocess": 1161.42,
+      "total": 2030.03
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook14 (7).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.93,
+      "encode": 244.13,
+      "decode": 30.34,
+      "postprocess": 194.61,
+      "total": 493.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3354.8,
+    "yolo_timing": {
+      "preprocess": 19.13,
+      "encode": 87.21,
+      "decode": 26.6,
+      "postprocess": 113.93,
+      "total": 246.87
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook14 (8).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.52,
+      "encode": 87.23,
+      "decode": 27.7,
+      "postprocess": 138.7,
+      "total": 269.14
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3354.8,
+    "yolo_timing": {
+      "preprocess": 16.62,
+      "encode": 87.51,
+      "decode": 24.99,
+      "postprocess": 91.05,
+      "total": 220.17
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook4 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.27,
+      "encode": 87.09,
+      "decode": 17.46,
+      "postprocess": 101.93,
+      "total": 221.76
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.4,
+    "yolo_timing": {
+      "preprocess": 15.47,
+      "encode": 87.61,
+      "decode": 16.77,
+      "postprocess": 139.14,
+      "total": 258.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook4 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.4,
+      "encode": 88.85,
+      "decode": 240.16,
+      "postprocess": 1391.41,
+      "total": 1737.82
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.4,
+    "yolo_timing": {
+      "preprocess": 132.9,
+      "encode": 565.16,
+      "decode": 428.01,
+      "postprocess": 840.23,
+      "total": 1966.3
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook4 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 28.67,
+      "encode": 230.66,
+      "decode": 22.15,
+      "postprocess": 129.03,
+      "total": 410.51
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.4,
+    "yolo_timing": {
+      "preprocess": 16.97,
+      "encode": 87.59,
+      "decode": 19.36,
+      "postprocess": 98.44,
+      "total": 222.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook4 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.29,
+      "encode": 87.58,
+      "decode": 21.0,
+      "postprocess": 125.43,
+      "total": 255.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.4,
+    "yolo_timing": {
+      "preprocess": 14.97,
+      "encode": 87.18,
+      "decode": 21.77,
+      "postprocess": 124.86,
+      "total": 248.77
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook4 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 22.68,
+      "encode": 87.64,
+      "decode": 37.15,
+      "postprocess": 100.68,
+      "total": 248.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.4,
+    "yolo_timing": {
+      "preprocess": 20.83,
+      "encode": 87.38,
+      "decode": 18.41,
+      "postprocess": 110.48,
+      "total": 237.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HomeCook6 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.93,
+      "encode": 87.32,
+      "decode": 53.63,
+      "postprocess": 729.74,
+      "total": 894.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3361.8,
+    "yolo_timing": {
+      "preprocess": 146.75,
+      "encode": 225.3,
+      "decode": 251.89,
+      "postprocess": 1260.66,
+      "total": 1884.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.98,
+      "encode": 230.71,
+      "decode": 22.01,
+      "postprocess": 53.97,
+      "total": 326.67
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.0,
+    "yolo_timing": {
+      "preprocess": 18.23,
+      "encode": 88.98,
+      "decode": 29.17,
+      "postprocess": 126.81,
+      "total": 263.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.75,
+      "encode": 88.32,
+      "decode": 12.02,
+      "postprocess": 79.8,
+      "total": 199.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.0,
+    "yolo_timing": {
+      "preprocess": 24.02,
+      "encode": 87.99,
+      "decode": 14.05,
+      "postprocess": 78.03,
+      "total": 204.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 36.65,
+      "encode": 87.76,
+      "decode": 16.92,
+      "postprocess": 98.84,
+      "total": 240.17
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.0,
+    "yolo_timing": {
+      "preprocess": 31.96,
+      "encode": 87.78,
+      "decode": 12.05,
+      "postprocess": 70.98,
+      "total": 202.77
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.04,
+      "encode": 87.95,
+      "decode": 11.84,
+      "postprocess": 77.65,
+      "total": 195.48
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 19.2,
+      "encode": 87.81,
+      "decode": 16.85,
+      "postprocess": 64.24,
+      "total": 188.09
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.67,
+      "encode": 87.19,
+      "decode": 16.77,
+      "postprocess": 51.84,
+      "total": 172.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 17.3,
+      "encode": 87.53,
+      "decode": 8.62,
+      "postprocess": 63.97,
+      "total": 177.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "HuTieu1(6).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.44,
+      "encode": 87.37,
+      "decode": 11.57,
+      "postprocess": 80.9,
+      "total": 195.28
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 19.53,
+      "encode": 88.42,
+      "decode": 8.22,
+      "postprocess": 57.15,
+      "total": 173.31
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_133655.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.39,
+      "encode": 87.84,
+      "decode": 9.81,
+      "postprocess": 48.69,
+      "total": 165.73
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 18.56,
+      "encode": 87.71,
+      "decode": 9.5,
+      "postprocess": 50.94,
+      "total": 166.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_133702.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.59,
+      "encode": 87.36,
+      "decode": 8.57,
+      "postprocess": 50.05,
+      "total": 160.57
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 12.81,
+      "encode": 89.19,
+      "decode": 133.9,
+      "postprocess": 453.81,
+      "total": 689.72
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_133705.jpg": {
+    "oracle_timing": {
+      "preprocess": 110.7,
+      "encode": 355.21,
+      "decode": 16.83,
+      "postprocess": 61.51,
+      "total": 544.25
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.1,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "IMG_20260927_133719.jpg": {
+    "oracle_timing": {
+      "preprocess": 22.48,
+      "encode": 99.58,
+      "decode": 15.37,
+      "postprocess": 66.54,
+      "total": 203.97
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3279.5,
+    "yolo_timing": {
+      "preprocess": 21.52,
+      "encode": 94.85,
+      "decode": 9.98,
+      "postprocess": 46.17,
+      "total": 172.53
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_133942.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.33,
+      "encode": 88.97,
+      "decode": 10.69,
+      "postprocess": 48.44,
+      "total": 166.43
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3279.5,
+    "yolo_timing": {
+      "preprocess": 18.31,
+      "encode": 88.59,
+      "decode": 12.04,
+      "postprocess": 70.37,
+      "total": 189.32
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134002.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.46,
+      "encode": 87.49,
+      "decode": 21.21,
+      "postprocess": 114.36,
+      "total": 241.52
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.6,
+    "yolo_timing": {
+      "preprocess": 21.26,
+      "encode": 87.73,
+      "decode": 12.97,
+      "postprocess": 55.62,
+      "total": 177.57
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134008.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.73,
+      "encode": 88.0,
+      "decode": 17.32,
+      "postprocess": 97.18,
+      "total": 221.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.7,
+    "yolo_timing": {
+      "preprocess": 18.01,
+      "encode": 87.45,
+      "decode": 8.1,
+      "postprocess": 54.19,
+      "total": 167.75
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134223.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.19,
+      "encode": 87.42,
+      "decode": 9.78,
+      "postprocess": 39.74,
+      "total": 153.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.2,
+    "yolo_timing": {
+      "preprocess": 15.08,
+      "encode": 87.63,
+      "decode": 8.26,
+      "postprocess": 41.99,
+      "total": 152.96
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134227.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.84,
+      "encode": 87.53,
+      "decode": 17.05,
+      "postprocess": 109.94,
+      "total": 233.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.7,
+    "yolo_timing": {
+      "preprocess": 17.72,
+      "encode": 87.72,
+      "decode": 30.1,
+      "postprocess": 177.7,
+      "total": 313.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134235.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.98,
+      "encode": 87.36,
+      "decode": 22.69,
+      "postprocess": 125.46,
+      "total": 250.49
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3327.7,
+    "yolo_timing": {
+      "preprocess": 16.69,
+      "encode": 87.37,
+      "decode": 11.58,
+      "postprocess": 43.65,
+      "total": 159.29
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134244.jpg": {
+    "oracle_timing": {
+      "preprocess": 92.65,
+      "encode": 229.08,
+      "decode": 298.66,
+      "postprocess": 1389.56,
+      "total": 2009.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3307.3,
+    "yolo_timing": {
+      "preprocess": 136.98,
+      "encode": 245.97,
+      "decode": 359.64,
+      "postprocess": 743.45,
+      "total": 1486.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_134916.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.64,
+      "encode": 99.68,
+      "decode": 9.51,
+      "postprocess": 49.35,
+      "total": 176.18
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.4,
+    "yolo_timing": {
+      "preprocess": 17.08,
+      "encode": 87.33,
+      "decode": 11.2,
+      "postprocess": 51.98,
+      "total": 167.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_135647.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.7,
+      "encode": 87.33,
+      "decode": 13.12,
+      "postprocess": 51.89,
+      "total": 169.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.4,
+    "yolo_timing": {
+      "preprocess": 15.63,
+      "encode": 87.41,
+      "decode": 11.51,
+      "postprocess": 55.45,
+      "total": 170.01
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_135652.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.24,
+      "encode": 87.52,
+      "decode": 8.3,
+      "postprocess": 38.66,
+      "total": 149.71
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.4,
+    "yolo_timing": {
+      "preprocess": 17.22,
+      "encode": 87.69,
+      "decode": 10.16,
+      "postprocess": 46.45,
+      "total": 161.52
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_135709.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.65,
+      "encode": 87.57,
+      "decode": 9.19,
+      "postprocess": 54.79,
+      "total": 171.2
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.5,
+    "yolo_timing": {
+      "preprocess": 15.57,
+      "encode": 87.94,
+      "decode": 8.35,
+      "postprocess": 52.4,
+      "total": 164.25
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20260927_135713.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.12,
+      "encode": 87.11,
+      "decode": 12.56,
+      "postprocess": 35.86,
+      "total": 151.65
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.9,
+    "yolo_timing": {
+      "preprocess": 15.42,
+      "encode": 87.83,
+      "decode": 8.05,
+      "postprocess": 38.98,
+      "total": 150.27
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20261110_082335.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.57,
+      "encode": 87.66,
+      "decode": 8.34,
+      "postprocess": 44.28,
+      "total": 153.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.9,
+    "yolo_timing": {
+      "preprocess": 15.04,
+      "encode": 88.59,
+      "decode": 10.74,
+      "postprocess": 46.79,
+      "total": 161.15
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "IMG_20261110_082339.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.34,
+      "encode": 88.16,
+      "decode": 8.61,
+      "postprocess": 46.38,
+      "total": 159.48
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3300.9,
+    "yolo_timing": {
+      "preprocess": 15.85,
+      "encode": 88.12,
+      "decode": 8.41,
+      "postprocess": 45.85,
+      "total": 158.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 23.08,
+      "encode": 87.69,
+      "decode": 17.62,
+      "postprocess": 39.26,
+      "total": 167.66
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 14.17,
+      "encode": 87.85,
+      "decode": 8.75,
+      "postprocess": 29.99,
+      "total": 140.76
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.28,
+      "encode": 88.0,
+      "decode": 8.44,
+      "postprocess": 30.11,
+      "total": 144.84
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 13.04,
+      "encode": 88.34,
+      "decode": 8.45,
+      "postprocess": 32.52,
+      "total": 142.34
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.72,
+      "encode": 87.59,
+      "decode": 11.58,
+      "postprocess": 28.96,
+      "total": 142.86
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 74.39,
+      "encode": 207.4,
+      "decode": 118.92,
+      "postprocess": 339.98,
+      "total": 740.69
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 109.94,
+      "encode": 258.99,
+      "decode": 252.2,
+      "postprocess": 393.81,
+      "total": 1014.94
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 109.59,
+      "encode": 260.22,
+      "decode": 27.19,
+      "postprocess": 40.43,
+      "total": 437.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.86,
+      "encode": 99.67,
+      "decode": 11.19,
+      "postprocess": 31.45,
+      "total": 161.18
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 16.85,
+      "encode": 87.9,
+      "decode": 9.19,
+      "postprocess": 30.83,
+      "total": 144.78
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.29,
+      "encode": 87.83,
+      "decode": 8.48,
+      "postprocess": 31.01,
+      "total": 142.61
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 13.59,
+      "encode": 88.42,
+      "decode": 8.39,
+      "postprocess": 30.07,
+      "total": 140.47
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.37,
+      "encode": 87.54,
+      "decode": 10.5,
+      "postprocess": 48.53,
+      "total": 164.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.1,
+    "yolo_timing": {
+      "preprocess": 12.7,
+      "encode": 87.79,
+      "decode": 12.87,
+      "postprocess": 49.77,
+      "total": 163.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Kho Qua Thit 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.32,
+      "encode": 87.53,
+      "decode": 10.41,
+      "postprocess": 40.1,
+      "total": 152.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.2,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Khoai Tay Chien 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.4,
+      "encode": 87.76,
+      "decode": 22.95,
+      "postprocess": 83.24,
+      "total": 212.34
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3284.9,
+    "yolo_timing": {
+      "preprocess": 13.1,
+      "encode": 87.85,
+      "decode": 8.17,
+      "postprocess": 34.18,
+      "total": 143.3
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Khoai Tay Chien 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.69,
+      "encode": 87.77,
+      "decode": 19.51,
+      "postprocess": 68.18,
+      "total": 189.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3285.0,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Khoai Tay Chien 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.25,
+      "encode": 88.64,
+      "decode": 30.27,
+      "postprocess": 73.16,
+      "total": 206.31
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3285.0,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Khoai Tay Chien 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.06,
+      "encode": 87.85,
+      "decode": 26.53,
+      "postprocess": 74.32,
+      "total": 203.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3285.0,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Khoai Tay Chien 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.03,
+      "encode": 87.85,
+      "decode": 25.03,
+      "postprocess": 96.19,
+      "total": 223.11
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3303.8,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Long Heo 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.5,
+      "encode": 87.77,
+      "decode": 8.29,
+      "postprocess": 37.69,
+      "total": 148.25
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.1,
+    "yolo_timing": {
+      "preprocess": 14.54,
+      "encode": 88.69,
+      "decode": 13.74,
+      "postprocess": 48.39,
+      "total": 165.36
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Long Heo 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.98,
+      "encode": 88.24,
+      "decode": 8.13,
+      "postprocess": 34.44,
+      "total": 150.79
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 13.25,
+      "encode": 87.8,
+      "decode": 8.41,
+      "postprocess": 34.49,
+      "total": 143.95
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Long Heo 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.44,
+      "encode": 88.33,
+      "decode": 8.37,
+      "postprocess": 35.78,
+      "total": 145.92
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 13.38,
+      "encode": 88.0,
+      "decode": 8.49,
+      "postprocess": 36.97,
+      "total": 146.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.32,
+      "encode": 87.9,
+      "decode": 12.58,
+      "postprocess": 34.03,
+      "total": 148.84
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 15.86,
+      "encode": 88.35,
+      "decode": 99.01,
+      "postprocess": 377.92,
+      "total": 581.14
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 151.87,
+      "encode": 644.67,
+      "decode": 270.67,
+      "postprocess": 388.03,
+      "total": 1455.24
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 22.17,
+      "encode": 99.78,
+      "decode": 13.27,
+      "postprocess": 42.45,
+      "total": 177.67
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.65,
+      "encode": 87.33,
+      "decode": 14.65,
+      "postprocess": 54.67,
+      "total": 173.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 20.24,
+      "encode": 87.92,
+      "decode": 12.91,
+      "postprocess": 51.54,
+      "total": 172.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.75,
+      "encode": 87.36,
+      "decode": 11.31,
+      "postprocess": 42.2,
+      "total": 159.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 12.72,
+      "encode": 88.06,
+      "decode": 11.84,
+      "postprocess": 33.54,
+      "total": 146.15
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.83,
+      "encode": 87.67,
+      "decode": 11.57,
+      "postprocess": 58.39,
+      "total": 172.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 19.52,
+      "encode": 87.91,
+      "decode": 17.05,
+      "postprocess": 56.56,
+      "total": 181.03
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi Quang 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.62,
+      "encode": 87.64,
+      "decode": 8.67,
+      "postprocess": 31.52,
+      "total": 142.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 13.86,
+      "encode": 89.54,
+      "decode": 8.23,
+      "postprocess": 33.63,
+      "total": 145.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi Quang 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.23,
+      "encode": 89.18,
+      "decode": 10.15,
+      "postprocess": 30.68,
+      "total": 149.24
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.2,
+    "yolo_timing": {
+      "preprocess": 13.36,
+      "encode": 88.0,
+      "decode": 12.18,
+      "postprocess": 28.78,
+      "total": 142.32
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi Quang 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.03,
+      "encode": 87.52,
+      "decode": 8.1,
+      "postprocess": 30.45,
+      "total": 140.1
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 15.74,
+      "encode": 88.46,
+      "decode": 9.2,
+      "postprocess": 29.81,
+      "total": 143.21
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi Quang 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.42,
+      "encode": 88.15,
+      "decode": 9.95,
+      "postprocess": 31.32,
+      "total": 144.84
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 16.08,
+      "encode": 87.94,
+      "decode": 8.58,
+      "postprocess": 29.66,
+      "total": 142.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Mi Quang 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.02,
+      "encode": 87.78,
+      "decode": 8.99,
+      "postprocess": 36.16,
+      "total": 146.94
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 13.06,
+      "encode": 88.35,
+      "decode": 9.01,
+      "postprocess": 33.97,
+      "total": 144.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Muc 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.54,
+      "encode": 88.1,
+      "decode": 10.47,
+      "postprocess": 36.67,
+      "total": 150.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 14.21,
+      "encode": 88.12,
+      "decode": 14.6,
+      "postprocess": 41.11,
+      "total": 158.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Muc 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.88,
+      "encode": 87.89,
+      "decode": 12.77,
+      "postprocess": 34.69,
+      "total": 152.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 17.76,
+      "encode": 88.34,
+      "decode": 8.67,
+      "postprocess": 36.57,
+      "total": 151.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Muc 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.42,
+      "encode": 87.8,
+      "decode": 15.98,
+      "postprocess": 41.58,
+      "total": 160.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3252.3,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Muc 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.22,
+      "encode": 87.93,
+      "decode": 8.86,
+      "postprocess": 34.06,
+      "total": 145.08
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 13.87,
+      "encode": 88.11,
+      "decode": 18.61,
+      "postprocess": 34.56,
+      "total": 155.15
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Muc 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 89.14,
+      "encode": 220.0,
+      "decode": 225.24,
+      "postprocess": 426.44,
+      "total": 960.82
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 145.1,
+      "encode": 382.6,
+      "decode": 292.42,
+      "postprocess": 625.35,
+      "total": 1445.46
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "MucLau(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.13,
+      "encode": 199.42,
+      "decode": 28.14,
+      "postprocess": 129.69,
+      "total": 374.38
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3328.7,
+    "yolo_timing": {
+      "preprocess": 18.44,
+      "encode": 99.6,
+      "decode": 15.25,
+      "postprocess": 64.52,
+      "total": 197.81
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "MucLau(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.26,
+      "encode": 87.28,
+      "decode": 8.43,
+      "postprocess": 54.6,
+      "total": 165.57
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.3,
+    "yolo_timing": {
+      "preprocess": 15.62,
+      "encode": 88.2,
+      "decode": 8.2,
+      "postprocess": 54.17,
+      "total": 166.18
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "MucLau(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.42,
+      "encode": 87.71,
+      "decode": 12.11,
+      "postprocess": 79.51,
+      "total": 198.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.3,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "MucLau(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.67,
+      "encode": 87.48,
+      "decode": 17.99,
+      "postprocess": 75.43,
+      "total": 194.56
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3280.7,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Nam 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.87,
+      "encode": 87.55,
+      "decode": 11.63,
+      "postprocess": 49.45,
+      "total": 165.5
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 12.81,
+      "encode": 85.25,
+      "decode": 17.01,
+      "postprocess": 36.07,
+      "total": 151.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nam 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.81,
+      "encode": 88.42,
+      "decode": 9.02,
+      "postprocess": 34.82,
+      "total": 146.07
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 17.42,
+      "encode": 88.1,
+      "decode": 8.18,
+      "postprocess": 35.11,
+      "total": 148.8
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nam 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.1,
+      "encode": 87.62,
+      "decode": 8.14,
+      "postprocess": 37.6,
+      "total": 147.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 14.35,
+      "encode": 88.36,
+      "decode": 8.97,
+      "postprocess": 30.24,
+      "total": 141.92
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.34,
+      "encode": 88.0,
+      "decode": 8.7,
+      "postprocess": 24.86,
+      "total": 136.9
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 12.71,
+      "encode": 88.13,
+      "decode": 8.36,
+      "postprocess": 26.93,
+      "total": 136.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 10.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.31,
+      "encode": 88.01,
+      "decode": 13.65,
+      "postprocess": 36.12,
+      "total": 151.09
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 13.27,
+      "encode": 87.96,
+      "decode": 9.01,
+      "postprocess": 31.12,
+      "total": 141.37
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 11.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.82,
+      "encode": 88.26,
+      "decode": 8.09,
+      "postprocess": 30.93,
+      "total": 142.1
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 17.34,
+      "encode": 88.21,
+      "decode": 9.19,
+      "postprocess": 34.31,
+      "total": 149.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 12.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.33,
+      "encode": 88.13,
+      "decode": 8.18,
+      "postprocess": 36.12,
+      "total": 146.76
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 13.53,
+      "encode": 88.11,
+      "decode": 12.43,
+      "postprocess": 34.35,
+      "total": 148.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.08,
+      "encode": 86.3,
+      "decode": 10.85,
+      "postprocess": 119.59,
+      "total": 231.81
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.5,
+    "yolo_timing": {
+      "preprocess": 109.23,
+      "encode": 250.52,
+      "decode": 116.81,
+      "postprocess": 314.95,
+      "total": 791.51
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 195.85,
+      "encode": 230.12,
+      "decode": 193.91,
+      "postprocess": 78.48,
+      "total": 698.37
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 16.5,
+      "encode": 99.73,
+      "decode": 16.2,
+      "postprocess": 49.95,
+      "total": 182.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.86,
+      "encode": 99.63,
+      "decode": 12.87,
+      "postprocess": 38.93,
+      "total": 165.29
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 14.29,
+      "encode": 88.66,
+      "decode": 11.8,
+      "postprocess": 29.96,
+      "total": 144.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.09,
+      "encode": 88.16,
+      "decode": 8.88,
+      "postprocess": 32.85,
+      "total": 144.97
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 14.17,
+      "encode": 88.53,
+      "decode": 13.24,
+      "postprocess": 30.06,
+      "total": 145.99
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.07,
+      "encode": 87.96,
+      "decode": 9.62,
+      "postprocess": 38.06,
+      "total": 150.72
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 16.5,
+      "encode": 88.29,
+      "decode": 10.24,
+      "postprocess": 46.06,
+      "total": 161.08
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 7.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.21,
+      "encode": 88.17,
+      "decode": 11.04,
+      "postprocess": 47.81,
+      "total": 161.23
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 16.05,
+      "encode": 87.89,
+      "decode": 11.79,
+      "postprocess": 56.6,
+      "total": 172.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 8.jpg": {
+    "oracle_timing": {
+      "preprocess": 13.93,
+      "encode": 87.58,
+      "decode": 9.21,
+      "postprocess": 30.28,
+      "total": 141.0
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 15.77,
+      "encode": 88.29,
+      "decode": 18.57,
+      "postprocess": 29.15,
+      "total": 151.78
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Nui xao bo 9.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.88,
+      "encode": 87.94,
+      "decode": 12.83,
+      "postprocess": 29.16,
+      "total": 144.81
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 14.56,
+      "encode": 88.38,
+      "decode": 9.88,
+      "postprocess": 29.74,
+      "total": 142.55
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Oc 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 15.12,
+      "encode": 88.44,
+      "decode": 12.67,
+      "postprocess": 34.57,
+      "total": 150.8
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 14.72,
+      "encode": 88.1,
+      "decode": 9.8,
+      "postprocess": 30.19,
+      "total": 142.81
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Oc 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.54,
+      "encode": 88.35,
+      "decode": 117.07,
+      "postprocess": 445.91,
+      "total": 665.88
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 131.79,
+      "encode": 254.67,
+      "decode": 159.17,
+      "postprocess": 568.35,
+      "total": 1113.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Oc 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 98.21,
+      "encode": 190.76,
+      "decode": 9.69,
+      "postprocess": 29.3,
+      "total": 327.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 13.89,
+      "encode": 99.73,
+      "decode": 17.48,
+      "postprocess": 45.13,
+      "total": 176.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Oc 6.jpg": {
+    "oracle_timing": {
+      "preprocess": 22.27,
+      "encode": 87.65,
+      "decode": 14.97,
+      "postprocess": 35.93,
+      "total": 160.81
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3266.6,
+    "yolo_timing": {
+      "preprocess": 17.09,
+      "encode": 87.73,
+      "decode": 13.29,
+      "postprocess": 45.32,
+      "total": 163.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Pho1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.22,
+      "encode": 86.88,
+      "decode": 10.39,
+      "postprocess": 68.68,
+      "total": 185.16
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.5,
+    "yolo_timing": {
+      "preprocess": 14.84,
+      "encode": 87.27,
+      "decode": 12.66,
+      "postprocess": 67.21,
+      "total": 181.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Pho1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.47,
+      "encode": 88.04,
+      "decode": 9.75,
+      "postprocess": 64.48,
+      "total": 180.74
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.5,
+    "yolo_timing": {
+      "preprocess": 15.34,
+      "encode": 87.75,
+      "decode": 20.16,
+      "postprocess": 66.03,
+      "total": 189.29
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Pho1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.71,
+      "encode": 87.53,
+      "decode": 13.8,
+      "postprocess": 51.82,
+      "total": 169.86
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.5,
+    "yolo_timing": {
+      "preprocess": 16.84,
+      "encode": 87.81,
+      "decode": 22.29,
+      "postprocess": 107.76,
+      "total": 234.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Pho1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.81,
+      "encode": 87.7,
+      "decode": 8.65,
+      "postprocess": 54.65,
+      "total": 171.82
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3280.9,
+    "yolo_timing": {
+      "preprocess": 15.65,
+      "encode": 87.78,
+      "decode": 9.38,
+      "postprocess": 59.57,
+      "total": 172.39
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Pho1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.47,
+      "encode": 87.75,
+      "decode": 10.58,
+      "postprocess": 50.8,
+      "total": 169.6
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3280.9,
+    "yolo_timing": {
+      "preprocess": 18.0,
+      "encode": 87.95,
+      "decode": 8.39,
+      "postprocess": 51.79,
+      "total": 166.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Suon1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.83,
+      "encode": 87.63,
+      "decode": 8.4,
+      "postprocess": 52.1,
+      "total": 166.96
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3280.9,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "Suon1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.03,
+      "encode": 87.74,
+      "decode": 13.17,
+      "postprocess": 51.04,
+      "total": 166.98
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.6,
+    "yolo_timing": {
+      "preprocess": 15.25,
+      "encode": 87.64,
+      "decode": 8.96,
+      "postprocess": 54.45,
+      "total": 166.3
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Suon1.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.62,
+      "encode": 87.64,
+      "decode": 8.12,
+      "postprocess": 52.64,
+      "total": 165.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.6,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "SupCua (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.57,
+      "encode": 87.91,
+      "decode": 15.98,
+      "postprocess": 54.06,
+      "total": 175.52
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 15.97,
+      "encode": 200.01,
+      "decode": 141.4,
+      "postprocess": 650.95,
+      "total": 1008.32
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "SupCua (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 25.44,
+      "encode": 241.36,
+      "decode": 13.58,
+      "postprocess": 64.53,
+      "total": 344.9
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 14.52,
+      "encode": 89.59,
+      "decode": 18.26,
+      "postprocess": 58.98,
+      "total": 181.34
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "SupCua (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.59,
+      "encode": 87.21,
+      "decode": 11.66,
+      "postprocess": 60.6,
+      "total": 177.05
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 15.04,
+      "encode": 86.66,
+      "decode": 9.46,
+      "postprocess": 71.01,
+      "total": 182.17
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "SupCua (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.87,
+      "encode": 87.79,
+      "decode": 11.47,
+      "postprocess": 52.07,
+      "total": 166.2
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 16.64,
+      "encode": 87.62,
+      "decode": 10.63,
+      "postprocess": 50.13,
+      "total": 165.01
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "SupCua (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.17,
+      "encode": 87.89,
+      "decode": 11.42,
+      "postprocess": 61.4,
+      "total": 175.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 15.23,
+      "encode": 88.38,
+      "decode": 8.85,
+      "postprocess": 52.03,
+      "total": 164.49
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "SupCua (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.95,
+      "encode": 87.37,
+      "decode": 8.76,
+      "postprocess": 50.97,
+      "total": 169.05
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 16.63,
+      "encode": 88.64,
+      "decode": 9.66,
+      "postprocess": 52.29,
+      "total": 167.22
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitBo(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.98,
+      "encode": 87.43,
+      "decode": 8.87,
+      "postprocess": 51.76,
+      "total": 170.04
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 16.62,
+      "encode": 87.84,
+      "decode": 11.75,
+      "postprocess": 57.87,
+      "total": 174.08
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitBo(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 90.7,
+      "encode": 347.75,
+      "decode": 290.64,
+      "postprocess": 635.33,
+      "total": 1364.42
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.0,
+    "yolo_timing": {
+      "preprocess": 101.2,
+      "encode": 265.34,
+      "decode": 152.8,
+      "postprocess": 678.64,
+      "total": 1197.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitBo(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 24.03,
+      "encode": 297.18,
+      "decode": 10.35,
+      "postprocess": 52.14,
+      "total": 383.7
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 13.76,
+      "encode": 99.73,
+      "decode": 9.09,
+      "postprocess": 52.44,
+      "total": 175.03
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitChien1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.87,
+      "encode": 87.3,
+      "decode": 8.43,
+      "postprocess": 53.97,
+      "total": 164.56
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 13.61,
+      "encode": 87.45,
+      "decode": 8.49,
+      "postprocess": 51.7,
+      "total": 161.25
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitChien2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.81,
+      "encode": 87.84,
+      "decode": 11.81,
+      "postprocess": 48.74,
+      "total": 163.2
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 13.61,
+      "encode": 87.22,
+      "decode": 8.32,
+      "postprocess": 49.41,
+      "total": 158.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitChien2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.11,
+      "encode": 85.36,
+      "decode": 7.99,
+      "postprocess": 50.45,
+      "total": 157.91
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 16.32,
+      "encode": 87.51,
+      "decode": 8.24,
+      "postprocess": 49.54,
+      "total": 161.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitChien2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.2,
+      "encode": 87.45,
+      "decode": 8.12,
+      "postprocess": 49.05,
+      "total": 157.82
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 14.07,
+      "encode": 87.74,
+      "decode": 8.03,
+      "postprocess": 48.22,
+      "total": 158.05
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.13,
+      "encode": 87.91,
+      "decode": 8.17,
+      "postprocess": 47.53,
+      "total": 156.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 13.66,
+      "encode": 87.69,
+      "decode": 8.13,
+      "postprocess": 47.96,
+      "total": 157.43
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.59,
+      "encode": 88.37,
+      "decode": 84.73,
+      "postprocess": 360.38,
+      "total": 549.07
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.1,
+    "yolo_timing": {
+      "preprocess": 136.28,
+      "encode": 505.47,
+      "decode": 146.02,
+      "postprocess": 635.42,
+      "total": 1423.19
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 30.34,
+      "encode": 217.4,
+      "decode": 87.74,
+      "postprocess": 136.06,
+      "total": 471.53
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 39.89,
+      "encode": 92.2,
+      "decode": 21.88,
+      "postprocess": 65.18,
+      "total": 219.15
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.22,
+      "encode": 90.73,
+      "decode": 9.13,
+      "postprocess": 64.67,
+      "total": 185.75
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 20.18,
+      "encode": 87.09,
+      "decode": 25.69,
+      "postprocess": 83.46,
+      "total": 216.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 28.1,
+      "encode": 87.68,
+      "decode": 48.08,
+      "postprocess": 78.9,
+      "total": 242.76
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 27.23,
+      "encode": 87.5,
+      "decode": 21.17,
+      "postprocess": 70.7,
+      "total": 206.58
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.77,
+      "encode": 87.45,
+      "decode": 27.38,
+      "postprocess": 64.54,
+      "total": 201.14
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 23.84,
+      "encode": 88.09,
+      "decode": 12.51,
+      "postprocess": 53.04,
+      "total": 177.48
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.03,
+      "encode": 87.83,
+      "decode": 15.09,
+      "postprocess": 43.52,
+      "total": 164.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 17.01,
+      "encode": 87.71,
+      "decode": 8.27,
+      "postprocess": 42.4,
+      "total": 155.39
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa1 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.52,
+      "encode": 87.63,
+      "decode": 10.01,
+      "postprocess": 46.68,
+      "total": 164.84
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.2,
+    "yolo_timing": {
+      "preprocess": 0.0,
+      "encode": 0.0,
+      "decode": 0.0,
+      "postprocess": 0.0,
+      "total": 0.0
+    },
+    "yolo_peak_vram_mib": 0.0
+  },
+  "ThitGa2 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.09,
+      "encode": 87.58,
+      "decode": 8.81,
+      "postprocess": 46.12,
+      "total": 160.59
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.8,
+    "yolo_timing": {
+      "preprocess": 18.74,
+      "encode": 87.85,
+      "decode": 8.69,
+      "postprocess": 54.96,
+      "total": 170.24
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa2 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.7,
+      "encode": 87.91,
+      "decode": 14.1,
+      "postprocess": 84.98,
+      "total": 203.69
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.8,
+    "yolo_timing": {
+      "preprocess": 24.86,
+      "encode": 88.18,
+      "decode": 14.15,
+      "postprocess": 83.43,
+      "total": 210.62
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa2 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 111.56,
+      "encode": 261.1,
+      "decode": 177.39,
+      "postprocess": 446.66,
+      "total": 996.7
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.9,
+    "yolo_timing": {
+      "preprocess": 122.82,
+      "encode": 296.02,
+      "decode": 212.13,
+      "postprocess": 1481.14,
+      "total": 2112.11
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa2 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.21,
+      "encode": 224.79,
+      "decode": 49.56,
+      "postprocess": 146.47,
+      "total": 442.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3329.3,
+    "yolo_timing": {
+      "preprocess": 17.99,
+      "encode": 87.21,
+      "decode": 15.85,
+      "postprocess": 69.49,
+      "total": 190.53
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGa2 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.32,
+      "encode": 87.27,
+      "decode": 14.44,
+      "postprocess": 70.85,
+      "total": 185.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.9,
+    "yolo_timing": {
+      "preprocess": 15.07,
+      "encode": 87.16,
+      "decode": 12.91,
+      "postprocess": 66.41,
+      "total": 181.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGaChien (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.91,
+      "encode": 87.72,
+      "decode": 37.5,
+      "postprocess": 220.75,
+      "total": 359.88
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3336.2,
+    "yolo_timing": {
+      "preprocess": 16.83,
+      "encode": 88.82,
+      "decode": 16.71,
+      "postprocess": 109.85,
+      "total": 232.21
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGaChien (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.11,
+      "encode": 87.05,
+      "decode": 16.86,
+      "postprocess": 103.18,
+      "total": 223.21
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3329.4,
+    "yolo_timing": {
+      "preprocess": 14.75,
+      "encode": 87.67,
+      "decode": 9.53,
+      "postprocess": 51.77,
+      "total": 163.71
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGaChien (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.5,
+      "encode": 129.54,
+      "decode": 329.98,
+      "postprocess": 1650.14,
+      "total": 2126.17
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3356.8,
+    "yolo_timing": {
+      "preprocess": 112.35,
+      "encode": 223.86,
+      "decode": 253.32,
+      "postprocess": 1141.45,
+      "total": 1730.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitGaChien (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.49,
+      "encode": 328.35,
+      "decode": 27.55,
+      "postprocess": 117.75,
+      "total": 494.14
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3329.4,
+    "yolo_timing": {
+      "preprocess": 17.85,
+      "encode": 99.67,
+      "decode": 14.37,
+      "postprocess": 72.71,
+      "total": 204.6
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.23,
+      "encode": 87.15,
+      "decode": 18.66,
+      "postprocess": 64.77,
+      "total": 189.8
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3301.9,
+    "yolo_timing": {
+      "preprocess": 18.34,
+      "encode": 87.42,
+      "decode": 9.52,
+      "postprocess": 43.96,
+      "total": 159.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.4,
+      "encode": 87.28,
+      "decode": 22.47,
+      "postprocess": 118.59,
+      "total": 245.73
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3329.4,
+    "yolo_timing": {
+      "preprocess": 17.72,
+      "encode": 88.64,
+      "decode": 25.84,
+      "postprocess": 165.26,
+      "total": 297.45
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.85,
+      "encode": 87.45,
+      "decode": 18.75,
+      "postprocess": 55.41,
+      "total": 180.46
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.4,
+    "yolo_timing": {
+      "preprocess": 15.93,
+      "encode": 87.79,
+      "decode": 12.67,
+      "postprocess": 68.25,
+      "total": 184.64
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 132.62,
+      "encode": 240.58,
+      "decode": 77.36,
+      "postprocess": 481.07,
+      "total": 931.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.4,
+    "yolo_timing": {
+      "preprocess": 118.75,
+      "encode": 194.38,
+      "decode": 116.53,
+      "postprocess": 565.72,
+      "total": 995.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.44,
+      "encode": 363.83,
+      "decode": 9.04,
+      "postprocess": 56.48,
+      "total": 452.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3281.4,
+    "yolo_timing": {
+      "preprocess": 16.49,
+      "encode": 95.84,
+      "decode": 8.32,
+      "postprocess": 44.38,
+      "total": 165.03
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho1 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.11,
+      "encode": 87.04,
+      "decode": 20.13,
+      "postprocess": 141.98,
+      "total": 266.25
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3329.5,
+    "yolo_timing": {
+      "preprocess": 17.99,
+      "encode": 87.9,
+      "decode": 25.07,
+      "postprocess": 166.48,
+      "total": 297.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.25,
+      "encode": 87.13,
+      "decode": 13.72,
+      "postprocess": 58.69,
+      "total": 175.78
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.3,
+    "yolo_timing": {
+      "preprocess": 16.71,
+      "encode": 88.09,
+      "decode": 14.94,
+      "postprocess": 80.45,
+      "total": 200.19
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho2(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.98,
+      "encode": 87.2,
+      "decode": 12.26,
+      "postprocess": 77.44,
+      "total": 192.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.3,
+    "yolo_timing": {
+      "preprocess": 16.38,
+      "encode": 87.59,
+      "decode": 25.8,
+      "postprocess": 143.8,
+      "total": 273.56
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitKho2(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.83,
+      "encode": 87.11,
+      "decode": 12.8,
+      "postprocess": 73.16,
+      "total": 188.91
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.3,
+    "yolo_timing": {
+      "preprocess": 69.23,
+      "encode": 272.09,
+      "decode": 123.73,
+      "postprocess": 560.91,
+      "total": 1025.96
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitNuong1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 92.33,
+      "encode": 240.36,
+      "decode": 106.87,
+      "postprocess": 571.51,
+      "total": 1011.08
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3263.3,
+    "yolo_timing": {
+      "preprocess": 92.23,
+      "encode": 197.26,
+      "decode": 295.37,
+      "postprocess": 826.02,
+      "total": 1410.87
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitNuong1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 33.6,
+      "encode": 182.81,
+      "decode": 20.35,
+      "postprocess": 79.65,
+      "total": 316.4
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3283.9,
+    "yolo_timing": {
+      "preprocess": 22.3,
+      "encode": 92.59,
+      "decode": 19.46,
+      "postprocess": 165.03,
+      "total": 299.38
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitNuong1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.03,
+      "encode": 87.39,
+      "decode": 15.04,
+      "postprocess": 89.41,
+      "total": 211.86
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 72.8,
+      "encode": 139.16,
+      "decode": 101.62,
+      "postprocess": 68.2,
+      "total": 381.78
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ThitNuong1(5).jpg": {
+    "oracle_timing": {
+      "preprocess": 30.47,
+      "encode": 88.23,
+      "decode": 17.9,
+      "postprocess": 114.0,
+      "total": 250.59
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 73.28,
+      "encode": 146.08,
+      "decode": 71.83,
+      "postprocess": 200.87,
+      "total": 492.07
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Trung1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 44.14,
+      "encode": 88.31,
+      "decode": 34.95,
+      "postprocess": 87.12,
+      "total": 254.52
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 34.9,
+      "encode": 87.62,
+      "decode": 16.21,
+      "postprocess": 85.49,
+      "total": 224.21
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Trung1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.43,
+      "encode": 88.02,
+      "decode": 13.17,
+      "postprocess": 63.12,
+      "total": 185.74
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 28.06,
+      "encode": 87.43,
+      "decode": 28.37,
+      "postprocess": 151.18,
+      "total": 295.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Trung1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 30.68,
+      "encode": 87.63,
+      "decode": 18.9,
+      "postprocess": 78.33,
+      "total": 215.54
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 26.4,
+      "encode": 87.47,
+      "decode": 30.21,
+      "postprocess": 156.0,
+      "total": 300.09
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "TrungChien1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.09,
+      "encode": 87.74,
+      "decode": 8.29,
+      "postprocess": 56.81,
+      "total": 170.93
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 20.06,
+      "encode": 87.76,
+      "decode": 9.58,
+      "postprocess": 55.39,
+      "total": 172.78
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "TrungChien1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.4,
+      "encode": 88.15,
+      "decode": 8.77,
+      "postprocess": 59.29,
+      "total": 179.61
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.2,
+    "yolo_timing": {
+      "preprocess": 22.8,
+      "encode": 88.06,
+      "decode": 13.73,
+      "postprocess": 61.66,
+      "total": 186.25
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "TrungChien1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.2,
+      "encode": 117.52,
+      "decode": 94.38,
+      "postprocess": 464.03,
+      "total": 695.12
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 125.75,
+      "encode": 309.76,
+      "decode": 181.68,
+      "postprocess": 585.77,
+      "total": 1202.97
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.24,
+      "encode": 356.44,
+      "decode": 15.98,
+      "postprocess": 84.79,
+      "total": 480.45
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 18.79,
+      "encode": 97.11,
+      "decode": 11.22,
+      "postprocess": 79.72,
+      "total": 206.84
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.62,
+      "encode": 94.66,
+      "decode": 11.35,
+      "postprocess": 60.43,
+      "total": 185.06
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 17.2,
+      "encode": 87.22,
+      "decode": 16.43,
+      "postprocess": 80.48,
+      "total": 201.33
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.78,
+      "encode": 87.02,
+      "decode": 12.59,
+      "postprocess": 82.77,
+      "total": 204.17
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 20.18,
+      "encode": 87.51,
+      "decode": 9.43,
+      "postprocess": 95.41,
+      "total": 212.52
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.95,
+      "encode": 87.03,
+      "decode": 8.03,
+      "postprocess": 55.99,
+      "total": 171.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 19.5,
+      "encode": 87.65,
+      "decode": 12.61,
+      "postprocess": 85.44,
+      "total": 205.2
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.45,
+      "encode": 87.62,
+      "decode": 13.0,
+      "postprocess": 69.78,
+      "total": 188.86
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 3024.3,
+    "yolo_timing": {
+      "preprocess": 20.6,
+      "encode": 87.81,
+      "decode": 16.31,
+      "postprocess": 73.36,
+      "total": 198.07
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (6).jpg": {
+    "oracle_timing": {
+      "preprocess": 132.72,
+      "encode": 307.97,
+      "decode": 156.38,
+      "postprocess": 915.2,
+      "total": 1512.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2993.5,
+    "yolo_timing": {
+      "preprocess": 158.32,
+      "encode": 303.83,
+      "decode": 187.79,
+      "postprocess": 182.26,
+      "total": 832.2
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "Xoi1 (7).jpg": {
+    "oracle_timing": {
+      "preprocess": 24.35,
+      "encode": 153.21,
+      "decode": 17.93,
+      "postprocess": 87.47,
+      "total": 282.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2877.9,
+    "yolo_timing": {
+      "preprocess": 24.2,
+      "encode": 130.34,
+      "decode": 19.36,
+      "postprocess": 95.14,
+      "total": 269.04
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi1.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.81,
+      "encode": 87.62,
+      "decode": 15.59,
+      "postprocess": 60.23,
+      "total": 183.26
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2877.9,
+    "yolo_timing": {
+      "preprocess": 17.9,
+      "encode": 87.16,
+      "decode": 13.49,
+      "postprocess": 59.96,
+      "total": 178.51
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi2.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.41,
+      "encode": 84.54,
+      "decode": 11.25,
+      "postprocess": 43.92,
+      "total": 156.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2877.9,
+    "yolo_timing": {
+      "preprocess": 14.08,
+      "encode": 87.95,
+      "decode": 10.43,
+      "postprocess": 44.48,
+      "total": 156.94
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi250g (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.24,
+      "encode": 87.62,
+      "decode": 8.09,
+      "postprocess": 43.54,
+      "total": 155.49
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2877.9,
+    "yolo_timing": {
+      "preprocess": 16.09,
+      "encode": 87.8,
+      "decode": 11.78,
+      "postprocess": 68.46,
+      "total": 184.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi250g (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.08,
+      "encode": 87.42,
+      "decode": 8.95,
+      "postprocess": 46.5,
+      "total": 159.96
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 14.45,
+      "encode": 87.63,
+      "decode": 8.72,
+      "postprocess": 44.92,
+      "total": 155.72
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi250g (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.93,
+      "encode": 87.96,
+      "decode": 75.01,
+      "postprocess": 375.83,
+      "total": 553.73
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 94.35,
+      "encode": 154.54,
+      "decode": 83.67,
+      "postprocess": 367.17,
+      "total": 699.72
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi250g (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 77.62,
+      "encode": 235.15,
+      "decode": 86.89,
+      "postprocess": 168.2,
+      "total": 567.85
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 17.25,
+      "encode": 99.86,
+      "decode": 41.38,
+      "postprocess": 81.97,
+      "total": 240.46
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi3.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.55,
+      "encode": 90.0,
+      "decode": 9.94,
+      "postprocess": 59.9,
+      "total": 177.4
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 16.76,
+      "encode": 87.62,
+      "decode": 9.88,
+      "postprocess": 58.87,
+      "total": 173.13
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi4.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.67,
+      "encode": 87.13,
+      "decode": 10.56,
+      "postprocess": 44.7,
+      "total": 159.06
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 13.08,
+      "encode": 87.77,
+      "decode": 15.84,
+      "postprocess": 76.37,
+      "total": 193.06
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "banh-mi5.jpg": {
+    "oracle_timing": {
+      "preprocess": 14.36,
+      "encode": 87.59,
+      "decode": 9.46,
+      "postprocess": 44.71,
+      "total": 156.11
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.0,
+    "yolo_timing": {
+      "preprocess": 15.95,
+      "encode": 87.75,
+      "decode": 22.25,
+      "postprocess": 89.1,
+      "total": 215.05
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.81,
+      "encode": 87.57,
+      "decode": 20.15,
+      "postprocess": 98.62,
+      "total": 223.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2926.1,
+    "yolo_timing": {
+      "preprocess": 13.59,
+      "encode": 87.31,
+      "decode": 7.99,
+      "postprocess": 48.79,
+      "total": 157.68
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.15,
+      "encode": 87.46,
+      "decode": 16.42,
+      "postprocess": 98.47,
+      "total": 215.49
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2926.1,
+    "yolo_timing": {
+      "preprocess": 13.52,
+      "encode": 87.28,
+      "decode": 8.33,
+      "postprocess": 49.28,
+      "total": 158.42
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 81.81,
+      "encode": 207.31,
+      "decode": 260.55,
+      "postprocess": 959.7,
+      "total": 1509.37
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2905.5,
+    "yolo_timing": {
+      "preprocess": 89.86,
+      "encode": 202.63,
+      "decode": 355.03,
+      "postprocess": 279.05,
+      "total": 926.58
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.99,
+      "encode": 97.95,
+      "decode": 13.11,
+      "postprocess": 61.17,
+      "total": 188.22
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 21.63,
+      "encode": 92.21,
+      "decode": 88.61,
+      "postprocess": 138.03,
+      "total": 340.47
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 32.87,
+      "encode": 87.78,
+      "decode": 16.24,
+      "postprocess": 62.62,
+      "total": 199.51
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 18.27,
+      "encode": 87.5,
+      "decode": 8.21,
+      "postprocess": 52.34,
+      "total": 166.32
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.88,
+      "encode": 87.83,
+      "decode": 10.15,
+      "postprocess": 56.45,
+      "total": 178.3
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 22.44,
+      "encode": 88.08,
+      "decode": 13.1,
+      "postprocess": 71.2,
+      "total": 194.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun-rieu1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 13.62,
+      "encode": 87.43,
+      "decode": 12.02,
+      "postprocess": 85.36,
+      "total": 198.42
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 26.93,
+      "encode": 88.12,
+      "decode": 11.72,
+      "postprocess": 103.6,
+      "total": 230.37
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.86,
+      "encode": 88.03,
+      "decode": 12.15,
+      "postprocess": 89.59,
+      "total": 211.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 21.07,
+      "encode": 87.77,
+      "decode": 11.52,
+      "postprocess": 64.26,
+      "total": 184.63
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "bun1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 22.43,
+      "encode": 87.36,
+      "decode": 14.3,
+      "postprocess": 55.87,
+      "total": 179.96
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 17.73,
+      "encode": 87.56,
+      "decode": 16.17,
+      "postprocess": 75.51,
+      "total": 196.98
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ca1(0).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.93,
+      "encode": 87.79,
+      "decode": 10.29,
+      "postprocess": 51.94,
+      "total": 166.95
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 16.74,
+      "encode": 87.84,
+      "decode": 22.22,
+      "postprocess": 70.31,
+      "total": 197.11
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ca1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 141.85,
+      "encode": 338.56,
+      "decode": 141.72,
+      "postprocess": 1185.52,
+      "total": 1807.64
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2898.7,
+    "yolo_timing": {
+      "preprocess": 339.83,
+      "encode": 200.52,
+      "decode": 36.03,
+      "postprocess": 158.46,
+      "total": 734.85
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ca1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.85,
+      "encode": 99.17,
+      "decode": 21.36,
+      "postprocess": 74.99,
+      "total": 216.37
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.1,
+    "yolo_timing": {
+      "preprocess": 26.4,
+      "encode": 88.35,
+      "decode": 12.61,
+      "postprocess": 82.86,
+      "total": 210.23
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "ca1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.37,
+      "encode": 87.31,
+      "decode": 12.25,
+      "postprocess": 71.0,
+      "total": 187.93
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.1,
+    "yolo_timing": {
+      "preprocess": 21.56,
+      "encode": 89.36,
+      "decode": 13.6,
+      "postprocess": 53.57,
+      "total": 178.09
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua-cachua1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.43,
+      "encode": 87.49,
+      "decode": 32.57,
+      "postprocess": 191.87,
+      "total": 331.36
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2953.7,
+    "yolo_timing": {
+      "preprocess": 19.92,
+      "encode": 88.31,
+      "decode": 9.1,
+      "postprocess": 60.5,
+      "total": 177.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua-cachua1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 22.3,
+      "encode": 87.59,
+      "decode": 25.07,
+      "postprocess": 139.16,
+      "total": 274.13
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2926.2,
+    "yolo_timing": {
+      "preprocess": 21.93,
+      "encode": 87.53,
+      "decode": 13.49,
+      "postprocess": 50.89,
+      "total": 173.85
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua-cachua1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 174.62,
+      "encode": 335.95,
+      "decode": 613.76,
+      "postprocess": 590.88,
+      "total": 1715.21
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2905.6,
+    "yolo_timing": {
+      "preprocess": 19.81,
+      "encode": 99.65,
+      "decode": 16.49,
+      "postprocess": 67.06,
+      "total": 203.01
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.48,
+      "encode": 117.92,
+      "decode": 12.65,
+      "postprocess": 84.57,
+      "total": 234.62
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.2,
+    "yolo_timing": {
+      "preprocess": 18.98,
+      "encode": 109.23,
+      "decode": 10.1,
+      "postprocess": 59.49,
+      "total": 197.8
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.28,
+      "encode": 99.73,
+      "decode": 11.27,
+      "postprocess": 66.94,
+      "total": 198.22
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.2,
+    "yolo_timing": {
+      "preprocess": 14.28,
+      "encode": 87.52,
+      "decode": 8.4,
+      "postprocess": 57.59,
+      "total": 167.79
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 18.04,
+      "encode": 87.23,
+      "decode": 12.1,
+      "postprocess": 62.65,
+      "total": 180.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.2,
+    "yolo_timing": {
+      "preprocess": 15.79,
+      "encode": 87.86,
+      "decode": 17.96,
+      "postprocess": 51.25,
+      "total": 172.86
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "chalua2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 15.43,
+      "encode": 87.18,
+      "decode": 10.62,
+      "postprocess": 76.35,
+      "total": 189.58
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.2,
+    "yolo_timing": {
+      "preprocess": 16.34,
+      "encode": 87.52,
+      "decode": 13.35,
+      "postprocess": 67.09,
+      "total": 184.3
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com chien 1.jpg": {
+    "oracle_timing": {
+      "preprocess": 17.12,
+      "encode": 87.96,
+      "decode": 9.48,
+      "postprocess": 40.34,
+      "total": 154.9
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2849.9,
+    "yolo_timing": {
+      "preprocess": 16.65,
+      "encode": 88.35,
+      "decode": 14.96,
+      "postprocess": 42.17,
+      "total": 162.14
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com chien 2.jpg": {
+    "oracle_timing": {
+      "preprocess": 105.39,
+      "encode": 294.38,
+      "decode": 144.41,
+      "postprocess": 483.3,
+      "total": 1027.47
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2849.9,
+    "yolo_timing": {
+      "preprocess": 136.49,
+      "encode": 331.58,
+      "decode": 155.09,
+      "postprocess": 553.11,
+      "total": 1176.27
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com chien 3.jpg": {
+    "oracle_timing": {
+      "preprocess": 19.6,
+      "encode": 167.83,
+      "decode": 12.28,
+      "postprocess": 52.44,
+      "total": 252.15
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2849.9,
+    "yolo_timing": {
+      "preprocess": 17.57,
+      "encode": 96.68,
+      "decode": 12.29,
+      "postprocess": 86.09,
+      "total": 212.63
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com chien 4.jpg": {
+    "oracle_timing": {
+      "preprocess": 18.72,
+      "encode": 87.25,
+      "decode": 12.29,
+      "postprocess": 58.58,
+      "total": 176.83
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2849.9,
+    "yolo_timing": {
+      "preprocess": 17.51,
+      "encode": 88.07,
+      "decode": 13.12,
+      "postprocess": 42.82,
+      "total": 161.52
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com chien 5.jpg": {
+    "oracle_timing": {
+      "preprocess": 16.31,
+      "encode": 89.38,
+      "decode": 19.01,
+      "postprocess": 60.32,
+      "total": 185.02
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2849.9,
+    "yolo_timing": {
+      "preprocess": 18.6,
+      "encode": 88.38,
+      "decode": 16.47,
+      "postprocess": 51.37,
+      "total": 174.83
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com-suon1 (1).jpg": {
+    "oracle_timing": {
+      "preprocess": 47.68,
+      "encode": 122.26,
+      "decode": 58.99,
+      "postprocess": 111.57,
+      "total": 340.5
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2878.2,
+    "yolo_timing": {
+      "preprocess": 33.07,
+      "encode": 90.19,
+      "decode": 18.44,
+      "postprocess": 132.07,
+      "total": 273.77
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com-suon1 (2).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.68,
+      "encode": 87.66,
+      "decode": 26.53,
+      "postprocess": 136.02,
+      "total": 271.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2848.0,
+    "yolo_timing": {
+      "preprocess": 27.56,
+      "encode": 87.63,
+      "decode": 83.35,
+      "postprocess": 204.66,
+      "total": 403.2
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com-suon1 (3).jpg": {
+    "oracle_timing": {
+      "preprocess": 24.11,
+      "encode": 88.84,
+      "decode": 49.69,
+      "postprocess": 216.37,
+      "total": 379.01
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2875.4,
+    "yolo_timing": {
+      "preprocess": 21.96,
+      "encode": 87.78,
+      "decode": 24.35,
+      "postprocess": 125.96,
+      "total": 260.05
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com-suon1 (4).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.63,
+      "encode": 103.41,
+      "decode": 11.44,
+      "postprocess": 54.28,
+      "total": 185.77
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 19.17,
+      "encode": 100.31,
+      "decode": 23.33,
+      "postprocess": 1326.39,
+      "total": 1469.2
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "com-suon1 (5).jpg": {
+    "oracle_timing": {
+      "preprocess": 23.43,
+      "encode": 285.59,
+      "decode": 24.65,
+      "postprocess": 121.31,
+      "total": 454.98
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2848.0,
+    "yolo_timing": {
+      "preprocess": 19.46,
+      "encode": 90.45,
+      "decode": 26.78,
+      "postprocess": 145.92,
+      "total": 282.61
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "thitNuong1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 19.87,
+      "encode": 87.9,
+      "decode": 10.14,
+      "postprocess": 79.97,
+      "total": 197.89
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 19.3,
+      "encode": 87.66,
+      "decode": 17.32,
+      "postprocess": 128.82,
+      "total": 253.1
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom1(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 20.2,
+      "encode": 87.46,
+      "decode": 8.79,
+      "postprocess": 51.39,
+      "total": 167.84
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 16.96,
+      "encode": 87.65,
+      "decode": 8.88,
+      "postprocess": 53.95,
+      "total": 167.44
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom1(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 14.6,
+      "encode": 87.52,
+      "decode": 13.23,
+      "postprocess": 62.01,
+      "total": 177.35
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 17.4,
+      "encode": 87.93,
+      "decode": 11.81,
+      "postprocess": 49.13,
+      "total": 166.26
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom1(3).jpg": {
+    "oracle_timing": {
+      "preprocess": 16.9,
+      "encode": 87.47,
+      "decode": 8.76,
+      "postprocess": 38.57,
+      "total": 151.69
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 22.27,
+      "encode": 87.69,
+      "decode": 8.9,
+      "postprocess": 46.66,
+      "total": 165.51
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom1(4).jpg": {
+    "oracle_timing": {
+      "preprocess": 152.25,
+      "encode": 452.45,
+      "decode": 337.64,
+      "postprocess": 1011.6,
+      "total": 1953.94
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 21.98,
+      "encode": 100.44,
+      "decode": 14.44,
+      "postprocess": 85.95,
+      "total": 222.82
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom2(1).jpg": {
+    "oracle_timing": {
+      "preprocess": 21.71,
+      "encode": 87.86,
+      "decode": 15.03,
+      "postprocess": 72.89,
+      "total": 197.5
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 15.31,
+      "encode": 87.67,
+      "decode": 14.34,
+      "postprocess": 88.59,
+      "total": 205.91
+    },
+    "yolo_peak_vram_mib": 313.2
+  },
+  "tom2(2).jpg": {
+    "oracle_timing": {
+      "preprocess": 17.69,
+      "encode": 87.39,
+      "decode": 14.71,
+      "postprocess": 63.34,
+      "total": 183.12
+    },
+    "oracle_peak_vram_mib": 313.2,
+    "oracle_cpu_ram_mib": 2799.9,
+    "yolo_timing": {
+      "preprocess": 23.56,
+      "encode": 87.69,
+      "decode": 16.32,
+      "postprocess": 68.95,
+      "total": 196.52
+    },
+    "yolo_peak_vram_mib": 313.2
+  }
+}

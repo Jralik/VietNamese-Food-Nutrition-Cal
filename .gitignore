@@ -150,6 +150,21 @@ Camera calibration/*.bmp
 ~$*.xlsx
 ~$*.pptx
 docx_extracted.txt
+dump_chuong3.txt
+extracted_doc_preview.txt
+*.bak_*
+scratch/FoodSAM.code-workspace
+scratch/bench_cache_full/
+scratch/bench_cache_pilot/
+scratch/bench_cache_v2/*.npz
+scratch/bench_cache_v2/depth_ctx/
+scratch/full_vis/
+scratch/pilot_vis/
+scratch/all_math_ch3_output.txt
+scratch/ch3_all_paragraphs.txt
+scratch/ch3_keyword_hits.txt
+scratch/math_paragraphs_inspection.txt
+scratch/validation_report.txt
 
 # ==============================================================================
 # OS & System Generated Files

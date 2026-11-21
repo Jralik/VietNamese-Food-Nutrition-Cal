@@ -1,0 +1,2977 @@
+{
+  "total_images": 77,
+  "total_annotations": 102,
+  "missing_image_files": 0,
+  "status_counts": {
+    "exact_1to1": 92,
+    "grouped_multi_instance": 8,
+    "excluded_unverified_line_mismatch": 1,
+    "excluded_unknown_weight": 1
+  },
+  "morphology_group_counts": {
+    "dry_plate": 33,
+    "discrete_item": 43,
+    "soup_bowl": 26
+  },
+  "valid_mass_evaluation_groups": 96,
+  "instances": [
+    {
+      "annotation_id": 1,
+      "image_id": 1,
+      "file_name": "BanhCuon2 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        730.48,
+        1325.09,
+        927.28,
+        1556.75
+      ],
+      "bbox_xyxy": [
+        730.48,
+        1325.09,
+        1657.76,
+        2881.84
+      ],
+      "polygon_area": 1169244.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 293.3,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 2,
+      "image_id": 2,
+      "file_name": "BanhCuon2 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        716.36,
+        1344.29,
+        953.44,
+        1556.75
+      ],
+      "bbox_xyxy": [
+        716.36,
+        1344.29,
+        1669.8,
+        2901.04
+      ],
+      "polygon_area": 1175986.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 293.3,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 3,
+      "image_id": 3,
+      "file_name": "BanhCuon2 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1379.71,
+        204.24,
+        1430.13,
+        723.26
+      ],
+      "bbox_xyxy": [
+        1379.71,
+        204.24,
+        2809.84,
+        927.5
+      ],
+      "polygon_area": 828125.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 293.3,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 4,
+      "image_id": 4,
+      "file_name": "BanhCuon2 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1700.38,
+        177.09,
+        1350.55,
+        935.32
+      ],
+      "bbox_xyxy": [
+        1700.38,
+        177.09,
+        3050.93,
+        1112.41
+      ],
+      "polygon_area": 985964.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 293.3,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 5,
+      "image_id": 5,
+      "file_name": "BanhCuon2 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (5).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1035.64,
+        162.81,
+        1193.72,
+        1481.63
+      ],
+      "bbox_xyxy": [
+        1035.64,
+        162.81,
+        2229.36,
+        1644.44
+      ],
+      "polygon_area": 1207346.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 315.7,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 6,
+      "image_id": 6,
+      "file_name": "BanhCuon2 (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (6).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1178.6,
+        0.0,
+        1462.82,
+        977.27
+      ],
+      "bbox_xyxy": [
+        1178.6,
+        0.0,
+        2641.42,
+        977.27
+      ],
+      "polygon_area": 1062500.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 315.7,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 7,
+      "image_id": 7,
+      "file_name": "BanhCuon2 (7).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (7).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1188.56,
+        56.54,
+        1316.19,
+        964.12
+      ],
+      "bbox_xyxy": [
+        1188.56,
+        56.54,
+        2504.75,
+        1020.66
+      ],
+      "polygon_area": 863632.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 315.7,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 8,
+      "image_id": 8,
+      "file_name": "BanhCuon2 (8).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (8).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        962.43,
+        218.76,
+        1175.36,
+        1457.01
+      ],
+      "bbox_xyxy": [
+        962.43,
+        218.76,
+        2137.79,
+        1675.77
+      ],
+      "polygon_area": 1138947.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 315.7,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 9,
+      "image_id": 9,
+      "file_name": "BanhCuon2 (9).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhCuon\\BanhCuon2 (9).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 2,
+      "short_class": "Banh cuon",
+      "vietfood67_class_id": 2,
+      "vietfood67_class_name": "Banh cuon (Rolled rice pancake)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1043.68,
+        134.81,
+        1194.31,
+        1031.82
+      ],
+      "bbox_xyxy": [
+        1043.68,
+        134.81,
+        2237.99,
+        1166.63
+      ],
+      "polygon_area": 871103.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 315.7,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 10,
+      "image_id": 10,
+      "file_name": "BanhMiDucTri (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        675.36,
+        61.69,
+        1925.54,
+        1145.56
+      ],
+      "bbox_xyxy": [
+        675.36,
+        61.69,
+        2600.9,
+        1207.25
+      ],
+      "polygon_area": 1873088.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 210.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 11,
+      "image_id": 11,
+      "file_name": "BanhMiDucTri (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        540.61,
+        821.81,
+        1015.3,
+        1832.28
+      ],
+      "bbox_xyxy": [
+        540.61,
+        821.81,
+        1555.91,
+        2654.09
+      ],
+      "polygon_area": 1400403.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 210.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 12,
+      "image_id": 12,
+      "file_name": "BanhMiDucTri (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMiDucTri (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        935.89,
+        484.5,
+        1683.11,
+        882.75
+      ],
+      "bbox_xyxy": [
+        935.89,
+        484.5,
+        2619.0,
+        1367.25
+      ],
+      "polygon_area": 1109081.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 210.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 13,
+      "image_id": 13,
+      "file_name": "BanhMi_Trung (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2210.64,
+        356.8,
+        1128.16,
+        1027.7
+      ],
+      "bbox_xyxy": [
+        2210.64,
+        356.8,
+        3338.8,
+        1384.5
+      ],
+      "polygon_area": 827453.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 221.2,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 14,
+      "image_id": 13,
+      "file_name": "BanhMi_Trung (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1224.24,
+        517.35,
+        606.35,
+        552.44
+      ],
+      "bbox_xyxy": [
+        1224.24,
+        517.35,
+        1830.59,
+        1069.79
+      ],
+      "polygon_area": 215754.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (1).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 15,
+      "image_id": 13,
+      "file_name": "BanhMi_Trung (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        493.26,
+        77.75,
+        855.64,
+        951.62
+      ],
+      "bbox_xyxy": [
+        493.26,
+        77.75,
+        1348.9,
+        1029.37
+      ],
+      "polygon_area": 501838.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (1).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 16,
+      "image_id": 14,
+      "file_name": "BanhMi_Trung (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        685.48,
+        447.82,
+        1215.33,
+        1149.88
+      ],
+      "bbox_xyxy": [
+        685.48,
+        447.82,
+        1900.81,
+        1597.7
+      ],
+      "polygon_area": 984399.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 221.2,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 17,
+      "image_id": 14,
+      "file_name": "BanhMi_Trung (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2823.0,
+        711.6,
+        793.71,
+        1041.75
+      ],
+      "bbox_xyxy": [
+        2823.0,
+        711.6,
+        3616.71,
+        1753.35
+      ],
+      "polygon_area": 518528.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (2).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 18,
+      "image_id": 14,
+      "file_name": "BanhMi_Trung (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2290.89,
+        603.4,
+        599.81,
+        579.48
+      ],
+      "bbox_xyxy": [
+        2290.89,
+        603.4,
+        2890.7,
+        1182.88
+      ],
+      "polygon_area": 216267.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (2).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 19,
+      "image_id": 15,
+      "file_name": "BanhMi_Trung (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        3186.04,
+        562.8,
+        708.01,
+        1032.71
+      ],
+      "bbox_xyxy": [
+        3186.04,
+        562.8,
+        3894.05,
+        1595.51
+      ],
+      "polygon_area": 472335.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (3).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 20,
+      "image_id": 15,
+      "file_name": "BanhMi_Trung (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2787.0,
+        598.89,
+        507.3,
+        615.61
+      ],
+      "bbox_xyxy": [
+        2787.0,
+        598.89,
+        3294.3,
+        1214.5
+      ],
+      "polygon_area": 191392.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (3).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 21,
+      "image_id": 15,
+      "file_name": "BanhMi_Trung (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        917.72,
+        441.06,
+        1386.7,
+        1310.03
+      ],
+      "bbox_xyxy": [
+        917.72,
+        441.06,
+        2304.42,
+        1751.09
+      ],
+      "polygon_area": 1298001.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 221.2,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 22,
+      "image_id": 16,
+      "file_name": "BanhMi_Trung (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1638.21,
+        686.04,
+        641.15,
+        637.25
+      ],
+      "bbox_xyxy": [
+        1638.21,
+        686.04,
+        2279.36,
+        1323.29
+      ],
+      "polygon_area": 276724.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (4).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 23,
+      "image_id": 16,
+      "file_name": "BanhMi_Trung (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2526.2,
+        298.89,
+        887.62,
+        1108.27
+      ],
+      "bbox_xyxy": [
+        2526.2,
+        298.89,
+        3413.82,
+        1407.16
+      ],
+      "polygon_area": 678225.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 221.2,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 24,
+      "image_id": 16,
+      "file_name": "BanhMi_Trung (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\BanhMi_Trung (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        852.86,
+        113.1,
+        871.14,
+        1264.8
+      ],
+      "bbox_xyxy": [
+        852.86,
+        113.1,
+        1724.0,
+        1377.9
+      ],
+      "polygon_area": 693779.0,
+      "mapping_status": "grouped_multi_instance",
+      "gt_weight_g": 99.3,
+      "mapping_note": "Part of 2-instance group for 'Banh mi' on BanhMi_Trung (4).jpg; sum predicted masses across group before comparing to total 99.3g."
+    },
+    {
+      "annotation_id": 25,
+      "image_id": 17,
+      "file_name": "BunBoHue1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        2578.0,
+        586.0,
+        705.0,
+        738.0
+      ],
+      "bbox_xyxy": [
+        2578.0,
+        586.0,
+        3283.0,
+        1324.0
+      ],
+      "polygon_area": 371798.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 90.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 26,
+      "image_id": 17,
+      "file_name": "BunBoHue1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 5,
+      "short_class": "Bun bo Hue",
+      "vietfood67_class_id": 12,
+      "vietfood67_class_name": "Bun bo Hue (Hue beef noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1436.32,
+        653.5,
+        1007.52,
+        999.7
+      ],
+      "bbox_xyxy": [
+        1436.32,
+        653.5,
+        2443.84,
+        1653.2
+      ],
+      "polygon_area": 789598.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 804.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 27,
+      "image_id": 18,
+      "file_name": "BunBoHue1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        511.0,
+        690.0,
+        706.0,
+        702.0
+      ],
+      "bbox_xyxy": [
+        511.0,
+        690.0,
+        1217.0,
+        1392.0
+      ],
+      "polygon_area": 314172.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 90.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 28,
+      "image_id": 18,
+      "file_name": "BunBoHue1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 5,
+      "short_class": "Bun bo Hue",
+      "vietfood67_class_id": 12,
+      "vietfood67_class_name": "Bun bo Hue (Hue beef noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1403.38,
+        281.45,
+        1022.02,
+        1022.05
+      ],
+      "bbox_xyxy": [
+        1403.38,
+        281.45,
+        2425.4,
+        1303.5
+      ],
+      "polygon_area": 820108.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 804.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 29,
+      "image_id": 19,
+      "file_name": "BunBoHue1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        647.0,
+        668.0,
+        685.0,
+        536.0
+      ],
+      "bbox_xyxy": [
+        647.0,
+        668.0,
+        1332.0,
+        1204.0
+      ],
+      "polygon_area": 237646.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 90.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 30,
+      "image_id": 19,
+      "file_name": "BunBoHue1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 5,
+      "short_class": "Bun bo Hue",
+      "vietfood67_class_id": 12,
+      "vietfood67_class_name": "Bun bo Hue (Hue beef noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1510.6,
+        454.83,
+        898.83,
+        661.57
+      ],
+      "bbox_xyxy": [
+        1510.6,
+        454.83,
+        2409.43,
+        1116.4
+      ],
+      "polygon_area": 474994.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 804.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 31,
+      "image_id": 20,
+      "file_name": "BunBoHue1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 5,
+      "short_class": "Bun bo Hue",
+      "vietfood67_class_id": 12,
+      "vietfood67_class_name": "Bun bo Hue (Hue beef noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1537.07,
+        352.17,
+        904.3,
+        869.39
+      ],
+      "bbox_xyxy": [
+        1537.07,
+        352.17,
+        2441.37,
+        1221.56
+      ],
+      "polygon_area": 620681.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 804.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 32,
+      "image_id": 20,
+      "file_name": "BunBoHue1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        724.0,
+        632.0,
+        659.0,
+        626.0
+      ],
+      "bbox_xyxy": [
+        724.0,
+        632.0,
+        1383.0,
+        1258.0
+      ],
+      "polygon_area": 288636.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 90.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 33,
+      "image_id": 21,
+      "file_name": "BunBoHue1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (5).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 5,
+      "short_class": "Bun bo Hue",
+      "vietfood67_class_id": 12,
+      "vietfood67_class_name": "Bun bo Hue (Hue beef noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1872.87,
+        560.45,
+        1089.43,
+        1085.95
+      ],
+      "bbox_xyxy": [
+        1872.87,
+        560.45,
+        2962.3,
+        1646.4
+      ],
+      "polygon_area": 920543.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 804.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 34,
+      "image_id": 21,
+      "file_name": "BunBoHue1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunBoHue\\BunBoHue1 (5).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        3021.0,
+        495.0,
+        700.0,
+        748.0
+      ],
+      "bbox_xyxy": [
+        3021.0,
+        495.0,
+        3721.0,
+        1243.0
+      ],
+      "polygon_area": 367140.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 90.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 35,
+      "image_id": 22,
+      "file_name": "ComGa1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        291.8,
+        1240.19,
+        1061.43,
+        1340.24
+      ],
+      "bbox_xyxy": [
+        291.8,
+        1240.19,
+        1353.23,
+        2580.43
+      ],
+      "polygon_area": 1059472.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 36,
+      "image_id": 23,
+      "file_name": "ComGa1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        452.87,
+        1096.0,
+        1127.87,
+        1758.52
+      ],
+      "bbox_xyxy": [
+        452.87,
+        1096.0,
+        1580.74,
+        2854.52
+      ],
+      "polygon_area": 1513665.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 37,
+      "image_id": 24,
+      "file_name": "ComGa1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        540.57,
+        1250.5,
+        1007.99,
+        1600.03
+      ],
+      "bbox_xyxy": [
+        540.57,
+        1250.5,
+        1548.56,
+        2850.53
+      ],
+      "polygon_area": 1290011.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 38,
+      "image_id": 25,
+      "file_name": "ComGa1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (4).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        502.3,
+        1140.77,
+        992.67,
+        1457.12
+      ],
+      "bbox_xyxy": [
+        502.3,
+        1140.77,
+        1494.97,
+        2597.89
+      ],
+      "polygon_area": 1107600.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 39,
+      "image_id": 26,
+      "file_name": "ComGa1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (5).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        394.8,
+        711.54,
+        1105.0,
+        1177.75
+      ],
+      "bbox_xyxy": [
+        394.8,
+        711.54,
+        1499.8,
+        1889.29
+      ],
+      "polygon_area": 927953.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 40,
+      "image_id": 27,
+      "file_name": "ComGa1 (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (6).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1077.46,
+        425.54,
+        1691.87,
+        1122.35
+      ],
+      "bbox_xyxy": [
+        1077.46,
+        425.54,
+        2769.33,
+        1547.89
+      ],
+      "polygon_area": 1411801.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 41,
+      "image_id": 28,
+      "file_name": "ComGa1 (7).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (7).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1185.94,
+        663.36,
+        1527.06,
+        1047.25
+      ],
+      "bbox_xyxy": [
+        1185.94,
+        663.36,
+        2713.0,
+        1710.61
+      ],
+      "polygon_area": 1171942.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 42,
+      "image_id": 29,
+      "file_name": "ComGa1 (8).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa1 (8).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1718.43,
+        367.01,
+        899.27,
+        1354.49
+      ],
+      "bbox_xyxy": [
+        1718.43,
+        367.01,
+        2617.7,
+        1721.5
+      ],
+      "polygon_area": 899661.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 43,
+      "image_id": 30,
+      "file_name": "ComGa2 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        700.96,
+        847.17,
+        840.39,
+        881.39
+      ],
+      "bbox_xyxy": [
+        700.96,
+        847.17,
+        1541.35,
+        1728.56
+      ],
+      "polygon_area": 561562.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 44,
+      "image_id": 30,
+      "file_name": "ComGa2 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 14,
+      "short_class": "Thit ga",
+      "vietfood67_class_id": 51,
+      "vietfood67_class_name": "Thit ga (Chicken)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        89.98,
+        2118.9,
+        806.35,
+        841.93
+      ],
+      "bbox_xyxy": [
+        89.98,
+        2118.9,
+        896.33,
+        2960.83
+      ],
+      "polygon_area": 419958.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 106.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 45,
+      "image_id": 31,
+      "file_name": "ComGa2 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 14,
+      "short_class": "Thit ga",
+      "vietfood67_class_id": 51,
+      "vietfood67_class_name": "Thit ga (Chicken)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        752.3,
+        272.7,
+        746.0,
+        765.8
+      ],
+      "bbox_xyxy": [
+        752.3,
+        272.7,
+        1498.3,
+        1038.5
+      ],
+      "polygon_area": 342145.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 106.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 46,
+      "image_id": 31,
+      "file_name": "ComGa2 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1934.55,
+        491.8,
+        1439.25,
+        982.62
+      ],
+      "bbox_xyxy": [
+        1934.55,
+        491.8,
+        3373.8,
+        1474.42
+      ],
+      "polygon_area": 1033491.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 47,
+      "image_id": 32,
+      "file_name": "ComGa2 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 14,
+      "short_class": "Thit ga",
+      "vietfood67_class_id": 51,
+      "vietfood67_class_name": "Thit ga (Chicken)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        701.5,
+        219.7,
+        786.0,
+        727.7
+      ],
+      "bbox_xyxy": [
+        701.5,
+        219.7,
+        1487.5,
+        947.4
+      ],
+      "polygon_area": 339035.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 106.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 48,
+      "image_id": 32,
+      "file_name": "ComGa2 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComGa\\ComGa2 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 4,
+      "short_class": "Com chien ga",
+      "vietfood67_class_id": 63,
+      "vietfood67_class_name": "Com chien ga (Fried rice with chicken)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1948.85,
+        313.94,
+        1472.82,
+        1028.47
+      ],
+      "bbox_xyxy": [
+        1948.85,
+        313.94,
+        3421.67,
+        1342.41
+      ],
+      "polygon_area": 1121879.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 466.1,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 49,
+      "image_id": 33,
+      "file_name": "Pho1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 7,
+      "short_class": "Pho",
+      "vietfood67_class_id": 46,
+      "vietfood67_class_name": "Pho (Vietnamese noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        347.68,
+        930.02,
+        1303.84,
+        1204.68
+      ],
+      "bbox_xyxy": [
+        347.68,
+        930.02,
+        1651.52,
+        2134.7
+      ],
+      "polygon_area": 1235068.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 819.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 50,
+      "image_id": 34,
+      "file_name": "Pho1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 7,
+      "short_class": "Pho",
+      "vietfood67_class_id": 46,
+      "vietfood67_class_name": "Pho (Vietnamese noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        296.1,
+        1360.23,
+        1306.56,
+        1270.84
+      ],
+      "bbox_xyxy": [
+        296.1,
+        1360.23,
+        1602.66,
+        2631.07
+      ],
+      "polygon_area": 1270938.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 819.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 51,
+      "image_id": 35,
+      "file_name": "Pho1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 7,
+      "short_class": "Pho",
+      "vietfood67_class_id": 46,
+      "vietfood67_class_name": "Pho (Vietnamese noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        359.98,
+        1597.06,
+        1124.82,
+        935.15
+      ],
+      "bbox_xyxy": [
+        359.98,
+        1597.06,
+        1484.8,
+        2532.21
+      ],
+      "polygon_area": 831862.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 819.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 52,
+      "image_id": 36,
+      "file_name": "Pho1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (4).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 7,
+      "short_class": "Pho",
+      "vietfood67_class_id": 46,
+      "vietfood67_class_name": "Pho (Vietnamese noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        540.83,
+        1259.61,
+        1127.03,
+        1279.19
+      ],
+      "bbox_xyxy": [
+        540.83,
+        1259.61,
+        1667.86,
+        2538.8
+      ],
+      "polygon_area": 1116072.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 819.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 53,
+      "image_id": 37,
+      "file_name": "Pho1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Pho\\Pho1 (5).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 7,
+      "short_class": "Pho",
+      "vietfood67_class_id": 46,
+      "vietfood67_class_name": "Pho (Vietnamese noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        331.1,
+        1036.86,
+        1327.94,
+        1228.44
+      ],
+      "bbox_xyxy": [
+        331.1,
+        1036.86,
+        1659.04,
+        2265.3
+      ],
+      "polygon_area": 1264018.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 819.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 54,
+      "image_id": 38,
+      "file_name": "SupCua (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        232.8,
+        1201.29,
+        1293.4,
+        1318.21
+      ],
+      "bbox_xyxy": [
+        232.8,
+        1201.29,
+        1526.2,
+        2519.5
+      ],
+      "polygon_area": 1317361.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 55,
+      "image_id": 39,
+      "file_name": "SupCua (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1449.91,
+        305.0,
+        1130.51,
+        1114.8
+      ],
+      "bbox_xyxy": [
+        1449.91,
+        305.0,
+        2580.42,
+        1419.8
+      ],
+      "polygon_area": 981614.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 56,
+      "image_id": 40,
+      "file_name": "SupCua (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1361.36,
+        314.16,
+        1134.41,
+        899.37
+      ],
+      "bbox_xyxy": [
+        1361.36,
+        314.16,
+        2495.77,
+        1213.53
+      ],
+      "polygon_area": 806673.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 57,
+      "image_id": 41,
+      "file_name": "SupCua (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (4).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        548.2,
+        919.8,
+        963.27,
+        693.23
+      ],
+      "bbox_xyxy": [
+        548.2,
+        919.8,
+        1511.47,
+        1613.03
+      ],
+      "polygon_area": 506474.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 58,
+      "image_id": 42,
+      "file_name": "SupCua (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (5).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        245.75,
+        952.29,
+        1316.5,
+        866.01
+      ],
+      "bbox_xyxy": [
+        245.75,
+        952.29,
+        1562.25,
+        1818.3
+      ],
+      "polygon_area": 887737.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 59,
+      "image_id": 43,
+      "file_name": "SupCua (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\SupCua\\SupCua (6).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 9,
+      "short_class": "Sup cua",
+      "vietfood67_class_id": 67,
+      "vietfood67_class_name": "Sup cua (Crab soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        198.63,
+        784.4,
+        1423.35,
+        1408.17
+      ],
+      "bbox_xyxy": [
+        198.63,
+        784.4,
+        1621.98,
+        2192.57
+      ],
+      "polygon_area": 1541747.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 470.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 60,
+      "image_id": 44,
+      "file_name": "ThitKho1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1527.75,
+        524.3,
+        772.65,
+        777.3
+      ],
+      "bbox_xyxy": [
+        1527.75,
+        524.3,
+        2300.4,
+        1301.6
+      ],
+      "polygon_area": 434706.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 61,
+      "image_id": 45,
+      "file_name": "ThitKho1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        256.59,
+        1755.72,
+        687.06,
+        670.65
+      ],
+      "bbox_xyxy": [
+        256.59,
+        1755.72,
+        943.65,
+        2426.37
+      ],
+      "polygon_area": 339654.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 62,
+      "image_id": 45,
+      "file_name": "ThitKho1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1353.03,
+        1591.56,
+        373.13,
+        385.06
+      ],
+      "bbox_xyxy": [
+        1353.03,
+        1591.56,
+        1726.16,
+        1976.62
+      ],
+      "polygon_area": 107002.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 65.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 63,
+      "image_id": 46,
+      "file_name": "ThitKho1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        668.89,
+        1535.3,
+        852.16,
+        898.61
+      ],
+      "bbox_xyxy": [
+        668.89,
+        1535.3,
+        1521.05,
+        2433.91
+      ],
+      "polygon_area": 575378.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 64,
+      "image_id": 47,
+      "file_name": "ThitKho1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (4).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        614.05,
+        1478.74,
+        912.36,
+        875.87
+      ],
+      "bbox_xyxy": [
+        614.05,
+        1478.74,
+        1526.41,
+        2354.61
+      ],
+      "polygon_area": 563448.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 65,
+      "image_id": 48,
+      "file_name": "ThitKho1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (5).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        400.5,
+        1248.17,
+        994.93,
+        865.62
+      ],
+      "bbox_xyxy": [
+        400.5,
+        1248.17,
+        1395.43,
+        2113.79
+      ],
+      "polygon_area": 575683.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 66,
+      "image_id": 49,
+      "file_name": "ThitKho1 (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (6).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 11,
+      "short_class": "Trung",
+      "vietfood67_class_id": 56,
+      "vietfood67_class_name": "Trung (Egg)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        618.88,
+        937.06,
+        437.93,
+        380.94
+      ],
+      "bbox_xyxy": [
+        618.88,
+        937.06,
+        1056.81,
+        1318.0
+      ],
+      "polygon_area": 124587.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 65.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 67,
+      "image_id": 49,
+      "file_name": "ThitKho1 (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ThitKho\\ThitKho1 (6).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 8,
+      "short_class": "Thit kho",
+      "vietfood67_class_id": 53,
+      "vietfood67_class_name": "Thit kho (Braised pork)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        762.78,
+        1700.16,
+        857.54,
+        824.02
+      ],
+      "bbox_xyxy": [
+        762.78,
+        1700.16,
+        1620.32,
+        2524.18
+      ],
+      "polygon_area": 523728.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 92.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 68,
+      "image_id": 50,
+      "file_name": "Xoi1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (1).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1280.7,
+        138.17,
+        1427.19,
+        1124.14
+      ],
+      "bbox_xyxy": [
+        1280.7,
+        138.17,
+        2707.89,
+        1262.31
+      ],
+      "polygon_area": 1137197.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 69,
+      "image_id": 51,
+      "file_name": "Xoi1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        414.04,
+        769.15,
+        1242.07,
+        1704.72
+      ],
+      "bbox_xyxy": [
+        414.04,
+        769.15,
+        1656.11,
+        2473.87
+      ],
+      "polygon_area": 1526006.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 70,
+      "image_id": 52,
+      "file_name": "Xoi1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        754.63,
+        233.32,
+        1671.25,
+        1141.48
+      ],
+      "bbox_xyxy": [
+        754.63,
+        233.32,
+        2425.88,
+        1374.8
+      ],
+      "polygon_area": 1425955.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 71,
+      "image_id": 53,
+      "file_name": "Xoi1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        682.48,
+        375.99,
+        1456.58,
+        1004.76
+      ],
+      "bbox_xyxy": [
+        682.48,
+        375.99,
+        2139.06,
+        1380.75
+      ],
+      "polygon_area": 1235231.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 72,
+      "image_id": 54,
+      "file_name": "Xoi1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (5).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        319.97,
+        771.82,
+        1212.82,
+        1387.64
+      ],
+      "bbox_xyxy": [
+        319.97,
+        771.82,
+        1532.79,
+        2159.46
+      ],
+      "polygon_area": 1261909.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 73,
+      "image_id": 55,
+      "file_name": "Xoi1 (6).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (6).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1525.47,
+        366.4,
+        1385.33,
+        1016.29
+      ],
+      "bbox_xyxy": [
+        1525.47,
+        366.4,
+        2910.8,
+        1382.69
+      ],
+      "polygon_area": 1068774.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 74,
+      "image_id": 56,
+      "file_name": "Xoi1 (7).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\Xoi\\Xoi1 (7).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 6,
+      "short_class": "Xoi",
+      "vietfood67_class_id": 57,
+      "vietfood67_class_name": "Xoi (Sticky rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1245.08,
+        366.06,
+        1446.71,
+        966.06
+      ],
+      "bbox_xyxy": [
+        1245.08,
+        366.06,
+        2691.79,
+        1332.12
+      ],
+      "polygon_area": 1052911.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 316.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 75,
+      "image_id": 57,
+      "file_name": "banh-mi1.jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi1.jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        94.26,
+        1173.71,
+        1672.94,
+        767.49
+      ],
+      "bbox_xyxy": [
+        94.26,
+        1173.71,
+        1767.2,
+        1941.2
+      ],
+      "polygon_area": 1012410.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 242.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 76,
+      "image_id": 58,
+      "file_name": "banh-mi2.jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi2.jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1165.42,
+        70.91,
+        1691.38,
+        966.72
+      ],
+      "bbox_xyxy": [
+        1165.42,
+        70.91,
+        2856.8,
+        1037.63
+      ],
+      "polygon_area": 1284666.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 242.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 77,
+      "image_id": 59,
+      "file_name": "banh-mi250g (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        360.9,
+        818.52,
+        1307.9,
+        643.28
+      ],
+      "bbox_xyxy": [
+        360.9,
+        818.52,
+        1668.8,
+        1461.8
+      ],
+      "polygon_area": 647771.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 255.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 78,
+      "image_id": 60,
+      "file_name": "banh-mi250g (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        367.87,
+        477.44,
+        1381.26,
+        852.04
+      ],
+      "bbox_xyxy": [
+        367.87,
+        477.44,
+        1749.13,
+        1329.48
+      ],
+      "polygon_area": 895493.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 255.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 79,
+      "image_id": 61,
+      "file_name": "banh-mi250g (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        325.0,
+        953.0,
+        1344.0,
+        882.0
+      ],
+      "bbox_xyxy": [
+        325.0,
+        953.0,
+        1669.0,
+        1835.0
+      ],
+      "polygon_area": 892676.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 255.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 80,
+      "image_id": 62,
+      "file_name": "banh-mi250g (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi250g (4).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        361.0,
+        1029.0,
+        597.0,
+        1371.0
+      ],
+      "bbox_xyxy": [
+        361.0,
+        1029.0,
+        958.0,
+        2400.0
+      ],
+      "polygon_area": 661073.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 255.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 81,
+      "image_id": 63,
+      "file_name": "banh-mi3.jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi3.jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        54.0,
+        1369.0,
+        1740.0,
+        1026.0
+      ],
+      "bbox_xyxy": [
+        54.0,
+        1369.0,
+        1794.0,
+        2395.0
+      ],
+      "polygon_area": 1343167.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 242.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 82,
+      "image_id": 64,
+      "file_name": "banh-mi4.jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi4.jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        941.0,
+        9.0,
+        1731.0,
+        1233.0
+      ],
+      "bbox_xyxy": [
+        941.0,
+        9.0,
+        2672.0,
+        1242.0
+      ],
+      "polygon_area": 1667126.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 242.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 83,
+      "image_id": 65,
+      "file_name": "banh-mi5.jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BanhMi\\banh-mi5.jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 1,
+      "short_class": "Banh mi",
+      "vietfood67_class_id": 4,
+      "vietfood67_class_name": "Banh mi (Vietnamese baguette sandwich)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        1354.0,
+        64.0,
+        1170.0,
+        1678.0
+      ],
+      "bbox_xyxy": [
+        1354.0,
+        64.0,
+        2524.0,
+        1742.0
+      ],
+      "polygon_area": 1536529.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 242.6,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 84,
+      "image_id": 66,
+      "file_name": "bun-rieu (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        15.89,
+        988.21,
+        1198.7,
+        1098.09
+      ],
+      "bbox_xyxy": [
+        15.89,
+        988.21,
+        1214.59,
+        2086.3
+      ],
+      "polygon_area": 1016317.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 85,
+      "image_id": 66,
+      "file_name": "bun-rieu (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        207.48,
+        2287.98,
+        1195.92,
+        985.98
+      ],
+      "bbox_xyxy": [
+        207.48,
+        2287.98,
+        1403.4,
+        3273.96
+      ],
+      "polygon_area": 742576.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 70.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 86,
+      "image_id": 67,
+      "file_name": "bun-rieu (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        348.81,
+        503.2,
+        787.16,
+        931.9
+      ],
+      "bbox_xyxy": [
+        348.81,
+        503.2,
+        1135.97,
+        1435.1
+      ],
+      "polygon_area": 515602.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 70.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 87,
+      "image_id": 67,
+      "file_name": "bun-rieu (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (2).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1232.39,
+        238.1,
+        1190.21,
+        1218.2
+      ],
+      "bbox_xyxy": [
+        1232.39,
+        238.1,
+        2422.6,
+        1456.3
+      ],
+      "polygon_area": 1145787.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 88,
+      "image_id": 68,
+      "file_name": "bun-rieu (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 15,
+      "short_class": "Rau",
+      "vietfood67_class_id": 48,
+      "vietfood67_class_name": "Rau (Vegetables)",
+      "morphology_group": "discrete_item",
+      "bbox_xywh": [
+        436.1,
+        484.47,
+        853.49,
+        896.76
+      ],
+      "bbox_xyxy": [
+        436.1,
+        484.47,
+        1289.59,
+        1381.23
+      ],
+      "polygon_area": 510198.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 70.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 89,
+      "image_id": 68,
+      "file_name": "bun-rieu (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        1371.11,
+        227.43,
+        1239.59,
+        942.06
+      ],
+      "bbox_xyxy": [
+        1371.11,
+        227.43,
+        2610.7,
+        1169.49
+      ],
+      "polygon_area": 918876.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 90,
+      "image_id": 69,
+      "file_name": "bun-rieu1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        162.42,
+        1237.25,
+        1211.32,
+        1139.25
+      ],
+      "bbox_xyxy": [
+        162.42,
+        1237.25,
+        1373.74,
+        2376.5
+      ],
+      "polygon_area": 1084371.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 91,
+      "image_id": 70,
+      "file_name": "bun-rieu1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        239.25,
+        495.74,
+        1448.52,
+        1481.16
+      ],
+      "bbox_xyxy": [
+        239.25,
+        495.74,
+        1687.77,
+        1976.9
+      ],
+      "polygon_area": 1698155.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 92,
+      "image_id": 71,
+      "file_name": "bun-rieu1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (3).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        2443.9,
+        211.4,
+        929.9,
+        1276.8
+      ],
+      "bbox_xyxy": [
+        2443.9,
+        211.4,
+        3373.8,
+        1488.2
+      ],
+      "polygon_area": 906801.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 93,
+      "image_id": 72,
+      "file_name": "bun-rieu1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\BunRieu-CanhBun\\bun-rieu1 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 10,
+      "short_class": "Bun rieu",
+      "vietfood67_class_id": 16,
+      "vietfood67_class_name": "Bun rieu (Crab noodle soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        936.99,
+        215.99,
+        1384.31,
+        1162.57
+      ],
+      "bbox_xyxy": [
+        936.99,
+        215.99,
+        2321.3,
+        1378.56
+      ],
+      "polygon_area": 1261448.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 838.9,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 94,
+      "image_id": 73,
+      "file_name": "com-suon1 (1).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (1).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        251.28,
+        839.2,
+        1343.75,
+        1424.33
+      ],
+      "bbox_xyxy": [
+        251.28,
+        839.2,
+        1595.03,
+        2263.53
+      ],
+      "polygon_area": 1433185.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 390.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 95,
+      "image_id": 74,
+      "file_name": "com-suon1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        256.47,
+        1634.82,
+        1217.12,
+        1225.97
+      ],
+      "bbox_xyxy": [
+        256.47,
+        1634.82,
+        1473.59,
+        2860.79
+      ],
+      "polygon_area": 998872.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 390.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 96,
+      "image_id": 74,
+      "file_name": "com-suon1 (2).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (2).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 17,
+      "short_class": "Canh",
+      "vietfood67_class_id": 21,
+      "vietfood67_class_name": "Canh (Soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        285.33,
+        123.0,
+        597.27,
+        513.0
+      ],
+      "bbox_xyxy": [
+        285.33,
+        123.0,
+        882.6,
+        636.0
+      ],
+      "polygon_area": 245565.0,
+      "mapping_status": "excluded_unverified_line_mismatch",
+      "gt_weight_g": null,
+      "mapping_note": "Polygon 'Canh' annotated in COCO on com-suon1 (2).jpg, but weight entry is missing on this line in portion-estimation_val.txt (listed on com-suon1 (1).jpg instead). Excluded from mass evaluation."
+    },
+    {
+      "annotation_id": 97,
+      "image_id": 75,
+      "file_name": "com-suon1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 17,
+      "short_class": "Canh",
+      "vietfood67_class_id": 21,
+      "vietfood67_class_name": "Canh (Soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        899.3,
+        3292.1,
+        478.51,
+        409.42
+      ],
+      "bbox_xyxy": [
+        899.3,
+        3292.1,
+        1377.81,
+        3701.52
+      ],
+      "polygon_area": 154871.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 150.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 98,
+      "image_id": 75,
+      "file_name": "com-suon1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        1175.8,
+        3624.0,
+        624.09,
+        376.0
+      ],
+      "bbox_xyxy": [
+        1175.8,
+        3624.0,
+        1799.89,
+        4000.0
+      ],
+      "polygon_area": 169856.0,
+      "mapping_status": "excluded_unknown_weight",
+      "gt_weight_g": null,
+      "mapping_note": "Secondary partial plate at bottom edge in com-suon1 (3).jpg (Com tam: 1 - ?). Excluded from mass evaluation."
+    },
+    {
+      "annotation_id": 99,
+      "image_id": 75,
+      "file_name": "com-suon1 (3).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (3).jpg",
+      "width": 1800,
+      "height": 4000,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        687.96,
+        1836.59,
+        1049.36,
+        1023.51
+      ],
+      "bbox_xyxy": [
+        687.96,
+        1836.59,
+        1737.32,
+        2860.1
+      ],
+      "polygon_area": 722927.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 390.5,
+      "mapping_note": "Main central plate in com-suon1 (3).jpg (Com tam: 1 - 390.5)."
+    },
+    {
+      "annotation_id": 100,
+      "image_id": 76,
+      "file_name": "com-suon1 (4).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (4).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        866.6,
+        73.52,
+        1672.23,
+        1383.46
+      ],
+      "bbox_xyxy": [
+        866.6,
+        73.52,
+        2538.83,
+        1456.98
+      ],
+      "polygon_area": 1482359.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 390.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 101,
+      "image_id": 77,
+      "file_name": "com-suon1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (5).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 3,
+      "short_class": "Com tam",
+      "vietfood67_class_id": 26,
+      "vietfood67_class_name": "Com tam (Broken rice)",
+      "morphology_group": "dry_plate",
+      "bbox_xywh": [
+        495.42,
+        178.4,
+        1458.48,
+        1475.67
+      ],
+      "bbox_xyxy": [
+        495.42,
+        178.4,
+        1953.9,
+        1654.07
+      ],
+      "polygon_area": 1369402.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 390.5,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    },
+    {
+      "annotation_id": 102,
+      "image_id": 77,
+      "file_name": "com-suon1 (5).jpg",
+      "image_path": "C:\\Users\\huynh\\OneDrive\\Pictures\\test-image\\ComSuon\\com-suon1 (5).jpg",
+      "width": 4000,
+      "height": 1800,
+      "coco_category_id": 17,
+      "short_class": "Canh",
+      "vietfood67_class_id": 21,
+      "vietfood67_class_name": "Canh (Soup)",
+      "morphology_group": "soup_bowl",
+      "bbox_xywh": [
+        3397.83,
+        2.55,
+        602.17,
+        812.15
+      ],
+      "bbox_xyxy": [
+        3397.83,
+        2.55,
+        4000.0,
+        814.7
+      ],
+      "polygon_area": 382378.0,
+      "mapping_status": "exact_1to1",
+      "gt_weight_g": 150.0,
+      "mapping_note": "1-to-1 correspondence between polygon annotation and ground truth weight."
+    }
+  ]
+}

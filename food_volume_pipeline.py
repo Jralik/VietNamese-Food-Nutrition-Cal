@@ -112,9 +112,13 @@ class FoodVolumePipeline:
         """
         if self._segmenter is None:
             import pipeline_config as pc
-            if getattr(pc, "SEGMENTATION_BACKEND", "sam2") == "foodsam":
+            backend = getattr(pc, "SEGMENTATION_BACKEND", "sam2")
+            if backend == "foodsam":
                 from foodsam_segmenter import FoodSAMSegmenter
                 self._segmenter = FoodSAMSegmenter()
+            elif backend == "mobilesam":
+                from food_segmentation import MobileSAMSegmenter
+                self._segmenter = MobileSAMSegmenter()
             else:
                 self._segmenter = SAM2Segmenter()
         return self._segmenter
@@ -286,6 +290,19 @@ class FoodVolumePipeline:
         # ── Step 5: Volume → Mass → Nutrition for each detection ──
         logger.info("Step 5: Volume/mass/nutrition estimation...")
         estimations = []
+        scene_classes = [s.class_name for s in seg_results]
+        z_marker_mm = None
+        if (
+            scale_result.scale_source == "aruco_marker"
+            and scale_result.marker_corners is not None
+            and final_depth_mm is not None
+        ):
+            m_mask = np.zeros(final_depth_mm.shape[:2], dtype=np.uint8)
+            cv2.fillPoly(m_mask, [scale_result.marker_corners.astype(np.int32)], 1)
+            md = final_depth_mm[m_mask > 0]
+            vmd = md[md > 0]
+            if len(vmd) > 0:
+                z_marker_mm = float(np.median(vmd))
 
         for seg in seg_results:
             # Get per-dish scale (specifically when using plate heuristics)
@@ -305,6 +322,8 @@ class FoodVolumePipeline:
                 K=K,
                 homography=scale_result.homography,
                 depth_anchored=scale_result.depth_anchored,
+                z_marker_mm=z_marker_mm,
+                scene_classes=scene_classes,
             )
 
             # Extract depth values within mask for visualization

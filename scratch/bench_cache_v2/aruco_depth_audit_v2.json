@@ -1,0 +1,91 @@
+{
+  "total_scenes": 418,
+  "scale_source_counts": {
+    "aruco_marker": 402,
+    "plate_heuristic": 16
+  },
+  "depth_anchored_count": 359,
+  "dim_mismatches": [],
+  "non_marker_files": [
+    {
+      "file_name": "Banh beo 8.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.234
+    },
+    {
+      "file_name": "BoKho2(1).jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.3249
+    },
+    {
+      "file_name": "Bun Cha Ca 5.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.1554
+    },
+    {
+      "file_name": "Cha Gio 5.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.3116
+    },
+    {
+      "file_name": "Cha Gio 8.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2157
+    },
+    {
+      "file_name": "Chao Long 1.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.1523
+    },
+    {
+      "file_name": "DauHu(2).jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.6322
+    },
+    {
+      "file_name": "Hamburger 2.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2941
+    },
+    {
+      "file_name": "Kho Qua Thit 5.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2064
+    },
+    {
+      "file_name": "Kho Qua Thit 6.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.1978
+    },
+    {
+      "file_name": "Kho Qua Thit 8.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2752
+    },
+    {
+      "file_name": "Muc 2.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2523
+    },
+    {
+      "file_name": "Nui xao bo 11.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.1821
+    },
+    {
+      "file_name": "Pho1 (5).jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2711
+    },
+    {
+      "file_name": "ThitGa1 (1).jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2676
+    },
+    {
+      "file_name": "com chien 1.jpg",
+      "scale_source": "plate_heuristic",
+      "mm_per_pixel": 0.2204
+    }
+  ]
+}

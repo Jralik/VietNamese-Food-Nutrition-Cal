@@ -1,5 +1,12 @@
 == HƯỚNG DẪN DINH DƯỠNG BỘ Y TẾ VIỆT NAM VÀ VIỆN DINH DƯỠNG QUỐC GIA ==
 Nguồn: Viện Dinh dưỡng Quốc gia (NIN - National Institute of Nutrition), Bộ Y tế Việt Nam
+Công cụ tra cứu chính thức:
+- Cổng Dinh dưỡng Quốc gia: https://viendinhduong.vn/
+  · Giá trị dinh dưỡng thực phẩm: https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-thuc-pham
+  · Giá trị dinh dưỡng món ăn: https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-mon-an
+- Cổng Thực đơn gia đình (Viện NC Dinh dưỡng TP.HCM): https://thucdongiadinh.vn/app/main/dashboard
+  · Tra cứu thành phần dinh dưỡng thực phẩm: https://thucdongiadinh.vn/app/tra-cuu/thanh-phan-dinh-duong-thuc-pham
+  · Hàm lượng theo lượng thực phẩm: https://thucdongiadinh.vn/app/tra-cuu/ham-luong-theo-luong-tp
 
 NHU CẦU DINH DƯỠNG KHUYẾN NGHỊ CHO NGƯỜI VIỆT NAM (NCDDKN 2016)
 Bộ Y tế Việt Nam ban hành Nhu Cầu Dinh Dưỡng Khuyến Nghị (NCDDKN) 2016 dựa trên dữ liệu dân số Việt Nam. Một số điểm khác biệt so với chuẩn quốc tế do đặc điểm tầm vóc người Việt nhỏ hơn trung bình thế giới.

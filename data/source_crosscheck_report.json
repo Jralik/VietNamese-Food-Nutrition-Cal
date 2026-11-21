@@ -1,0 +1,4820 @@
+{
+  "generated_at": "2026-09-28 22:19:52",
+  "tdgd_crosscheck": [
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh canh thịt heo",
+      "tdgd_match": "Bánh canh tươi",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 121.556,
+        "protein_g": 5.267,
+        "fat_g": 6.533,
+        "carbs_g": 10.4
+      },
+      "tdgd": {
+        "energy": 112.0,
+        "protein": 1.7,
+        "fat": null,
+        "carbs": 26.2,
+        "water": 72.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh chưng cỡ vừa",
+      "tdgd_match": "Bánh chưng",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 204.0,
+        "protein_g": 4.7,
+        "fat_g": 5.6,
+        "carbs_g": 33.9
+      },
+      "tdgd": {
+        "energy": 181.0,
+        "protein": 4.3,
+        "fat": 4.2,
+        "carbs": 31.6,
+        "water": 59.1
+      },
+      "deviation_pct": {
+        "energy_kcal": 12.7,
+        "protein_g": 9.3,
+        "fat_g": 33.3,
+        "carbs_g": 7.3
+      }
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh cuốn thịt",
+      "tdgd_match": "Bánh cuốn",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 128.99,
+        "protein_g": 4.9,
+        "fat_g": 5.42,
+        "carbs_g": 15.1
+      },
+      "tdgd": {
+        "energy": 129.0,
+        "protein": 3.0,
+        "fat": 5.3,
+        "carbs": 17.4,
+        "water": 73.2
+      },
+      "deviation_pct": {
+        "energy_kcal": -0.0,
+        "protein_g": 63.3,
+        "fat_g": 2.3,
+        "carbs_g": -13.2
+      }
+    },
+    {
+      "class": "Banh khot (Mini savory pancakes)",
+      "class_kind": "ingredient",
+      "nin_food_name": null,
+      "tdgd_match": "Bánh đúc",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.333,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": null,
+        "protein_g": null,
+        "fat_g": null,
+        "carbs_g": null
+      },
+      "tdgd": {
+        "energy": 52.0,
+        "protein": 0.9,
+        "fat": 0.3,
+        "carbs": 11.4,
+        "water": 86.8
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh mỳ pate trứng",
+      "tdgd_match": "Bánh mì",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 296.133,
+        "protein_g": 18.933,
+        "fat_g": 9.733,
+        "carbs_g": 33.2
+      },
+      "tdgd": {
+        "energy": 250.0,
+        "protein": 7.9,
+        "fat": 0.8,
+        "carbs": 52.8,
+        "water": 37.2
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Banh trang (Rice paper)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Bánh đa nem",
+      "tdgd_match": "Bánh đa nem/ Bánh tráng",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 335.0,
+        "protein_g": 4.0,
+        "fat_g": 0.2,
+        "carbs_g": 79.4
+      },
+      "tdgd": {
+        "energy": 335.0,
+        "protein": 4.0,
+        "fat": 0.2,
+        "carbs": 79.4,
+        "water": 15.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh tráng trộn",
+      "tdgd_match": "Bánh đa nem/ Bánh tráng",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.4,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 160.03,
+        "protein_g": 8.3,
+        "fat_g": 4.26,
+        "carbs_g": 22.12
+      },
+      "tdgd": {
+        "energy": 335.0,
+        "protein": 4.0,
+        "fat": 0.2,
+        "carbs": 79.4,
+        "water": 15.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh xèo",
+      "tdgd_match": "Bánh đúc",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.333,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 306.0,
+        "protein_g": 20.7,
+        "fat_g": 2.9,
+        "carbs_g": 49.5
+      },
+      "tdgd": {
+        "energy": 52.0,
+        "protein": 0.9,
+        "fat": 0.3,
+        "carbs": 11.4,
+        "water": 86.8
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Bo kho (Beef stew)",
+      "class_kind": "dish",
+      "nin_food_name": "Thịt bò kho",
+      "tdgd_match": "Thịt bò loại 1",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.5,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 115.0,
+        "protein_g": 9.83,
+        "fat_g": 8.47,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 118.0,
+        "protein": 21.0,
+        "fat": 3.8,
+        "carbs": 0.0,
+        "water": 74.1
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "class_kind": "dish",
+      "nin_food_name": "Cơm suất (sườn, đậu, chả lá lốt)",
+      "tdgd_match": "Bơ",
+      "tdgd_group": " DẦU, MỠ, BƠ",
+      "tdgd_match_score": 0.317,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 221.533,
+        "protein_g": 11.1,
+        "fat_g": 6.867,
+        "carbs_g": 28.867
+      },
+      "tdgd": {
+        "energy": 756.0,
+        "protein": 0.5,
+        "fat": 83.5,
+        "carbs": 0.5,
+        "water": 15.4
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Súp lơ trắng, tươi",
+      "tdgd_match": "Súp lơ trắng",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 34.0,
+        "protein_g": 2.5,
+        "fat_g": 0.15,
+        "carbs_g": 5.65
+      },
+      "tdgd": {
+        "energy": 34.0,
+        "protein": 2.5,
+        "fat": 0.15,
+        "carbs": 5.65,
+        "water": 90.9
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Bun (Rice vermicelli)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Bún, tươi",
+      "tdgd_match": "Bún tươi",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 116.0,
+        "protein_g": 1.7,
+        "fat_g": 0.9,
+        "carbs_g": 25.3
+      },
+      "tdgd": {
+        "energy": 112.0,
+        "protein": 1.7,
+        "fat": null,
+        "carbs": 26.2,
+        "water": 72.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 3.6,
+        "protein_g": 0.0,
+        "carbs_g": -3.4
+      }
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún bò giò heo (Huế)",
+      "tdgd_match": "Bún bò nam bộ",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.4,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 116.444,
+        "protein_g": 6.289,
+        "fat_g": 3.711,
+        "carbs_g": 14.467
+      },
+      "tdgd": {
+        "energy": 81.0,
+        "protein": 3.2,
+        "fat": 0.6,
+        "carbs": 15.73,
+        "water": 79.7
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún chả",
+      "tdgd_match": "Bún chả",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 115.111,
+        "protein_g": 5.733,
+        "fat_g": 2.444,
+        "carbs_g": 20.067
+      },
+      "tdgd": {
+        "energy": 136.0,
+        "protein": 6.1,
+        "fat": 4.4,
+        "carbs": 17.9,
+        "water": 70.6
+      },
+      "deviation_pct": {
+        "energy_kcal": -15.4,
+        "protein_g": -6.0,
+        "fat_g": -44.5,
+        "carbs_g": 12.1
+      }
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún đậu mắm tôm",
+      "tdgd_match": "Bún đậu",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 155.556,
+        "protein_g": 10.556,
+        "fat_g": 6.044,
+        "carbs_g": 14.733
+      },
+      "tdgd": {
+        "energy": 151.0,
+        "protein": 3.0,
+        "fat": 6.4,
+        "carbs": 20.3,
+        "water": 68.6
+      },
+      "deviation_pct": {
+        "energy_kcal": 3.0,
+        "protein_g": 251.9,
+        "fat_g": -5.6,
+        "carbs_g": -27.4
+      }
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún mắm",
+      "tdgd_match": "Bún tươi",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.333,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 104.844,
+        "protein_g": 5.0,
+        "fat_g": 3.578,
+        "carbs_g": 13.178
+      },
+      "tdgd": {
+        "energy": 112.0,
+        "protein": 1.7,
+        "fat": null,
+        "carbs": 26.2,
+        "water": 72.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún riêu cua",
+      "tdgd_match": "Bún cua",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.667,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 61.111,
+        "protein_g": 1.311,
+        "fat_g": 0.8,
+        "carbs_g": 12.178
+      },
+      "tdgd": {
+        "energy": 53.0,
+        "protein": 2.1,
+        "fat": 0.9,
+        "carbs": 9.1,
+        "water": 86.6
+      },
+      "deviation_pct": {
+        "energy_kcal": 15.3,
+        "protein_g": -37.6,
+        "fat_g": -11.1,
+        "carbs_g": 33.8
+      }
+    },
+    {
+      "class": "Ca (Fish)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Cá chép, tươi",
+      "tdgd_match": "Cá chép",
+      "tdgd_group": "THỦY SẢN VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 96.0,
+        "protein_g": 16.0,
+        "fat_g": 3.6,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 96.0,
+        "protein": 16.0,
+        "fat": 3.6,
+        "carbs": 0.0,
+        "water": 79.1
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0
+      }
+    },
+    {
+      "class": "Ca chua (Tomato)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Quả cà chua, tươi",
+      "tdgd_match": "Cà chua",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 24.0,
+        "protein_g": 0.6,
+        "fat_g": 0.23,
+        "carbs_g": 4.77
+      },
+      "tdgd": {
+        "energy": 24.0,
+        "protein": 0.6,
+        "fat": 0.23,
+        "carbs": 4.77,
+        "water": 94.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Cà pháo, muối nén",
+      "tdgd_match": "Cà pháo",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 20.0,
+        "protein_g": 1.3,
+        "fat_g": 0.0,
+        "carbs_g": 3.7
+      },
+      "tdgd": {
+        "energy": 27.0,
+        "protein": 1.5,
+        "fat": null,
+        "carbs": 5.2,
+        "water": 92.5
+      },
+      "deviation_pct": {
+        "energy_kcal": -25.9,
+        "protein_g": -13.3,
+        "carbs_g": -28.8
+      }
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Củ cà rốt, tươi",
+      "tdgd_match": "Cà rốt ",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 44.0,
+        "protein_g": 1.5,
+        "fat_g": 0.17,
+        "carbs_g": 9.03
+      },
+      "tdgd": {
+        "energy": 44.0,
+        "protein": 1.5,
+        "fat": 0.17,
+        "carbs": 9.03,
+        "water": 88.5
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Canh (Soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Canh rau ngót nấu thịt",
+      "tdgd_match": null,
+      "tdgd_group": null,
+      "tdgd_match_score": 0.0,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 57.0,
+        "protein_g": 3.0,
+        "fat_g": 4.65,
+        "carbs_g": 0.85
+      },
+      "tdgd": null,
+      "deviation_pct": {}
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Giò lụa, chín",
+      "tdgd_match": "Giò lụa",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 205.0,
+        "protein_g": 16.9,
+        "fat_g": 15.0,
+        "carbs_g": 1.8
+      },
+      "tdgd": {
+        "energy": 205.0,
+        "protein": 16.9,
+        "fat": 15.0,
+        "carbs": 0.5,
+        "water": 65.3
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 260.0
+      }
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "class_kind": "dish",
+      "nin_food_name": "Nem rán / Chả giò chiên",
+      "tdgd_match": "Chả giò chiên",
+      "tdgd_group": "MỘT SỐ THỨC ĂN NHANH",
+      "tdgd_match_score": 0.667,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 245.19,
+        "protein_g": 18.75,
+        "fat_g": 18.03,
+        "carbs_g": 199.76
+      },
+      "tdgd": {
+        "energy": 245.0,
+        "protein": 10.7,
+        "fat": 12.5,
+        "carbs": 21.6,
+        "water": null
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.1,
+        "protein_g": 75.2,
+        "fat_g": 44.2,
+        "carbs_g": 824.8
+      }
+    },
+    {
+      "class": "Chanh (Lime)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Chanh, tươi",
+      "tdgd_match": "Chanh",
+      "tdgd_group": "QUẢ CHÍN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 29.0,
+        "protein_g": 0.9,
+        "fat_g": 0.14,
+        "carbs_g": 5.96
+      },
+      "tdgd": {
+        "energy": 29.0,
+        "protein": 0.9,
+        "fat": 0.14,
+        "carbs": 5.96,
+        "water": 92.5
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Com (Rice)",
+      "class_kind": "dish",
+      "nin_food_name": "Cơm tẻ miệng bát",
+      "tdgd_match": "Cốm",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.95,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 86.0,
+        "protein_g": 1.9,
+        "fat_g": 0.267,
+        "carbs_g": 19.067
+      },
+      "tdgd": {
+        "energy": 307.0,
+        "protein": 4.4,
+        "fat": 1.7,
+        "carbs": 68.5,
+        "water": 25.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "class_kind": "dish",
+      "nin_food_name": "Cơm sườn",
+      "tdgd_match": "Cốm",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.475,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 205.333,
+        "protein_g": 8.167,
+        "fat_g": 5.4,
+        "carbs_g": 31.0
+      },
+      "tdgd": {
+        "energy": 307.0,
+        "protein": 4.4,
+        "fat": 1.7,
+        "carbs": 68.5,
+        "water": 25.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Con nguoi (Human)",
+      "class_kind": "ingredient",
+      "nin_food_name": null,
+      "tdgd_match": null,
+      "tdgd_group": null,
+      "tdgd_match_score": 0.0,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": null,
+        "protein_g": null,
+        "fat_g": null,
+        "carbs_g": null
+      },
+      "tdgd": null,
+      "deviation_pct": {}
+    },
+    {
+      "class": "Cu kieu (Pickled scallion head)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Kiệu, muối",
+      "tdgd_match": "Kiệu muối",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 29.0,
+        "protein_g": 1.3,
+        "fat_g": 0.0,
+        "carbs_g": 5.9
+      },
+      "tdgd": {
+        "energy": 29.0,
+        "protein": 1.3,
+        "fat": null,
+        "carbs": 5.9,
+        "water": 89.5
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Cua (Crab)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Cua đồng, tươi",
+      "tdgd_match": "Cua đồng",
+      "tdgd_group": "THỦY SẢN VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 87.0,
+        "protein_g": 12.3,
+        "fat_g": 3.3,
+        "carbs_g": 2.0
+      },
+      "tdgd": {
+        "energy": 87.0,
+        "protein": 12.3,
+        "fat": 3.3,
+        "carbs": 2.0,
+        "water": 74.4
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Dau hu (Tofu)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Đậu phụ, sống",
+      "tdgd_match": "Đậu phụ (đậu hũ)",
+      "tdgd_group": "HẠT, QUẢ GIÀU ĐẠM,CHẤT BÉO VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 97.0,
+        "protein_g": 10.9,
+        "fat_g": 5.4,
+        "carbs_g": 1.1
+      },
+      "tdgd": {
+        "energy": 97.0,
+        "protein": 10.9,
+        "fat": 5.4,
+        "carbs": 1.1,
+        "water": 82.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Dua chua (Pickled vegetables)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Dưa cải bẹ",
+      "tdgd_match": "Dưa cải bẹ",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 25.0,
+        "protein_g": 1.8,
+        "fat_g": 0.0,
+        "carbs_g": 4.5
+      },
+      "tdgd": {
+        "energy": 25.0,
+        "protein": 1.8,
+        "fat": null,
+        "carbs": 4.5,
+        "water": 90.1
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Dua leo (Cucumber)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Dưa chuột, tươi",
+      "tdgd_match": "Dưa chuột/ Dưa leo",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 18.0,
+        "protein_g": 0.8,
+        "fat_g": 0.09,
+        "carbs_g": 3.61
+      },
+      "tdgd": {
+        "energy": 18.0,
+        "protein": 0.8,
+        "fat": 0.09,
+        "carbs": 3.61,
+        "water": 95.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh tráng trộn",
+      "tdgd_match": "Bánh đa nem/ Bánh tráng",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.4,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 340.533,
+        "protein_g": 17.667,
+        "fat_g": 9.067,
+        "carbs_g": 47.067
+      },
+      "tdgd": {
+        "energy": 335.0,
+        "protein": 4.0,
+        "fat": 0.2,
+        "carbs": 79.4,
+        "water": 15.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Hamburger",
+      "class_kind": "dish",
+      "nin_food_name": "Hamburger lợn",
+      "tdgd_match": "Hamburger McDONALD'S",
+      "tdgd_group": "MỘT SỐ THỨC ĂN NHANH",
+      "tdgd_match_score": 0.5,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 188.333,
+        "protein_g": 12.267,
+        "fat_g": 6.6,
+        "carbs_g": 20.067
+      },
+      "tdgd": {
+        "energy": 264.0,
+        "protein": 12.9,
+        "fat": 10.1,
+        "carbs": 30.3,
+        "water": 44.5
+      },
+      "deviation_pct": {
+        "energy_kcal": -28.7,
+        "protein_g": -4.9,
+        "fat_g": -34.7,
+        "carbs_g": -33.8
+      }
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "class_kind": "dish",
+      "nin_food_name": "Thịt lợn quay",
+      "tdgd_match": "Heo quay",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 353.267,
+        "protein_g": 54.067,
+        "fat_g": 14.2,
+        "carbs_g": 2.267
+      },
+      "tdgd": {
+        "energy": 181.0,
+        "protein": 26.6,
+        "fat": 7.49,
+        "carbs": 0.0,
+        "water": 64.2
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Hủ tiếu Nam vang nước",
+      "tdgd_match": "Hủ tiếu khô",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 107.244,
+        "protein_g": 7.0,
+        "fat_g": 3.778,
+        "carbs_g": 11.311
+      },
+      "tdgd": {
+        "energy": 361.0,
+        "protein": 7.0,
+        "fat": 1.6,
+        "carbs": 79.7,
+        "water": 11.1
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Canh khổ qua (mướp đắng) nhồi thịt",
+      "tdgd_match": "Khổ qua (mướp đắng)",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.4,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 50.8,
+        "protein_g": 3.0,
+        "fat_g": 3.08,
+        "carbs_g": 2.84
+      },
+      "tdgd": {
+        "energy": 20.0,
+        "protein": 0.9,
+        "fat": 0.2,
+        "carbs": 4.1,
+        "water": 94.4
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "class_kind": "dish",
+      "nin_food_name": "Khoai tây chiên",
+      "tdgd_match": "Khoai tây chiên",
+      "tdgd_group": "MỘT SỐ THỨC ĂN NHANH",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 466.0,
+        "protein_g": 1.6,
+        "fat_g": 10.0,
+        "carbs_g": 17.0
+      },
+      "tdgd": {
+        "energy": 260.0,
+        "protein": 2.86,
+        "fat": 14.39,
+        "carbs": 31.33,
+        "water": 107.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 79.2,
+        "protein_g": -44.1,
+        "fat_g": -30.5,
+        "carbs_g": -45.7
+      }
+    },
+    {
+      "class": "Lau (Hotpot)",
+      "class_kind": "dish",
+      "nin_food_name": "Lẩu thập cẩm",
+      "tdgd_match": null,
+      "tdgd_group": null,
+      "tdgd_match_score": 0.0,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 90.0,
+        "protein_g": 6.81,
+        "fat_g": 4.13,
+        "carbs_g": 6.7
+      },
+      "tdgd": null,
+      "deviation_pct": {}
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "class_kind": "dish",
+      "nin_food_name": "Lòng lợn luộc",
+      "tdgd_match": "Lòng heo/lợn (ruột già)",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.4,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 139.98,
+        "protein_g": 17.25,
+        "fat_g": 7.61,
+        "carbs_g": 0.67
+      },
+      "tdgd": {
+        "energy": 167.0,
+        "protein": 6.9,
+        "fat": 15.1,
+        "carbs": 0.8,
+        "water": 76.6
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Mỳ sợi, khô",
+      "tdgd_match": "Mì Udon",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.5,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 350.0,
+        "protein_g": 11.0,
+        "fat_g": 0.9,
+        "carbs_g": 74.5
+      },
+      "tdgd": {
+        "energy": 75.0,
+        "protein": 2.6,
+        "fat": 0.3,
+        "carbs": 15.2,
+        "water": null
+      },
+      "deviation_pct": {
+        "energy_kcal": 366.7,
+        "protein_g": 323.1,
+        "fat_g": 200.0,
+        "carbs_g": 390.1
+      }
+    },
+    {
+      "class": "Muc (Squid)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Mực, tươi",
+      "tdgd_match": "Mực tươi",
+      "tdgd_group": "THỦY SẢN VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 73.0,
+        "protein_g": 16.3,
+        "fat_g": 0.9,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 73.0,
+        "protein": 16.3,
+        "fat": 0.9,
+        "carbs": 0.0,
+        "water": 81.4
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0
+      }
+    },
+    {
+      "class": "Nam (Mushroom)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Nấm mỡ (Nấm tây), tươi",
+      "tdgd_match": "Nấm mỡ (nấm tây)",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 37.0,
+        "protein_g": 4.0,
+        "fat_g": 0.3,
+        "carbs_g": 4.5
+      },
+      "tdgd": {
+        "energy": 37.0,
+        "protein": 4.0,
+        "fat": 0.3,
+        "carbs": 4.5,
+        "water": 90.4
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Oc (Snails)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Ốc nhồi, tươi",
+      "tdgd_match": "Ốc nhồi",
+      "tdgd_group": "THỦY SẢN VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 84.0,
+        "protein_g": 11.9,
+        "fat_g": 0.7,
+        "carbs_g": 7.6
+      },
+      "tdgd": {
+        "energy": 84.0,
+        "protein": 11.9,
+        "fat": 0.7,
+        "carbs": 7.6,
+        "water": 77.6
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Ot chuong (Bell pepper)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Ớt xanh to, tươi",
+      "tdgd_match": "Ớt xanh to",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 31.0,
+        "protein_g": 1.3,
+        "fat_g": 0.13,
+        "carbs_g": 6.07
+      },
+      "tdgd": {
+        "energy": 31.0,
+        "protein": 1.3,
+        "fat": 0.13,
+        "carbs": 6.07,
+        "water": 92.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Phở bò chín",
+      "tdgd_match": "Phở bò chín",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 99.667,
+        "protein_g": 6.933,
+        "fat_g": 1.489,
+        "carbs_g": 14.6
+      },
+      "tdgd": {
+        "energy": 73.0,
+        "protein": 5.2,
+        "fat": 0.9,
+        "carbs": 11.1,
+        "water": 81.7
+      },
+      "deviation_pct": {
+        "energy_kcal": 36.5,
+        "protein_g": 33.3,
+        "fat_g": 65.4,
+        "carbs_g": 31.5
+      }
+    },
+    {
+      "class": "Pho mai (Cheese)",
+      "class_kind": "dish",
+      "nin_food_name": "Phô mai tam giác",
+      "tdgd_match": "Phô mai Vinamilk (hộp 120g/8 miếng)",
+      "tdgd_group": "SỮA VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 349.4,
+        "protein_g": 22.89,
+        "fat_g": 28.92,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 295.8,
+        "protein": 9.0,
+        "fat": 26.2,
+        "carbs": 6.0,
+        "water": null
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Rau (Vegetables)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Rau muống,  tươi",
+      "tdgd_match": "Rau muống",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 28.0,
+        "protein_g": 3.2,
+        "fat_g": 0.24,
+        "carbs_g": 3.26
+      },
+      "tdgd": {
+        "energy": 28.0,
+        "protein": 3.2,
+        "fat": 0.24,
+        "carbs": 3.26,
+        "water": 92.0
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Salad (Salad)",
+      "class_kind": "dish",
+      "nin_food_name": "Salad rau củ",
+      "tdgd_match": null,
+      "tdgd_group": null,
+      "tdgd_match_score": 0.0,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 50.0,
+        "protein_g": 0.55,
+        "fat_g": 4.42,
+        "carbs_g": 2.21
+      },
+      "tdgd": null,
+      "deviation_pct": {}
+    },
+    {
+      "class": "Thit bo (Beef)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Thịt bò, loại I, tươi",
+      "tdgd_match": "Thịt bò loại 1",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 118.0,
+        "protein_g": 21.0,
+        "fat_g": 3.8,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 118.0,
+        "protein": 21.0,
+        "fat": 3.8,
+        "carbs": 0.0,
+        "water": 74.1
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0
+      }
+    },
+    {
+      "class": "Thit ga (Chicken)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Thịt gà ta, tươi",
+      "tdgd_match": "Thịt gà ta",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.75,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 199.0,
+        "protein_g": 20.3,
+        "fat_g": 13.1,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 199.0,
+        "protein": 20.3,
+        "fat": 13.1,
+        "carbs": 0.0,
+        "water": 65.6
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0
+      }
+    },
+    {
+      "class": "Thit heo (Pork)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Thịt lợn nạc vai, luộc",
+      "tdgd_match": "Thịt heo (lợn), nạc vai",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 126.0,
+        "protein_g": 17.65,
+        "fat_g": 6.18,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 149.0,
+        "protein": 20.83,
+        "fat": 7.29,
+        "carbs": 0.02,
+        "water": 70.7
+      },
+      "deviation_pct": {
+        "energy_kcal": -15.4,
+        "protein_g": -15.3,
+        "fat_g": -15.2
+      }
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "class_kind": "dish",
+      "nin_food_name": "Thịt lợn ba chỉ kho tàu",
+      "tdgd_match": "Thịt hươu",
+      "tdgd_group": "THỊT VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.333,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 173.333,
+        "protein_g": 11.0,
+        "fat_g": 14.333,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 94.0,
+        "protein": 19.0,
+        "fat": 2.0,
+        "carbs": 0.0,
+        "water": 77.9
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "class_kind": "dish",
+      "nin_food_name": "Thịt lợn xiên nướng",
+      "tdgd_match": "Thịt xiên nướng",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.75,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 185.0,
+        "protein_g": 23.0,
+        "fat_g": 8.35,
+        "carbs_g": 4.25
+      },
+      "tdgd": {
+        "energy": 322.0,
+        "protein": 26.5,
+        "fat": 23.8,
+        "carbs": 0.54,
+        "water": 46.7
+      },
+      "deviation_pct": {
+        "energy_kcal": -42.5,
+        "protein_g": -13.2,
+        "fat_g": -64.9,
+        "carbs_g": 687.0
+      }
+    },
+    {
+      "class": "Tom (Shrimp)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Tôm đồng, tươi",
+      "tdgd_match": "Tôm đồng",
+      "tdgd_group": "THỦY SẢN VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 90.0,
+        "protein_g": 18.4,
+        "fat_g": 1.8,
+        "carbs_g": 0.0
+      },
+      "tdgd": {
+        "energy": 90.0,
+        "protein": 18.4,
+        "fat": 1.8,
+        "carbs": 0.0,
+        "water": 76.9
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0
+      }
+    },
+    {
+      "class": "Trung (Egg)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Trứng gà ta",
+      "tdgd_match": "Trứng gà ta (35g/quả)",
+      "tdgd_group": "TRỨNG VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 1.0,
+      "match_kind": "ingredient",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 150.0,
+        "protein_g": 12.96,
+        "fat_g": 10.33,
+        "carbs_g": 1.25
+      },
+      "tdgd": {
+        "energy": 150.0,
+        "protein": 12.96,
+        "fat": 10.33,
+        "carbs": 1.25,
+        "water": 74.5
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carbs_g": 0.0
+      }
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "class_kind": "dish",
+      "nin_food_name": "Xôi trắng miệng bát",
+      "tdgd_match": "Xôi gấc",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.5,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 210.0,
+        "protein_g": 5.05,
+        "fat_g": 5.95,
+        "carbs_g": 45.25
+      },
+      "tdgd": {
+        "energy": 231.0,
+        "protein": 3.1,
+        "fat": 0.8,
+        "carbs": 52.9,
+        "water": 42.8
+      },
+      "deviation_pct": {
+        "energy_kcal": -9.1,
+        "protein_g": 62.9,
+        "fat_g": 643.8,
+        "carbs_g": -14.5
+      }
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "class_kind": "dish",
+      "nin_food_name": "Bánh bèo",
+      "tdgd_match": "Bánh bèo",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 118.0,
+        "protein_g": 4.97,
+        "fat_g": 4.5,
+        "carbs_g": 14.41
+      },
+      "tdgd": {
+        "energy": 118.0,
+        "protein": 1.8,
+        "fat": 4.2,
+        "carbs": 18.15,
+        "water": 75.3
+      },
+      "deviation_pct": {
+        "energy_kcal": 0.0,
+        "protein_g": 176.1,
+        "fat_g": 7.1,
+        "carbs_g": -20.6
+      }
+    },
+    {
+      "class": "Cao lau (Cao lau noodles)",
+      "class_kind": "ingredient",
+      "nin_food_name": null,
+      "tdgd_match": null,
+      "tdgd_group": null,
+      "tdgd_match_score": 0.0,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": null,
+        "protein_g": null,
+        "fat_g": null,
+        "carbs_g": null
+      },
+      "tdgd": null,
+      "deviation_pct": {}
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "class_kind": "dish",
+      "nin_food_name": "Mỳ Quảng",
+      "tdgd_match": "Mì quảng tươi",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.667,
+      "match_kind": "ingredient",
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 100.667,
+        "protein_g": 4.067,
+        "fat_g": 1.711,
+        "carbs_g": 17.289
+      },
+      "tdgd": {
+        "energy": 143.0,
+        "protein": 3.2,
+        "fat": 0.4,
+        "carbs": 32.1,
+        "water": 64.3
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "class_kind": "dish",
+      "nin_food_name": "Cơm rang thập cẩm",
+      "tdgd_match": "Cơm rang",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.5,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 207.667,
+        "protein_g": 6.633,
+        "fat_g": 7.3,
+        "carbs_g": 28.867
+      },
+      "tdgd": {
+        "energy": 198.0,
+        "protein": 6.0,
+        "fat": 9.65,
+        "carbs": 21.85,
+        "water": 56.2
+      },
+      "deviation_pct": {
+        "energy_kcal": 4.9,
+        "protein_g": 10.5,
+        "fat_g": -24.4,
+        "carbs_g": 32.1
+      }
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Bún chả cá",
+      "tdgd_match": "Bún chả",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.667,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 141.111,
+        "protein_g": 4.822,
+        "fat_g": 6.667,
+        "carbs_g": 15.467
+      },
+      "tdgd": {
+        "energy": 136.0,
+        "protein": 6.1,
+        "fat": 4.4,
+        "carbs": 17.9,
+        "water": 70.6
+      },
+      "deviation_pct": {
+        "energy_kcal": 3.8,
+        "protein_g": -21.0,
+        "fat_g": 51.5,
+        "carbs_g": -13.6
+      }
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "class_kind": "dish",
+      "nin_food_name": "Cơm gà",
+      "tdgd_match": "Cốm",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.475,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 179.99,
+        "protein_g": 8.18,
+        "fat_g": 8.92,
+        "carbs_g": 16.76
+      },
+      "tdgd": {
+        "energy": 307.0,
+        "protein": 4.4,
+        "fat": 1.7,
+        "carbs": 68.5,
+        "water": 25.0
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "class_kind": "dish",
+      "nin_food_name": "Cháo lòng",
+      "tdgd_match": "Cháo lòng",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 1.0,
+      "match_kind": "dish",
+      "comparable": true,
+      "nin": {
+        "energy_kcal": 61.778,
+        "protein_g": 5.667,
+        "fat_g": 2.067,
+        "carbs_g": 5.156
+      },
+      "tdgd": {
+        "energy": 69.0,
+        "protein": 1.4,
+        "fat": 4.4,
+        "carbs": 6.0,
+        "water": 87.3
+      },
+      "deviation_pct": {
+        "energy_kcal": -10.5,
+        "protein_g": 304.8,
+        "fat_g": -53.0,
+        "carbs_g": -14.1
+      }
+    },
+    {
+      "class": "Nom hoa chuoi (Banana blossom salad)",
+      "class_kind": "dish",
+      "nin_food_name": "Nộm hoa chuối thịt gà",
+      "tdgd_match": "Nộm tai lợn",
+      "tdgd_group": "THỨC ĂN TRUYỀN THỐNG",
+      "tdgd_match_score": 0.2,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 65.0,
+        "protein_g": 3.67,
+        "fat_g": 3.15,
+        "carbs_g": 5.39
+      },
+      "tdgd": {
+        "energy": 119.0,
+        "protein": 6.6,
+        "fat": 6.3,
+        "carbs": 8.85,
+        "water": 76.7
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "class_kind": "ingredient",
+      "nin_food_name": "Nui, luộc",
+      "tdgd_match": "Nui khô",
+      "tdgd_group": "NGŨ CỐC VÀ SẢN PHẨM CHẾ BIẾN",
+      "tdgd_match_score": 0.333,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 371.0,
+        "protein_g": 13.0,
+        "fat_g": 1.51,
+        "carbs_g": 74.7
+      },
+      "tdgd": {
+        "energy": 371.0,
+        "protein": 13.0,
+        "fat": 1.51,
+        "carbs": 74.7,
+        "water": 9.9
+      },
+      "deviation_pct": {}
+    },
+    {
+      "class": "Sup cua (Crab soup)",
+      "class_kind": "dish",
+      "nin_food_name": "Súp ngô cua",
+      "tdgd_match": "Súp lơ trắng",
+      "tdgd_group": "RAU, QUẢ, CỦ DÙNG LÀM RAU",
+      "tdgd_match_score": 0.25,
+      "match_kind": null,
+      "comparable": false,
+      "nin": {
+        "energy_kcal": 70.01,
+        "protein_g": 4.59,
+        "fat_g": 1.69,
+        "carbs_g": 9.08
+      },
+      "tdgd": {
+        "energy": 34.0,
+        "protein": 2.5,
+        "fat": 0.15,
+        "carbs": 5.65,
+        "water": 90.9
+      },
+      "deviation_pct": {}
+    }
+  ],
+  "fdc_verification": {},
+  "density_validation": [
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "water_per_100g": 75.6,
+      "material_density": 1.06,
+      "db_density": 0.95,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "water_per_100g": 59.1,
+      "material_density": 1.157,
+      "db_density": 1.15,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "water_per_100g": 73.2,
+      "material_density": 1.079,
+      "db_density": 0.9,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh khot (Mini savory pancakes)",
+      "water_per_100g": 98.0,
+      "material_density": 1.009,
+      "db_density": 0.75,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "water_per_100g": 36.1,
+      "material_density": 1.209,
+      "db_density": 0.45,
+      "db_source": "user_measured_gt",
+      "flag": null
+    },
+    {
+      "class": "Banh trang (Rice paper)",
+      "water_per_100g": 15.0,
+      "material_density": 1.456,
+      "db_density": 0.4,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "water_per_100g": 63.3,
+      "material_density": 1.122,
+      "db_density": 0.55,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "water_per_100g": 22.8,
+      "material_density": 1.331,
+      "db_density": 0.65,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bo kho (Beef stew)",
+      "water_per_100g": 79.7,
+      "material_density": 1.028,
+      "db_density": 0.98,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "water_per_100g": 51.2,
+      "material_density": 1.162,
+      "db_density": 0.9,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "water_per_100g": 90.9,
+      "material_density": 1.037,
+      "db_density": 0.5,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun (Rice vermicelli)",
+      "water_per_100g": 72.0,
+      "material_density": 1.117,
+      "db_density": 0.68,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "water_per_100g": 73.2,
+      "material_density": 1.083,
+      "db_density": 0.93,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "water_per_100g": 70.6,
+      "material_density": 1.106,
+      "db_density": 0.75,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "water_per_100g": 68.6,
+      "material_density": 1.093,
+      "db_density": 0.7,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "water_per_100g": 76.2,
+      "material_density": 1.073,
+      "db_density": 0.94,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "water_per_100g": 86.6,
+      "material_density": 1.059,
+      "db_density": 0.93,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Ca (Fish)",
+      "water_per_100g": 79.1,
+      "material_density": 1.048,
+      "db_density": 0.95,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Ca chua (Tomato)",
+      "water_per_100g": 94.0,
+      "material_density": 1.028,
+      "db_density": 0.9,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "water_per_100g": 92.5,
+      "material_density": 1.027,
+      "db_density": 0.75,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "water_per_100g": 88.5,
+      "material_density": 1.048,
+      "db_density": 0.65,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Canh (Soup)",
+      "water_per_100g": 88.8,
+      "material_density": 1.018,
+      "db_density": 1.0,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "water_per_100g": 65.3,
+      "material_density": 1.048,
+      "db_density": 1.05,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "water_per_100g": 0.0,
+      "material_density": 1.487,
+      "db_density": 0.7,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Chanh (Lime)",
+      "water_per_100g": 92.5,
+      "material_density": 1.034,
+      "db_density": 0.85,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Com (Rice)",
+      "water_per_100g": 76.7,
+      "material_density": 1.093,
+      "db_density": 0.85,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "water_per_100g": 53.2,
+      "material_density": 1.165,
+      "db_density": 0.85,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Con nguoi (Human)",
+      "water_per_100g": 98.0,
+      "material_density": 1.009,
+      "db_density": null,
+      "db_source": null,
+      "flag": null
+    },
+    {
+      "class": "Cu kieu (Pickled scallion head)",
+      "water_per_100g": 89.5,
+      "material_density": 1.036,
+      "db_density": 0.7,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Cua (Crab)",
+      "water_per_100g": 74.4,
+      "material_density": 1.05,
+      "db_density": 0.85,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Dau hu (Tofu)",
+      "water_per_100g": 82.0,
+      "material_density": 1.037,
+      "db_density": 0.9,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Dua chua (Pickled vegetables)",
+      "water_per_100g": 90.1,
+      "material_density": 1.032,
+      "db_density": 0.6,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Dua leo (Cucumber)",
+      "water_per_100g": 95.0,
+      "material_density": 1.024,
+      "db_density": 0.8,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "water_per_100g": 24.2,
+      "material_density": 1.285,
+      "db_density": 0.8,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Hamburger",
+      "water_per_100g": 44.5,
+      "material_density": 1.148,
+      "db_density": 0.45,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "water_per_100g": 27.5,
+      "material_density": 1.166,
+      "db_density": 0.9,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "water_per_100g": 75.9,
+      "material_density": 1.07,
+      "db_density": 0.94,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "water_per_100g": 88.4,
+      "material_density": 1.027,
+      "db_density": 0.96,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "water_per_100g": 107.0,
+      "material_density": 1.053,
+      "db_density": 0.4,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Lau (Hotpot)",
+      "water_per_100g": 80.0,
+      "material_density": 1.051,
+      "db_density": 0.98,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "water_per_100g": 72.5,
+      "material_density": 1.051,
+      "db_density": 0.95,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "water_per_100g": 11.6,
+      "material_density": 1.457,
+      "db_density": 0.72,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Muc (Squid)",
+      "water_per_100g": 81.4,
+      "material_density": 1.051,
+      "db_density": 0.9,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Nam (Mushroom)",
+      "water_per_100g": 90.4,
+      "material_density": 1.036,
+      "db_density": 0.55,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Oc (Snails)",
+      "water_per_100g": 77.6,
+      "material_density": 1.071,
+      "db_density": 0.85,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Ot chuong (Bell pepper)",
+      "water_per_100g": 92.0,
+      "material_density": 1.035,
+      "db_density": 0.5,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "water_per_100g": 81.7,
+      "material_density": 1.08,
+      "db_density": 0.95,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Pho mai (Cheese)",
+      "water_per_100g": 46.2,
+      "material_density": 1.046,
+      "db_density": 1.05,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Rau (Vegetables)",
+      "water_per_100g": 92.0,
+      "material_density": 1.03,
+      "db_density": 0.3,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Salad (Salad)",
+      "water_per_100g": 90.3,
+      "material_density": 1.017,
+      "db_density": 0.3,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Thit bo (Beef)",
+      "water_per_100g": 74.1,
+      "material_density": 1.062,
+      "db_density": 1.02,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Thit ga (Chicken)",
+      "water_per_100g": 65.6,
+      "material_density": 1.052,
+      "db_density": 0.95,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Thit heo (Pork)",
+      "water_per_100g": 70.7,
+      "material_density": 1.053,
+      "db_density": 0.98,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "water_per_100g": 72.7,
+      "material_density": 1.026,
+      "db_density": 0.98,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "water_per_100g": 46.7,
+      "material_density": 1.1,
+      "db_density": 0.9,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Tom (Shrimp)",
+      "water_per_100g": 76.9,
+      "material_density": 1.057,
+      "db_density": 0.88,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Trung (Egg)",
+      "water_per_100g": 74.5,
+      "material_density": 1.039,
+      "db_density": 0.92,
+      "db_source": "usda_fdc",
+      "flag": null
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "water_per_100g": 42.8,
+      "material_density": 1.226,
+      "db_density": 1.1,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "water_per_100g": 75.3,
+      "material_density": 1.076,
+      "db_density": 0.92,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Cao lau (Cao lau noodles)",
+      "water_per_100g": 98.0,
+      "material_density": 1.009,
+      "db_density": 0.85,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "water_per_100g": 74.9,
+      "material_density": 1.09,
+      "db_density": 0.88,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "water_per_100g": 56.2,
+      "material_density": 1.145,
+      "db_density": 0.86,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "water_per_100g": 70.6,
+      "material_density": 1.082,
+      "db_density": 0.93,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "water_per_100g": 64.1,
+      "material_density": 1.093,
+      "db_density": 0.86,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "water_per_100g": 87.3,
+      "material_density": 1.042,
+      "db_density": 1.02,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Nom hoa chuoi (Banana blossom salad)",
+      "water_per_100g": 85.0,
+      "material_density": 1.039,
+      "db_density": 0.55,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "water_per_100g": 8.8,
+      "material_density": 1.469,
+      "db_density": 0.8,
+      "db_source": "literature",
+      "flag": null
+    },
+    {
+      "class": "Sup cua (Crab soup)",
+      "water_per_100g": 82.5,
+      "material_density": 1.056,
+      "db_density": 1.02,
+      "db_source": "literature",
+      "flag": null
+    }
+  ],
+  "projection_issues": [],
+  "projection_macro_deltas_by_design": [
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "field": "Calories",
+      "class_names_value": 75,
+      "mapping_value": 121.556,
+      "ratio": 0.62
+    },
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "field": "Protein",
+      "class_names_value": 3.8,
+      "mapping_value": 5.267,
+      "ratio": 0.72
+    },
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "field": "Fat",
+      "class_names_value": 2.5,
+      "mapping_value": 6.533,
+      "ratio": 0.38
+    },
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 9.5,
+      "mapping_value": 10.4,
+      "ratio": 0.91
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "field": "Calories",
+      "class_names_value": 195,
+      "mapping_value": 204.0,
+      "ratio": 0.96
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "field": "Protein",
+      "class_names_value": 4.5,
+      "mapping_value": 4.7,
+      "ratio": 0.96
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "field": "Fat",
+      "class_names_value": 3.8,
+      "mapping_value": 5.6,
+      "ratio": 0.68
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "field": "Carbs",
+      "class_names_value": 36,
+      "mapping_value": 33.9,
+      "ratio": 1.06
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "field": "Calories",
+      "class_names_value": 125,
+      "mapping_value": 128.99,
+      "ratio": 0.97
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "field": "Protein",
+      "class_names_value": 3.5,
+      "mapping_value": 4.9,
+      "ratio": 0.71
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "field": "Fat",
+      "class_names_value": 4,
+      "mapping_value": 5.42,
+      "ratio": 0.74
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "field": "Carbs",
+      "class_names_value": 18,
+      "mapping_value": 15.1,
+      "ratio": 1.19
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "field": "Calories",
+      "class_names_value": 265,
+      "mapping_value": 296.133,
+      "ratio": 0.89
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "field": "Protein",
+      "class_names_value": 8.5,
+      "mapping_value": 18.933,
+      "ratio": 0.45
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "field": "Carbs",
+      "class_names_value": 36,
+      "mapping_value": 33.2,
+      "ratio": 1.08
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "field": "Protein",
+      "class_names_value": 4,
+      "mapping_value": 8.3,
+      "ratio": 0.48
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "field": "Fat",
+      "class_names_value": 6.5,
+      "mapping_value": 4.26,
+      "ratio": 1.53
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "field": "Carbs",
+      "class_names_value": 21,
+      "mapping_value": 22.12,
+      "ratio": 0.95
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "field": "Calories",
+      "class_names_value": 190,
+      "mapping_value": 306.0,
+      "ratio": 0.62
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "field": "Protein",
+      "class_names_value": 5,
+      "mapping_value": 20.7,
+      "ratio": 0.24
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "field": "Fat",
+      "class_names_value": 9.5,
+      "mapping_value": 2.9,
+      "ratio": 3.28
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "field": "Carbs",
+      "class_names_value": 21,
+      "mapping_value": 49.5,
+      "ratio": 0.42
+    },
+    {
+      "class": "Bo kho (Beef stew)",
+      "field": "Protein",
+      "class_names_value": 9.5,
+      "mapping_value": 9.83,
+      "ratio": 0.97
+    },
+    {
+      "class": "Bo kho (Beef stew)",
+      "field": "Fat",
+      "class_names_value": 5.8,
+      "mapping_value": 8.47,
+      "ratio": 0.68
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "field": "Calories",
+      "class_names_value": 175,
+      "mapping_value": 221.533,
+      "ratio": 0.79
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "field": "Protein",
+      "class_names_value": 12,
+      "mapping_value": 11.1,
+      "ratio": 1.08
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "field": "Fat",
+      "class_names_value": 11,
+      "mapping_value": 6.867,
+      "ratio": 1.6
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "field": "Carbs",
+      "class_names_value": 5,
+      "mapping_value": 28.867,
+      "ratio": 0.17
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "field": "Calories",
+      "class_names_value": 25,
+      "mapping_value": 34.0,
+      "ratio": 0.74
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "field": "Protein",
+      "class_names_value": 2,
+      "mapping_value": 2.5,
+      "ratio": 0.8
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "field": "Carbs",
+      "class_names_value": 5,
+      "mapping_value": 5.65,
+      "ratio": 0.88
+    },
+    {
+      "class": "Bun (Rice vermicelli)",
+      "field": "Calories",
+      "class_names_value": 109,
+      "mapping_value": 116.0,
+      "ratio": 0.94
+    },
+    {
+      "class": "Bun (Rice vermicelli)",
+      "field": "Fat",
+      "class_names_value": 0.2,
+      "mapping_value": 0.9,
+      "ratio": 0.22
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "field": "Calories",
+      "class_names_value": 90,
+      "mapping_value": 116.444,
+      "ratio": 0.77
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "field": "Protein",
+      "class_names_value": 5.5,
+      "mapping_value": 6.289,
+      "ratio": 0.87
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "field": "Fat",
+      "class_names_value": 3.5,
+      "mapping_value": 3.711,
+      "ratio": 0.94
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 9,
+      "mapping_value": 14.467,
+      "ratio": 0.62
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "field": "Calories",
+      "class_names_value": 136,
+      "mapping_value": 115.111,
+      "ratio": 1.18
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "field": "Protein",
+      "class_names_value": 6.1,
+      "mapping_value": 5.733,
+      "ratio": 1.06
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "field": "Fat",
+      "class_names_value": 4.4,
+      "mapping_value": 2.444,
+      "ratio": 1.8
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "field": "Carbs",
+      "class_names_value": 17.9,
+      "mapping_value": 20.067,
+      "ratio": 0.89
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "field": "Calories",
+      "class_names_value": 150,
+      "mapping_value": 155.556,
+      "ratio": 0.96
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "field": "Protein",
+      "class_names_value": 6.5,
+      "mapping_value": 10.556,
+      "ratio": 0.62
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "field": "Fat",
+      "class_names_value": 7.5,
+      "mapping_value": 6.044,
+      "ratio": 1.24
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "field": "Calories",
+      "class_names_value": 92,
+      "mapping_value": 104.844,
+      "ratio": 0.88
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "field": "Protein",
+      "class_names_value": 5.2,
+      "mapping_value": 5.0,
+      "ratio": 1.04
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 10,
+      "mapping_value": 13.178,
+      "ratio": 0.76
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "field": "Calories",
+      "class_names_value": 85,
+      "mapping_value": 61.111,
+      "ratio": 1.39
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "field": "Protein",
+      "class_names_value": 4.8,
+      "mapping_value": 1.311,
+      "ratio": 3.66
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "field": "Fat",
+      "class_names_value": 3.2,
+      "mapping_value": 0.8,
+      "ratio": 4.0
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 9.2,
+      "mapping_value": 12.178,
+      "ratio": 0.76
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "field": "Calories",
+      "class_names_value": 22,
+      "mapping_value": 20.0,
+      "ratio": 1.1
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "field": "Protein",
+      "class_names_value": 1,
+      "mapping_value": 1.3,
+      "ratio": 0.77
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "field": "Carbs",
+      "class_names_value": 4.5,
+      "mapping_value": 3.7,
+      "ratio": 1.22
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "field": "Calories",
+      "class_names_value": 41,
+      "mapping_value": 44.0,
+      "ratio": 0.93
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "field": "Protein",
+      "class_names_value": 0.9,
+      "mapping_value": 1.5,
+      "ratio": 0.6
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "field": "Carbs",
+      "class_names_value": 9.6,
+      "mapping_value": 9.03,
+      "ratio": 1.06
+    },
+    {
+      "class": "Canh (Soup)",
+      "field": "Calories",
+      "class_names_value": 35,
+      "mapping_value": 57.0,
+      "ratio": 0.61
+    },
+    {
+      "class": "Canh (Soup)",
+      "field": "Protein",
+      "class_names_value": 2.5,
+      "mapping_value": 3.0,
+      "ratio": 0.83
+    },
+    {
+      "class": "Canh (Soup)",
+      "field": "Fat",
+      "class_names_value": 1.2,
+      "mapping_value": 4.65,
+      "ratio": 0.26
+    },
+    {
+      "class": "Canh (Soup)",
+      "field": "Carbs",
+      "class_names_value": 3.5,
+      "mapping_value": 0.85,
+      "ratio": 4.12
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "field": "Calories",
+      "class_names_value": 180,
+      "mapping_value": 205.0,
+      "ratio": 0.88
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "field": "Protein",
+      "class_names_value": 14,
+      "mapping_value": 16.9,
+      "ratio": 0.83
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "field": "Fat",
+      "class_names_value": 12,
+      "mapping_value": 15.0,
+      "ratio": 0.8
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "field": "Carbs",
+      "class_names_value": 3,
+      "mapping_value": 1.8,
+      "ratio": 1.67
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "field": "Calories",
+      "class_names_value": 240,
+      "mapping_value": 245.19,
+      "ratio": 0.98
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "field": "Protein",
+      "class_names_value": 7.5,
+      "mapping_value": 18.75,
+      "ratio": 0.4
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "field": "Fat",
+      "class_names_value": 14,
+      "mapping_value": 18.03,
+      "ratio": 0.78
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "field": "Carbs",
+      "class_names_value": 21,
+      "mapping_value": 199.76,
+      "ratio": 0.11
+    },
+    {
+      "class": "Com (Rice)",
+      "field": "Calories",
+      "class_names_value": 130,
+      "mapping_value": 86.0,
+      "ratio": 1.51
+    },
+    {
+      "class": "Com (Rice)",
+      "field": "Protein",
+      "class_names_value": 2.7,
+      "mapping_value": 1.9,
+      "ratio": 1.42
+    },
+    {
+      "class": "Com (Rice)",
+      "field": "Carbs",
+      "class_names_value": 28.2,
+      "mapping_value": 19.067,
+      "ratio": 1.48
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "field": "Calories",
+      "class_names_value": 165,
+      "mapping_value": 205.333,
+      "ratio": 0.8
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "field": "Protein",
+      "class_names_value": 7,
+      "mapping_value": 8.167,
+      "ratio": 0.86
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "field": "Fat",
+      "class_names_value": 5,
+      "mapping_value": 5.4,
+      "ratio": 0.93
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "field": "Carbs",
+      "class_names_value": 24,
+      "mapping_value": 31.0,
+      "ratio": 0.77
+    },
+    {
+      "class": "Cu kieu (Pickled scallion head)",
+      "field": "Calories",
+      "class_names_value": 35,
+      "mapping_value": 29.0,
+      "ratio": 1.21
+    },
+    {
+      "class": "Cu kieu (Pickled scallion head)",
+      "field": "Carbs",
+      "class_names_value": 7.5,
+      "mapping_value": 5.9,
+      "ratio": 1.27
+    },
+    {
+      "class": "Dua leo (Cucumber)",
+      "field": "Calories",
+      "class_names_value": 15,
+      "mapping_value": 18.0,
+      "ratio": 0.83
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "field": "Calories",
+      "class_names_value": 115,
+      "mapping_value": 340.533,
+      "ratio": 0.34
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "field": "Protein",
+      "class_names_value": 5.5,
+      "mapping_value": 17.667,
+      "ratio": 0.31
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "field": "Fat",
+      "class_names_value": 2.5,
+      "mapping_value": 9.067,
+      "ratio": 0.28
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "field": "Carbs",
+      "class_names_value": 18,
+      "mapping_value": 47.067,
+      "ratio": 0.38
+    },
+    {
+      "class": "Hamburger",
+      "field": "Calories",
+      "class_names_value": 250,
+      "mapping_value": 188.333,
+      "ratio": 1.33
+    },
+    {
+      "class": "Hamburger",
+      "field": "Protein",
+      "class_names_value": 13,
+      "mapping_value": 12.267,
+      "ratio": 1.06
+    },
+    {
+      "class": "Hamburger",
+      "field": "Fat",
+      "class_names_value": 12,
+      "mapping_value": 6.6,
+      "ratio": 1.82
+    },
+    {
+      "class": "Hamburger",
+      "field": "Carbs",
+      "class_names_value": 24,
+      "mapping_value": 20.067,
+      "ratio": 1.2
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "field": "Calories",
+      "class_names_value": 290,
+      "mapping_value": 353.267,
+      "ratio": 0.82
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "field": "Protein",
+      "class_names_value": 18,
+      "mapping_value": 54.067,
+      "ratio": 0.33
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "field": "Fat",
+      "class_names_value": 23,
+      "mapping_value": 14.2,
+      "ratio": 1.62
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "field": "Carbs",
+      "class_names_value": 1.5,
+      "mapping_value": 2.267,
+      "ratio": 0.66
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "field": "Calories",
+      "class_names_value": 88,
+      "mapping_value": 107.244,
+      "ratio": 0.82
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "field": "Protein",
+      "class_names_value": 5,
+      "mapping_value": 7.0,
+      "ratio": 0.71
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "field": "Fat",
+      "class_names_value": 3,
+      "mapping_value": 3.778,
+      "ratio": 0.79
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 10,
+      "mapping_value": 11.311,
+      "ratio": 0.88
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "field": "Calories",
+      "class_names_value": 65,
+      "mapping_value": 50.8,
+      "ratio": 1.28
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "field": "Protein",
+      "class_names_value": 5,
+      "mapping_value": 3.0,
+      "ratio": 1.67
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "field": "Carbs",
+      "class_names_value": 4,
+      "mapping_value": 2.84,
+      "ratio": 1.41
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "field": "Calories",
+      "class_names_value": 312,
+      "mapping_value": 466.0,
+      "ratio": 0.67
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "field": "Protein",
+      "class_names_value": 3.4,
+      "mapping_value": 1.6,
+      "ratio": 2.12
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "field": "Fat",
+      "class_names_value": 15,
+      "mapping_value": 10.0,
+      "ratio": 1.5
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "field": "Carbs",
+      "class_names_value": 41,
+      "mapping_value": 17.0,
+      "ratio": 2.41
+    },
+    {
+      "class": "Lau (Hotpot)",
+      "field": "Protein",
+      "class_names_value": 6.5,
+      "mapping_value": 6.81,
+      "ratio": 0.95
+    },
+    {
+      "class": "Lau (Hotpot)",
+      "field": "Carbs",
+      "class_names_value": 7,
+      "mapping_value": 6.7,
+      "ratio": 1.04
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "field": "Protein",
+      "class_names_value": 15,
+      "mapping_value": 17.25,
+      "ratio": 0.87
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "field": "Fat",
+      "class_names_value": 8,
+      "mapping_value": 7.61,
+      "ratio": 1.05
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "field": "Carbs",
+      "class_names_value": 1,
+      "mapping_value": 0.67,
+      "ratio": 1.49
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "field": "Calories",
+      "class_names_value": 138,
+      "mapping_value": 350.0,
+      "ratio": 0.39
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "field": "Protein",
+      "class_names_value": 4.5,
+      "mapping_value": 11.0,
+      "ratio": 0.41
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "field": "Fat",
+      "class_names_value": 2.1,
+      "mapping_value": 0.9,
+      "ratio": 2.33
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "field": "Carbs",
+      "class_names_value": 25,
+      "mapping_value": 74.5,
+      "ratio": 0.34
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "field": "Calories",
+      "class_names_value": 75,
+      "mapping_value": 99.667,
+      "ratio": 0.75
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "field": "Protein",
+      "class_names_value": 5.0,
+      "mapping_value": 6.933,
+      "ratio": 0.72
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "field": "Fat",
+      "class_names_value": 2.0,
+      "mapping_value": 1.489,
+      "ratio": 1.34
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 11.5,
+      "mapping_value": 14.6,
+      "ratio": 0.79
+    },
+    {
+      "class": "Pho mai (Cheese)",
+      "field": "Protein",
+      "class_names_value": 22,
+      "mapping_value": 22.89,
+      "ratio": 0.96
+    },
+    {
+      "class": "Pho mai (Cheese)",
+      "field": "Fat",
+      "class_names_value": 28,
+      "mapping_value": 28.92,
+      "ratio": 0.97
+    },
+    {
+      "class": "Salad (Salad)",
+      "field": "Protein",
+      "class_names_value": 1.5,
+      "mapping_value": 0.55,
+      "ratio": 2.73
+    },
+    {
+      "class": "Salad (Salad)",
+      "field": "Fat",
+      "class_names_value": 3,
+      "mapping_value": 4.42,
+      "ratio": 0.68
+    },
+    {
+      "class": "Salad (Salad)",
+      "field": "Carbs",
+      "class_names_value": 4.5,
+      "mapping_value": 2.21,
+      "ratio": 2.04
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "field": "Calories",
+      "class_names_value": 220,
+      "mapping_value": 173.333,
+      "ratio": 1.27
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "field": "Protein",
+      "class_names_value": 15,
+      "mapping_value": 11.0,
+      "ratio": 1.36
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "field": "Fat",
+      "class_names_value": 16,
+      "mapping_value": 14.333,
+      "ratio": 1.12
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "field": "Calories",
+      "class_names_value": 230,
+      "mapping_value": 185.0,
+      "ratio": 1.24
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "field": "Protein",
+      "class_names_value": 20,
+      "mapping_value": 23.0,
+      "ratio": 0.87
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "field": "Fat",
+      "class_names_value": 15,
+      "mapping_value": 8.35,
+      "ratio": 1.8
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "field": "Carbs",
+      "class_names_value": 2.5,
+      "mapping_value": 4.25,
+      "ratio": 0.59
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "field": "Calories",
+      "class_names_value": 195,
+      "mapping_value": 210.0,
+      "ratio": 0.93
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "field": "Protein",
+      "class_names_value": 4.2,
+      "mapping_value": 5.05,
+      "ratio": 0.83
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "field": "Fat",
+      "class_names_value": 2.5,
+      "mapping_value": 5.95,
+      "ratio": 0.42
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "field": "Carbs",
+      "class_names_value": 39,
+      "mapping_value": 45.25,
+      "ratio": 0.86
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "field": "Protein",
+      "class_names_value": 3.8,
+      "mapping_value": 4.97,
+      "ratio": 0.76
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "field": "Fat",
+      "class_names_value": 3.5,
+      "mapping_value": 4.5,
+      "ratio": 0.78
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "field": "Carbs",
+      "class_names_value": 18,
+      "mapping_value": 14.41,
+      "ratio": 1.25
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "field": "Calories",
+      "class_names_value": 130,
+      "mapping_value": 100.667,
+      "ratio": 1.29
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "field": "Protein",
+      "class_names_value": 6,
+      "mapping_value": 4.067,
+      "ratio": 1.48
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "field": "Fat",
+      "class_names_value": 4.8,
+      "mapping_value": 1.711,
+      "ratio": 2.81
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "field": "Carbs",
+      "class_names_value": 16,
+      "mapping_value": 17.289,
+      "ratio": 0.93
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "field": "Calories",
+      "class_names_value": 175,
+      "mapping_value": 207.667,
+      "ratio": 0.84
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "field": "Protein",
+      "class_names_value": 4.5,
+      "mapping_value": 6.633,
+      "ratio": 0.68
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "field": "Fat",
+      "class_names_value": 6.5,
+      "mapping_value": 7.3,
+      "ratio": 0.89
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "field": "Carbs",
+      "class_names_value": 25,
+      "mapping_value": 28.867,
+      "ratio": 0.87
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "field": "Calories",
+      "class_names_value": 95,
+      "mapping_value": 141.111,
+      "ratio": 0.67
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "field": "Protein",
+      "class_names_value": 5.5,
+      "mapping_value": 4.822,
+      "ratio": 1.14
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "field": "Fat",
+      "class_names_value": 3.2,
+      "mapping_value": 6.667,
+      "ratio": 0.48
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "field": "Carbs",
+      "class_names_value": 11,
+      "mapping_value": 15.467,
+      "ratio": 0.71
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "field": "Protein",
+      "class_names_value": 6.5,
+      "mapping_value": 8.18,
+      "ratio": 0.79
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "field": "Fat",
+      "class_names_value": 6.8,
+      "mapping_value": 8.92,
+      "ratio": 0.76
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "field": "Carbs",
+      "class_names_value": 23,
+      "mapping_value": 16.76,
+      "ratio": 1.37
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "field": "Calories",
+      "class_names_value": 80,
+      "mapping_value": 61.778,
+      "ratio": 1.29
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "field": "Protein",
+      "class_names_value": 4.5,
+      "mapping_value": 5.667,
+      "ratio": 0.79
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "field": "Fat",
+      "class_names_value": 2.8,
+      "mapping_value": 2.067,
+      "ratio": 1.35
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "field": "Carbs",
+      "class_names_value": 9.5,
+      "mapping_value": 5.156,
+      "ratio": 1.84
+    },
+    {
+      "class": "Nom hoa chuoi (Banana blossom salad)",
+      "field": "Protein",
+      "class_names_value": 2.5,
+      "mapping_value": 3.67,
+      "ratio": 0.68
+    },
+    {
+      "class": "Nom hoa chuoi (Banana blossom salad)",
+      "field": "Carbs",
+      "class_names_value": 7,
+      "mapping_value": 5.39,
+      "ratio": 1.3
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "field": "Calories",
+      "class_names_value": 160,
+      "mapping_value": 371.0,
+      "ratio": 0.43
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "field": "Protein",
+      "class_names_value": 7.5,
+      "mapping_value": 13.0,
+      "ratio": 0.58
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "field": "Fat",
+      "class_names_value": 6,
+      "mapping_value": 1.51,
+      "ratio": 3.97
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "field": "Carbs",
+      "class_names_value": 19,
+      "mapping_value": 74.7,
+      "ratio": 0.25
+    },
+    {
+      "class": "Sup cua (Crab soup)",
+      "field": "Fat",
+      "class_names_value": 2,
+      "mapping_value": 1.69,
+      "ratio": 1.18
+    },
+    {
+      "class": "Sup cua (Crab soup)",
+      "field": "Carbs",
+      "class_names_value": 8.5,
+      "mapping_value": 9.08,
+      "ratio": 0.94
+    }
+  ],
+  "calc_input_audit": [
+    {
+      "class": "Banh canh (Vietnamese thick noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 75,
+        "Protein": 3.8,
+        "Fat": 2.5,
+        "Carbs": 9.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Banh chung (Square sticky rice cake)",
+      "serving_size_g": 200,
+      "calc_per100": {
+        "Calories": 195,
+        "Protein": 4.5,
+        "Fat": 3.8,
+        "Carbs": 36
+      },
+      "tdgd_match": "Bánh chưng",
+      "tdgd": {
+        "energy": 181.0,
+        "protein": 4.3,
+        "fat": 4.2,
+        "carbs": 31.6
+      },
+      "deviation_pct": {
+        "Calories": 7.7,
+        "Protein": 4.7,
+        "Fat": -9.5,
+        "Carbs": 13.9
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Banh cuon (Rolled rice pancake)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 125,
+        "Protein": 3.5,
+        "Fat": 4,
+        "Carbs": 18
+      },
+      "tdgd_match": "Bánh cuốn",
+      "tdgd": {
+        "energy": 129.0,
+        "protein": 3.0,
+        "fat": 5.3,
+        "carbs": 17.4
+      },
+      "deviation_pct": {
+        "Calories": -3.1,
+        "Protein": 16.7,
+        "Fat": -24.5,
+        "Carbs": 3.4
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Banh khot (Mini savory pancakes)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 195,
+        "Protein": 4,
+        "Fat": 9.5,
+        "Carbs": 23.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Banh mi (Vietnamese baguette sandwich)",
+      "serving_size_g": 200,
+      "calc_per100": {
+        "Calories": 265,
+        "Protein": 8.5,
+        "Fat": 9.8,
+        "Carbs": 36
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Banh trang (Rice paper)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 335.0,
+        "Protein": 4.0,
+        "Fat": 0.2,
+        "Carbs": 79.4
+      },
+      "tdgd_match": "Bánh đa nem/ Bánh tráng",
+      "tdgd": {
+        "energy": 335.0,
+        "protein": 4.0,
+        "fat": 0.2,
+        "carbs": 79.4
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Banh trang tron (Rice paper salad)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 160,
+        "Protein": 4,
+        "Fat": 6.5,
+        "Carbs": 21
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Banh xeo (Vietnamese sizzling pancake)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 190,
+        "Protein": 5,
+        "Fat": 9.5,
+        "Carbs": 21
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Bo kho (Beef stew)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 115,
+        "Protein": 9.5,
+        "Fat": 5.8,
+        "Carbs": 6
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Bo la lot (Grilled beef wrapped in betel leaves)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 175,
+        "Protein": 12,
+        "Fat": 11,
+        "Carbs": 5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Bong cai (Cauliflower)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 25,
+        "Protein": 2,
+        "Fat": 0.1,
+        "Carbs": 5
+      },
+      "tdgd_match": "Súp lơ trắng",
+      "tdgd": {
+        "energy": 34.0,
+        "protein": 2.5,
+        "fat": 0.15,
+        "carbs": 5.65
+      },
+      "deviation_pct": {
+        "Calories": -26.5,
+        "Protein": -20.0,
+        "Fat": -33.3,
+        "Carbs": -11.5
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Bun (Rice vermicelli)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 109,
+        "Protein": 1.8,
+        "Fat": 0.2,
+        "Carbs": 24.9
+      },
+      "tdgd_match": "Bún tươi",
+      "tdgd": {
+        "energy": 112.0,
+        "protein": 1.7,
+        "fat": null,
+        "carbs": 26.2
+      },
+      "deviation_pct": {
+        "Calories": -2.7,
+        "Protein": 5.9,
+        "Carbs": -5.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Bun bo Hue (Hue beef noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 90,
+        "Protein": 5.5,
+        "Fat": 3.5,
+        "Carbs": 9
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Bun cha (Grilled pork with vermicelli)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 136,
+        "Protein": 6.1,
+        "Fat": 4.4,
+        "Carbs": 17.9
+      },
+      "tdgd_match": "Bún chả",
+      "tdgd": {
+        "energy": 136.0,
+        "protein": 6.1,
+        "fat": 4.4,
+        "carbs": 17.9
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Bun dau (Vermicelli with tofu)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 150,
+        "Protein": 6.5,
+        "Fat": 7.5,
+        "Carbs": 15
+      },
+      "tdgd_match": "Bún đậu",
+      "tdgd": {
+        "energy": 151.0,
+        "protein": 3.0,
+        "fat": 6.4,
+        "carbs": 20.3
+      },
+      "deviation_pct": {
+        "Calories": -0.7,
+        "Protein": 116.7,
+        "Fat": 17.2,
+        "Carbs": -26.1
+      },
+      "verdict": "review"
+    },
+    {
+      "class": "Bun mam (Fermented fish noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 92,
+        "Protein": 5.2,
+        "Fat": 3.6,
+        "Carbs": 10
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Bun rieu (Crab noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 85,
+        "Protein": 4.8,
+        "Fat": 3.2,
+        "Carbs": 9.2
+      },
+      "tdgd_match": "Bún cua",
+      "tdgd": {
+        "energy": 53.0,
+        "protein": 2.1,
+        "fat": 0.9,
+        "carbs": 9.1
+      },
+      "deviation_pct": {
+        "Calories": 60.4,
+        "Protein": 128.6,
+        "Fat": 255.6,
+        "Carbs": 1.1
+      },
+      "verdict": "review"
+    },
+    {
+      "class": "Ca (Fish)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 96.0,
+        "Protein": 16.0,
+        "Fat": 3.6,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Cá chép",
+      "tdgd": {
+        "energy": 96.0,
+        "protein": 16.0,
+        "fat": 3.6,
+        "carbs": 0.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Ca chua (Tomato)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 24.0,
+        "Protein": 0.6,
+        "Fat": 0.2,
+        "Carbs": 4.8
+      },
+      "tdgd_match": "Cà chua",
+      "tdgd": {
+        "energy": 24.0,
+        "protein": 0.6,
+        "fat": 0.23,
+        "carbs": 4.77
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": -13.0,
+        "Carbs": 0.6
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Ca phao (Pickled eggplant)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 22,
+        "Protein": 1,
+        "Fat": 0.2,
+        "Carbs": 4.5
+      },
+      "tdgd_match": "Cà pháo",
+      "tdgd": {
+        "energy": 27.0,
+        "protein": 1.5,
+        "fat": null,
+        "carbs": 5.2
+      },
+      "deviation_pct": {
+        "Calories": -18.5,
+        "Protein": -33.3,
+        "Carbs": -13.5
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Ca rot (Carrot)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 41,
+        "Protein": 0.9,
+        "Fat": 0.2,
+        "Carbs": 9.6
+      },
+      "tdgd_match": "Cà rốt ",
+      "tdgd": {
+        "energy": 44.0,
+        "protein": 1.5,
+        "fat": 0.17,
+        "carbs": 9.03
+      },
+      "deviation_pct": {
+        "Calories": -6.8,
+        "Protein": -40.0,
+        "Fat": 17.6,
+        "Carbs": 6.3
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Canh (Soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 35,
+        "Protein": 2.5,
+        "Fat": 1.2,
+        "Carbs": 3.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Cha (Vietnamese pork roll)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 180,
+        "Protein": 14,
+        "Fat": 12,
+        "Carbs": 3
+      },
+      "tdgd_match": "Giò lụa",
+      "tdgd": {
+        "energy": 205.0,
+        "protein": 16.9,
+        "fat": 15.0,
+        "carbs": 0.5
+      },
+      "deviation_pct": {
+        "Calories": -12.2,
+        "Protein": -17.2,
+        "Fat": -20.0,
+        "Carbs": 500.0
+      },
+      "verdict": "review"
+    },
+    {
+      "class": "Cha gio (Spring rolls)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 240,
+        "Protein": 7.5,
+        "Fat": 14,
+        "Carbs": 21
+      },
+      "tdgd_match": "Chả giò chiên",
+      "tdgd": {
+        "energy": 245.0,
+        "protein": 10.7,
+        "fat": 12.5,
+        "carbs": 21.6
+      },
+      "deviation_pct": {
+        "Calories": -2.0,
+        "Protein": -29.9,
+        "Fat": 12.0,
+        "Carbs": -2.8
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Chanh (Lime)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 29.0,
+        "Protein": 0.9,
+        "Fat": 0.1,
+        "Carbs": 6.0
+      },
+      "tdgd_match": "Chanh",
+      "tdgd": {
+        "energy": 29.0,
+        "protein": 0.9,
+        "fat": 0.14,
+        "carbs": 5.96
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": -28.6,
+        "Carbs": 0.7
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Com (Rice)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 130,
+        "Protein": 2.7,
+        "Fat": 0.3,
+        "Carbs": 28.2
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Com tam (Broken rice)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 165,
+        "Protein": 7,
+        "Fat": 5,
+        "Carbs": 24
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Con nguoi (Human)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 0,
+        "Protein": 0,
+        "Fat": 0,
+        "Carbs": 0
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Cu kieu (Pickled scallion head)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 35,
+        "Protein": 1.2,
+        "Fat": 0.1,
+        "Carbs": 7.5
+      },
+      "tdgd_match": "Kiệu muối",
+      "tdgd": {
+        "energy": 29.0,
+        "protein": 1.3,
+        "fat": null,
+        "carbs": 5.9
+      },
+      "deviation_pct": {
+        "Calories": 20.7,
+        "Protein": -7.7,
+        "Carbs": 27.1
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Cua (Crab)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 87.0,
+        "Protein": 12.3,
+        "Fat": 3.3,
+        "Carbs": 2.0
+      },
+      "tdgd_match": "Cua đồng",
+      "tdgd": {
+        "energy": 87.0,
+        "protein": 12.3,
+        "fat": 3.3,
+        "carbs": 2.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Dau hu (Tofu)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 97.0,
+        "Protein": 10.9,
+        "Fat": 5.4,
+        "Carbs": 1.1
+      },
+      "tdgd_match": "Đậu phụ (đậu hũ)",
+      "tdgd": {
+        "energy": 97.0,
+        "protein": 10.9,
+        "fat": 5.4,
+        "carbs": 1.1
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Dua chua (Pickled vegetables)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 25.0,
+        "Protein": 1.8,
+        "Fat": 0.0,
+        "Carbs": 4.5
+      },
+      "tdgd_match": "Dưa cải bẹ",
+      "tdgd": {
+        "energy": 25.0,
+        "protein": 1.8,
+        "fat": null,
+        "carbs": 4.5
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Dua leo (Cucumber)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 15,
+        "Protein": 0.7,
+        "Fat": 0.1,
+        "Carbs": 3.6
+      },
+      "tdgd_match": "Dưa chuột/ Dưa leo",
+      "tdgd": {
+        "energy": 18.0,
+        "protein": 0.8,
+        "fat": 0.09,
+        "carbs": 3.61
+      },
+      "deviation_pct": {
+        "Calories": -16.7,
+        "Protein": -12.5,
+        "Fat": 11.1,
+        "Carbs": -0.3
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Goi cuon (Fresh spring rolls)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 115,
+        "Protein": 5.5,
+        "Fat": 2.5,
+        "Carbs": 18
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Hamburger",
+      "serving_size_g": 200,
+      "calc_per100": {
+        "Calories": 250,
+        "Protein": 13,
+        "Fat": 12,
+        "Carbs": 24
+      },
+      "tdgd_match": "Hamburger McDONALD'S",
+      "tdgd": {
+        "energy": 264.0,
+        "protein": 12.9,
+        "fat": 10.1,
+        "carbs": 30.3
+      },
+      "deviation_pct": {
+        "Calories": -5.3,
+        "Protein": 0.8,
+        "Fat": 18.8,
+        "Carbs": -20.8
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Heo quay (Roast pork)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 290,
+        "Protein": 18,
+        "Fat": 23,
+        "Carbs": 1.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Hu tieu (Clear rice noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 88,
+        "Protein": 5,
+        "Fat": 3,
+        "Carbs": 10
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Kho qua thit (Stuffed bitter melon soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 65,
+        "Protein": 5,
+        "Fat": 3.2,
+        "Carbs": 4
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Khoai tay chien (French fries)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 312,
+        "Protein": 3.4,
+        "Fat": 15,
+        "Carbs": 41
+      },
+      "tdgd_match": "Khoai tây chiên",
+      "tdgd": {
+        "energy": 260.0,
+        "protein": 2.86,
+        "fat": 14.39,
+        "carbs": 31.33
+      },
+      "deviation_pct": {
+        "Calories": 20.0,
+        "Protein": 18.9,
+        "Fat": 4.2,
+        "Carbs": 30.9
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Lau (Hotpot)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 90,
+        "Protein": 6.5,
+        "Fat": 4,
+        "Carbs": 7
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Long heo (Pork offal)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 140,
+        "Protein": 15,
+        "Fat": 8,
+        "Carbs": 1
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Mi (Egg noodles)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 138,
+        "Protein": 4.5,
+        "Fat": 2.1,
+        "Carbs": 25
+      },
+      "tdgd_match": "Mì Udon",
+      "tdgd": {
+        "energy": 75.0,
+        "protein": 2.6,
+        "fat": 0.3,
+        "carbs": 15.2
+      },
+      "deviation_pct": {
+        "Calories": 84.0,
+        "Protein": 73.1,
+        "Fat": 600.0,
+        "Carbs": 64.5
+      },
+      "verdict": "review"
+    },
+    {
+      "class": "Muc (Squid)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 73.0,
+        "Protein": 16.3,
+        "Fat": 0.9,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Mực tươi",
+      "tdgd": {
+        "energy": 73.0,
+        "protein": 16.3,
+        "fat": 0.9,
+        "carbs": 0.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Nam (Mushroom)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 37.0,
+        "Protein": 4.0,
+        "Fat": 0.3,
+        "Carbs": 4.5
+      },
+      "tdgd_match": "Nấm mỡ (nấm tây)",
+      "tdgd": {
+        "energy": 37.0,
+        "protein": 4.0,
+        "fat": 0.3,
+        "carbs": 4.5
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Oc (Snails)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 84.0,
+        "Protein": 11.9,
+        "Fat": 0.7,
+        "Carbs": 7.6
+      },
+      "tdgd_match": "Ốc nhồi",
+      "tdgd": {
+        "energy": 84.0,
+        "protein": 11.9,
+        "fat": 0.7,
+        "carbs": 7.6
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0,
+        "Carbs": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Ot chuong (Bell pepper)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 31.0,
+        "Protein": 1.3,
+        "Fat": 0.1,
+        "Carbs": 6.1
+      },
+      "tdgd_match": "Ớt xanh to",
+      "tdgd": {
+        "energy": 31.0,
+        "protein": 1.3,
+        "fat": 0.13,
+        "carbs": 6.07
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": -23.1,
+        "Carbs": 0.5
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Pho (Vietnamese noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 75,
+        "Protein": 5.0,
+        "Fat": 2.0,
+        "Carbs": 11.5
+      },
+      "tdgd_match": "Phở bò chín",
+      "tdgd": {
+        "energy": 73.0,
+        "protein": 5.2,
+        "fat": 0.9,
+        "carbs": 11.1
+      },
+      "deviation_pct": {
+        "Calories": 2.7,
+        "Protein": -3.8,
+        "Fat": 122.2,
+        "Carbs": 3.6
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Pho mai (Cheese)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 350,
+        "Protein": 22,
+        "Fat": 28,
+        "Carbs": 2
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Rau (Vegetables)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 28.0,
+        "Protein": 3.2,
+        "Fat": 0.2,
+        "Carbs": 3.3
+      },
+      "tdgd_match": "Rau muống",
+      "tdgd": {
+        "energy": 28.0,
+        "protein": 3.2,
+        "fat": 0.24,
+        "carbs": 3.26
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": -16.7,
+        "Carbs": 1.2
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Salad (Salad)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 50,
+        "Protein": 1.5,
+        "Fat": 3,
+        "Carbs": 4.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Thit bo (Beef)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 118.0,
+        "Protein": 21.0,
+        "Fat": 3.8,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Thịt bò loại 1",
+      "tdgd": {
+        "energy": 118.0,
+        "protein": 21.0,
+        "fat": 3.8,
+        "carbs": 0.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Thit ga (Chicken)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 199.0,
+        "Protein": 20.3,
+        "Fat": 13.1,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Thịt gà ta",
+      "tdgd": {
+        "energy": 199.0,
+        "protein": 20.3,
+        "fat": 13.1,
+        "carbs": 0.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Thit heo (Pork)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 126.0,
+        "Protein": 17.6,
+        "Fat": 6.2,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Thịt heo (lợn), nạc vai",
+      "tdgd": {
+        "energy": 149.0,
+        "protein": 20.83,
+        "fat": 7.29,
+        "carbs": 0.02
+      },
+      "deviation_pct": {
+        "Calories": -15.4,
+        "Protein": -15.5,
+        "Fat": -15.0,
+        "Carbs": -100.0
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Thit kho (Braised pork)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 220,
+        "Protein": 15,
+        "Fat": 16,
+        "Carbs": 4
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Thit nuong (Grilled meat)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 230,
+        "Protein": 20,
+        "Fat": 15,
+        "Carbs": 2.5
+      },
+      "tdgd_match": "Thịt xiên nướng",
+      "tdgd": {
+        "energy": 322.0,
+        "protein": 26.5,
+        "fat": 23.8,
+        "carbs": 0.54
+      },
+      "deviation_pct": {
+        "Calories": -28.6,
+        "Protein": -24.5,
+        "Fat": -37.0,
+        "Carbs": 363.0
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Tom (Shrimp)",
+      "serving_size_g": 100,
+      "calc_per100": {
+        "Calories": 90.0,
+        "Protein": 18.4,
+        "Fat": 1.8,
+        "Carbs": 0.0
+      },
+      "tdgd_match": "Tôm đồng",
+      "tdgd": {
+        "energy": 90.0,
+        "protein": 18.4,
+        "fat": 1.8,
+        "carbs": 0.0
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.0,
+        "Fat": 0.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Trung (Egg)",
+      "serving_size_g": 50,
+      "calc_per100": {
+        "Calories": 150.0,
+        "Protein": 13.0,
+        "Fat": 10.3,
+        "Carbs": 1.2
+      },
+      "tdgd_match": "Trứng gà ta (35g/quả)",
+      "tdgd": {
+        "energy": 150.0,
+        "protein": 12.96,
+        "fat": 10.33,
+        "carbs": 1.25
+      },
+      "deviation_pct": {
+        "Calories": 0.0,
+        "Protein": 0.3,
+        "Fat": -0.3,
+        "Carbs": -4.0
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Xoi (Sticky rice)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 195,
+        "Protein": 4.2,
+        "Fat": 2.5,
+        "Carbs": 39
+      },
+      "tdgd_match": "Xôi gấc",
+      "tdgd": {
+        "energy": 231.0,
+        "protein": 3.1,
+        "fat": 0.8,
+        "carbs": 52.9
+      },
+      "deviation_pct": {
+        "Calories": -15.6,
+        "Protein": 35.5,
+        "Fat": 212.5,
+        "Carbs": -26.3
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Banh beo (Vietnamese savory steamed rice cake)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 120,
+        "Protein": 3.8,
+        "Fat": 3.5,
+        "Carbs": 18
+      },
+      "tdgd_match": "Bánh bèo",
+      "tdgd": {
+        "energy": 118.0,
+        "protein": 1.8,
+        "fat": 4.2,
+        "carbs": 18.15
+      },
+      "deviation_pct": {
+        "Calories": 1.7,
+        "Protein": 111.1,
+        "Fat": -16.7,
+        "Carbs": -0.8
+      },
+      "verdict": "match"
+    },
+    {
+      "class": "Cao lau (Cao lau noodles)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 135,
+        "Protein": 6.8,
+        "Fat": 4.5,
+        "Carbs": 17
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Mi Quang (Quang-style noodles)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 130,
+        "Protein": 6,
+        "Fat": 4.8,
+        "Carbs": 16
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Com chien duong chau (Yangzhou fried rice)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 175,
+        "Protein": 4.5,
+        "Fat": 6.5,
+        "Carbs": 25
+      },
+      "tdgd_match": "Cơm rang",
+      "tdgd": {
+        "energy": 198.0,
+        "protein": 6.0,
+        "fat": 9.65,
+        "carbs": 21.85
+      },
+      "deviation_pct": {
+        "Calories": -11.6,
+        "Protein": -25.0,
+        "Fat": -32.6,
+        "Carbs": 14.4
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Bun cha ca (Fish cake noodle soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 95,
+        "Protein": 5.5,
+        "Fat": 3.2,
+        "Carbs": 11
+      },
+      "tdgd_match": "Bún chả",
+      "tdgd": {
+        "energy": 136.0,
+        "protein": 6.1,
+        "fat": 4.4,
+        "carbs": 17.9
+      },
+      "deviation_pct": {
+        "Calories": -30.1,
+        "Protein": -9.8,
+        "Fat": -27.3,
+        "Carbs": -38.5
+      },
+      "verdict": "variant"
+    },
+    {
+      "class": "Com chien ga (Fried rice with chicken)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 180,
+        "Protein": 6.5,
+        "Fat": 6.8,
+        "Carbs": 23
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Chao long (Pork organ congee)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 80,
+        "Protein": 4.5,
+        "Fat": 2.8,
+        "Carbs": 9.5
+      },
+      "tdgd_match": "Cháo lòng",
+      "tdgd": {
+        "energy": 69.0,
+        "protein": 1.4,
+        "fat": 4.4,
+        "carbs": 6.0
+      },
+      "deviation_pct": {
+        "Calories": 15.9,
+        "Protein": 221.4,
+        "Fat": -36.4,
+        "Carbs": 58.3
+      },
+      "verdict": "review"
+    },
+    {
+      "class": "Nom hoa chuoi (Banana blossom salad)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 65,
+        "Protein": 2.5,
+        "Fat": 3,
+        "Carbs": 7
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Nui xao bo (Stir-fried macaroni with beef)",
+      "serving_size_g": 150,
+      "calc_per100": {
+        "Calories": 160,
+        "Protein": 7.5,
+        "Fat": 6,
+        "Carbs": 19
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    },
+    {
+      "class": "Sup cua (Crab soup)",
+      "serving_size_g": 450,
+      "calc_per100": {
+        "Calories": 70,
+        "Protein": 4.5,
+        "Fat": 2,
+        "Carbs": 8.5
+      },
+      "tdgd_match": null,
+      "tdgd": null,
+      "deviation_pct": {},
+      "verdict": "no_tdgd_reference"
+    }
+  ],
+  "serving_consistency_issues": []
+}

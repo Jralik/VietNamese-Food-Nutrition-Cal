@@ -63,7 +63,7 @@ def process_job(job: dict, pipeline) -> dict:
         # Invalidate cached segmenter if backend changed dynamically
         if hasattr(pipeline, "_segmenter") and pipeline._segmenter is not None:
             current_cls = type(pipeline._segmenter).__name__
-            expected_cls = "FoodSAMSegmenter" if backend == "foodsam" else "SAM2Segmenter"
+            expected_cls = {"foodsam": "FoodSAMSegmenter", "mobilesam": "MobileSAMSegmenter"}.get(backend, "SAM2Segmenter")
             if current_cls != expected_cls:
                 logger.info(f"Switching segmenter from {current_cls} to {expected_cls}")
                 pipeline._segmenter = None

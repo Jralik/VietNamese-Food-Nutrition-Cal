@@ -34,6 +34,16 @@ Khóa luận: **hệ thống nhận diện món ăn Việt Nam và ước lượ
 
 > ⚠️ **Disclaimer y tế**: Hệ thống chỉ hỗ trợ tham khảo, KHÔNG thay thế chẩn đoán/ tư vấn của bác sĩ hay chuyên gia dinh dưỡng. Khối lượng ước lượng có sai số MAPE ≈ 45% trên tập đánh giá thực tế và thay đổi mạnh theo món (6% – 200%); không dùng con số này cho chế độ ăn trị liệu.
 
+## 📚 Nguồn dữ liệu dinh dưỡng (authoritative sources)
+
+| Nguồn | Vai trò | Kênh |
+|---|---|---|
+| Bảng TPTP Việt Nam 2017 — Viện Dinh dưỡng Quốc gia | SSOT dinh dưỡng 68 món | [viendinhduong.vn](https://viendinhduong.vn/) — tool [món ăn](https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-mon-an) / [thực phẩm](https://viendinhduong.vn/vi/cong-cu-va-tien-ich/gia-tri-dinh-duong-thuc-pham) |
+| Bảng TPTP VN — Viện NC Dinh dưỡng TP.HCM | Nguồn đối chiếu độc lập | [thucdongiadinh.vn](https://thucdongiadinh.vn/app/main/dashboard) — tool [thành phần TP](https://thucdongiadinh.vn/app/tra-cuu/thanh-phan-dinh-duong-thuc-pham) / [hàm lượng theo lượng](https://thucdongiadinh.vn/app/tra-cuu/ham-luong-theo-luong-tp) |
+| USDA FoodData Central | Tham chiếu commodity | [fdc.nal.usda.gov](https://fdc.nal.usda.gov/) |
+
+Kiểm chứng + sửa lỗi (2026-09-28, [`data/source_crosscheck_report.md`](data/source_crosscheck_report.md)): (1) các lớp nguyên liệu khớp **0.0%** giữa hai cổng VN; (2) audit **trực tiếp đầu vào tính toán** (`class_names` per-100g × khối lượng ước lượng): **27 match / 8 variant / 5 variant-công-thức / 28 chưa có dòng tương đương**; (3) 67/67 giá trị mật độ đạt trần Choi–Okos (**0 cờ**); (4) projection SSOT nhất quán 100%. **Lỗi đã sửa** (bằng chứng nguồn trong báo cáo): `Trung (Egg)` map nhầm trái cây canistel → "Trứng gà ta"; `Bo kho` map nhầm "Bánh mỳ sốt vang" → "Thịt bò kho"; 17 lớp nguyên liệu align macro về đúng dòng Bảng TPTP VN 2017; **12 bản ghi món NIN bị chuẩn hóa khẩu phần sai đã tính lại per-100g + vi chất** từ khẩu phần thật suy ra bằng mốc nguồn (vd. Bánh cuốn 440→129 kcal/100g, Lẩu 579→90, Phô mai 58→349 — `scripts/fix_serving_sizes.py`, idempotent). Giữ nguyên (không có bản ghi uy tín thay thế): `Mi` (khô vs nấu chín), `Gỏi cuốn` (không có bản ghi NIN/TDGD). Đồng bộ + audit: `python scripts/sync_nin_data.py && python scripts/sync_tdgd_data.py && python scripts/crosscheck_sources.py`.
+
 ## 🌐 Live Demo
 
 👉 [https://vietnamese-food-nutrition-cal.streamlit.app/](https://vietnamese-food-nutrition-cal.streamlit.app/)

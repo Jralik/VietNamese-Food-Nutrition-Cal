@@ -1,0 +1,8494 @@
+{
+  "Banh Canh 1.jpg": {
+    "detect_ms": 4166.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          318.89,
+          474.25,
+          1756.27,
+          1792.94
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9829
+      }
+    ]
+  },
+  "Banh Canh 2.jpg": {
+    "detect_ms": 1388.56,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          329.98,
+          511.04,
+          1755.27,
+          1812.1
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9821
+      }
+    ]
+  },
+  "Banh Canh 3.jpg": {
+    "detect_ms": 1400.92,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          240.5,
+          484.03,
+          1670.34,
+          1499.69
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9796
+      }
+    ]
+  },
+  "Banh Canh 4.jpg": {
+    "detect_ms": 1490.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          195.52,
+          329.13,
+          1665.57,
+          1364.74
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9837
+      }
+    ]
+  },
+  "Banh Canh 5.jpg": {
+    "detect_ms": 1896.31,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          190.0,
+          355.38,
+          1744.06,
+          1769.76
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.982
+      }
+    ]
+  },
+  "Banh Canh 6.jpg": {
+    "detect_ms": 1736.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          271.77,
+          270.39,
+          1739.0,
+          1196.07
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9774
+      }
+    ]
+  },
+  "Banh Canh 7.jpg": {
+    "detect_ms": 1449.95,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          187.36,
+          715.5,
+          1765.4,
+          2267.24
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9817
+      }
+    ]
+  },
+  "Banh Canh 8.jpg": {
+    "detect_ms": 1419.91,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          174.48,
+          787.38,
+          1726.4,
+          2298.41
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9767
+      }
+    ]
+  },
+  "Banh Trang 1_Loai_3.jpg": {
+    "detect_ms": 1428.13,
+    "preds": []
+  },
+  "Banh Trang 2_Loai_3.jpg": {
+    "detect_ms": 1496.46,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          289.77,
+          783.22,
+          1467.46,
+          1578.63
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.5069
+      }
+    ]
+  },
+  "Banh beo 1.jpg": {
+    "detect_ms": 1432.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          494.72,
+          1154.3,
+          1732.72,
+          1832.12
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.9171
+      }
+    ]
+  },
+  "Banh beo 10.jpg": {
+    "detect_ms": 1467.26,
+    "preds": []
+  },
+  "Banh beo 2.jpg": {
+    "detect_ms": 1434.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          494.06,
+          1198.53,
+          1750.82,
+          1939.85
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8242
+      }
+    ]
+  },
+  "Banh beo 3.jpg": {
+    "detect_ms": 1385.42,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          585.54,
+          598.62,
+          1705.93,
+          1297.14
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8719
+      }
+    ]
+  },
+  "Banh beo 4.jpg": {
+    "detect_ms": 1445.95,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          584.5,
+          400.56,
+          1922.11,
+          1272.14
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.7024
+      }
+    ]
+  },
+  "Banh beo 5.jpg": {
+    "detect_ms": 1401.7,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          568.24,
+          602.78,
+          1757.43,
+          1383.31
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8604
+      }
+    ]
+  },
+  "Banh beo 6.jpg": {
+    "detect_ms": 1523.95,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          582.83,
+          1179.16,
+          1729.16,
+          1892.49
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8906
+      }
+    ]
+  },
+  "Banh beo 8.jpg": {
+    "detect_ms": 1426.43,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          461.49,
+          1272.29,
+          1696.47,
+          1796.65
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8944
+      }
+    ]
+  },
+  "Banh beo 9.jpg": {
+    "detect_ms": 1506.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          567.09,
+          1003.12,
+          1747.55,
+          1660.86
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8964
+      }
+    ]
+  },
+  "Banh trang 4.jpg": {
+    "detect_ms": 1392.75,
+    "preds": []
+  },
+  "BanhCuon2 (1).jpg": {
+    "detect_ms": 1505.88,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          753.62,
+          1363.54,
+          1640.78,
+          2871.65
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.9474
+      }
+    ]
+  },
+  "BanhCuon2 (2).jpg": {
+    "detect_ms": 1430.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          748.07,
+          1382.17,
+          1637.29,
+          2889.89
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.9522
+      }
+    ]
+  },
+  "BanhCuon2 (3).jpg": {
+    "detect_ms": 1463.8,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1426.64,
+          212.02,
+          2798.64,
+          919.58
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.9219
+      }
+    ]
+  },
+  "BanhCuon2 (4).jpg": {
+    "detect_ms": 1430.8,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1704.73,
+          183.63,
+          2889.61,
+          1064.7
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.9387
+      }
+    ]
+  },
+  "BanhCuon2 (5).jpg": {
+    "detect_ms": 1426.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1057.95,
+          159.43,
+          2213.41,
+          1641.1
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.8137
+      },
+      {
+        "bbox_xyxy": [
+          1612.72,
+          156.59,
+          2136.29,
+          441.68
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.546
+      }
+    ]
+  },
+  "BanhCuon2 (6).jpg": {
+    "detect_ms": 1452.9,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1251.37,
+          311.71,
+          2574.21,
+          967.41
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.9154
+      }
+    ]
+  },
+  "BanhCuon2 (7).jpg": {
+    "detect_ms": 1452.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1261.23,
+          409.01,
+          2464.69,
+          1013.45
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.7211
+      },
+      {
+        "bbox_xyxy": [
+          1216.22,
+          59.49,
+          2487.52,
+          1015.14
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.355
+      }
+    ]
+  },
+  "BanhCuon2 (8).jpg": {
+    "detect_ms": 1508.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1000.28,
+          230.29,
+          2108.52,
+          1657.19
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.7035
+      },
+      {
+        "bbox_xyxy": [
+          1531.07,
+          217.17,
+          2030.45,
+          510.24
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.6279
+      },
+      {
+        "bbox_xyxy": [
+          1376.54,
+          577.87,
+          2100.21,
+          1608.55
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.4447
+      }
+    ]
+  },
+  "BanhCuon2 (9).jpg": {
+    "detect_ms": 1462.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1067.81,
+          128.42,
+          2250.68,
+          1163.53
+        ],
+        "class_id": 2,
+        "class_name": "Banh cuon (Rolled rice pancake)",
+        "short_class": "Banh cuon",
+        "confidence": 0.8006
+      }
+    ]
+  },
+  "BanhKhot1(1).jpg": {
+    "detect_ms": 1435.94,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          669.19,
+          12.41,
+          2231.45,
+          1076.37
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9756
+      }
+    ]
+  },
+  "BanhKhot1(2).jpg": {
+    "detect_ms": 1444.47,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1000.24,
+          127.18,
+          2456.91,
+          1099.44
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9735
+      }
+    ]
+  },
+  "BanhKhot1(3).jpg": {
+    "detect_ms": 1461.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1206.05,
+          83.45,
+          2850.69,
+          1476.77
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9871
+      }
+    ]
+  },
+  "BanhKhot1(4).jpg": {
+    "detect_ms": 1446.22,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1307.6,
+          9.82,
+          2893.96,
+          1587.95
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9879
+      }
+    ]
+  },
+  "BanhKhot1(5).jpg": {
+    "detect_ms": 1424.01,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1441.52,
+          154.59,
+          2882.43,
+          1650.2
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9857
+      },
+      {
+        "bbox_xyxy": [
+          3388.94,
+          24.28,
+          4000.0,
+          1325.65
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.4841
+      }
+    ]
+  },
+  "BanhKhot1(6).jpg": {
+    "detect_ms": 1586.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1634.27,
+          241.0,
+          2978.17,
+          1723.51
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9831
+      }
+    ]
+  },
+  "BanhKhot1(7).jpg": {
+    "detect_ms": 1395.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1086.22,
+          202.47,
+          2609.7,
+          1709.92
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9887
+      }
+    ]
+  },
+  "BanhMiDucTri (1).jpg": {
+    "detect_ms": 1425.7,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          701.7,
+          63.3,
+          2590.14,
+          1205.47
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9694
+      },
+      {
+        "bbox_xyxy": [
+          711.43,
+          52.3,
+          2598.73,
+          648.55
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.8836
+      }
+    ]
+  },
+  "BanhMiDucTri (2).jpg": {
+    "detect_ms": 1496.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          538.07,
+          866.08,
+          1547.38,
+          2647.41
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9766
+      }
+    ]
+  },
+  "BanhMiDucTri (3).jpg": {
+    "detect_ms": 1496.75,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          992.11,
+          484.74,
+          2611.14,
+          1368.08
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9674
+      }
+    ]
+  },
+  "BanhMi_Trung (1).jpg": {
+    "detect_ms": 1471.45,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          501.54,
+          77.07,
+          1343.91,
+          1022.41
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9555
+      },
+      {
+        "bbox_xyxy": [
+          1227.11,
+          523.64,
+          1827.11,
+          1058.2
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.701
+      },
+      {
+        "bbox_xyxy": [
+          2222.06,
+          337.7,
+          3334.76,
+          1399.26
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.4082
+      }
+    ]
+  },
+  "BanhMi_Trung (2).jpg": {
+    "detect_ms": 1463.21,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2826.44,
+          712.78,
+          3607.84,
+          1742.26
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9396
+      },
+      {
+        "bbox_xyxy": [
+          2301.85,
+          603.78,
+          2881.63,
+          1184.13
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.7894
+      }
+    ]
+  },
+  "BanhMi_Trung (3).jpg": {
+    "detect_ms": 1417.84,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          3195.31,
+          566.79,
+          3898.15,
+          1587.99
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.8992
+      },
+      {
+        "bbox_xyxy": [
+          2804.59,
+          598.18,
+          3296.38,
+          1189.68
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.3201
+      },
+      {
+        "bbox_xyxy": [
+          924.94,
+          431.91,
+          2300.28,
+          1735.47
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.719
+      }
+    ]
+  },
+  "BanhMi_Trung (4).jpg": {
+    "detect_ms": 1455.58,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          869.06,
+          113.95,
+          1722.75,
+          1376.32
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9711
+      },
+      {
+        "bbox_xyxy": [
+          1645.43,
+          685.79,
+          2275.87,
+          1322.69
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9534
+      }
+    ]
+  },
+  "BanhTranTron1(4).jpg": {
+    "detect_ms": 1441.69,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          713.93,
+          224.91,
+          2182.09,
+          1693.39
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9614
+      }
+    ]
+  },
+  "BanhTrangTron1(1).jpg": {
+    "detect_ms": 1422.62,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          120.62,
+          1119.0,
+          1665.38,
+          2660.3
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.964
+      }
+    ]
+  },
+  "BanhTrangTron1(2).jpg": {
+    "detect_ms": 1468.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          194.21,
+          1377.27,
+          1660.55,
+          2642.8
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9659
+      }
+    ]
+  },
+  "BanhTrangTron1(3).jpg": {
+    "detect_ms": 1423.06,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1295.97,
+          281.88,
+          2814.19,
+          1423.32
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9601
+      }
+    ]
+  },
+  "BanhTrangTron2(1).jpg": {
+    "detect_ms": 1423.01,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          886.83,
+          196.17,
+          2349.61,
+          1768.57
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9494
+      }
+    ]
+  },
+  "BanhTrangTron2(2).jpg": {
+    "detect_ms": 1580.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1393.18,
+          95.25,
+          2813.82,
+          1738.42
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9721
+      }
+    ]
+  },
+  "BanhTrangTron2(3).jpg": {
+    "detect_ms": 1433.24,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1467.76,
+          193.26,
+          2632.67,
+          1667.92
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.9609
+      }
+    ]
+  },
+  "BanhTrangTron2(4).jpg": {
+    "detect_ms": 1445.14,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1197.29,
+          156.99,
+          2838.16,
+          1704.28
+        ],
+        "class_id": 6,
+        "class_name": "Banh trang tron (Rice paper salad)",
+        "short_class": "Banh trang tron",
+        "confidence": 0.963
+      }
+    ]
+  },
+  "BanhXeo(1).jpg": {
+    "detect_ms": 1455.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1758.4,
+          250.81,
+          3386.93,
+          1631.11
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9826
+      }
+    ]
+  },
+  "BanhXeo(2).jpg": {
+    "detect_ms": 1433.45,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1611.3,
+          309.1,
+          3332.73,
+          1658.63
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9808
+      }
+    ]
+  },
+  "BanhXeo(3).jpg": {
+    "detect_ms": 1447.5,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1645.2,
+          273.89,
+          3307.37,
+          1617.02
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9795
+      }
+    ]
+  },
+  "BanhXeo-BanhTrang1(1).jpg": {
+    "detect_ms": 1438.15,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          71.84,
+          1926.27,
+          639.74,
+          2729.95
+        ],
+        "class_id": 5,
+        "class_name": "Banh trang (Rice paper)",
+        "short_class": "Banh trang",
+        "confidence": 0.7523
+      },
+      {
+        "bbox_xyxy": [
+          745.54,
+          1237.71,
+          1761.81,
+          3125.3
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9831
+      }
+    ]
+  },
+  "BanhXeo-Rau-BanhTrang1(1).jpg": {
+    "detect_ms": 1423.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2188.03,
+          308.39,
+          2825.42,
+          774.1
+        ],
+        "class_id": 5,
+        "class_name": "Banh trang (Rice paper)",
+        "short_class": "Banh trang",
+        "confidence": 0.9357
+      },
+      {
+        "bbox_xyxy": [
+          1344.42,
+          858.06,
+          2753.96,
+          1659.1
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9718
+      },
+      {
+        "bbox_xyxy": [
+          772.28,
+          0.38,
+          1994.25,
+          1043.44
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.7903
+      }
+    ]
+  },
+  "BanhXeo-Rau-BanhTrang1(2).jpg": {
+    "detect_ms": 1480.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          419.56,
+          563.71,
+          1145.28,
+          1258.82
+        ],
+        "class_id": 5,
+        "class_name": "Banh trang (Rice paper)",
+        "short_class": "Banh trang",
+        "confidence": 0.9584
+      },
+      {
+        "bbox_xyxy": [
+          74.39,
+          1335.66,
+          1734.71,
+          2240.76
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9774
+      },
+      {
+        "bbox_xyxy": [
+          35.97,
+          2330.86,
+          1589.11,
+          3585.65
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.7416
+      }
+    ]
+  },
+  "BanhXeo-Rau-BanhTrang1(3).jpg": {
+    "detect_ms": 1644.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2222.3,
+          286.12,
+          2978.57,
+          1006.06
+        ],
+        "class_id": 5,
+        "class_name": "Banh trang (Rice paper)",
+        "short_class": "Banh trang",
+        "confidence": 0.8701
+      },
+      {
+        "bbox_xyxy": [
+          1041.15,
+          0.0,
+          2135.07,
+          1796.98
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.98
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          2.09,
+          884.97,
+          1593.87
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.8283
+      }
+    ]
+  },
+  "BanhXeo-Rau-BanhTrang1(4).jpg": {
+    "detect_ms": 1415.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2592.36,
+          355.82,
+          3312.07,
+          1040.68
+        ],
+        "class_id": 5,
+        "class_name": "Banh trang (Rice paper)",
+        "short_class": "Banh trang",
+        "confidence": 0.9466
+      },
+      {
+        "bbox_xyxy": [
+          1554.9,
+          103.71,
+          2542.45,
+          1746.54
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9777
+      },
+      {
+        "bbox_xyxy": [
+          148.52,
+          17.32,
+          1467.96,
+          1588.81
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.6749
+      }
+    ]
+  },
+  "BanhXeo1(1).jpg": {
+    "detect_ms": 1461.57,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          490.12,
+          957.49,
+          1613.53,
+          3071.23
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9861
+      }
+    ]
+  },
+  "BanhXeo1(2)(1).jpg": {
+    "detect_ms": 1432.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          410.8,
+          677.02,
+          1708.19,
+          2956.88
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9829
+      }
+    ]
+  },
+  "BanhXeo1(2)(2).jpg": {
+    "detect_ms": 1446.92,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          696.72,
+          74.89,
+          3178.22,
+          1203.32
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9837
+      }
+    ]
+  },
+  "BanhXeo1(2).jpg": {
+    "detect_ms": 1428.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          894.55,
+          66.57,
+          3332.12,
+          1330.68
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9855
+      }
+    ]
+  },
+  "BanhXeo2(1).jpg": {
+    "detect_ms": 1425.83,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1555.22,
+          19.47,
+          2801.46,
+          1399.07
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9627
+      }
+    ]
+  },
+  "BanhXeo2(2).jpg": {
+    "detect_ms": 1457.97,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1198.42,
+          34.48,
+          2676.16,
+          1464.23
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9613
+      }
+    ]
+  },
+  "BanhXeo2(3).jpg": {
+    "detect_ms": 1454.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          82.93,
+          1586.5,
+          1417.06,
+          2691.54
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9697
+      }
+    ]
+  },
+  "BanhXeo2(4).jpg": {
+    "detect_ms": 1529.79,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          44.75,
+          1597.61,
+          1261.93,
+          2694.99
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9769
+      },
+      {
+        "bbox_xyxy": [
+          713.55,
+          3449.07,
+          1782.02,
+          3999.57
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.4361
+      }
+    ]
+  },
+  "BanhXeo2(5).jpg": {
+    "detect_ms": 1463.51,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          954.93,
+          85.4,
+          2680.08,
+          1418.35
+        ],
+        "class_id": 7,
+        "class_name": "Banh xeo (Vietnamese sizzling pancake)",
+        "short_class": "Banh xeo",
+        "confidence": 0.9733
+      },
+      {
+        "bbox_xyxy": [
+          0.8,
+          0.44,
+          1036.55,
+          373.62
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5668
+      }
+    ]
+  },
+  "BoKho1(1).jpg": {
+    "detect_ms": 1423.53,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          102.2,
+          1404.43,
+          872.27,
+          2025.55
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9576
+      },
+      {
+        "bbox_xyxy": [
+          893.46,
+          1647.18,
+          1652.03,
+          2418.73
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9352
+      },
+      {
+        "bbox_xyxy": [
+          266.35,
+          2186.48,
+          1199.7,
+          3328.05
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5903
+      }
+    ]
+  },
+  "BoKho1(2).jpg": {
+    "detect_ms": 1448.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          946.11,
+          1698.54,
+          1783.12,
+          2403.66
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9583
+      },
+      {
+        "bbox_xyxy": [
+          6.71,
+          1358.77,
+          879.36,
+          2136.56
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9129
+      },
+      {
+        "bbox_xyxy": [
+          491.17,
+          566.52,
+          1538.19,
+          1557.92
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.7524
+      }
+    ]
+  },
+  "BoKho1(3).jpg": {
+    "detect_ms": 1432.12,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1199.93,
+          1657.13,
+          1800.0,
+          2500.67
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.86
+      },
+      {
+        "bbox_xyxy": [
+          115.34,
+          1804.97,
+          983.15,
+          2580.06
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.7298
+      },
+      {
+        "bbox_xyxy": [
+          194.57,
+          1106.89,
+          1278.84,
+          1778.24
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.7225
+      }
+    ]
+  },
+  "BoKho1(4).jpg": {
+    "detect_ms": 1384.48,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1141.3,
+          1971.63,
+          1780.82,
+          2903.56
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9476
+      },
+      {
+        "bbox_xyxy": [
+          106.31,
+          2145.94,
+          975.22,
+          3060.86
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.4756
+      },
+      {
+        "bbox_xyxy": [
+          106.96,
+          1102.16,
+          1331.58,
+          2109.43
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.8748
+      }
+    ]
+  },
+  "BoKho2(1).jpg": {
+    "detect_ms": 1387.37,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1045.39,
+          493.32,
+          1861.4,
+          1617.83
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9239
+      },
+      {
+        "bbox_xyxy": [
+          2045.61,
+          375.36,
+          3135.93,
+          1480.54
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9834
+      }
+    ]
+  },
+  "BoKho2(2).jpg": {
+    "detect_ms": 1431.66,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1316.78,
+          592.25,
+          2015.0,
+          1611.95
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9776
+      },
+      {
+        "bbox_xyxy": [
+          2159.83,
+          374.61,
+          3278.64,
+          1546.04
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9823
+      }
+    ]
+  },
+  "BoKho2(3).jpg": {
+    "detect_ms": 1405.58,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2054.39,
+          180.46,
+          2773.03,
+          854.23
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9688
+      },
+      {
+        "bbox_xyxy": [
+          1880.97,
+          888.06,
+          2735.26,
+          1710.42
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9683
+      },
+      {
+        "bbox_xyxy": [
+          559.42,
+          257.63,
+          1789.8,
+          1191.03
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.8965
+      }
+    ]
+  },
+  "BoKho2(4).jpg": {
+    "detect_ms": 1398.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2094.02,
+          160.4,
+          2749.85,
+          918.59
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9348
+      },
+      {
+        "bbox_xyxy": [
+          1804.77,
+          932.19,
+          2586.42,
+          1703.98
+        ],
+        "class_id": 8,
+        "class_name": "Bo kho (Beef stew)",
+        "short_class": "Bo kho",
+        "confidence": 0.9677
+      },
+      {
+        "bbox_xyxy": [
+          939.07,
+          217.75,
+          1075.14,
+          350.27
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.3176
+      },
+      {
+        "bbox_xyxy": [
+          595.91,
+          144.22,
+          1819.72,
+          1067.84
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.9162
+      }
+    ]
+  },
+  "BoLaLot(8).jpg": {
+    "detect_ms": 1657.54,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          209.85,
+          1150.03,
+          1449.51,
+          2380.53
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.957
+      }
+    ]
+  },
+  "BoLaLot-BanhKhot1(1).jpg": {
+    "detect_ms": 1402.17,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          562.53,
+          2210.79,
+          1343.83,
+          3381.64
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9718
+      },
+      {
+        "bbox_xyxy": [
+          415.82,
+          1322.03,
+          1126.24,
+          1984.14
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9555
+      }
+    ]
+  },
+  "BoLaLot-BanhKhot1(2).jpg": {
+    "detect_ms": 1422.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          346.58,
+          284.7,
+          1725.03,
+          1161.57
+        ],
+        "class_id": 3,
+        "class_name": "Banh khot (Mini savory pancakes)",
+        "short_class": "Banh khot",
+        "confidence": 0.9702
+      },
+      {
+        "bbox_xyxy": [
+          1985.78,
+          250.42,
+          2772.84,
+          992.01
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.96
+      }
+    ]
+  },
+  "BoLaLot1(1).jpg": {
+    "detect_ms": 1403.15,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1571.61,
+          373.42,
+          2514.58,
+          1298.45
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9696
+      }
+    ]
+  },
+  "BoLaLot1(2).jpg": {
+    "detect_ms": 1410.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1040.53,
+          366.05,
+          2366.78,
+          1550.44
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9871
+      }
+    ]
+  },
+  "BoLaLot1(3).jpg": {
+    "detect_ms": 1459.93,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1010.11,
+          299.78,
+          2083.38,
+          1502.0
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.977
+      }
+    ]
+  },
+  "BoLaLot1(4).jpg": {
+    "detect_ms": 1406.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1063.01,
+          442.23,
+          2421.6,
+          1656.81
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.99
+      }
+    ]
+  },
+  "BoLaLot1(5).jpg": {
+    "detect_ms": 1432.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1153.53,
+          458.62,
+          2507.08,
+          1576.11
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9791
+      }
+    ]
+  },
+  "BoLaLot1(7).jpg": {
+    "detect_ms": 1415.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1575.16,
+          186.91,
+          2748.2,
+          1337.0
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9802
+      }
+    ]
+  },
+  "BolaLot1(6).jpg": {
+    "detect_ms": 1537.4,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1144.28,
+          476.0,
+          2527.96,
+          1646.01
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.9884
+      }
+    ]
+  },
+  "BongCai(1).jpg": {
+    "detect_ms": 1494.58,
+    "preds": []
+  },
+  "BongCai(2).jpg": {
+    "detect_ms": 1459.05,
+    "preds": []
+  },
+  "BongCai(3).jpg": {
+    "detect_ms": 1373.35,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1342.04,
+          499.45,
+          2442.43,
+          1342.09
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.3325
+      }
+    ]
+  },
+  "BongCai(4).jpg": {
+    "detect_ms": 1439.02,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1202.48,
+          432.72,
+          2285.35,
+          1458.15
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.3111
+      }
+    ]
+  },
+  "Bun 3.jpg": {
+    "detect_ms": 1389.18,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          713.55,
+          810.2,
+          1734.21,
+          1847.9
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9582
+      }
+    ]
+  },
+  "Bun 4.jpg": {
+    "detect_ms": 1363.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          662.54,
+          613.43,
+          1646.54,
+          1649.05
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9641
+      }
+    ]
+  },
+  "Bun 5.jpg": {
+    "detect_ms": 1357.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          353.58,
+          475.49,
+          1526.93,
+          1521.66
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9718
+      }
+    ]
+  },
+  "Bun 6.jpg": {
+    "detect_ms": 1400.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          457.38,
+          647.23,
+          1559.26,
+          1727.17
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.966
+      }
+    ]
+  },
+  "Bun 7.jpg": {
+    "detect_ms": 1420.78,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          439.24,
+          715.42,
+          1559.29,
+          1648.07
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9608
+      }
+    ]
+  },
+  "Bun 8.jpg": {
+    "detect_ms": 1364.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          685.42,
+          547.84,
+          1738.89,
+          1611.23
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9699
+      }
+    ]
+  },
+  "Bun Cha Ca 1.jpg": {
+    "detect_ms": 1397.82,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          307.75,
+          782.23,
+          1613.47,
+          2111.75
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9807
+      }
+    ]
+  },
+  "Bun Cha Ca 2.jpg": {
+    "detect_ms": 1387.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          290.14,
+          437.61,
+          1489.91,
+          1572.53
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9428
+      }
+    ]
+  },
+  "Bun Cha Ca 3.jpg": {
+    "detect_ms": 1391.03,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          299.29,
+          427.8,
+          1681.58,
+          1496.27
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9773
+      }
+    ]
+  },
+  "Bun Cha Ca 4.jpg": {
+    "detect_ms": 1414.92,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          297.27,
+          415.2,
+          1533.84,
+          1516.26
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.983
+      }
+    ]
+  },
+  "Bun Cha Ca 5.jpg": {
+    "detect_ms": 1394.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          234.41,
+          322.85,
+          1685.4,
+          1447.07
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9834
+      }
+    ]
+  },
+  "Bun Dau 1.jpg": {
+    "detect_ms": 1388.45,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          912.07,
+          895.87,
+          1510.6,
+          1430.73
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9401
+      },
+      {
+        "bbox_xyxy": [
+          112.38,
+          891.6,
+          913.63,
+          1376.98
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.5345
+      },
+      {
+        "bbox_xyxy": [
+          138.3,
+          884.17,
+          1507.81,
+          1846.56
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.4601
+      }
+    ]
+  },
+  "Bun Dau 2.jpg": {
+    "detect_ms": 1526.49,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          855.3,
+          925.3,
+          1476.99,
+          1475.64
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9424
+      },
+      {
+        "bbox_xyxy": [
+          17.92,
+          929.31,
+          837.42,
+          1430.25
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.588
+      },
+      {
+        "bbox_xyxy": [
+          66.17,
+          908.25,
+          1480.95,
+          1931.89
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.3913
+      }
+    ]
+  },
+  "Bun Dau 3.jpg": {
+    "detect_ms": 1573.74,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1053.94,
+          353.48,
+          1745.33,
+          932.3
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8863
+      },
+      {
+        "bbox_xyxy": [
+          255.46,
+          828.29,
+          1149.43,
+          1368.43
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.6051
+      },
+      {
+        "bbox_xyxy": [
+          191.91,
+          337.13,
+          1746.02,
+          1366.85
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.388
+      },
+      {
+        "bbox_xyxy": [
+          147.86,
+          339.29,
+          1084.68,
+          779.97
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.3573
+      }
+    ]
+  },
+  "Bun Dau 4.jpg": {
+    "detect_ms": 1550.72,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1051.86,
+          474.63,
+          1763.34,
+          1006.71
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8959
+      },
+      {
+        "bbox_xyxy": [
+          247.29,
+          919.96,
+          1170.53,
+          1474.91
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.5376
+      },
+      {
+        "bbox_xyxy": [
+          204.91,
+          465.35,
+          1766.17,
+          1473.55
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.3322
+      }
+    ]
+  },
+  "Bun Dau 5.jpg": {
+    "detect_ms": 1396.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1060.25,
+          383.82,
+          1758.44,
+          971.14
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.7589
+      },
+      {
+        "bbox_xyxy": [
+          238.62,
+          866.01,
+          1154.36,
+          1413.63
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.5252
+      }
+    ]
+  },
+  "Bun Dau 6.jpg": {
+    "detect_ms": 1353.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1057.69,
+          718.59,
+          1770.82,
+          1318.88
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8938
+      },
+      {
+        "bbox_xyxy": [
+          198.43,
+          704.61,
+          1771.2,
+          1781.21
+        ],
+        "class_id": 14,
+        "class_name": "Bun dau (Vermicelli with tofu)",
+        "short_class": "Bun dau",
+        "confidence": 0.3423
+      },
+      {
+        "bbox_xyxy": [
+          221.5,
+          1221.41,
+          1169.53,
+          1792.01
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.3553
+      }
+    ]
+  },
+  "Bun bo 2.jpg": {
+    "detect_ms": 1403.51,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          309.79,
+          806.91,
+          1609.38,
+          2123.22
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9826
+      }
+    ]
+  },
+  "Bun bo 3.jpg": {
+    "detect_ms": 1384.77,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          362.23,
+          825.43,
+          1554.52,
+          2036.97
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9827
+      }
+    ]
+  },
+  "Bun bo 4.jpg": {
+    "detect_ms": 1363.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          380.57,
+          737.57,
+          1579.84,
+          1946.5
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9809
+      }
+    ]
+  },
+  "Bun bo 5.jpg": {
+    "detect_ms": 1546.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          376.56,
+          472.34,
+          1735.89,
+          1308.28
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9729
+      }
+    ]
+  },
+  "Bun bo 6.jpg": {
+    "detect_ms": 1381.69,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          304.79,
+          421.3,
+          1568.36,
+          1621.95
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9804
+      }
+    ]
+  },
+  "Bun bo 8.jpg": {
+    "detect_ms": 1362.89,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          354.83,
+          977.85,
+          1629.85,
+          2248.03
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9792
+      }
+    ]
+  },
+  "Bun bo 9.jpg": {
+    "detect_ms": 1376.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          404.66,
+          587.79,
+          1827.12,
+          1372.8
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9747
+      }
+    ]
+  },
+  "BunBoHue1 (1).jpg": {
+    "detect_ms": 1508.95,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1432.87,
+          650.31,
+          2435.85,
+          1646.94
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9624
+      },
+      {
+        "bbox_xyxy": [
+          2595.59,
+          592.23,
+          3265.02,
+          1270.52
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5159
+      }
+    ]
+  },
+  "BunBoHue1 (2).jpg": {
+    "detect_ms": 1485.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1398.48,
+          275.06,
+          2427.45,
+          1295.67
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9787
+      },
+      {
+        "bbox_xyxy": [
+          635.49,
+          702.86,
+          857.52,
+          847.25
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.3957
+      },
+      {
+        "bbox_xyxy": [
+          522.54,
+          684.56,
+          1228.91,
+          1403.0
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5497
+      }
+    ]
+  },
+  "BunBoHue1 (3).jpg": {
+    "detect_ms": 1481.93,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1510.72,
+          448.32,
+          2410.96,
+          1121.0
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9721
+      },
+      {
+        "bbox_xyxy": [
+          1.13,
+          3.17,
+          797.54,
+          449.14
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.7875
+      },
+      {
+        "bbox_xyxy": [
+          691.49,
+          678.46,
+          1335.54,
+          1229.45
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.387
+      }
+    ]
+  },
+  "BunBoHue1 (4).jpg": {
+    "detect_ms": 1602.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1536.59,
+          335.99,
+          2443.99,
+          1218.76
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9764
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          -0.69,
+          437.58,
+          345.57
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.8431
+      },
+      {
+        "bbox_xyxy": [
+          939.8,
+          655.59,
+          1057.75,
+          756.92
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.4705
+      },
+      {
+        "bbox_xyxy": [
+          739.76,
+          649.85,
+          1383.22,
+          1253.4
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.7158
+      }
+    ]
+  },
+  "BunBoHue1 (5).jpg": {
+    "detect_ms": 1498.35,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1862.58,
+          553.51,
+          2956.08,
+          1640.33
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9759
+      },
+      {
+        "bbox_xyxy": [
+          3015.72,
+          503.9,
+          3712.22,
+          1236.53
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.6357
+      }
+    ]
+  },
+  "BunCha1(1).jpg": {
+    "detect_ms": 1767.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          688.36,
+          222.17,
+          2043.34,
+          1622.92
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9728
+      },
+      {
+        "bbox_xyxy": [
+          2303.21,
+          72.06,
+          3170.04,
+          966.59
+        ],
+        "class_id": 13,
+        "class_name": "Bun cha (Grilled pork with vermicelli)",
+        "short_class": "Bun cha",
+        "confidence": 0.9375
+      }
+    ]
+  },
+  "BunCha2(1).jpg": {
+    "detect_ms": 1522.74,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1455.93,
+          703.61,
+          2599.61,
+          1739.22
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9706
+      },
+      {
+        "bbox_xyxy": [
+          2794.24,
+          426.69,
+          3452.97,
+          1104.48
+        ],
+        "class_id": 13,
+        "class_name": "Bun cha (Grilled pork with vermicelli)",
+        "short_class": "Bun cha",
+        "confidence": 0.9306
+      },
+      {
+        "bbox_xyxy": [
+          607.56,
+          2.91,
+          1860.56,
+          1143.5
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.95
+      }
+    ]
+  },
+  "BunCha2(2).jpg": {
+    "detect_ms": 1441.27,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1169.32,
+          305.2,
+          2372.03,
+          1255.86
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9371
+      },
+      {
+        "bbox_xyxy": [
+          361.23,
+          630.03,
+          1085.93,
+          1279.8
+        ],
+        "class_id": 13,
+        "class_name": "Bun cha (Grilled pork with vermicelli)",
+        "short_class": "Bun cha",
+        "confidence": 0.9122
+      },
+      {
+        "bbox_xyxy": [
+          2087.35,
+          497.98,
+          3527.13,
+          1603.23
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.8775
+      }
+    ]
+  },
+  "BunCha2(3).jpg": {
+    "detect_ms": 1406.37,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1502.51,
+          466.45,
+          2849.44,
+          1653.63
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9506
+      },
+      {
+        "bbox_xyxy": [
+          2967.0,
+          389.45,
+          3742.39,
+          1189.13
+        ],
+        "class_id": 13,
+        "class_name": "Bun cha (Grilled pork with vermicelli)",
+        "short_class": "Bun cha",
+        "confidence": 0.8931
+      },
+      {
+        "bbox_xyxy": [
+          417.12,
+          47.76,
+          1843.22,
+          1240.74
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.9183
+      }
+    ]
+  },
+  "BunMam(1).jpg": {
+    "detect_ms": 1508.64,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          344.65,
+          1202.44,
+          1667.5,
+          2683.17
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9893
+      }
+    ]
+  },
+  "BunMam(2).jpg": {
+    "detect_ms": 1453.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          134.59,
+          1308.69,
+          1441.89,
+          2596.05
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9897
+      }
+    ]
+  },
+  "BunMam(3).jpg": {
+    "detect_ms": 1436.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          383.8,
+          1288.98,
+          1716.19,
+          2682.19
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9901
+      }
+    ]
+  },
+  "BunMam(4).jpg": {
+    "detect_ms": 1446.05,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1354.86,
+          564.36,
+          2464.41,
+          1682.0
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9873
+      },
+      {
+        "bbox_xyxy": [
+          1714.47,
+          1076.69,
+          2096.04,
+          1251.7
+        ],
+        "class_id": 35,
+        "class_name": "Heo quay (Roast pork)",
+        "short_class": "Heo quay",
+        "confidence": 0.4428
+      },
+      {
+        "bbox_xyxy": [
+          2571.05,
+          745.55,
+          3406.96,
+          1577.56
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5289
+      }
+    ]
+  },
+  "BunMam(5).jpg": {
+    "detect_ms": 1436.71,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          562.29,
+          1000.99,
+          1668.7,
+          2053.49
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9806
+      },
+      {
+        "bbox_xyxy": [
+          654.45,
+          1215.5,
+          819.55,
+          1779.07
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.3023
+      }
+    ]
+  },
+  "BunMam(6).jpg": {
+    "detect_ms": 1518.84,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1335.87,
+          603.26,
+          2450.12,
+          1670.47
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9763
+      },
+      {
+        "bbox_xyxy": [
+          1713.62,
+          1104.61,
+          2075.56,
+          1272.59
+        ],
+        "class_id": 35,
+        "class_name": "Heo quay (Roast pork)",
+        "short_class": "Heo quay",
+        "confidence": 0.6059
+      },
+      {
+        "bbox_xyxy": [
+          2540.95,
+          728.32,
+          3364.39,
+          1521.19
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.507
+      }
+    ]
+  },
+  "BunMam(7).jpg": {
+    "detect_ms": 1393.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1634.11,
+          178.89,
+          2778.91,
+          1102.32
+        ],
+        "class_id": 15,
+        "class_name": "Bun mam (Fermented fish noodle soup)",
+        "short_class": "Bun mam",
+        "confidence": 0.9754
+      },
+      {
+        "bbox_xyxy": [
+          652.82,
+          380.55,
+          1554.67,
+          1158.4
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.876
+      }
+    ]
+  },
+  "BunRieu2(1).jpg": {
+    "detect_ms": 1443.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1637.85,
+          166.58,
+          2910.91,
+          1395.71
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9791
+      }
+    ]
+  },
+  "BunRieu2(2).jpg": {
+    "detect_ms": 1417.51,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1781.74,
+          200.18,
+          2910.61,
+          1328.91
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9749
+      }
+    ]
+  },
+  "BunRieu2(3).jpg": {
+    "detect_ms": 1394.29,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          411.82,
+          107.54,
+          1576.05,
+          1346.54
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.977
+      }
+    ]
+  },
+  "BunRieu2(4).jpg": {
+    "detect_ms": 1412.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          692.37,
+          296.58,
+          1959.24,
+          1577.72
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9505
+      },
+      {
+        "bbox_xyxy": [
+          2231.31,
+          339.22,
+          3285.73,
+          1432.96
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.5733
+      }
+    ]
+  },
+  "BunRieu2(5).jpg": {
+    "detect_ms": 1507.77,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          597.6,
+          220.89,
+          1904.06,
+          1428.68
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9816
+      }
+    ]
+  },
+  "BunRieu2(6).jpg": {
+    "detect_ms": 1421.91,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1970.69,
+          245.98,
+          3308.65,
+          1581.86
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9823
+      }
+    ]
+  },
+  "CaChua1(1).jpg": {
+    "detect_ms": 1438.07,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1716.76,
+          167.48,
+          2458.9,
+          764.33
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.6841
+      },
+      {
+        "bbox_xyxy": [
+          1762.9,
+          775.56,
+          2551.95,
+          1558.98
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.6649
+      },
+      {
+        "bbox_xyxy": [
+          2533.74,
+          772.9,
+          2957.59,
+          1353.45
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.3468
+      }
+    ]
+  },
+  "CaChua1(2).jpg": {
+    "detect_ms": 1399.55,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1801.5,
+          238.47,
+          2531.84,
+          827.12
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.808
+      },
+      {
+        "bbox_xyxy": [
+          1867.06,
+          805.44,
+          2664.39,
+          1596.73
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.7819
+      },
+      {
+        "bbox_xyxy": [
+          2581.27,
+          660.36,
+          2938.43,
+          1264.89
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.4285
+      }
+    ]
+  },
+  "CaChua1(3).jpg": {
+    "detect_ms": 1455.55,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2131.12,
+          220.29,
+          2802.25,
+          781.54
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.8001
+      },
+      {
+        "bbox_xyxy": [
+          2137.97,
+          780.95,
+          2884.9,
+          1534.12
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.5125
+      }
+    ]
+  },
+  "CaChua2(1).jpg": {
+    "detect_ms": 1403.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          2.01,
+          344.51,
+          940.52
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.5106
+      },
+      {
+        "bbox_xyxy": [
+          351.16,
+          1431.02,
+          1250.53,
+          2358.76
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.901
+      }
+    ]
+  },
+  "CaChua2(2).jpg": {
+    "detect_ms": 1403.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          534.36,
+          1459.5,
+          1341.01,
+          2388.26
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.4381
+      }
+    ]
+  },
+  "CaChua2(3).jpg": {
+    "detect_ms": 1494.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.3,
+          0.32,
+          373.19,
+          730.98
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.397
+      },
+      {
+        "bbox_xyxy": [
+          432.45,
+          1271.76,
+          1411.32,
+          2281.66
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.8911
+      }
+    ]
+  },
+  "CaChua3(1)-weight_58,8.jpg": {
+    "detect_ms": 1392.71,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2116.2,
+          607.6,
+          2538.94,
+          1053.89
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.9175
+      },
+      {
+        "bbox_xyxy": [
+          1634.96,
+          578.52,
+          2145.13,
+          906.58
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.9012
+      }
+    ]
+  },
+  "CaChua3(2).jpg": {
+    "detect_ms": 1467.78,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2070.56,
+          530.24,
+          2502.13,
+          968.57
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.9249
+      },
+      {
+        "bbox_xyxy": [
+          1554.15,
+          489.11,
+          2090.29,
+          836.56
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.9052
+      }
+    ]
+  },
+  "CaChua3(3).jpg": {
+    "detect_ms": 1415.72,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2009.58,
+          953.09,
+          2491.76,
+          1383.48
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.816
+      },
+      {
+        "bbox_xyxy": [
+          1663.26,
+          576.73,
+          2056.58,
+          1116.94
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.8116
+      },
+      {
+        "bbox_xyxy": [
+          2042.24,
+          474.49,
+          2514.44,
+          992.91
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.5595
+      }
+    ]
+  },
+  "CaChua3(4).jpg": {
+    "detect_ms": 1383.91,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2007.4,
+          935.77,
+          2560.73,
+          1402.95
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.8737
+      },
+      {
+        "bbox_xyxy": [
+          1637.55,
+          549.4,
+          2069.31,
+          1115.58
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.8403
+      },
+      {
+        "bbox_xyxy": [
+          2039.25,
+          421.68,
+          2580.05,
+          970.97
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.5261
+      }
+    ]
+  },
+  "Cha Gio 1.jpg": {
+    "detect_ms": 1358.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          846.86,
+          660.95,
+          1395.82,
+          1605.46
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9636
+      }
+    ]
+  },
+  "Cha Gio 10.jpg": {
+    "detect_ms": 1398.1,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          468.5,
+          915.2,
+          1287.5,
+          1384.56
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9626
+      }
+    ]
+  },
+  "Cha Gio 2.jpg": {
+    "detect_ms": 1351.31,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          304.85,
+          847.23,
+          1266.9,
+          1419.87
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9546
+      }
+    ]
+  },
+  "Cha Gio 3.jpg": {
+    "detect_ms": 1409.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          373.3,
+          297.48,
+          1131.43,
+          1103.96
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9278
+      }
+    ]
+  },
+  "Cha Gio 4.jpg": {
+    "detect_ms": 1429.46,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          915.18,
+          691.0,
+          1665.65,
+          1651.13
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9521
+      }
+    ]
+  },
+  "Cha Gio 5.jpg": {
+    "detect_ms": 1391.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          938.55,
+          590.91,
+          1762.31,
+          1498.12
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.951
+      }
+    ]
+  },
+  "Cha Gio 6.jpg": {
+    "detect_ms": 1373.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          865.24,
+          570.63,
+          1468.71,
+          1583.39
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.924
+      }
+    ]
+  },
+  "Cha Gio 7.jpg": {
+    "detect_ms": 1405.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          402.33,
+          1054.01,
+          1396.48,
+          1641.31
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9621
+      }
+    ]
+  },
+  "Cha Gio 8.jpg": {
+    "detect_ms": 1558.11,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          314.15,
+          657.08,
+          1629.89,
+          1123.0
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.8635
+      }
+    ]
+  },
+  "Cha Gio 9.jpg": {
+    "detect_ms": 1353.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          447.47,
+          986.98,
+          1265.42,
+          1458.98
+        ],
+        "class_id": 23,
+        "class_name": "Cha gio (Spring rolls)",
+        "short_class": "Cha gio",
+        "confidence": 0.9663
+      }
+    ]
+  },
+  "Chao Long 1.jpg": {
+    "detect_ms": 1400.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          149.68,
+          323.82,
+          1651.21,
+          1634.22
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9929
+      }
+    ]
+  },
+  "Chao Long 2.jpg": {
+    "detect_ms": 1366.45,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          284.35,
+          1037.63,
+          1532.81,
+          2301.35
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9913
+      }
+    ]
+  },
+  "Chao Long 3.jpg": {
+    "detect_ms": 1386.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          307.89,
+          613.34,
+          1576.3,
+          1351.44
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9901
+      }
+    ]
+  },
+  "Chao Long 4.jpg": {
+    "detect_ms": 1407.38,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          262.5,
+          628.73,
+          1690.31,
+          1108.14
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9859
+      }
+    ]
+  },
+  "Chao Long 5.jpg": {
+    "detect_ms": 1374.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          218.68,
+          897.41,
+          1643.67,
+          2342.76
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9914
+      }
+    ]
+  },
+  "Chao Long 6.jpg": {
+    "detect_ms": 1390.73,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          199.39,
+          911.49,
+          750.31,
+          1434.91
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.8861
+      },
+      {
+        "bbox_xyxy": [
+          884.63,
+          726.99,
+          1805.97,
+          1561.73
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.986
+      }
+    ]
+  },
+  "Chao Long 7.jpg": {
+    "detect_ms": 1393.83,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          210.77,
+          985.17,
+          746.98,
+          1488.43
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.8545
+      },
+      {
+        "bbox_xyxy": [
+          859.59,
+          795.62,
+          1750.5,
+          1600.85
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9844
+      }
+    ]
+  },
+  "Chao Long 8.jpg": {
+    "detect_ms": 1377.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          63.81,
+          920.18,
+          667.07,
+          1523.51
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.9259
+      },
+      {
+        "bbox_xyxy": [
+          778.14,
+          739.51,
+          1788.01,
+          1734.77
+        ],
+        "class_id": 64,
+        "class_name": "Chao long (Pork organ congee)",
+        "short_class": "Chao long",
+        "confidence": 0.9836
+      }
+    ]
+  },
+  "Com(1).jpg": {
+    "detect_ms": 1384.32,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1804.02,
+          354.26,
+          2948.89,
+          1426.56
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.8748
+      }
+    ]
+  },
+  "Com(2).jpg": {
+    "detect_ms": 1483.53,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1668.17,
+          406.68,
+          2943.37,
+          1521.05
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.9521
+      }
+    ]
+  },
+  "Com(3).jpg": {
+    "detect_ms": 1398.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1904.08,
+          135.47,
+          3354.33,
+          1687.88
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.9456
+      }
+    ]
+  },
+  "ComGa1 (1).jpg": {
+    "detect_ms": 1411.92,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          297.86,
+          1244.66,
+          1357.73,
+          2579.54
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9688
+      }
+    ]
+  },
+  "ComGa1 (2).jpg": {
+    "detect_ms": 1442.62,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          464.96,
+          1086.28,
+          1583.03,
+          2842.76
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9844
+      }
+    ]
+  },
+  "ComGa1 (3).jpg": {
+    "detect_ms": 1402.91,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          537.0,
+          1226.15,
+          1555.67,
+          2848.28
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9821
+      }
+    ]
+  },
+  "ComGa1 (4).jpg": {
+    "detect_ms": 1403.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          505.92,
+          1124.93,
+          1495.22,
+          2598.1
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.979
+      }
+    ]
+  },
+  "ComGa1 (5).jpg": {
+    "detect_ms": 1418.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          386.05,
+          710.54,
+          1499.41,
+          1884.84
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9859
+      }
+    ]
+  },
+  "ComGa1 (6).jpg": {
+    "detect_ms": 1397.06,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1090.69,
+          416.77,
+          2825.79,
+          1552.65
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.938
+      }
+    ]
+  },
+  "ComGa1 (7).jpg": {
+    "detect_ms": 1397.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1206.16,
+          648.03,
+          2751.5,
+          1703.03
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9371
+      }
+    ]
+  },
+  "ComGa1 (8).jpg": {
+    "detect_ms": 1409.25,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1742.68,
+          341.15,
+          2625.56,
+          1739.32
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9763
+      }
+    ]
+  },
+  "ComGa2 (1).jpg": {
+    "detect_ms": 1394.69,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          91.22,
+          2124.89,
+          906.5,
+          2967.57
+        ],
+        "class_id": 51,
+        "class_name": "Thit ga (Chicken)",
+        "short_class": "Thit ga",
+        "confidence": 0.6812
+      },
+      {
+        "bbox_xyxy": [
+          707.08,
+          849.32,
+          1552.8,
+          1726.49
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9386
+      }
+    ]
+  },
+  "ComGa2 (2).jpg": {
+    "detect_ms": 1420.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          749.4,
+          267.2,
+          1491.76,
+          1033.97
+        ],
+        "class_id": 51,
+        "class_name": "Thit ga (Chicken)",
+        "short_class": "Thit ga",
+        "confidence": 0.9032
+      },
+      {
+        "bbox_xyxy": [
+          1939.36,
+          471.08,
+          3358.75,
+          1471.92
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.8368
+      }
+    ]
+  },
+  "ComGa2 (3).jpg": {
+    "detect_ms": 1421.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          701.7,
+          217.29,
+          1484.61,
+          941.08
+        ],
+        "class_id": 51,
+        "class_name": "Thit ga (Chicken)",
+        "short_class": "Thit ga",
+        "confidence": 0.8914
+      },
+      {
+        "bbox_xyxy": [
+          1951.48,
+          302.62,
+          3406.03,
+          1337.11
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.8988
+      }
+    ]
+  },
+  "ComThitNuong2(1).jpg": {
+    "detect_ms": 1513.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          613.57,
+          709.88,
+          2076.26,
+          1711.25
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9468
+      },
+      {
+        "bbox_xyxy": [
+          2308.89,
+          516.5,
+          3569.76,
+          1306.23
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9035
+      }
+    ]
+  },
+  "ComThitNuong2(2).jpg": {
+    "detect_ms": 1415.91,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          569.98,
+          846.37,
+          2028.78,
+          1797.36
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9579
+      },
+      {
+        "bbox_xyxy": [
+          2256.06,
+          645.32,
+          3495.48,
+          1417.76
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.8553
+      }
+    ]
+  },
+  "ComThitNuong2(3).jpg": {
+    "detect_ms": 1371.57,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          725.17,
+          711.87,
+          2093.18,
+          1711.98
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9531
+      },
+      {
+        "bbox_xyxy": [
+          2297.53,
+          576.4,
+          3440.36,
+          1339.33
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9255
+      }
+    ]
+  },
+  "DauHu(1).jpg": {
+    "detect_ms": 1417.21,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          453.54,
+          1993.98,
+          1120.68,
+          2620.05
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.9216
+      }
+    ]
+  },
+  "DauHu(2).jpg": {
+    "detect_ms": 1474.37,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          311.66,
+          2200.6,
+          1003.68,
+          2842.05
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.904
+      }
+    ]
+  },
+  "DauHu(3).jpg": {
+    "detect_ms": 1412.2,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          364.06,
+          2239.15,
+          1034.32,
+          2886.53
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.9044
+      }
+    ]
+  },
+  "DauHu(4).jpg": {
+    "detect_ms": 1389.72,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          593.14,
+          1992.58,
+          1287.13,
+          2874.72
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.8837
+      }
+    ]
+  },
+  "DoChua1(3).jpg": {
+    "detect_ms": 1427.45,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          -0.34,
+          0.44,
+          898.57,
+          1304.87
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9427
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          2929.78,
+          218.4,
+          4000.0
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.412
+      }
+    ]
+  },
+  "DoChua1(4).jpg": {
+    "detect_ms": 1465.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1112.48,
+          2837.82,
+          1800.47,
+          4000.0
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8156
+      },
+      {
+        "bbox_xyxy": [
+          496.06,
+          1628.06,
+          1078.08,
+          2177.29
+        ],
+        "class_id": 20,
+        "class_name": "Ca rot (Carrot)",
+        "short_class": "Ca rot",
+        "confidence": 0.705
+      }
+    ]
+  },
+  "DuaLeo1(1).jpg": {
+    "detect_ms": 1385.09,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1977.39,
+          277.84,
+          2363.96,
+          1510.39
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.8814
+      }
+    ]
+  },
+  "DuaLeo1(2).jpg": {
+    "detect_ms": 1429.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2128.44,
+          319.57,
+          2520.27,
+          1509.03
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.7696
+      }
+    ]
+  },
+  "DuaLeo1(3).jpg": {
+    "detect_ms": 1431.82,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2104.57,
+          564.59,
+          3346.39,
+          1245.4
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.9328
+      }
+    ]
+  },
+  "DuaLeo2(1).jpg": {
+    "detect_ms": 1384.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1649.5,
+          294.07,
+          2709.1,
+          1505.19
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.9813
+      }
+    ]
+  },
+  "DuaLeo2(2).jpg": {
+    "detect_ms": 1413.05,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1619.17,
+          225.2,
+          2622.03,
+          1450.15
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.9741
+      }
+    ]
+  },
+  "DuaLeo2(3).jpg": {
+    "detect_ms": 1374.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1822.38,
+          284.8,
+          2886.17,
+          1366.63
+        ],
+        "class_id": 32,
+        "class_name": "Dua leo (Cucumber)",
+        "short_class": "Dua leo",
+        "confidence": 0.9786
+      }
+    ]
+  },
+  "Goi Cuon 1.jpg": {
+    "detect_ms": 1378.07,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          214.89,
+          572.58,
+          1410.7,
+          1333.6
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.9456
+      }
+    ]
+  },
+  "Goi cuon 10.jpg": {
+    "detect_ms": 1395.28,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          199.75,
+          611.25,
+          1498.2,
+          1352.94
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.7676
+      }
+    ]
+  },
+  "Goi cuon 11.jpg": {
+    "detect_ms": 1357.24,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          365.21,
+          917.66,
+          1446.7,
+          1584.38
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.6599
+      }
+    ]
+  },
+  "Goi cuon 2.jpg": {
+    "detect_ms": 1432.31,
+    "preds": []
+  },
+  "Goi cuon 3.jpg": {
+    "detect_ms": 1514.78,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          250.71,
+          830.96,
+          1363.53,
+          1608.85
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.8597
+      }
+    ]
+  },
+  "Goi cuon 4.jpg": {
+    "detect_ms": 1351.62,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          379.85,
+          827.3,
+          1454.68,
+          1626.41
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.8272
+      }
+    ]
+  },
+  "Goi cuon 5.jpg": {
+    "detect_ms": 1402.66,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          222.53,
+          642.24,
+          1593.87,
+          1325.7
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.7479
+      }
+    ]
+  },
+  "Goi cuon 6.jpg": {
+    "detect_ms": 1367.68,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          375.1,
+          926.7,
+          1425.44,
+          1587.15
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.8683
+      }
+    ]
+  },
+  "Goi cuon 7.jpg": {
+    "detect_ms": 1382.71,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          164.34,
+          497.47,
+          1661.87,
+          1298.19
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.9136
+      }
+    ]
+  },
+  "Goi cuon 8.jpg": {
+    "detect_ms": 1411.56,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          278.17,
+          696.24,
+          1556.83,
+          1506.1
+        ],
+        "class_id": 33,
+        "class_name": "Goi cuon (Fresh spring rolls)",
+        "short_class": "Goi cuon",
+        "confidence": 0.9371
+      }
+    ]
+  },
+  "Goi cuon 9.jpg": {
+    "detect_ms": 1385.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          286.37,
+          788.35,
+          1362.53,
+          1463.74
+        ],
+        "class_id": 9,
+        "class_name": "Bo la lot (Grilled beef wrapped in betel leaves)",
+        "short_class": "Bo la lot",
+        "confidence": 0.6716
+      }
+    ]
+  },
+  "Hamburger 1.jpg": {
+    "detect_ms": 1366.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          514.9,
+          792.9,
+          1304.43,
+          1510.71
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9229
+      }
+    ]
+  },
+  "Hamburger 10.jpg": {
+    "detect_ms": 1374.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          524.66,
+          914.72,
+          1372.47,
+          1681.29
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9249
+      }
+    ]
+  },
+  "Hamburger 11.jpg": {
+    "detect_ms": 1376.22,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          527.22,
+          705.86,
+          1540.69,
+          1439.3
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9744
+      }
+    ]
+  },
+  "Hamburger 12.jpg": {
+    "detect_ms": 1370.46,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          401.5,
+          968.93,
+          1408.94,
+          1890.65
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9727
+      }
+    ]
+  },
+  "Hamburger 2.jpg": {
+    "detect_ms": 1490.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          552.23,
+          922.42,
+          1499.3,
+          1562.85
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9699
+      }
+    ]
+  },
+  "Hamburger 3.jpg": {
+    "detect_ms": 1373.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          463.78,
+          764.29,
+          1374.17,
+          1601.72
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9163
+      }
+    ]
+  },
+  "Hamburger 4.jpg": {
+    "detect_ms": 1355.07,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          640.99,
+          896.65,
+          1509.62,
+          1654.49
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9617
+      }
+    ]
+  },
+  "Hamburger 5.jpg": {
+    "detect_ms": 1372.65,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          435.03,
+          707.18,
+          1253.17,
+          1419.98
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.947
+      }
+    ]
+  },
+  "Hamburger 6.jpg": {
+    "detect_ms": 1368.95,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          489.28,
+          606.55,
+          1376.35,
+          1306.26
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9769
+      }
+    ]
+  },
+  "Hamburger 7.jpg": {
+    "detect_ms": 1359.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          780.5,
+          623.68,
+          1557.89,
+          1511.81
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.8787
+      }
+    ]
+  },
+  "Hamburger 8.jpg": {
+    "detect_ms": 1369.42,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          307.86,
+          732.9,
+          1315.4,
+          1553.59
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9597
+      }
+    ]
+  },
+  "Hamburger 9.jpg": {
+    "detect_ms": 1405.53,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          469.35,
+          821.61,
+          1317.47,
+          1599.81
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9547
+      }
+    ]
+  },
+  "HeoQuay1(1).jpg": {
+    "detect_ms": 1364.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          363.24,
+          502.91,
+          1920.8,
+          1340.06
+        ],
+        "class_id": 52,
+        "class_name": "Thit heo (Pork)",
+        "short_class": "Thit heo",
+        "confidence": 0.7489
+      }
+    ]
+  },
+  "HomeCook13 (2).jpg": {
+    "detect_ms": 1385.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1275.44,
+          117.12,
+          2790.78,
+          1606.88
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9562
+      }
+    ]
+  },
+  "HomeCook13 (3).jpg": {
+    "detect_ms": 1446.49,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          195.47,
+          604.02,
+          1696.38,
+          1751.75
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9433
+      }
+    ]
+  },
+  "HomeCook13 (4).jpg": {
+    "detect_ms": 1389.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          78.13,
+          843.43,
+          1496.74,
+          1995.01
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9327
+      }
+    ]
+  },
+  "HomeCook14 (1).jpg": {
+    "detect_ms": 1431.4,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1572.22,
+          628.81,
+          1988.62,
+          1263.74
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.7185
+      },
+      {
+        "bbox_xyxy": [
+          3003.82,
+          1178.87,
+          3527.72,
+          1713.57
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.3159
+      }
+    ]
+  },
+  "HomeCook14 (2).jpg": {
+    "detect_ms": 1382.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          651.72,
+          1359.15,
+          1563.98,
+          2513.19
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.3658
+      },
+      {
+        "bbox_xyxy": [
+          162.12,
+          1273.25,
+          1583.77,
+          2511.28
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.5859
+      },
+      {
+        "bbox_xyxy": [
+          233.06,
+          1191.32,
+          965.9,
+          1946.93
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.8311
+      }
+    ]
+  },
+  "HomeCook14 (7).jpg": {
+    "detect_ms": 1378.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1698.54,
+          58.84,
+          2254.1,
+          587.16
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.7898
+      },
+      {
+        "bbox_xyxy": [
+          1654.88,
+          73.74,
+          2960.51,
+          1546.71
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.6334
+      }
+    ]
+  },
+  "HomeCook14 (8).jpg": {
+    "detect_ms": 1499.49,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1708.65,
+          37.99,
+          2260.48,
+          569.33
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.8252
+      },
+      {
+        "bbox_xyxy": [
+          1657.34,
+          47.67,
+          2919.86,
+          1509.91
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.5388
+      }
+    ]
+  },
+  "HomeCook4 (1).jpg": {
+    "detect_ms": 1441.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1627.28,
+          1134.61,
+          2289.01,
+          1755.6
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.9488
+      },
+      {
+        "bbox_xyxy": [
+          2141.16,
+          276.24,
+          2960.09,
+          1106.61
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.951
+      }
+    ]
+  },
+  "HomeCook4 (2).jpg": {
+    "detect_ms": 1488.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1643.32,
+          1090.68,
+          2262.5,
+          1606.59
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.9637
+      },
+      {
+        "bbox_xyxy": [
+          2214.41,
+          375.79,
+          3044.63,
+          1214.46
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.9564
+      }
+    ]
+  },
+  "HomeCook4 (3).jpg": {
+    "detect_ms": 1553.05,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2042.61,
+          956.99,
+          2600.36,
+          1637.19
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.9123
+      },
+      {
+        "bbox_xyxy": [
+          1173.21,
+          254.41,
+          2081.62,
+          1138.33
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.9247
+      }
+    ]
+  },
+  "HomeCook4 (4).jpg": {
+    "detect_ms": 1420.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1710.4,
+          1125.4,
+          2323.57,
+          1643.04
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.9596
+      },
+      {
+        "bbox_xyxy": [
+          2201.46,
+          340.59,
+          3025.37,
+          1178.32
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.9565
+      }
+    ]
+  },
+  "HomeCook4 (5).jpg": {
+    "detect_ms": 1369.9,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2480.47,
+          868.09,
+          3200.8,
+          1633.89
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.8534
+      },
+      {
+        "bbox_xyxy": [
+          1544.96,
+          82.92,
+          2488.3,
+          992.13
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.93
+      }
+    ]
+  },
+  "HomeCook6 (6).jpg": {
+    "detect_ms": 1414.74,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          725.59,
+          279.7,
+          1702.11,
+          1186.38
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.4171
+      },
+      {
+        "bbox_xyxy": [
+          748.48,
+          277.66,
+          1761.36,
+          1663.74
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8294
+      }
+    ]
+  },
+  "HuTieu1(1).jpg": {
+    "detect_ms": 1388.11,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1299.12,
+          253.92,
+          2478.97,
+          1612.46
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9232
+      }
+    ]
+  },
+  "HuTieu1(2).jpg": {
+    "detect_ms": 1355.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1229.5,
+          342.75,
+          2476.34,
+          1617.54
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9426
+      }
+    ]
+  },
+  "HuTieu1(3).jpg": {
+    "detect_ms": 1406.82,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1250.36,
+          225.38,
+          2331.1,
+          1453.66
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.934
+      }
+    ]
+  },
+  "HuTieu1(4).jpg": {
+    "detect_ms": 1383.06,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1374.94,
+          337.3,
+          2703.12,
+          1538.31
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.8785
+      }
+    ]
+  },
+  "HuTieu1(5).jpg": {
+    "detect_ms": 1386.64,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          213.5,
+          1197.7,
+          1467.48,
+          2444.09
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9392
+      }
+    ]
+  },
+  "HuTieu1(6).jpg": {
+    "detect_ms": 1428.24,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          318.37,
+          1551.75,
+          1573.34,
+          2801.12
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9324
+      }
+    ]
+  },
+  "IMG_20260927_133655.jpg": {
+    "detect_ms": 1451.42,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1250.56,
+          681.47,
+          1940.65,
+          1603.99
+        ],
+        "class_id": 35,
+        "class_name": "Heo quay (Roast pork)",
+        "short_class": "Heo quay",
+        "confidence": 0.8062
+      }
+    ]
+  },
+  "IMG_20260927_133702.jpg": {
+    "detect_ms": 1452.21,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2034.48,
+          645.0,
+          2829.67,
+          1484.09
+        ],
+        "class_id": 51,
+        "class_name": "Thit ga (Chicken)",
+        "short_class": "Thit ga",
+        "confidence": 0.7637
+      }
+    ]
+  },
+  "IMG_20260927_133705.jpg": {
+    "detect_ms": 1554.97,
+    "preds": []
+  },
+  "IMG_20260927_133719.jpg": {
+    "detect_ms": 1483.77,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1635.22,
+          638.43,
+          2450.79,
+          1660.32
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.8114
+      }
+    ]
+  },
+  "IMG_20260927_133942.jpg": {
+    "detect_ms": 1640.4,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          587.33,
+          1402.81,
+          1560.54,
+          2806.43
+        ],
+        "class_id": 35,
+        "class_name": "Heo quay (Roast pork)",
+        "short_class": "Heo quay",
+        "confidence": 0.9213
+      }
+    ]
+  },
+  "IMG_20260927_134002.jpg": {
+    "detect_ms": 1554.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1503.76,
+          272.81,
+          2926.28,
+          1125.97
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.6746
+      }
+    ]
+  },
+  "IMG_20260927_134008.jpg": {
+    "detect_ms": 1797.5,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1030.9,
+          349.76,
+          2206.01,
+          1409.72
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.3964
+      }
+    ]
+  },
+  "IMG_20260927_134223.jpg": {
+    "detect_ms": 1438.14,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1234.33,
+          231.03,
+          2671.75,
+          1799.64
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9637
+      }
+    ]
+  },
+  "IMG_20260927_134227.jpg": {
+    "detect_ms": 1412.29,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1391.28,
+          663.73,
+          2830.24,
+          1521.29
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.8088
+      },
+      {
+        "bbox_xyxy": [
+          1375.7,
+          71.08,
+          2797.85,
+          1532.77
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9513
+      },
+      {
+        "bbox_xyxy": [
+          1368.28,
+          72.06,
+          2673.01,
+          816.16
+        ],
+        "class_id": 51,
+        "class_name": "Thit ga (Chicken)",
+        "short_class": "Thit ga",
+        "confidence": 0.403
+      }
+    ]
+  },
+  "IMG_20260927_134235.jpg": {
+    "detect_ms": 1455.89,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1306.97,
+          13.66,
+          2671.3,
+          1701.39
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9801
+      }
+    ]
+  },
+  "IMG_20260927_134244.jpg": {
+    "detect_ms": 1531.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          677.15,
+          1325.09,
+          1616.78,
+          2641.27
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.7464
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          1327.07,
+          1631.02,
+          2644.53
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.8771
+      }
+    ]
+  },
+  "IMG_20260927_134916.jpg": {
+    "detect_ms": 1403.12,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          329.77,
+          1787.41,
+          1586.95,
+          2852.1
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9441
+      }
+    ]
+  },
+  "IMG_20260927_135647.jpg": {
+    "detect_ms": 1513.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          68.34,
+          1214.63,
+          1769.18,
+          2900.3
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9246
+      }
+    ]
+  },
+  "IMG_20260927_135652.jpg": {
+    "detect_ms": 1459.58,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          135.67,
+          1398.96,
+          1798.31,
+          2935.2
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9745
+      }
+    ]
+  },
+  "IMG_20260927_135709.jpg": {
+    "detect_ms": 1415.08,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          211.09,
+          1022.72,
+          1776.06,
+          2408.11
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9745
+      }
+    ]
+  },
+  "IMG_20260927_135713.jpg": {
+    "detect_ms": 1431.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          107.28,
+          1045.05,
+          1715.83,
+          2852.21
+        ],
+        "class_id": 63,
+        "class_name": "Com chien ga (Fried rice with chicken)",
+        "short_class": "Com chien ga",
+        "confidence": 0.9447
+      }
+    ]
+  },
+  "IMG_20261110_082335.jpg": {
+    "detect_ms": 1370.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1608.35,
+          444.52,
+          3094.89,
+          1150.15
+        ],
+        "class_id": 65,
+        "class_name": "Nom hoa chuoi (Banana blossom salad)",
+        "short_class": "Nom hoa chuoi",
+        "confidence": 0.6494
+      }
+    ]
+  },
+  "IMG_20261110_082339.jpg": {
+    "detect_ms": 1470.42,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          600.76,
+          423.64,
+          2366.81,
+          1183.56
+        ],
+        "class_id": 52,
+        "class_name": "Thit heo (Pork)",
+        "short_class": "Thit heo",
+        "confidence": 0.7435
+      }
+    ]
+  },
+  "Kho Qua Thit 1.jpg": {
+    "detect_ms": 1410.43,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          409.61,
+          910.2,
+          1272.84,
+          1464.26
+        ],
+        "class_id": 37,
+        "class_name": "Kho qua thit (Stuffed bitter melon soup)",
+        "short_class": "Kho qua thit",
+        "confidence": 0.9021
+      }
+    ]
+  },
+  "Kho Qua Thit 2.jpg": {
+    "detect_ms": 1414.65,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          796.62,
+          1077.73,
+          1494.84,
+          1537.49
+        ],
+        "class_id": 37,
+        "class_name": "Kho qua thit (Stuffed bitter melon soup)",
+        "short_class": "Kho qua thit",
+        "confidence": 0.7134
+      }
+    ]
+  },
+  "Kho Qua Thit 3.jpg": {
+    "detect_ms": 1377.14,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          774.1,
+          745.61,
+          1521.84,
+          1278.57
+        ],
+        "class_id": 37,
+        "class_name": "Kho qua thit (Stuffed bitter melon soup)",
+        "short_class": "Kho qua thit",
+        "confidence": 0.7036
+      }
+    ]
+  },
+  "Kho Qua Thit 4.jpg": {
+    "detect_ms": 1381.98,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          504.17,
+          1103.5,
+          1300.14,
+          1644.18
+        ],
+        "class_id": 37,
+        "class_name": "Kho qua thit (Stuffed bitter melon soup)",
+        "short_class": "Kho qua thit",
+        "confidence": 0.9199
+      }
+    ]
+  },
+  "Kho Qua Thit 5.jpg": {
+    "detect_ms": 1364.67,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          566.25,
+          773.76,
+          1681.72,
+          1269.12
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.4963
+      }
+    ]
+  },
+  "Kho Qua Thit 6.jpg": {
+    "detect_ms": 1372.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          368.17,
+          555.04,
+          1523.17,
+          1526.43
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.8598
+      }
+    ]
+  },
+  "Kho Qua Thit 7.jpg": {
+    "detect_ms": 1385.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          478.16,
+          582.74,
+          1598.87,
+          1671.84
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.752
+      }
+    ]
+  },
+  "Kho Qua Thit 8.jpg": {
+    "detect_ms": 1363.13,
+    "preds": []
+  },
+  "Khoai Tay Chien 2.jpg": {
+    "detect_ms": 1359.77,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          262.34,
+          958.61,
+          1469.29,
+          2129.13
+        ],
+        "class_id": 30,
+        "class_name": "Dau hu (Tofu)",
+        "short_class": "Dau hu",
+        "confidence": 0.6071
+      }
+    ]
+  },
+  "Khoai Tay Chien 3.jpg": {
+    "detect_ms": 1414.89,
+    "preds": []
+  },
+  "Khoai Tay Chien 4.jpg": {
+    "detect_ms": 1369.32,
+    "preds": []
+  },
+  "Khoai Tay Chien 5.jpg": {
+    "detect_ms": 1391.43,
+    "preds": []
+  },
+  "Khoai Tay Chien 6.jpg": {
+    "detect_ms": 1509.54,
+    "preds": []
+  },
+  "Long Heo 1.jpg": {
+    "detect_ms": 1361.93,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          428.96,
+          626.13,
+          1391.04,
+          1289.67
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.9733
+      }
+    ]
+  },
+  "Long Heo 2.jpg": {
+    "detect_ms": 1440.5,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          406.02,
+          819.58,
+          1363.42,
+          1554.31
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.9759
+      }
+    ]
+  },
+  "Long Heo 5.jpg": {
+    "detect_ms": 1388.01,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          332.79,
+          743.14,
+          1389.63,
+          1445.49
+        ],
+        "class_id": 40,
+        "class_name": "Long heo (Pork offal)",
+        "short_class": "Long heo",
+        "confidence": 0.9725
+      }
+    ]
+  },
+  "Mi 1.jpg": {
+    "detect_ms": 1364.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          615.49,
+          623.34,
+          1367.43,
+          1351.71
+        ],
+        "class_id": 41,
+        "class_name": "Mi (Egg noodles)",
+        "short_class": "Mi",
+        "confidence": 0.9787
+      }
+    ]
+  },
+  "Mi 2.jpg": {
+    "detect_ms": 1507.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          559.69,
+          628.27,
+          1345.39,
+          1377.3
+        ],
+        "class_id": 41,
+        "class_name": "Mi (Egg noodles)",
+        "short_class": "Mi",
+        "confidence": 0.9738
+      }
+    ]
+  },
+  "Mi 3.jpg": {
+    "detect_ms": 1402.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          596.5,
+          569.45,
+          1361.2,
+          1339.41
+        ],
+        "class_id": 41,
+        "class_name": "Mi (Egg noodles)",
+        "short_class": "Mi",
+        "confidence": 0.9767
+      }
+    ]
+  },
+  "Mi 4.jpg": {
+    "detect_ms": 1350.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          566.83,
+          538.16,
+          1355.35,
+          1341.16
+        ],
+        "class_id": 41,
+        "class_name": "Mi (Egg noodles)",
+        "short_class": "Mi",
+        "confidence": 0.9758
+      }
+    ]
+  },
+  "Mi 5.jpg": {
+    "detect_ms": 1379.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          829.16,
+          540.15,
+          1554.1,
+          1268.73
+        ],
+        "class_id": 41,
+        "class_name": "Mi (Egg noodles)",
+        "short_class": "Mi",
+        "confidence": 0.979
+      }
+    ]
+  },
+  "Mi Quang 1.jpg": {
+    "detect_ms": 1408.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          226.42,
+          294.85,
+          1653.64,
+          1680.64
+        ],
+        "class_id": 60,
+        "class_name": "Mi Quang (Quang-style noodles)",
+        "short_class": "Mi Quang",
+        "confidence": 0.9951
+      }
+    ]
+  },
+  "Mi Quang 2.jpg": {
+    "detect_ms": 1419.98,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          254.42,
+          308.03,
+          1672.09,
+          1676.48
+        ],
+        "class_id": 60,
+        "class_name": "Mi Quang (Quang-style noodles)",
+        "short_class": "Mi Quang",
+        "confidence": 0.9954
+      }
+    ]
+  },
+  "Mi Quang 3.jpg": {
+    "detect_ms": 1362.82,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          341.82,
+          374.62,
+          1788.32,
+          818.28
+        ],
+        "class_id": 60,
+        "class_name": "Mi Quang (Quang-style noodles)",
+        "short_class": "Mi Quang",
+        "confidence": 0.9317
+      }
+    ]
+  },
+  "Mi Quang 4.jpg": {
+    "detect_ms": 1407.92,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          259.94,
+          711.09,
+          1567.17,
+          1110.36
+        ],
+        "class_id": 60,
+        "class_name": "Mi Quang (Quang-style noodles)",
+        "short_class": "Mi Quang",
+        "confidence": 0.9819
+      }
+    ]
+  },
+  "Mi Quang 5.jpg": {
+    "detect_ms": 1348.15,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          350.01,
+          481.36,
+          1551.83,
+          1612.72
+        ],
+        "class_id": 60,
+        "class_name": "Mi Quang (Quang-style noodles)",
+        "short_class": "Mi Quang",
+        "confidence": 0.9942
+      }
+    ]
+  },
+  "Muc 1.jpg": {
+    "detect_ms": 1381.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          397.1,
+          555.79,
+          1389.2,
+          1572.18
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.527
+      }
+    ]
+  },
+  "Muc 2.jpg": {
+    "detect_ms": 1391.02,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          383.98,
+          526.48,
+          1474.74,
+          1572.17
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.634
+      }
+    ]
+  },
+  "Muc 4.jpg": {
+    "detect_ms": 1374.37,
+    "preds": []
+  },
+  "Muc 5.jpg": {
+    "detect_ms": 1393.17,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          467.15,
+          602.93,
+          1440.53,
+          1601.43
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.6224
+      }
+    ]
+  },
+  "Muc 6.jpg": {
+    "detect_ms": 1372.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          552.64,
+          617.85,
+          1417.34,
+          1480.85
+        ],
+        "class_id": 19,
+        "class_name": "Ca phao (Pickled eggplant)",
+        "short_class": "Ca phao",
+        "confidence": 0.9527
+      }
+    ]
+  },
+  "MucLau(1).jpg": {
+    "detect_ms": 1390.54,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2073.92,
+          477.05,
+          2878.96,
+          1160.28
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.7135
+      }
+    ]
+  },
+  "MucLau(2).jpg": {
+    "detect_ms": 1453.56,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1888.79,
+          555.41,
+          2826.79,
+          1295.34
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.5664
+      }
+    ]
+  },
+  "MucLau(3).jpg": {
+    "detect_ms": 1388.95,
+    "preds": []
+  },
+  "MucLau(4).jpg": {
+    "detect_ms": 1388.33,
+    "preds": []
+  },
+  "Nam 2.jpg": {
+    "detect_ms": 1381.68,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          395.09,
+          609.48,
+          1411.44,
+          1542.85
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8712
+      }
+    ]
+  },
+  "Nam 3.jpg": {
+    "detect_ms": 1371.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          375.99,
+          485.5,
+          1387.31,
+          1441.56
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.8729
+      }
+    ]
+  },
+  "Nam 4.jpg": {
+    "detect_ms": 1372.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          350.23,
+          530.41,
+          1399.74,
+          1500.06
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9076
+      }
+    ]
+  },
+  "Nui xao bo 1.jpg": {
+    "detect_ms": 1390.66,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          573.42,
+          1056.01,
+          1815.49,
+          2083.91
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9764
+      }
+    ]
+  },
+  "Nui xao bo 10.jpg": {
+    "detect_ms": 1385.75,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          568.67,
+          501.67,
+          1671.98,
+          1294.27
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9817
+      }
+    ]
+  },
+  "Nui xao bo 11.jpg": {
+    "detect_ms": 1367.51,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          74.76,
+          821.89,
+          1632.43,
+          1724.17
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9837
+      }
+    ]
+  },
+  "Nui xao bo 12.jpg": {
+    "detect_ms": 1373.34,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          433.36,
+          1022.58,
+          1809.0,
+          2152.78
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9777
+      }
+    ]
+  },
+  "Nui xao bo 2.jpg": {
+    "detect_ms": 1378.03,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          472.86,
+          1039.96,
+          1795.89,
+          2119.56
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9761
+      }
+    ]
+  },
+  "Nui xao bo 3.jpg": {
+    "detect_ms": 1557.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          175.17,
+          763.91,
+          1435.69,
+          1514.52
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9772
+      }
+    ]
+  },
+  "Nui xao bo 4.jpg": {
+    "detect_ms": 1373.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          191.58,
+          781.52,
+          1446.86,
+          1527.41
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9739
+      }
+    ]
+  },
+  "Nui xao bo 5.jpg": {
+    "detect_ms": 1385.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          185.8,
+          849.52,
+          1369.76,
+          1565.36
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9747
+      }
+    ]
+  },
+  "Nui xao bo 6.jpg": {
+    "detect_ms": 1365.96,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          163.17,
+          879.45,
+          1679.48,
+          1399.38
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9753
+      }
+    ]
+  },
+  "Nui xao bo 7.jpg": {
+    "detect_ms": 1389.68,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          172.5,
+          899.61,
+          1613.97,
+          1337.73
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9507
+      }
+    ]
+  },
+  "Nui xao bo 8.jpg": {
+    "detect_ms": 1363.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          678.27,
+          1068.44,
+          1830.21,
+          1759.69
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9784
+      }
+    ]
+  },
+  "Nui xao bo 9.jpg": {
+    "detect_ms": 1359.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          643.61,
+          959.69,
+          1780.31,
+          1668.15
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.9797
+      }
+    ]
+  },
+  "Oc 2.jpg": {
+    "detect_ms": 1386.85,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          201.25,
+          349.71,
+          1512.65,
+          1588.3
+        ],
+        "class_id": 44,
+        "class_name": "Oc (Snails)",
+        "short_class": "Oc",
+        "confidence": 0.9842
+      }
+    ]
+  },
+  "Oc 3.jpg": {
+    "detect_ms": 1365.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          188.56,
+          215.46,
+          1599.3,
+          1377.79
+        ],
+        "class_id": 44,
+        "class_name": "Oc (Snails)",
+        "short_class": "Oc",
+        "confidence": 0.9794
+      }
+    ]
+  },
+  "Oc 5.jpg": {
+    "detect_ms": 1369.58,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          307.92,
+          242.79,
+          1678.96,
+          1336.84
+        ],
+        "class_id": 44,
+        "class_name": "Oc (Snails)",
+        "short_class": "Oc",
+        "confidence": 0.9795
+      }
+    ]
+  },
+  "Oc 6.jpg": {
+    "detect_ms": 1374.05,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          263.22,
+          312.08,
+          1590.83,
+          1582.16
+        ],
+        "class_id": 44,
+        "class_name": "Oc (Snails)",
+        "short_class": "Oc",
+        "confidence": 0.9833
+      }
+    ]
+  },
+  "Pho1 (1).jpg": {
+    "detect_ms": 1438.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          332.98,
+          907.64,
+          1645.83,
+          2138.76
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9261
+      }
+    ]
+  },
+  "Pho1 (2).jpg": {
+    "detect_ms": 1370.82,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          262.47,
+          1256.42,
+          1594.85,
+          2640.43
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9148
+      }
+    ]
+  },
+  "Pho1 (3).jpg": {
+    "detect_ms": 1432.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1280.25,
+          0.26,
+          1425.82,
+          114.05
+        ],
+        "class_id": 44,
+        "class_name": "Oc (Snails)",
+        "short_class": "Oc",
+        "confidence": 0.3165
+      },
+      {
+        "bbox_xyxy": [
+          354.97,
+          1586.69,
+          1489.63,
+          2529.67
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9405
+      }
+    ]
+  },
+  "Pho1 (4).jpg": {
+    "detect_ms": 1462.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          538.83,
+          1252.2,
+          1650.32,
+          2553.16
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9177
+      }
+    ]
+  },
+  "Pho1 (5).jpg": {
+    "detect_ms": 1391.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          328.43,
+          972.22,
+          1642.7,
+          2269.71
+        ],
+        "class_id": 46,
+        "class_name": "Pho (Vietnamese noodle soup)",
+        "short_class": "Pho",
+        "confidence": 0.9239
+      }
+    ]
+  },
+  "Suon1(2).jpg": {
+    "detect_ms": 1447.55,
+    "preds": []
+  },
+  "Suon1(3).jpg": {
+    "detect_ms": 1394.05,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          551.38,
+          1840.3,
+          1465.28,
+          2901.57
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.441
+      }
+    ]
+  },
+  "Suon1.jpg": {
+    "detect_ms": 1392.9,
+    "preds": []
+  },
+  "SupCua (1).jpg": {
+    "detect_ms": 1415.2,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          287.85,
+          1199.78,
+          1509.62,
+          2498.39
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.9821
+      }
+    ]
+  },
+  "SupCua (2).jpg": {
+    "detect_ms": 1395.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1447.62,
+          329.94,
+          2571.95,
+          1407.37
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.9745
+      }
+    ]
+  },
+  "SupCua (3).jpg": {
+    "detect_ms": 1657.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1357.87,
+          324.96,
+          2498.36,
+          1215.36
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.9728
+      }
+    ]
+  },
+  "SupCua (4).jpg": {
+    "detect_ms": 1551.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          555.79,
+          922.71,
+          1507.7,
+          1615.06
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.9603
+      }
+    ]
+  },
+  "SupCua (5).jpg": {
+    "detect_ms": 1361.36,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          279.97,
+          942.84,
+          1546.92,
+          1818.26
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.696
+      }
+    ]
+  },
+  "SupCua (6).jpg": {
+    "detect_ms": 1611.09,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          240.91,
+          844.97,
+          1610.07,
+          2157.72
+        ],
+        "class_id": 67,
+        "class_name": "Sup cua (Crab soup)",
+        "short_class": "Sup cua",
+        "confidence": 0.9205
+      }
+    ]
+  },
+  "ThitBo(1).jpg": {
+    "detect_ms": 1531.57,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1220.2,
+          293.1,
+          2328.12,
+          1549.02
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.7617
+      }
+    ]
+  },
+  "ThitBo(2).jpg": {
+    "detect_ms": 1505.62,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1255.63,
+          372.1,
+          2239.82,
+          1570.03
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.8912
+      }
+    ]
+  },
+  "ThitBo(3).jpg": {
+    "detect_ms": 1529.17,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1213.37,
+          198.78,
+          2445.56,
+          1682.48
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.9626
+      }
+    ]
+  },
+  "ThitChien1(1).jpg": {
+    "detect_ms": 1436.73,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          595.41,
+          1791.69,
+          1658.66,
+          2684.08
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.7453
+      }
+    ]
+  },
+  "ThitChien2(2).jpg": {
+    "detect_ms": 1439.53,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          556.28,
+          2005.34,
+          1538.29,
+          2754.45
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.7011
+      }
+    ]
+  },
+  "ThitChien2(3).jpg": {
+    "detect_ms": 1440.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          84.34,
+          1443.65,
+          935.55,
+          2427.52
+        ],
+        "class_id": 50,
+        "class_name": "Thit bo (Beef)",
+        "short_class": "Thit bo",
+        "confidence": 0.9189
+      }
+    ]
+  },
+  "ThitChien2(4).jpg": {
+    "detect_ms": 1416.94,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1649.87,
+          422.18,
+          2667.76,
+          1601.71
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.5492
+      }
+    ]
+  },
+  "ThitGa(1).jpg": {
+    "detect_ms": 1385.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1412.62,
+          309.47,
+          2707.2,
+          1621.3
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.9815
+      }
+    ]
+  },
+  "ThitGa(2).jpg": {
+    "detect_ms": 1414.46,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1946.95,
+          367.86,
+          3069.37,
+          1618.18
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.9738
+      }
+    ]
+  },
+  "ThitGa(3).jpg": {
+    "detect_ms": 1385.65,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1689.01,
+          60.32,
+          3101.19,
+          1694.08
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.9595
+      }
+    ]
+  },
+  "ThitGa(4).jpg": {
+    "detect_ms": 1378.02,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1457.81,
+          130.71,
+          2804.03,
+          1677.49
+        ],
+        "class_id": 43,
+        "class_name": "Nam (Mushroom)",
+        "short_class": "Nam",
+        "confidence": 0.8622
+      }
+    ]
+  },
+  "ThitGa1 (1).jpg": {
+    "detect_ms": 1475.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          179.63,
+          1304.57,
+          1363.97,
+          2975.87
+        ],
+        "class_id": 35,
+        "class_name": "Heo quay (Roast pork)",
+        "short_class": "Heo quay",
+        "confidence": 0.7367
+      }
+    ]
+  },
+  "ThitGa1 (3).jpg": {
+    "detect_ms": 1459.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          297.31,
+          671.31,
+          1526.97,
+          2309.88
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.5873
+      }
+    ]
+  },
+  "ThitGa1 (4).jpg": {
+    "detect_ms": 1382.57,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1028.42,
+          76.19,
+          2703.58,
+          1253.35
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.7342
+      }
+    ]
+  },
+  "ThitGa1 (6).jpg": {
+    "detect_ms": 1433.51,
+    "preds": []
+  },
+  "ThitGa2 (1).jpg": {
+    "detect_ms": 1432.69,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          887.58,
+          28.01,
+          2524.82,
+          1066.38
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.6931
+      }
+    ]
+  },
+  "ThitGa2 (3).jpg": {
+    "detect_ms": 1372.8,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          842.54,
+          81.28,
+          2647.87,
+          1276.73
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.9483
+      }
+    ]
+  },
+  "ThitGa2 (4).jpg": {
+    "detect_ms": 1408.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          862.68,
+          358.33,
+          2439.79,
+          1513.27
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.6682
+      }
+    ]
+  },
+  "ThitGa2 (5).jpg": {
+    "detect_ms": 1380.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          830.98,
+          250.01,
+          2640.82,
+          1508.5
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.6133
+      }
+    ]
+  },
+  "ThitGa2 (6).jpg": {
+    "detect_ms": 1406.15,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1307.27,
+          284.94,
+          3348.34,
+          1545.32
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.6311
+      }
+    ]
+  },
+  "ThitGaChien (1).jpg": {
+    "detect_ms": 1379.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1508.22,
+          290.91,
+          2766.98,
+          1509.2
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.7673
+      },
+      {
+        "bbox_xyxy": [
+          1754.18,
+          292.99,
+          2754.97,
+          1074.75
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.5769
+      }
+    ]
+  },
+  "ThitGaChien (2).jpg": {
+    "detect_ms": 1443.41,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1591.79,
+          259.93,
+          2506.63,
+          1464.3
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.5125
+      }
+    ]
+  },
+  "ThitGaChien (3).jpg": {
+    "detect_ms": 1419.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1758.09,
+          241.74,
+          2988.03,
+          1414.68
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.7904
+      },
+      {
+        "bbox_xyxy": [
+          2006.47,
+          239.91,
+          2983.87,
+          1003.32
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.5031
+      }
+    ]
+  },
+  "ThitGaChien (4).jpg": {
+    "detect_ms": 1397.89,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1665.89,
+          210.46,
+          2628.24,
+          1295.97
+        ],
+        "class_id": 54,
+        "class_name": "Thit nuong (Grilled meat)",
+        "short_class": "Thit nuong",
+        "confidence": 0.4963
+      }
+    ]
+  },
+  "ThitKho1 (1).jpg": {
+    "detect_ms": 1413.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1527.14,
+          528.43,
+          2296.84,
+          1315.93
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.787
+      }
+    ]
+  },
+  "ThitKho1 (2).jpg": {
+    "detect_ms": 1570.64,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          250.06,
+          1748.37,
+          924.51,
+          2425.24
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.9562
+      },
+      {
+        "bbox_xyxy": [
+          1358.75,
+          1594.74,
+          1716.33,
+          1971.06
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.8494
+      }
+    ]
+  },
+  "ThitKho1 (3).jpg": {
+    "detect_ms": 1501.61,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          665.28,
+          1548.58,
+          1507.63,
+          2428.64
+        ],
+        "class_id": 66,
+        "class_name": "Nui xao bo (Stir-fried macaroni with beef)",
+        "short_class": "Nui xao bo",
+        "confidence": 0.6188
+      }
+    ]
+  },
+  "ThitKho1 (4).jpg": {
+    "detect_ms": 1402.22,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          599.78,
+          1490.26,
+          1518.72,
+          2354.64
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.9557
+      }
+    ]
+  },
+  "ThitKho1 (5).jpg": {
+    "detect_ms": 1429.19,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          417.0,
+          1247.46,
+          1376.42,
+          2126.66
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.9447
+      }
+    ]
+  },
+  "ThitKho1 (6).jpg": {
+    "detect_ms": 1404.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          771.44,
+          1706.35,
+          1623.06,
+          2525.81
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.974
+      },
+      {
+        "bbox_xyxy": [
+          414.28,
+          370.98,
+          1799.25,
+          1438.84
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.5867
+      },
+      {
+        "bbox_xyxy": [
+          630.91,
+          934.21,
+          1049.12,
+          1305.77
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.7084
+      }
+    ]
+  },
+  "ThitKho2(2).jpg": {
+    "detect_ms": 1383.73,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1759.01,
+          387.48,
+          2579.19,
+          1353.39
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.8814
+      }
+    ]
+  },
+  "ThitKho2(3).jpg": {
+    "detect_ms": 1430.88,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2649.19,
+          0.82,
+          4000.0,
+          738.06
+        ],
+        "class_id": 42,
+        "class_name": "Muc (Squid)",
+        "short_class": "Muc",
+        "confidence": 0.4285
+      },
+      {
+        "bbox_xyxy": [
+          1563.34,
+          393.19,
+          2432.82,
+          1274.06
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.9242
+      }
+    ]
+  },
+  "ThitKho2(4).jpg": {
+    "detect_ms": 1579.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1391.0,
+          436.85,
+          2256.56,
+          1268.78
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.8854
+      }
+    ]
+  },
+  "ThitNuong1(2).jpg": {
+    "detect_ms": 1368.75,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.2,
+          1203.91,
+          413.64,
+          1799.85
+        ],
+        "class_id": 25,
+        "class_name": "Com (Rice)",
+        "short_class": "Com",
+        "confidence": 0.5704
+      },
+      {
+        "bbox_xyxy": [
+          1245.41,
+          817.47,
+          2510.14,
+          1590.06
+        ],
+        "class_id": 38,
+        "class_name": "Khoai tay chien (French fries)",
+        "short_class": "Khoai tay chien",
+        "confidence": 0.4469
+      }
+    ]
+  },
+  "ThitNuong1(3).jpg": {
+    "detect_ms": 1400.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          603.78,
+          854.47,
+          1799.36
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9504
+      },
+      {
+        "bbox_xyxy": [
+          1892.46,
+          465.56,
+          3169.35,
+          1380.95
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.8981
+      }
+    ]
+  },
+  "ThitNuong1(4).jpg": {
+    "detect_ms": 1378.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1306.55,
+          321.77,
+          2715.78,
+          1595.4
+        ],
+        "class_id": 38,
+        "class_name": "Khoai tay chien (French fries)",
+        "short_class": "Khoai tay chien",
+        "confidence": 0.9146
+      }
+    ]
+  },
+  "ThitNuong1(5).jpg": {
+    "detect_ms": 1374.94,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          603.78,
+          854.47,
+          1799.36
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9504
+      },
+      {
+        "bbox_xyxy": [
+          1892.46,
+          465.56,
+          3169.35,
+          1380.95
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.8981
+      }
+    ]
+  },
+  "Trung1(1).jpg": {
+    "detect_ms": 1468.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          473.34,
+          1662.83,
+          918.57,
+          2242.96
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9139
+      }
+    ]
+  },
+  "Trung1(2).jpg": {
+    "detect_ms": 1522.59,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          0.16,
+          229.47,
+          857.57
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.3615
+      },
+      {
+        "bbox_xyxy": [
+          674.82,
+          1593.11,
+          1126.01,
+          2163.37
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9334
+      }
+    ]
+  },
+  "Trung1(3).jpg": {
+    "detect_ms": 1502.62,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          5.09,
+          178.54,
+          1161.05
+        ],
+        "class_id": 53,
+        "class_name": "Thit kho (Braised pork)",
+        "short_class": "Thit kho",
+        "confidence": 0.3346
+      },
+      {
+        "bbox_xyxy": [
+          568.39,
+          1645.29,
+          994.73,
+          2201.49
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9287
+      }
+    ]
+  },
+  "TrungChien1(1).jpg": {
+    "detect_ms": 1540.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          91.73,
+          1364.39,
+          1509.52,
+          2756.94
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9585
+      }
+    ]
+  },
+  "TrungChien1(2).jpg": {
+    "detect_ms": 1507.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          117.57,
+          1254.36,
+          1680.57,
+          2841.73
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9625
+      }
+    ]
+  },
+  "TrungChien1(3).jpg": {
+    "detect_ms": 1780.55,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          176.2,
+          726.11,
+          1625.02,
+          2246.06
+        ],
+        "class_id": 56,
+        "class_name": "Trung (Egg)",
+        "short_class": "Trung",
+        "confidence": 0.9881
+      }
+    ]
+  },
+  "Xoi1 (1).jpg": {
+    "detect_ms": 1987.14,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1309.5,
+          142.57,
+          2654.7,
+          1277.26
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8902
+      }
+    ]
+  },
+  "Xoi1 (2).jpg": {
+    "detect_ms": 1468.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          422.51,
+          732.73,
+          1590.16,
+          2452.73
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.8862
+      }
+    ]
+  },
+  "Xoi1 (3).jpg": {
+    "detect_ms": 1401.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          754.14,
+          229.83,
+          2411.08,
+          1408.59
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9084
+      }
+    ]
+  },
+  "Xoi1 (4).jpg": {
+    "detect_ms": 1391.21,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          645.86,
+          314.53,
+          2132.89,
+          1475.46
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9489
+      }
+    ]
+  },
+  "Xoi1 (5).jpg": {
+    "detect_ms": 1445.37,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          242.69,
+          768.56,
+          1561.69,
+          2185.82
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9403
+      }
+    ]
+  },
+  "Xoi1 (6).jpg": {
+    "detect_ms": 1425.25,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1420.61,
+          346.82,
+          2911.07,
+          1405.5
+        ],
+        "class_id": 57,
+        "class_name": "Xoi (Sticky rice)",
+        "short_class": "Xoi",
+        "confidence": 0.885
+      }
+    ]
+  },
+  "Xoi1 (7).jpg": {
+    "detect_ms": 1431.86,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1172.84,
+          347.48,
+          2675.33,
+          1333.98
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.8084
+      }
+    ]
+  },
+  "banh-mi1.jpg": {
+    "detect_ms": 1435.59,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          103.7,
+          1175.18,
+          1765.7,
+          1935.5
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9191
+      }
+    ]
+  },
+  "banh-mi2.jpg": {
+    "detect_ms": 1382.52,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1172.62,
+          67.98,
+          2881.65,
+          1029.2
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9672
+      }
+    ]
+  },
+  "banh-mi250g (1).jpg": {
+    "detect_ms": 1467.33,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          361.89,
+          818.22,
+          1670.19,
+          1454.47
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.7686
+      }
+    ]
+  },
+  "banh-mi250g (2).jpg": {
+    "detect_ms": 1454.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          382.57,
+          474.9,
+          1738.49,
+          1321.09
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.965
+      }
+    ]
+  },
+  "banh-mi250g (3).jpg": {
+    "detect_ms": 1411.18,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          324.55,
+          955.49,
+          1671.02,
+          1801.93
+        ],
+        "class_id": 34,
+        "class_name": "Hamburger",
+        "short_class": "Hamburger",
+        "confidence": 0.9599
+      }
+    ]
+  },
+  "banh-mi250g (4).jpg": {
+    "detect_ms": 1400.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          370.62,
+          1020.33,
+          959.52,
+          2406.46
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.96
+      }
+    ]
+  },
+  "banh-mi3.jpg": {
+    "detect_ms": 1407.99,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          92.2,
+          1359.67,
+          1782.83,
+          2383.47
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9254
+      }
+    ]
+  },
+  "banh-mi4.jpg": {
+    "detect_ms": 1375.9,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          959.14,
+          22.9,
+          2657.35,
+          1245.21
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.977
+      },
+      {
+        "bbox_xyxy": [
+          1045.73,
+          23.75,
+          2635.13,
+          660.32
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.301
+      }
+    ]
+  },
+  "banh-mi5.jpg": {
+    "detect_ms": 1409.56,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1367.5,
+          87.65,
+          2509.88,
+          1732.69
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.9639
+      },
+      {
+        "bbox_xyxy": [
+          2024.74,
+          151.39,
+          2510.28,
+          1333.21
+        ],
+        "class_id": 4,
+        "class_name": "Banh mi (Vietnamese baguette sandwich)",
+        "short_class": "Banh mi",
+        "confidence": 0.3164
+      }
+    ]
+  },
+  "bun-rieu (1).jpg": {
+    "detect_ms": 1400.44,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          12.19,
+          987.72,
+          1214.69,
+          2080.28
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9551
+      }
+    ]
+  },
+  "bun-rieu (2).jpg": {
+    "detect_ms": 1527.16,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1214.3,
+          236.99,
+          2417.15,
+          1441.64
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9793
+      }
+    ]
+  },
+  "bun-rieu (3).jpg": {
+    "detect_ms": 1425.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1373.08,
+          223.84,
+          2611.9,
+          1189.07
+        ],
+        "class_id": 12,
+        "class_name": "Bun bo Hue (Hue beef noodle soup)",
+        "short_class": "Bun bo Hue",
+        "confidence": 0.9387
+      },
+      {
+        "bbox_xyxy": [
+          561.23,
+          969.97,
+          828.86,
+          1139.81
+        ],
+        "class_id": 24,
+        "class_name": "Chanh (Lime)",
+        "short_class": "Chanh",
+        "confidence": 0.8469
+      },
+      {
+        "bbox_xyxy": [
+          395.6,
+          474.46,
+          1288.52,
+          1421.56
+        ],
+        "class_id": 48,
+        "class_name": "Rau (Vegetables)",
+        "short_class": "Rau",
+        "confidence": 0.3738
+      }
+    ]
+  },
+  "bun-rieu1 (1).jpg": {
+    "detect_ms": 1385.07,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          159.43,
+          1238.81,
+          1377.07,
+          2374.88
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.8513
+      }
+    ]
+  },
+  "bun-rieu1 (2).jpg": {
+    "detect_ms": 1476.81,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          228.81,
+          495.38,
+          1687.81,
+          1960.89
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9848
+      }
+    ]
+  },
+  "bun-rieu1 (3).jpg": {
+    "detect_ms": 1434.73,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2448.28,
+          205.63,
+          3378.5,
+          1493.94
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9619
+      }
+    ]
+  },
+  "bun-rieu1 (4).jpg": {
+    "detect_ms": 1369.83,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          927.41,
+          206.68,
+          2316.62,
+          1375.03
+        ],
+        "class_id": 16,
+        "class_name": "Bun rieu (Crab noodle soup)",
+        "short_class": "Bun rieu",
+        "confidence": 0.9614
+      }
+    ]
+  },
+  "bun1(1).jpg": {
+    "detect_ms": 1386.51,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          153.61,
+          1596.92,
+          1612.33,
+          3177.9
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9712
+      }
+    ]
+  },
+  "bun1(2).jpg": {
+    "detect_ms": 1689.26,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          205.93,
+          1486.18,
+          1677.51,
+          3013.34
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.9724
+      }
+    ]
+  },
+  "ca1(0).jpg": {
+    "detect_ms": 1719.87,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1987.29,
+          966.69,
+          3186.75,
+          1630.11
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.8817
+      }
+    ]
+  },
+  "ca1(1).jpg": {
+    "detect_ms": 1423.04,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          3333.18,
+          -0.36,
+          3999.45,
+          514.45
+        ],
+        "class_id": 11,
+        "class_name": "Bun (Rice vermicelli)",
+        "short_class": "Bun",
+        "confidence": 0.3658
+      },
+      {
+        "bbox_xyxy": [
+          1631.39,
+          85.32,
+          3068.58,
+          1229.33
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.8137
+      }
+    ]
+  },
+  "ca1(2).jpg": {
+    "detect_ms": 1422.69,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1987.27,
+          498.76,
+          2989.7,
+          1305.7
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.8982
+      }
+    ]
+  },
+  "ca1(3).jpg": {
+    "detect_ms": 1364.12,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1265.28,
+          283.36,
+          2596.04,
+          1091.4
+        ],
+        "class_id": 17,
+        "class_name": "Ca (Fish)",
+        "short_class": "Ca",
+        "confidence": 0.7895
+      }
+    ]
+  },
+  "chalua-cachua1(1).jpg": {
+    "detect_ms": 1397.93,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          591.98,
+          439.57,
+          1542.06,
+          1268.42
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.3525
+      }
+    ]
+  },
+  "chalua-cachua1(2).jpg": {
+    "detect_ms": 1391.34,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1563.28,
+          185.73,
+          2673.1,
+          945.15
+        ],
+        "class_id": 18,
+        "class_name": "Ca chua (Tomato)",
+        "short_class": "Ca chua",
+        "confidence": 0.3236
+      }
+    ]
+  },
+  "chalua-cachua1(3).jpg": {
+    "detect_ms": 1391.3,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          2234.9,
+          674.0,
+          3211.23,
+          1554.18
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.893
+      }
+    ]
+  },
+  "chalua1(1).jpg": {
+    "detect_ms": 1424.68,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          436.01,
+          1982.57,
+          1381.85,
+          2791.64
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.9458
+      }
+    ]
+  },
+  "chalua1(2).jpg": {
+    "detect_ms": 1385.24,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          431.11,
+          1961.73,
+          1501.35,
+          2857.16
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.923
+      }
+    ]
+  },
+  "chalua2(1).jpg": {
+    "detect_ms": 1385.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          606.72,
+          1978.02,
+          1369.49,
+          2827.95
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.9302
+      }
+    ]
+  },
+  "chalua2(2).jpg": {
+    "detect_ms": 1451.23,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          588.75,
+          1992.17,
+          1304.95,
+          2741.32
+        ],
+        "class_id": 22,
+        "class_name": "Cha (Vietnamese pork roll)",
+        "short_class": "Cha",
+        "confidence": 0.9135
+      }
+    ]
+  },
+  "com chien 1.jpg": {
+    "detect_ms": 1450.56,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          260.84,
+          985.41,
+          1542.13,
+          1756.34
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9879
+      }
+    ]
+  },
+  "com chien 2.jpg": {
+    "detect_ms": 1509.18,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          263.08,
+          1316.44,
+          1586.27,
+          2157.7
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9884
+      }
+    ]
+  },
+  "com chien 3.jpg": {
+    "detect_ms": 1408.0,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          263.08,
+          1316.44,
+          1586.27,
+          2157.7
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9884
+      }
+    ]
+  },
+  "com chien 4.jpg": {
+    "detect_ms": 1360.43,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          305.92,
+          1306.08,
+          1626.71,
+          2146.2
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9862
+      }
+    ]
+  },
+  "com chien 5.jpg": {
+    "detect_ms": 1365.19,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          409.95,
+          1474.65,
+          1579.19,
+          2230.22
+        ],
+        "class_id": 61,
+        "class_name": "Com chien duong chau (Yangzhou fried rice)",
+        "short_class": "Com chien duong chau",
+        "confidence": 0.9822
+      }
+    ]
+  },
+  "com-suon1 (1).jpg": {
+    "detect_ms": 1503.93,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          254.23,
+          860.21,
+          1602.6,
+          2240.31
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9835
+      }
+    ]
+  },
+  "com-suon1 (2).jpg": {
+    "detect_ms": 1405.27,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          295.06,
+          123.45,
+          869.84,
+          634.75
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.9102
+      },
+      {
+        "bbox_xyxy": [
+          282.91,
+          1644.89,
+          1447.79,
+          2844.96
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9804
+      }
+    ]
+  },
+  "com-suon1 (3).jpg": {
+    "detect_ms": 1392.98,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          696.08,
+          1858.04,
+          1726.17,
+          2820.29
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9591
+      },
+      {
+        "bbox_xyxy": [
+          1062.91,
+          3618.85,
+          1800.0,
+          3999.79
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9459
+      }
+    ]
+  },
+  "com-suon1 (4).jpg": {
+    "detect_ms": 1527.76,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          3720.09,
+          2.83,
+          4000.0,
+          510.55
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.8803
+      },
+      {
+        "bbox_xyxy": [
+          883.15,
+          70.06,
+          2531.23,
+          1446.41
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9818
+      }
+    ]
+  },
+  "com-suon1 (5).jpg": {
+    "detect_ms": 1385.15,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          3397.71,
+          1.85,
+          4000.0,
+          812.14
+        ],
+        "class_id": 21,
+        "class_name": "Canh (Soup)",
+        "short_class": "Canh",
+        "confidence": 0.8724
+      },
+      {
+        "bbox_xyxy": [
+          497.15,
+          172.32,
+          1951.74,
+          1628.46
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9664
+      }
+    ]
+  },
+  "thitNuong1(1).jpg": {
+    "detect_ms": 1397.53,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          0.2,
+          815.22,
+          537.76,
+          1799.28
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.9145
+      },
+      {
+        "bbox_xyxy": [
+          1458.87,
+          686.49,
+          2694.71,
+          1525.99
+        ],
+        "class_id": 26,
+        "class_name": "Com tam (Broken rice)",
+        "short_class": "Com tam",
+        "confidence": 0.5085
+      }
+    ]
+  },
+  "tom1(1).jpg": {
+    "detect_ms": 1429.39,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          433.46,
+          1455.94,
+          1334.58,
+          2336.62
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.7475
+      }
+    ]
+  },
+  "tom1(2).jpg": {
+    "detect_ms": 1394.22,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          544.68,
+          1620.61,
+          1407.71,
+          2323.64
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.8398
+      }
+    ]
+  },
+  "tom1(3).jpg": {
+    "detect_ms": 1409.63,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          394.31,
+          1485.36,
+          1397.83,
+          2364.21
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.9302
+      }
+    ]
+  },
+  "tom1(4).jpg": {
+    "detect_ms": 1419.12,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          417.6,
+          1344.42,
+          1425.76,
+          2284.16
+        ],
+        "class_id": 10,
+        "class_name": "Bong cai (Cauliflower)",
+        "short_class": "Bong cai",
+        "confidence": 0.9123
+      }
+    ]
+  },
+  "tom2(1).jpg": {
+    "detect_ms": 1480.6,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1577.36,
+          579.53,
+          2254.74,
+          1154.57
+        ],
+        "class_id": 55,
+        "class_name": "Tom (Shrimp)",
+        "short_class": "Tom",
+        "confidence": 0.9668
+      }
+    ]
+  },
+  "tom2(2).jpg": {
+    "detect_ms": 1403.98,
+    "preds": [
+      {
+        "bbox_xyxy": [
+          1708.18,
+          595.26,
+          2356.87,
+          1180.68
+        ],
+        "class_id": 55,
+        "class_name": "Tom (Shrimp)",
+        "short_class": "Tom",
+        "confidence": 0.8732
+      }
+    ]
+  }
+}

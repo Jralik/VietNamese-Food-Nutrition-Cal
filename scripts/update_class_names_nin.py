@@ -63,6 +63,38 @@ def update_class_names():
 
     updated_nutrition_sources = dict(NUTRITION_SOURCES)
 
+    # Source-alignment pass (2026-09-28, data/source_crosscheck_report.md §5):
+    # for these classes the preserved legacy macros trace to NO authoritative
+    # row (audit verdict "review" on ingredient classes), while the class's own
+    # cited NIN row is authoritative (Bảng TPTP VN 2017). Calories/Protein/Fat/
+    # Carbs are therefore projected from the SSOT mapping like the micronutrients
+    # already are. Saturates/Sugar/Salt stay preserved (NIN rows generally lack
+    # them). Dish classes are NOT aligned: their preserved macros are curated
+    # recipes; NIN dish per-100g rows carry known serving-normalization issues.
+    SOURCE_ALIGNED_MACRO_CLASSES = {
+        "Thit bo (Beef)",          # 215/26/12 → BTP "Thịt bò, loại I" 118/21/3.8
+        "Thit ga (Chicken)",       # 190/29/7.4 → BTP "Thịt gà ta" 199/20.3/13.1
+        "Thit heo (Pork)",         # 242/27/14 → BTP "Thịt lợn nạc vai, luộc" 126/17.65/6.18
+        "Tom (Shrimp)",            # 99/24/0.3 → BTP "Tôm đồng, tươi" 90/18.4/1.8
+        "Muc (Squid)",             # 92/15.6/1.4 → BTP "Mực, tươi" 73/16.3/0.9
+        "Cua (Crab)",              # 87/18/1.1 → BTP "Cua đồng, tươi" 87/12.3/3.3
+        "Oc (Snails)",             # 79/15/1.4 → BTP "Ốc nhồi, tươi" 84/11.9/0.7
+        "Dau hu (Tofu)",           # 76/8/4.8 → BTP "Đậu phụ, sống" 97/10.9/5.4
+        "Banh trang (Rice paper)", # P 0.5 → BTP "Bánh đa nem" P 4.0
+        "Ca (Fish)",               # 130/18/5 → BTP "Cá chép, tươi" 96/16/3.6
+        "Ca chua (Tomato)",        # 18/0.9/0.2 → BTP "Quả cà chua, tươi"
+        "Chanh (Lime)",            # C 10.5 → BTP "Chanh, tươi" C 5.96
+        "Ot chuong (Bell pepper)", # 20/1/0.2 → BTP "Ớt xanh to, tươi"
+        "Dua chua (Pickled vegetables)",  # → BTP "Dưa cải bẹ"
+        "Rau (Vegetables)",        # 25/1.5 → BTP "Rau muống, tươi" 28/3.2/0.24
+        "Nam (Mushroom)",          # anchor repointed to generic "Nấm mỡ (Nấm tây)" 37/4/0.3/4.5
+        "Trung (Egg)",             # 143/12.6/9.5/0.7 → BTP "Trứng gà ta" 150/12.96/10.33/1.25
+    }
+    MACRO_PROJECTION = [
+        ("Calories", "energy_kcal"), ("Protein", "protein_g"),
+        ("Fat", "fat_g"), ("Carbs", "carbs_g"),
+    ]
+
     for item in class_names:
         name = item["name"]
         serving_size_g = item.get("serving_size_g", 100)
@@ -106,6 +138,36 @@ def update_class_names():
         for mk, mv in micro_100g.items():
             new_p100[mk] = mv
             new_pserv[mk] = round(mv * serving_scale, 2)
+
+        # Source-aligned macros (see SOURCE_ALIGNED_MACRO_CLASSES above):
+        # project Calories/Protein/Fat/Carbs from the SSOT row and rescale
+        # the per-serving dict so both calculation paths stay consistent.
+        if name in SOURCE_ALIGNED_MACRO_CLASSES and name not in UNMAPPED_FALLBACKS:
+            p_nutr_aligned = map_entry["primary_nutrition_per_100g"]
+            fat_old = float(p100_existing.get("Fat") or 0.0)
+            for ck, mk in MACRO_PROJECTION:
+                mv = p_nutr_aligned.get(mk)
+                if mv is not None:
+                    new_p100[ck] = round(float(mv), 1)
+                    new_pserv[ck] = round(float(mv) * serving_scale, 2)
+            # BTP VN 2017 publishes no Saturates column. Keep the preserved
+            # saturates:fat PROFILE, rescaled to the aligned fat value, so the
+            # chemistry invariant (Saturates ≤ Fat) still holds (e.g. Thit bo
+            # 4.8 g sat would exceed its aligned 3.8 g total fat).
+            sat_old = float(p100_existing.get("Saturates") or 0.0)
+            fat_new = float(new_p100.get("Fat") or 0.0)
+            if sat_old > 0 and fat_old > 0 and fat_new > 0:
+                sat_new = round(sat_old * fat_new / fat_old, 1)
+                new_p100["Saturates"] = sat_new
+                new_pserv["Saturates"] = round(sat_new * serving_scale, 2)
+            # Idempotent chemistry clamp: saturated fat can never exceed total
+            # fat. 0.4 is the typical saturated fraction of animal fat (food-
+            # science literature) and applies when the ratio above could not
+            # fire because a previous run already overwrote Fat.
+            if float(new_p100.get("Saturates") or 0) > float(new_p100.get("Fat") or 0) > 0:
+                sat_clamped = round(float(new_p100["Fat"]) * 0.4, 1)
+                new_p100["Saturates"] = sat_clamped
+                new_pserv["Saturates"] = round(sat_clamped * serving_scale, 2)
 
         updated_item = {
             "name": name,
